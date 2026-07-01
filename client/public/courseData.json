@@ -1,0 +1,886 @@
+{
+  "course": {
+    "title": "IC32: Using the ISA/IEC 62443 Standards to Secure Your Control Systems",
+    "version": "6.0",
+    "totalSections": 15,
+    "goals": [
+      {
+        "id": 1,
+        "title": "Describe the importance of control system security",
+        "relatedSections": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Describe the structure and content of the ISA/IEC 62443 series",
+        "relatedSections": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Explain the importance of awareness as an effective countermeasure",
+        "relatedSections": [
+          2,
+          6
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Define principles behind creating an effective security program",
+        "relatedSections": [
+          6,
+          12
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Discuss basics of risk analysis, industrial networking, and network security",
+        "relatedSections": [
+          8,
+          9,
+          11
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Discuss concepts forming ISA/IEC 62443 basis (defense in depth, zones, conduits)",
+        "relatedSections": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Describe how to apply risk mitigation techniques (anti-virus, patch management, firewalls)",
+        "relatedSections": [
+          7,
+          8,
+          10
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Explain how secure software development strategies make systems secure",
+        "relatedSections": [
+          13
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Describe how to validate or verify security of systems",
+        "relatedSections": [
+          11,
+          14
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Describe how security profiles for ISA/IEC 62443 can be utilized",
+        "relatedSections": [
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": 1,
+      "day": 1,
+      "title": "Introduction to Control Systems Security",
+      "description": "Defining control system cybersecurity, trends, potential consequences, malware events, and differences between IT and IACS",
+      "topics": [
+        {
+          "id": "1.1",
+          "title": "Defining Control System Cybersecurity",
+          "keyPoints": [
+            "Measures to protect against unauthorized access",
+            "Electronic Security",
+            "IACS components"
+          ]
+        },
+        {
+          "id": "1.2",
+          "title": "Trends in Control System Cybersecurity",
+          "keyPoints": [
+            "Increased attacks",
+            "COTS software usage",
+            "IP protocols",
+            "Remote access",
+            "Attack automation"
+          ]
+        },
+        {
+          "id": "1.3",
+          "title": "Potential Consequences",
+          "keyPoints": [
+            "Data theft",
+            "Loss of integrity",
+            "Operational disruption",
+            "Financial losses",
+            "Regulatory violations"
+          ]
+        },
+        {
+          "id": "1.4",
+          "title": "Malware Trends",
+          "keyPoints": [
+            "Ransomware prominence",
+            "Stuxnet",
+            "Shamoon",
+            "OS-agnostic threats"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "day": 1,
+      "title": "Awareness",
+      "description": "Defining awareness, effectiveness of awareness, and awareness as a countermeasure",
+      "topics": [
+        {
+          "id": "2.1",
+          "title": "Defining Awareness",
+          "keyPoints": [
+            "Enterprise-wide program",
+            "Understanding IT security responsibilities",
+            "Essential tool for reducing risks"
+          ]
+        },
+        {
+          "id": "2.2",
+          "title": "Effectiveness of Awareness",
+          "keyPoints": [
+            "Audience targeting",
+            "Customization to context",
+            "Reinforcement and repetition"
+          ]
+        },
+        {
+          "id": "2.3",
+          "title": "Awareness Examples",
+          "keyPoints": [
+            "Industroyer demonstrations",
+            "Red team/Blue team training",
+            "E-learning programs",
+            "Board member sessions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "day": 1,
+      "title": "ISA/IEC 62443 Series",
+      "description": "ISA/IEC 62443 Series Overview, structure, and six parts",
+      "topics": [
+        {
+          "id": "3.1",
+          "title": "Series Overview",
+          "keyPoints": [
+            "General group (1-1 to 1-6)",
+            "Policies & Procedures (2-1 to 2-5)",
+            "System (3-1 to 3-3)",
+            "Component (4-1 to 4-2)",
+            "Profiles (5-x)",
+            "Evaluation (6-1 to 6-2)"
+          ]
+        },
+        {
+          "id": "3.2",
+          "title": "General Group Parts",
+          "keyPoints": [
+            "1-1: Terminology and concepts",
+            "1-2: Master glossary",
+            "1-3: Conformance metrics",
+            "1-4: Lifecycle and use-cases",
+            "1-5: Profiles scheme",
+            "1-6: IIoT application"
+          ]
+        },
+        {
+          "id": "3.3",
+          "title": "Policies & Procedures Group",
+          "keyPoints": [
+            "2-1: IACS security program",
+            "2-2: Protection scheme",
+            "2-3: Patch management",
+            "2-4: Service provider requirements",
+            "2-5: Implementation guidance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "day": 1,
+      "title": "ISA/IEC 62443 Models & Security Levels",
+      "description": "ISA/IEC 62443 Models, Reference Architecture, Zone & Conduit Model, and Security Levels",
+      "topics": [
+        {
+          "id": "4.1",
+          "title": "ISA/IEC 62443 Models",
+          "keyPoints": [
+            "Reference Model",
+            "Asset Model",
+            "Reference Architecture",
+            "Zone Model"
+          ]
+        },
+        {
+          "id": "4.2",
+          "title": "Reference Model Levels",
+          "keyPoints": [
+            "Level 4: Enterprise",
+            "Level 3: Operations/Systems Management",
+            "Level 2: Supervisory Control",
+            "Level 1: Basic Control",
+            "Level 0: Process"
+          ]
+        },
+        {
+          "id": "4.3",
+          "title": "Security Levels",
+          "keyPoints": [
+            "SL 0: No requirements",
+            "SL 1: Casual violation protection",
+            "SL 2: Simple means protection",
+            "SL 3: Sophisticated means protection",
+            "SL 4: Extended resources protection"
+          ]
+        },
+        {
+          "id": "4.4",
+          "title": "Foundational Requirements",
+          "keyPoints": [
+            "FR1: IAC (Identification & Authentication)",
+            "FR2: UC (Use Control)",
+            "FR3: SI (System Integrity)",
+            "FR4: DC (Data Confidentiality)",
+            "FR5: RDF (Restrict Data Flow)",
+            "FR6: TRE (Timely Response)",
+            "FR7: RA (Resource Availability)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "day": 1,
+      "title": "Introduction to IACS Lifecycle",
+      "description": "IACS cybersecurity lifecycle phases, roles and responsibilities",
+      "topics": [
+        {
+          "id": "5.1",
+          "title": "Security Level Lifecycle",
+          "keyPoints": [
+            "Target SL (SL-T)",
+            "Achieved SL (SL-A)",
+            "Capability SL (SL-C)",
+            "SL-A >= SL-T requirement"
+          ]
+        },
+        {
+          "id": "5.2",
+          "title": "Lifecycle Phases",
+          "keyPoints": [
+            "Assess Phase: gather information, evaluate controls",
+            "Develop & Implement Phase: deploy measures",
+            "Maintain Phase: audit and upgrade countermeasures"
+          ]
+        },
+        {
+          "id": "5.3",
+          "title": "Roles & Responsibilities",
+          "keyPoints": [
+            "Asset Owner: responsible for IACS",
+            "Integration Service Provider: design and implement",
+            "Maintenance Service Provider: scheduled maintenance",
+            "Product Supplier: develop and manufacture"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "day": 1,
+      "title": "Security Requirements for IACS Asset Owners",
+      "description": "Security program requirements for IACS asset owners",
+      "topics": [
+        {
+          "id": "6.1",
+          "title": "Asset Owner Responsibilities",
+          "keyPoints": [
+            "Define tolerable residual risk",
+            "Implement security measures",
+            "Maintain compliance"
+          ]
+        },
+        {
+          "id": "6.2",
+          "title": "Security Program Components",
+          "keyPoints": [
+            "Policies and procedures",
+            "Risk management",
+            "Incident response"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "day": 2,
+      "title": "Evolving Security Standards & Practices",
+      "description": "Current security standards, regulations, frameworks, and their relationships",
+      "topics": [
+        {
+          "id": "7.1",
+          "title": "Security Standards Overview",
+          "keyPoints": [
+            "ISA/IEC 62443",
+            "NIST Cybersecurity Framework",
+            "IEC 61508",
+            "IEC 61511"
+          ]
+        },
+        {
+          "id": "7.2",
+          "title": "Regulatory Requirements",
+          "keyPoints": [
+            "GDPR",
+            "HIPAA",
+            "NERC CIP",
+            "Industry-specific regulations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "day": 2,
+      "title": "Network Security Basics",
+      "description": "Network security fundamentals, OSI model, attack methods, and network security technologies",
+      "topics": [
+        {
+          "id": "8.1",
+          "title": "Why Network Security is Needed",
+          "keyPoints": [
+            "Protect against unauthorized access",
+            "Prevent data interception",
+            "Ensure availability"
+          ]
+        },
+        {
+          "id": "8.2",
+          "title": "OSI Model",
+          "keyPoints": [
+            "Layer 1: Physical",
+            "Layer 2: Data Link",
+            "Layer 3: Network",
+            "Layer 4: Transport",
+            "Layer 5-7: Application"
+          ]
+        },
+        {
+          "id": "8.3",
+          "title": "Attack Methods",
+          "keyPoints": [
+            "Eavesdropping",
+            "Man-in-the-middle",
+            "Denial of Service",
+            "Injection attacks"
+          ]
+        },
+        {
+          "id": "8.4",
+          "title": "Network Security Technologies",
+          "keyPoints": [
+            "Firewalls",
+            "VPNs",
+            "Intrusion Detection Systems",
+            "Encryption"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "day": 2,
+      "title": "Industrial Protocols",
+      "description": "Overview of industrial protocols, MODBUS, OPC, and protocol security",
+      "topics": [
+        {
+          "id": "9.1",
+          "title": "Protocol Overview",
+          "keyPoints": [
+            "MODBUS",
+            "OPC",
+            "Profibus",
+            "EtherCAT"
+          ]
+        },
+        {
+          "id": "9.2",
+          "title": "MODBUS Basics",
+          "keyPoints": [
+            "Master-slave architecture",
+            "TCP and RTU modes",
+            "Security considerations"
+          ]
+        },
+        {
+          "id": "9.3",
+          "title": "OPC Introduction",
+          "keyPoints": [
+            "OLE for Process Control",
+            "Data exchange",
+            "Integration"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "day": 2,
+      "title": "Introduction to Patch Management",
+      "description": "Patch management overview and stakeholder responsibilities",
+      "topics": [
+        {
+          "id": "10.1",
+          "title": "Patch Management Basics",
+          "keyPoints": [
+            "Vulnerability assessment",
+            "Patch testing",
+            "Deployment strategy"
+          ]
+        },
+        {
+          "id": "10.2",
+          "title": "Stakeholder Responsibilities",
+          "keyPoints": [
+            "Asset owners",
+            "Service providers",
+            "Product suppliers",
+            "Shared responsibility"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "day": 2,
+      "title": "Introduction to Security Risk Assessment for System Design",
+      "description": "Security levels, foundational requirements, risk equation, and system design",
+      "topics": [
+        {
+          "id": "11.1",
+          "title": "Security Levels Review",
+          "keyPoints": [
+            "Five levels (SL 0-4)",
+            "Increasing security confidence",
+            "Protection against different threat levels"
+          ]
+        },
+        {
+          "id": "11.2",
+          "title": "Foundational Requirements",
+          "keyPoints": [
+            "FR1-FR7 framework",
+            "CIA model extension",
+            "All FRs in all standards"
+          ]
+        },
+        {
+          "id": "11.3",
+          "title": "FR and SL Vector",
+          "keyPoints": [
+            "Vector notation: {IAC, UC, SI, DC, RDF, TRE, RA}",
+            "Separable SL definitions",
+            "Practical explanations"
+          ]
+        },
+        {
+          "id": "11.4",
+          "title": "Risk Equation",
+          "keyPoints": [
+            "Threat assessment",
+            "Vulnerability analysis",
+            "Impact evaluation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "day": 2,
+      "title": "Security Program Requirements for IACS Service Providers",
+      "description": "Service provider definitions and security program requirements",
+      "topics": [
+        {
+          "id": "12.1",
+          "title": "Service Provider Overview",
+          "keyPoints": [
+            "Integration providers",
+            "Maintenance providers",
+            "Responsibilities"
+          ]
+        },
+        {
+          "id": "12.2",
+          "title": "Program Requirements",
+          "keyPoints": [
+            "Security policies",
+            "Personnel training",
+            "Incident response"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "day": 2,
+      "title": "Developing Secure Products & Services",
+      "description": "Secure product development lifecycle and secure-by-design principles",
+      "topics": [
+        {
+          "id": "13.1",
+          "title": "Secure Development Lifecycle",
+          "keyPoints": [
+            "62443-4-1 framework",
+            "62443-4-2 requirements",
+            "Secure-by-design approach"
+          ]
+        },
+        {
+          "id": "13.2",
+          "title": "Secure-by-Design Principles",
+          "keyPoints": [
+            "Threat modeling",
+            "Security architecture",
+            "Code review",
+            "Testing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "day": 2,
+      "title": "Security Profiles for ISA 62443",
+      "description": "Security profiles and how they tailor requirements to specific sectors",
+      "topics": [
+        {
+          "id": "14.1",
+          "title": "What is a Profile",
+          "keyPoints": [
+            "Tailored requirements",
+            "Sector-specific",
+            "FR and SR customization"
+          ]
+        },
+        {
+          "id": "14.2",
+          "title": "Profile Development",
+          "keyPoints": [
+            "Industry analysis",
+            "Requirement mapping",
+            "Validation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "day": 2,
+      "title": "IACS Security Protection Scheme",
+      "description": "Security Protection Scheme (SPS) terminology and framework",
+      "topics": [
+        {
+          "id": "15.1",
+          "title": "Protection Scheme Terminology",
+          "keyPoints": [
+            "SP vs SPS distinction",
+            "SPR (Security Protection Rating)",
+            "SL mapping"
+          ]
+        },
+        {
+          "id": "15.2",
+          "title": "Scheme Application",
+          "keyPoints": [
+            "Conformity assessment",
+            "Evaluation methodology",
+            "Compliance verification"
+          ]
+        }
+      ]
+    }
+  ],
+  "models": {
+    "referenceModel": {
+      "title": "ISA/IEC 62443 Reference Model",
+      "levels": [
+        {
+          "id": 4,
+          "name": "Enterprise",
+          "description": "Engineering, Business Planning & Logistics",
+          "systems": "ERP, finance systems managing business processes",
+          "color": "#1e40af"
+        },
+        {
+          "id": 3,
+          "name": "Operations/Systems Management",
+          "description": "Managing and optimizing workflows and systems",
+          "systems": "MES (Manufacturing Execution Systems)",
+          "color": "#2563eb"
+        },
+        {
+          "id": 2,
+          "name": "Supervisory Control",
+          "description": "Monitoring and optimizing operations",
+          "systems": "SCADA systems",
+          "color": "#3b82f6"
+        },
+        {
+          "id": 1,
+          "name": "Basic Control",
+          "description": "Sensing and manipulating the physical process",
+          "systems": "PLCs, RTUs, control devices",
+          "color": "#60a5fa"
+        },
+        {
+          "id": 0,
+          "name": "Process",
+          "description": "Physical process and field devices",
+          "systems": "Sensors, actuators, equipment",
+          "color": "#93c5fd"
+        }
+      ]
+    },
+    "securityLevels": {
+      "title": "Security Levels (SL 0-4)",
+      "levels": [
+        {
+          "id": 0,
+          "name": "SL 0",
+          "description": "No specific requirements or security protection necessary",
+          "threat": "No threat consideration",
+          "color": "#e5e7eb"
+        },
+        {
+          "id": 1,
+          "name": "SL 1",
+          "description": "Protection against casual or coincidental violation",
+          "threat": "Low resources, generic skills, low motivation",
+          "color": "#fef3c7"
+        },
+        {
+          "id": 2,
+          "name": "SL 2",
+          "description": "Protection against intentional violation using simple means",
+          "threat": "Low resources, generic skills, low motivation",
+          "color": "#fed7aa"
+        },
+        {
+          "id": 3,
+          "name": "SL 3",
+          "description": "Protection against intentional violation using sophisticated means",
+          "threat": "Moderate resources, IACS-specific skills, moderate motivation",
+          "color": "#fb923c"
+        },
+        {
+          "id": 4,
+          "name": "SL 4",
+          "description": "Protection against intentional violation using sophisticated means with extended resources",
+          "threat": "Extended resources, IACS-specific skills, high motivation",
+          "color": "#ea580c"
+        }
+      ]
+    },
+    "foundationalRequirements": {
+      "title": "Seven Foundational Requirements (FR)",
+      "requirements": [
+        {
+          "id": "FR1",
+          "acronym": "IAC",
+          "name": "Identification and Authentication Control",
+          "description": "Control access to selected devices, information or both",
+          "relatedTo": [
+            "Access Control",
+            "User Management"
+          ]
+        },
+        {
+          "id": "FR2",
+          "acronym": "UC",
+          "name": "Use Control",
+          "description": "Control use of selected devices, information or both. Protect against unauthorized operation.",
+          "relatedTo": [
+            "Authorization",
+            "Permissions"
+          ]
+        },
+        {
+          "id": "FR3",
+          "acronym": "SI",
+          "name": "System Integrity",
+          "description": "Ensure the integrity of data on selected communication channels. Protect against unauthorized changes.",
+          "relatedTo": [
+            "Data Integrity",
+            "Checksums"
+          ]
+        },
+        {
+          "id": "FR4",
+          "acronym": "DC",
+          "name": "Data Confidentiality",
+          "description": "Ensure the confidentiality of data on selected communication channels. Protect against eavesdropping.",
+          "relatedTo": [
+            "Encryption",
+            "Privacy"
+          ]
+        },
+        {
+          "id": "FR5",
+          "acronym": "RDF",
+          "name": "Restrict Data Flow",
+          "description": "Restrict the flow of data on communication channels. Protect against publication to unauthorized sources.",
+          "relatedTo": [
+            "Firewalls",
+            "Network Segmentation"
+          ]
+        },
+        {
+          "id": "FR6",
+          "acronym": "TRE",
+          "name": "Timely Response to Events",
+          "description": "Respond to security violations. Notify authorities. Report forensic evidence. Take corrective action.",
+          "relatedTo": [
+            "Incident Response",
+            "Logging"
+          ]
+        },
+        {
+          "id": "FR7",
+          "acronym": "RA",
+          "name": "Resource Availability",
+          "description": "Ensure the availability of all network resources. Protect against denial-of-service attacks.",
+          "relatedTo": [
+            "Availability",
+            "DoS Protection"
+          ]
+        }
+      ]
+    }
+  },
+  "correlations": {
+    "sectionToGoals": {
+      "1": [
+        1,
+        5
+      ],
+      "2": [
+        3,
+        4
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        2,
+        6
+      ],
+      "5": [
+        4
+      ],
+      "6": [
+        4
+      ],
+      "7": [
+        7
+      ],
+      "8": [
+        5,
+        6,
+        7
+      ],
+      "9": [
+        5
+      ],
+      "10": [
+        7
+      ],
+      "11": [
+        5,
+        9
+      ],
+      "12": [
+        4
+      ],
+      "13": [
+        8
+      ],
+      "14": [
+        10
+      ],
+      "15": [
+        10
+      ]
+    },
+    "sectionDependencies": {
+      "1": [],
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        4
+      ],
+      "6": [
+        4,
+        5
+      ],
+      "7": [
+        1,
+        2
+      ],
+      "8": [
+        1,
+        7
+      ],
+      "9": [
+        8
+      ],
+      "10": [
+        7
+      ],
+      "11": [
+        4,
+        8
+      ],
+      "12": [
+        6
+      ],
+      "13": [
+        4
+      ],
+      "14": [
+        3,
+        4
+      ],
+      "15": [
+        14
+      ]
+    }
+  }
+}
