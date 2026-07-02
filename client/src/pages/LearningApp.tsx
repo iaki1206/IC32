@@ -160,6 +160,7 @@ export default function LearningApp() {
                 section={currentSection}
                 selectedTopic={selectedTopic}
                 courseData={courseData}
+                onSelectTopic={setSelectedTopic}
               />
             )}
             {currentPage === "models" && <ModelsPage courseData={courseData} />}

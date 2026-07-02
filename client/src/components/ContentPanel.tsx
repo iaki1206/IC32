@@ -25,12 +25,14 @@ interface ContentPanelProps {
   section: Section;
   selectedTopic: string | null;
   courseData: CourseData;
+  onSelectTopic?: (topicId: string) => void;
 }
 
 export default function ContentPanel({
   section,
   selectedTopic,
   courseData,
+  onSelectTopic,
 }: ContentPanelProps) {
   const relatedGoals = courseData.correlations.sectionToGoals[section.id.toString()] || [];
   const selectedTopicData = section.topics.find((t) => t.id === selectedTopic);
@@ -83,6 +85,11 @@ export default function ContentPanel({
                   ? "border-primary bg-primary/5 border-l-4 border-l-primary"
                   : "hover:border-primary/50"
               }`}
+              onClick={() => {
+                if (onSelectTopic) {
+                  onSelectTopic(topic.id);
+                }
+              }}
             >
               <h3 className="font-semibold text-foreground">{topic.title}</h3>
               {topic.keyPoints && topic.keyPoints.length > 0 && (
