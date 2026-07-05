@@ -1,0 +1,286 @@
+{
+  "quizzes": [
+    {
+      "id": "quiz-1",
+      "sectionId": 1,
+      "title": "Introduction to Control Systems Security",
+      "description": "Test your understanding of control system cybersecurity fundamentals",
+      "questions": [
+        {
+          "id": "q1-1",
+          "question": "What is the primary goal of control system cybersecurity?",
+          "type": "multiple-choice",
+          "options": [
+            {
+              "id": "a",
+              "text": "To prevent unauthorized access and protect critical infrastructure from attacks"
+            },
+            {
+              "id": "b",
+              "text": "To make systems faster and more efficient"
+            },
+            {
+              "id": "c",
+              "text": "To reduce the cost of IT operations"
+            },
+            {
+              "id": "d",
+              "text": "To replace all legacy systems with new technology"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Control system cybersecurity focuses on protecting critical infrastructure from unauthorized access, attacks, and damage. This ensures business continuity and public safety.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q1-2",
+          "question": "Which of the following is NOT a key difference between IT and IACS security?",
+          "type": "multiple-choice",
+          "options": [
+            {
+              "id": "a",
+              "text": "IACS systems prioritize availability over confidentiality"
+            },
+            {
+              "id": "b",
+              "text": "IACS systems use the same encryption standards as IT systems"
+            },
+            {
+              "id": "c",
+              "text": "IACS systems cannot afford downtime for patching"
+            },
+            {
+              "id": "d",
+              "text": "IACS systems often run legacy software that cannot be updated"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "IACS systems often require different security approaches than IT systems due to operational constraints. While encryption is important, IACS systems have unique requirements around availability and cannot tolerate the downtime that IT systems might accept.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q1-3",
+          "question": "True or False: A malware event in a control system can have the same impact as in a traditional IT network.",
+          "type": "true-false",
+          "correctAnswer": "false",
+          "explanation": "Malware in control systems can have far more serious consequences than in IT networks. It can directly impact physical processes, potentially causing equipment damage, environmental harm, or safety risks to personnel.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "quiz-2",
+      "sectionId": 3,
+      "title": "ISA/IEC 62443 Standards Overview",
+      "description": "Assess your knowledge of the ISA/IEC 62443 framework and structure",
+      "questions": [
+        {
+          "id": "q3-1",
+          "question": "How many parts does the ISA/IEC 62443 series contain?",
+          "type": "multiple-choice",
+          "options": [
+            {
+              "id": "a",
+              "text": "3 parts"
+            },
+            {
+              "id": "b",
+              "text": "5 parts"
+            },
+            {
+              "id": "c",
+              "text": "7 parts"
+            },
+            {
+              "id": "d",
+              "text": "10 parts"
+            }
+          ],
+          "correctAnswer": "c",
+          "explanation": "The ISA/IEC 62443 series consists of 7 parts, each addressing different aspects of industrial automation and control system security, from general concepts to implementation guidelines.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q3-2",
+          "question": "Which of the following is a core component of the ISA/IEC 62443 framework?",
+          "type": "multiple-choice",
+          "options": [
+            {
+              "id": "a",
+              "text": "Defense in depth strategy"
+            },
+            {
+              "id": "b",
+              "text": "Network zones and conduits"
+            },
+            {
+              "id": "c",
+              "text": "Security levels (SL 0-4)"
+            },
+            {
+              "id": "d",
+              "text": "All of the above"
+            }
+          ],
+          "correctAnswer": "d",
+          "explanation": "The ISA/IEC 62443 framework is built on multiple core concepts including defense in depth (layered security), network zones and conduits (network segmentation), and security levels that define increasing levels of protection.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "quiz-3",
+      "sectionId": 4,
+      "title": "Purdue Reference Model",
+      "description": "Test your understanding of the Purdue Reference Model and its levels",
+      "questions": [
+        {
+          "id": "q4-1",
+          "question": "What does Level 0 of the Purdue Reference Model represent?",
+          "type": "multiple-choice",
+          "options": [
+            {
+              "id": "a",
+              "text": "Enterprise systems and business networks"
+            },
+            {
+              "id": "b",
+              "text": "Physical equipment and processes"
+            },
+            {
+              "id": "c",
+              "text": "SCADA and supervisory systems"
+            },
+            {
+              "id": "d",
+              "text": "Local controllers and PLCs"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Level 0 represents the process layer - the physical equipment, sensors, actuators, and processes being controlled. This is the foundation of the control system hierarchy.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q4-2",
+          "question": "Which Purdue level is responsible for monitoring and coordinating operations across multiple control systems?",
+          "type": "multiple-choice",
+          "options": [
+            {
+              "id": "a",
+              "text": "Level 1 - Basic Control"
+            },
+            {
+              "id": "b",
+              "text": "Level 2 - Supervisory Control"
+            },
+            {
+              "id": "c",
+              "text": "Level 3 - Operations"
+            },
+            {
+              "id": "d",
+              "text": "Level 4 - Enterprise"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Level 2 (Supervisory Control) includes SCADA systems, HMI interfaces, and data historians that monitor and coordinate operations. Level 3 manages security policies, while Level 4 handles enterprise business systems.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q4-3",
+          "question": "True or False: Each level of the Purdue model operates independently without communication between levels.",
+          "type": "true-false",
+          "correctAnswer": "false",
+          "explanation": "The Purdue model levels communicate with each other in a hierarchical manner. Information flows up from the process level to enterprise systems, and control commands flow down. This interconnection is why security at each level is critical.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "quiz-4",
+      "sectionId": 5,
+      "title": "Security Levels and Foundational Requirements",
+      "description": "Evaluate your understanding of security levels and the 7 foundational requirements",
+      "questions": [
+        {
+          "id": "q5-1",
+          "question": "What does Security Level 0 (SL 0) indicate?",
+          "type": "multiple-choice",
+          "options": [
+            {
+              "id": "a",
+              "text": "Maximum security with military-grade protection"
+            },
+            {
+              "id": "b",
+              "text": "No security protection or isolated systems only"
+            },
+            {
+              "id": "c",
+              "text": "Basic authentication and firewalls"
+            },
+            {
+              "id": "d",
+              "text": "Advanced threat detection and 24/7 monitoring"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Security Level 0 represents systems with no protection or systems that are completely isolated. This is the baseline, indicating no security measures are implemented.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q5-2",
+          "question": "How many Foundational Requirements (FR) are defined in ISA/IEC 62443?",
+          "type": "multiple-choice",
+          "options": [
+            {
+              "id": "a",
+              "text": "5 Foundational Requirements"
+            },
+            {
+              "id": "b",
+              "text": "7 Foundational Requirements"
+            },
+            {
+              "id": "c",
+              "text": "10 Foundational Requirements"
+            },
+            {
+              "id": "d",
+              "text": "12 Foundational Requirements"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "There are 7 Foundational Requirements (FR1-FR7) that form the core of ISA/IEC 62443 security: Identification & Authentication, Use Control, System Integrity, Data Confidentiality, Restrict Data Flow, Timely Response, and Resource Availability.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q5-3",
+          "question": "Which Foundational Requirement addresses the ability to detect and respond to security incidents?",
+          "type": "multiple-choice",
+          "options": [
+            {
+              "id": "a",
+              "text": "FR3 - System Integrity"
+            },
+            {
+              "id": "b",
+              "text": "FR5 - Restrict Data Flow"
+            },
+            {
+              "id": "c",
+              "text": "FR6 - Timely Response"
+            },
+            {
+              "id": "d",
+              "text": "FR7 - Resource Availability"
+            }
+          ],
+          "correctAnswer": "c",
+          "explanation": "FR6 - Timely Response focuses on detecting and responding to security incidents. This includes intrusion detection systems, 24/7 monitoring, and incident response procedures.",
+          "difficulty": "medium"
+        }
+      ]
+    }
+  ]
+}

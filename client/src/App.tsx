@@ -4,13 +4,13 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import EnhancedLearningApp from "./pages/EnhancedLearningApp";
+import EnhancedLearningAppV2 from "./pages/EnhancedLearningAppV2";
 
 
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={EnhancedLearningApp} />
+      <Route path={"/"} component={EnhancedLearningAppV2} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
