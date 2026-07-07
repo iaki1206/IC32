@@ -1,0 +1,940 @@
+{
+  "quizzes": [
+    {
+      "id": "quiz-1",
+      "sectionId": 1,
+      "title": "Introduction to Control Systems Security",
+      "description": "Test your understanding of control system cybersecurity fundamentals and key concepts",
+      "questions": [
+        {
+          "id": "q1-1",
+          "question": "What is the primary goal of control system cybersecurity?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "To prevent unauthorized access and protect critical infrastructure from attacks"},
+            {"id": "b", "text": "To make systems faster and more efficient"},
+            {"id": "c", "text": "To reduce the cost of IT operations"},
+            {"id": "d", "text": "To replace all legacy systems with new technology"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "Control system cybersecurity focuses on protecting critical infrastructure from unauthorized access, attacks, and damage. This ensures business continuity and public safety.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q1-2",
+          "question": "Which of the following is NOT a key difference between IT and IACS security?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "IACS systems prioritize availability over confidentiality"},
+            {"id": "b", "text": "IACS systems use the same encryption standards as IT systems"},
+            {"id": "c", "text": "IACS systems cannot afford downtime for patching"},
+            {"id": "d", "text": "IACS systems often run legacy software that cannot be updated"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "IACS systems often require different security approaches than IT systems due to operational constraints. While encryption is important, IACS systems have unique requirements around availability and cannot tolerate the downtime that IT systems might accept.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q1-3",
+          "question": "True or False: A malware event in a control system can have the same impact as in a traditional IT network.",
+          "type": "true-false",
+          "correctAnswer": "false",
+          "explanation": "Malware in control systems can have far more serious consequences than in IT networks. It can directly impact physical processes, potentially causing equipment damage, environmental harm, or safety risks to personnel.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q1-4",
+          "question": "What does IACS stand for?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Industrial Automation and Control Systems"},
+            {"id": "b", "text": "Integrated Automated Control Software"},
+            {"id": "c", "text": "Internet-based Automation Control Systems"},
+            {"id": "d", "text": "Industrial Architecture and Communication Standards"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "IACS stands for Industrial Automation and Control Systems, which includes systems like SCADA, DCS, and PLCs used in critical infrastructure.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q1-5",
+          "question": "Which of the following is an example of a control system?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Power generation and distribution systems"},
+            {"id": "b", "text": "Water treatment and distribution"},
+            {"id": "c", "text": "Manufacturing process control"},
+            {"id": "d", "text": "All of the above"}
+          ],
+          "correctAnswer": "d",
+          "explanation": "Control systems are used across many critical infrastructure sectors including energy, water, transportation, and manufacturing. Each of these examples uses IACS to monitor and control physical processes.",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "quiz-2",
+      "sectionId": 2,
+      "title": "Trends in Control System Cybersecurity",
+      "description": "Assess your knowledge of current trends and evolving threats in IACS security",
+      "questions": [
+        {
+          "id": "q2-1",
+          "question": "What is a major trend in control system cybersecurity?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Increased connectivity and IT/OT convergence"},
+            {"id": "b", "text": "Reduced use of internet connectivity"},
+            {"id": "c", "text": "Elimination of legacy systems"},
+            {"id": "d", "text": "Decreased need for security measures"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "One of the biggest trends is increased connectivity between IT and OT networks. While this enables better monitoring and efficiency, it also increases security risks if not properly managed.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q2-2",
+          "question": "Which of the following represents an emerging threat to control systems?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Sophisticated nation-state actors targeting critical infrastructure"},
+            {"id": "b", "text": "Ransomware attacks on industrial systems"},
+            {"id": "c", "text": "Supply chain compromises"},
+            {"id": "d", "text": "All of the above"}
+          ],
+          "correctAnswer": "d",
+          "explanation": "Modern threats to control systems are diverse and sophisticated, ranging from nation-state actors to opportunistic cybercriminals using ransomware. Supply chain attacks have also become increasingly common.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q2-3",
+          "question": "What is the impact of digital transformation on IACS security?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "It eliminates all security risks"},
+            {"id": "b", "text": "It increases both opportunities and risks for security"},
+            {"id": "c", "text": "It has no impact on security"},
+            {"id": "d", "text": "It only increases efficiency without affecting security"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Digital transformation brings both benefits (better monitoring, predictive maintenance) and risks (increased attack surface, new vulnerabilities). Organizations must balance innovation with security.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "quiz-3",
+      "sectionId": 3,
+      "title": "ISA/IEC 62443 Standards Overview",
+      "description": "Evaluate your understanding of the ISA/IEC 62443 framework and its structure",
+      "questions": [
+        {
+          "id": "q3-1",
+          "question": "How many parts does the ISA/IEC 62443 series contain?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "3 parts"},
+            {"id": "b", "text": "5 parts"},
+            {"id": "c", "text": "7 parts"},
+            {"id": "d", "text": "10 parts"}
+          ],
+          "correctAnswer": "c",
+          "explanation": "The ISA/IEC 62443 series consists of 7 parts, each addressing different aspects of industrial automation and control system security.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q3-2",
+          "question": "Which of the following is a core component of the ISA/IEC 62443 framework?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Defense in depth strategy"},
+            {"id": "b", "text": "Network zones and conduits"},
+            {"id": "c", "text": "Security levels (SL 0-4)"},
+            {"id": "d", "text": "All of the above"}
+          ],
+          "correctAnswer": "d",
+          "explanation": "The ISA/IEC 62443 framework is built on multiple core concepts including defense in depth, network segmentation, and security levels.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q3-3",
+          "question": "What does 'defense in depth' mean in the context of ISA/IEC 62443?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Having a single strong firewall"},
+            {"id": "b", "text": "Multiple layers of security controls to protect against attacks"},
+            {"id": "c", "text": "Encrypting all data"},
+            {"id": "d", "text": "Using only air-gapped systems"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Defense in depth means implementing multiple layers of security controls. If one layer is compromised, others remain to protect the system.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q3-4",
+          "question": "True or False: ISA/IEC 62443 is mandatory for all industrial facilities worldwide.",
+          "type": "true-false",
+          "correctAnswer": "false",
+          "explanation": "While ISA/IEC 62443 is widely recognized and recommended, it is not universally mandatory. However, many regulatory bodies and critical infrastructure sectors require compliance.",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "quiz-4",
+      "sectionId": 4,
+      "title": "Purdue Reference Model",
+      "description": "Test your understanding of the Purdue Reference Model and its levels",
+      "questions": [
+        {
+          "id": "q4-1",
+          "question": "What does Level 0 of the Purdue Reference Model represent?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Enterprise systems and business networks"},
+            {"id": "b", "text": "Physical equipment and processes"},
+            {"id": "c", "text": "SCADA and supervisory systems"},
+            {"id": "d", "text": "Local controllers and PLCs"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Level 0 represents the process layer - the physical equipment, sensors, actuators, and processes being controlled.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q4-2",
+          "question": "Which Purdue level is responsible for monitoring and coordinating operations?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Level 1 - Basic Control"},
+            {"id": "b", "text": "Level 2 - Supervisory Control"},
+            {"id": "c", "text": "Level 3 - Operations"},
+            {"id": "d", "text": "Level 4 - Enterprise"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Level 2 includes SCADA systems, HMI interfaces, and data historians that monitor and coordinate operations across multiple control systems.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q4-3",
+          "question": "True or False: Each level of the Purdue model operates independently without communication.",
+          "type": "true-false",
+          "correctAnswer": "false",
+          "explanation": "The Purdue model levels communicate in a hierarchical manner. Information flows up and control commands flow down, making security at each level critical.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q4-4",
+          "question": "What is the primary function of Level 3 (Operations) in the Purdue model?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Direct control of physical processes"},
+            {"id": "b", "text": "Business planning and resource allocation"},
+            {"id": "c", "text": "Security policy management and system administration"},
+            {"id": "d", "text": "Real-time data collection"}
+          ],
+          "correctAnswer": "c",
+          "explanation": "Level 3 handles security policies, system administration, and management functions that support the control systems below it.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q4-5",
+          "question": "Which level of the Purdue model is most vulnerable to external attacks?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Level 0 - Process"},
+            {"id": "b", "text": "Level 2 - Supervisory"},
+            {"id": "c", "text": "Level 4 - Enterprise"},
+            {"id": "d", "text": "All levels are equally vulnerable"}
+          ],
+          "correctAnswer": "c",
+          "explanation": "Level 4 (Enterprise) is typically most exposed to external threats as it often connects to the internet and external networks. However, all levels need protection.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "quiz-5",
+      "sectionId": 5,
+      "title": "Security Levels and Foundational Requirements",
+      "description": "Evaluate your understanding of security levels and the 7 foundational requirements",
+      "questions": [
+        {
+          "id": "q5-1",
+          "question": "What does Security Level 0 (SL 0) indicate?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Maximum security with military-grade protection"},
+            {"id": "b", "text": "No security protection or isolated systems only"},
+            {"id": "c", "text": "Basic authentication and firewalls"},
+            {"id": "d", "text": "Advanced threat detection"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Security Level 0 represents systems with no protection or systems that are completely isolated. This is the baseline.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q5-2",
+          "question": "How many Foundational Requirements (FR) are defined in ISA/IEC 62443?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "5 Foundational Requirements"},
+            {"id": "b", "text": "7 Foundational Requirements"},
+            {"id": "c", "text": "10 Foundational Requirements"},
+            {"id": "d", "text": "12 Foundational Requirements"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "There are 7 Foundational Requirements (FR1-FR7) that form the core of ISA/IEC 62443 security.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q5-3",
+          "question": "Which Foundational Requirement addresses the ability to detect and respond to security incidents?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "FR3 - System Integrity"},
+            {"id": "b", "text": "FR5 - Restrict Data Flow"},
+            {"id": "c", "text": "FR6 - Timely Response"},
+            {"id": "d", "text": "FR7 - Resource Availability"}
+          ],
+          "correctAnswer": "c",
+          "explanation": "FR6 - Timely Response focuses on detecting and responding to security incidents through monitoring and incident response procedures.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q5-4",
+          "question": "What is the difference between SL 1 and SL 2?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "SL 2 requires more advanced controls and monitoring"},
+            {"id": "b", "text": "There is no difference"},
+            {"id": "c", "text": "SL 1 is for large organizations only"},
+            {"id": "d", "text": "SL 2 requires military-grade encryption"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "Each security level builds on the previous one with more stringent requirements. SL 2 requires more comprehensive controls, monitoring, and documentation than SL 1.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q5-5",
+          "question": "Which FR is most important for protecting against unauthorized access?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "FR1 - Identification & Authentication"},
+            {"id": "b", "text": "FR2 - Use Control"},
+            {"id": "c", "text": "FR4 - Data Confidentiality"},
+            {"id": "d", "text": "Both FR1 and FR2"}
+          ],
+          "correctAnswer": "d",
+          "explanation": "Both FR1 (identifying who is accessing the system) and FR2 (controlling what they can do) are essential for preventing unauthorized access.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "quiz-6",
+      "sectionId": 6,
+      "title": "IACS Cybersecurity Lifecycle",
+      "description": "Test your knowledge of the IACS cybersecurity lifecycle phases",
+      "questions": [
+        {
+          "id": "q6-1",
+          "question": "What are the three main phases of the IACS Cybersecurity Lifecycle?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Plan, Execute, Review"},
+            {"id": "b", "text": "Assess, Develop & Implement, Maintain"},
+            {"id": "c", "text": "Identify, Protect, Detect"},
+            {"id": "d", "text": "Design, Build, Deploy"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "The IACS Cybersecurity Lifecycle consists of three continuous phases: Assess (understand current state), Develop & Implement (improve security), and Maintain (keep systems secure).",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q6-2",
+          "question": "What is the primary goal of the 'Assess' phase?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "To implement new security controls"},
+            {"id": "b", "text": "To understand the current security posture and identify gaps"},
+            {"id": "c", "text": "To monitor ongoing security"},
+            {"id": "d", "text": "To replace all systems"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "The Assess phase involves evaluating current systems, identifying vulnerabilities, and understanding the security gaps that need to be addressed.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q6-3",
+          "question": "True or False: The IACS Cybersecurity Lifecycle is a one-time process.",
+          "type": "true-false",
+          "correctAnswer": "false",
+          "explanation": "The lifecycle is continuous and cyclical. Organizations must continually assess, improve, and maintain their security posture as threats evolve.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q6-4",
+          "question": "What activities are included in the 'Maintain' phase?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Monitoring, patching, and incident response"},
+            {"id": "b", "text": "Only security updates"},
+            {"id": "c", "text": "Only incident response"},
+            {"id": "d", "text": "Planning for future systems"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "The Maintain phase includes ongoing monitoring of systems, applying security patches, and responding to security incidents to keep systems secure.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "quiz-7",
+      "sectionId": 7,
+      "title": "Defense in Depth and Network Segmentation",
+      "description": "Assess your understanding of defense in depth strategies and network segmentation",
+      "questions": [
+        {
+          "id": "q7-1",
+          "question": "What is the main principle of 'defense in depth'?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Using the strongest possible single security measure"},
+            {"id": "b", "text": "Implementing multiple layers of security controls"},
+            {"id": "c", "text": "Isolating all systems completely"},
+            {"id": "d", "text": "Using only encryption"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Defense in depth means implementing multiple overlapping security layers. If one layer is compromised, others remain to protect the system.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q7-2",
+          "question": "What is network segmentation?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Dividing a network into smaller, isolated zones"},
+            {"id": "b", "text": "Using a single firewall"},
+            {"id": "c", "text": "Connecting all systems together"},
+            {"id": "d", "text": "Removing network connectivity"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "Network segmentation involves dividing a network into zones with controlled access between them, limiting the spread of attacks.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q7-3",
+          "question": "What is a 'demilitarized zone' (DMZ)?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "A military security zone"},
+            {"id": "b", "text": "A network segment that separates internal networks from external networks"},
+            {"id": "c", "text": "A completely isolated network"},
+            {"id": "d", "text": "A type of firewall"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "A DMZ is a network segment that acts as a buffer zone between internal networks and external networks, providing an additional layer of security.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q7-4",
+          "question": "What are 'zones and conduits' in ISA/IEC 62443?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Physical locations and communication paths"},
+            {"id": "b", "text": "Security zones and controlled communication paths between them"},
+            {"id": "c", "text": "Types of firewalls"},
+            {"id": "d", "text": "Network cables and routers"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Zones are logical groupings of systems, and conduits are controlled communication paths between zones. This enables network segmentation and controlled access.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "quiz-8",
+      "sectionId": 8,
+      "title": "Access Control and Authentication",
+      "description": "Test your knowledge of access control mechanisms and authentication methods",
+      "questions": [
+        {
+          "id": "q8-1",
+          "question": "What is the difference between authentication and authorization?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "They are the same thing"},
+            {"id": "b", "text": "Authentication verifies identity; authorization determines permissions"},
+            {"id": "c", "text": "Authorization is more important"},
+            {"id": "d", "text": "Authentication is only for IT systems"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Authentication verifies who you are (identity), while authorization determines what you are allowed to do (permissions).",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q8-2",
+          "question": "What is multi-factor authentication (MFA)?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Using multiple passwords"},
+            {"id": "b", "text": "Using two or more different types of authentication factors"},
+            {"id": "c", "text": "Changing passwords frequently"},
+            {"id": "d", "text": "Using biometric authentication only"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "MFA combines two or more authentication factors (something you know, something you have, something you are) to increase security.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q8-3",
+          "question": "What is role-based access control (RBAC)?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Granting access based on job title only"},
+            {"id": "b", "text": "Assigning permissions based on defined roles"},
+            {"id": "c", "text": "Allowing everyone the same access"},
+            {"id": "d", "text": "Removing all access controls"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "RBAC assigns permissions based on defined roles (e.g., operator, administrator). Users inherit permissions from their assigned roles.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q8-4",
+          "question": "What is the principle of 'least privilege'?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Giving users maximum access"},
+            {"id": "b", "text": "Giving users only the minimum access needed for their job"},
+            {"id": "c", "text": "Removing all access"},
+            {"id": "d", "text": "Giving access only to administrators"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Least privilege means users should have only the minimum access necessary to perform their job functions, reducing risk.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "quiz-9",
+      "sectionId": 9,
+      "title": "Secure System Design and Implementation",
+      "description": "Evaluate your understanding of secure system design principles",
+      "questions": [
+        {
+          "id": "q9-1",
+          "question": "What is 'security by design'?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Adding security features after development"},
+            {"id": "b", "text": "Incorporating security considerations from the beginning of system design"},
+            {"id": "c", "text": "Using only commercial security products"},
+            {"id": "d", "text": "Security is not important during design"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Security by design means considering security requirements and threats from the very beginning of system design, not as an afterthought.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q9-2",
+          "question": "What is a threat model?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "A description of potential threats and vulnerabilities"},
+            {"id": "b", "text": "A type of security product"},
+            {"id": "c", "text": "A list of all security controls"},
+            {"id": "d", "text": "A model of how threats attack systems"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "A threat model systematically identifies potential threats, vulnerabilities, and attack paths to help design appropriate security controls.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q9-3",
+          "question": "What is the purpose of security testing?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "To ensure systems work correctly"},
+            {"id": "b", "text": "To identify vulnerabilities before attackers do"},
+            {"id": "c", "text": "To slow down system performance"},
+            {"id": "d", "text": "To prevent all attacks"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Security testing (penetration testing, vulnerability scanning) helps identify weaknesses before attackers can exploit them.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "quiz-10",
+      "sectionId": 10,
+      "title": "Incident Response and Recovery",
+      "description": "Test your knowledge of incident response and business continuity",
+      "questions": [
+        {
+          "id": "q10-1",
+          "question": "What are the main phases of incident response?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Detection, Analysis, Containment, Eradication, Recovery, Lessons Learned"},
+            {"id": "b", "text": "Attack, Defense, Recovery"},
+            {"id": "c", "text": "Report, Fix, Deploy"},
+            {"id": "d", "text": "Identify, Prevent, Monitor"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "The incident response lifecycle includes detection, analysis, containment, eradication, recovery, and post-incident review.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q10-2",
+          "question": "What is an incident response plan?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "A document describing how to respond to security incidents"},
+            {"id": "b", "text": "A list of all security controls"},
+            {"id": "c", "text": "A firewall configuration"},
+            {"id": "d", "text": "A backup system"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "An incident response plan documents procedures, roles, and responsibilities for responding to security incidents effectively.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q10-3",
+          "question": "What is business continuity planning?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Planning for business growth"},
+            {"id": "b", "text": "Ensuring critical business functions can continue after a disruption"},
+            {"id": "c", "text": "Planning for employee training"},
+            {"id": "d", "text": "Planning for new product launches"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Business continuity planning ensures that critical business functions can continue or be quickly restored after a security incident or disaster.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q10-4",
+          "question": "What is a Recovery Time Objective (RTO)?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "The maximum acceptable downtime for a system"},
+            {"id": "b", "text": "The time it takes to fix a bug"},
+            {"id": "c", "text": "The time between backups"},
+            {"id": "d", "text": "The time to detect an attack"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "RTO is the maximum acceptable time that a system can be down before it impacts business operations significantly.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "quiz-11",
+      "sectionId": 11,
+      "title": "Security Risk Assessment",
+      "description": "Assess your understanding of risk assessment methodologies",
+      "questions": [
+        {
+          "id": "q11-1",
+          "question": "What is risk assessment?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Identifying and evaluating potential security threats and vulnerabilities"},
+            {"id": "b", "text": "Implementing all security controls"},
+            {"id": "c", "text": "Purchasing security products"},
+            {"id": "d", "text": "Hiring security staff"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "Risk assessment is the process of identifying threats, vulnerabilities, and their potential impact to determine where to focus security efforts.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q11-2",
+          "question": "What is the risk formula?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Risk = Threat × Vulnerability × Impact"},
+            {"id": "b", "text": "Risk = Threat + Vulnerability"},
+            {"id": "c", "text": "Risk = Impact ÷ Controls"},
+            {"id": "d", "text": "Risk = Probability × Impact"}
+          ],
+          "correctAnswer": "d",
+          "explanation": "Risk is typically calculated as the probability of a threat occurring multiplied by the potential impact if it does occur.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q11-3",
+          "question": "What is a vulnerability?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "A potential threat to the system"},
+            {"id": "b", "text": "A weakness that could be exploited by a threat"},
+            {"id": "c", "text": "An attack method"},
+            {"id": "d", "text": "A security control"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "A vulnerability is a weakness in a system that could be exploited by a threat actor to cause harm.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q11-4",
+          "question": "What is risk mitigation?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Eliminating all risks"},
+            {"id": "b", "text": "Reducing the likelihood or impact of risks"},
+            {"id": "c", "text": "Ignoring risks"},
+            {"id": "d", "text": "Transferring risks to another organization"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Risk mitigation involves taking actions to reduce either the probability of a risk occurring or its potential impact.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "quiz-12",
+      "sectionId": 12,
+      "title": "Compliance and Governance",
+      "description": "Test your knowledge of compliance frameworks and governance",
+      "questions": [
+        {
+          "id": "q12-1",
+          "question": "What is compliance?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Following all security best practices"},
+            {"id": "b", "text": "Adhering to applicable laws, regulations, and standards"},
+            {"id": "c", "text": "Implementing the most expensive security controls"},
+            {"id": "d", "text": "Having no security incidents"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Compliance means meeting the requirements of applicable laws, regulations, standards, and policies.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q12-2",
+          "question": "What is governance?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Managing IT systems"},
+            {"id": "b", "text": "The framework for making decisions and managing risk"},
+            {"id": "c", "text": "Writing security policies"},
+            {"id": "d", "text": "Implementing security controls"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Governance is the framework for decision-making, risk management, and accountability in an organization.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q12-3",
+          "question": "What is a security policy?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "A document describing how to implement security controls"},
+            {"id": "b", "text": "A set of rules and guidelines for security"},
+            {"id": "c", "text": "A list of all threats"},
+            {"id": "d", "text": "A type of firewall"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "A security policy is a set of rules and guidelines that define how an organization will protect its assets and manage security.",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "quiz-13",
+      "sectionId": 13,
+      "title": "Secure Communication and Data Protection",
+      "description": "Evaluate your understanding of communication security and data protection",
+      "questions": [
+        {
+          "id": "q13-1",
+          "question": "What is encryption?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Converting data into a format that cannot be understood without a key"},
+            {"id": "b", "text": "Deleting sensitive data"},
+            {"id": "c", "text": "Backing up data"},
+            {"id": "d", "text": "Sharing data securely"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "Encryption converts readable data into an unreadable format using a key, protecting it from unauthorized access.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q13-2",
+          "question": "What is the difference between symmetric and asymmetric encryption?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Symmetric is faster; asymmetric is more secure"},
+            {"id": "b", "text": "Symmetric uses one key; asymmetric uses two keys"},
+            {"id": "c", "text": "They are the same"},
+            {"id": "d", "text": "Asymmetric is used for passwords only"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Symmetric encryption uses one shared key, while asymmetric encryption uses a pair of keys (public and private).",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q13-3",
+          "question": "What is a digital signature?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "An electronic version of a handwritten signature"},
+            {"id": "b", "text": "A cryptographic technique to verify authenticity and integrity"},
+            {"id": "c", "text": "A password"},
+            {"id": "d", "text": "A type of encryption"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "A digital signature uses cryptography to verify that a message is authentic and has not been altered.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q13-4",
+          "question": "What is data classification?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Organizing data by size"},
+            {"id": "b", "text": "Categorizing data based on sensitivity and protection requirements"},
+            {"id": "c", "text": "Deleting unnecessary data"},
+            {"id": "d", "text": "Backing up all data"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Data classification involves categorizing data based on its sensitivity level to determine appropriate protection measures.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "quiz-14",
+      "sectionId": 14,
+      "title": "Monitoring and Threat Detection",
+      "description": "Test your knowledge of security monitoring and threat detection",
+      "questions": [
+        {
+          "id": "q14-1",
+          "question": "What is a Security Information and Event Management (SIEM) system?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "A system that collects and analyzes security logs and events"},
+            {"id": "b", "text": "A firewall"},
+            {"id": "c", "text": "An antivirus program"},
+            {"id": "d", "text": "A backup system"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "A SIEM system collects security logs from various sources, correlates events, and helps detect security incidents.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q14-2",
+          "question": "What is intrusion detection?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Preventing all attacks"},
+            {"id": "b", "text": "Identifying suspicious activity that may indicate an attack"},
+            {"id": "c", "text": "Removing malware"},
+            {"id": "d", "text": "Blocking all network traffic"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Intrusion detection involves monitoring systems and networks to identify suspicious activity that may indicate an attack.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q14-3",
+          "question": "What is the difference between IDS and IPS?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "IDS detects attacks; IPS prevents them"},
+            {"id": "b", "text": "They are the same"},
+            {"id": "c", "text": "IPS is older technology"},
+            {"id": "d", "text": "IDS is for networks; IPS is for hosts"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "IDS (Intrusion Detection System) detects attacks, while IPS (Intrusion Prevention System) can both detect and block attacks.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q14-4",
+          "question": "What is anomaly detection?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Detecting unusual patterns that may indicate an attack"},
+            {"id": "b", "text": "Detecting all network traffic"},
+            {"id": "c", "text": "Detecting system errors"},
+            {"id": "d", "text": "Detecting user logins"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "Anomaly detection identifies unusual patterns or behaviors that deviate from normal, which may indicate a security threat.",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "quiz-15",
+      "sectionId": 15,
+      "title": "Future Trends and Advanced Topics",
+      "description": "Assess your understanding of emerging trends in IACS security",
+      "questions": [
+        {
+          "id": "q15-1",
+          "question": "What is the Internet of Things (IoT)?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "A network of internet-connected devices"},
+            {"id": "b", "text": "A type of malware"},
+            {"id": "c", "text": "A security protocol"},
+            {"id": "d", "text": "A firewall"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "IoT refers to the network of physical devices, sensors, and systems connected to the internet, which introduces new security challenges.",
+          "difficulty": "easy"
+        },
+        {
+          "id": "q15-2",
+          "question": "What are the security challenges of cloud computing?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Loss of control over data and systems"},
+            {"id": "b", "text": "Shared infrastructure risks"},
+            {"id": "c", "text": "Compliance and regulatory challenges"},
+            {"id": "d", "text": "All of the above"}
+          ],
+          "correctAnswer": "d",
+          "explanation": "Cloud computing introduces multiple security challenges including loss of control, shared infrastructure risks, and compliance issues.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q15-3",
+          "question": "What is artificial intelligence (AI) in cybersecurity?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Using machine learning to detect threats and automate responses"},
+            {"id": "b", "text": "A type of malware"},
+            {"id": "c", "text": "A firewall"},
+            {"id": "d", "text": "A backup system"}
+          ],
+          "correctAnswer": "a",
+          "explanation": "AI and machine learning can help detect threats faster, identify patterns, and automate security responses.",
+          "difficulty": "medium"
+        },
+        {
+          "id": "q15-4",
+          "question": "What is zero trust security?",
+          "type": "multiple-choice",
+          "options": [
+            {"id": "a", "text": "Trusting all users and devices"},
+            {"id": "b", "text": "Never trusting any user or device; verifying everything"},
+            {"id": "c", "text": "Having no security"},
+            {"id": "d", "text": "Using only firewalls"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Zero trust security means never automatically trusting any user or device, regardless of location. All access must be verified.",
+          "difficulty": "medium"
+        }
+      ]
+    }
+  ]
+}
