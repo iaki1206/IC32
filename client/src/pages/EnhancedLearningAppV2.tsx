@@ -14,8 +14,10 @@ import GlobalSearch from "@/components/GlobalSearch";
 import BookmarksPanel from "@/components/BookmarksPanel";
 import { useBookmarks } from "@/hooks/useBookmarks";
 import { useQuizProgress } from "@/hooks/useQuizProgress";
-import enhancedCourseData from "@/data/enhancedCourseData.json";
+import completeCourseData from "@/data/completeCourseData.json";
 import quizData from "@/data/quizData.json";
+
+const enhancedCourseData = completeCourseData;
 
 export default function EnhancedLearningAppV2() {
   const [currentPage, setCurrentPage] = useState<"sections" | "models" | "goals" | "quiz" | "bookmarks">("sections");
@@ -224,15 +226,15 @@ export default function EnhancedLearningAppV2() {
                   </p>
                 </Card>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {enhancedCourseData.course.goals.map((goal) => (
-                    <Card key={goal.id} className="p-4 hover:shadow-lg transition-shadow">
+                  {enhancedCourseData.sections.slice(0, 10).map((section, idx) => (
+                    <Card key={section.id} className="p-4 hover:shadow-lg transition-shadow">
                       <div className="flex gap-3">
                         <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-600">
-                          {goal.id}
+                          {idx + 1}
                         </div>
                         <div className="flex-1">
-                          <h3 className="font-semibold text-gray-900">{goal.title}</h3>
-                          <p className="text-sm text-gray-600 mt-2">{goal.description}</p>
+                          <h3 className="font-semibold text-gray-900">{section.title}</h3>
+                          <p className="text-sm text-gray-600 mt-2">{section.description}</p>
                         </div>
                       </div>
                     </Card>
