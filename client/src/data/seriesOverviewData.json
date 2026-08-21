@@ -1,0 +1,242 @@
+{
+  "documentTypes": [
+    {
+      "code": "Standard",
+      "name": "Standard (Normative)",
+      "description": "Document oficial aprobat (ANSI/ISA sau IEC) care conține cerințe normative obligatorii pe care sistemele, componentele sau programele trebuie să le îndeplinească pentru a asigura securitatea cibernetică în IACS.",
+      "beginnerExplanation": "Gândește-te la un standard ca la o **lege sau regulă oficială** pe care o companie sau un producător *trebuie* să o respecte dacă vrea să fie certificată sau să demonstreze că sistemul său este sigur."
+    },
+    {
+      "code": "TS",
+      "name": "Technical Specification (TS)",
+      "description": "Specificație Tehnică. Conține specificații tehnice sau metodologii care sunt în curs de dezvoltare sau care oferă o îndrumare tehnică detaliată într-un domeniu în care tehnologia evoluează rapid.",
+      "beginnerExplanation": "O **Specificație Tehnică (TS)** este ca un ghid tehnic avansat sau un set de specificații de design pe care experții le folosesc înainte ca acestea să devină un standard complet fixat în piatră."
+    },
+    {
+      "code": "TR/TS",
+      "name": "Technical Report / Technical Specification (TR/TS)",
+      "description": "Raport Tehnic / Specificație Tehnică. Oferă informații informative, studii de caz, metodologii explicative sau bune practici care ajută la înțelegerea și aplicarea standardelor.",
+      "beginnerExplanation": "Un **Raport Tehnic (TR)** nu conține reguli obligatorii de tip «trebuie», ci mai degrabă explicații, exemple din viața reală și **bune practici** care îți arată *cum* să aplici standardele în mod practic."
+    },
+    {
+      "code": "PAS",
+      "name": "Publicly Available Specification (PAS)",
+      "description": "Specificație Disponibilă Public. Un document publicat rapid pentru a răspunde unei nevoi urgente din industrie înainte ca procesul complet de standardizare (care durează ani) să se finalizeze.",
+      "beginnerExplanation": "O **PAS (Publicly Available Specification)** este o soluție de urgență sau un standard scos pe piață rapid pentru că industria avea nevoie imediată de el (de exemplu, o metodă de notare a securității cum este PAS 62443-2-2)."
+    }
+  ],
+  "categories": [
+    {
+      "id": "general",
+      "name": "General Group",
+      "color": "bg-blue-500",
+      "lightColor": "bg-blue-50 border-blue-200 text-blue-900",
+      "description": "Includes documents that address topics common to the entire series (Terminology, concepts, models, metrics, and lifecycle).",
+      "summary": "Grupul General pune bazele teoretice ale întregii serii. Aici învățăm termenii cheie, glosarul oficial, modelul Purdue, modelul Zone & Conduit și Ciclul de Viață IACS.",
+      "items": [
+        {
+          "code": "TS 62443-1-1",
+          "title": "Concepts and models",
+          "type": "TS",
+          "status": "Published",
+          "description": "Introduces the terminology, concepts and models used throughout the series.",
+          "beginnerExplanation": "Explică conceptele de bază și modelele fundamentale (cum ar fi modelul Purdue și zonele de securitate) pentru cei care sunt la început."
+        },
+        {
+          "code": "62443-1-2",
+          "title": "Master glossary of terms and abbreviations",
+          "type": "Standard",
+          "status": "Published",
+          "description": "Terms and abbreviations used throughout the series.",
+          "beginnerExplanation": "Dicționarul oficial al cursului. Conține toți termenii și prescurtările folosite în standarde."
+        },
+        {
+          "code": "62443-1-3",
+          "title": "System security conformance metrics",
+          "type": "Standard",
+          "status": "Published",
+          "description": "Methodology to develop quantitative metrics derived from process and technical requirements.",
+          "beginnerExplanation": "Oferă metode matematice și cantitative pentru a măsura cât de sigur este un sistem industrial."
+        },
+        {
+          "code": "TR/TS 62443-1-4",
+          "title": "IACS security lifecycle and use-cases",
+          "type": "TR/TS",
+          "status": "Published",
+          "description": "Lifecycle for IACS security, as well as several use cases illustrating various applications.",
+          "beginnerExplanation": "Prezintă ciclul de viață al securității cibernetice și studii de caz practice care arată cum se aplică în fabrici și uzine."
+        },
+        {
+          "code": "TR/TS 62443-1-5",
+          "title": "Scheme for 62443 Cyber Security Profiles",
+          "type": "TR/TS",
+          "status": "Published",
+          "description": "Specifies a scheme for defining (selecting, writing, drafting) security profiles.",
+          "beginnerExplanation": "Ghid pentru crearea profilurilor de securitate adaptate pe industrii specifice (energie, apă, petrol și gaze)."
+        },
+        {
+          "code": "TR/TS 62443-1-6",
+          "title": "Application of 62443 in IIoT",
+          "type": "TR/TS",
+          "status": "Not yet published",
+          "description": "Describes how the ISA/IEC standard can be applied in Industrial Internet of Things (IIoT) architecture.",
+          "beginnerExplanation": "Arată cum se aplică standardele în era dispozitivelor conectate la internet (IIoT - Industrial IoT) și senzori inteligenți."
+        }
+      ]
+    },
+    {
+      "id": "policies",
+      "name": "Policies & Procedures",
+      "color": "bg-emerald-500",
+      "lightColor": "bg-emerald-50 border-emerald-200 text-emerald-900",
+      "description": "Focuses on the policies and procedures associated with IACS security (Programs, patch management, service providers).",
+      "summary": "Grupul de Politici și Proceduri se adresează managementului și administratorilor. Definește cum se construiește un program de securitate, cum se gestionează patch-urile și ce reguli trebuie să respecte furnizorii de servicii.",
+      "items": [
+        {
+          "code": "62443-2-1",
+          "title": "Security program requirements for IACS asset owners",
+          "type": "Standard",
+          "status": "Published",
+          "description": "Describes requirements to define and implement an effective IACS Security Program.",
+          "beginnerExplanation": "Cel mai important document pentru deținătorii de active (fabrici/uzine). Explică pas cu pas cum să creezi un program intern de securitate cibernetică."
+        },
+        {
+          "code": "PAS 62443-2-2",
+          "title": "Security protection rating",
+          "type": "PAS",
+          "status": "Published",
+          "description": "Methodology for evaluating the level of protection provided by an operational IACS.",
+          "beginnerExplanation": "O specificație publicată rapid (PAS) care oferă o metodă clară de notare și evaluare a nivelului de protecție al unei instalații industriale."
+        },
+        {
+          "code": "TR/TS 62443-2-3",
+          "title": "Patch management in the IACS environment",
+          "type": "TR/TS",
+          "status": "Published",
+          "description": "Provides guidance on patch management for IACS environments.",
+          "beginnerExplanation": "Ghid esențial despre cum să aplici actualizări de software (patch-uri) pe sistemele industriale fără să oprești producția sau să provoci avarii."
+        },
+        {
+          "code": "62443-2-4",
+          "title": "Requirements for IACS service providers",
+          "type": "Standard",
+          "status": "Published",
+          "description": "Requirements for IACS service providers such as system integrators or maintenance providers.",
+          "beginnerExplanation": "Stabilește cerințele obligatorii pentru companiile terțe care vin să instaleze, întrețină sau repare echipamentele dintr-o uzină."
+        },
+        {
+          "code": "TR/TS 62443-2-5",
+          "title": "Implementation guidance for IACS asset owners",
+          "type": "TR/TS",
+          "status": "Published",
+          "description": "Guidance on what is required to operate an effective IACS Security Program in practice.",
+          "beginnerExplanation": "Sfaturi practice și exemple prietenoase pentru inginerii care trebuie să implementeze programul de securitate 62443-2-1 în viața de zi cu zi."
+        }
+      ]
+    },
+    {
+      "id": "system",
+      "name": "System Group",
+      "color": "bg-amber-500",
+      "lightColor": "bg-amber-50 border-amber-200 text-amber-900",
+      "description": "Addresses requirements at the system level (Technologies, risk assessment, security levels).",
+      "summary": "Grupul de Sisteme se concentrează pe arhitectura generală a sistemului industrial, evaluarea riscurilor (Risk Assessment) și stabilirea Nivelurilor de Securitate (Security Levels - SL).",
+      "items": [
+        {
+          "code": "TR/TS 62443-3-1",
+          "title": "Security technologies for IACS",
+          "type": "TR/TS",
+          "status": "Published",
+          "description": "Application of various security technologies (firewalls, antivirus, encryption) to an IACS environment.",
+          "beginnerExplanation": "Explică cum funcționează tehnologiile IT clasice (antivirus, criptare, firewall-uri) atunci când sunt mutate în mediul industrial."
+        },
+        {
+          "code": "62443-3-2",
+          "title": "Security risk assessment and system design",
+          "type": "Standard",
+          "status": "Published",
+          "description": "Addresses cybersecurity risk assessment and system design. Outputs Zone & Conduit model.",
+          "beginnerExplanation": "Ghidul principal pentru realizarea analizei de risc și împărțirea uzinei în **Zone și Canale (Conduits)** încă din faza de proiectare."
+        },
+        {
+          "code": "62443-3-3",
+          "title": "System security requirements and security levels",
+          "type": "Standard",
+          "status": "Published",
+          "description": "Requirements for an IACS system based on security level (SL 1 to SL 4).",
+          "beginnerExplanation": "Definește exact ce cerințe tehnice trebuie să îndeplinească sistemul industrial pentru a obține Nivelul de Securitate dorit (SL 1, SL 2, SL 3 sau SL 4)."
+        }
+      ]
+    },
+    {
+      "id": "component",
+      "name": "Component Group",
+      "color": "bg-yellow-500",
+      "lightColor": "bg-yellow-50 border-yellow-200 text-yellow-900",
+      "description": "Provides requirements associated with the development of IACS products (Embedded devices, hosts, software).",
+      "summary": "Grupul de Componente se adresează producătorilor de echipamente (PLC-uri, senzori, actuatoare, software SCADA). Explică cum se construiește un produs sigur de la zero.",
+      "items": [
+        {
+          "code": "62443-4-1",
+          "title": "Secure product development lifecycle requirements",
+          "type": "Standard",
+          "status": "Published",
+          "description": "Requirements on the secure development lifecycle for products used in IACS.",
+          "beginnerExplanation": "Reguli stricte pentru producători privind modul în care scriu codul software și testează dispozitivele înainte de a le vinde pe piață."
+        },
+        {
+          "code": "62443-4-2",
+          "title": "Technical security requirements for IACS components",
+          "type": "Standard",
+          "status": "Published",
+          "description": "Technical security requirements for components (embedded devices, host components, software applications).",
+          "beginnerExplanation": "Cerințe tehnice directe pentru echipamentele fizice (de exemplu, un PLC trebuie să suporte criptare și autentificare robustă)."
+        }
+      ]
+    },
+    {
+      "id": "profiles",
+      "name": "Profiles Group",
+      "color": "bg-slate-500",
+      "lightColor": "bg-slate-50 border-slate-200 text-slate-900",
+      "description": "Planned to contain Profiles for specific domains / areas of interest based on 62443-1-5.",
+      "summary": "Grupul de Profiluri conține standarde adaptate pentru sectoare industriale specifice (ex: energie nucleară, transporturi, farmaceutică, maritime).",
+      "items": [
+        {
+          "code": "62443-5-x",
+          "title": "Profile x (Domain Specific)",
+          "type": "Standard",
+          "status": "Planned",
+          "description": "Profiles for specific industrial domains and sectors based on 62443-1-5 framework.",
+          "beginnerExplanation": "Profiluri personalizate pe industrii. În loc să aplici tot standardul general, folosești un profil exact pentru sectorul tău (ex: energie electrică)."
+        }
+      ]
+    },
+    {
+      "id": "evaluation",
+      "name": "Evaluation Group",
+      "color": "bg-purple-500",
+      "lightColor": "bg-purple-50 border-purple-200 text-purple-900",
+      "description": "Supports evaluators in performing conformity assessments and security evaluations.",
+      "summary": "Grupul de Evaluare oferă metodologii pentru auditori și organisme de certificare care verifică dacă o uzină sau un produs respectă cu adevărat standardul ISA/IEC 62443.",
+      "items": [
+        {
+          "code": "TR/TS 62443-6-1",
+          "title": "Security evaluation methodology for 62443-2-4",
+          "type": "TR/TS",
+          "status": "Published",
+          "description": "Methodology for evaluating service providers against 62443-2-4 requirements.",
+          "beginnerExplanation": "Ghid pentru auditori despre cum să verifice dacă un furnizor de servicii respectă standardul 62443-2-4."
+        },
+        {
+          "code": "TR/TS 62443-6-2",
+          "title": "Security evaluation methodology for 62443-4-2",
+          "type": "TR/TS",
+          "status": "Published",
+          "description": "Methodology for evaluating security of components against 62443-4-2 requirements.",
+          "beginnerExplanation": "Ghid pentru testarea și certificarea dispozitivelor industriale (cum ar fi senzori sau PLC-uri) conform cerințelor de securitate."
+        }
+      ]
+    }
+  ]
+}

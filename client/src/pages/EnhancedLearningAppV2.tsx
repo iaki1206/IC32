@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Menu, X, BookOpen, Brain, Target, FileText, Bookmark } from "lucide-react";
+import { Menu, X, BookOpen, Brain, Target, FileText, Bookmark, Layers } from "lucide-react";
 import EnhancedSidebar from "@/components/EnhancedSidebar";
 import EnhancedContentPanel from "@/components/EnhancedContentPanel";
 import InteractiveMindmap, {
@@ -12,6 +12,7 @@ import InteractiveMindmap, {
 import QuizComponent from "@/components/QuizComponent";
 import GlobalSearch from "@/components/GlobalSearch";
 import BookmarksPanel from "@/components/BookmarksPanel";
+import SeriesOverview from "@/components/SeriesOverview";
 import { useBookmarks } from "@/hooks/useBookmarks";
 import { useQuizProgress } from "@/hooks/useQuizProgress";
 import completeCourseData from "@/data/completeCourseData.json";
@@ -20,7 +21,7 @@ import quizData from "@/data/quizData.json";
 const enhancedCourseData = completeCourseData;
 
 export default function EnhancedLearningAppV2() {
-  const [currentPage, setCurrentPage] = useState<"sections" | "models" | "goals" | "quiz" | "bookmarks">("sections");
+  const [currentPage, setCurrentPage] = useState<"sections" | "series" | "models" | "goals" | "quiz" | "bookmarks">("sections");
   const [selectedSection, setSelectedSection] = useState(enhancedCourseData.sections[0]);
   const [selectedTopic, setSelectedTopic] = useState<any>(enhancedCourseData.sections[0].topics[0]);
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -106,6 +107,15 @@ export default function EnhancedLearningAppV2() {
                 Sections
               </Button>
               <Button
+                variant={currentPage === "series" ? "default" : "outline"}
+                onClick={() => setCurrentPage("series")}
+                size="sm"
+                className="gap-2"
+              >
+                <Layers className="w-4 h-4" />
+                62443 Series
+              </Button>
+              <Button
                 variant={currentPage === "models" ? "default" : "outline"}
                 onClick={() => setCurrentPage("models")}
                 size="sm"
@@ -188,6 +198,12 @@ export default function EnhancedLearningAppV2() {
                   rootNode={createPurdueModelMindmap()}
                 />
               </div>
+            </div>
+          )}
+
+          {currentPage === "series" && (
+            <div className="h-full overflow-y-auto">
+              <SeriesOverview />
             </div>
           )}
 
