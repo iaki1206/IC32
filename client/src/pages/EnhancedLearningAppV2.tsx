@@ -219,7 +219,22 @@ export default function EnhancedLearningAppV2() {
 
           {currentPage === "roles" && (
             <div className="h-full overflow-y-auto">
-              <PartsPerRoleView />
+              <PartsPerRoleView
+                onNavigateToSection={(sectionId) => {
+                  const section = enhancedCourseData.sections.find((s) => s.id === sectionId);
+                  if (section) {
+                    handleSelectSection(section);
+                    setCurrentPage("sections");
+                  }
+                }}
+                onNavigateToQuiz={(quizId) => {
+                  const quiz = quizData.quizzes.find((q) => q.id === quizId);
+                  if (quiz) {
+                    setSelectedQuiz(quiz);
+                    setCurrentPage("quiz");
+                  }
+                }}
+              />
             </div>
           )}
 

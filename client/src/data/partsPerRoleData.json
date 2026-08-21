@@ -105,97 +105,161 @@
       "code": "62443-1-1",
       "title": "Concepts and models",
       "category": "General",
-      "explanation": "Universal terminology, concepts, and foundational models (such as the Purdue Reference Model and security zones) required by all stakeholders."
+      "securityLevel": "SL 1-4",
+      "explanation": "Universal terminology, concepts, and foundational models (such as the Purdue Reference Model and security zones) required by all stakeholders.",
+      "linkedSectionId": 3,
+      "linkedSectionTitle": "ISA/IEC 62443 Series",
+      "linkedQuizId": "quiz-1"
     },
     "62443-1-3": {
       "code": "62443-1-3",
       "title": "System security conformance metrics",
       "category": "General",
-      "explanation": "Quantitative security metrics derived from process and technical requirements for asset owners and suppliers."
+      "securityLevel": "SL 1-3",
+      "explanation": "Quantitative security metrics derived from process and technical requirements for asset owners and suppliers.",
+      "linkedSectionId": 3,
+      "linkedSectionTitle": "ISA/IEC 62443 Series",
+      "linkedQuizId": "quiz-1"
     },
     "62443-1-5": {
       "code": "62443-1-5",
       "title": "Scheme for 62443 Cyber Security Profiles",
       "category": "Profiles",
-      "explanation": "Framework for defining and tailoring security profiles across industrial sectors."
+      "securityLevel": "SL 1-4",
+      "explanation": "Framework for defining and tailoring security profiles across industrial sectors.",
+      "linkedSectionId": 11,
+      "linkedSectionTitle": "Security Profiles for ISA 62443",
+      "linkedQuizId": "quiz-3"
     },
     "62443-2-1": {
       "code": "62443-2-1",
       "title": "Security programme requirements for IACS asset owners",
       "category": "Policies & Procedures",
-      "explanation": "Core requirements for asset owners to define and implement an effective IACS security programme."
+      "securityLevel": "SL 1-4",
+      "explanation": "Core requirements for asset owners to define and implement an effective IACS security programme.",
+      "linkedSectionId": 6,
+      "linkedSectionTitle": "Security Requirements for IACS Asset Owners",
+      "linkedQuizId": "quiz-2"
     },
     "62443-2-2": {
       "code": "62443-2-2",
       "title": "Security protection rating",
       "category": "Policies & Procedures",
-      "explanation": "Methodology for evaluating the protection level of operational IACS against 62443 requirements."
+      "securityLevel": "SL 1-3",
+      "explanation": "Methodology for evaluating the protection level of operational IACS against 62443 requirements.",
+      "linkedSectionId": 6,
+      "linkedSectionTitle": "Security Requirements for IACS Asset Owners",
+      "linkedQuizId": "quiz-2"
     },
     "62443-2-3": {
       "code": "62443-2-3",
       "title": "Patch management in the IACS environment",
       "category": "Policies & Procedures",
-      "explanation": "Guidance on safely applying software and firmware patches in industrial control environments."
+      "securityLevel": "SL 1-2",
+      "explanation": "Guidance on safely applying software and firmware patches in industrial control environments.",
+      "linkedSectionId": 10,
+      "linkedSectionTitle": "Introduction to Patch Management",
+      "linkedQuizId": "quiz-3"
     },
     "62443-2-4": {
       "code": "62443-2-4",
       "title": "Requirements for IACS service providers",
       "category": "Policies & Procedures",
-      "explanation": "Mandatory requirements for third-party service providers, system integrators, and maintenance vendors."
+      "securityLevel": "SL 1-3",
+      "explanation": "Mandatory requirements for third-party service providers, system integrators, and maintenance vendors.",
+      "linkedSectionId": 12,
+      "linkedSectionTitle": "Security Programme Requirements for IACS Service Providers",
+      "linkedQuizId": "quiz-3"
     },
     "62443-3-2": {
       "code": "62443-3-2",
       "title": "Security risk assessment and system design",
       "category": "System",
-      "explanation": "Risk assessment methodology outputting the Zone & Conduit model and Target Security Levels."
+      "securityLevel": "SL 1-4",
+      "explanation": "Risk assessment methodology outputting the Zone & Conduit model and Target Security Levels.",
+      "linkedSectionId": 11,
+      "linkedSectionTitle": "Security Risk Assessment for System Design",
+      "linkedQuizId": "quiz-3"
     },
     "62443-3-3": {
       "code": "62443-3-3",
       "title": "System security requirements and security levels",
       "category": "System",
-      "explanation": "System-level technical requirements and Security Levels (SL 1 to SL 4) for integrated IACS architectures."
+      "securityLevel": "SL 1-4",
+      "explanation": "System-level technical requirements and Security Levels (SL 1 to SL 4) for integrated IACS architectures.",
+      "linkedSectionId": 4,
+      "linkedSectionTitle": "Models & Security Levels",
+      "linkedQuizId": "quiz-2"
     },
     "62443-4-1": {
       "code": "62443-4-1",
       "title": "Secure product development lifecycle requirements",
       "category": "Component",
-      "explanation": "Mandatory secure lifecycle practices for product manufacturers building industrial control devices."
+      "securityLevel": "SL 1-4",
+      "explanation": "Mandatory secure lifecycle practices for product manufacturers building industrial control devices.",
+      "linkedSectionId": 13,
+      "linkedSectionTitle": "Developing Secure Products & Services",
+      "linkedQuizId": "quiz-4"
     },
     "62443-4-2": {
       "code": "62443-4-2",
       "title": "Technical security requirements for IACS components",
       "category": "Component",
-      "explanation": "Technical security requirements for embedded devices, host devices, network components, and software applications."
+      "securityLevel": "SL 1-4",
+      "explanation": "Technical security requirements for embedded devices, host devices, network components, and software applications.",
+      "linkedSectionId": 13,
+      "linkedSectionTitle": "Developing Secure Products & Services",
+      "linkedQuizId": "quiz-4"
     },
     "62443-5-1": {
       "code": "62443-5-1",
       "title": "Security Profile - Electric Energy OT",
       "category": "Profiles",
-      "explanation": "Specific security profile tailoring 62443 standards for the electric power and energy sector."
+      "securityLevel": "SL 2-4",
+      "explanation": "Specific security profile tailoring 62443 standards for the electric power and energy sector.",
+      "linkedSectionId": 14,
+      "linkedSectionTitle": "Security Profiles for ISA 62443",
+      "linkedQuizId": "quiz-4"
     },
     "62443-5-2": {
       "code": "62443-5-2",
       "title": "Security Profile - Oil & Gas",
       "category": "Profiles",
-      "explanation": "Specific security profile for oil and gas upstream, midstream, and downstream operations."
+      "securityLevel": "SL 2-4",
+      "explanation": "Specific security profile for oil and gas upstream, midstream, and downstream operations.",
+      "linkedSectionId": 14,
+      "linkedSectionTitle": "Security Profiles for ISA 62443",
+      "linkedQuizId": "quiz-4"
     },
     "62443-5-n": {
       "code": "62443-5-n",
       "title": "Other Industry Profiles",
       "category": "Profiles",
-      "explanation": "Framework for future sector-specific profiles (chemical, water, manufacturing)."
+      "securityLevel": "SL 1-3",
+      "explanation": "Framework for future sector-specific profiles (chemical, water, manufacturing).",
+      "linkedSectionId": 14,
+      "linkedSectionTitle": "Security Profiles for ISA 62443",
+      "linkedQuizId": "quiz-4"
     },
     "62443-6-1": {
       "code": "62443-6-1",
       "title": "Security evaluation methodology for 62443-2-4",
       "category": "Evaluation",
-      "explanation": "Evaluation methodology for auditing service providers against 62443-2-4."
+      "securityLevel": "SL 1-3",
+      "explanation": "Evaluation methodology for auditing service providers against 62443-2-4.",
+      "linkedSectionId": 12,
+      "linkedSectionTitle": "Security Programme Requirements for IACS Service Providers",
+      "linkedQuizId": "quiz-4"
     },
     "62443-6-2": {
       "code": "62443-6-2",
       "title": "Security evaluation methodology for components",
       "category": "Evaluation",
-      "explanation": "Testing methodology for independent test labs to evaluate components against 62443-4-2."
+      "securityLevel": "SL 1-4",
+      "explanation": "Testing methodology for independent test labs to evaluate components against 62443-4-2.",
+      "linkedSectionId": 13,
+      "linkedSectionTitle": "Developing Secure Products & Services",
+      "linkedQuizId": "quiz-4"
     }
   },
   "alignmentPhases": [
