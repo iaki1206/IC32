@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Menu, X, BookOpen, Brain, Target, FileText, Bookmark, Layers } from "lucide-react";
+import { Menu, X, BookOpen, Brain, Target, FileText, Bookmark, Layers, Users, Shield } from "lucide-react";
 import EnhancedSidebar from "@/components/EnhancedSidebar";
 import EnhancedContentPanel from "@/components/EnhancedContentPanel";
 import InteractiveMindmap, {
@@ -13,6 +13,7 @@ import QuizComponent from "@/components/QuizComponent";
 import GlobalSearch from "@/components/GlobalSearch";
 import BookmarksPanel from "@/components/BookmarksPanel";
 import SeriesOverview from "@/components/SeriesOverview";
+import PartsPerRoleView from "@/components/PartsPerRoleView";
 import { useBookmarks } from "@/hooks/useBookmarks";
 import { useQuizProgress } from "@/hooks/useQuizProgress";
 import completeCourseData from "@/data/completeCourseData.json";
@@ -21,7 +22,7 @@ import quizData from "@/data/quizData.json";
 const enhancedCourseData = completeCourseData;
 
 export default function EnhancedLearningAppV2() {
-  const [currentPage, setCurrentPage] = useState<"sections" | "series" | "models" | "goals" | "quiz" | "bookmarks">("sections");
+  const [currentPage, setCurrentPage] = useState<"sections" | "series" | "roles" | "models" | "goals" | "quiz" | "bookmarks">("sections");
   const [selectedSection, setSelectedSection] = useState(enhancedCourseData.sections[0]);
   const [selectedTopic, setSelectedTopic] = useState<any>(enhancedCourseData.sections[0].topics[0]);
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -116,6 +117,15 @@ export default function EnhancedLearningAppV2() {
                 62443 Series
               </Button>
               <Button
+                variant={currentPage === "roles" ? "default" : "outline"}
+                onClick={() => setCurrentPage("roles")}
+                size="sm"
+                className="gap-2"
+              >
+                <Users className="w-4 h-4" />
+                Parts per Role & Alignment
+              </Button>
+              <Button
                 variant={currentPage === "models" ? "default" : "outline"}
                 onClick={() => setCurrentPage("models")}
                 size="sm"
@@ -169,7 +179,7 @@ export default function EnhancedLearningAppV2() {
       {/* Main Content */}
       <div className="flex-1 flex overflow-hidden">
         {/* Sidebar */}
-        {sidebarOpen && (
+        {sidebarOpen && currentPage === "sections" && (
           <div className="w-64 border-r border-gray-200 bg-white overflow-y-auto hidden lg:block">
             <EnhancedSidebar
               sections={enhancedCourseData.sections}
@@ -204,6 +214,12 @@ export default function EnhancedLearningAppV2() {
           {currentPage === "series" && (
             <div className="h-full overflow-y-auto">
               <SeriesOverview />
+            </div>
+          )}
+
+          {currentPage === "roles" && (
+            <div className="h-full overflow-y-auto">
+              <PartsPerRoleView />
             </div>
           )}
 
@@ -332,6 +348,22 @@ export default function EnhancedLearningAppV2() {
           Sections
         </Button>
         <Button
+          variant={currentPage === "series" ? "default" : "outline"}
+          onClick={() => setCurrentPage("series")}
+          size="sm"
+          className="flex-shrink-0"
+        >
+          Series
+        </Button>
+        <Button
+          variant={currentPage === "roles" ? "default" : "outline"}
+          onClick={() => setCurrentPage("roles")}
+          size="sm"
+          className="flex-shrink-0"
+        >
+          Roles & Alignment
+        </Button>
+        <Button
           variant={currentPage === "models" ? "default" : "outline"}
           onClick={() => setCurrentPage("models")}
           size="sm"
@@ -340,28 +372,12 @@ export default function EnhancedLearningAppV2() {
           Models
         </Button>
         <Button
-          variant={currentPage === "goals" ? "default" : "outline"}
-          onClick={() => setCurrentPage("goals")}
-          size="sm"
-          className="flex-shrink-0"
-        >
-          Goals
-        </Button>
-        <Button
           variant={currentPage === "quiz" ? "default" : "outline"}
           onClick={() => setCurrentPage("quiz")}
           size="sm"
           className="flex-shrink-0"
         >
           Quiz
-        </Button>
-        <Button
-          variant={currentPage === "bookmarks" ? "default" : "outline"}
-          onClick={() => setCurrentPage("bookmarks")}
-          size="sm"
-          className="flex-shrink-0"
-        >
-          Bookmarks
         </Button>
       </div>
     </div>

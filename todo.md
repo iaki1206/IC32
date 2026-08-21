@@ -11,7 +11,13 @@
 - [x] Translate remaining user-facing content into British English without changing the menu structure
 - [x] Validate TypeScript compilation and the production build
 - [x] Verify the live interface and Series Overview interaction in the browser
-- [ ] Save and deliver the British English checkpoint
+- [x] Save and deliver the British English checkpoint
+- [x] Add interactive Parts per Role data for Asset Owner, Product Supplier, and Service Provider
+- [x] Add dynamic multi-role combination logic with shared and role-specific standards
+- [x] Add interactive 62443 Alignment phases for Prevention, Detection, Response, and Recovery
+- [x] Integrate the new views into the existing navigation without changing current menus
+- [x] Validate role combinations, alignment phase switching, TypeScript, build, and browser behaviour
+- [ ] Save and deliver the Parts per Role and Alignment checkpoint
 
 ## Style Decisions
 
