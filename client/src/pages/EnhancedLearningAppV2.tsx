@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Menu, X, BookOpen, Brain, Target, FileText, Bookmark, Layers, Users, Shield } from "lucide-react";
+import { Menu, X, BookOpen, Brain, Target, FileText, Bookmark, Layers, Users, Shield, CheckCircle2 } from "lucide-react";
 import EnhancedSidebar from "@/components/EnhancedSidebar";
 import EnhancedContentPanel from "@/components/EnhancedContentPanel";
 import InteractiveMindmap, {
@@ -14,6 +14,7 @@ import GlobalSearch from "@/components/GlobalSearch";
 import BookmarksPanel from "@/components/BookmarksPanel";
 import SeriesOverview from "@/components/SeriesOverview";
 import PartsPerRoleView from "@/components/PartsPerRoleView";
+import KnowledgeCheckView from "@/components/KnowledgeCheckView";
 import { useBookmarks } from "@/hooks/useBookmarks";
 import { useQuizProgress } from "@/hooks/useQuizProgress";
 import completeCourseData from "@/data/completeCourseData.json";
@@ -22,7 +23,7 @@ import quizData from "@/data/quizData.json";
 const enhancedCourseData = completeCourseData;
 
 export default function EnhancedLearningAppV2() {
-  const [currentPage, setCurrentPage] = useState<"sections" | "series" | "roles" | "models" | "goals" | "quiz" | "bookmarks">("sections");
+  const [currentPage, setCurrentPage] = useState<"sections" | "series" | "roles" | "models" | "goals" | "quiz" | "knowledge" | "bookmarks">("sections");
   const [selectedSection, setSelectedSection] = useState(enhancedCourseData.sections[0]);
   const [selectedTopic, setSelectedTopic] = useState<any>(enhancedCourseData.sections[0].topics[0]);
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -151,6 +152,15 @@ export default function EnhancedLearningAppV2() {
               >
                 <FileText className="w-4 h-4" />
                 Quiz
+              </Button>
+              <Button
+                variant={currentPage === "knowledge" ? "default" : "outline"}
+                onClick={() => setCurrentPage("knowledge")}
+                size="sm"
+                className="gap-2"
+              >
+                <CheckCircle2 className="w-4 h-4" />
+                Knowledge Check
               </Button>
               <Button
                 variant={currentPage === "bookmarks" ? "default" : "outline"}
@@ -288,6 +298,12 @@ export default function EnhancedLearningAppV2() {
                   ))}
                 </div>
               </div>
+            </div>
+          )}
+
+          {currentPage === "knowledge" && (
+            <div className="h-full overflow-y-auto">
+              <KnowledgeCheckView />
             </div>
           )}
 

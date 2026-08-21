@@ -1,0 +1,76 @@
+{
+  "title": "Course Knowledge Checks",
+  "description": "Interactive knowledge check questions extracted directly from the ISA/IEC 62443 course materials.",
+  "questions": [
+    {
+      "id": "kc-1",
+      "number": 1,
+      "source": "Knowledge Check | 1 (Page 82)",
+      "question": "Which statement explains the purpose of the ISA/IEC 62443 series in securing Industrial Automation and Control Systems (IACS)?",
+      "options": [
+        { "letter": "A", "text": "To define a universal security framework that applies exclusively to IT networks" },
+        { "letter": "B", "text": "To provide general cybersecurity guidelines that do not require industry-specific customization" },
+        { "letter": "C", "text": "To establish a structured approach to cybersecurity tailored to industrial automation and control environments" },
+        { "letter": "D", "text": "To mandate specific technologies that all industries must use to secure IACS" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The ISA/IEC 62443 series is specifically designed to provide a flexible, structured framework tailored to industrial automation and control environments (IACS), accounting for operational safety, availability priorities, and ICS-specific architectures rather than generic IT networks or rigid technology mandates."
+    },
+    {
+      "id": "kc-2",
+      "number": 2,
+      "source": "Knowledge Check | 2 (Page 83)",
+      "question": "What is the role of the ISA99 Committee in developing the ISA/IEC 62443 series?",
+      "options": [
+        { "letter": "A", "text": "Enforces cybersecurity laws for all industrial sectors" },
+        { "letter": "B", "text": "Focuses solely on IT security and does not address industrial automation" },
+        { "letter": "C", "text": "Creates security policies for government agencies rather than private industries" },
+        { "letter": "D", "text": "Develops and maintains the ISA/IEC 62443 standards to improve IACS cybersecurity" }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The ISA99 Committee is the international consensus-based group responsible for developing, writing, and maintaining the ISA/IEC 62443 series of standards to enhance cybersecurity across industrial automation and control systems."
+    },
+    {
+      "id": "kc-3",
+      "number": 3,
+      "source": "Knowledge Check | 3 (Page 84)",
+      "question": "What is the primary distinction between an Industrial Control System (ICS) and an Industrial Automation and Control System (IACS) as described in ISA/IEC 62443?",
+      "options": [
+        { "letter": "A", "text": "IACS refers only to cybersecurity controls, while ICS includes physical safety measures" },
+        { "letter": "B", "text": "ICS is a subset of IACS, focusing mainly on hardware and software, while IACS includes people, policies, and processes" },
+        { "letter": "C", "text": "ICS focuses solely on critical infrastructure, whereas IACS applies only to manufacturing environments" },
+        { "letter": "D", "text": "IACS is exclusive to North America, while ICS is a globally recognized term" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "An Industrial Control System (ICS) typically denotes the physical hardware, software, and control equipment, whereas an Industrial Automation and Control System (IACS) encompasses the broader socio-technical ecosystem including people, operational policies, and organizational processes."
+    },
+    {
+      "id": "kc-4",
+      "number": 4,
+      "source": "Knowledge Check | 4 (Page 85)",
+      "question": "Which of the following best describes the role of ISA/IEC 62443-3-2 in IACS cybersecurity?",
+      "options": [
+        { "letter": "A", "text": "Focuses on cybersecurity risk assessment and system design, helping asset owners define security zones and conduits" },
+        { "letter": "B", "text": "Provides guidelines for cloud-based security in industrial environments" },
+        { "letter": "C", "text": "Mandates encryption standards for all industrial control networks" },
+        { "letter": "D", "text": "Describes hardware specifications required for industrial cybersecurity compliance" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "ISA/IEC 62443-3-2 provides the standard methodology for assessing cybersecurity risk, conducting risk assessments, and designing secure industrial systems through the establishment of security zones and conduits."
+    },
+    {
+      "id": "kc-5",
+      "number": 5,
+      "source": "Knowledge Check | 5 (Page 86)",
+      "question": "Why is the ISA/IEC 62443-4-1 standard critical for securing industrial control systems?",
+      "options": [
+        { "letter": "A", "text": "Specifies incident response plans for industrial cybersecurity breaches" },
+        { "letter": "B", "text": "Ensures full automation of cybersecurity processes in industrial environments" },
+        { "letter": "C", "text": "Establishes requirements for a secure product development lifecycle for control system components" },
+        { "letter": "D", "text": "Mandates immediate security patching for all industrial systems without exceptions" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "ISA/IEC 62443-4-1 defines the mandatory requirements for a secure product development lifecycle (SDLC) that product suppliers must follow when designing, developing, and maintaining industrial control components."
+    }
+  ]
+}
