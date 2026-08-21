@@ -39,7 +39,7 @@
           "options": [
             {
               "id": "a",
-              "text": "IACS systems prioritize availability over confidentiality"
+              "text": "IACS systems prioritise availability over confidentiality"
             },
             {
               "id": "b",
@@ -107,7 +107,7 @@
           "options": [
             {
               "id": "a",
-              "text": "Defense in depth strategy"
+              "text": "Defence in depth strategy"
             },
             {
               "id": "b",
@@ -123,7 +123,7 @@
             }
           ],
           "correctAnswer": "d",
-          "explanation": "The ISA/IEC 62443 framework is built on multiple core concepts including defense in depth (layered security), network zones and conduits (network segmentation), and security levels that define increasing levels of protection.",
+          "explanation": "The ISA/IEC 62443 framework is built on multiple core concepts including defence in depth (layered security), network zones and conduits (network segmentation), and security levels that define increasing levels of protection.",
           "difficulty": "medium"
         }
       ]

@@ -29,7 +29,7 @@ export default function SeriesOverview() {
             Series Overview & Document Taxonomy
           </h1>
           <p className="text-blue-100 text-lg leading-relaxed mb-6">
-            Explore the complete structure of the ISA/IEC 62443 series. Understand the difference between Standards, Technical Specifications (TS), Technical Reports (TR), and Publicly Available Specifications (PAS).
+            Explore the complete structure of the ISA/IEC 62443 series. Understand the distinction between Standards, Technical Specifications (TS), Technical Reports (TR), and Publicly Available Specifications (PAS).
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 border-t border-blue-800/60">
             {documentTypes.map((dt) => (
@@ -58,7 +58,7 @@ export default function SeriesOverview() {
             <CardContent>
               <p className="text-xs text-gray-600 leading-relaxed mb-3">{dt.description}</p>
               <div className="bg-emerald-50 border border-emerald-100 rounded p-2 text-xs text-emerald-900">
-                <strong className="text-emerald-800">Pentru începători:</strong> {dt.beginnerExplanation}
+                <strong className="text-emerald-800">Beginner Explanation:</strong> {dt.beginnerExplanation}
               </div>
             </CardContent>
           </Card>
@@ -68,13 +68,13 @@ export default function SeriesOverview() {
       {/* Filters & Controls */}
       <div className="flex flex-wrap items-center justify-between gap-4 bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
         <div className="flex items-center gap-2 flex-wrap">
-          <span className="text-sm font-medium text-gray-700">Filtrează după grup:</span>
+          <span className="text-sm font-medium text-gray-700">Filter by Group:</span>
           <Button
             size="sm"
             variant={selectedCategory === "all" ? "default" : "outline"}
             onClick={() => setSelectedCategory("all")}
           >
-            Toate Grupurile
+            All Groups
           </Button>
           {categories.map((cat) => (
             <Button
@@ -89,13 +89,13 @@ export default function SeriesOverview() {
         </div>
 
         <div className="flex items-center gap-2">
-          <span className="text-sm font-medium text-gray-700">Tip document:</span>
+          <span className="text-sm font-medium text-gray-700">Document Type:</span>
           <select
             className="text-sm border border-gray-300 rounded-md px-3 py-1.5 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             value={selectedType}
             onChange={(e) => setSelectedType(e.target.value)}
           >
-            <option value="all">Toate tipurile</option>
+            <option value="all">All Types</option>
             <option value="Standard">Standard</option>
             <option value="TS">Technical Specification (TS)</option>
             <option value="TR/TS">Technical Report (TR/TS)</option>
@@ -104,7 +104,7 @@ export default function SeriesOverview() {
         </div>
       </div>
 
-      {/* Categories and Standards Grid (Matching the User's Image Structure) */}
+      {/* Categories and Standards Grid */}
       <div className="space-y-6">
         {filteredCategories.map((cat) => (
           <Card key={cat.id} className="overflow-hidden border border-gray-200 shadow-md">
@@ -114,7 +114,7 @@ export default function SeriesOverview() {
                 <p className="text-white/80 text-sm mt-0.5">{cat.description}</p>
               </div>
               <Badge className="bg-white/20 text-white border-white/30 self-start md:self-auto">
-                {cat.items.length} documente
+                {cat.items.length} documents
               </Badge>
             </div>
 
@@ -122,7 +122,7 @@ export default function SeriesOverview() {
               <div className="mb-4 bg-blue-50 border border-blue-100 rounded-lg p-3 text-xs text-blue-900 flex items-start gap-2">
                 <Info className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <strong className="font-semibold">Context pentru Examen:</strong> {cat.summary}
+                  <strong className="font-semibold">Exam Context:</strong> {cat.summary}
                 </div>
               </div>
 
@@ -172,7 +172,7 @@ export default function SeriesOverview() {
                       </div>
 
                       <div className="pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-blue-600 font-medium">
-                        <span>Vezi explicație simplă</span>
+                        <span>View simple explanation</span>
                         <span className="group-hover:translate-x-1 transition-transform">→</span>
                       </div>
                     </div>
@@ -198,7 +198,7 @@ export default function SeriesOverview() {
                       activeItem.status === "Published" ? "text-emerald-700 bg-emerald-50" : "text-red-700 bg-red-50"
                     }`}
                   >
-                    {activeItem.status === "Published" ? "Publicat" : "În curând"}
+                    {activeItem.status === "Published" ? "Published" : "Upcoming"}
                   </Badge>
                 </div>
                 <h2 className="text-xl font-bold text-gray-900">{activeItem.title}</h2>
@@ -215,13 +215,13 @@ export default function SeriesOverview() {
 
             <div className="space-y-3 pt-2">
               <div className="bg-gray-50 rounded-lg p-3 text-sm text-gray-700 border border-gray-200">
-                <strong className="text-gray-900 block mb-1">Descriere Oficială:</strong>
+                <strong className="text-gray-900 block mb-1">Official Description:</strong>
                 {activeItem.description}
               </div>
 
               {activeItem.targetAudience && (
                 <div className="bg-blue-50 rounded-lg p-3 text-sm text-blue-900 border border-blue-200">
-                  <strong className="text-blue-800 block mb-1">Public Țintă / Destinatar:</strong>
+                  <strong className="text-blue-800 block mb-1">Target Audience:</strong>
                   {activeItem.targetAudience}
                 </div>
               )}
@@ -229,14 +229,14 @@ export default function SeriesOverview() {
               <div className="bg-emerald-50 rounded-lg p-4 text-sm text-emerald-900 border border-emerald-200">
                 <strong className="text-emerald-800 block mb-1 flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                  Explicație pentru Începători:
+                  Beginner Explanation:
                 </strong>
                 {activeItem.beginnerExplanation}
               </div>
             </div>
 
             <div className="pt-4 flex justify-end">
-              <Button onClick={() => setActiveItem(null)}>Am înțeles</Button>
+              <Button onClick={() => setActiveItem(null)}>Got it</Button>
             </div>
           </div>
         </div>

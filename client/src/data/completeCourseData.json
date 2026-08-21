@@ -8,7 +8,7 @@
       "learningObjectives": [
         "Describe the need and importance for control system security",
         "Discuss current trends in control system cybersecurity and how they could affect control systems",
-        "Analyze the differences between IT and IACS cybersecurity",
+        "Analyse the differences between IT and IACS cybersecurity",
         "Identify potential consequences of cybersecurity breaches in control systems",
         "Recognize malware events and their impact on critical infrastructure"
       ],
@@ -21,7 +21,7 @@
           "keyPoints": [
             "Control systems are the backbone of critical infrastructure",
             "Cybersecurity protects both the systems and the physical processes they control",
-            "Unlike IT systems, control systems prioritize availability and safety over confidentiality"
+            "Unlike IT systems, control systems prioritise availability and safety over confidentiality"
           ],
           "tierCorrelations": {
             "level0": "Foundation: Understanding why control systems need security",
@@ -35,7 +35,7 @@
           "id": "1.2",
           "title": "Trends in Control System Cybersecurity",
           "definition": "Current trends refer to emerging patterns and developments in how control systems are attacked and how security practices are evolving.",
-          "explanation": "The cybersecurity landscape for control systems is constantly changing. Modern trends include increased connectivity (IIoT), sophisticated nation-state attacks, ransomware targeting critical infrastructure, and the shift toward cloud-based systems. Understanding these trends helps organizations prepare for emerging threats.",
+          "explanation": "The cybersecurity landscape for control systems is constantly changing. Modern trends include increased connectivity (IIoT), sophisticated nation-state attacks, ransomware targeting critical infrastructure, and the shift toward cloud-based systems. Understanding these trends helps organisations prepare for emerging threats.",
           "keyPoints": [
             "Increased connectivity creates new attack surfaces",
             "Sophisticated attackers are targeting critical infrastructure",
@@ -45,7 +45,7 @@
           "tierCorrelations": {
             "level0": "Awareness of emerging threats",
             "level1": "Understanding threat landscape",
-            "level2": "Adapting defenses to new threats",
+            "level2": "Adapting defences to new threats",
             "level3": "Implementing countermeasures",
             "level4": "Strategic threat assessment"
           }
@@ -54,10 +54,10 @@
           "id": "1.3",
           "title": "IT vs IACS Cybersecurity",
           "definition": "The distinction between Information Technology (IT) security and Industrial Automation and Control Systems (IACS) security based on different priorities and constraints.",
-          "explanation": "IT systems prioritize confidentiality and integrity, but IACS systems prioritize availability and safety. A server outage in IT might cost money, but a control system failure could cause physical harm or environmental damage. IACS also often uses older equipment that cannot be easily patched or updated.",
+          "explanation": "IT systems prioritise confidentiality and integrity, but IACS systems prioritise availability and safety. A server outage in IT might cost money, but a control system failure could cause physical harm or environmental damage. IACS also often uses older equipment that cannot be easily patched or updated.",
           "keyPoints": [
-            "IT prioritizes: Confidentiality, Integrity, Availability (in that order)",
-            "IACS prioritizes: Availability, Safety, Integrity (in that order)",
+            "IT prioritises: Confidentiality, Integrity, Availability (in that order)",
+            "IACS prioritises: Availability, Safety, Integrity (in that order)",
             "IACS systems often have long operational lifespans (20-30 years)",
             "Downtime in IACS is often unacceptable",
             "Legacy systems may not support modern security tools"
@@ -81,7 +81,7 @@
         "Understand the importance of security awareness in IACS environments",
         "Identify common security mistakes and how to prevent them",
         "Recognize social engineering tactics",
-        "Implement security awareness programs"
+        "Implement security awareness programmes"
       ],
       "topics": [
         {
@@ -92,15 +92,15 @@
           "keyPoints": [
             "Humans are often the weakest link in security",
             "Regular training reduces security incidents",
-            "Awareness programs should be ongoing, not one-time",
-            "Everyone in the organization has a role in security"
+            "Awareness programmes should be ongoing, not one-time",
+            "Everyone in the organisation has a role in security"
           ],
           "tierCorrelations": {
             "level0": "Basic awareness training",
             "level1": "Role-specific security training",
             "level2": "Security culture development",
-            "level3": "Comprehensive awareness program",
-            "level4": "Organization-wide security culture"
+            "level3": "Comprehensive awareness programme",
+            "level4": "Organisation-wide security culture"
           }
         }
       ]
@@ -140,13 +140,13 @@
           "id": "3.2",
           "title": "The Six Groups of Standards",
           "definition": "The ISA/IEC 62443 series is organized into six main groups that address different aspects of IACS security.",
-          "explanation": "Group 1 (General) covers terminology and concepts. Group 2 (Policies & Procedures) addresses organizational security programs. Group 3 (System) covers system-level security requirements. Group 4 (Component) addresses component-level security. Groups 5 and 6 cover conformance and lifecycle aspects.",
+          "explanation": "Group 1 (General) covers terminology and concepts. Group 2 (Policies & Procedures) addresses organisational security programmes. Group 3 (System) covers system-level security requirements. Group 4 (Component) addresses component-level security. Groups 5 and 6 cover conformance and lifecycle aspects.",
           "keyPoints": [
             "Part 1-1: Terminology, concepts and models",
             "Part 1-2: Master glossary of terms and definitions",
             "Part 1-3: System security conformance metrics",
             "Part 1-4: IACS security lifecycle and use cases",
-            "Part 2-1: Establishing an IACS security program",
+            "Part 2-1: Establishing an IACS security programme",
             "Part 2-2: IACS security protection scheme",
             "Part 3-1: Security technologies for IACS",
             "Part 3-2: Security risk assessment for system design",
@@ -178,7 +178,7 @@
           "id": "4.1",
           "title": "Purdue Reference Model",
           "definition": "The Purdue Reference Model is a hierarchical framework that divides industrial automation systems into five levels based on their function and distance from physical processes.",
-          "explanation": "The model helps organizations understand their system architecture and apply appropriate security controls at each level. Level 0 is the process (the actual manufacturing or control happening), Level 1 is basic control devices, Level 2 is supervisory control, Level 3 is operations management, and Level 4 is enterprise systems.",
+          "explanation": "The model helps organisations understand their system architecture and apply appropriate security controls at each level. Level 0 is the process (the actual manufacturing or control happening), Level 1 is basic control devices, Level 2 is supervisory control, Level 3 is operations management, and Level 4 is enterprise systems.",
           "keyPoints": [
             "Level 0 (Process): The actual physical process being controlled",
             "Level 1 (Basic Control): PLCs, sensors, actuators",
@@ -199,7 +199,7 @@
           "id": "4.2",
           "title": "Zone & Conduit Model",
           "definition": "The Zone & Conduit Model is a security architecture approach that groups systems into security zones and controls communication between zones through conduits.",
-          "explanation": "Zones are logical groupings of systems that share similar security requirements and trust levels. Conduits are the connections between zones. By controlling what can pass through conduits, organizations can prevent unauthorized access and contain breaches. This is similar to network segmentation but applied more broadly.",
+          "explanation": "Zones are logical groupings of systems that share similar security requirements and trust levels. Conduits are the connections between zones. By controlling what can pass through conduits, organisations can prevent unauthorized access and contain breaches. This is similar to network segmentation but applied more broadly.",
           "keyPoints": [
             "Zones group systems with similar security needs",
             "Conduits are controlled connections between zones",
@@ -219,7 +219,7 @@
           "id": "4.3",
           "title": "Security Levels (SL 0-4)",
           "definition": "Security Levels (SL) are a 0-4 scale that describes the target level of protection for an IACS system based on risk assessment.",
-          "explanation": "SL 0 means no specific security requirements. SL 1 protects against accidental or casual threats. SL 2 protects against intentional threats but assumes limited resources. SL 3 protects against determined threats with moderate resources. SL 4 protects against sophisticated, well-resourced threats. Organizations determine their target SL based on risk assessment.",
+          "explanation": "SL 0 means no specific security requirements. SL 1 protects against accidental or casual threats. SL 2 protects against intentional threats but assumes limited resources. SL 3 protects against determined threats with moderate resources. SL 4 protects against sophisticated, well-resourced threats. Organisations determine their target SL based on risk assessment.",
           "keyPoints": [
             "SL 0: No specific security requirements",
             "SL 1: Protection against accidental/casual threats",
@@ -247,7 +247,7 @@
         "Define the IACS Cybersecurity Lifecycle",
         "Identify the sub-activities of each lifecycle phase",
         "Understand how security is integrated throughout the lifecycle",
-        "Apply lifecycle concepts to your organization"
+        "Apply lifecycle concepts to your organisation"
       ],
       "topics": [
         {
@@ -258,7 +258,7 @@
           "keyPoints": [
             "Phase 1 - Assess: Understand current state, identify risks, set target security levels",
             "Phase 2 - Develop & Implement: Design security architecture, implement controls",
-            "Phase 3 - Maintain: Monitor systems, update defenses, respond to incidents",
+            "Phase 3 - Maintain: Monitor systems, update defences, respond to incidents",
             "The lifecycle is continuous, not a one-time project",
             "Security must be considered from initial design through end-of-life"
           ],
@@ -276,31 +276,31 @@
       "id": 6,
       "title": "Security Requirements for IACS Asset Owners",
       "day": 1,
-      "description": "Security program requirements, maturity levels, and organizational responsibilities",
+      "description": "Security programme requirements, maturity levels, and organisational responsibilities",
       "learningObjectives": [
         "Explain the relationship between ISA/IEC 62443-2-1 and ISO/IEC 27001",
         "Summarize the four maturity levels",
         "Identify asset owner responsibilities",
-        "Understand security program requirements"
+        "Understand security programme requirements"
       ],
       "topics": [
         {
           "id": "6.1",
-          "title": "IACS Security Program Requirements",
-          "definition": "A comprehensive security program for IACS includes policies, procedures, technical controls, and organizational structures designed to protect industrial systems.",
-          "explanation": "Asset owners (organizations that operate IACS) are responsible for establishing and maintaining security programs. This includes developing security policies, implementing technical controls, training personnel, and continuously monitoring and improving their security posture.",
+          "title": "IACS Security Programme Requirements",
+          "definition": "A comprehensive security programme for IACS includes policies, procedures, technical controls, and organisational structures designed to protect industrial systems.",
+          "explanation": "Asset owners (organisations that operate IACS) are responsible for establishing and maintaining security programmes. This includes developing security policies, implementing technical controls, training personnel, and continuously monitoring and improving their security posture.",
           "keyPoints": [
-            "Security programs must be tailored to organizational risk",
-            "Programs should address technical, operational, and management aspects",
+            "Security programmes must be tailored to organisational risk",
+            "Programmes should address technical, operational, and management aspects",
             "Regular assessment and improvement are essential",
-            "Board-level commitment is necessary for program success"
+            "Board-level commitment is necessary for programme success"
           ],
           "tierCorrelations": {
-            "level0": "Understanding program components",
-            "level1": "Implementing basic program elements",
-            "level2": "Managing program operations",
-            "level3": "Ensuring program effectiveness",
-            "level4": "Strategic program leadership"
+            "level0": "Understanding programme components",
+            "level1": "Implementing basic programme elements",
+            "level2": "Managing programme operations",
+            "level3": "Ensuring programme effectiveness",
+            "level4": "Strategic programme leadership"
           }
         }
       ]
@@ -312,7 +312,7 @@
       "description": "Regulations, standards, frameworks, and their relationship to IACS security",
       "learningObjectives": [
         "Compare and contrast regulations, standards, and frameworks",
-        "Analyze the NIST Cybersecurity Framework and its relation to ISA/IEC 62443",
+        "Analyse the NIST Cybersecurity Framework and its relation to ISA/IEC 62443",
         "Identify other relevant cybersecurity standards",
         "Understand compliance requirements"
       ],
@@ -321,7 +321,7 @@
           "id": "7.1",
           "title": "Regulations, Standards, and Frameworks",
           "definition": "Regulations are mandatory legal requirements, standards are agreed-upon specifications, and frameworks are guidance documents for implementing security practices.",
-          "explanation": "Different industries and countries have different regulatory requirements. Standards like ISA/IEC 62443 provide detailed technical specifications. Frameworks like NIST CSF provide high-level guidance. Organizations must understand which apply to them and how they relate to each other.",
+          "explanation": "Different industries and countries have different regulatory requirements. Standards like ISA/IEC 62443 provide detailed technical specifications. Frameworks like NIST CSF provide high-level guidance. Organisations must understand which apply to them and how they relate to each other.",
           "keyPoints": [
             "Regulations are legally binding (e.g., NERC CIP for power systems)",
             "Standards provide detailed technical requirements (e.g., ISA/IEC 62443)",
@@ -340,12 +340,12 @@
         {
           "id": "7.2",
           "title": "NIST Cybersecurity Framework",
-          "definition": "The NIST Cybersecurity Framework is a voluntary framework developed by the U.S. National Institute of Standards and Technology to help organizations manage cybersecurity risk.",
-          "explanation": "NIST CSF is organized around five functions: Identify, Protect, Detect, Respond, and Recover. It provides a common language for cybersecurity and helps organizations of all sizes understand and manage cybersecurity risk. While voluntary, it's widely adopted and often referenced in regulations.",
+          "definition": "The NIST Cybersecurity Framework is a voluntary framework developed by the U.S. National Institute of Standards and Technology to help organisations manage cybersecurity risk.",
+          "explanation": "NIST CSF is organized around five functions: Identify, Protect, Detect, Respond, and Recover. It provides a common language for cybersecurity and helps organisations of all sizes understand and manage cybersecurity risk. While voluntary, it's widely adopted and often referenced in regulations.",
           "keyPoints": [
             "Five core functions: Identify, Protect, Detect, Respond, Recover",
             "Provides common language for cybersecurity",
-            "Applicable to organizations of all sizes",
+            "Applicable to organisations of all sizes",
             "Complements ISA/IEC 62443 standards",
             "Often required by regulations and contracts"
           ],
@@ -375,9 +375,9 @@
           "id": "8.1",
           "title": "Network Security Principles",
           "definition": "Network security principles are foundational concepts that guide the design and implementation of secure networks.",
-          "explanation": "Key principles include defense in depth (multiple layers of security), least privilege (minimum necessary access), and network segmentation (isolating critical systems). These principles help organizations protect networks from various threats.",
+          "explanation": "Key principles include defence in depth (multiple layers of security), least privilege (minimum necessary access), and network segmentation (isolating critical systems). These principles help organisations protect networks from various threats.",
           "keyPoints": [
-            "Defense in depth: Multiple security layers",
+            "Defence in depth: Multiple security layers",
             "Least privilege: Minimum necessary access",
             "Network segmentation: Isolating critical systems",
             "Monitoring and logging: Detecting suspicious activity",
@@ -428,12 +428,12 @@
         {
           "id": "9.1",
           "title": "Industrial Protocols Overview",
-          "definition": "Industrial protocols are standardized communication methods used by devices in industrial automation systems to exchange data and commands.",
-          "explanation": "Different protocols serve different purposes. MODBUS is a simple master-slave protocol. PROFIBUS is used in manufacturing. OPC provides standardized data exchange. Understanding these protocols is essential for securing IACS systems.",
+          "definition": "Industrial protocols are standardised communication methods used by devices in industrial automation systems to exchange data and commands.",
+          "explanation": "Different protocols serve different purposes. MODBUS is a simple master-slave protocol. PROFIBUS is used in manufacturing. OPC provides standardised data exchange. Understanding these protocols is essential for securing IACS systems.",
           "keyPoints": [
             "MODBUS: Simple, widely used, limited security",
             "PROFIBUS: Manufacturing-focused, deterministic",
-            "OPC: Standardized data exchange, multiple variants",
+            "OPC: Standardised data exchange, multiple variants",
             "Ethernet/IP: Industrial Ethernet protocol",
             "Many protocols were designed for functionality, not security"
           ],
@@ -483,7 +483,7 @@
           "id": "10.1",
           "title": "IACS Patch Management",
           "definition": "Patch management is the process of regularly updating software and firmware to fix security vulnerabilities and improve system performance.",
-          "explanation": "Patches address known vulnerabilities that attackers can exploit. In IACS environments, patch management is challenging because systems often cannot be taken offline for updates. Organizations must balance security with operational requirements.",
+          "explanation": "Patches address known vulnerabilities that attackers can exploit. In IACS environments, patch management is challenging because systems often cannot be taken offline for updates. Organisations must balance security with operational requirements.",
           "keyPoints": [
             "Patches fix security vulnerabilities",
             "Critical patches should be applied quickly",
@@ -517,13 +517,13 @@
           "id": "11.1",
           "title": "Security Risk Assessment",
           "definition": "Security risk assessment is a systematic process of identifying threats, vulnerabilities, and their potential impact to determine appropriate security controls.",
-          "explanation": "Risk assessment involves identifying what assets need protection, what threats exist, what vulnerabilities could be exploited, and what the consequences would be. The result is a prioritized list of risks that guides security investments.",
+          "explanation": "Risk assessment involves identifying what assets need protection, what threats exist, what vulnerabilities could be exploited, and what the consequences would be. The result is a prioritised list of risks that guides security investments.",
           "keyPoints": [
             "Identify critical assets and systems",
             "Identify potential threats and threat actors",
             "Identify vulnerabilities that could be exploited",
             "Assess likelihood and impact of incidents",
-            "Prioritize risks for mitigation"
+            "Prioritise risks for mitigation"
           ],
           "tierCorrelations": {
             "level0": "Understanding risk assessment",
@@ -537,21 +537,21 @@
     },
     {
       "id": 12,
-      "title": "Security Program Requirements for IACS Service Providers",
+      "title": "Security Programme Requirements for IACS Service Providers",
       "day": 2,
       "description": "Security requirements for system integrators, consultants, and service providers",
       "learningObjectives": [
         "Understand service provider responsibilities",
-        "Identify security program requirements",
+        "Identify security programme requirements",
         "Implement secure development practices",
         "Ensure customer security"
       ],
       "topics": [
         {
           "id": "12.1",
-          "title": "Service Provider Security Programs",
-          "definition": "Service providers (system integrators, consultants, maintenance providers) must implement security programs to protect customer systems and data.",
-          "explanation": "Service providers have access to critical customer systems, making them attractive targets for attackers. They must implement security programs that protect customer data, ensure secure development practices, and maintain security throughout the service relationship.",
+          "title": "Service Provider Security Programmes",
+          "definition": "Service providers (system integrators, consultants, maintenance providers) must implement security programmes to protect customer systems and data.",
+          "explanation": "Service providers have access to critical customer systems, making them attractive targets for attackers. They must implement security programmes that protect customer data, ensure secure development practices, and maintain security throughout the service relationship.",
           "keyPoints": [
             "Service providers must protect customer data",
             "Secure development practices are essential",
@@ -564,7 +564,7 @@
             "level1": "Implementing basic security practices",
             "level2": "Managing customer security",
             "level3": "Ensuring security compliance",
-            "level4": "Strategic security program leadership"
+            "level4": "Strategic security programme leadership"
           }
         }
       ]
@@ -585,10 +585,10 @@
           "id": "13.1",
           "title": "Secure Development Practices",
           "definition": "Secure development practices are methodologies and processes that integrate security throughout the software and product development lifecycle.",
-          "explanation": "Security should not be an afterthought added at the end of development. Instead, it should be considered from the initial design phase through deployment and maintenance. This includes threat modeling, secure coding practices, security testing, and vulnerability management.",
+          "explanation": "Security should not be an afterthought added at the end of development. Instead, it should be considered from the initial design phase through deployment and maintenance. This includes threat modelling, secure coding practices, security testing, and vulnerability management.",
           "keyPoints": [
             "Security must be designed in, not added on",
-            "Threat modeling identifies potential attacks",
+            "Threat modelling identifies potential attacks",
             "Secure coding practices prevent common vulnerabilities",
             "Security testing verifies controls are effective",
             "Vulnerability management addresses discovered issues"
@@ -598,7 +598,7 @@
             "level1": "Implementing basic practices",
             "level2": "Managing development security",
             "level3": "Ensuring security compliance",
-            "level4": "Strategic secure development program"
+            "level4": "Strategic secure development programme"
           }
         }
       ]
