@@ -219,6 +219,13 @@ export default function SeriesOverview() {
                 {activeItem.description}
               </div>
 
+              {activeItem.targetAudience && (
+                <div className="bg-blue-50 rounded-lg p-3 text-sm text-blue-900 border border-blue-200">
+                  <strong className="text-blue-800 block mb-1">Public Țintă / Destinatar:</strong>
+                  {activeItem.targetAudience}
+                </div>
+              )}
+
               <div className="bg-emerald-50 rounded-lg p-4 text-sm text-emerald-900 border border-emerald-200">
                 <strong className="text-emerald-800 block mb-1 flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600" />
