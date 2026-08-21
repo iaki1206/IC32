@@ -71,6 +71,76 @@
       ],
       "correctAnswer": "C",
       "explanation": "ISA/IEC 62443-4-1 defines the mandatory requirements for a secure product development lifecycle (SDLC) that product suppliers must follow when designing, developing, and maintaining industrial control components."
+    },
+    {
+      "id": "kc-6",
+      "number": 6,
+      "source": "Knowledge Check | 6 (Page 60)",
+      "question": "According to ISA/IEC 62443, why should cybersecurity awareness be given the same emphasis as safety and operational integrity in an Industrial Automation and Control System (IACS) environment?",
+      "options": [
+        { "letter": "A", "text": "IT security threats do not significantly impact industrial control systems" },
+        { "letter": "B", "text": "Safety incidents are more frequent than cybersecurity incidents in industrial environments" },
+        { "letter": "C", "text": "Operational integrity is only affected by mechanical failures, not cybersecurity threats" },
+        { "letter": "D", "text": "Cybersecurity failures can directly lead to physical safety risks and operational disruptions" }
+      ],
+      "correctAnswer": "D",
+      "explanation": "In operational technology and IACS, cybersecurity incidents are not just data breaches—they can cause physical harm to personnel, environmental disasters, and catastrophic operational disruptions."
+    },
+    {
+      "id": "kc-7",
+      "number": 7,
+      "source": "Knowledge Check | 7 (Page 61)",
+      "question": "According to best practices in ISA/IEC 62443 which of the following would best ensure the effectiveness of a cybersecurity awareness programme for employees of a manufacturing company?",
+      "options": [
+        { "letter": "A", "text": "Conducting a single, large-scale awareness session once a year for all employees" },
+        { "letter": "B", "text": "Customising awareness activities based on employee roles and responsibilities" },
+        { "letter": "C", "text": "Providing technical training only to IT staff, since they handle cybersecurity" },
+        { "letter": "D", "text": "Making cybersecurity training optional to avoid interfering with daily operations" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Effective security awareness must be role-based. Operators, engineers, plant managers, and IT personnel face different threat vectors and require customized awareness programs tailored to their specific responsibilities."
+    },
+    {
+      "id": "kc-8",
+      "number": 8,
+      "source": "Knowledge Check | 8 (Page 62)",
+      "question": "A power grid operator wants to demonstrate the impact of cyber threats on industrial control systems to increase awareness. According to Section 2, which of the following best aligns with this goal?",
+      "options": [
+        { "letter": "A", "text": "Disabling network access for employees who fail cybersecurity tests" },
+        { "letter": "B", "text": "Conducting an employee satisfaction survey about cybersecurity training" },
+        { "letter": "C", "text": "Requiring all staff to read cybersecurity policy documents without additional engagement" },
+        { "letter": "D", "text": "Showing a demonstration of Industroyer malware on a protection relay" }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Demonstrating real-world industrial malware (such as Industroyer which targeted Ukrainian power substations) on test equipment or through controlled demonstrations provides tangible, high-impact awareness for operations staff."
+    },
+    {
+      "id": "kc-9",
+      "number": 9,
+      "source": "Knowledge Check | 9 (Page 63)",
+      "question": "Which of the following best describes why security awareness must be an ongoing process rather than a one-time activity?",
+      "options": [
+        { "letter": "A", "text": "Awareness programmes should only be conducted during security breaches" },
+        { "letter": "B", "text": "Employees tend to ignore cybersecurity policies, so frequent reminders enforce compliance" },
+        { "letter": "C", "text": "Cyber threats are constantly evolving, requiring regular updates to knowledge and behaviour" },
+        { "letter": "D", "text": "Once trained, employees do not require additional cybersecurity education" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Threat actors, phishing techniques, and industrial attack vectors evolve continuously. Ongoing awareness ensures staff maintain vigilance and adapt to emerging threats."
+    },
+    {
+      "id": "kc-10",
+      "number": 10,
+      "source": "Knowledge Check | 10 (Page 64)",
+      "question": "A company wants to raise cybersecurity awareness at the executive level. According to best practices in ISA/IEC 62443, which solution best addresses this need?",
+      "options": [
+        { "letter": "A", "text": "Organising Board Member sessions that reveal high-impact cybersecurity risks" },
+        { "letter": "B", "text": "Sending a monthly cybersecurity newsletter to all employees, including executives" },
+        { "letter": "C", "text": "Assigning technical cybersecurity training to board members" },
+        { "letter": "D", "text": "Restricting executive access to sensitive cybersecurity information" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Executives and board members require high-level briefings focused on business risk, operational resilience, and liability rather than technical configuration details."
     }
   ]
 }
