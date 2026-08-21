@@ -23,6 +23,11 @@
 - [x] Implement direct navigation from part cards to the corresponding course sections and interactive quizzes
 - [x] Validate TypeScript compilation, production build, and filter/navigation behavior
 - [x] Save and deliver the final IC32 Learning Platform checkpoint
+- [ ] Map all chapters from IC32v6.0 PDF noteset into structured interactive chapters
+- [ ] Create interactive chapter views with beginner explanations, definitions, and chapter-specific knowledge checks
+- [ ] Implement interactive concept correlation map for chapters
+- [ ] Validate TypeScript compilation, production build, and interactive features
+- [ ] Save and deliver the reorganized interactive IC32 platform checkpoint
 
 ## Style Decisions
 

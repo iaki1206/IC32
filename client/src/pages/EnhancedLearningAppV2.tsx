@@ -15,6 +15,7 @@ import BookmarksPanel from "@/components/BookmarksPanel";
 import SeriesOverview from "@/components/SeriesOverview";
 import PartsPerRoleView from "@/components/PartsPerRoleView";
 import KnowledgeCheckView from "@/components/KnowledgeCheckView";
+import ChaptersView from "@/components/ChaptersView";
 import { useBookmarks } from "@/hooks/useBookmarks";
 import { useQuizProgress } from "@/hooks/useQuizProgress";
 import completeCourseData from "@/data/completeCourseData.json";
@@ -23,7 +24,7 @@ import quizData from "@/data/quizData.json";
 const enhancedCourseData = completeCourseData;
 
 export default function EnhancedLearningAppV2() {
-  const [currentPage, setCurrentPage] = useState<"sections" | "series" | "roles" | "models" | "goals" | "quiz" | "knowledge" | "bookmarks">("sections");
+  const [currentPage, setCurrentPage] = useState<"chapters" | "sections" | "series" | "roles" | "models" | "goals" | "quiz" | "knowledge" | "bookmarks">("chapters");
   const [selectedSection, setSelectedSection] = useState(enhancedCourseData.sections[0]);
   const [selectedTopic, setSelectedTopic] = useState<any>(enhancedCourseData.sections[0].topics[0]);
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -99,6 +100,15 @@ export default function EnhancedLearningAppV2() {
 
             {/* Navigation Tabs */}
             <div className="hidden md:flex gap-2">
+              <Button
+                variant={currentPage === "chapters" ? "default" : "outline"}
+                onClick={() => setCurrentPage("chapters")}
+                size="sm"
+                className="gap-2"
+              >
+                <BookOpen className="w-4 h-4" />
+                Chapters (PDF)
+              </Button>
               <Button
                 variant={currentPage === "sections" ? "default" : "outline"}
                 onClick={() => setCurrentPage("sections")}
@@ -203,6 +213,14 @@ export default function EnhancedLearningAppV2() {
 
         {/* Main Content Area */}
         <div className="flex-1 overflow-hidden">
+          {currentPage === "chapters" && (
+            <div className="h-full overflow-y-auto">
+              <ChaptersView
+                onNavigateToKnowledge={() => setCurrentPage("knowledge")}
+              />
+            </div>
+          )}
+
           {currentPage === "sections" && (
             <div className="h-full flex gap-4 p-4">
               <div className="flex-1 bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
