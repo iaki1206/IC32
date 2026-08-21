@@ -141,6 +141,76 @@
       ],
       "correctAnswer": "A",
       "explanation": "Executives and board members require high-level briefings focused on business risk, operational resilience, and liability rather than technical configuration details."
+    },
+    {
+      "id": "kc-11",
+      "number": 11,
+      "source": "Knowledge Check | 11 (Page 104)",
+      "question": "Which of the following best explains the primary function of the ISA/IEC 62443 models in managing IACS?",
+      "options": [
+        { "letter": "A", "text": "Provides specific implementation instructions for security measures" },
+        { "letter": "B", "text": "Establishes a cybersecurity framework that applies only to OT environments, without addressing IT environments" },
+        { "letter": "C", "text": "Aids in identifying security needs, structuring security policies and guiding implementation" },
+        { "letter": "D", "text": "Eliminates the need for any other industrial security standards or guidelines" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The ISA/IEC 62443 models (such as the Purdue Reference Model and Zone & Conduit Model) provide foundational structures to help organizations identify security needs, structure security policies, and guide the implementation of defenses."
+    },
+    {
+      "id": "kc-12",
+      "number": 12,
+      "source": "Knowledge Check | 12 (Page 105)",
+      "question": "How does the Zone and Conduit model contribute to cybersecurity in an IACS environment?",
+      "options": [
+        { "letter": "A", "text": "Defines specific communication security protocols for each type of control network in an IACS environment" },
+        { "letter": "B", "text": "Allows direct communication between all system components without restrictions" },
+        { "letter": "C", "text": "Eliminates the need for network segmentation in industrial control networks" },
+        { "letter": "D", "text": "Groups assets based on security requirements and regulates communication between them" }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The Zone & Conduit model groups assets into logical security zones based on shared security requirements and trust levels, and regulates communication between them through controlled conduits."
+    },
+    {
+      "id": "kc-13",
+      "number": 13,
+      "source": "Knowledge Check | 13 (Page 106)",
+      "question": "What is the function of policies and procedures within an IACS security framework?",
+      "options": [
+        { "letter": "A", "text": "Applies only to administrative controls and does not address technical security measures" },
+        { "letter": "B", "text": "Provides high-level guidelines and operational instructions to enforce security measures" },
+        { "letter": "C", "text": "Replaces the need for implementing security technologies such as firewalls and encryption" },
+        { "letter": "D", "text": "Focuses solely on incident response and recovery procedures, not on proactive security measures" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Policies and procedures establish high-level management guidelines and step-by-step operational instructions that govern how security measures are enforced across the organisation."
+    },
+    {
+      "id": "kc-14",
+      "number": 14,
+      "source": "Knowledge Check | 14 (Page 107)",
+      "question": "What is the primary function of security levels within the ISA/IEC 62443 Series?",
+      "options": [
+        { "letter": "A", "text": "Defines the required level of protection based on the potential threats and risks" },
+        { "letter": "B", "text": "Ensures all systems use standardized security configurations regardless of industry, system type or use case" },
+        { "letter": "C", "text": "Reduces the need for ongoing cybersecurity assessments by providing predefined security levels" },
+        { "letter": "D", "text": "Mandates uniform security standards that apply to both IT and OT systems" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Security Levels (SL 1 to 4) define the required target degree of protection against vulnerabilities and threats based on comprehensive risk assessment."
+    },
+    {
+      "id": "kc-15",
+      "number": 15,
+      "source": "Knowledge Check | 15 (Page 108)",
+      "question": "How do the Reference Model and the Zone and Conduit Model relate within the ISA/IEC 62443 Series?",
+      "options": [
+        { "letter": "A", "text": "Reference model establishes a conceptual framework, while the Zone and Conduit model applies security segmentation in practice" },
+        { "letter": "B", "text": "Reference Model replaces the need for network segmentation using the Zone and Conduit Model" },
+        { "letter": "C", "text": "Zone and Conduit Model identifies specific technologies for securing networks and the Reference model provides a framework for implementing cybersecurity practices" },
+        { "letter": "D", "text": "Zone and Conduit Model provides high-level structure for defining security levels and risk assessment while the Reference Model defines segmentation of networks" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The Reference Model (such as Purdue Levels 0-4) establishes a conceptual hierarchy of industrial functions, while the Zone & Conduit Model applies security segmentation in practice by grouping assets and regulating inter-zone communication."
     }
   ]
 }
