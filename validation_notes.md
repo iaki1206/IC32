@@ -17,3 +17,7 @@ The Alignment view opens with Prevention selected. Adding Detection changes the 
 ## Follow-up correction
 
 The visible description for `62443-2-1` currently contains the malformed spelling `programmeme`; correct it to the British English spelling `programme` before the final checkpoint.
+
+## Knowledge Checks Runtime Fix
+
+Validated on 22 August 2026. The Knowledge Checks tab opened successfully after the chapter normalisation fix. The previous `TypeError: ch.trim is not a function` did not recur. The page rendered the 224-question bank, source filter, chapter filter, answer-status filter, result counter, Review Incorrect button, and Reset Answers button. Numeric chapter values in the imported data are safely converted to strings before filtering and sorting.

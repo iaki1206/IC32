@@ -49,6 +49,9 @@
 - [x] Validate TypeScript, build, and responsive interface
 - [x] Save and deliver the deduplicated consolidated Knowledge Checks checkpoint
 - [x] Implement source and chapter interactive filtering for Knowledge Checks
+- [x] Fix numeric chapter values causing `ch.trim is not a function` in KnowledgeCheckView
+- [x] Validate Knowledge Checks runtime, filters, TypeScript, and production build
+- [x] Save and deliver the Knowledge Checks runtime fix checkpoint
 - [ ] Check GitHub repository visibility and Pages configuration
 - [ ] Configure Vite base path for GitHub Pages deployment
 - [ ] Create GitHub Actions workflow for automated Pages deployment

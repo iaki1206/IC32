@@ -27,7 +27,7 @@ type KnowledgeQuestion = {
   number: number;
   source?: string;
   sourceType?: string;
-  chapter?: string;
+  chapter?: string | number | null;
   question: string;
   options: Option[];
   correctAnswer?: string | null;
@@ -37,12 +37,16 @@ type KnowledgeQuestion = {
 
 const questions = data.questions as KnowledgeQuestion[];
 
-// Extract unique chapters
+// Normalise chapter values because imported question banks may contain strings or numbers.
+const normaliseChapter = (chapter: string | number | null | undefined): string =>
+  chapter === null || chapter === undefined ? "" : String(chapter).trim();
+
+// Extract unique chapters safely from all imported question banks.
 const availableChapters = Array.from(
   new Set(
     questions
-      .map((q) => q.chapter)
-      .filter((ch): ch is string => Boolean(ch && ch.trim() !== "" && ch.trim() !== "15"))
+      .map((q) => normaliseChapter(q.chapter))
+      .filter((chapter) => chapter !== "" && chapter !== "15")
   )
 ).sort((a, b) => {
   const numA = parseInt(a.match(/Section\s+(\d+)/)?.[1] || "99", 10);
@@ -94,7 +98,7 @@ export default function KnowledgeCheckView() {
         sourceMatches = src.startsWith("Knowledge Check |");
       }
 
-      const chapterMatches = chapterFilter === "all" || question.chapter === chapterFilter;
+      const chapterMatches = chapterFilter === "all" || normaliseChapter(question.chapter) === chapterFilter;
 
       const answerMatches =
         answerFilter === "all" ||
