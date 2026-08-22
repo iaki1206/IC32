@@ -42,10 +42,17 @@
 - [x] Validate menu labels and preserve day information in chapter content
 - [x] Save and deliver the menu-label cleanup checkpoint
 - [x] Inspect ITExam_CyberSecFundamentals_113_intrebari.xlsx structure and extract questions
+- [x] Extract integral questions from pasted_content_3.txt, detect duplicates, and integrate unique items into Knowledge Checks (total now 224 questions)
+- [x] Push updated application and question bank to private GitHub repository
 - [x] Detect internal duplicates in the Excel file and overlaps with existing Knowledge Checks
 - [x] Integrate unique questions into Knowledge Checks with answer choices, correct answers, and explanations
 - [x] Validate TypeScript, build, and responsive interface
 - [x] Save and deliver the deduplicated consolidated Knowledge Checks checkpoint
+- [ ] Check GitHub repository visibility and Pages configuration
+- [ ] Configure Vite base path for GitHub Pages deployment
+- [ ] Create GitHub Actions workflow for automated Pages deployment
+- [ ] Push workflow and verify direct web access
+- [ ] Save and deliver the GitHub Pages deployment checkpoint
 
 ## Style Decisions
 
