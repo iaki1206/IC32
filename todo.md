@@ -48,6 +48,7 @@
 - [x] Integrate unique questions into Knowledge Checks with answer choices, correct answers, and explanations
 - [x] Validate TypeScript, build, and responsive interface
 - [x] Save and deliver the deduplicated consolidated Knowledge Checks checkpoint
+- [x] Implement source and chapter interactive filtering for Knowledge Checks
 - [ ] Check GitHub repository visibility and Pages configuration
 - [ ] Configure Vite base path for GitHub Pages deployment
 - [ ] Create GitHub Actions workflow for automated Pages deployment
