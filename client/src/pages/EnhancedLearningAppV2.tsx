@@ -21,7 +21,7 @@ import completeCourseData from "@/data/completeCourseData.json";
 const enhancedCourseData = completeCourseData;
 
 export default function EnhancedLearningAppV2() {
-  const [currentPage, setCurrentPage] = useState<"chapters" | "sections" | "series" | "roles" | "models" | "goals" | "quiz" | "knowledge" | "bookmarks">("chapters");
+  const [currentPage, setCurrentPage] = useState<"chapter" | "sections" | "series" | "roles" | "models" | "goals" | "quiz" | "knowledge" | "bookmarks">("chapter");
   const [selectedSection, setSelectedSection] = useState(enhancedCourseData.sections[0]);
   const [selectedTopic, setSelectedTopic] = useState<any>(enhancedCourseData.sections[0].topics[0]);
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -90,13 +90,13 @@ export default function EnhancedLearningAppV2() {
             {/* Navigation Tabs */}
             <div className="hidden md:flex gap-2">
               <Button
-                variant={currentPage === "chapters" ? "default" : "outline"}
-                onClick={() => setCurrentPage("chapters")}
+                variant={currentPage === "chapter" ? "default" : "outline"}
+                onClick={() => setCurrentPage("chapter")}
                 size="sm"
                 className="gap-2"
               >
                 <BookOpen className="w-4 h-4" />
-                Chapters (PDF)
+                Chapter
               </Button>
               <Button
                 variant={currentPage === "sections" ? "default" : "outline"}
@@ -193,7 +193,7 @@ export default function EnhancedLearningAppV2() {
 
         {/* Main Content Area */}
         <div className="flex-1 overflow-hidden">
-          {currentPage === "chapters" && (
+          {currentPage === "chapter" && (
             <div className="h-full overflow-y-auto">
               <ChaptersView
                 onNavigateToKnowledge={() => setCurrentPage("knowledge")}
@@ -322,12 +322,12 @@ export default function EnhancedLearningAppV2() {
       {/* Mobile Navigation */}
       <div className="md:hidden border-t border-gray-200 bg-white p-2 flex gap-1 overflow-x-auto">
         <Button
-          variant={currentPage === "sections" ? "default" : "outline"}
-          onClick={() => setCurrentPage("sections")}
+          variant={currentPage === "chapter" ? "default" : "outline"}
+          onClick={() => setCurrentPage("chapter")}
           size="sm"
           className="flex-shrink-0"
         >
-          Sections
+          Chapter
         </Button>
         <Button
           variant={currentPage === "series" ? "default" : "outline"}

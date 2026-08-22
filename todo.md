@@ -34,6 +34,10 @@
 - [x] Move the consolidated bank into Knowledge Checks and remove redundant Quiz entries
 - [x] Validate the final question count, answer integrity, TypeScript, build, and interface
 - [x] Save and deliver the consolidated Knowledge Checks version
+- [x] Rename Chapters (PDF) navigation tab to Chapter
+- [x] Make Chapter the primary study hub displaying all learning objectives, topics, definitions, beginner explanations, key points, and exam tips
+- [x] Validate TypeScript compilation, production build, and navigation behavior
+- [x] Save and deliver the updated Chapter-focused platform checkpoint
 
 ## Style Decisions
 
