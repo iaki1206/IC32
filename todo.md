@@ -41,6 +41,11 @@
 - [x] Remove Day 1 and Day 2 from chapter and section menu titles
 - [x] Validate menu labels and preserve day information in chapter content
 - [x] Save and deliver the menu-label cleanup checkpoint
+- [x] Inspect ITExam_CyberSecFundamentals_113_intrebari.xlsx structure and extract questions
+- [x] Detect internal duplicates in the Excel file and overlaps with existing Knowledge Checks
+- [x] Integrate unique questions into Knowledge Checks with answer choices, correct answers, and explanations
+- [x] Validate TypeScript, build, and responsive interface
+- [x] Save and deliver the deduplicated consolidated Knowledge Checks checkpoint
 
 ## Style Decisions
 

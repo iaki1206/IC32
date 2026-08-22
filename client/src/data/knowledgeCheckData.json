@@ -3812,6 +3812,1554 @@
       "id": "kc-merged-099",
       "number": 99,
       "topic": "Section 9 — Industrial Protocols"
+    },
+    {
+      "id": "excel-100",
+      "question": "A company discovers malware on a portable USB device used within their IACS environment. According to the document, which SP Element and controls would be MOST relevant to address this issue?",
+      "options": [
+        "SP Element 1 — Processes for discovery of security anomalies",
+        "SP Element 2 — Asset inventory baseline",
+        "SP Element 4 — Component hardening and dedicated portable media",
+        "SP Element 7 — Incident handling and response"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-101",
+      "question": "A company needs to create a standardized interface for exchanging real-time plant data between heterogeneous control devices while maintaining a structured organization of data elements such as folders, classes, and methods. Which feature of OPC supports this requirement?",
+      "options": [
+        "OPC Tunnel Applications for firewalls",
+        "OPC Classic aware firewalls analyzing DCOM",
+        "OPC Unified Architecture's browsable namespace",
+        "OPC Classic's use of Microsoft OLE and COM technologies"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-102",
+      "question": "A manufacturing plant is developing a cybersecurity plan for its IACS that must evolve as new threats emerge and system changes occur. Which document should serve as the foundation for this evolving security approach?",
+      "options": [
+        "IEC 62443-2-2 only",
+        "Security Program (SP) portfolio",
+        "Corporate KPIs unrelated to IACS",
+        "Security Protection Scheme (SPS)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-103",
+      "question": "A national standards body wants to represent its country’s interests at an international level and adopt global standards locally. What role does this organization fulfill?",
+      "options": [
+        "Global SDO",
+        "Regulatory Agency",
+        "Industry Consortium",
+        "National Standardization Body"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-104",
+      "question": "According to the scheme for cybersecurity profiles, which of the following is true about ISA/IEC 62443 security requirements when creating a security profile?",
+      "options": [
+        "New security requirements can be added freely.",
+        "Only foundational requirements can be changed.",
+        "No new requirements are added and existing ones are not modified.",
+        "Existing security requirements can be modified to fit sector needs."
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-105",
+      "question": "After receiving an approved patch from the IACS vendor, what is BEST practice for the asset owner to follow?",
+      "options": [
+        "If a low priority, there is no need to apply the patch.",
+        "If a medium priority, schedule the installation within three months after receipt.",
+        "If a high priority, apply the patch at the first unscheduled outage.",
+        "If no problems are experienced with the current IACS, it is not necessary to apply the patch."
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-106",
+      "question": "As related to IACS Maintenance Service Providers, when do maintenance activities generally start?",
+      "options": [
+        "During the design phase",
+        "At the beginning of the project",
+        "After the handover of the solution",
+        "Before the handover of the solution"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-107",
+      "question": "As related to technical security requirements for IACS components, what does CCSC stand for?",
+      "options": [
+        "Common Component Security Criteria",
+        "Common Component Security Constraints",
+        "Centralized Component Security Compliance",
+        "Comprehensive Component Security Controls"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-108",
+      "question": "Authorization (user accounts) must be granted based on which of the following? A. Individual preferences B. Common needs for large groups C. Specific roles D. System complexity",
+      "options": [
+        "Individual preferences",
+        "Common needs for large groups",
+        "Specific roles",
+        "System complexity"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-109",
+      "question": "Electronic security, as defined in ANSI/ISA-99.00.01:2007. includes which of the following?",
+      "options": [
+        "Security guidelines for the proper configuration of IACS computers and operating systems",
+        "Computers, networks, operating systems, applications, and other programmable configurable components of the system",
+        "Personnel, policies, and procedures related to the security of computers, networks. PLCs, and other programmable configurable components of the system",
+        "Security guidelines for the proper configuration of IACS PLCs and other programmable configurable components of the system"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-110",
+      "question": "If an asset owner wants to demonstrate compliance with ISA/IEC 62443-2-1 requirements during an external audit, which type of evidence would be MOST appropriate?",
+      "options": [
+        "Financial investment records in cybersecurity tools only",
+        "Anecdotal reports from employees about security practices",
+        "Documentation verifying use and configuration of technologies",
+        "Marketing materials describing the company's commitment to security"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-111",
+      "question": "If an industrial control system experiences frequent unexpected shutdowns causing downtime, which SP Element activities should be reviewed to improve system availability?",
+      "options": [
+        "SP Element 1 – Supply chain security",
+        "SP Element 2 – Change control",
+        "SP Element 7 – Logging and event reporting",
+        "SP Element 8 – Backup restoration"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-112",
+      "question": "In a defense-in-depth strategy, what is the purpose of role-based access control?",
+      "options": [
+        "Ensures that users can access systems from remote locations",
+        "Ensures that users can access only certain devices on the network",
+        "Ensures that users can access only the functions they need for their job",
+        "Ensures that users correctly manage their username and password"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-113",
+      "question": "In an IACS system, a typical security conduit consists of which of the following assets?",
+      "options": [
+        "Controllers, sensors, transmitters, and final control elements",
+        "Wiring, routers, switches, and network management devices",
+        "Ferrous, thickwall, and threaded conduit including raceways",
+        "Power lines, cabinet enclosures, and protective grounds"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-114",
+      "question": "In the context of global frameworks, what does the acronym SDO stand for?",
+      "options": [
+        "Security Development Organization",
+        "Software Development Organization",
+        "Systematic Development Organization",
+        "Standards Development Organization"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-115",
+      "question": "In which layer is the physical address assigned?",
+      "options": [
+        "Layer 1",
+        "Layer 2",
+        "Layer 3",
+        "Layer 7"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-116",
+      "question": "In which layer is the physical address assigned? A. Layer 1 B. Layer 2 C. Layer 3 D. Layer 7",
+      "options": [
+        "Layer 1",
+        "Layer 2",
+        "Layer 3",
+        "Layer 7"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-117",
+      "question": "Multiuser accounts and shared passwords inherently carry which of the followinq risks?",
+      "options": [
+        "Privilege escalation",
+        "Buffer overflow",
+        "Unauthorized access",
+        "Race conditions"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-118",
+      "question": "Safety management staff are stakeholders of what security program development?",
+      "options": [
+        "CSMS",
+        "SPRP"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-119",
+      "question": "Security Levels (SLs) are broken down into which three types?",
+      "options": [
+        "Target, capacity, and availability",
+        "Target, capacity, and achieved",
+        "Target, capability, and availability",
+        "Target, capability, and achieved"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-120",
+      "question": "The ISA/IEC 62443 Profiles Group will include parts starting with which number?",
+      "options": [
+        "6-x",
+        "5-x",
+        "4-x",
+        "3-x"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-121",
+      "question": "What are the connections between security zones called?",
+      "options": [
+        "Firewalls",
+        "Tunnels",
+        "Pathways",
+        "Conduits"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-122",
+      "question": "What are the connections between security zones called? A. Firewalls B. Tunnels C. Pathways D. Conduits",
+      "options": [
+        "Firewalls",
+        "Tunnels",
+        "Pathways",
+        "Conduits"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-123",
+      "question": "What are the four main categories for documents in the ISA-62443 (IEC 62443) series?",
+      "options": [
+        "General. Policies and Procedures. System, and Component",
+        "End-User, Integrator, Vendor, and Regulator",
+        "Assessment. Mitigation. Documentation, and Maintenance",
+        "People. Processes. Technology, and Training"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-124",
+      "question": "What are the three main components of the ISASecure Integrated Threat Analysis (ITA) Program?",
+      "options": [
+        "Software development security assurance, functional security assessment, and communications robustness testing",
+        "Software robustness security testing, functional software assessment assurance, and essential security functionality assessment",
+        "Communications robustness testing, functional security assurance, and software robustness communications",
+        "Communication speed, disaster recovery, and essential security functionality assessment"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-125",
+      "question": "What are the two sublayers of Layer 2?",
+      "options": [
+        "HIDS and NIDS",
+        "LLC and MAC",
+        "OPC and DCOM",
+        "VLAN and VPN"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-126",
+      "question": "What are three possible entry points (pathways) that could be used for launching a cyber attack?",
+      "options": [
+        "LAN, portable media, and wireless",
+        "LAN, portable media, and hard drives",
+        "LAN, power source, and wireless OD.",
+        "LAN, WAN, and hard drive"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-127",
+      "question": "What change was introduced in the second edition (2024) of ISA-62443-2-1 compared to the first edition (2010)?",
+      "options": [
+        "Introduction of a new PDCA cycle framework",
+        "Elimination of duplication of ISMS requirements",
+        "Removal of supply chain security considerations",
+        "Focus only on individual system components rather than overall system"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-128",
+      "question": "What does Foundational Requirement 6 (FR 6) - Timely Response to Events (TRE) require?",
+      "options": [
+        "Control access to information",
+        "Protect against unauthorized operation",
+        "Notify the proper authority about security violations",
+        "Ensure adequate responses to network resource requests"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-129",
+      "question": "What impact do increasing cybercrime attacks have?",
+      "options": [
+        "They primarily target personal devices.",
+        "They focus solely on financial institutions.",
+        "They affect suppliers of essential services.",
+        "They lead to improved cybersecurity measures."
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-130",
+      "question": "What is a commonly used protocol for managing secure data transmission over a Virtual Private Network (VPN)?",
+      "options": [
+        "HTTPS",
+        "IPSec",
+        "MPLS"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-131",
+      "question": "What is a feature of an asymmetric key?",
+      "options": [
+        "Uses a continuous stream",
+        "Uses different keys",
+        "Shares the same key OD.",
+        "Has lower network overhead"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-132",
+      "question": "What is a key activity in the Maintain phase?",
+      "options": [
+        "Risk assessment",
+        "Managing changes",
+        "Allocating assets to security zones",
+        "Designing cybersecurity countermeasures"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-133",
+      "question": "What is a key feature of the NIS2 Directive?",
+      "options": [
+        "It mandates compliance with all standards.",
+        "It focuses solely on physical security regulations.",
+        "It establishes a cyber crisis management structure.",
+        "It eliminates the need for public-private partnerships."
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-134",
+      "question": "What is a major reason for maintaining an asset inventory baseline in Configuration Management (SP Element 2)?",
+      "options": [
+        "To document IACS architecture",
+        "To ensure physical access control",
+        "To enforce user authentication policies",
+        "To detect security anomalies in event management"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-135",
+      "question": "What is a requirement for product security development lifecycles?",
+      "options": [
+        "Risk management",
+        "Agile development",
+        "Continuous integration",
+        "Defense-in-depth strategy"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-136",
+      "question": "What is defined as the hardware and software components of an IACS?",
+      "options": [
+        "COTS software and hardware",
+        "Electronic security",
+        "Control system",
+        "Cybersecuritv"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-137",
+      "question": "What is OPC?",
+      "options": [
+        "An open standard protocol for real-time field bus communication between automation technology devices",
+        "An open standard protocol for the communication of real-time data between devices from different manufacturers",
+        "An open standard serial communications protocol widely used in industrial manufacturing environments",
+        "A vendor-specific proprietary protocol for the communication of real-time plant data between control devices"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-138",
+      "question": "What is the definition of \"defense in depth\" when referring to",
+      "options": [
+        "Using countermeasures that have intrinsic technical depth.",
+        "Aligning all resources to provide a broad technical gauntlet",
+        "Requiring a minimum distance requirement between security assets",
+        "Applying multiple countermeasures in a layered or stepwise manner"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-139",
+      "question": "What is the FIRST step required in implementing ISO 27001?",
+      "options": [
+        "Create a security management organization.",
+        "Define an information security policy.",
+        "Implement strict security controls.",
+        "Perform a security risk assessment."
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-140",
+      "question": "What is the formula for calculating risk?",
+      "options": [
+        "Risk = Likelihood + Consequence",
+        "Risk = Threat - Vulnerability * Consequence",
+        "Risk = Threat + Vulnerability + Consequence",
+        "Risk = Threat * Vulnerability * Consequence"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-141",
+      "question": "What is the name of the missing layer in the Open Systems Interconnection (OSI) model shown below?",
+      "options": [
+        "Control",
+        "Protocol",
+        "Transport",
+        "User"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-142",
+      "question": "What is the name of the missing layer in the Open Systems Interconnection (OSI) model shown below? A. Control B. Protocol C. Transport D. User",
+      "options": [
+        "Control",
+        "Protocol",
+        "Transport",
+        "User"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-143",
+      "question": "What is the name of the protocol that implements serial Modbus over Ethernet?",
+      "options": [
+        "MODBUS/CIP",
+        "MODBUS/Ethernet",
+        "MODBUS/Plus",
+        "MODBUS/TCP"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-144",
+      "question": "What is the primary focus of Part 3-2 in the ISA/IEC 62443 series?",
+      "options": [
+        "Security technologies for IACS",
+        "Cybersecurity risk assessment and system design",
+        "Secure product development lifecycle requirements",
+        "Technical security requirements for IACS components"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-145",
+      "question": "What is the purpose of ISO/IEC 15408 (Common Criteria)?",
+      "options": [
+        "To define a security management organization",
+        "To describe a process for risk management",
+        "To define a product development evaluation methodology",
+        "To describe what constitutes a secure product"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-146",
+      "question": "What is TRUE regarding safety systems?",
+      "options": [
+        "No dedicated malware has been found targeting safety systems specifically.",
+        "Even the most modern and sophisticated safety systems can be defeated by an attacker.",
+        "Safety systems are an independent protection layer and as such have no cybersecurity vulnerabilities.",
+        "By integrating control and safety systems via Modbus TCP, cybersecurity risks are at a tolerable level."
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-147",
+      "question": "What must be established as part of the risk assessment process?",
+      "options": [
+        "Total elimination of risks",
+        "Increased budget allocation",
+        "Target Security Level (SL-Ts)",
+        "New technology implementation"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-148",
+      "question": "What should the identification analysis of discovered vulnerabilities determine?",
+      "options": [
+        "Root cause analysis",
+        "User interface improvements",
+        "The cost of patch development",
+        "Marketing strategy for the product"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-149",
+      "question": "What type of attack is characterized by encrypting an organization’s data and demanding payment for restoration?",
+      "options": [
+        "Phishing",
+        "Ransomware",
+        "DDoS attack",
+        "Malware variant"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-150",
+      "question": "What type of malware disrupted an emergency shutdown capability in safety systems?",
+      "options": [
+        "Zeus",
+        "Stuxnet",
+        "WannaCry",
+        "Triton or Trisis"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-151",
+      "question": "What type of security level defines what a component or system is capable of meeting? A. Capability security level B. Achieved security level C. Design security level D. Target security level",
+      "options": [
+        "Capability security level",
+        "Achieved security level",
+        "Design security level",
+        "Target security level"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-152",
+      "question": "What are the two elements of the risk analysis category of an IACS?",
+      "options": [
+        "Risk evaluation and risk identification",
+        "Business rationale and risk reduction and avoidance",
+        "Business rationale and risk identification and classification",
+        "Business recovery and risk elimination or mitigation"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-153",
+      "question": "Which activity is part of establishing policy, organization, and awareness?",
+      "options": [
+        "Communicate policies.",
+        "Establish the risk tolerance.",
+        "Identify detailed vulnerabilities.",
+        "Implement countermeasures."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-154",
+      "question": "Which activity is part of establishing policy, organization, and awareness? A. Communicate policies. B. Establish the risk tolerance. C. Identify detailed vulnerabilities. D. Implement countermeasures.",
+      "options": [
+        "Communicate policies.",
+        "Establish the risk tolerance.",
+        "Identify detailed vulnerabilities.",
+        "Implement countermeasures."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-155",
+      "question": "Which analysis method is MOST frequently used as an input to a security risk assessment?",
+      "options": [
+        "Failure Mode and Effects Analysis",
+        "Job Safety Analysis",
+        "Process Hazard Analysis (PHA)",
+        "System Safety Analysis (SSA)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-156",
+      "question": "Which characteristic is MOST closely associated with the deployment of a demilitarized zone (DMZ)?",
+      "options": [
+        "Level 4 systems must use the DMZ to communicate with Level 3 and below.",
+        "Level 0 can only interact with Level 1 through the firewall.",
+        "Internet access through the firewall is allowed.",
+        "Email is prevented, thereby mitigating the risk of phishing attempts."
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-157",
+      "question": "Which characteristic is MOST closely associated with the deployment of a demilitarized zone (DMZ)? A. Level 4 systems must use the DMZ to communicate with Level 3 and below. B. Level 0 can only interact with Level 1 through the firewall. C. Internet access through the firewall is allowed. D. Email is prevented, thereby mitigating the risk of phishing attempts.",
+      "options": [
+        "Level 4 systems must use the DMZ to communicate with Level 3 and below.",
+        "Level 0 can only interact with Level 1 through the firewall.",
+        "Internet access through the firewall is allowed.",
+        "Email is prevented, thereby mitigating the risk of phishing attempts."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-158",
+      "question": "Which communications system covers a large geographic area?",
+      "options": [
+        "Campus Area Network (CAN)",
+        "Local Area Network (LAN)",
+        "Storage Area Network",
+        "Wide Area Network (WAN)"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-159",
+      "question": "Which is a PRIMARY reason why network security is important in IACS environments?",
+      "options": [
+        "PLCs are inherently unreliable.",
+        "PLCs are programmed using ladder logic.",
+        "PLCs use serial or Ethernet communications methods.",
+        "PLCs under cyber attack can have costly and dangerous impacts."
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-160",
+      "question": "Which is a reason for and physical security regulations meeting a mixed resistance?",
+      "options": [
+        "Regulations are voluntary documents.",
+        "Regulations contain only informative elements.",
+        "Cybersecurity risks can best be managed individually and in isolation.",
+        "There are a limited number of enforced cybersecurity and physical security regulations."
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-161",
+      "question": "Which is a role of the application layer?",
+      "options": [
+        "Includes protocols specific to network applications such as email, file transfer, and reading data registers in a PLC",
+        "Includes user applications specific to network applications such as email, file transfer, and reading data registers in a PLC",
+        "Provides the mechanism for opening, closing, and managing a session between end-user application processes",
+        "Delivers and formats information, possibly with encryption and security"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-162",
+      "question": "Which is one of the PRIMARY goals of providing a framework addressing secure product development life-cycle requirements?",
+      "options": [
+        "Aligned development process",
+        "Aligned needs of industrial users",
+        "Well-documented security policies and procedures",
+        "Defense-in-depth approach to designing"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-163",
+      "question": "Which is the BEST deployment system for malicious code protection?",
+      "options": [
+        "Network segmentation",
+        "IACS protocol converters",
+        "Application whitelistinq (AWL) OD.",
+        "Zones and conduits"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-164",
+      "question": "Which is the implementation of PROFIBUS over Ethernet for non-safety-related communications?",
+      "options": [
+        "PROFIBUS DP",
+        "PROFIBUS PA",
+        "PROFINET",
+        "PROF1SAFE"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-165",
+      "question": "Which is the PRIMARY objective when defining a security zone?",
+      "options": [
+        "All assets in the zone must be from the same vendor.",
+        "All assets in the zone must share the same security requirements.",
+        "All assets in the zone must be at the same level in the Purdue model.",
+        "All assets in the zone must be physically located in the same area."
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-166",
+      "question": "Which is the PRIMARY reason why Modbus over Ethernet is easy to manaqe in a firewall?",
+      "options": [
+        "Modbus uses a single master to communicate with multiple slaves usinq simple commands.",
+        "Modbus is a proprietary protocol that is widely supported by vendors.",
+        "Modbus uses explicit source and destination IP addresses and a sinqle known TCP port.",
+        "Modbus has no known security vulnerabilities, so firewall rules are simple to implement."
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-167",
+      "question": "Which is the PRIMARY responsibility of the network layer of the Open Systems Interconnection (OSI) model?",
+      "options": [
+        "Forwards packets, including routing through intermediate routers",
+        "Gives transparent transfer of data between end users",
+        "Provides the rules for framing, converting electrical signals to data",
+        "Handles the physics of getting a message from one device to another"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-168",
+      "question": "Which is the PRIMARY responsibility of the network layer of the Open Systems Interconnection (OSI) model? A. Forwards packets, including routing through intermediate routers B. Gives transparent transfer of data between end users C. Provides the rules for framing, converting electrical signals to data D. Handles the physics of getting a message from one device to another",
+      "options": [
+        "Forwards packets, including routing through intermediate routers",
+        "Gives transparent transfer of data between end users",
+        "Provides the rules for framing, converting electrical signals to data",
+        "Handles the physics of getting a message from one device to another"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-169",
+      "question": "Which layer deals with data format conversion and encryption?",
+      "options": [
+        "Session",
+        "Data link",
+        "Application",
+        "Presentation"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-170",
+      "question": "Which layer in the Open Systems Interconnection (OSI) model would include the use of the File Transfer Protocol (FTP)?",
+      "options": [
+        "Application layer",
+        "Data link layer",
+        "Session layer",
+        "Transport layer"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-171",
+      "question": "Which model describes relationships between assets within an industrial automation and control system?",
+      "options": [
+        "Asset model",
+        "Zone model",
+        "Security level model",
+        "Reference architecture"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-172",
+      "question": "Which NIST Special Publication focuses specifically on securing Industrial Control Systems (ICS)?",
+      "options": [
+        "SP 800-30",
+        "SP 800-53",
+        "SP 800-82",
+        "SP 800-171"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-173",
+      "question": "Which of the following activities is NOT listed under the “Patch Testing” phase in the asset owner requirements?",
+      "options": [
+        "Notification",
+        "File authenticity",
+        "Removal procedure",
+        "Qualification and verification"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-174",
+      "question": "Which of the following are the critical variables related to access control?",
+      "options": [
+        "Reporting and monitoring",
+        "Account management and monitoring",
+        "Account management and password strength",
+        "Password strength and change frequency"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-175",
+      "question": "Which of the following attacks relies on a human weakness to succeed?",
+      "options": [
+        "Denial-of-service",
+        "Phishing",
+        "Escalation-of-privileges",
+        "Spoofing"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-176",
+      "question": "Which of the following can be employed as a barrier device in a segmented network?",
+      "options": [
+        "Router",
+        "Unmanaged switch",
+        "Domain controller"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-177",
+      "question": "Which of the following is a cause for the increase in attacks on IACS?",
+      "options": [
+        "Use of proprietary communications protocols",
+        "The move away from commercial off the shelf (COTS) systems, protocols, and networks",
+        "Knowledge of exploits and tools readily available on the Internet",
+        "Fewer personnel with system knowledge having access to IACS"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-178",
+      "question": "Which of the following is a cause for the increase in attacks on IACS? A. Use of proprietary communications protocols B. The move away from commercial off the shelf (COTS) systems, protocols, and networks C. Knowledge of exploits and tools readily available on the Internet D. Fewer personnel with system knowledge having access to IACS",
+      "options": [
+        "Use of proprietary communications protocols",
+        "The move away from commercial off the shelf (COTS) systems, protocols, and networks",
+        "Knowledge of exploits and tools readily available on the Internet",
+        "Fewer personnel with system knowledge having access to IACS"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-179",
+      "question": "Which of the following is a recommended default rule for IACS firewalls?",
+      "options": [
+        "Allow all traffic by default.",
+        "Allow IACS devices to access the Internet.",
+        "Allow traffic directly from the IACS network to the enterprise network.",
+        "Block all traffic by default."
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-180",
+      "question": "Which of the following is an activity that should trigger a review of the CSMS?",
+      "options": [
+        "Budgeting",
+        "New technical controls",
+        "Organizational restructuring",
+        "Security incident exposing previously unknown risk."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-181",
+      "question": "Which of the following is an element of security policy, organization, and awareness?",
+      "options": [
+        "Product development requirements",
+        "Staff training and security awareness",
+        "Technical requirement assessment",
+        "Penetration testing"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-182",
+      "question": "Which of the following is an element of security policy, organization, and awareness? A. Product development requirements B. Staff training and security awareness C. Technical requirement assessment D. Penetration testing",
+      "options": [
+        "Product development requirements",
+        "Staff training and security awareness",
+        "Technical requirement assessment",
+        "Penetration testing"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-183",
+      "question": "Which of the following is an industry sector-specific standard?",
+      "options": [
+        "ISA-62443 (EC 62443)",
+        "NIST SP800-82",
+        "API 1164",
+        "D. ISO 27001"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-184",
+      "question": "Which of the following is NOT a general class of firewalls?",
+      "options": [
+        "Packet filter",
+        "Network inspection",
+        "Application proxy",
+        "Stateful inspection"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-185",
+      "question": "Which of the following is NOT a strategy for deploying a WAN?",
+      "options": [
+        "Internet",
+        "Enterprise WANs",
+        "Local area networks",
+        "Carrier-managed WANs"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-186",
+      "question": "Which of the following is NOT listed under Organizational Security Measures (SP Element 1)?",
+      "options": [
+        "Malware protection",
+        "Background checks",
+        "Supply chain security",
+        "Security awareness training"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-187",
+      "question": "Which of the following is the BEST example of detection-in-depth best practices?",
+      "options": [
+        "Firewalls and unexpected protocols being used",
+        "IDS sensors deployed within multiple zones in the production environment",
+        "Role-based access control and unusual data transfer patterns",
+        "Role-based access control and VPNs"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-188",
+      "question": "Which of the following ISA-99 (IEC 62443) Reference Model levels is named correctly?",
+      "options": [
+        "Level 1: Supervisory Control",
+        "Level 2: Quality Control",
+        "Level 3: Operations Management",
+        "Level 4: Process"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-189",
+      "question": "Which of the following PRIMARILY determines access privileges for user accounts?",
+      "options": [
+        "Users' desire for ease of use",
+        "Authorization security policy",
+        "Common practice",
+        "Technical capability"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-190",
+      "question": "Which of the following provides the overall conceptual basis in the design of an appropriate security program?",
+      "options": [
+        "Asset model",
+        "Zone model",
+        "Reference model",
+        "Reference architecture"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-191",
+      "question": "Which of the following refers to internal rules that govern how an organization protects critical system resources?",
+      "options": [
+        "Formal guidance",
+        "Legislation",
+        "Security policyD- Code of conduct"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-192",
+      "question": "Which of the following staff is NOT mentioned as a stakeholder in the CSMS Program?",
+      "options": [
+        "Marketing",
+        "Operations",
+        "IT security",
+        "Physical security"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-193",
+      "question": "Which of the following tools has the potential for serious disruption of a control network and should not be used on a live system?",
+      "options": [
+        "Remote desktop",
+        "Vulnerability scanner",
+        "Web browser"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-194",
+      "question": "Which of the ISA 62443 standards focuses on the process of developing secure products?",
+      "options": [
+        "62443-1-1",
+        "62443-3-2",
+        "62443-3-3",
+        "62443-4-1"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-195",
+      "question": "Which part of the ISA/IEC 62443 series describes a methodology to develop quantitative metrics?",
+      "options": [
+        "Part 1-2",
+        "Part 1-3",
+        "Part 2-1",
+        "Part 3-2"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-196",
+      "question": "Which part of the standard provides a list of possible Foundational Requirements to address assessed risks?",
+      "options": [
+        "ISA/IEC 62443-3-1",
+        "ISA/IEC 62443-3-2",
+        "ISA/IEC 62443-3-3",
+        "ISA/IEC 62443-3-4"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-197",
+      "question": "Which policies and procedures publication is titled Patch Manaqement in the IACS Environment?",
+      "options": [
+        "ISA-TR62443-2-3",
+        "ISA-TR62443-1-4",
+        "ISA-62443-3-3",
+        "ISA-62443-4-2"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-198",
+      "question": "Which protocol is commonly used for managing the security of message transmission on the Internet via web browsers?",
+      "options": [
+        "TLS",
+        "L2TP",
+        "PPTP",
+        "IPsec"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-199",
+      "question": "Which service does an Intrusion Detection System (IDS) provide? A. It is the lock on the door for networks and computer systems. B. It is effective against all vulnerabilities in networks and computer systems. C. It blocks malicious activity in networks and computer systems. D. It detects attempts to break into or misuse a computer system.",
+      "options": [
+        "It is the lock on the door for networks and computer systems.",
+        "It is effective against all vulnerabilities in networks and computer systems.",
+        "It blocks malicious activity in networks and computer systems.",
+        "It detects attempts to break into or misuse a computer system."
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-200",
+      "question": "Which statement is TRUE regarding Intrusion Detection Systems (IDS)?",
+      "options": [
+        "Modern IDS recognize IACS devices by default.",
+        "They are very inexpensive to design and deploy.",
+        "They are effective against known vulnerabilities.",
+        "They require a small amount of care and feeding"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-201",
+      "question": "Which statement is TRUE reqardinq application of patches in an IACS environment?",
+      "options": [
+        "Patches should be applied as soon as they are available.",
+        "Patches should be applied within one month of availability.",
+        "Patches never should be applied in an IACS environment.",
+        "Patches should be applied based on the organization's risk assessment."
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-202",
+      "question": "Which steps are included in the ISA/IEC 62443 assess phase? A. Cybersecurity requirements specification and detailed cyber risk assessment B. Cybersecurity requirements specification and allocation of IACS assets to zones and conduits C. Detailed cyber risk assessment and cybersecurity maintenance, monitoring, and management of change D. Allocation of IACS assets to zones and conduits, and detailed cyber risk assessment",
+      "options": [
+        "Cybersecurity requirements specification and detailed cyber risk assessment",
+        "Cybersecurity requirements specification and allocation of IACS assets to zones and conduits",
+        "Detailed cyber risk assessment and cybersecurity maintenance, monitoring, and management of change",
+        "Allocation of IACS assets to zones and conduits, and detailed cyber risk assessment"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-203",
+      "question": "Which steps are part of implementing countermeasures?",
+      "options": [
+        "Establish the risk tolerance and select common countermeasures.",
+        "Establish the risk tolerance and update the business continuity plan.",
+        "Select common countermeasures and update the business continuity plan.",
+        "Select common countermeasures and collaborate with stakeholders."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-204",
+      "question": "Which steps are part of implementing countermeasures? A. Establish the risk tolerance and select common countermeasures. B. Establish the risk tolerance and update the business continuity plan. C. Select common countermeasures and update the business continuity plan. D. Select common countermeasures and collaborate with stakeholders.",
+      "options": [
+        "Establish the risk tolerance and select common countermeasures.",
+        "Establish the risk tolerance and update the business continuity plan.",
+        "Select common countermeasures and update the business continuity plan.",
+        "Select common countermeasures and collaborate with stakeholders."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-205",
+      "question": "Which type of cryptographic algorithms requires more than one key?",
+      "options": [
+        "Block ciphers",
+        "Stream ciphers",
+        "Symmetric (private) key",
+        "Asymmetric (public) key"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-206",
+      "question": "Who must be included in a training and security awareness program?",
+      "options": [
+        "Vendors and suppliers",
+        "Employees",
+        "All personnel",
+        "Temporary staff"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-207",
+      "question": "Whose responsibility is it to determine the level of risk an organization is willing to tolerate? A. Management B. Legal Department C. Operations Department D. Safety Department",
+      "options": [
+        "Management",
+        "Legal Department",
+        "Operations Department",
+        "Safety Department"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-208",
+      "question": "Why is OPC Classic considered firewall unfriendly?",
+      "options": [
+        "It allows use of only port 80.",
+        "It dynamically assigns several ports.",
+        "It is an obsolete communication standard.",
+        "It works with control devices from different manufacturers."
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-209",
+      "question": "Why is segmentation from non-IACS zones important in Network & Communication Security (SP Element 3)?",
+      "options": [
+        "To classify data according to sensitivity levels",
+        "To prevent attacks originating outside the IACS",
+        "To manage user identity persistence effectively",
+        "To ensure backup verification processes run smoothly"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "excel-210",
+      "question": "Within the National Institute of Standards and Technology Cybersecurity Framework v1.0 (NIST CSF), what is the status of the ISA 62443 standards?",
+      "options": [
+        "They are used as informative references.",
+        "They are used as normative references.",
+        "They are under consideration for future use.",
+        "They are not used."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
+      "chapter": 15,
+      "source": "ITExam Excel Bank"
     }
   ]
 }
