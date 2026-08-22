@@ -1,6 +1,6 @@
 {
-  "title": "Course Knowledge Checks",
-  "description": "Interactive knowledge check questions extracted directly from the ISA/IEC 62443 course materials.",
+  "title": "Course Knowledge Checks & Real Exam Questions",
+  "description": "Interactive knowledge check questions extracted from official course materials and real ISA/IEC 62443 Cybersecurity Fundamentals exam banks.",
   "questions": [
     {
       "id": "kc-1",
@@ -75,142 +75,170 @@
     {
       "id": "kc-6",
       "number": 6,
-      "source": "Knowledge Check | 6 (Page 60)",
-      "question": "According to ISA/IEC 62443, why should cybersecurity awareness be given the same emphasis as safety and operational integrity in an Industrial Automation and Control System (IACS) environment?",
+      "source": "Real Exam Bank | ITExams / SecExams Q#1",
+      "question": "Which characteristic is MOST closely associated with the deployment of a demilitarised zone (DMZ) in industrial control networks?",
       "options": [
-        { "letter": "A", "text": "IT security threats do not significantly impact industrial control systems" },
-        { "letter": "B", "text": "Safety incidents are more frequent than cybersecurity incidents in industrial environments" },
-        { "letter": "C", "text": "Operational integrity is only affected by mechanical failures, not cybersecurity threats" },
-        { "letter": "D", "text": "Cybersecurity failures can directly lead to physical safety risks and operational disruptions" }
+        { "letter": "A", "text": "Level 4 systems must use the DMZ to communicate with Level 3 and below." },
+        { "letter": "B", "text": "Level 0 can only interact with Level 1 through the firewall." },
+        { "letter": "C", "text": "Internet access through the firewall is allowed without restrictions." },
+        { "letter": "D", "text": "Email is prevented, thereby mitigating the risk of phishing attempts." }
       ],
-      "correctAnswer": "D",
-      "explanation": "In operational technology and IACS, cybersecurity incidents are not just data breaches—they can cause physical harm to personnel, environmental disasters, and catastrophic operational disruptions."
+      "correctAnswer": "A",
+      "explanation": "In Purdue reference model architectures, enterprise corporate IT systems (Level 4) communicate with plant operations (Level 3 and below) securely through an industrial DMZ."
     },
     {
       "id": "kc-7",
       "number": 7,
-      "source": "Knowledge Check | 7 (Page 61)",
-      "question": "According to best practices in ISA/IEC 62443 which of the following would best ensure the effectiveness of a cybersecurity awareness programme for employees of a manufacturing company?",
+      "source": "Real Exam Bank | ITExams Q#15",
+      "question": "What are the connections between security zones called in the ISA/IEC 62443 framework?",
       "options": [
-        { "letter": "A", "text": "Conducting a single, large-scale awareness session once a year for all employees" },
-        { "letter": "B", "text": "Customising awareness activities based on employee roles and responsibilities" },
-        { "letter": "C", "text": "Providing technical training only to IT staff, since they handle cybersecurity" },
-        { "letter": "D", "text": "Making cybersecurity training optional to avoid interfering with daily operations" }
+        { "letter": "A", "text": "Firewalls" },
+        { "letter": "B", "text": "Tunnels" },
+        { "letter": "C", "text": "Pathways" },
+        { "letter": "D", "text": "Conduits" }
       ],
-      "correctAnswer": "B",
-      "explanation": "Effective security awareness must be role-based. Operators, engineers, plant managers, and IT personnel face different threat vectors and require customized awareness programs tailored to their specific responsibilities."
+      "correctAnswer": "D",
+      "explanation": "Conduits are defined as secure communication channels that connect two or more security zones and enforce traffic filtering and access control."
     },
     {
       "id": "kc-8",
       "number": 8,
-      "source": "Knowledge Check | 8 (Page 62)",
-      "question": "A power grid operator wants to demonstrate the impact of cyber threats on industrial control systems to increase awareness. According to Section 2, which of the following best aligns with this goal?",
+      "source": "Real Exam Bank | ExamTopics Q#95",
+      "question": "How can defence in depth be achieved via security zones?",
       "options": [
-        { "letter": "A", "text": "Disabling network access for employees who fail cybersecurity tests" },
-        { "letter": "B", "text": "Conducting an employee satisfaction survey about cybersecurity training" },
-        { "letter": "C", "text": "Requiring all staff to read cybersecurity policy documents without additional engagement" },
-        { "letter": "D", "text": "Showing a demonstration of Industroyer malware on a protection relay" }
+        { "letter": "A", "text": "By having zones within zones, or subzones, that provide layered security" },
+        { "letter": "B", "text": "By having a zone edge that is using the security policies of the asset owner" },
+        { "letter": "C", "text": "By having zones that are connected via conduits using SSL encryption" },
+        { "letter": "D", "text": "By having zones that separate sensors from actuators to provide layered security" }
       ],
-      "correctAnswer": "D",
-      "explanation": "Demonstrating real-world industrial malware (such as Industroyer which targeted Ukrainian power substations) on test equipment or through controlled demonstrations provides tangible, high-impact awareness for operations staff."
+      "correctAnswer": "A",
+      "explanation": "Nesting security zones or creating subzones provides multiple concentric defensive layers, ensuring that an attacker breaching the outer plant zone still encounters internal security barriers."
     },
     {
       "id": "kc-9",
       "number": 9,
-      "source": "Knowledge Check | 9 (Page 63)",
-      "question": "Which of the following best describes why security awareness must be an ongoing process rather than a one-time activity?",
+      "source": "Real Exam Bank | ITExams Q#2",
+      "question": "Whose responsibility is it to determine the level of risk an organisation is willing to tolerate?",
       "options": [
-        { "letter": "A", "text": "Awareness programmes should only be conducted during security breaches" },
-        { "letter": "B", "text": "Employees tend to ignore cybersecurity policies, so frequent reminders enforce compliance" },
-        { "letter": "C", "text": "Cyber threats are constantly evolving, requiring regular updates to knowledge and behaviour" },
-        { "letter": "D", "text": "Once trained, employees do not require additional cybersecurity education" }
+        { "letter": "A", "text": "Management" },
+        { "letter": "B", "text": "Legal Department" },
+        { "letter": "C", "text": "Operations Department" },
+        { "letter": "D", "text": "Safety Department" }
       ],
-      "correctAnswer": "C",
-      "explanation": "Threat actors, phishing techniques, and industrial attack vectors evolve continuously. Ongoing awareness ensures staff maintain vigilance and adapt to emerging threats."
+      "correctAnswer": "A",
+      "explanation": "Executive management holds ultimate responsibility for establishing corporate risk tolerance and governance policies under ISA/IEC 62443-2-1."
     },
     {
       "id": "kc-10",
       "number": 10,
-      "source": "Knowledge Check | 10 (Page 64)",
-      "question": "A company wants to raise cybersecurity awareness at the executive level. According to best practices in ISA/IEC 62443, which solution best addresses this need?",
+      "source": "Real Exam Bank | ITExams Q#8",
+      "question": "What type of security level defines what a component or system is capable of meeting?",
       "options": [
-        { "letter": "A", "text": "Organising Board Member sessions that reveal high-impact cybersecurity risks" },
-        { "letter": "B", "text": "Sending a monthly cybersecurity newsletter to all employees, including executives" },
-        { "letter": "C", "text": "Assigning technical cybersecurity training to board members" },
-        { "letter": "D", "text": "Restricting executive access to sensitive cybersecurity information" }
+        { "letter": "A", "text": "Capability security level (SL-C)" },
+        { "letter": "B", "text": "Achieved security level (SL-A)" },
+        { "letter": "C", "text": "Design security level" },
+        { "letter": "D", "text": "Target security level (SL-T)" }
       ],
       "correctAnswer": "A",
-      "explanation": "Executives and board members require high-level briefings focused on business risk, operational resilience, and liability rather than technical configuration details."
+      "explanation": "Security Level - Capability (SL-C) measures the built-in security features and capabilities that a product or system is designed to achieve."
     },
     {
       "id": "kc-11",
       "number": 11,
-      "source": "Knowledge Check | 11 (Page 104)",
-      "question": "Which of the following best explains the primary function of the ISA/IEC 62443 models in managing IACS?",
+      "source": "Real Exam Bank | ITExams Q#7",
+      "question": "Which steps are included in the ISA/IEC 62443 assess phase?",
       "options": [
-        { "letter": "A", "text": "Provides specific implementation instructions for security measures" },
-        { "letter": "B", "text": "Establishes a cybersecurity framework that applies only to OT environments, without addressing IT environments" },
-        { "letter": "C", "text": "Aids in identifying security needs, structuring security policies and guiding implementation" },
-        { "letter": "D", "text": "Eliminates the need for any other industrial security standards or guidelines" }
+        { "letter": "A", "text": "Cybersecurity requirements specification and detailed cyber risk assessment" },
+        { "letter": "B", "text": "Cybersecurity requirements specification and allocation of IACS assets to zones and conduits" },
+        { "letter": "C", "text": "Detailed cyber risk assessment and cybersecurity maintenance, monitoring, and management of change" },
+        { "letter": "D", "text": "Allocation of IACS assets to zones and conduits, and detailed cyber risk assessment" }
       ],
-      "correctAnswer": "C",
-      "explanation": "The ISA/IEC 62443 models (such as the Purdue Reference Model and Zone & Conduit Model) provide foundational structures to help organizations identify security needs, structure security policies, and guide the implementation of defenses."
+      "correctAnswer": "D",
+      "explanation": "The assess phase under 62443-3-2 begins with partitioning the system into security zones and conduits followed by conducting a detailed cyber risk assessment."
     },
     {
       "id": "kc-12",
       "number": 12,
-      "source": "Knowledge Check | 12 (Page 105)",
-      "question": "How does the Zone and Conduit model contribute to cybersecurity in an IACS environment?",
+      "source": "Real Exam Bank | ExamTopics Q#139",
+      "question": "What is the standard formula for calculating risk in industrial cybersecurity frameworks?",
       "options": [
-        { "letter": "A", "text": "Defines specific communication security protocols for each type of control network in an IACS environment" },
-        { "letter": "B", "text": "Allows direct communication between all system components without restrictions" },
-        { "letter": "C", "text": "Eliminates the need for network segmentation in industrial control networks" },
-        { "letter": "D", "text": "Groups assets based on security requirements and regulates communication between them" }
+        { "letter": "A", "text": "Risk = Likelihood + Consequence" },
+        { "letter": "B", "text": "Risk = Threat - Vulnerability x Consequence" },
+        { "letter": "C", "text": "Risk = Threat + Vulnerability + Consequence" },
+        { "letter": "D", "text": "Risk = Threat x Vulnerability x Consequence" }
       ],
       "correctAnswer": "D",
-      "explanation": "The Zone & Conduit model groups assets into logical security zones based on shared security requirements and trust levels, and regulates communication between them through controlled conduits."
+      "explanation": "Risk is fundamentally evaluated as a multiplicative function of Threat probability, Vulnerability susceptibility, and Consequence severity."
     },
     {
       "id": "kc-13",
       "number": 13,
-      "source": "Knowledge Check | 13 (Page 106)",
-      "question": "What is the function of policies and procedures within an IACS security framework?",
+      "source": "Real Exam Bank | ExamTopics Q#193",
+      "question": "Which of the following is NOT typically listed under Organizational Security Measures (SP Element 1 in 62443-2-1)?",
       "options": [
-        { "letter": "A", "text": "Applies only to administrative controls and does not address technical security measures" },
-        { "letter": "B", "text": "Provides high-level guidelines and operational instructions to enforce security measures" },
-        { "letter": "C", "text": "Replaces the need for implementing security technologies such as firewalls and encryption" },
-        { "letter": "D", "text": "Focuses solely on incident response and recovery procedures, not on proactive security measures" }
+        { "letter": "A", "text": "Malware protection" },
+        { "letter": "B", "text": "Background checks" },
+        { "letter": "C", "text": "Supply chain security" },
+        { "letter": "D", "text": "Security awareness training" }
       ],
-      "correctAnswer": "B",
-      "explanation": "Policies and procedures establish high-level management guidelines and step-by-step operational instructions that govern how security measures are enforced across the organisation."
+      "correctAnswer": "A",
+      "explanation": "Malware protection is a technical security countermeasure, whereas background checks, supply chain security, and awareness training are organizational policies."
     },
     {
       "id": "kc-14",
       "number": 14,
-      "source": "Knowledge Check | 14 (Page 107)",
-      "question": "What is the primary function of security levels within the ISA/IEC 62443 Series?",
+      "source": "Real Exam Bank | ExamJungle Sample",
+      "question": "An organisation requires two different employees to approve any high-risk transaction. What is the name of this security principle?",
       "options": [
-        { "letter": "A", "text": "Defines the required level of protection based on the potential threats and risks" },
-        { "letter": "B", "text": "Ensures all systems use standardized security configurations regardless of industry, system type or use case" },
-        { "letter": "C", "text": "Reduces the need for ongoing cybersecurity assessments by providing predefined security levels" },
-        { "letter": "D", "text": "Mandates uniform security standards that apply to both IT and OT systems" }
+        { "letter": "A", "text": "Least Privilege" },
+        { "letter": "B", "text": "Separation of Duties" },
+        { "letter": "C", "text": "Job Rotation" },
+        { "letter": "D", "text": "Mandatory Vacation" }
       ],
-      "correctAnswer": "A",
-      "explanation": "Security Levels (SL 1 to 4) define the required target degree of protection against vulnerabilities and threats based on comprehensive risk assessment."
+      "correctAnswer": "B",
+      "explanation": "Separation of Duties prevents a single individual from having end-to-end control over critical tasks by dividing responsibility across multiple personnel."
     },
     {
       "id": "kc-15",
       "number": 15,
-      "source": "Knowledge Check | 15 (Page 108)",
-      "question": "How do the Reference Model and the Zone and Conduit Model relate within the ISA/IEC 62443 Series?",
+      "source": "Real Exam Bank | ITExams Q#5",
+      "question": "Which service does an Intrusion Detection System (IDS) provide in industrial network monitoring?",
       "options": [
-        { "letter": "A", "text": "Reference model establishes a conceptual framework, while the Zone and Conduit model applies security segmentation in practice" },
-        { "letter": "B", "text": "Reference Model replaces the need for network segmentation using the Zone and Conduit Model" },
-        { "letter": "C", "text": "Zone and Conduit Model identifies specific technologies for securing networks and the Reference model provides a framework for implementing cybersecurity practices" },
-        { "letter": "D", "text": "Zone and Conduit Model provides high-level structure for defining security levels and risk assessment while the Reference Model defines segmentation of networks" }
+        { "letter": "A", "text": "It acts as a physical lock on control room doors." },
+        { "letter": "B", "text": "It is effective against all known and unknown network vulnerabilities." },
+        { "letter": "C", "text": "It automatically blocks malicious activity in real time." },
+        { "letter": "D", "text": "It detects attempts to break into or misuse a computer system." }
+      ],
+      "correctAnswer": "D",
+      "explanation": "An IDS monitors network traffic and system events to detect unauthorized intrusion attempts or policy violations, alerting operators without actively blocking traffic (unlike an IPS)."
+    },
+    {
+      "id": "kc-16",
+      "number": 16,
+      "source": "Real Exam Bank | ExamTopics Q#94",
+      "question": "What is TRUE regarding industrial safety instrumented systems (SIS)?",
+      "options": [
+        { "letter": "A", "text": "No dedicated malware has ever been found targeting safety systems specifically." },
+        { "letter": "B", "text": "Even the most modern and sophisticated safety systems can be defeated by a determined attacker." },
+        { "letter": "C", "text": "Safety systems are completely independent protection layers and have zero cybersecurity vulnerabilities." },
+        { "letter": "D", "text": "By integrating control and safety systems via Modbus TCP, cybersecurity risks are eliminated." }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Advanced industrial malware (such as Triton/Trisis) has demonstrated that safety systems can be targeted and compromised by sophisticated cyber attackers."
+    },
+    {
+      "id": "kc-17",
+      "number": 17,
+      "source": "Real Exam Bank | ExamTopics Q#96",
+      "question": "What is considered one of the most important lines of defence in securing an industrial control system?",
+      "options": [
+        { "letter": "A", "text": "Knowledgeable and vigilant staff" },
+        { "letter": "B", "text": "Reducing the attack vector of Level 5 devices" },
+        { "letter": "C", "text": "Installing firewalls from a single preferred vendor" },
+        { "letter": "D", "text": "Implementing countermeasures defined exclusively in document 62443-3-3" }
       ],
       "correctAnswer": "A",
-      "explanation": "The Reference Model (such as Purdue Levels 0-4) establishes a conceptual hierarchy of industrial functions, while the Zone & Conduit Model applies security segmentation in practice by grouping assets and regulating inter-zone communication."
+      "explanation": "Technology alone cannot secure an industrial plant; well-trained, knowledgeable, and vigilant personnel are the ultimate line of defence against cyber attacks."
     }
   ]
 }
