@@ -52,6 +52,12 @@
 - [x] Fix numeric chapter values causing `ch.trim is not a function` in KnowledgeCheckView
 - [x] Validate Knowledge Checks runtime, filters, TypeScript, and production build
 - [x] Save and deliver the Knowledge Checks runtime fix checkpoint
+- [x] Rename the product to ISA/IEC 62443 Learning Platform
+- [x] Create top-level IC32 navigation containing all existing course features
+- [x] Add three additional top-level tabs with clearly labelled future-ready shells
+- [x] Fix every missing or unstable React key in KnowledgeCheckView
+- [x] Validate runtime console, TypeScript, build, and responsive navigation
+- [x] Save and deliver the restructured platform checkpoint
 - [ ] Check GitHub repository visibility and Pages configuration
 - [ ] Configure Vite base path for GitHub Pages deployment
 - [ ] Create GitHub Actions workflow for automated Pages deployment

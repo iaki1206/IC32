@@ -22,6 +22,8 @@ type Option = {
   text: string;
 };
 
+type RawOption = Option | string | { letter?: string; text?: string };
+
 type KnowledgeQuestion = {
   id: string;
   number: number;
@@ -29,13 +31,25 @@ type KnowledgeQuestion = {
   sourceType?: string;
   chapter?: string | number | null;
   question: string;
-  options: Option[];
+  options: RawOption[];
   correctAnswer?: string | null;
   explanation?: string;
   answerStatus?: string;
 };
 
 const questions = data.questions as KnowledgeQuestion[];
+
+const normaliseOptions = (options: RawOption[] | undefined, questionId: string): Option[] =>
+  (options ?? []).map((option, index) => {
+    const fallbackLetter = String.fromCharCode(65 + index);
+    if (typeof option === "string") {
+      return { letter: fallbackLetter, text: option };
+    }
+    return {
+      letter: option.letter?.trim() || fallbackLetter,
+      text: option.text?.trim() || "",
+    };
+  });
 
 // Normalise chapter values because imported question banks may contain strings or numbers.
 const normaliseChapter = (chapter: string | number | null | undefined): string =>
@@ -107,7 +121,12 @@ export default function KnowledgeCheckView() {
 
       const searchMatches =
         !query ||
-        [question.question, question.chapter, question.source, ...question.options.map((option) => option.text)]
+        [
+          question.question,
+          question.chapter,
+          question.source,
+          ...normaliseOptions(question.options, question.id).map((option) => option.text),
+        ]
           .filter(Boolean)
           .join(" ")
           .toLowerCase()
@@ -324,6 +343,7 @@ export default function KnowledgeCheckView() {
         ) : (
           filteredQuestions.map((q, index) => {
             const userSelection = selectedAnswers[q.id];
+            const options = normaliseOptions(q.options, q.id);
             const hasAnswerKey = Boolean(q.correctAnswer);
             const isCorrect = userSelection === q.correctAnswer;
             const showResult = showResults[q.id] || quizSubmitted;
@@ -357,7 +377,7 @@ export default function KnowledgeCheckView() {
                 </div>
 
                 <div className="space-y-2 pt-1">
-                  {q.options.map((opt) => {
+                  {options.map((opt, optionIndex) => {
                     const isSelected = userSelection === opt.letter;
                     const isTheCorrectAnswer = hasAnswerKey && q.correctAnswer === opt.letter;
 
@@ -376,7 +396,7 @@ export default function KnowledgeCheckView() {
                     return (
                       <button
                         type="button"
-                        key={opt.letter}
+                        key={`${q.id}-option-${optionIndex}`}
                         onClick={() => handleSelectOption(q.id, opt.letter)}
                         disabled={quizSubmitted}
                         className={`w-full text-left p-3.5 rounded-xl border transition-all flex items-start gap-3 cursor-pointer ${optionStyle}`}

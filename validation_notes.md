@@ -21,3 +21,9 @@ The visible description for `62443-2-1` currently contains the malformed spellin
 ## Knowledge Checks Runtime Fix
 
 Validated on 22 August 2026. The Knowledge Checks tab opened successfully after the chapter normalisation fix. The previous `TypeError: ch.trim is not a function` did not recur. The page rendered the 224-question bank, source filter, chapter filter, answer-status filter, result counter, Review Incorrect button, and Reset Answers button. Numeric chapter values in the imported data are safely converted to strings before filtering and sorting.
+
+## ISA/IEC 62443 Platform Shell and React Key Validation
+
+Validated on 22 August 2026. The document title is now `ISA/IEC 62443 Learning Platform`. The header shows four top-level tabs: `IC32`, `Reference Library`, `Exam Practice`, and `Progress & Notes`. All existing course navigation remains visible under IC32. The root page renders the 15-chapter IC32 study workspace. KnowledgeCheckView now normalises imported string options and uses stable question/option keys, including for imported records whose options are plain strings.
+
+The rebranded shell was opened in the browser and the Knowledge Check tab was selected. Browser console inspection returned no output, confirming that the previous React unique-key warning was not reproduced after stable option keys were added.
