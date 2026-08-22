@@ -5360,6 +5360,200 @@
       "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
       "chapter": 15,
       "source": "ITExam Excel Bank"
+    },
+    {
+      "id": "pasted3-211",
+      "question": "IC32 — ISA/IEC 62443 CYBERSECURITY FUNDAMENTALS SPECIALIST Baza de test: 127 întrebari  |  format: Întrebare → Variante → RĂSPUNS (jos) Surse (toate publice, fere login): - solution2pass.com, validtests.com, itexams.com  (bancuri de ~113) - examjungle.com                                  (10, cu explicatii) - YouTube mock-testuri oficiale IC32 (12443)      (4, raspunsuri in text) (banca oficiala itexams revendica 208; restul e plat; nu am intrat contul) Observatie: raspunsurile sunt din surse tertiare — verifies-le, nu te baza 100%. ============================================================== A company discovers malware on a portable USB device used within their IACS environment. According to the document, which SP Element and controls would be MOST relevant to address this issue?",
+      "options": [
+        "SP Element 1 — Processes for discovery of security anomalies",
+        "SP Element 2 — Asset inventory baseline",
+        "SP Element 4 — Component hardening and dedicated portable media",
+        "SP Element 7 — Incident handling and response"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Extracted from verified IC32 test bank (pasted_content_3.txt).",
+      "chapter": 15,
+      "source": "IC32 Test Bank 127 (pasted_content_3.txt)"
+    },
+    {
+      "id": "pasted3-212",
+      "question": "Authorization (user accounts) must be granted based on which of the following?",
+      "options": [
+        "Individual preferences",
+        "Common needs for large groups",
+        "Specific roles",
+        "System complexity"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Extracted from verified IC32 test bank (pasted_content_3.txt).",
+      "chapter": 15,
+      "source": "IC32 Test Bank 127 (pasted_content_3.txt)"
+    },
+    {
+      "id": "pasted3-213",
+      "question": "Which service does an Intrusion Detection System (IDS) provide?",
+      "options": [
+        "It is the lock on the door for networks and computer systems.",
+        "It is effective against all vulnerabilities in networks and computer systems.",
+        "It blocks malicious activity in networks and computer systems.",
+        "It detects attempts to break into or misuse a computer system."
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Extracted from verified IC32 test bank (pasted_content_3.txt).",
+      "chapter": 15,
+      "source": "IC32 Test Bank 127 (pasted_content_3.txt)"
+    },
+    {
+      "id": "pasted3-214",
+      "question": "Whose responsibility is it to determine the level of risk an organization is willing to tolerate?",
+      "options": [
+        "Management",
+        "Legal Department",
+        "Operations Department",
+        "Safety Department"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Extracted from verified IC32 test bank (pasted_content_3.txt).",
+      "chapter": 15,
+      "source": "IC32 Test Bank 127 (pasted_content_3.txt)"
+    },
+    {
+      "id": "pasted3-215",
+      "question": "Global Logistics Inc. (GLI) is a large shipping and logistics company that operates a complex network of warehouses, distribution centers, and transportation fleets. The company relies heavily on its Industrial Control Systems (ICS) and Supervisory Control and Data Acquisition (SCADA) systems to manage automated sorting machinery, climate control in sensitive storage areas, and fleet tracking. Historically, the ICS/SCADA network was completely air-gapped from the corporate IT network. Current Situation: To improve efficiency and enable predictive maintenance, GLI's management has approved a project to connect the ICS/SCADA network to the corporate IT network. This will allow data from the operational technology (OT) environment to be analyzed by business intelligence platforms in the IT environment. The CISO is concerned because the ICS/SCADA systems are legacy devices, many running on old, unpatched operating systems that cannot be easily upgraded. The OT engineers are resistant to any changes that could introduce latency or cause downtime. Requirements & Constraints: - Prevent unauthorized traffic from the IT network from reaching the critical ICS/SCADA devices. - Allow specific, approved data flows from the OT network to a data historian server in the IT network. - Ensure that security controls do not interfere with the real-time operational requirements of the OT environment. - The solution must be implemented without replacing the legacy ICS/SCADA equipment. Which of the following architectural approaches BEST meets GLI's security and operational requirements? ```mermaid graph TD subgraph IT_Network [Corporate IT Network] BI[BI Platform] Users[Corporate Users] end subgraph OT_Network [ICS/SCADA Network] PLC[PLCs] HMI[HMIs] Sensors[Sensors] end IT_Network -- \"????\" -- OT_Network ```",
+      "options": [
+        "Install host-based intrusion detection systems (HIDS) on all ICS/SCADA devices and create firewall rules on the corporate firewall to allow traffic between the networks.",
+        "Implement a Demilitarized Zone (DMZ) between the IT and OT networks, placing a data historian server and a proxy server in the DMZ. All traffic must be terminated and inspected at the proxy.",
+        "Deploy a single, large Next-Generation Firewall (NGFW) to connect the two networks directly, relying on deep packet inspection and application-aware rules to secure the traffic.",
+        "Establish a VPN tunnel between the data historian server in the IT network and the central SCADA server in the OT network, encrypting all communication between them."
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Extracted from verified IC32 test bank (pasted_content_3.txt).",
+      "chapter": 15,
+      "source": "IC32 Test Bank 127 (pasted_content_3.txt)"
+    },
+    {
+      "id": "pasted3-216",
+      "question": "A SOC analyst is reviewing logs from a Security Information and Event Management (SIEM) system and notices a large number of failed login attempts for a single administrator account, originating from multiple international IP addresses within a five-minute window. This is immediately followed by a single successful login from a new, previously unseen international IP address. Which type of attack has MOST likely occurred?",
+      "options": [
+        "Phishing",
+        "Denial-of-Service (DoS)",
+        "Password Spraying",
+        "Brute-Force Attack"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Correct answer is D. Extracted from verified IC32 test bank (pasted_content_3.txt).",
+      "chapter": 15,
+      "source": "IC32 Test Bank 127 (pasted_content_3.txt)"
+    },
+    {
+      "id": "pasted3-217",
+      "question": "Which of the following are considered administrative security controls? (Select THREE).",
+      "options": [
+        "Firewall",
+        "Security awareness training",
+        "Acceptable use policy",
+        "Door lock"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Extracted from verified IC32 test bank (pasted_content_3.txt).",
+      "chapter": 15,
+      "source": "IC32 Test Bank 127 (pasted_content_3.txt)"
+    },
+    {
+      "id": "pasted3-218",
+      "question": "A software development team uses a CI/CD pipeline to automate builds, testing, and deployments. A security engineer wants to integrate security scanning into this pipeline to identify vulnerabilities early in the development lifecycle. This practice is a core component of which methodology?",
+      "options": [
+        "ITIL (Information Technology Infrastructure Library)",
+        "Waterfall Model",
+        "DevSecOps",
+        "Six Sigma"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Extracted from verified IC32 test bank (pasted_content_3.txt).",
+      "chapter": 15,
+      "source": "IC32 Test Bank 127 (pasted_content_3.txt)"
+    },
+    {
+      "id": "pasted3-219",
+      "question": "An organization is concerned about insider threats. A security architect has been asked to implement a control that requires two different employees to approve any high-risk transaction, such as a wire transfer over $100,000. What is the name of this security principle?",
+      "options": [
+        "Least Privilege",
+        "Separation of Duties",
+        "Job Rotation",
+        "Mandatory Vacation"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Correct answer is B. Extracted from verified IC32 test bank (pasted_content_3.txt).",
+      "chapter": 15,
+      "source": "IC32 Test Bank 127 (pasted_content_3.txt)"
+    },
+    {
+      "id": "pasted3-220",
+      "question": "What is the primary purpose of conducting a threat modeling exercise during the design phase of a new application?",
+      "options": [
+        "To generate a complete list of all vulnerabilities present in the application code.",
+        "To satisfy regulatory compliance requirements for security documentation.",
+        "To identify and prioritize potential threats and security weaknesses from an architectural perspective before code is written.",
+        "To perform dynamic application security testing (DAST) on the running application."
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Extracted from verified IC32 test bank (pasted_content_3.txt).",
+      "chapter": 15,
+      "source": "IC32 Test Bank 127 (pasted_content_3.txt)"
+    },
+    {
+      "id": "pasted3-221",
+      "question": "A hospital needs to ensure that patient data, classified as Protected Health Information (PHI), is secured according to regulatory requirements. A security administrator is configuring full-disk encryption on laptops used by medical staff. What specific aspect of the CIA triad does this control primarily address? ```mermaid pie title CIA Triad Focus \"Confidentiality\" : 70 \"Integrity\" : 15 \"Availability\" : 15 ```",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Non-repudiation"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Extracted from verified IC32 test bank (pasted_content_3.txt).",
+      "chapter": 15,
+      "source": "IC32 Test Bank 127 (pasted_content_3.txt)"
+    },
+    {
+      "id": "pasted3-222",
+      "question": "True or False: A zero-day vulnerability is a software flaw that has been publicly disclosed but for which no official patch or update has been released by the vendor.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Extracted from verified IC32 test bank (pasted_content_3.txt).",
+      "chapter": 15,
+      "source": "IC32 Test Bank 127 (pasted_content_3.txt)"
+    },
+    {
+      "id": "pasted3-223",
+      "question": "The company prides itself on innovation and rapid feature deployment, following a DevOps model. The entire infrastructure is hosted in a public cloud environment. The application handles sensitive financial data, including transaction histories and personally identifiable information (PII). Current Situation: An external audit revealed several security concerns. The development team has been storing database credentials and API keys as plain text variables within their source code repositories. The audit also noted that the company has no formal process for managing user access to its cloud infrastructure, with several developers having broad administrative permissions. Finally, there is no centralized system for monitoring and responding to security events, making it difficult to detect breaches. Requirements & Constraints: - Eliminate the practice of storing secrets in source code. - Implement the principle of least privilege for cloud infrastructure access. - Establish a capability for centralized logging and security event monitoring. - The solutions must be cloud-native and integrate well with their existing CI/CD pipeline. Which combination of security controls would be MOST effective in addressing all of the audit findings for FinSecure?",
+      "options": [
+        "Use a dedicated secrets management tool (e.g., HashiCorp Vault or AWS Secrets Manager), implement Role-Based Access Control (RBAC) using cloud IAM, and deploy a Security Information and Event Management (SIEM) tool.",
+        "Encrypt the source code repository, require multi-factor authentication for all developers, and install antivirus software on all cloud servers.",
+        "Store secrets in an encrypted file within the repository, create a single 'developer' role with read-only access, and manually review application logs daily.",
+        "Implement a Web Application Firewall (WAF), enforce stricter password policies for developers, and use a log aggregation tool without alerting capabilities."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Correct answer is A. Extracted from verified IC32 test bank (pasted_content_3.txt).",
+      "chapter": 15,
+      "source": "IC32 Test Bank 127 (pasted_content_3.txt)"
+    },
+    {
+      "id": "pasted3-224",
+      "question": "A security analyst needs to assess the security posture of a web application by actively probing it for vulnerabilities like SQL injection and cross-site scripting (XSS) while it is running in a test environment. What type of security testing is being performed?",
+      "options": [
+        "Static Application Security Testing (SAST)",
+        "Penetration Testing",
+        "Dynamic Application Security Testing (DAST)",
+        "Fuzzing"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Correct answer is C. Extracted from verified IC32 test bank (pasted_content_3.txt).",
+      "chapter": 15,
+      "source": "IC32 Test Bank 127 (pasted_content_3.txt)"
     }
   ]
 }
