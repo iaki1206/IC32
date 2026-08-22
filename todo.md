@@ -38,6 +38,9 @@
 - [x] Make Chapter the primary study hub displaying all learning objectives, topics, definitions, beginner explanations, key points, and exam tips
 - [x] Validate TypeScript compilation, production build, and navigation behavior
 - [x] Save and deliver the updated Chapter-focused platform checkpoint
+- [x] Remove Day 1 and Day 2 from chapter and section menu titles
+- [x] Validate menu labels and preserve day information in chapter content
+- [x] Save and deliver the menu-label cleanup checkpoint
 
 ## Style Decisions
 

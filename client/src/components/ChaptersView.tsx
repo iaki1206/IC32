@@ -73,7 +73,7 @@ export default function ChaptersView({
         <div className="lg:col-span-1 space-y-4">
           <Card className="p-4 border border-gray-200 shadow-sm bg-white space-y-2">
             <div className="font-bold text-xs uppercase tracking-wider text-gray-500 px-2 mb-2">
-              All 15 Chapters (Day 1 & Day 2)
+              All 15 Chapters
             </div>
 
             <div className="space-y-1">
@@ -104,7 +104,7 @@ export default function ChaptersView({
                         {ch.id}
                       </span>
                       <div className="truncate">
-                        <div className="text-[10px] uppercase tracking-wide opacity-80">{ch.number} • Day {ch.day}</div>
+                        <div className="text-[10px] uppercase tracking-wide opacity-80">{ch.number}</div>
                         <div className="text-xs truncate">{ch.title}</div>
                       </div>
                     </div>

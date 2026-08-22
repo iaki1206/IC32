@@ -43,11 +43,8 @@ export default function EnhancedSidebar({
   const day1Sections = sections.filter((s) => s.day === 1);
   const day2Sections = sections.filter((s) => s.day === 2);
 
-  const renderSectionGroup = (groupSections: Section[], dayLabel: string) => (
+  const renderSectionGroup = (groupSections: Section[]) => (
     <div className="mb-4">
-      <h3 className="px-4 py-2 text-xs font-bold text-gray-500 uppercase tracking-wider">
-        {dayLabel}
-      </h3>
       <div className="space-y-1">
         {groupSections.map((section) => {
           const isSelected = selectedSection.id === section.id;
@@ -136,8 +133,8 @@ export default function EnhancedSidebar({
 
       {/* Sections List */}
       <div className="flex-1 overflow-y-auto">
-        {renderSectionGroup(day1Sections, "Day 1")}
-        {renderSectionGroup(day2Sections, "Day 2")}
+        {renderSectionGroup(day1Sections)}
+        {renderSectionGroup(day2Sections)}
       </div>
 
       {/* Progress Footer */}

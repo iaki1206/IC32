@@ -58,11 +58,7 @@ export default function Sidebar({
 
       {/* Navigation */}
       <div className="flex-1 overflow-y-auto">
-        {/* Day 1 */}
         <div className="px-2 py-4">
-          <h3 className="px-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-            Day 1
-          </h3>
           <div className="space-y-1">
             {day1Sections.map((section) => (
               <div key={section.id}>
@@ -108,11 +104,7 @@ export default function Sidebar({
           </div>
         </div>
 
-        {/* Day 2 */}
         <div className="px-2 py-4 border-t border-sidebar-border">
-          <h3 className="px-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-            Day 2
-          </h3>
           <div className="space-y-1">
             {day2Sections.map((section) => (
               <div key={section.id}>
