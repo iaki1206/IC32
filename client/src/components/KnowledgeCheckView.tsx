@@ -13,6 +13,7 @@ import {
   BookOpenCheck,
   AlertCircle,
   BookOpen,
+  AlertTriangle,
 } from "lucide-react";
 import data from "@/data/knowledgeCheckData.json";
 
@@ -56,11 +57,27 @@ export default function KnowledgeCheckView() {
   const [sourceGroupFilter, setSourceGroupFilter] = useState("all");
   const [chapterFilter, setChapterFilter] = useState("all");
   const [answerFilter, setAnswerFilter] = useState("all");
+  const [incorrectOnly, setIncorrectOnly] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
+
+  const incorrectQuestionIds = useMemo(() => {
+    const ids = new Set<string>();
+    for (const q of questions) {
+      const userSel = selectedAnswers[q.id];
+      if (userSel && q.correctAnswer && userSel !== q.correctAnswer) {
+        ids.add(q.id);
+      }
+    }
+    return ids;
+  }, [selectedAnswers]);
 
   const filteredQuestions = useMemo(() => {
     const query = searchTerm.trim().toLowerCase();
     return questions.filter((question) => {
+      if (incorrectOnly && !incorrectQuestionIds.has(question.id)) {
+        return false;
+      }
+
       const src = question.source || "";
       let sourceMatches = true;
       if (sourceGroupFilter === "pdf") {
@@ -94,7 +111,7 @@ export default function KnowledgeCheckView() {
 
       return sourceMatches && chapterMatches && answerMatches && searchMatches;
     });
-  }, [answerFilter, chapterFilter, searchTerm, sourceGroupFilter]);
+  }, [answerFilter, chapterFilter, incorrectOnly, incorrectQuestionIds, searchTerm, sourceGroupFilter]);
 
   const answerableQuestions = questions.filter((question) => Boolean(question.correctAnswer));
   const answeredAnswerableCount = answerableQuestions.filter((question) => Boolean(selectedAnswers[question.id])).length;
@@ -118,6 +135,7 @@ export default function KnowledgeCheckView() {
   const resetQuiz = () => {
     setSelectedAnswers({});
     setShowResults({});
+    setIncorrectOnly(false);
     setQuizSubmitted(false);
   };
 
@@ -131,7 +149,7 @@ export default function KnowledgeCheckView() {
           </Badge>
           <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl mb-2">Knowledge Checks & Exam Practice</h1>
           <p className="text-blue-100 text-sm sm:text-base max-w-3xl leading-relaxed">
-            Unifying the IC32 PDF noteset, ITExam bank, real exam questions, and course quizzes. Use the source and chapter filters below to target your exam revision precisely.
+            Unifying the IC32 PDF noteset, ITExam bank, real exam questions, and course quizzes. Use the source and chapter filters or review incorrect answers to target your exam revision precisely.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-3 min-w-[260px]">
@@ -184,7 +202,7 @@ export default function KnowledgeCheckView() {
           <div className="flex flex-wrap items-center gap-2">
             <div className="flex items-center gap-1.5 text-xs font-semibold text-gray-600">
               <BookOpen className="w-4 h-4 text-indigo-600" />
-              <span>Chapter / Section:</span>
+              <span>Chapter:</span>
             </div>
             <select
               value={chapterFilter}
@@ -214,7 +232,7 @@ export default function KnowledgeCheckView() {
             <span className="text-xs text-gray-500 font-medium">
               Showing <strong className="text-gray-900">{filteredQuestions.length}</strong> of {questions.length} questions
             </span>
-            {(sourceGroupFilter !== "all" || chapterFilter !== "all" || answerFilter !== "all" || searchTerm !== "") && (
+            {(sourceGroupFilter !== "all" || chapterFilter !== "all" || answerFilter !== "all" || searchTerm !== "" || incorrectOnly) && (
               <Button
                 variant="outline"
                 size="sm"
@@ -223,17 +241,18 @@ export default function KnowledgeCheckView() {
                   setSourceGroupFilter("all");
                   setChapterFilter("all");
                   setAnswerFilter("all");
+                  setIncorrectOnly(false);
                 }}
                 className="text-xs h-9"
               >
-                Reset Filters
+                Clear Filters
               </Button>
             )}
           </div>
         </div>
       </Card>
 
-      {/* Score Tracker Bar */}
+      {/* Score Tracker Bar & Incorrect Review Mode Button */}
       <Card className="p-4 sm:p-5 bg-blue-50/70 border-blue-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold shadow-sm">
@@ -244,12 +263,22 @@ export default function KnowledgeCheckView() {
               Score: <span className="text-blue-600">{score}</span> / {answerableQuestions.length} ({scorePercentage}%)
             </div>
             <div className="text-xs text-gray-600">
-              Answered {answeredAnswerableCount} of {answerableQuestions.length} answerable questions
+              Answered {answeredAnswerableCount} of {answerableQuestions.length} answerable questions ({incorrectQuestionIds.size} incorrect)
             </div>
           </div>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap">
+          <Button
+            variant={incorrectOnly ? "default" : "outline"}
+            size="sm"
+            onClick={() => setIncorrectOnly(!incorrectOnly)}
+            className={incorrectOnly ? "bg-rose-600 hover:bg-rose-700 text-white" : "border-rose-200 text-rose-700 bg-rose-50/50 hover:bg-rose-100"}
+          >
+            <AlertTriangle className="w-4 h-4 mr-1.5" />
+            {incorrectOnly ? "Showing Incorrect Answers Only" : `Review Incorrect (${incorrectQuestionIds.size})`}
+          </Button>
+
           <Button
             variant="outline"
             size="sm"
@@ -269,7 +298,9 @@ export default function KnowledgeCheckView() {
             <AlertCircle className="w-10 h-10 text-gray-400 mx-auto" />
             <h3 className="text-lg font-bold text-gray-900">No questions match your filter criteria</h3>
             <p className="text-sm text-gray-600 max-w-md mx-auto">
-              Try adjusting your search terms, source category, chapter selection, or answer status filter.
+              {incorrectOnly
+                ? "You have no incorrect answers recorded yet, or none matching your current source and chapter filters."
+                : "Try adjusting your search terms, source category, chapter selection, or answer status filter."}
             </p>
             <Button
               variant="default"
@@ -279,10 +310,11 @@ export default function KnowledgeCheckView() {
                 setSourceGroupFilter("all");
                 setChapterFilter("all");
                 setAnswerFilter("all");
+                setIncorrectOnly(false);
               }}
               className="mt-2"
             >
-              Clear All Filters
+              Clear All Filters & Review Mode
             </Button>
           </Card>
         ) : (
