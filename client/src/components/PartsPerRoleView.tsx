@@ -164,7 +164,7 @@ export default function PartsPerRoleView({
             Parts per Role & 62443 Alignment
           </h1>
           <p className="text-blue-100 text-sm sm:text-base max-w-2xl leading-relaxed">
-            Combine stakeholder roles, filter by category or Security Level, and jump directly to relevant course sections and interactive quizzes.
+            Combine stakeholder roles, filter by category or Security Level, and jump directly to relevant course sections and Knowledge Checks.
           </p>
         </div>
 
@@ -323,7 +323,7 @@ export default function PartsPerRoleView({
                         : `Combined standards for: ${selectedRoleNames}`}
                     </h2>
                     <p className="text-xs text-gray-500 mt-0.5">
-                      Showing {roleResults.all.length} matching parts with direct course and quiz links.
+                      Showing {roleResults.all.length} matching parts with direct course and Knowledge Check links.
                     </p>
                   </div>
                   <Badge className="bg-blue-600 text-white font-mono text-xs px-2.5 py-1 whitespace-nowrap">
@@ -504,7 +504,7 @@ export default function PartsPerRoleView({
 
             {/* Direct Study & Quiz Cross-References */}
             <div className="border-t border-gray-100 pt-3 space-y-2">
-              <div className="text-xs font-bold text-gray-800 uppercase tracking-wide">Relevant Course Section & Quiz:</div>
+              <div className="text-xs font-bold text-gray-800 uppercase tracking-wide">Relevant Course Section & Knowledge Check:</div>
               <div className="flex flex-col sm:flex-row gap-2">
                 <Button
                   variant="outline"
@@ -633,7 +633,7 @@ function PartCard({
               className="text-gray-600 hover:text-purple-700 bg-gray-50 hover:bg-purple-50 px-2 py-1 rounded border border-gray-200 text-[11px] font-medium flex items-center gap-1"
               title="Take related quiz"
             >
-              <span>📝 Quiz</span>
+              <span>✓ Knowledge Check</span>
             </button>
           )}
         </div>

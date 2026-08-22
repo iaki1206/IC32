@@ -1,0 +1,51 @@
+{
+  "pdfQuestions": 76,
+  "existingKnowledgeChecks": 17,
+  "existingQuizQuestions": 11,
+  "uniqueQuestions": 99,
+  "duplicateGroupsMerged": 5,
+  "answerableQuestions": 28,
+  "questionsWithoutSuppliedAnswerKey": 71,
+  "duplicates": [
+    {
+      "question": "Which statement explains the purpose of the ISA/IEC 62443 series in securing Industrial Automation and Control Systems (IACS)?",
+      "sources": [
+        "Knowledge Check | 1 (Page 82)",
+        "IC32 PDF noteset, page 87, Knowledge Check 1"
+      ],
+      "merged_count": 2
+    },
+    {
+      "question": "What is the role of the ISA99 Committee in developing the ISA/IEC 62443 series?",
+      "sources": [
+        "Knowledge Check | 2 (Page 83)",
+        "IC32 PDF noteset, page 88, Knowledge Check 2"
+      ],
+      "merged_count": 2
+    },
+    {
+      "question": "What is the primary distinction between an Industrial Control System (ICS) and an Industrial Automation and Control System (IACS) as described in ISA/IEC 62443?",
+      "sources": [
+        "Knowledge Check | 3 (Page 84)",
+        "IC32 PDF noteset, page 89, Knowledge Check 3"
+      ],
+      "merged_count": 2
+    },
+    {
+      "question": "Which of the following best describes the role of ISA/IEC 62443-3-2 in IACS cybersecurity?",
+      "sources": [
+        "Knowledge Check | 4 (Page 85)",
+        "IC32 PDF noteset, page 90, Knowledge Check 4"
+      ],
+      "merged_count": 2
+    },
+    {
+      "question": "Why is the ISA/IEC 62443-4-1 standard critical for securing industrial control systems?",
+      "sources": [
+        "Knowledge Check | 5 (Page 86)",
+        "IC32 PDF noteset, page 91, Knowledge Check 5"
+      ],
+      "merged_count": 2
+    }
+  ]
+}

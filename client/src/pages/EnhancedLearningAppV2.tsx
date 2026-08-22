@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Menu, X, BookOpen, Brain, Target, FileText, Bookmark, Layers, Users, Shield, CheckCircle2 } from "lucide-react";
+import { Menu, X, BookOpen, Brain, Target, Bookmark, Layers, Users, Shield, CheckCircle2 } from "lucide-react";
 import EnhancedSidebar from "@/components/EnhancedSidebar";
 import EnhancedContentPanel from "@/components/EnhancedContentPanel";
 import InteractiveMindmap, {
@@ -9,7 +9,6 @@ import InteractiveMindmap, {
   createSecurityLevelsMindmap,
   createFoundationalRequirementsMindmap,
 } from "@/components/InteractiveMindmap";
-import QuizComponent from "@/components/QuizComponent";
 import GlobalSearch from "@/components/GlobalSearch";
 import BookmarksPanel from "@/components/BookmarksPanel";
 import SeriesOverview from "@/components/SeriesOverview";
@@ -17,9 +16,7 @@ import PartsPerRoleView from "@/components/PartsPerRoleView";
 import KnowledgeCheckView from "@/components/KnowledgeCheckView";
 import ChaptersView from "@/components/ChaptersView";
 import { useBookmarks } from "@/hooks/useBookmarks";
-import { useQuizProgress } from "@/hooks/useQuizProgress";
 import completeCourseData from "@/data/completeCourseData.json";
-import quizData from "@/data/quizData.json";
 
 const enhancedCourseData = completeCourseData;
 
@@ -29,10 +26,8 @@ export default function EnhancedLearningAppV2() {
   const [selectedTopic, setSelectedTopic] = useState<any>(enhancedCourseData.sections[0].topics[0]);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [completedSections, setCompletedSections] = useState<Set<number>>(new Set());
-  const [selectedQuiz, setSelectedQuiz] = useState<any>(null);
 
   const { bookmarks, toggleBookmark, removeBookmark, bookmarkIds } = useBookmarks();
-  const { recordQuizScore, getAverageScore, getCompletedQuizzes } = useQuizProgress();
 
   const toggleSectionCompletion = (sectionId: number) => {
     const newCompleted = new Set(completedSections);
@@ -71,12 +66,6 @@ export default function EnhancedLearningAppV2() {
       topicTitle: selectedTopic?.title,
     };
     toggleBookmark(result);
-  };
-
-  const handleQuizComplete = (score: number, total: number) => {
-    if (selectedQuiz) {
-      recordQuizScore(selectedQuiz.id, score, total);
-    }
   };
 
   return (
@@ -153,15 +142,6 @@ export default function EnhancedLearningAppV2() {
               >
                 <Target className="w-4 h-4" />
                 Goals
-              </Button>
-              <Button
-                variant={currentPage === "quiz" ? "default" : "outline"}
-                onClick={() => setCurrentPage("quiz")}
-                size="sm"
-                className="gap-2"
-              >
-                <FileText className="w-4 h-4" />
-                Quiz
               </Button>
               <Button
                 variant={currentPage === "knowledge" ? "default" : "outline"}
@@ -255,13 +235,7 @@ export default function EnhancedLearningAppV2() {
                     setCurrentPage("sections");
                   }
                 }}
-                onNavigateToQuiz={(quizId) => {
-                  const quiz = quizData.quizzes.find((q) => q.id === quizId);
-                  if (quiz) {
-                    setSelectedQuiz(quiz);
-                    setCurrentPage("quiz");
-                  }
-                }}
+                onNavigateToQuiz={() => setCurrentPage("knowledge")}
               />
             </div>
           )}
@@ -326,49 +300,8 @@ export default function EnhancedLearningAppV2() {
           )}
 
           {currentPage === "quiz" && (
-            <div className="h-full overflow-y-auto p-4">
-              <div className="max-w-2xl mx-auto">
-                {!selectedQuiz ? (
-                  <>
-                    <Card className="p-6 bg-gradient-to-r from-blue-50 to-purple-50 mb-6">
-                      <h2 className="text-2xl font-bold text-gray-900 mb-2">Quizzes</h2>
-                      <p className="text-gray-700">
-                        Test your knowledge with interactive quizzes. Average Score: {getAverageScore()}% | Completed: {getCompletedQuizzes()}
-                      </p>
-                    </Card>
-
-                    <div className="grid grid-cols-1 gap-4">
-                      {quizData.quizzes.map((quiz) => (
-                        <Card
-                          key={quiz.id}
-                          className="p-4 hover:shadow-lg transition-shadow cursor-pointer"
-                          onClick={() => setSelectedQuiz(quiz)}
-                        >
-                          <h3 className="font-semibold text-gray-900 mb-2">{quiz.title}</h3>
-                          <p className="text-sm text-gray-600 mb-3">{quiz.description}</p>
-                          <div className="flex items-center justify-between">
-                            <span className="text-xs text-gray-500">
-                              {quiz.questions.length} questions
-                            </span>
-                            <Button size="sm">Start Quiz</Button>
-                          </div>
-                        </Card>
-                      ))}
-                    </div>
-                  </>
-                ) : (
-                  <div className="mb-4">
-                    <Button
-                      variant="outline"
-                      onClick={() => setSelectedQuiz(null)}
-                      className="mb-4"
-                    >
-                      ← Back to Quizzes
-                    </Button>
-                    <QuizComponent quiz={selectedQuiz} onComplete={handleQuizComplete} />
-                  </div>
-                )}
-              </div>
+            <div className="h-full overflow-y-auto">
+              <KnowledgeCheckView />
             </div>
           )}
 
@@ -419,14 +352,6 @@ export default function EnhancedLearningAppV2() {
           className="flex-shrink-0"
         >
           Models
-        </Button>
-        <Button
-          variant={currentPage === "quiz" ? "default" : "outline"}
-          onClick={() => setCurrentPage("quiz")}
-          size="sm"
-          className="flex-shrink-0"
-        >
-          Quiz
         </Button>
       </div>
     </div>
