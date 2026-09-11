@@ -1349,15 +1349,15 @@
           "text": "Updating firmware only after a security incident occurs"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Implementarea unor mecanisme riguroase de autentificare și control al accesului (Identification and Authentication Control - IAC / Use Control - UC) pe toate dispozitivele IACS este principala măsură de prevenire a accesului neautorizat la sistemele de control industrial.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 56, Knowledge Check 4",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 56, Knowledge Check 4"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 11",
       "section": "Section 1",
       "pdfPage": 56,
@@ -1375,7 +1375,7 @@
         "chapterTitle": "Introduction to Security Risk Assessment for System Design",
         "topicId": "11.1",
         "topicTitle": "Security Risk Assessment",
-        "excerpt": "ISA/IEC 62443-3-2 ghidează stabilirea Sistemului Considerat (SuC), evaluarea inițială și detaliată a riscurilor de securitate cibernetică, partiționarea în zone și conducte și alocarea nivelurilor țintă de securitate (SL-T)."
+        "excerpt": "Implementarea unor mecanisme riguroase de autentificare și control al accesului (Identification and Authentication Control - IAC / Use Control - UC) pe toate dispozitivele IACS este principala măsură de prevenire a accesului neautorizat la sistemele de control industrial."
       }
     },
     {
@@ -1398,15 +1398,15 @@
           "text": "Using default administrator accounts for quick access during emergencies"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "Principiul apărării în adâncime (Defense-in-Depth) presupune aplicarea mai multor straturi de securitate complementare: monitorizare continuă, controale stricte de acces, segmentare în zone și conducte și politici de securitate adaptate.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 57, Knowledge Check 5",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 57, Knowledge Check 5"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 4",
       "section": "Section 1",
       "pdfPage": 57,
@@ -1424,7 +1424,7 @@
         "chapterTitle": "ISA/IEC 62443 Models & Security Levels",
         "topicId": "4.2",
         "topicTitle": "Zone & Conduit Model",
-        "excerpt": "Modelul Zone și Conducte grupează activele cu cerințe comune de securitate în Zone distincte și controlează strict toate comunicațiile dintre zone prin canale dedicate denumite Conducte (Conduits)."
+        "excerpt": "Principiul apărării în adâncime (Defense-in-Depth) presupune aplicarea mai multor straturi de securitate complementare: monitorizare continuă, controale stricte de acces, segmentare în zone și conducte și politici de securitate adaptate."
       }
     },
     {
@@ -1447,15 +1447,15 @@
           "text": "ICS systems have more frequent software updates than IT networks"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Spre deosebire de sistemele IT tradiționale unde Confidențialitatea este adesea prioritară (triada CIA), sistemele IACS prioritizează Disponibilitatea (Availability) și Integritatea (Integrity/Safety), întrucât orice întrerupere poate cauza pierderi materiale sau pericole pentru viața umană.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 53, Knowledge Check 1",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 53, Knowledge Check 1"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 10",
       "section": "Section 1",
       "pdfPage": 53,
@@ -1473,7 +1473,7 @@
         "chapterTitle": "Introduction to Patch Management",
         "topicId": "10.1",
         "topicTitle": "IACS Patch Management",
-        "excerpt": "Raportul tehnic ISA-TR62443-2-3 descrie formatul și bunele practici pentru testarea, validarea, notificarea și aplicarea patch-urilor într-un mediu IACS, evitând întreruperile proceselor de producție."
+        "excerpt": "Spre deosebire de sistemele IT tradiționale unde Confidențialitatea este adesea prioritară (triada CIA), sistemele IACS prioritizează Disponibilitatea (Availability) și Integritatea (Integrity/Safety), întrucât orice întrerupere poate cauza pierderi materiale sau pericole pentru viața umană."
       }
     },
     {
@@ -1496,15 +1496,15 @@
           "text": "Allowing remote access to all ICS components for maintenance purposes"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "O strategie eficientă de apărare în adâncime implică măsuri pe multiple niveluri (fizic, rețea, host, aplicație, politici umane) atât pe segmentul IT, cât și pe cel operațional (OT).",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 54, Knowledge Check 2",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 54, Knowledge Check 2"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 8",
       "section": "Section 1",
       "pdfPage": 54,
@@ -1522,7 +1522,7 @@
         "chapterTitle": "Network Security Basics",
         "topicId": "8.1",
         "topicTitle": "Network Security Principles",
-        "excerpt": "Securitatea rețelelor IACS se bazează pe apărare în adâncime (Defense-in-Depth), utilizarea de zone demilitarizate (DMZ) între nivelurile 3 și 4, firewall-uri industriale cu inspecție profundă (DPI), tuneluri VPN criptate și senzori IDS."
+        "excerpt": "O strategie eficientă de apărare în adâncime implică măsuri pe multiple niveluri (fizic, rețea, host, aplicație, politici umane) atât pe segmentul IT, cât și pe cel operațional (OT)."
       }
     },
     {
@@ -1545,15 +1545,15 @@
           "text": "The standard applies only to IT environments, making it difficult to implement in ICS"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "B",
+      "explanation": "O provocare majoră în mediile industriale existente este prezența echipamentelor de tip legacy (PLC-uri vechi, RTU-uri) care nu au fost proiectate cu funcții native de securitate cibernetică, necesitând măsuri compensatorii (retrofitting).",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 55, Knowledge Check 3",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 55, Knowledge Check 3"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 1",
       "section": "Section 1",
       "pdfPage": 55,
@@ -1571,7 +1571,7 @@
         "chapterTitle": "Introduction to Control Systems Security",
         "topicId": "1.1",
         "topicTitle": "Defining Control System Cybersecurity",
-        "excerpt": "Sistemele de control industrial (IACS/PLC) au fost inițial concepute pentru a înlocui releele fizice; prioritatea lor critică este Disponibilitatea (Availability) și Siguranța (Safety), spre deosebire de sistemele IT unde primează Confidențialitatea."
+        "excerpt": "O provocare majoră în mediile industriale existente este prezența echipamentelor de tip legacy (PLC-uri vechi, RTU-uri) care nu au fost proiectate cu funcții native de securitate cibernetică, necesitând măsuri compensatorii (retrofitting)."
       }
     },
     {
@@ -1598,15 +1598,15 @@
           "text": "Using blockchain to verify all update signatures"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "D",
+      "explanation": "Conform ISA-TR62443-2-3, patch-urile de securitate sunt lansate de multe ori în afara ciclurilor regulate (out-of-band) și trebuie comunicate rapid și transparent proprietarilor de active (Asset Owners) pentru evaluarea impactului.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 268, Knowledge Check 3",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 268, Knowledge Check 3"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 6",
       "section": "Section 10",
       "pdfPage": 268,
@@ -1624,7 +1624,7 @@
         "chapterTitle": "Security Requirements for IACS Asset Owners",
         "topicId": "6.1",
         "topicTitle": "IACS Security Programme Requirements",
-        "excerpt": "ISA/IEC 62443-2-1 stabilește cerințele pentru un Sistem de Management al Securității Cibernetice (CSMS) IACS destinat proprietarilor de active (Asset Owners), structurat pe elemente precum Politica de Securitate, Evaluarea Riscurilor, Controlul Accesului și Monitorizarea."
+        "excerpt": "Conform ISA-TR62443-2-3, patch-urile de securitate sunt lansate de multe ori în afara ciclurilor regulate (out-of-band) și trebuie comunicate rapid și transparent proprietarilor de active (Asset Owners) pentru evaluarea impactului."
       }
     },
     {
@@ -1647,15 +1647,15 @@
           "text": "Application whitelisting and traffic scanning at the control system firewall"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "D",
+      "explanation": "În mediile IACS, protecția împotriva codului malițios se bazează cu predilecție pe Application Whitelisting (AWL) și scanarea/filtrarea traficului la nivelul firewall-urilor industriale, deoarece scanerele AV clasice bazate pe semnături pot introduce latențe inacceptabile.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 266, Knowledge Check 1",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 266, Knowledge Check 1"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 10",
       "section": "Section 10",
       "pdfPage": 266,
@@ -1673,7 +1673,7 @@
         "chapterTitle": "Introduction to Patch Management",
         "topicId": "10.1",
         "topicTitle": "IACS Patch Management",
-        "excerpt": "Raportul tehnic ISA-TR62443-2-3 descrie formatul și bunele practici pentru testarea, validarea, notificarea și aplicarea patch-urilor într-un mediu IACS, evitând întreruperile proceselor de producție."
+        "excerpt": "În mediile IACS, protecția împotriva codului malițios se bazează cu predilecție pe Application Whitelisting (AWL) și scanarea/filtrarea traficului la nivelul firewall-urilor industriale, deoarece scanerele AV clasice bazate pe semnături pot introduce latențe inacceptabile."
       }
     },
     {
@@ -1696,15 +1696,15 @@
           "text": "Overseeing antivirus server performance within customer security zones"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "Conform ISA/IEC 62443-4-1 și ISA-TR62443-2-3, furnizorii de produse și servicii au responsabilitatea de a distribui patch-urile în mod securizat, semnate digital, și de a valida eficacitatea măsurilor de atenuare înainte de instalare.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 267, Knowledge Check 2",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 267, Knowledge Check 2"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 13",
       "section": "Section 10",
       "pdfPage": 267,
@@ -1722,7 +1722,7 @@
         "chapterTitle": "Developing Secure Products & Systems",
         "topicId": "13.1",
         "topicTitle": "Secure Development Practices",
-        "excerpt": "ISA/IEC 62443-4-1 specifică cerințele procesului de dezvoltare securizată pentru produse IACS: managementul securității (SM), cerințe de securitate (SR), proiectare sigură (SD), implementare sigură (SI), verificare și validare (SV), managementul defectelor (DM), managementul patch-urilor (PM) și ghiduri de securitate (SG)."
+        "excerpt": "Conform ISA/IEC 62443-4-1 și ISA-TR62443-2-3, furnizorii de produse și servicii au responsabilitatea de a distribui patch-urile în mod securizat, semnate digital, și de a valida eficacitatea măsurilor de atenuare înainte de instalare."
       }
     },
     {
@@ -1749,15 +1749,15 @@
           "text": "Patch management is usually outsourced to third parties"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Aplicarea patch-urilor într-un mediu de producție live (IACS) este extrem de delicată deoarece orice modificare de cod poate afecta fiabilitatea, siguranța funcțională (Safety - SIL) și certificările de conformitate ale procesului.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 269, Knowledge Check 4",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 269, Knowledge Check 4"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 10",
       "section": "Section 10",
       "pdfPage": 269,
@@ -1775,7 +1775,7 @@
         "chapterTitle": "Introduction to Patch Management",
         "topicId": "10.1",
         "topicTitle": "IACS Patch Management",
-        "excerpt": "Raportul tehnic ISA-TR62443-2-3 descrie formatul și bunele practici pentru testarea, validarea, notificarea și aplicarea patch-urilor într-un mediu IACS, evitând întreruperile proceselor de producție."
+        "excerpt": "Aplicarea patch-urilor într-un mediu de producție live (IACS) este extrem de delicată deoarece orice modificare de cod poate afecta fiabilitatea, siguranța funcțională (Safety - SIL) și certificările de conformitate ale procesului."
       }
     },
     {
@@ -1798,15 +1798,15 @@
           "text": "Inverse measure of how resilient a system is to threats"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "În evaluarea riscurilor conform ISA/IEC 62443-3-2, probabilitatea (Likelihood) reprezintă combinația dintre capabilitățile/motivația amenințării (Threat) și gradul de vulnerabilitate al activului (Vulnerability).",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 295, Knowledge Check 3",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 295, Knowledge Check 3"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 11",
       "section": "Section 11",
       "pdfPage": 295,
@@ -1824,7 +1824,7 @@
         "chapterTitle": "Introduction to Security Risk Assessment for System Design",
         "topicId": "11.1",
         "topicTitle": "Security Risk Assessment",
-        "excerpt": "ISA/IEC 62443-3-2 ghidează stabilirea Sistemului Considerat (SuC), evaluarea inițială și detaliată a riscurilor de securitate cibernetică, partiționarea în zone și conducte și alocarea nivelurilor țintă de securitate (SL-T)."
+        "excerpt": "În evaluarea riscurilor conform ISA/IEC 62443-3-2, probabilitatea (Likelihood) reprezintă combinația dintre capabilitățile/motivația amenințării (Threat) și gradul de vulnerabilitate al activului (Vulnerability)."
       }
     },
     {
@@ -1847,15 +1847,15 @@
           "text": "Determine the physical boundaries and isolation requirements for secure system zones"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "B",
+      "explanation": "Nivelurile de securitate (SL 1 până la SL 4) cuantifică nivelul de protecție necesar împotriva unor profiluri definite de capabilitate și resurse ale atacatorului (de la erori umane până la atacuri sponsorizate de state cu resurse extinse).",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 297, Knowledge Check 5",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 297, Knowledge Check 5"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 4",
       "section": "Section 11",
       "pdfPage": 297,
@@ -1873,7 +1873,7 @@
         "chapterTitle": "ISA/IEC 62443 Models & Security Levels",
         "topicId": "4.2",
         "topicTitle": "Zone & Conduit Model",
-        "excerpt": "Modelul Zone și Conducte grupează activele cu cerințe comune de securitate în Zone distincte și controlează strict toate comunicațiile dintre zone prin canale dedicate denumite Conducte (Conduits)."
+        "excerpt": "Nivelurile de securitate (SL 1 până la SL 4) cuantifică nivelul de protecție necesar împotriva unor profiluri definite de capabilitate și resurse ale atacatorului (de la erori umane până la atacuri sponsorizate de state cu resurse extinse)."
       }
     },
     {
@@ -1896,15 +1896,15 @@
           "text": "Any control system element that manages or stores classified information"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Sistemul sub Considerare (SuC - System under Consideration) este definit în ISA/IEC 62443-3-2 ca fiind totalitatea activelor IACS, rețelelor și componentelor asociate care fac obiectul analizei de securitate cibernetică.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 294, Knowledge Check 2",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 294, Knowledge Check 2"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 11",
       "section": "Section 11",
       "pdfPage": 294,
@@ -1922,7 +1922,7 @@
         "chapterTitle": "Introduction to Security Risk Assessment for System Design",
         "topicId": "11.1",
         "topicTitle": "Security Risk Assessment",
-        "excerpt": "ISA/IEC 62443-3-2 ghidează stabilirea Sistemului Considerat (SuC), evaluarea inițială și detaliată a riscurilor de securitate cibernetică, partiționarea în zone și conducte și alocarea nivelurilor țintă de securitate (SL-T)."
+        "excerpt": "Sistemul sub Considerare (SuC - System under Consideration) este definit în ISA/IEC 62443-3-2 ca fiind totalitatea activelor IACS, rețelelor și componentelor asociate care fac obiectul analizei de securitate cibernetică."
       }
     },
     {
@@ -1945,15 +1945,15 @@
           "text": "Prioritizes compliance with safety standards controls over security in system design"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "Vectorul de Niveluri de Securitate {FR1, FR2, ... FR7} permite personalizarea cerințelor de securitate pe fiecare Cerință Fundamentală, asigurând o alocare eficientă a resurselor fără a impune un nivel rigid și excesiv de costisitor pe tot sistemul.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 293, Knowledge Check 1",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 293, Knowledge Check 1"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 4",
       "section": "Section 11",
       "pdfPage": 293,
@@ -1971,7 +1971,7 @@
         "chapterTitle": "ISA/IEC 62443 Models & Security Levels",
         "topicId": "4.3",
         "topicTitle": "Security Levels and Foundational Requirements",
-        "excerpt": "ISA/IEC 62443-3-3 definește cele 7 Cerințe Fundamentale (FR 1: IAC, FR 2: UC, FR 3: DI, FR 4: DC, FR 5: RDF, FR 6: TRE, FR 7: RA) și cerințele de sistem (SR) asociate fiecărui nivel de securitate SL 1-4."
+        "excerpt": "Vectorul de Niveluri de Securitate {FR1, FR2, ... FR7} permite personalizarea cerințelor de securitate pe fiecare Cerință Fundamentală, asigurând o alocare eficientă a resurselor fără a impune un nivel rigid și excesiv de costisitor pe tot sistemul."
       }
     },
     {
@@ -1994,15 +1994,15 @@
           "text": "Assest Inventory Control (AIC)"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Cele 7 Cerințe Fundamentale (FR) din ISA/IEC 62443-3-3 sunt: FR 1: IAC (Identification and Authentication Control), FR 2: UC, FR 3: SI, FR 4: DC, FR 5: RDF, FR 6: TRE și FR 7: RA.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 296, Knowledge Check 4",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 296, Knowledge Check 4"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 3",
       "section": "Section 11",
       "pdfPage": 296,
@@ -2020,7 +2020,7 @@
         "chapterTitle": "ISA/IEC 62443 Series Overview",
         "topicId": "3.1",
         "topicTitle": "ISA/IEC 62443 Series Overview",
-        "excerpt": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material."
+        "excerpt": "Cele 7 Cerințe Fundamentale (FR) din ISA/IEC 62443-3-3 sunt: FR 1: IAC (Identification and Authentication Control), FR 2: UC, FR 3: SI, FR 4: DC, FR 5: RDF, FR 6: TRE și FR 7: RA."
       }
     },
     {
@@ -2043,15 +2043,15 @@
           "text": "Quantify the level of risk based on vulnerabilities within individual systems"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "Nivelurile de maturitate (Maturity Levels ML 1 - ML 4) evaluează dacă procesele de securitate ale furnizorului sunt ad-hoc (ML 1), gestionate (ML 2), definite/practicate (ML 3) sau optimizate continuu (ML 4), asigurând reproductibilitatea rezultatelor.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 311, Knowledge Check 3",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 311, Knowledge Check 3"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 12",
       "section": "Section 12",
       "pdfPage": 311,
@@ -2069,7 +2069,7 @@
         "chapterTitle": "Security Program Requirements for IACS Service Providers",
         "topicId": "12.1",
         "topicTitle": "Service Provider Security Programmes",
-        "excerpt": "ISA/IEC 62443-2-4 și Partea 2-5 specifică cerințele de securitate pentru furnizorii de servicii de integrare și mentenanță a sistemelor de automatizare (IACS Service Providers)."
+        "excerpt": "Nivelurile de maturitate (Maturity Levels ML 1 - ML 4) evaluează dacă procesele de securitate ale furnizorului sunt ad-hoc (ML 1), gestionate (ML 2), definite/practicate (ML 3) sau optimizate continuu (ML 4), asigurând reproductibilitatea rezultatelor."
       }
     },
     {
@@ -2092,15 +2092,15 @@
           "text": "Integration Service Provider manages post-installation maintenance and continous system support"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "B",
+      "explanation": "Conform ISA/IEC 62443, furnizorul de produse (Product Supplier) livrează componente hardware și software, în timp ce integratorul de sistem (Integration Service Provider) personalizează, proiectează arhitectura și integrează aceste componente în facilitățile beneficiarului.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 309, Knowledge Check 1",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 309, Knowledge Check 1"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 12",
       "section": "Section 12",
       "pdfPage": 309,
@@ -2118,7 +2118,7 @@
         "chapterTitle": "Security Program Requirements for IACS Service Providers",
         "topicId": "12.1",
         "topicTitle": "Service Provider Security Programmes",
-        "excerpt": "ISA/IEC 62443-2-4 și Partea 2-5 specifică cerințele de securitate pentru furnizorii de servicii de integrare și mentenanță a sistemelor de automatizare (IACS Service Providers)."
+        "excerpt": "Conform ISA/IEC 62443, furnizorul de produse (Product Supplier) livrează componente hardware și software, în timp ce integratorul de sistem (Integration Service Provider) personalizează, proiectează arhitectura și integrează aceste componente în facilitățile beneficiarului."
       }
     },
     {
@@ -2141,15 +2141,15 @@
           "text": "Provides a methodology for evaluating the maturity of a security provider’s security program"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "D",
+      "explanation": "Raportul ISA/IEC TR 62443-6-1 oferă o metodologie de evaluare a conformității și a nivelului de maturitate pentru programele de securitate ale furnizorilor de servicii IACS.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 313, Knowledge Check 5",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 313, Knowledge Check 5"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 12",
       "section": "Section 12",
       "pdfPage": 313,
@@ -2167,7 +2167,7 @@
         "chapterTitle": "Security Program Requirements for IACS Service Providers",
         "topicId": "12.1",
         "topicTitle": "Service Provider Security Programmes",
-        "excerpt": "ISA/IEC 62443-2-4 și Partea 2-5 specifică cerințele de securitate pentru furnizorii de servicii de integrare și mentenanță a sistemelor de automatizare (IACS Service Providers)."
+        "excerpt": "Raportul ISA/IEC TR 62443-6-1 oferă o metodologie de evaluare a conformității și a nivelului de maturitate pentru programele de securitate ale furnizorilor de servicii IACS."
       }
     },
     {
@@ -2240,15 +2240,15 @@
           "text": "Serve as the foundation for reviewing and designing specific system components"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "Cele 12 domenii funcționale definite în ISA/IEC 62443-2-4 oferă o structură clară de cerințe pentru verificarea conformității programului de securitate al integratorilor și furnizorilor de mentenanță.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 312, Knowledge Check 4",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 312, Knowledge Check 4"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 11",
       "section": "Section 12",
       "pdfPage": 312,
@@ -2266,7 +2266,7 @@
         "chapterTitle": "Introduction to Security Risk Assessment for System Design",
         "topicId": "11.1",
         "topicTitle": "Security Risk Assessment",
-        "excerpt": "ISA/IEC 62443-3-2 ghidează stabilirea Sistemului Considerat (SuC), evaluarea inițială și detaliată a riscurilor de securitate cibernetică, partiționarea în zone și conducte și alocarea nivelurilor țintă de securitate (SL-T)."
+        "excerpt": "Cele 12 domenii funcționale definite în ISA/IEC 62443-2-4 oferă o structură clară de cerințe pentru verificarea conformității programului de securitate al integratorilor și furnizorilor de mentenanță."
       }
     },
     {
@@ -2289,15 +2289,15 @@
           "text": "Using CCMI-DEV levels from ad-hoc to continuous improvement maturity"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "D",
+      "explanation": "Schema ISASecure evaluează maturitatea proceselor de securitate (SDLA - Security Development Lifecycle Assurance) utilizând niveluri de maturitate aliniate la modele consacrate precum CMMI (de la inițial/ad-hoc până la îmbunătățire continuă).",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 333, Knowledge Check 4",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 333, Knowledge Check 4"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 11",
       "section": "Section 13",
       "pdfPage": 333,
@@ -2315,7 +2315,7 @@
         "chapterTitle": "Introduction to Security Risk Assessment for System Design",
         "topicId": "11.1",
         "topicTitle": "Security Risk Assessment",
-        "excerpt": "ISA/IEC 62443-3-2 ghidează stabilirea Sistemului Considerat (SuC), evaluarea inițială și detaliată a riscurilor de securitate cibernetică, partiționarea în zone și conducte și alocarea nivelurilor țintă de securitate (SL-T)."
+        "excerpt": "Schema ISASecure evaluează maturitatea proceselor de securitate (SDLA - Security Development Lifecycle Assurance) utilizând niveluri de maturitate aliniate la modele consacrate precum CMMI (de la inițial/ad-hoc până la îmbunătățire continuă)."
       }
     },
     {
@@ -2338,15 +2338,15 @@
           "text": "Tracks how frequently patches are successfully deployed to components"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Nivelul de securitate de capabilitate (Security Level Capability - SL-C) din ISA/IEC 62443-4-2 reprezintă nivelul maxim de securitate pe care o componentă îl poate atinge atunci când este configurată corespunzător în mediul operațional.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 331, Knowledge Check 2",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 331, Knowledge Check 2"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 13",
       "section": "Section 13",
       "pdfPage": 331,
@@ -2364,7 +2364,7 @@
         "chapterTitle": "Developing Secure Products & Systems",
         "topicId": "13.2",
         "topicTitle": "Component Security Requirements",
-        "excerpt": "ISA/IEC 62443-4-2 definește cerințele tehnice pentru componentele IACS (Common Component Security Criteria - CCSC), acoperind dispozitive încorporate, componente de rețea, aplicații software și dispozitive gazdă pentru atingerea nivelurilor de securitate SL-C."
+        "excerpt": "Nivelul de securitate de capabilitate (Security Level Capability - SL-C) din ISA/IEC 62443-4-2 reprezintă nivelul maxim de securitate pe care o componentă îl poate atinge atunci când este configurată corespunzător în mediul operațional."
       }
     },
     {
@@ -2387,15 +2387,15 @@
           "text": "Using continuous user feedback loops for improving authentication mechanisms"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "ISA/IEC 62443-4-1 pune accent pe apărarea în adâncime (Defense-in-Depth) în proiectarea securizată a produselor, asigurând că eșecul unei măsuri de control nu compromite întreaga componentă.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 332, Knowledge Check 3",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 332, Knowledge Check 3"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 13",
       "section": "Section 13",
       "pdfPage": 332,
@@ -2413,7 +2413,7 @@
         "chapterTitle": "Developing Secure Products & Systems",
         "topicId": "13.1",
         "topicTitle": "Secure Development Practices",
-        "excerpt": "ISA/IEC 62443-4-1 specifică cerințele procesului de dezvoltare securizată pentru produse IACS: managementul securității (SM), cerințe de securitate (SR), proiectare sigură (SD), implementare sigură (SI), verificare și validare (SV), managementul defectelor (DM), managementul patch-urilor (PM) și ghiduri de securitate (SG)."
+        "excerpt": "ISA/IEC 62443-4-1 pune accent pe apărarea în adâncime (Defense-in-Depth) în proiectarea securizată a produselor, asigurând că eșecul unei măsuri de control nu compromite întreaga componentă."
       }
     },
     {
@@ -2436,15 +2436,15 @@
           "text": "Asset owner’s engineering team"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "În faza de proiectare și implementare a sistemului (conform ISA/IEC 62443-3-3 și 2-4), Integratorul de Sistem (System Integrator) este responsabil pentru selectarea componentelor care întrunesc nivelul de capabilitate SL-C necesar atingerii nivelului țintă SL-T stabilit pentru fiecare zonă.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 334, Knowledge Check 5",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 334, Knowledge Check 5"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 13",
       "section": "Section 13",
       "pdfPage": 334,
@@ -2462,7 +2462,7 @@
         "chapterTitle": "Developing Secure Products & Systems",
         "topicId": "13.2",
         "topicTitle": "Component Security Requirements",
-        "excerpt": "ISA/IEC 62443-4-2 definește cerințele tehnice pentru componentele IACS (Common Component Security Criteria - CCSC), acoperind dispozitive încorporate, componente de rețea, aplicații software și dispozitive gazdă pentru atingerea nivelurilor de securitate SL-C."
+        "excerpt": "În faza de proiectare și implementare a sistemului (conform ISA/IEC 62443-3-3 și 2-4), Integratorul de Sistem (System Integrator) este responsabil pentru selectarea componentelor care întrunesc nivelul de capabilitate SL-C necesar atingerii nivelului țintă SL-T stabilit pentru fiecare zonă."
       }
     },
     {
@@ -2485,15 +2485,15 @@
           "text": "Enables impact analysis and resolution during development"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "D",
+      "explanation": "Modelarea amenințărilor (Threat Modeling) în ciclul de dezvoltare (62443-4-1) permite identificarea riscurilor arhitecturale din timp și implementarea contramăsurilor în faza de design, reducând costurile de remediere ulterioare.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 330, Knowledge Check 1",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 330, Knowledge Check 1"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 13",
       "section": "Section 13",
       "pdfPage": 330,
@@ -2511,7 +2511,7 @@
         "chapterTitle": "Developing Secure Products & Systems",
         "topicId": "13.1",
         "topicTitle": "Secure Development Practices",
-        "excerpt": "ISA/IEC 62443-4-1 specifică cerințele procesului de dezvoltare securizată pentru produse IACS: managementul securității (SM), cerințe de securitate (SR), proiectare sigură (SD), implementare sigură (SI), verificare și validare (SV), managementul defectelor (DM), managementul patch-urilor (PM) și ghiduri de securitate (SG)."
+        "excerpt": "Modelarea amenințărilor (Threat Modeling) în ciclul de dezvoltare (62443-4-1) permite identificarea riscurilor arhitecturale din timp și implementarea contramăsurilor în faza de design, reducând costurile de remediere ulterioare."
       }
     },
     {
@@ -2534,15 +2534,15 @@
           "text": "It may result in misaligned controls and failure to addres specific threats​"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "D",
+      "explanation": "Un profil de securitate ales greșit sau nealiniat specificului industrial poate conduce la controale de securitate ineficiente, costuri inutile și eșecul de a aborda amenințările reale din acel mediu operațional.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 348, Knowledge Check 5",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 348, Knowledge Check 5"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 4",
       "section": "Section 14",
       "pdfPage": 348,
@@ -2560,7 +2560,7 @@
         "chapterTitle": "ISA/IEC 62443 Models & Security Levels",
         "topicId": "4.2",
         "topicTitle": "Zone & Conduit Model",
-        "excerpt": "Modelul Zone și Conducte grupează activele cu cerințe comune de securitate în Zone distincte și controlează strict toate comunicațiile dintre zone prin canale dedicate denumite Conducte (Conduits)."
+        "excerpt": "Un profil de securitate ales greșit sau nealiniat specificului industrial poate conduce la controale de securitate ineficiente, costuri inutile și eșecul de a aborda amenințările reale din acel mediu operațional."
       }
     },
     {
@@ -2583,15 +2583,15 @@
           "text": "List and approve vendors eligible for certification in deployments"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "Profilurile de securitate (Security Profiles) au scopul de a adapta cerințele generale ISA/IEC 62443 la domenii sau industrii specifice (petrochimie, energie, transporturi, apă), ținând cont de constrângerile lor tehnice unice.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 344, Knowledge Check 1",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 344, Knowledge Check 1"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 15",
       "section": "Section 14",
       "pdfPage": 344,
@@ -2609,7 +2609,7 @@
         "chapterTitle": "IACS Security Profile Scheme",
         "topicId": "15.1",
         "topicTitle": "Security Profile Scheme Framework",
-        "excerpt": "Schema de certificare ISASecure evaluează conformitatea produselor, sistemelor și proceselor de dezvoltare cu standardul ISA/IEC 62443 prin programele SDLA (4-1), CSA (4-2), SSA (3-3) și evaluarea competențelor profesionale."
+        "excerpt": "Profilurile de securitate (Security Profiles) au scopul de a adapta cerințele generale ISA/IEC 62443 la domenii sau industrii specifice (petrochimie, energie, transporturi, apă), ținând cont de constrângerile lor tehnice unice."
       }
     },
     {
@@ -2632,15 +2632,15 @@
           "text": "Provides a method to contextualize requirements based on domain-specific needs"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "D",
+      "explanation": "ISA/IEC 62443-1-5 oferă metodologia formală pentru specificarea profilurilor de securitate cibernetică, permițând contextualizarea cerințelor de sistem pe baza particularităților de domeniu.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 345, Knowledge Check 2",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 345, Knowledge Check 2"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 3",
       "section": "Section 14",
       "pdfPage": 345,
@@ -2658,7 +2658,7 @@
         "chapterTitle": "ISA/IEC 62443 Series Overview",
         "topicId": "3.1",
         "topicTitle": "ISA/IEC 62443 Series Overview",
-        "excerpt": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material."
+        "excerpt": "ISA/IEC 62443-1-5 oferă metodologia formală pentru specificarea profilurilor de securitate cibernetică, permițând contextualizarea cerințelor de sistem pe baza particularităților de domeniu."
       }
     },
     {
@@ -2681,15 +2681,15 @@
           "text": "Defines certification levels specifically for maintenance contractors"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "B",
+      "explanation": "Utilizarea unui profil de securitate adecvat crește eficiența proiectului, asigurând concentrarea investițiilor pe riscurile reale specifice sectorului respectiv.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 347, Knowledge Check 4",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 347, Knowledge Check 4"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 4",
       "section": "Section 14",
       "pdfPage": 347,
@@ -2707,7 +2707,7 @@
         "chapterTitle": "ISA/IEC 62443 Models & Security Levels",
         "topicId": "4.3",
         "topicTitle": "Security Levels and Foundational Requirements",
-        "excerpt": "ISA/IEC 62443-3-3 definește cele 7 Cerințe Fundamentale (FR 1: IAC, FR 2: UC, FR 3: DI, FR 4: DC, FR 5: RDF, FR 6: TRE, FR 7: RA) și cerințele de sistem (SR) asociate fiecărui nivel de securitate SL 1-4."
+        "excerpt": "Utilizarea unui profil de securitate adecvat crește eficiența proiectului, asigurând concentrarea investițiilor pe riscurile reale specifice sectorului respectiv."
       }
     },
     {
@@ -2730,15 +2730,15 @@
           "text": "They define security testing procedures used during component-level evaluations only"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Conform ISA/IEC 62443-1-5, profilurile de securitate nu pot modifica cerințele de bază ale standardului într-un mod incompatibil și nu pot relaxa principiile de bază, ci adaptează aplicabilitatea cerințelor existente.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 346, Knowledge Check 3",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 346, Knowledge Check 3"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 4",
       "section": "Section 14",
       "pdfPage": 346,
@@ -2756,7 +2756,7 @@
         "chapterTitle": "ISA/IEC 62443 Models & Security Levels",
         "topicId": "4.3",
         "topicTitle": "Security Levels and Foundational Requirements",
-        "excerpt": "ISA/IEC 62443-3-3 definește cele 7 Cerințe Fundamentale (FR 1: IAC, FR 2: UC, FR 3: DI, FR 4: DC, FR 5: RDF, FR 6: TRE, FR 7: RA) și cerințele de sistem (SR) asociate fiecărui nivel de securitate SL 1-4."
+        "excerpt": "Conform ISA/IEC 62443-1-5, profilurile de securitate nu pot modifica cerințele de bază ale standardului într-un mod incompatibil și nu pot relaxa principiile de bază, ci adaptează aplicabilitatea cerințelor existente."
       }
     },
     {
@@ -2779,15 +2779,15 @@
           "text": "Based on average SL-C values across different system zones and segments"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "B",
+      "explanation": "Nivelul „Operat” (Security Protection Rating - SPR) reflectă eficacitatea demonstrată, testată și măsurată în condiții reale de operare a contramăsurilor de securitate din uzină.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 364, Knowledge Check 3",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 364, Knowledge Check 3"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 4",
       "section": "Section 15",
       "pdfPage": 364,
@@ -2805,7 +2805,7 @@
         "chapterTitle": "ISA/IEC 62443 Models & Security Levels",
         "topicId": "4.2",
         "topicTitle": "Zone & Conduit Model",
-        "excerpt": "Modelul Zone și Conducte grupează activele cu cerințe comune de securitate în Zone distincte și controlează strict toate comunicațiile dintre zone prin canale dedicate denumite Conducte (Conduits)."
+        "excerpt": "Nivelul „Operat” (Security Protection Rating - SPR) reflectă eficacitatea demonstrată, testată și măsurată în condiții reale de operare a contramăsurilor de securitate din uzină."
       }
     },
     {
@@ -2828,15 +2828,15 @@
           "text": "SP is managed by external certifying bodies, not asset owners"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "Security Program Scheme (SPS) se adresează unui sistem IACS individual din uzină, în timp ce Programul de Securitate (Security Program - SP) acoperă politicile și guvernanța la nivelul întregii organizații.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 362, Knowledge Check 1",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 362, Knowledge Check 1"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 6",
       "section": "Section 15",
       "pdfPage": 362,
@@ -2854,7 +2854,7 @@
         "chapterTitle": "Security Requirements for IACS Asset Owners",
         "topicId": "6.1",
         "topicTitle": "IACS Security Programme Requirements",
-        "excerpt": "ISA/IEC 62443-2-1 stabilește cerințele pentru un Sistem de Management al Securității Cibernetice (CSMS) IACS destinat proprietarilor de active (Asset Owners), structurat pe elemente precum Politica de Securitate, Evaluarea Riscurilor, Controlul Accesului și Monitorizarea."
+        "excerpt": "Security Program Scheme (SPS) se adresează unui sistem IACS individual din uzină, în timp ce Programul de Securitate (Security Program - SP) acoperă politicile și guvernanța la nivelul întregii organizații."
       }
     },
     {
@@ -2877,15 +2877,15 @@
           "text": "The SPR must exceed the SL-C baseline for compliance and fulfillment"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Pentru ca o cerință de securitate de sistem să fie considerată îndeplinită, trebuie să fie prezente atât capabilitățile tehnice necesare (dispozitive, firewall-uri), cât și practicile organizaționale (proceduri, instruire, audit).",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 365, Knowledge Check 4",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 365, Knowledge Check 4"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 4",
       "section": "Section 15",
       "pdfPage": 365,
@@ -2903,7 +2903,7 @@
         "chapterTitle": "ISA/IEC 62443 Models & Security Levels",
         "topicId": "4.3",
         "topicTitle": "Security Levels and Foundational Requirements",
-        "excerpt": "ISA/IEC 62443-3-3 definește cele 7 Cerințe Fundamentale (FR 1: IAC, FR 2: UC, FR 3: DI, FR 4: DC, FR 5: RDF, FR 6: TRE, FR 7: RA) și cerințele de sistem (SR) asociate fiecărui nivel de securitate SL 1-4."
+        "excerpt": "Pentru ca o cerință de securitate de sistem să fie considerată îndeplinită, trebuie să fie prezente atât capabilitățile tehnice necesare (dispozitive, firewall-uri), cât și practicile organizaționale (proceduri, instruire, audit)."
       }
     },
     {
@@ -3026,15 +3026,15 @@
           "text": "Showing a demonstration of Industroyer malware on a protection relay"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "D",
+      "explanation": "Demonstrațiile practice ale impactului fizic al malware-ului (cum a fost atacul Industroyer/CrashOverride asupra releelor de protecție electrică din Ucraina) sunt cele mai eficiente pentru conștientizarea riscurilor cibernetice în rețelele electrice.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 67, Knowledge Check 3",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 67, Knowledge Check 3"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 2",
       "section": "Section 2",
       "pdfPage": 67,
@@ -3052,7 +3052,7 @@
         "chapterTitle": "Awareness & Training",
         "topicId": "2.1",
         "topicTitle": "Security Awareness Fundamentals",
-        "excerpt": "Factorul uman reprezintă prima linie de apărare; programele de conștientizare și instruire continuă reduc riscul de inginerie socială, phishing și erori operaționale."
+        "excerpt": "Demonstrațiile practice ale impactului fizic al malware-ului (cum a fost atacul Industroyer/CrashOverride asupra releelor de protecție electrică din Ucraina) sunt cele mai eficiente pentru conștientizarea riscurilor cibernetice în rețelele electrice."
       }
     },
     {
@@ -3075,15 +3075,15 @@
           "text": "Restricting executive access to sensitive cybersecurity information"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Pentru conducerea executivă (Board of Directors), sesiunile concentrate pe riscurile cu impact major asupra afacerii, siguranței și continuității operaționale sunt cele mai relevante și convingătoare.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 69, Knowledge Check 5",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 69, Knowledge Check 5"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 2",
       "section": "Section 2",
       "pdfPage": 69,
@@ -3101,7 +3101,7 @@
         "chapterTitle": "Awareness & Training",
         "topicId": "2.1",
         "topicTitle": "Security Awareness Fundamentals",
-        "excerpt": "Factorul uman reprezintă prima linie de apărare; programele de conștientizare și instruire continuă reduc riscul de inginerie socială, phishing și erori operaționale."
+        "excerpt": "Pentru conducerea executivă (Board of Directors), sesiunile concentrate pe riscurile cu impact major asupra afacerii, siguranței și continuității operaționale sunt cele mai relevante și convingătoare."
       }
     },
     {
@@ -3124,15 +3124,15 @@
           "text": "Making cybersecurity training optional to avoid interfering with daily operations"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "B",
+      "explanation": "Un program de conștientizare eficient trebuie adaptat în funcție de rolurile și responsabilitățile angajaților (operatori HMI, ingineri de proces, tehnicieni IT, manageri), având mesaje specifice fiecărei categorii.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 66, Knowledge Check 2",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 66, Knowledge Check 2"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 2",
       "section": "Section 2",
       "pdfPage": 66,
@@ -3150,7 +3150,7 @@
         "chapterTitle": "Awareness & Training",
         "topicId": "2.1",
         "topicTitle": "Security Awareness Fundamentals",
-        "excerpt": "Factorul uman reprezintă prima linie de apărare; programele de conștientizare și instruire continuă reduc riscul de inginerie socială, phishing și erori operaționale."
+        "excerpt": "Un program de conștientizare eficient trebuie adaptat în funcție de rolurile și responsabilitățile angajaților (operatori HMI, ingineri de proces, tehnicieni IT, manageri), având mesaje specifice fiecărei categorii."
       }
     },
     {
@@ -3173,15 +3173,15 @@
           "text": "Cybersecurity failures can directly lead to physical safety risks and operational disruptions"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "D",
+      "explanation": "În mediile IACS, incidentele de securitate cibernetică nu se rezumă la furtul de date, ci pot produce consecințe fizice directe: avarii de utilaje, explozii, poluare sau rănirea personalului, având impact similar incidentelor de siguranță (Safety).",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 65, Knowledge Check 1",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 65, Knowledge Check 1"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 2",
       "section": "Section 2",
       "pdfPage": 65,
@@ -3199,7 +3199,7 @@
         "chapterTitle": "Awareness & Training",
         "topicId": "2.1",
         "topicTitle": "Security Awareness Fundamentals",
-        "excerpt": "Factorul uman reprezintă prima linie de apărare; programele de conștientizare și instruire continuă reduc riscul de inginerie socială, phishing și erori operaționale."
+        "excerpt": "În mediile IACS, incidentele de securitate cibernetică nu se rezumă la furtul de date, ci pot produce consecințe fizice directe: avarii de utilaje, explozii, poluare sau rănirea personalului, având impact similar incidentelor de siguranță (Safety)."
       }
     },
     {
@@ -3222,15 +3222,15 @@
           "text": "Once trained, employees do not require additional cybersecurity education"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "Conștientizarea trebuie să fie un proces continuu deoarece peisajul amenințărilor, vectorii de atac și tehnicile de exploatare evoluează permanent.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 68, Knowledge Check 4",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 68, Knowledge Check 4"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 2",
       "section": "Section 2",
       "pdfPage": 68,
@@ -3248,7 +3248,7 @@
         "chapterTitle": "Awareness & Training",
         "topicId": "2.1",
         "topicTitle": "Security Awareness Fundamentals",
-        "excerpt": "Factorul uman reprezintă prima linie de apărare; programele de conștientizare și instruire continuă reduc riscul de inginerie socială, phishing și erori operaționale."
+        "excerpt": "Conștientizarea trebuie să fie un proces continuu deoarece peisajul amenințărilor, vectorii de atac și tehnicile de exploatare evoluează permanent."
       }
     },
     {
@@ -3271,15 +3271,15 @@
           "text": "Zone and Conduit Model provides high-level structure for defining security levels and risk assessment while the Reference Model defines segmentation of networks"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Modelul de Referință Purdue oferă ierarhia conceptuală pe niveluri (0-4), în timp ce modelul Zone și Conducte oferă arhitectura practică de segmentare și control al fluxurilor de rețea.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 113, Knowledge Check 5",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 113, Knowledge Check 5"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 11",
       "section": "Section 4",
       "pdfPage": 113,
@@ -3297,7 +3297,7 @@
         "chapterTitle": "Introduction to Security Risk Assessment for System Design",
         "topicId": "11.1",
         "topicTitle": "Security Risk Assessment",
-        "excerpt": "ISA/IEC 62443-3-2 ghidează stabilirea Sistemului Considerat (SuC), evaluarea inițială și detaliată a riscurilor de securitate cibernetică, partiționarea în zone și conducte și alocarea nivelurilor țintă de securitate (SL-T)."
+        "excerpt": "Modelul de Referință Purdue oferă ierarhia conceptuală pe niveluri (0-4), în timp ce modelul Zone și Conducte oferă arhitectura practică de segmentare și control al fluxurilor de rețea."
       }
     },
     {
@@ -3320,15 +3320,15 @@
           "text": "Groups assets based on security requirements and regulates communication between them"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "D",
+      "explanation": "Modelul Zone și Conducte grupează activele cu cerințe comune de securitate în Zone bine delimitate și restricționează comunicarea dintre ele strict prin intermediul Conductelor (Conduits).",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 110, Knowledge Check 2",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 110, Knowledge Check 2"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 4",
       "section": "Section 4",
       "pdfPage": 110,
@@ -3346,7 +3346,7 @@
         "chapterTitle": "ISA/IEC 62443 Models & Security Levels",
         "topicId": "4.2",
         "topicTitle": "Zone & Conduit Model",
-        "excerpt": "Modelul Zone și Conducte grupează activele cu cerințe comune de securitate în Zone distincte și controlează strict toate comunicațiile dintre zone prin canale dedicate denumite Conducte (Conduits)."
+        "excerpt": "Modelul Zone și Conducte grupează activele cu cerințe comune de securitate în Zone bine delimitate și restricționează comunicarea dintre ele strict prin intermediul Conductelor (Conduits)."
       }
     },
     {
@@ -3369,15 +3369,15 @@
           "text": "Focuses solely on incident response and recovery procedures, not on proactive security measures"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "B",
+      "explanation": "Politicile și procedurile oferă liniile directoare de nivel înalt și cadrul obligatoriu pentru definirea comportamentelor permise și a regulilor operaționale într-un sistem IACS.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 111, Knowledge Check 3",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 111, Knowledge Check 3"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 11",
       "section": "Section 4",
       "pdfPage": 111,
@@ -3395,7 +3395,7 @@
         "chapterTitle": "Introduction to Security Risk Assessment for System Design",
         "topicId": "11.1",
         "topicTitle": "Security Risk Assessment",
-        "excerpt": "ISA/IEC 62443-3-2 ghidează stabilirea Sistemului Considerat (SuC), evaluarea inițială și detaliată a riscurilor de securitate cibernetică, partiționarea în zone și conducte și alocarea nivelurilor țintă de securitate (SL-T)."
+        "excerpt": "Politicile și procedurile oferă liniile directoare de nivel înalt și cadrul obligatoriu pentru definirea comportamentelor permise și a regulilor operaționale într-un sistem IACS."
       }
     },
     {
@@ -3418,15 +3418,15 @@
           "text": "Mandates uniform security standards that apply to both IT and OT systems"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Nivelurile de securitate (SLs) din ISA/IEC 62443 definesc nivelul de protecție necesar împotriva unor profiluri specifice de amenințări bazate pe motivație, abilități și resurse.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 112, Knowledge Check 4",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 112, Knowledge Check 4"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 3",
       "section": "Section 4",
       "pdfPage": 112,
@@ -3444,7 +3444,7 @@
         "chapterTitle": "ISA/IEC 62443 Series Overview",
         "topicId": "3.1",
         "topicTitle": "ISA/IEC 62443 Series Overview",
-        "excerpt": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material."
+        "excerpt": "Nivelurile de securitate (SLs) din ISA/IEC 62443 definesc nivelul de protecție necesar împotriva unor profiluri specifice de amenințări bazate pe motivație, abilități și resurse."
       }
     },
     {
@@ -3467,15 +3467,15 @@
           "text": "Eliminates the need for any other industrial security standards or guidelines"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "B",
+      "explanation": "Standardul ISA/IEC 62443 oferă un cadru complet și integrat de securitate cibernetică conceput special pentru sistemele de control industrial (IACS).",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 109, Knowledge Check 1",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 109, Knowledge Check 1"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 8",
       "section": "Section 4",
       "pdfPage": 109,
@@ -3493,7 +3493,7 @@
         "chapterTitle": "Network Security Basics",
         "topicId": "8.1",
         "topicTitle": "Network Security Principles",
-        "excerpt": "Securitatea rețelelor IACS se bazează pe apărare în adâncime (Defense-in-Depth), utilizarea de zone demilitarizate (DMZ) între nivelurile 3 și 4, firewall-uri industriale cu inspecție profundă (DPI), tuneluri VPN criptate și senzori IDS."
+        "excerpt": "Standardul ISA/IEC 62443 oferă un cadru complet și integrat de securitate cibernetică conceput special pentru sistemele de control industrial (IACS)."
       }
     },
     {
@@ -3516,15 +3516,15 @@
           "text": "Regularly replace outdated hardware and software components with the latest version"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Faza de Menținere (Maintain Phase) din ciclul de viață IACS se concentrează pe revizuirea periodică a controalelor, monitorizarea continuă a stării de securitate, audituri și gestionarea schimbărilor (Management of Change - MoC).",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 126, Knowledge Check 3",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 126, Knowledge Check 3"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 11",
       "section": "Section 5",
       "pdfPage": 126,
@@ -3542,7 +3542,7 @@
         "chapterTitle": "Introduction to Security Risk Assessment for System Design",
         "topicId": "11.1",
         "topicTitle": "Security Risk Assessment",
-        "excerpt": "ISA/IEC 62443-3-2 ghidează stabilirea Sistemului Considerat (SuC), evaluarea inițială și detaliată a riscurilor de securitate cibernetică, partiționarea în zone și conducte și alocarea nivelurilor țintă de securitate (SL-T)."
+        "excerpt": "Faza de Menținere (Maintain Phase) din ciclul de viață IACS se concentrează pe revizuirea periodică a controalelor, monitorizarea continuă a stării de securitate, audituri și gestionarea schimbărilor (Management of Change - MoC)."
       }
     },
     {
@@ -3565,15 +3565,15 @@
           "text": "To define long-term security goals and priorities for future improvements"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "Faza de Evaluare (Assess Phase) are ca obiectiv identificarea activelor, evaluarea riscurilor de securitate cibernetică pe Sistemul Sub Considerare (SuC), stabilirea zonelor și conductelor și definirea nivelurilor țintă de securitate (SL-T).",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 125, Knowledge Check 2",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 125, Knowledge Check 2"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 7",
       "section": "Section 5",
       "pdfPage": 125,
@@ -3591,7 +3591,7 @@
         "chapterTitle": "Evolving Security Standards, Practices & Regulations",
         "topicId": "7.1",
         "topicTitle": "Regulations, Standards, and Frameworks",
-        "excerpt": "Cadrul NIST CSF (Core, Tiers, Profiles), NIST SP 800-82 (ICS Security) și Directiva Europeană NIS2 stabilesc cerințe obligatorii și bune practici pentru consolidarea rezilienței infrastructurilor critice."
+        "excerpt": "Faza de Evaluare (Assess Phase) are ca obiectiv identificarea activelor, evaluarea riscurilor de securitate cibernetică pe Sistemul Sub Considerare (SuC), stabilirea zonelor și conductelor și definirea nivelurilor țintă de securitate (SL-T)."
       }
     },
     {
@@ -3614,15 +3614,15 @@
           "text": "Defines the cybersecurity technologies and tools required at each state of the IACS lifecycle"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "B",
+      "explanation": "Ciclul de viață al securității cibernetice IACS oferă o abordare structurată, organizată pe 3 faze (Evaluare, Implementare, Menținere), garantând că securitatea este menținută pe toată durata de viață a instalației.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 124, Knowledge Check 1",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 124, Knowledge Check 1"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 5",
       "section": "Section 5",
       "pdfPage": 124,
@@ -3640,7 +3640,7 @@
         "chapterTitle": "Intro to IACS Lifecycle",
         "topicId": "5.1",
         "topicTitle": "IACS Cybersecurity Lifecycle",
-        "excerpt": "Ciclul de viață al securității IACS cuprinde 3 faze principale: Evaluare (Assess: identificare riscuri, definire zone și conducte, SL-T), Dezvoltare & Implementare (Develop/Implement: specificații CRS, contramăsuri) și Menținere (Maintain: managementul schimbărilor, audit, răspuns la incidente)."
+        "excerpt": "Ciclul de viață al securității cibernetice IACS oferă o abordare structurată, organizată pe 3 faze (Evaluare, Implementare, Menținere), garantând că securitatea este menținută pe toată durata de viață a instalației."
       }
     },
     {
@@ -3663,15 +3663,15 @@
           "text": "Defines baseline security expectation that must be met or exceeded for each IACS zone"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "D",
+      "explanation": "Nivelurile Țintă de Securitate (SL-T) definesc cerințele așteptate de securitate pe care sistemul trebuie să le îndeplinească în timpul operării, rezultate în urma analizei de risc detaliate.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 127, Knowledge Check 4",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 127, Knowledge Check 4"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 4",
       "section": "Section 5",
       "pdfPage": 127,
@@ -3689,7 +3689,7 @@
         "chapterTitle": "ISA/IEC 62443 Models & Security Levels",
         "topicId": "4.2",
         "topicTitle": "Zone & Conduit Model",
-        "excerpt": "Modelul Zone și Conducte grupează activele cu cerințe comune de securitate în Zone distincte și controlează strict toate comunicațiile dintre zone prin canale dedicate denumite Conducte (Conduits)."
+        "excerpt": "Nivelurile Țintă de Securitate (SL-T) definesc cerințele așteptate de securitate pe care sistemul trebuie să le îndeplinească în timpul operării, rezultate în urma analizei de risc detaliate."
       }
     },
     {
@@ -3712,15 +3712,15 @@
           "text": "Handle post-implementation audits and compliance checks"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "Integratorul de sistem este responsabil cu proiectarea, integrarea, configurarea și testarea contramăsurilor tehnice și de rețea conform specificațiilor CRS și a cerințelor ISA/IEC 62443-2-4 și 3-3.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 128, Knowledge Check 5",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 128, Knowledge Check 5"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 12",
       "section": "Section 5",
       "pdfPage": 128,
@@ -3738,7 +3738,7 @@
         "chapterTitle": "Security Program Requirements for IACS Service Providers",
         "topicId": "12.1",
         "topicTitle": "Service Provider Security Programmes",
-        "excerpt": "ISA/IEC 62443-2-4 și Partea 2-5 specifică cerințele de securitate pentru furnizorii de servicii de integrare și mentenanță a sistemelor de automatizare (IACS Service Providers)."
+        "excerpt": "Integratorul de sistem este responsabil cu proiectarea, integrarea, configurarea și testarea contramăsurilor tehnice și de rețea conform specificațiilor CRS și a cerințelor ISA/IEC 62443-2-4 și 3-3."
       }
     },
     {
@@ -3761,15 +3761,15 @@
           "text": "A CSMS applies to IT systems, whereas SP is focused exclusively with OT systems"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Sistemul de Management al Securității Cibernetice (CSMS) presupune un ciclu continuu de îmbunătățire (Plan-Do-Check-Act) adaptat riscurilor dinamice ale proceselor industriale.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 157, Knowledge Check 4",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 157, Knowledge Check 4"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 6",
       "section": "Section 6",
       "pdfPage": 157,
@@ -3787,7 +3787,7 @@
         "chapterTitle": "Security Requirements for IACS Asset Owners",
         "topicId": "6.1",
         "topicTitle": "IACS Security Programme Requirements",
-        "excerpt": "ISA/IEC 62443-2-1 stabilește cerințele pentru un Sistem de Management al Securității Cibernetice (CSMS) IACS destinat proprietarilor de active (Asset Owners), structurat pe elemente precum Politica de Securitate, Evaluarea Riscurilor, Controlul Accesului și Monitorizarea."
+        "excerpt": "Sistemul de Management al Securității Cibernetice (CSMS) presupune un ciclu continuu de îmbunătățire (Plan-Do-Check-Act) adaptat riscurilor dinamice ale proceselor industriale."
       }
     },
     {
@@ -3814,15 +3814,15 @@
           "text": "Confirm that the physical security is compliant with ISO 27001"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "B",
+      "explanation": "Evaluarea conformității (Conformity Assessment) are rolul de a evalua eficacitatea controalelor și de a verifica independența și respectarea specificațiilor din standardul ISA/IEC 62443.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 154, Knowledge Check 1",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 154, Knowledge Check 1"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 13",
       "section": "Section 6",
       "pdfPage": 154,
@@ -3840,7 +3840,7 @@
         "chapterTitle": "Developing Secure Products & Systems",
         "topicId": "13.1",
         "topicTitle": "Secure Development Practices",
-        "excerpt": "ISA/IEC 62443-4-1 specifică cerințele procesului de dezvoltare securizată pentru produse IACS: managementul securității (SM), cerințe de securitate (SR), proiectare sigură (SD), implementare sigură (SI), verificare și validare (SV), managementul defectelor (DM), managementul patch-urilor (PM) și ghiduri de securitate (SG)."
+        "excerpt": "Evaluarea conformității (Conformity Assessment) are rolul de a evalua eficacitatea controalelor și de a verifica independența și respectarea specificațiilor din standardul ISA/IEC 62443."
       }
     },
     {
@@ -3863,15 +3863,15 @@
           "text": "Standardize security approaches using a uniform security framework and architecture for all IACS systems"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "Elementele Programului de Securitate (Security Program Elements - SPEs) din ISA/IEC 62443-2-1 definesc activitățile cheie de securitate pe care Asset Owner-ul trebuie să le instituie și să le mențină.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 158, Knowledge Check 5",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 158, Knowledge Check 5"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 6",
       "section": "Section 6",
       "pdfPage": 158,
@@ -3889,7 +3889,7 @@
         "chapterTitle": "Security Requirements for IACS Asset Owners",
         "topicId": "6.1",
         "topicTitle": "IACS Security Programme Requirements",
-        "excerpt": "ISA/IEC 62443-2-1 stabilește cerințele pentru un Sistem de Management al Securității Cibernetice (CSMS) IACS destinat proprietarilor de active (Asset Owners), structurat pe elemente precum Politica de Securitate, Evaluarea Riscurilor, Controlul Accesului și Monitorizarea."
+        "excerpt": "Elementele Programului de Securitate (Security Program Elements - SPEs) din ISA/IEC 62443-2-1 definesc activitățile cheie de securitate pe care Asset Owner-ul trebuie să le instituie și să le mențină."
       }
     },
     {
@@ -3912,15 +3912,15 @@
           "text": "Increased risks from interconnected systems make vendor security critical"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "Securitatea lanțului de aprovizionare (Supply Chain Security) a devenit critică din cauza creșterii masive a atacurilor cibernetice care vizează furnizorii terți, bibliotecile software externe și componentele integrate.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 155, Knowledge Check 2",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 155, Knowledge Check 2"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 13",
       "section": "Section 6",
       "pdfPage": 155,
@@ -3938,7 +3938,7 @@
         "chapterTitle": "Developing Secure Products & Systems",
         "topicId": "13.1",
         "topicTitle": "Secure Development Practices",
-        "excerpt": "ISA/IEC 62443-4-1 specifică cerințele procesului de dezvoltare securizată pentru produse IACS: managementul securității (SM), cerințe de securitate (SR), proiectare sigură (SD), implementare sigură (SI), verificare și validare (SV), managementul defectelor (DM), managementul patch-urilor (PM) și ghiduri de securitate (SG)."
+        "excerpt": "Securitatea lanțului de aprovizionare (Supply Chain Security) a devenit critică din cauza creșterii masive a atacurilor cibernetice care vizează furnizorii terți, bibliotecile software externe și componentele integrate."
       }
     },
     {
@@ -3965,15 +3965,15 @@
           "text": "Maturity Level 4 must be acived before conformance assessment"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "D",
+      "explanation": "Nivelurile de maturitate (ML 1 la ML 4) oferă un cadru evolutiv pentru îmbunătățirea continuă a proceselor de securitate din organizație.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 156, Knowledge Check 3",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 156, Knowledge Check 3"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 4",
       "section": "Section 6",
       "pdfPage": 156,
@@ -3991,7 +3991,7 @@
         "chapterTitle": "ISA/IEC 62443 Models & Security Levels",
         "topicId": "4.1",
         "topicTitle": "Purdue Reference Model",
-        "excerpt": "Modelul de Referință Purdue (integrat în ISA-95/62443) structurează ierarhia industrială: Nivelul 0 (Proces fizic), Nivelul 1 (Control de bază/PLC), Nivelul 2 (Control supervizor/HMI), Nivelul 3 (Managementul operațiunilor) și Nivelul 4 (Întreprindere)."
+        "excerpt": "Nivelurile de maturitate (ML 1 la ML 4) oferă un cadru evolutiv pentru îmbunătățirea continuă a proceselor de securitate din organizație."
       }
     },
     {
@@ -4014,15 +4014,15 @@
           "text": "Compliance with standards has no impact on determining legal responsibility"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "B",
+      "explanation": "În litigiile de răspundere civilă pentru breșe de securitate, instanțele pot aplica testul „omului rezonabil / bunului profesionist”, evaluând dacă respectarea standardelor recunoscute din industrie (precum ISA/IEC 62443) ar fi prevenit incidentul.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 195, Knowledge Check 3",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 195, Knowledge Check 3"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 7",
       "section": "Section 7",
       "pdfPage": 195,
@@ -4040,7 +4040,7 @@
         "chapterTitle": "Evolving Security Standards, Practices & Regulations",
         "topicId": "7.1",
         "topicTitle": "Regulations, Standards, and Frameworks",
-        "excerpt": "Cadrul NIST CSF (Core, Tiers, Profiles), NIST SP 800-82 (ICS Security) și Directiva Europeană NIS2 stabilesc cerințe obligatorii și bune practici pentru consolidarea rezilienței infrastructurilor critice."
+        "excerpt": "În litigiile de răspundere civilă pentru breșe de securitate, instanțele pot aplica testul „omului rezonabil / bunului profesionist”, evaluând dacă respectarea standardelor recunoscute din industrie (precum ISA/IEC 62443) ar fi prevenit incidentul."
       }
     },
     {
@@ -4063,15 +4063,15 @@
           "text": "Delaying security patches until a cybersecurity incident occurs"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "B",
+      "explanation": "Directiva TSA și liniile directoare DHS impun segmentarea strictă a rețelelor industriale pentru a preveni propagarea unei compromiteri din rețeaua de birou (IT) către sistemele operaționale critice (OT).",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 194, Knowledge Check 2",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 194, Knowledge Check 2"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 10",
       "section": "Section 7",
       "pdfPage": 194,
@@ -4089,7 +4089,7 @@
         "chapterTitle": "Introduction to Patch Management",
         "topicId": "10.1",
         "topicTitle": "IACS Patch Management",
-        "excerpt": "Raportul tehnic ISA-TR62443-2-3 descrie formatul și bunele practici pentru testarea, validarea, notificarea și aplicarea patch-urilor într-un mediu IACS, evitând întreruperile proceselor de producție."
+        "excerpt": "Directiva TSA și liniile directoare DHS impun segmentarea strictă a rețelelor industriale pentru a preveni propagarea unei compromiteri din rețeaua de birou (IT) către sistemele operaționale critice (OT)."
       }
     },
     {
@@ -4112,15 +4112,15 @@
           "text": "When the standard is referenced in a regulation or contract, making compliance mandatory"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "D",
+      "explanation": "Un standard tehnic voluntar (precum ISA/IEC 62443) devine obligatoriu din punct de vedere legal atunci când este referențiat într-o lege, reglementare națională sau într-un contract comercial obligatoriu.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 197, Knowledge Check 5",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 197, Knowledge Check 5"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 7",
       "section": "Section 7",
       "pdfPage": 197,
@@ -4138,7 +4138,7 @@
         "chapterTitle": "Evolving Security Standards, Practices & Regulations",
         "topicId": "7.1",
         "topicTitle": "Regulations, Standards, and Frameworks",
-        "excerpt": "Cadrul NIST CSF (Core, Tiers, Profiles), NIST SP 800-82 (ICS Security) și Directiva Europeană NIS2 stabilesc cerințe obligatorii și bune practici pentru consolidarea rezilienței infrastructurilor critice."
+        "excerpt": "Un standard tehnic voluntar (precum ISA/IEC 62443) devine obligatoriu din punct de vedere legal atunci când este referențiat într-o lege, reglementare națională sau într-un contract comercial obligatoriu."
       }
     },
     {
@@ -4165,15 +4165,15 @@
           "text": "Maintain"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "B",
+      "explanation": "Funcția Protect (Protejare) din cadrul NIST Cybersecurity Framework are ca obiectiv implementarea garanțiilor și măsurilor de protecție adecvate pentru a limita sau izola impactul unui eveniment de securitate cibernetică.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 198, Knowledge Check 6",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 198, Knowledge Check 6"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 7",
       "section": "Section 7",
       "pdfPage": 198,
@@ -4191,7 +4191,7 @@
         "chapterTitle": "Evolving Security Standards, Practices & Regulations",
         "topicId": "7.1",
         "topicTitle": "Regulations, Standards, and Frameworks",
-        "excerpt": "Cadrul NIST CSF (Core, Tiers, Profiles), NIST SP 800-82 (ICS Security) și Directiva Europeană NIS2 stabilesc cerințe obligatorii și bune practici pentru consolidarea rezilienței infrastructurilor critice."
+        "excerpt": "Funcția Protect (Protejare) din cadrul NIST Cybersecurity Framework are ca obiectiv implementarea garanțiilor și măsurilor de protecție adecvate pentru a limita sau izola impactul unui eveniment de securitate cibernetică."
       }
     },
     {
@@ -4214,15 +4214,15 @@
           "text": "Regulations focus only on physical security, while standards address cybersecurity"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Diferența fundamentală este că reglementările (Regulations) sunt impuse prin lege și sunt obligatorii, în timp ce standardele sunt dezvoltate prin consens de organizații de standardizare (SDO) și sunt voluntare, cu excepția cazului în care sunt stipulate prin contract sau reglementare.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 193, Knowledge Check 1",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 193, Knowledge Check 1"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 7",
       "section": "Section 7",
       "pdfPage": 193,
@@ -4240,7 +4240,7 @@
         "chapterTitle": "Evolving Security Standards, Practices & Regulations",
         "topicId": "7.1",
         "topicTitle": "Regulations, Standards, and Frameworks",
-        "excerpt": "Cadrul NIST CSF (Core, Tiers, Profiles), NIST SP 800-82 (ICS Security) și Directiva Europeană NIS2 stabilesc cerințe obligatorii și bune practici pentru consolidarea rezilienței infrastructurilor critice."
+        "excerpt": "Diferența fundamentală este că reglementările (Regulations) sunt impuse prin lege și sunt obligatorii, în timp ce standardele sunt dezvoltate prin consens de organizații de standardizare (SDO) și sunt voluntare, cu excepția cazului în care sunt stipulate prin contract sau reglementare."
       }
     },
     {
@@ -4263,15 +4263,15 @@
           "text": "Informative elements establish legal penalties for non-compliance with a standard"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Elementele normative (Normative) conțin cerințele obligatorii pe care sistemul „trebuie” (shall) să le respecte pentru a obține conformitatea, în timp ce elementele informative oferă explicații, exemple și orientări fără caracter obligatoriu.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 196, Knowledge Check 4",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 196, Knowledge Check 4"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 3",
       "section": "Section 7",
       "pdfPage": 196,
@@ -4289,7 +4289,7 @@
         "chapterTitle": "ISA/IEC 62443 Series Overview",
         "topicId": "3.1",
         "topicTitle": "ISA/IEC 62443 Series Overview",
-        "excerpt": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material."
+        "excerpt": "Elementele normative (Normative) conțin cerințele obligatorii pe care sistemul „trebuie” (shall) să le respecte pentru a obține conformitatea, în timp ce elementele informative oferă explicații, exemple și orientări fără caracter obligatoriu."
       }
     },
     {
@@ -4312,15 +4312,15 @@
           "text": "Enables secure SSH tunneling between PLCs and remote clients"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "O poartă unidirecțională (Data Diode) folosește o legătură optică fizică ce permite transmisia datelor exclusiv într-un singur sens (de exemplu, din OT către IT), garantând fizic imposibilitatea oricărui atac din exterior înapoi în rețeaua de control.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 229, Knowledge Check 1",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 229, Knowledge Check 1"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 1",
       "section": "Section 8",
       "pdfPage": 229,
@@ -4338,7 +4338,7 @@
         "chapterTitle": "Introduction to Control Systems Security",
         "topicId": "1.1",
         "topicTitle": "Defining Control System Cybersecurity",
-        "excerpt": "Sistemele de control industrial (IACS/PLC) au fost inițial concepute pentru a înlocui releele fizice; prioritatea lor critică este Disponibilitatea (Availability) și Siguranța (Safety), spre deosebire de sistemele IT unde primează Confidențialitatea."
+        "excerpt": "O poartă unidirecțională (Data Diode) folosește o legătură optică fizică ce permite transmisia datelor exclusiv într-un singur sens (de exemplu, din OT către IT), garantând fizic imposibilitatea oricărui atac din exterior înapoi în rețeaua de control."
       }
     },
     {
@@ -4361,15 +4361,15 @@
           "text": "Host data aggregatioj, historian or monitoring systems that require access to both the enterprise and control networks"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Zona Demilitarizată (DMZ) izolează rețeaua enterprise (Nivel 4) de rețeaua industrială de control (Nivel 3 și mai jos), interzicând conexiunile directe și găzduind servere intermediare de tranzit (Historian de replică, patch servers).",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 231, Knowledge Check 3",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 231, Knowledge Check 3"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 15",
       "section": "Section 8",
       "pdfPage": 231,
@@ -4387,7 +4387,7 @@
         "chapterTitle": "IACS Security Profile Scheme",
         "topicId": "15.1",
         "topicTitle": "Security Profile Scheme Framework",
-        "excerpt": "Schema de certificare ISASecure evaluează conformitatea produselor, sistemelor și proceselor de dezvoltare cu standardul ISA/IEC 62443 prin programele SDLA (4-1), CSA (4-2), SSA (3-3) și evaluarea competențelor profesionale."
+        "excerpt": "Zona Demilitarizată (DMZ) izolează rețeaua enterprise (Nivel 4) de rețeaua industrială de control (Nivel 3 și mai jos), interzicând conexiunile directe și găzduind servere intermediare de tranzit (Historian de replică, patch servers)."
       }
     },
     {
@@ -4410,15 +4410,15 @@
           "text": "Analyzes packets in transit between networks to detect known attack signatures"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "Un sistem Host IDS (HIDS) monitorizează activitățile locale ale unui server sau stație de lucru, detectând modificări neautorizate ale fișierelor de sistem, proceselor suspecte sau jurnalelor locale.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 232, Knowledge Check 4",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 232, Knowledge Check 4"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 8",
       "section": "Section 8",
       "pdfPage": 232,
@@ -4436,7 +4436,7 @@
         "chapterTitle": "Network Security Basics",
         "topicId": "8.1",
         "topicTitle": "Network Security Principles",
-        "excerpt": "Securitatea rețelelor IACS se bazează pe apărare în adâncime (Defense-in-Depth), utilizarea de zone demilitarizate (DMZ) între nivelurile 3 și 4, firewall-uri industriale cu inspecție profundă (DPI), tuneluri VPN criptate și senzori IDS."
+        "excerpt": "Un sistem Host IDS (HIDS) monitorizează activitățile locale ale unui server sau stație de lucru, detectând modificări neautorizate ale fișierelor de sistem, proceselor suspecte sau jurnalelor locale."
       }
     },
     {
@@ -4459,15 +4459,15 @@
           "text": "Supports deep packet inspection"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "D",
+      "explanation": "Un mare avantaj al firewall-urilor de nouă generație (NGFW) în medii industriale este inspecția profundă a pachetelor (Deep Packet Inspection - DPI), care permite filtrarea la nivel de comenzi specifice de protocol industrial (ex. blocarea comenzilor Modbus de scriere în PLC).",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 234, Knowledge Check 6",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 234, Knowledge Check 6"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 8",
       "section": "Section 8",
       "pdfPage": 234,
@@ -4485,7 +4485,7 @@
         "chapterTitle": "Network Security Basics",
         "topicId": "8.1",
         "topicTitle": "Network Security Principles",
-        "excerpt": "Securitatea rețelelor IACS se bazează pe apărare în adâncime (Defense-in-Depth), utilizarea de zone demilitarizate (DMZ) între nivelurile 3 și 4, firewall-uri industriale cu inspecție profundă (DPI), tuneluri VPN criptate și senzori IDS."
+        "excerpt": "Un mare avantaj al firewall-urilor de nouă generație (NGFW) în medii industriale este inspecția profundă a pachetelor (Deep Packet Inspection - DPI), care permite filtrarea la nivel de comenzi specifice de protocol industrial (ex. blocarea comenzilor Modbus de scriere în PLC)."
       }
     },
     {
@@ -4508,15 +4508,15 @@
           "text": "They paypass application layer protocols"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "B",
+      "explanation": "Sistemele IPS inline nu sunt recomandate pe nivelurile inferioare ale IACS deoarece alarmele false (false positives) pot întrerupe brusc comenzi de control legitime și critice, declanșând opriri neplanificate sau riscuri majore de siguranță.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 230, Knowledge Check 2",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 230, Knowledge Check 2"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 9",
       "section": "Section 8",
       "pdfPage": 230,
@@ -4534,7 +4534,7 @@
         "chapterTitle": "Industrial Protocols",
         "topicId": "9.1",
         "topicTitle": "Industrial Protocols Overview",
-        "excerpt": "Protocoalele industriale (Modbus TCP pe port 502, OPC UA cu spațiu de nume navigabil și criptare, Profibus) operează pe modelul OSI; securizarea lor necesită cunoașterea adresării fizice (Nivel 2), a porturilor de transport (Nivel 4) și a semanticii la Nivelul Aplicație."
+        "excerpt": "Sistemele IPS inline nu sunt recomandate pe nivelurile inferioare ale IACS deoarece alarmele false (false positives) pot întrerupe brusc comenzi de control legitime și critice, declanșând opriri neplanificate sau riscuri majore de siguranță."
       }
     },
     {
@@ -4557,15 +4557,15 @@
           "text": "Only compatible with wireless protocols, making it unsuitable for wired industrial network configurations"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "A",
+      "explanation": "Stiva TCP/IP a fost concepută inițial pentru robustețea comunicației într-un mediu considerat de încredere, fără mecanisme native de autentificare sau criptare, făcând protocoalele industriale bazate pe IP vulnerabile la interceptare și spoofing.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 233, Knowledge Check 5",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 233, Knowledge Check 5"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 15",
       "section": "Section 8",
       "pdfPage": 233,
@@ -4583,7 +4583,7 @@
         "chapterTitle": "IACS Security Profile Scheme",
         "topicId": "15.1",
         "topicTitle": "Security Profile Scheme Framework",
-        "excerpt": "Schema de certificare ISASecure evaluează conformitatea produselor, sistemelor și proceselor de dezvoltare cu standardul ISA/IEC 62443 prin programele SDLA (4-1), CSA (4-2), SSA (3-3) și evaluarea competențelor profesionale."
+        "excerpt": "Stiva TCP/IP a fost concepută inițial pentru robustețea comunicației într-un mediu considerat de încredere, fără mecanisme native de autentificare sau criptare, făcând protocoalele industriale bazate pe IP vulnerabile la interceptare și spoofing."
       }
     },
     {
@@ -4606,15 +4606,15 @@
           "text": "Automatically optimizes communication speed based on network conditions"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "B",
+      "explanation": "Protocolul Modbus s-a impus pe scară largă deoarece a fost publicat deschis (open), fără redevențe de licențiere (royalty-free), fiind simplu și ușor de implementat pe orice platformă hardware.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 251, Knowledge Check 4",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 251, Knowledge Check 4"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 9",
       "section": "Section 9",
       "pdfPage": 251,
@@ -4632,7 +4632,7 @@
         "chapterTitle": "Industrial Protocols",
         "topicId": "9.1",
         "topicTitle": "Industrial Protocols Overview",
-        "excerpt": "Protocoalele industriale (Modbus TCP pe port 502, OPC UA cu spațiu de nume navigabil și criptare, Profibus) operează pe modelul OSI; securizarea lor necesită cunoașterea adresării fizice (Nivel 2), a porturilor de transport (Nivel 4) și a semanticii la Nivelul Aplicație."
+        "excerpt": "Protocolul Modbus s-a impus pe scară largă deoarece a fost publicat deschis (open), fără redevențe de licențiere (royalty-free), fiind simplu și ușor de implementat pe orice platformă hardware."
       }
     },
     {
@@ -4655,15 +4655,15 @@
           "text": "Enables packet filtering and inspection without replaceing legacy devices"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "D",
+      "explanation": "Firewall-urile industriale specifice IACS pot interpreta semantica protocolului Modbus TCP și pot filtra comenzile periculoase chiar și pentru PLC-uri vechi (legacy), fără a fi necesară înlocuirea costisitoare a hardware-ului.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 252, Knowledge Check 5",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 252, Knowledge Check 5"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 8",
       "section": "Section 9",
       "pdfPage": 252,
@@ -4681,7 +4681,7 @@
         "chapterTitle": "Network Security Basics",
         "topicId": "8.1",
         "topicTitle": "Network Security Principles",
-        "excerpt": "Securitatea rețelelor IACS se bazează pe apărare în adâncime (Defense-in-Depth), utilizarea de zone demilitarizate (DMZ) între nivelurile 3 și 4, firewall-uri industriale cu inspecție profundă (DPI), tuneluri VPN criptate și senzori IDS."
+        "excerpt": "Firewall-urile industriale specifice IACS pot interpreta semantica protocolului Modbus TCP și pot filtra comenzile periculoase chiar și pentru PLC-uri vechi (legacy), fără a fi necesară înlocuirea costisitoare a hardware-ului."
       }
     },
     {
@@ -4704,15 +4704,15 @@
           "text": "Is backwards compatible with legacy firewalls that use port filtering"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "C",
+      "explanation": "OPC UA elimină dependența de DCOM, funcționează pe un singur port TCP configurabil și integrează nativ criptarea și autentificarea bazată pe certificate digitale X.509.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 250, Knowledge Check 3",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 250, Knowledge Check 3"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 8",
       "section": "Section 9",
       "pdfPage": 250,
@@ -4730,7 +4730,7 @@
         "chapterTitle": "Network Security Basics",
         "topicId": "8.1",
         "topicTitle": "Network Security Principles",
-        "excerpt": "Securitatea rețelelor IACS se bazează pe apărare în adâncime (Defense-in-Depth), utilizarea de zone demilitarizate (DMZ) între nivelurile 3 și 4, firewall-uri industriale cu inspecție profundă (DPI), tuneluri VPN criptate și senzori IDS."
+        "excerpt": "OPC UA elimină dependența de DCOM, funcționează pe un singur port TCP configurabil și integrează nativ criptarea și autentificarea bazată pe certificate digitale X.509."
       }
     },
     {
@@ -4753,15 +4753,15 @@
           "text": "Encrypts all traffic by defaulr using TLS"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "B",
+      "explanation": "Modbus TCP utilizează o arhitectură simplă client-server pe portul standard TCP 502, transmițând pachetele de date în clar, fără mecanisme integrate de criptare.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 249, Knowledge Check 2",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 249, Knowledge Check 2"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 9",
       "section": "Section 9",
       "pdfPage": 249,
@@ -4779,7 +4779,7 @@
         "chapterTitle": "Industrial Protocols",
         "topicId": "9.1",
         "topicTitle": "Industrial Protocols Overview",
-        "excerpt": "Protocoalele industriale (Modbus TCP pe port 502, OPC UA cu spațiu de nume navigabil și criptare, Profibus) operează pe modelul OSI; securizarea lor necesită cunoașterea adresării fizice (Nivel 2), a porturilor de transport (Nivel 4) și a semanticii la Nivelul Aplicație."
+        "excerpt": "Modbus TCP utilizează o arhitectură simplă client-server pe portul standard TCP 502, transmițând pachetele de date în clar, fără mecanisme integrate de criptare."
       }
     },
     {
@@ -4802,15 +4802,15 @@
           "text": "Dynamically negotiates ports via DCOM between 1024-65535 243"
         }
       ],
-      "correctAnswer": null,
-      "explanation": "The supplied IC32 student noteset includes this question and its answer choices, but it does not include an answer key for this item. Use it as a self-check, then confirm the reasoning against the relevant chapter material.",
+      "correctAnswer": "D",
+      "explanation": "OPC Classic utilizează tehnologia Microsoft DCOM, care negociază porturi aleatorii într-un interval larg (1024-65535), făcând securizarea prin firewall-uri tradiționale extrem de dificilă și nesigură.",
       "difficulty": "medium",
       "source": "IC32 PDF noteset, page 248, Knowledge Check 1",
       "sourceType": "pdf_noteset",
       "sourceReferences": [
         "IC32 PDF noteset, page 248, Knowledge Check 1"
       ],
-      "answerStatus": "answer_not_in_supplied_noteset",
+      "answerStatus": "answer_available",
       "chapter": "Section 8",
       "section": "Section 9",
       "pdfPage": 248,
@@ -4828,7 +4828,7 @@
         "chapterTitle": "Network Security Basics",
         "topicId": "8.1",
         "topicTitle": "Network Security Principles",
-        "excerpt": "Securitatea rețelelor IACS se bazează pe apărare în adâncime (Defense-in-Depth), utilizarea de zone demilitarizate (DMZ) între nivelurile 3 și 4, firewall-uri industriale cu inspecție profundă (DPI), tuneluri VPN criptate și senzori IDS."
+        "excerpt": "OPC Classic utilizează tehnologia Microsoft DCOM, care negociază porturi aleatorii într-un interval larg (1024-65535), făcând securizarea prin firewall-uri tradiționale extrem de dificilă și nesigură."
       }
     },
     {
