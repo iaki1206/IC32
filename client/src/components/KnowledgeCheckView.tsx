@@ -9,13 +9,11 @@ import {
   RotateCcw,
   Award,
   Search,
-  Filter,
   AlertCircle,
   BookOpen,
   AlertTriangle,
   Bookmark,
   ExternalLink,
-  Layers,
   CheckSquare,
   Square,
 } from "lucide-react";
@@ -133,7 +131,6 @@ export default function KnowledgeCheckView({
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>({});
   const [showResults, setShowResults] = useState<Record<string, boolean>>({});
   const [quizSubmitted, setQuizSubmitted] = useState(false);
-  const [sourceGroupFilter, setSourceGroupFilter] = useState("all");
   const [chapterFilter, setChapterFilter] = useState("all");
   const [answerFilter, setAnswerFilter] = useState("all");
   const [incorrectOnly, setIncorrectOnly] = useState(false);
@@ -157,32 +154,6 @@ export default function KnowledgeCheckView({
         return false;
       }
 
-      const src = question.source || "";
-      const vendor = question.vendor || "";
-      let sourceMatches = true;
-
-      if (sourceGroupFilter === "killexams") {
-        sourceMatches = vendor === "Killexams" || src.includes("Killexams");
-      } else if (sourceGroupFilter === "dumpscafe") {
-        sourceMatches = vendor === "DumpsCafe" || src.includes("DumpsCafe");
-      } else if (sourceGroupFilter === "dumpspedia") {
-        sourceMatches = vendor === "DumpsPedia" || src.includes("DumpsPedia");
-      } else if (sourceGroupFilter === "solution2pass") {
-        sourceMatches = vendor === "Solution2Pass" || src.includes("Solution2Pass");
-      } else if (sourceGroupFilter === "excel") {
-        sourceMatches = src.includes("ITExam Excel Bank");
-      } else if (sourceGroupFilter === "pdf") {
-        sourceMatches = src.includes("IC32 PDF noteset");
-      } else if (sourceGroupFilter === "real_exam") {
-        sourceMatches = src.includes("Real Exam Bank");
-      } else if (sourceGroupFilter === "test_bank_127") {
-        sourceMatches = src.includes("IC32 Test Bank 127");
-      } else if (sourceGroupFilter === "quiz") {
-        sourceMatches = src.includes("Existing Quiz");
-      } else if (sourceGroupFilter === "kc") {
-        sourceMatches = src.includes("Knowledge Check |");
-      }
-
       const chapterMatches = chapterFilter === "all" || normaliseChapter(question.chapter) === chapterFilter;
 
       const answerMatches =
@@ -196,7 +167,6 @@ export default function KnowledgeCheckView({
           question.question,
           question.chapter,
           question.source,
-          question.vendor,
           question.anchor?.standard,
           question.anchor?.clause,
           question.anchor?.excerpt,
@@ -208,9 +178,9 @@ export default function KnowledgeCheckView({
           .toLowerCase()
           .includes(query);
 
-      return sourceMatches && chapterMatches && answerMatches && searchMatches;
+      return chapterMatches && answerMatches && searchMatches;
     });
-  }, [answerFilter, chapterFilter, incorrectOnly, incorrectQuestionIds, searchTerm, sourceGroupFilter]);
+  }, [answerFilter, chapterFilter, incorrectOnly, incorrectQuestionIds, searchTerm]);
 
   const answerableQuestions = questions.filter((question) => Boolean(question.correctAnswer));
   const answeredAnswerableCount = answerableQuestions.filter((question) => Boolean(selectedAnswers[question.id])).length;
@@ -261,117 +231,94 @@ export default function KnowledgeCheckView({
         <div>
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <Badge className="bg-blue-500/20 text-blue-200 border-blue-400/30 px-3 py-1 text-sm font-medium">
-              Bancă Consolidată & Deduplicată ({questions.length} Întrebări Unice)
+              Consolidated Question Bank ({questions.length} Unique Questions)
             </Badge>
             <Badge className="bg-emerald-500/20 text-emerald-300 border-emerald-400/30 text-xs px-2.5 py-0.5 font-medium">
-              100% Ancorate în Standard & Curs
+              100% Anchored to Standards & Course
             </Badge>
           </div>
           <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl mb-2">
-            Knowledge Checks, Exam Practice & Ancore de Text
+            Knowledge Checks, Exam Practice & Course Anchors
           </h1>
           <p className="text-blue-100 text-sm sm:text-base max-w-3xl leading-relaxed">
-            Include noile întrebări din <strong>Killexams</strong>, <strong>DumpsCafe</strong>, <strong>DumpsPedia</strong> și <strong>Solution2Pass</strong>, alături de băncile existente ITExam și PDF. Fiecare răspuns conține o <strong>ancoră precisă</strong> către fragmentul de text din standardul ISA/IEC 62443 și curriculumul IC32, cu navigare directă în curs.
+            A comprehensive, deduplicated question repository covering the complete ISA/IEC 62443 syllabus. Every question includes a <strong>verified answer</strong>, detailed technical justification, and a <strong>direct anchor</strong> to the relevant standard clause and syllabus section with seamless in-app navigation.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-3 min-w-[280px]">
           <div className="bg-white/10 border border-white/15 backdrop-blur-md rounded-xl p-3 text-center">
             <div className="text-2xl font-extrabold">{questions.length}</div>
-            <div className="text-[11px] uppercase tracking-wide text-blue-200">Total Întrebări</div>
+            <div className="text-[11px] uppercase tracking-wide text-blue-200">Total Questions</div>
           </div>
           <div className="bg-white/10 border border-white/15 backdrop-blur-md rounded-xl p-3 text-center">
             <div className="text-2xl font-extrabold text-emerald-300">{answerableQuestions.length}</div>
-            <div className="text-[11px] uppercase tracking-wide text-emerald-200">Răspunsuri Verificate</div>
+            <div className="text-[11px] uppercase tracking-wide text-emerald-200">Verified Answers</div>
           </div>
         </div>
       </div>
 
-      {/* Filter and Search Bar */}
+      {/* Search and Chapter Filter Bar (No Vendor Filter) */}
       <Card className="p-4 bg-white border-gray-200 shadow-sm space-y-3">
-        <div className="flex flex-col lg:flex-row gap-3 lg:items-center">
+        <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
           <div className="relative flex-1">
             <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               value={searchTerm}
               onChange={(event) => setSearchTerm(event.target.value)}
-              placeholder="Caută în întrebări, ancore (ex: 62443-4-1, DMZ, FR 6), opțiuni sau explicații..."
+              placeholder="Search questions, standards (e.g. 62443-4-1, DMZ, FR 6), options or explanations..."
               className="w-full h-10 pl-9 pr-3 rounded-lg border border-gray-200 bg-gray-50 text-sm text-gray-900 outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500"
             />
           </div>
 
-          <div className="flex flex-wrap items-center gap-2">
-            <div className="flex items-center gap-1.5 text-xs font-semibold text-gray-600">
-              <Filter className="w-4 h-4 text-blue-600" />
-              <span>Sursă / Vanzător:</span>
-            </div>
-            <select
-              value={sourceGroupFilter}
-              onChange={(event) => setSourceGroupFilter(event.target.value)}
-              className="h-10 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-800 outline-none focus:ring-2 focus:ring-blue-500/30 font-medium"
-            >
-              <option value="all">Toate sursele ({questions.length})</option>
-              <option value="killexams">Killexams 2026 (21)</option>
-              <option value="dumpscafe">DumpsCafe Verified (10)</option>
-              <option value="dumpspedia">DumpsPedia 2026 (51)</option>
-              <option value="solution2pass">Solution2Pass (26)</option>
-              <option value="excel">ITExam Excel Bank (111)</option>
-              <option value="pdf">IC32 PDF noteset (71)</option>
-              <option value="real_exam">Real Exam Bank (12)</option>
-              <option value="test_bank_127">Test Bank 127 (14)</option>
-              <option value="quiz">Existing Quiz (11)</option>
-              <option value="kc">Course KC (5)</option>
-            </select>
-          </div>
-        </div>
-
-        <div className="flex flex-col sm:flex-row gap-3 sm:items-center justify-between pt-2 border-t border-gray-100">
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="flex items-center gap-2">
             <div className="flex items-center gap-1.5 text-xs font-semibold text-gray-600">
               <BookOpen className="w-4 h-4 text-indigo-600" />
-              <span>Capitol:</span>
+              <span>Chapter:</span>
             </div>
             <select
               value={chapterFilter}
               onChange={(event) => setChapterFilter(event.target.value)}
-              className="h-10 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-800 outline-none focus:ring-2 focus:ring-blue-500/30 max-w-md truncate"
+              className="h-10 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-800 outline-none focus:ring-2 focus:ring-blue-500/30 max-w-xs truncate font-medium"
             >
-              <option value="all">Toate capitolele ({availableChapters.length} secțiuni)</option>
+              <option value="all">All Chapters ({availableChapters.length} sections)</option>
               {availableChapters.map((ch) => (
                 <option key={ch} value={ch}>
                   {ch}
                 </option>
               ))}
             </select>
+          </div>
+        </div>
 
+        <div className="flex flex-col sm:flex-row gap-3 sm:items-center justify-between pt-2 border-t border-gray-100">
+          <div className="flex items-center gap-2">
             <select
               value={answerFilter}
               onChange={(event) => setAnswerFilter(event.target.value)}
-              className="h-10 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-800 outline-none focus:ring-2 focus:ring-blue-500/30"
+              className="h-9 rounded-lg border border-gray-200 bg-white px-3 text-xs text-gray-700 outline-none focus:ring-2 focus:ring-blue-500/30"
             >
-              <option value="all">Toate tipurile de întrebări</option>
-              <option value="answerable">Cu răspuns verificat</option>
-              <option value="self-check">PDF Self-Check (fără cheie)</option>
+              <option value="all">All Question Types</option>
+              <option value="answerable">Verified Answer Key</option>
+              <option value="self-check">Self-Check Only</option>
             </select>
           </div>
 
           <div className="flex items-center gap-3">
             <span className="text-xs text-gray-500 font-medium">
-              Afișate <strong className="text-gray-900">{filteredQuestions.length}</strong> din {questions.length}
+              Showing <strong className="text-gray-900">{filteredQuestions.length}</strong> of {questions.length} questions
             </span>
-            {(sourceGroupFilter !== "all" || chapterFilter !== "all" || answerFilter !== "all" || searchTerm !== "" || incorrectOnly) && (
+            {(chapterFilter !== "all" || answerFilter !== "all" || searchTerm !== "" || incorrectOnly) && (
               <Button
                 variant="outline"
                 size="sm"
                 onClick={() => {
                   setSearchTerm("");
-                  setSourceGroupFilter("all");
                   setChapterFilter("all");
                   setAnswerFilter("all");
                   setIncorrectOnly(false);
                 }}
-                className="text-xs h-9"
+                className="text-xs h-8"
               >
-                Resetează filtrele
+                Clear Filters
               </Button>
             )}
           </div>
@@ -386,10 +333,10 @@ export default function KnowledgeCheckView({
           </div>
           <div>
             <div className="text-sm font-bold text-gray-900">
-              Scor curent: <span className="text-blue-600">{score}</span> / {answeredAnswerableCount} ({scorePercentage}%)
+              Current Score: <span className="text-blue-600">{score}</span> / {answeredAnswerableCount} ({scorePercentage}%)
             </div>
             <div className="text-xs text-gray-600">
-              Răspunse {answeredAnswerableCount} din {answerableQuestions.length} întrebări evaluabile ({incorrectQuestionIds.size} incorecte)
+              Answered {answeredAnswerableCount} of {answerableQuestions.length} evaluable questions ({incorrectQuestionIds.size} incorrect)
             </div>
           </div>
         </div>
@@ -402,7 +349,7 @@ export default function KnowledgeCheckView({
             className={incorrectOnly ? "bg-rose-600 hover:bg-rose-700 text-white" : "border-rose-200 text-rose-700 bg-rose-50/50 hover:bg-rose-100"}
           >
             <AlertTriangle className="w-4 h-4 mr-1.5" />
-            {incorrectOnly ? "Afișare Doar Răspunsuri Greșite" : `Revizuire Greșite (${incorrectQuestionIds.size})`}
+            {incorrectOnly ? "Showing Incorrect Answers Only" : `Review Incorrect (${incorrectQuestionIds.size})`}
           </Button>
 
           <Button
@@ -412,7 +359,7 @@ export default function KnowledgeCheckView({
             className="bg-white hover:bg-gray-50 text-gray-700 border-gray-300"
           >
             <RotateCcw className="w-4 h-4 mr-1.5" />
-            Resetează Testul
+            Reset Answers
           </Button>
         </div>
       </Card>
@@ -422,25 +369,24 @@ export default function KnowledgeCheckView({
         {filteredQuestions.length === 0 ? (
           <Card className="p-12 text-center bg-white border-gray-200 space-y-3">
             <AlertCircle className="w-10 h-10 text-gray-400 mx-auto" />
-            <h3 className="text-lg font-bold text-gray-900">Nicio întrebare nu corespunde filtrelor selectate</h3>
+            <h3 className="text-lg font-bold text-gray-900">No questions match your filter criteria</h3>
             <p className="text-sm text-gray-600 max-w-md mx-auto">
               {incorrectOnly
-                ? "Nu ai înregistrat încă răspunsuri incorecte conform filtrelor curente."
-                : "Ajustează termenul de căutare, vanzătorul sau capitolul ales."}
+                ? "You have no incorrect answers recorded yet matching the current chapter filter."
+                : "Try adjusting your search query or chapter selection."}
             </p>
             <Button
               variant="default"
               size="sm"
               onClick={() => {
                 setSearchTerm("");
-                setSourceGroupFilter("all");
                 setChapterFilter("all");
                 setAnswerFilter("all");
                 setIncorrectOnly(false);
               }}
               className="mt-2"
             >
-              Curăță toate filtrele
+              Clear All Filters
             </Button>
           </Card>
         ) : (
@@ -460,11 +406,6 @@ export default function KnowledgeCheckView({
                     <Badge variant="outline" className="font-mono text-xs text-blue-700 bg-blue-50 border-blue-200">
                       Q#{index + 1}
                     </Badge>
-                    {q.vendor && (
-                      <Badge className="text-xs bg-indigo-100 text-indigo-800 border-indigo-200 font-semibold">
-                        {q.vendor}
-                      </Badge>
-                    )}
                     {q.chapter && (
                       <Badge variant="secondary" className="text-xs bg-gray-100 text-gray-700">
                         {q.chapter}
@@ -475,14 +416,11 @@ export default function KnowledgeCheckView({
                         Multi-Select (Select All that Apply)
                       </Badge>
                     )}
-                    <Badge variant="outline" className="text-[10px] text-gray-500 max-w-xs truncate" title={q.source}>
-                      {q.source}
-                    </Badge>
                   </div>
 
                   {!hasAnswerKey && (
                     <Badge className="bg-amber-100 text-amber-800 border-amber-300 text-[11px] self-start sm:self-auto">
-                      Auto-evaluare (Fără cheie oficială)
+                      Self-Check Item
                     </Badge>
                   )}
                 </div>
@@ -559,18 +497,18 @@ export default function KnowledgeCheckView({
                       className="text-xs text-blue-600 hover:text-blue-800 hover:bg-blue-50 self-start"
                     >
                       <HelpCircle className="w-3.5 h-3.5 mr-1.5" />
-                      {showResult ? "Ascunde Explicația & Ancora" : "Verifică Răspunsul & Bucata de Text"}
+                      {showResult ? "Hide Explanation & Anchor" : "Check Answer & Course Anchor"}
                     </Button>
 
                     {userSelection && (
                       <div className="text-xs font-medium">
                         {isCorrect ? (
                           <span className="text-emerald-600 flex items-center gap-1 font-bold">
-                            <CheckCircle2 className="w-4 h-4" /> Corect! Răspunsul este {q.correctAnswer}
+                            <CheckCircle2 className="w-4 h-4" /> Correct! Answer is {q.correctAnswer}
                           </span>
                         ) : (
                           <span className="text-rose-600 flex items-center gap-1 font-bold">
-                            <XCircle className="w-4 h-4" /> Incorect. Răspunsul corect este {q.correctAnswer}
+                            <XCircle className="w-4 h-4" /> Incorrect. Correct answer is {q.correctAnswer}
                           </span>
                         )}
                       </div>
@@ -578,13 +516,13 @@ export default function KnowledgeCheckView({
                   </div>
                 )}
 
-                {/* ANCORĂ CLARĂ & FRAGMENT DE TEXT JUSTIFICATIV */}
+                {/* COURSE & STANDARD ANCHOR WITH VERIFIED EXCERPT */}
                 {showResult && q.anchor && (
                   <div className="rounded-xl border border-blue-200 bg-gradient-to-br from-blue-50/70 via-indigo-50/40 to-slate-50 p-4 text-xs sm:text-sm text-slate-800 space-y-3 shadow-xs animate-in fade-in duration-200">
                     <div className="flex flex-wrap items-center justify-between gap-2 border-b border-blue-200/60 pb-2.5">
                       <div className="flex items-center gap-1.5 font-bold text-blue-900 text-xs uppercase tracking-wider">
                         <Bookmark className="w-4 h-4 text-blue-600" />
-                        <span>Ancoră Curs & Standard ISA/IEC 62443</span>
+                        <span>ISA/IEC 62443 Course & Standard Anchor</span>
                       </div>
                       <div className="flex flex-wrap items-center gap-1.5">
                         <Badge className="bg-blue-700 text-white font-mono text-[11px]">
@@ -604,7 +542,7 @@ export default function KnowledgeCheckView({
                             className="h-7 text-xs bg-white hover:bg-blue-100 text-blue-800 border-blue-300 font-semibold gap-1 shadow-2xs cursor-pointer"
                           >
                             <ExternalLink className="w-3.5 h-3.5" />
-                            Deschide în Curs
+                            Open in Course
                           </Button>
                         )}
                       </div>
@@ -612,15 +550,15 @@ export default function KnowledgeCheckView({
 
                     {q.anchor.clause && (
                       <div className="text-xs font-medium text-slate-700">
-                        <span className="font-bold text-slate-900">Secțiune / Clauză Standard:</span> {q.anchor.clause}
+                        <span className="font-bold text-slate-900">Standard Section / Clause:</span> {q.anchor.clause}
                       </div>
                     )}
 
-                    {/* Fragmentul exact de text justificativ */}
+                    {/* Explanatory Course & Standard Excerpt */}
                     {q.anchor.excerpt && (
                       <div className="rounded-lg bg-white border border-blue-100 p-3.5 text-slate-800 shadow-2xs space-y-1.5">
                         <div className="text-[11px] font-bold uppercase tracking-wider text-blue-700 flex items-center gap-1">
-                          <span>⚓ Bucata de text justificativă (din curriculum / standard):</span>
+                          <span>⚓ Explanatory Course & Standard Excerpt:</span>
                         </div>
                         <blockquote className="text-xs leading-relaxed italic text-slate-800 border-l-3 border-blue-500 pl-3 bg-blue-50/40 py-1.5 rounded-r">
                           "{q.anchor.excerpt}"
@@ -628,11 +566,11 @@ export default function KnowledgeCheckView({
                       </div>
                     )}
 
-                    {/* Explicația pas cu pas */}
+                    {/* Technical Explanation */}
                     {q.explanation && (
                       <div className="space-y-1 pt-1">
                         <div className="font-bold text-slate-900 text-xs uppercase tracking-wider">
-                          Explicație Tehnică & Justificare Răspuns:
+                          Technical Explanation & Answer Justification:
                         </div>
                         <p className="leading-relaxed text-xs sm:text-sm text-slate-700 bg-white/60 p-3 rounded-lg border border-slate-200/60">
                           {q.explanation}
