@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -21,13 +21,34 @@ type Topic = Chapter["topics"][number];
 export default function ChaptersView({
   onNavigateToQuiz,
   onNavigateToKnowledge,
+  initialChapterId,
+  initialTopicId,
 }: {
   onNavigateToQuiz?: (quizId: string) => void;
   onNavigateToKnowledge?: () => void;
+  initialChapterId?: number;
+  initialTopicId?: string;
 }) {
-  const [selectedChapterId, setSelectedChapterId] = useState<number>(1);
-  const [expandedTopics, setExpandedTopics] = useState<Record<string, boolean>>({ "1.1": true });
+  const [selectedChapterId, setSelectedChapterId] = useState<number>(initialChapterId || 1);
+  const [expandedTopics, setExpandedTopics] = useState<Record<string, boolean>>({
+    [initialTopicId || "1.1"]: true,
+  });
   const [completedChapters, setCompletedChapters] = useState<Record<number, boolean>>({});
+
+  useEffect(() => {
+    if (initialChapterId) {
+      setSelectedChapterId(initialChapterId);
+    }
+    if (initialTopicId) {
+      setExpandedTopics((prev) => ({ ...prev, [initialTopicId]: true }));
+      setTimeout(() => {
+        const el = document.getElementById(`topic-${initialTopicId}`);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }, 150);
+    }
+  }, [initialChapterId, initialTopicId]);
 
   const activeChapter = data.chapters.find((c) => c.id === selectedChapterId) || data.chapters[0];
 
@@ -175,8 +196,13 @@ export default function ChaptersView({
                   const isExpanded = expandedTopics[topic.id];
                   return (
                     <div
+                      id={`topic-${topic.id}`}
                       key={topic.id}
-                      className="border border-gray-200 rounded-2xl bg-white shadow-sm overflow-hidden transition-all"
+                      className={`rounded-2xl bg-white shadow-sm overflow-hidden transition-all border ${
+                        initialTopicId === topic.id
+                          ? "border-blue-600 ring-2 ring-blue-500/40 shadow-md"
+                          : "border-gray-200"
+                      }`}
                     >
                       <button
                         type="button"

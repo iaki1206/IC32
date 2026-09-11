@@ -153,6 +153,15 @@ export default function EnhancedLearningAppV2() {
   const [selectedTopic, setSelectedTopic] = useState<any>(enhancedCourseData.sections[0].topics[0]);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [completedSections, setCompletedSections] = useState<Set<number>>(new Set());
+  const [targetChapterId, setTargetChapterId] = useState<number>(1);
+  const [targetTopicId, setTargetTopicId] = useState<string | undefined>(undefined);
+
+  const handleNavigateToTopic = (chapterId: number, topicId?: string) => {
+    setTargetChapterId(chapterId);
+    setTargetTopicId(topicId);
+    setActivePlatform("ic32");
+    setCurrentPage("chapter");
+  };
 
   const { bookmarks, toggleBookmark, removeBookmark, bookmarkIds } = useBookmarks();
 
@@ -295,7 +304,11 @@ export default function EnhancedLearningAppV2() {
 
           {activePlatform === "ic32" && currentPage === "chapter" && (
             <div className="h-full overflow-y-auto">
-              <ChaptersView onNavigateToKnowledge={() => navigateToInnerPage("knowledge")} />
+              <ChaptersView
+                onNavigateToKnowledge={() => navigateToInnerPage("knowledge")}
+                initialChapterId={targetChapterId}
+                initialTopicId={targetTopicId}
+              />
             </div>
           )}
 
@@ -377,7 +390,7 @@ export default function EnhancedLearningAppV2() {
 
           {activePlatform === "ic32" && (currentPage === "knowledge" || currentPage === "quiz") && (
             <div className="h-full overflow-y-auto">
-              <KnowledgeCheckView />
+              <KnowledgeCheckView onNavigateToTopic={handleNavigateToTopic} />
             </div>
           )}
 
