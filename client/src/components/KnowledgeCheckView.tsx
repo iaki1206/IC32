@@ -73,7 +73,9 @@ const normaliseChapter = (chapter: string | number | null | undefined): string =
 const isMultiSelect = (correctAnswer?: string | null, questionText?: string): boolean => {
   if (questionText && /select all that apply/i.test(questionText)) return true;
   if (!correctAnswer) return false;
-  return correctAnswer.includes(",") || correctAnswer.trim().length > 1;
+  const trimmed = correctAnswer.trim().toUpperCase();
+  if (trimmed === "TRUE" || trimmed === "FALSE") return false;
+  return trimmed.includes(",") || (trimmed.length > 1 && !["TRUE", "FALSE"].includes(trimmed));
 };
 
 const isAnswerCorrect = (userSelection?: string, correctAnswer?: string | null): boolean => {
