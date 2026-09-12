@@ -775,8 +775,8 @@
           "text": "Email is prevented, thereby mitigating the risk of phishing attempts."
         }
       ],
-      "correctAnswer": "A (marcat C în unele dump-uri)",
-      "explanation": "In the ISA-99 / IEC 62443 reference architecture, the core principle of deploying a Demilitarized Zone (DMZ) is to eliminate all direct communications between the enterprise network (Level 4) and the industrial operations network (Level 3). All data exchanges must terminate in the DMZ using intermediary proxy, historian, or jump services.",
+      "correctAnswer": "A",
+      "explanation": "[Note: A (marcat C în unele dump-uri)] In the ISA-99 / IEC 62443 reference architecture, the core principle of deploying a Demilitarized Zone (DMZ) is to eliminate all direct communications between the enterprise network (Level 4) and the industrial operations network (Level 3). All data exchanges must terminate in the DMZ using intermediary proxy, historian, or jump services.",
       "sourceType": "vendor_exam_bank",
       "sourceReferences": [
         "Real Exam Bank | ITExams / SecExams Q#1"
@@ -1211,8 +1211,8 @@
           "text": "Allocation of IACS assets to zones and conduits, and detailed cyber risk assessment"
         }
       ],
-      "correctAnswer": "D (marcat B în unele dump-uri)",
-      "explanation": "The Assess Phase includes system partitioning into zones and conduits, and detailed risk assessment (B/D).",
+      "correctAnswer": "D",
+      "explanation": "[Note: D (marcat B în unele dump-uri)] The Assess Phase includes system partitioning into zones and conduits, and detailed risk assessment (B/D).",
       "sourceType": "vendor_exam_bank",
       "sourceReferences": [
         "Real Exam Bank | ITExams Q#7"
@@ -2190,8 +2190,8 @@
           "text": "Qualification and verification"
         }
       ],
-      "correctAnswer": "A (marcat C în unele dump-uri)",
-      "explanation": "In ISA-TR62443-2-3 patch management guidelines, patch testing comprises verification of authenticity, qualification, and notification. Removal/rollback procedures are governed under general change and incident recovery procedures.",
+      "correctAnswer": "A",
+      "explanation": "[Note: A (marcat C în unele dump-uri)] In ISA-TR62443-2-3 patch management guidelines, patch testing comprises verification of authenticity, qualification, and notification. Removal/rollback procedures are governed under general change and incident recovery procedures.",
       "difficulty": "medium",
       "source": "Solution2Pass / IC32 PDF noteset, page 310, Knowledge Check 2",
       "sourceType": "vendor_exam_bank",
@@ -5280,8 +5280,8 @@
           "text": "SP Element 8 – Backup restoration"
         }
       ],
-      "correctAnswer": "D (și SP Element 2)",
-      "explanation": "To minimize downtime and restore system availability following unexpected crashes, SP Element 8 (Backup and Disaster Recovery) must be reviewed to ensure robust, verified restoration workflows.",
+      "correctAnswer": "D",
+      "explanation": "[Note: D (și SP Element 2)] To minimize downtime and restore system availability following unexpected crashes, SP Element 8 (Backup and Disaster Recovery) must be reviewed to ensure robust, verified restoration workflows.",
       "chapter": "Section 6",
       "source": "DumpsPedia / ITExam Excel Bank",
       "anchor": {
@@ -6366,7 +6366,7 @@
           "text": "Perform a security risk assessment."
         }
       ],
-      "correctAnswer": "D (și B - Context/Politică)",
+      "correctAnswer": "D",
       "explanation": "Under ISA/IEC 62443-3-2 (Security Risk Assessment for System Design & SuC Partitioning), the correct answer is D (și B - Context/Politică). This requirement establishes necessary controls to ensure system integrity, availability, and compliance with industrial cybersecurity standards.",
       "chapter": "Section 11",
       "source": "DumpsPedia / ITExam Excel Bank",
@@ -7834,8 +7834,8 @@
           "text": "Fewer personnel with system knowledge having access to IACS"
         }
       ],
-      "correctAnswer": "C (marcat A în unele dump-uri)",
-      "explanation": "The primary cause for the surge in IACS attacks is the widespread availability of exploitation tools, proof-of-concept exploits, and vulnerability details on the Internet, combined with the adoption of commercial off-the-shelf (COTS) technologies.",
+      "correctAnswer": "C",
+      "explanation": "[Note: C (marcat A în unele dump-uri)] The primary cause for the surge in IACS attacks is the widespread availability of exploitation tools, proof-of-concept exploits, and vulnerability details on the Internet, combined with the adoption of commercial off-the-shelf (COTS) technologies.",
       "chapter": "Section 15",
       "source": "Solution2Pass / ITExam Excel Bank",
       "anchor": {
@@ -7950,7 +7950,7 @@
           "text": "Security incident exposing previously unknown risk."
         }
       ],
-      "correctAnswer": "D (marcat B în unele dump-uri)",
+      "correctAnswer": "D",
       "explanation": "Under ISA/IEC 62443-3-2 (Security Risk Assessment for System Design & SuC Partitioning), the correct answer is D (marcat B în unele dump-uri). This requirement establishes necessary controls to ensure system integrity, availability, and compliance with industrial cybersecurity standards.",
       "chapter": "Section 11",
       "source": "Solution2Pass / ITExam Excel Bank",
@@ -7990,8 +7990,8 @@
           "text": "Review of system logs and other key data files"
         }
       ],
-      "correctAnswer": "D (și A, C)",
-      "explanation": "Continuous improvement of a CSMS involves tracking changes in identified risks during periodic reassessments and reviewing system logs.",
+      "correctAnswer": "D",
+      "explanation": "[Note: D (și A, C)] Continuous improvement of a CSMS involves tracking changes in identified risks during periodic reassessments and reviewing system logs.",
       "chapter": "Section 11",
       "source": "DumpsPedia / ITExam Excel Bank",
       "anchor": {
@@ -9807,7 +9807,7 @@
           "text": "Contain the breach to prevent further data loss"
         }
       ],
-      "correctAnswer": "D (și C)",
+      "correctAnswer": "D",
       "explanation": "Under ISASecure Certification Scheme (ISASecure Conformity Assessment (ITA, SDLA, SSA, CSA, Personnel)), the correct answer is D (și C). This requirement establishes necessary controls to ensure system integrity, availability, and compliance with industrial cybersecurity standards.",
       "sourceType": "vendor_exam_bank",
       "sourceReferences": [
@@ -10271,7 +10271,7 @@
           "text": "Data Link Layer"
         }
       ],
-      "correctAnswer": "A, C, D, E (sau Toate)",
+      "correctAnswer": "A, C, D, E",
       "explanation": "Under ISASecure Certification Scheme (ISASecure Conformity Assessment (ITA, SDLA, SSA, CSA, Personnel)), the correct answer is A, C, D, E (sau Toate). This requirement establishes necessary controls to ensure system integrity, availability, and compliance with industrial cybersecurity standards.",
       "sourceType": "vendor_exam_bank",
       "sourceReferences": [
@@ -10947,7 +10947,7 @@
           "text": "Secure Sockets Layer"
         }
       ],
-      "correctAnswer": "A (și D în grile clasice)",
+      "correctAnswer": "A",
       "explanation": "Under ISASecure Certification Scheme (ISASecure Conformity Assessment (ITA, SDLA, SSA, CSA, Personnel)), the correct answer is A (și D în grile clasice). This requirement establishes necessary controls to ensure system integrity, availability, and compliance with industrial cybersecurity standards.",
       "sourceType": "vendor_exam_bank",
       "sourceReferences": [
@@ -11167,7 +11167,7 @@
           "text": "System integrators"
         }
       ],
-      "correctAnswer": "B (sau D - Integratori / Furnizori de servicii)",
+      "correctAnswer": "B",
       "explanation": "Under ISA/IEC 62443-2-1 (Security Program Requirements for IACS Asset Owners (CSMS Elements 1-8)), the correct answer is B (sau D - Integratori / Furnizori de servicii). This requirement establishes necessary controls to ensure system integrity, availability, and compliance with industrial cybersecurity standards.",
       "sourceType": "vendor_exam_bank",
       "sourceReferences": [
@@ -11343,7 +11343,7 @@
           "text": "Advanced Encryption Standard (AES)"
         }
       ],
-      "correctAnswer": "A (și C)",
+      "correctAnswer": "A",
       "explanation": "Under ISASecure Certification Scheme (ISASecure Conformity Assessment (ITA, SDLA, SSA, CSA, Personnel)), the correct answer is A (și C). This requirement establishes necessary controls to ensure system integrity, availability, and compliance with industrial cybersecurity standards.",
       "sourceType": "vendor_exam_bank",
       "sourceReferences": [
@@ -11563,7 +11563,7 @@
           "text": "Routers are not used in IACS networks."
         }
       ],
-      "correctAnswer": "C (și AC)",
+      "correctAnswer": "C",
       "explanation": "Under ISASecure Certification Scheme (ISASecure Conformity Assessment (ITA, SDLA, SSA, CSA, Personnel)), the correct answer is C (și AC). This requirement establishes necessary controls to ensure system integrity, availability, and compliance with industrial cybersecurity standards.",
       "sourceType": "vendor_exam_bank",
       "sourceReferences": [
