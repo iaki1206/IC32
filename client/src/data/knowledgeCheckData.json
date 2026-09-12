@@ -12201,7 +12201,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "Which layer specifies the rules for Modbus Application Protocol Available Choices (select all choices that are correct)",
+      "question": "Which layer specifies the rules for Modbus Application Protocol",
       "options": [
         {
           "letter": "A",
@@ -12242,7 +12242,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "Verified Solution - 100% Result 61 of 169Pass Exam ISA - ISA-IEC-62443 Which factor drives the selection of countermeasures? Available Choices (select all choices that are correct)",
+      "question": "Which factor drives the selection of countermeasures?",
       "options": [
         {
           "letter": "A",
@@ -12365,7 +12365,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "What does the first group of the ISA/IEC 62443 series focus on? A. Verified Solution - 100% Result 160 of 169Pass Exam ISA - ISA-IEC-62443",
+      "question": "What does the first group of the ISA/IEC 62443 series focus on?",
       "options": [
         {
           "letter": "A",
@@ -12488,7 +12488,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "Which of the following is the underlying protocol for Ethernet/IP? Available Choices (select all choices that are correct)",
+      "question": "Which of the following is the underlying protocol for Ethernet/IP?",
       "options": [
         {
           "letter": "A",
@@ -12529,7 +12529,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "Verified Solution - 100% Result 144 of 169Pass Exam ISA - ISA-IEC-62443 Which standard is recognized as part of the NIST CSF Informative References?",
+      "question": "Which standard is recognized as part of the NIST CSF Informative References?",
       "options": [
         {
           "letter": "A",
@@ -12611,7 +12611,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 9",
       "topic": "Inherent Protocol Vulnerabilities",
-      "question": "Which of the following is an example of separation of duties as a part of system development and maintenance? Available Choices (select all choices that are correct)",
+      "question": "Which of the following is an example of separation of duties as a part of system development and maintenance?",
       "options": [
         {
           "letter": "A",
@@ -12939,7 +12939,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 4",
       "topic": "Security Levels (SL 0 to SL 4) & FR Vector Notation",
-      "question": "Which organization manages the ISASecure conformance certification program? Available Choices (select all choices that are correct)",
+      "question": "Which organization manages the ISASecure conformance certification program?",
       "options": [
         {
           "letter": "A",
@@ -13021,7 +13021,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "Which is the BEST practice when establishing security zones? Available Choices (select all choices that are correct)",
+      "question": "Which is the BEST practice when establishing security zones?",
       "options": [
         {
           "letter": "A",
@@ -13185,7 +13185,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "Within the National Institute of Standards and Technoloqv Cybersecuritv Framework v1.0 (NIST CSF), what is the status of the ISA 62443 standards? Available Choices (select all choices that are correct)",
+      "question": "Within the National Institute of Standards and Technology Cybersecurity Framework v1.0 (NIST CSF), what is the status of the ISA 62443 standards?",
       "options": [
         {
           "letter": "A",
@@ -13226,7 +13226,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "How many element groups are in the \"Addressing Risk\" CSMS category? Available Choices (select all choices that are correct)",
+      "question": "How many element groups are in the \"Addressing Risk\" CSMS category?",
       "options": [
         {
           "letter": "A",
@@ -13267,7 +13267,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "What are the two sublayers of Layer 2? Available Choices (select all choices that are correct)",
+      "question": "What are the two sublayers of Layer 2?",
       "options": [
         {
           "letter": "A",
@@ -13349,7 +13349,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "Using the risk matrix below, what is the risk of a medium likelihood event with high consequence? Verified Solution - 100% Result 16 of 169Pass Exam ISA - ISA-IEC-62443",
+      "question": "Using the risk matrix below, what is the risk of a medium likelihood event with high consequence?",
       "options": [
         {
           "letter": "A",
@@ -13390,7 +13390,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "What do packet filter firewalls examine? Available Choices (select all choices that are correct)",
+      "question": "What do packet filter firewalls examine?",
       "options": [
         {
           "letter": "A",
@@ -13472,7 +13472,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 1",
       "topic": "Defining Control System Cybersecurity",
-      "question": "What does Layer 1 of the ISO/OSI protocol stack provide? Available Choices (select all choices that are correct)",
+      "question": "What does Layer 1 of the ISO/OSI protocol stack provide?",
       "options": [
         {
           "letter": "A",
@@ -13554,7 +13554,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "A plant has several zones including business, safety-critical, and wireless zones. According to ISA/IEC 62443, how should these zones be managed during risk assessment? A. Verified Solution - 100% Result 23 of 169Pass Exam ISA - ISA-IEC-62443",
+      "question": "A plant has several zones including business, safety-critical, and wireless zones. According to ISA/IEC 62443, how should these zones be managed during risk assessment?",
       "options": [
         {
           "letter": "A",
@@ -13636,7 +13636,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 6",
       "topic": "Cyber Security Management System (CSMS)",
-      "question": "Verified Solution - 100% Result 72 of 169Pass Exam ISA - ISA-IEC-62443 Which of the following is the BEST reason for periodic audits? Available Choices (select all choices that are correct)",
+      "question": "Which of the following is the BEST reason for periodic audits?",
       "options": [
         {
           "letter": "A",
@@ -13677,7 +13677,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "What is OPC? Available Choices (select all choices that are correct)",
+      "question": "What is OPC?",
       "options": [
         {
           "letter": "A",
@@ -14005,7 +14005,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 6",
       "topic": "Cyber Security Management System (CSMS)",
-      "question": "What does the abbreviation CSMS round in ISA 62443-2-1 represent? Available Choices (select all choices that are correct)",
+      "question": "What does the abbreviation CSMS found in ISA 62443-2-1 represent?",
       "options": [
         {
           "letter": "A",
@@ -14087,7 +14087,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 4",
       "topic": "Security Levels (SL 0 to SL 4) & FR Vector Notation",
-      "question": "How many security levels are in the ISASecure certification program? Available Choices (select all choices that are correct)",
+      "question": "How many security levels are in the ISASecure certification program?",
       "options": [
         {
           "letter": "A",
@@ -14292,7 +14292,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "Which is a physical layer standard for serial communications between two or more devices? Available Choices (select all choices that are correct)",
+      "question": "Which is a physical layer standard for serial communications between two or more devices?",
       "options": [
         {
           "letter": "A",
@@ -14333,7 +14333,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "Which is a common pitfall when initiating a CSMS program? Available Choices (select all choices that are correct)",
+      "question": "Which is a common pitfall when initiating a CSMS program?",
       "options": [
         {
           "letter": "A",
@@ -14702,7 +14702,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 1",
       "topic": "Defining Control System Cybersecurity",
-      "question": "Which layer is responsible for error checking and MAC addressing? Verified Solution - 100% Result 39 of 169Pass Exam ISA - ISA-IEC-62443",
+      "question": "Which layer is responsible for error checking and MAC addressing?",
       "options": [
         {
           "letter": "A",
@@ -14866,7 +14866,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "The Risk Analysis category contains background information that is used where? Available Choices (select all choices that are correct)",
+      "question": "The Risk Analysis category contains background information that is used where?",
       "options": [
         {
           "letter": "A",
@@ -15030,7 +15030,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 11",
       "topic": "Risk Assessment & System Under Consideration (SuC)",
-      "question": "Which of the following is a trend that has caused a significant percentage of security vulnerabilities? Available Choices (select all choices that are correct)",
+      "question": "Which of the following is a trend that has caused a significant percentage of security vulnerabilities?",
       "options": [
         {
           "letter": "A",
@@ -15112,7 +15112,7 @@
       "vendor": "ExamBank-227",
       "chapter": "Section 6",
       "topic": "Cyber Security Management System (CSMS)",
-      "question": "How many element groups are in the \"Addressing Risk\" CSMS category? A. Verified Solution - 100% Result 27 of 169Pass Exam ISA - ISA-IEC-62443",
+      "question": "How many element groups are in the \"Addressing Risk\" CSMS category?",
       "options": [
         {
           "letter": "A",
