@@ -620,6 +620,8 @@ export default function KnowledgeCheckView({
                             ) : (
                               <Square className="w-4 h-4 text-gray-400" />
                             )
+                          ) : isSelected ? (
+                            <CheckCircle2 className="w-4 h-4 text-white" />
                           ) : (
                             opt.letter
                           )}

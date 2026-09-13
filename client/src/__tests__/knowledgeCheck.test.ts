@@ -3,21 +3,15 @@ import data from "../data/knowledgeCheckData.json";
 
 describe("Knowledge Check Data & Logic", () => {
   it("has questions loaded properly", () => {
-    expect(data.questions.length).toBeGreaterThan(0);
+    expect(data.questions.length).toBe(366);
   });
 
-  it("contains anchors with chapter and topic for questions", () => {
-    const questionsWithAnchor = data.questions.filter((q: any) => q.anchor && q.anchor.chapterId);
-    expect(questionsWithAnchor.length).toBeGreaterThan(0);
+  it("contains explanation anchors with href for questions to open in a new tab", () => {
+    const questionsWithAnchor = data.questions.filter((q: any) => q.explanationAnchor && q.explanationAnchor.href);
+    expect(questionsWithAnchor.length).toBe(366);
     const sample = questionsWithAnchor[0];
-    expect(sample.anchor.chapterId).toBeDefined();
-
-    // Verify anchor URL format that opens in a new tab
-    const targetUrl = `/?page=chapter&chapterId=${sample.anchor.chapterId}${
-      sample.anchor.topicId ? `&topicId=${encodeURIComponent(sample.anchor.topicId)}` : ""
-    }`;
-    expect(targetUrl).toContain("page=chapter");
-    expect(targetUrl).toContain(`chapterId=${sample.anchor.chapterId}`);
+    expect(sample.explanationAnchor.anchor).toBeDefined();
+    expect(sample.explanationAnchor.href).toContain("/?tab=ot");
   });
 
   it("evaluates single-select and multi-select answer correctness properly", () => {
