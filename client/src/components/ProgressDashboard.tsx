@@ -250,7 +250,7 @@ export function ProgressDashboard({
       {/* Recommendations */}
       <Card>
         <CardHeader>
-          <CardTitle>Personalized Recommendations</CardTitle>
+          <CardTitle>Personalised Recommendations</CardTitle>
           <CardDescription>Based on your learning progress</CardDescription>
         </CardHeader>
         <CardContent>

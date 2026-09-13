@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -18,6 +18,9 @@ import {
   Square,
 } from "lucide-react";
 import data from "@/data/knowledgeCheckData.json";
+
+const STORAGE_KEY_ANSWERS = "ic32_knowledge_check_selected_answers";
+const STORAGE_KEY_RESULTS = "ic32_knowledge_check_show_results";
 
 type Option = {
   letter: string;
@@ -130,13 +133,53 @@ export default function KnowledgeCheckView({
 }: {
   onNavigateToTopic?: (chapterId: number, topicId?: string) => void;
 }) {
-  const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>({});
-  const [showResults, setShowResults] = useState<Record<string, boolean>>({});
+  const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>(() => {
+    if (typeof window === "undefined") return {};
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY_ANSWERS);
+      return stored ? JSON.parse(stored) : {};
+    } catch (e) {
+      console.error("Failed to load selected answers from localStorage:", e);
+      return {};
+    }
+  });
+
+  const [showResults, setShowResults] = useState<Record<string, boolean>>(() => {
+    if (typeof window === "undefined") return {};
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY_RESULTS);
+      return stored ? JSON.parse(stored) : {};
+    } catch (e) {
+      console.error("Failed to load showResults from localStorage:", e);
+      return {};
+    }
+  });
+
   const [quizSubmitted, setQuizSubmitted] = useState(false);
   const [chapterFilter, setChapterFilter] = useState("all");
   const [answerFilter, setAnswerFilter] = useState("all");
   const [incorrectOnly, setIncorrectOnly] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
+
+  // Persist selected answers to localStorage so they remain checked across visits
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    try {
+      localStorage.setItem(STORAGE_KEY_ANSWERS, JSON.stringify(selectedAnswers));
+    } catch (e) {
+      console.error("Failed to persist selected answers to localStorage:", e);
+    }
+  }, [selectedAnswers]);
+
+  // Persist show results to localStorage
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    try {
+      localStorage.setItem(STORAGE_KEY_RESULTS, JSON.stringify(showResults));
+    } catch (e) {
+      console.error("Failed to persist showResults to localStorage:", e);
+    }
+  }, [showResults]);
 
   const incorrectQuestionIds = useMemo(() => {
     const ids = new Set<string>();
@@ -224,6 +267,14 @@ export default function KnowledgeCheckView({
     setShowResults({});
     setIncorrectOnly(false);
     setQuizSubmitted(false);
+    if (typeof window !== "undefined") {
+      try {
+        localStorage.removeItem(STORAGE_KEY_ANSWERS);
+        localStorage.removeItem(STORAGE_KEY_RESULTS);
+      } catch (e) {
+        console.error("Failed to clear answers from localStorage:", e);
+      }
+    }
   };
 
   return (
@@ -476,6 +527,8 @@ export default function KnowledgeCheckView({
                           ) : (
                             <Square className="w-5 h-5 text-gray-300 flex-shrink-0" />
                           )
+                        ) : isSelected ? (
+                          <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0" />
                         ) : null}
 
                         {showResult && hasAnswerKey && isTheCorrectLetter && (
@@ -530,22 +583,33 @@ export default function KnowledgeCheckView({
                         <Badge className="bg-blue-700 text-white font-mono text-[11px]">
                           {q.anchor.standard}
                         </Badge>
-                        {q.anchor.chapterNumber && (
+                        {q.anchor.chapterNumber && q.anchor.chapterId ? (
+                          <a
+                            href={`/?page=chapter&chapterId=${q.anchor.chapterId}${q.anchor.topicId ? `&topicId=${encodeURIComponent(q.anchor.topicId)}` : ""}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-white text-blue-800 border border-blue-300 text-[11px] font-semibold hover:bg-blue-50 transition-colors no-underline shadow-2xs cursor-pointer"
+                            title="Open chapter and topic in a new tab"
+                          >
+                            <span>{q.anchor.chapterNumber} (Topic {q.anchor.topicId})</span>
+                            <ExternalLink className="w-3 h-3 text-blue-600" />
+                          </a>
+                        ) : q.anchor.chapterNumber ? (
                           <Badge variant="outline" className="bg-white text-blue-800 border-blue-300 text-[11px] font-semibold">
-                            {q.anchor.chapterNumber} (Topic {q.anchor.topicId})
+                            {q.anchor.chapterNumber} {q.anchor.topicId ? `(Topic ${q.anchor.topicId})` : ""}
                           </Badge>
-                        )}
-                        {onNavigateToTopic && q.anchor.chapterId && (
-                          <Button
-                            type="button"
-                            size="sm"
-                            variant="outline"
-                            onClick={() => onNavigateToTopic(q.anchor!.chapterId!, q.anchor!.topicId)}
-                            className="h-7 text-xs bg-white hover:bg-blue-100 text-blue-800 border-blue-300 font-semibold gap-1 shadow-2xs cursor-pointer"
+                        ) : null}
+                        {q.anchor.chapterId && (
+                          <a
+                            href={`/?page=chapter&chapterId=${q.anchor.chapterId}${q.anchor.topicId ? `&topicId=${encodeURIComponent(q.anchor.topicId)}` : ""}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center h-7 px-2.5 rounded-md text-xs bg-white hover:bg-blue-100 text-blue-800 border border-blue-300 font-semibold gap-1 shadow-2xs cursor-pointer no-underline transition-colors"
+                            title="Open course chapter and topic in a new tab"
                           >
                             <ExternalLink className="w-3.5 h-3.5" />
-                            Open in Course
-                          </Button>
+                            Open in Course (New Tab)
+                          </a>
                         )}
                       </div>
                     </div>

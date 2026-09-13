@@ -3,7 +3,7 @@
  * Use British English, navy/blue accents, restrained borders, and clear hierarchy.
  * All existing IC32 study tools remain grouped under the IC32 top-level tab.
  */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
@@ -147,20 +147,98 @@ function FutureTabPanel({ tab }: { tab: PlatformTab }) {
 }
 
 export default function EnhancedLearningAppV2() {
-  const [activePlatform, setActivePlatform] = useState<PlatformTab>("ic32");
-  const [currentPage, setCurrentPage] = useState<InnerPage>("chapter");
+  const [activePlatform, setActivePlatform] = useState<PlatformTab>(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const platform = params.get("platform") as PlatformTab | null;
+      if (platform && platformTabs.some((p) => p.id === platform)) {
+        return platform;
+      }
+    }
+    return "ic32";
+  });
+
+  const [currentPage, setCurrentPage] = useState<InnerPage>(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const page = params.get("page") as InnerPage | null;
+      if (page && innerNavigation.some((p) => p.id === page)) {
+        return page;
+      }
+    }
+    return "chapter";
+  });
+
   const [selectedSection, setSelectedSection] = useState(enhancedCourseData.sections[0]);
   const [selectedTopic, setSelectedTopic] = useState<any>(enhancedCourseData.sections[0].topics[0]);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [completedSections, setCompletedSections] = useState<Set<number>>(new Set());
-  const [targetChapterId, setTargetChapterId] = useState<number>(1);
-  const [targetTopicId, setTargetTopicId] = useState<string | undefined>(undefined);
+
+  const [targetChapterId, setTargetChapterId] = useState<number>(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const ch = params.get("chapterId");
+      if (ch) {
+        const parsed = parseInt(ch, 10);
+        if (!isNaN(parsed)) return parsed;
+      }
+    }
+    return 1;
+  });
+
+  const [targetTopicId, setTargetTopicId] = useState<string | undefined>(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const t = params.get("topicId");
+      if (t) return t;
+    }
+    return undefined;
+  });
+
+  // Keep state in sync if URL query parameters change (e.g. browser navigation)
+  useEffect(() => {
+    const handleLocationChange = () => {
+      const params = new URLSearchParams(window.location.search);
+      const platform = params.get("platform") as PlatformTab | null;
+      const page = params.get("page") as InnerPage | null;
+      const ch = params.get("chapterId");
+      const t = params.get("topicId");
+
+      if (platform && platformTabs.some((p) => p.id === platform)) {
+        setActivePlatform(platform);
+      }
+      if (page && innerNavigation.some((p) => p.id === page)) {
+        setCurrentPage(page);
+      }
+      if (ch) {
+        const parsed = parseInt(ch, 10);
+        if (!isNaN(parsed)) setTargetChapterId(parsed);
+      }
+      if (t) {
+        setTargetTopicId(t);
+      }
+    };
+
+    window.addEventListener("popstate", handleLocationChange);
+    return () => window.removeEventListener("popstate", handleLocationChange);
+  }, []);
 
   const handleNavigateToTopic = (chapterId: number, topicId?: string) => {
     setTargetChapterId(chapterId);
     setTargetTopicId(topicId);
     setActivePlatform("ic32");
     setCurrentPage("chapter");
+    if (typeof window !== "undefined") {
+      const url = new URL(window.location.href);
+      url.searchParams.set("page", "chapter");
+      url.searchParams.set("chapterId", String(chapterId));
+      if (topicId) {
+        url.searchParams.set("topicId", topicId);
+      } else {
+        url.searchParams.delete("topicId");
+      }
+      window.history.replaceState({}, "", url.toString());
+    }
   };
 
   const { bookmarks, toggleBookmark, removeBookmark, bookmarkIds } = useBookmarks();
@@ -183,6 +261,13 @@ export default function EnhancedLearningAppV2() {
   const navigateToInnerPage = (page: InnerPage) => {
     setActivePlatform("ic32");
     setCurrentPage(page);
+    if (typeof window !== "undefined") {
+      const url = new URL(window.location.href);
+      url.searchParams.set("page", page);
+      url.searchParams.delete("chapterId");
+      url.searchParams.delete("topicId");
+      window.history.replaceState({}, "", url.toString());
+    }
   };
 
   const handleSearchResult = (result: any) => {
