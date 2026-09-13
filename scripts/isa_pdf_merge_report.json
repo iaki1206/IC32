@@ -1,0 +1,38 @@
+{
+  "existing_before": 279,
+  "pdf_questions": 227,
+  "old_replaced_by_pdf": 140,
+  "pdf_questions_preserved": 227,
+  "old_questions_retained_nonredundant": 139,
+  "total_after": 366,
+  "near_threshold": [
+    {
+      "pdf_number": 46,
+      "best_score": 0.7647,
+      "matched_old_id": "kc-merged-036",
+      "matched_old_question": "Which of the following is a reponsiblity of Product Suppiers and Service Providers?",
+      "action": "add_pdf"
+    },
+    {
+      "pdf_number": 212,
+      "best_score": 0.7368,
+      "matched_old_id": "kc-merged-004",
+      "matched_old_question": "How many parts does the ISA/IEC 62443 series contain?",
+      "action": "add_pdf"
+    },
+    {
+      "pdf_number": 70,
+      "best_score": 0.7033,
+      "matched_old_id": "excel-165",
+      "matched_old_question": "Which is the PRIMARY objective when defining a security zone?",
+      "action": "replace_existing"
+    },
+    {
+      "pdf_number": 55,
+      "best_score": 0.6981,
+      "matched_old_id": "kc-merged-037",
+      "matched_old_question": "Why is patching in IACS environments especially challenging?",
+      "action": "replace_existing"
+    }
+  ]
+}

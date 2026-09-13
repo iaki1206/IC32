@@ -1,0 +1,122 @@
+# Overlap candidates
+
+- New 37 (0.818): Which is a commonly used protocol for managing secure data transmission on the Internet?
+  - Existing: What is a commonly used protocol for managing secure data transmission over a Virtual Private Network (VPN)?
+- New 62 (0.803): Which statement BEST describes the Target Security Protection Ratings?
+  - Existing: Which statement best describes the purpose of the Security Protection Scheme (SPS)?
+- New 60 (0.765): How should outreach be handled with product suppliers and service providers?
+  - Existing: Which of the following is a reponsiblity of Product Suppiers and Service Providers?
+- New 33 (0.702): What does the System under Consideration (SuC) include in the context of ISA/IEC 62443 risk assessment?
+  - Existing: What is the System Under Consideration (SuC) as defined in IEC 62443-3-2?
+- New 68 (0.675): Which of the following BEST describes a control system?
+  - Existing: Which of the following best describes a Host Intrusion Detection System (HIDS) ?
+- New 83 (0.674): What is the primary purpose of the NIST Cybersecurity Framework (CSF)?
+  - Existing: What is the primary purpose of defining Security Levels (SLs)?
+- New 57 (0.667): Which is an important difference between IT systems and IACS?
+  - Existing: Which of the following is NOT a key difference between IT and IACS security?
+- New 31 (0.650): In an IACS system, a typical security conduit consists of which of the following assets? Controllers, sensors, transmitters, and final control elements
+  - Existing: In an IACS system, a typical security conduit consists of which of the following assets?
+- New 44 (0.623): What is one challenge associated with firewalls?
+  - Existing: Which of the following is NOT a general class of firewalls?
+- New 76 (0.622): Which of the following is an example of a device used for intrusion detection?
+  - Existing: Which of the following best describes a Host Intrusion Detection System (HIDS) ?
+- New 10 (0.613): Which of the following is a key goal of an IACS security policy?
+  - Existing: What is the goal of the Assess Phase in the IACS Cybersecurity Lifecycle?
+- New 36 (0.610): To which category of the ISA-62443 (IEC 62443) series does the document titled “Patch management in the IACS environment” belong?
+  - Existing: Which policies and procedures publication is titled Patch Manaqement in the IACS Environment?
+- New 56 (0.609): At Layer 4 of the Open Systems Interconnection (OSI) model, what identifies the application that will handle a packet inside a host?
+  - Existing: Which layer in the Open Systems Interconnection (OSI) model would include the use of the File Transfer Protocol (FTP)?
+- New 45 (0.592): What is the primary audience for Part 2-5 of the ISA/IEC 62443 Series - Policies & Procedures group of standards?
+  - Existing: What is the primary focus of Part 3-2 in the ISA/IEC 62443 series?
+- New 81 (0.534): A manufacturing plant has inconsistent cybersecurity processes that vary widely between shifts and teams. According to the maturity levels described in ISA/IEC 62443-2-1, how would this situation be classified?
+  - Existing: A company wants to raise cybersecurity awareness at the executive level. According to best practices in ISA/IEC 62443, which solution best addresses this need?
+- New 6 (0.520): A company is reviewing its cybersecurity policies to ensure compliance with ISA/IEC 62443. Which aspect should be prioritized in this review?
+  - Existing: According to the scheme for cybersecurity profiles, which of the following is true about ISA/IEC 62443 security requirements when creating a security profile?
+- New 46 (0.509): Which is NOT a potential consequence for organizations that fail to prioritize control system security?
+  - Existing: Which of the following refers to internal rules that govern how an organisation protects critical system resources?
+- New 75 (0.506): Which of the following BEST describes 'Vulnerability'?
+  - Existing: Which of the following best describes a Host Intrusion Detection System (HIDS) ?
+- New 67 (0.500): What does the abbreviation CSMS round in ISA 62443-2-1 represent?
+  - Existing: What are the four main categories for documents in the ISA-62443 (IEC 62443) series?
+- New 53 (0.494): What is one reason why IACS systems are highly vulnerable to attack?
+  - Existing: Why is TCP/IP considered vulnerable in IACS?
+- New 3 (0.493): What are the consequences of failing to adhere to ISA/IEC 62443-4-1 during the product development lifecycle? (Select All that Apply)
+  - Existing: Which is one of the PRIMARY goals of providing a framework addressing secure product development life-cycle requirements?
+- New 11 (0.493): Which of the following actions are essential during the design phase of a security policy? (Select All that Apply)
+  - Existing: Which statement best describes the purpose of the Security Protection Scheme (SPS)?
+- New 73 (0.475): Why is patch management more difficult for IACS than for business systems?
+  - Existing: Which statement is TRUE regarding Intrusion Detection Systems (IDS)?
+- New 49 (0.472): Which of the following technologies is no longer considered secure?
+  - Existing: Authorisation (user accounts) must be granted based on which of the following?
+- New 63 (0.472): Which of the following is an element of monitoring and improving a CSMS?
+  - Existing: Which statement is TRUE regarding Intrusion Detection Systems (IDS)?
+- New 21 (0.466): A power distribution operator is asking whether SCADA is only a monitoring tool or can also support control. Which statements are correct? (Select All that Apply)
+  - Existing: 62 A power grid operator wants to demonstrate the impact of cyber threats on industrial control systems to increase awareness. According to Section 2, which of the following best aligns with this goal?
+- New 24 (0.456): What do the tiers in the NIST CSF represent?
+  - Existing: In a cybersecurity risk assessment, what does the term ‘Likelihood’ represent?
+- New 43 (0.456): What do the tiers in the NIST CSF represent?
+  - Existing: In a cybersecurity risk assessment, what does the term ‘Likelihood’ represent?
+- New 1 (0.449): A company is evaluating its supply chain security after experiencing a breach. What steps should it take to mitigate future risks? (Select All that Apply)
+  - Existing: A company wants to raise cybersecurity awareness at the executive level. According to best practices in ISA/IEC 62443, which solution best addresses this need?
+- New 2 (0.446): A critical infrastructure facility is assessing its cybersecurity posture. Which standard should it reference for developing a comprehensive cybersecurity management system (CSMS)?
+  - Existing: Which is one of the PRIMARY goals of providing a framework addressing secure product development life-cycle requirements?
+- New 78 (0.443): Who is responsible for defining the tolerable residual cybersecurity risk as an input requirement for all activities?
+  - Existing: As related to technical security requirements for IACS components, what does CCSC stand for?
+- New 14 (0.441): A security analyst is reviewing an IACS for potential vulnerabilities related to the OSI model. Which layers should they focus on to address communication security? (Select All that Apply)
+  - Existing: Why is segmentation from non-IACS zones important in Network & Communication Security (SP Element 3)?
+- New 79 (0.439): Which of the following is NOT listed as a potential consequence of compromising IACS according to the ISA99 Committee scope?
+  - Existing: Which of the following explains the role of the integration service providers within the IACS Cybersecurity Lifecycle?
+- New 35 (0.438): Why were PLCs originally designed?
+  - Existing: In which layer is the physical address assigned?
+- New 38 (0.438): What is recommended to use between the plant floor and the rest of the company networks?
+  - Existing: Which of the following is a recommended default rule for IACS firewalls?
+- New 71 (0.438): An industrial control system requires strong protection against intentional violations using sophisticated means and moderate skills. According to the Security Level (SL) definitions, which SL should be targeted?
+  - Existing: If an industrial control system experiences frequent unexpected shutdowns causing downtime, which SP Element activities should be reviewed to improve system availability?
+- New 34 (0.436): If a U.S. federal agency must comply with mandatory cybersecurity requirements under law, which document would they be required to follow?
+  - Existing: What is required for a system security requirement to be considered fulfilled?
+- New 16 (0.435): In preparing for ISASecure certification, a company must demonstrate compliance with which of the following? (Select All that Apply)
+  - Existing: Which of the following are considered administrative security controls? (Select THREE).
+- New 18 (0.427): A plant is rolling out a firmware update to remote terminal units after a configuration change request. Which change management controls are most appropriate?
+  - Existing: A company discovers malware on a portable USB device used within its IACS environment. According to the course material, which SP Element and controls would be most relevant to address this issue?
+- New 17 (0.426): A company is using OPC UA and wants to protect the configuration settings. What does the "Confidentiality" aspect of OPC UA security involve?
+  - Existing: Which of the following explains the role of the integration service providers within the IACS Cybersecurity Lifecycle?
+- New 48 (0.424): How should CSMS organizational responsibilities or training be handled over time?
+  - Existing: Which of the following is one of the core Foundation Requirements (FR) in securing industrial systems?
+- New 52 (0.422): What programs are MOST effective if they are tailored to the audience, consistent with company policy, and communicated regularly?
+  - Existing: Which of the following best represents an effective implementation of a defence-in-depth strategy?
+- New 58 (0.419): What does IACS stand for?
+  - Existing: Which of the following is an industry sector-specific standard?
+- New 19 (0.417): A company’s IACS has been designed to ensure data integrity and confidentiality. Which of the following measures would best support these goals? (Select All that Apply)
+  - Existing: Which of the following are considered administrative security controls? (Select THREE).
+- New 80 (0.411): Which of the following starts at a high level and includes all ANSI/ISA-95 Level 0,1,2,3,4 equipment and information systems?
+  - Existing: Which statement explains the purpose of the ISA/IEC 62443 series in securing Industrial Automation and Control Systems (IACS)?
+- New 4 (0.409): In a cybersecurity incident involving a breach of sensitive data, what steps should the incident response team take immediately following the detection of the breach? (Select All that Apply)
+  - Existing: A company wants to raise cybersecurity awareness at the executive level. According to best practices in ISA/IEC 62443, which solution best addresses this need?
+- New 9 (0.406): A chemical plant documents the security needs for a new historian-to-ERP interface after a formal assessment. The project manager asks which statements belong in the Cybersecurity Requirements Specification. (Select All that Apply)
+  - Existing: According to the scheme for cybersecurity profiles, which of the following is true about ISA/IEC 62443 security requirements when creating a security profile?
+- New 66 (0.400): What does the expression SL-T (BPCS Zone) vector {2 2 0 1 3 1 3} represent?
+  - Existing: In which layer is the physical address assigned? A. Layer 1 B. Layer 2 C. Layer 3 D. Layer 7
+- New 59 (0.397): Which Security Level (SL) would be MOST appropriate for a system that requires protection against attackers with high motivation and extended resources using sophisticated means?
+  - Existing: When constructing a vector of Security Levels (SL) per Foundational Requirement, what is the advantage over using a single SL?
+- New 12 (0.396): A technician is debugging an issue on a Profibus network. They notice packet errors. Which OSI layer is primarily responsible for framing and error detection in this serial communication?
+  - Existing: Which is the implementation of PROFIBUS over Ethernet for non-safety-related communications?
+- New 15 (0.395): A cybersecurity specialist is evaluating the different types of ISASecure certifications available for IACS. Which of the following certifications focus specifically on personnel competency? (Select All that Apply)
+  - Existing: Which NIST Special Publication focuses specifically on securing Industrial Control Systems (ICS)?
+- New 27 (0.393): Under User Access Control (SP Element 6), which of the following is included in USER 1 — Identification and Authentication? Backup restoration
+  - Existing: What is the primary distinction between an Industrial Control System (ICS) and an Industrial Automation and Control System (IACS) as described in ISA/IEC 62443?
+- New 7 (0.390): An organization is undergoing an audit against ISA/IEC 62443-4-1 for their secure product development lifecycle. The auditors find that the development team lacks a formal process for handling third-party software components. Which of the following actions should the organization take to align with the standard? (Select all that apply)
+  - Existing: Which of the following is an element of security policy, organisation, and awareness? A. Product development requirements B. Staff training and security awareness C. Technical requirement assessment D. Penetration testing
+- New 8 (0.383): A company mandates that all new PLC purchases must be from vendors who follow ISA/IEC 62443-4-1. Why is this mandate effective? (Select All that Apply)
+  - Existing: A company wants to raise cybersecurity awareness at the executive level. According to best practices in ISA/IEC 62443, which solution best addresses this need?
+- New 23 (0.380): An industrial facility wants to ensure that only authorized communication reaches its PLCs while minimizing disruption to time-sensitive control processes. Which type of firewall would BEST suit this need?
+  - Existing: If an asset owner wants to demonstrate compliance with ISA/IEC 62443-2-1 requirements during an external audit, which type of evidence would be MOST appropriate?
+- New 47 (0.377): An industrial facility wants to ensure that only authorized systems reach its PLCs while minimizing disruption to time-sensitive control processes. Which type of firewall would BEST suit this need?
+  - Existing: If an asset owner wants to demonstrate compliance with ISA/IEC 62443-2-1 requirements during an external audit, which type of evidence would be MOST appropriate?
+- New 13 (0.374): A plant is defining a CRS for a new zone where a historian, PLCs, and engineering tools will coexist. Which statements are valid? (Select All that Apply)
+  - Existing: Why is patching in IACS environments especially challenging?
+- New 20 (0.372): A power grid operator is deploying a new cloud-based control system. To secure the connection between the on-site controllers and the cloud provider, they choose to use an encrypted VPN tunnel. What is the main security objective of this mitigation?
+  - Existing: 62 A power grid operator wants to demonstrate the impact of cyber threats on industrial control systems to increase awareness. According to Section 2, which of the following best aligns with this goal?
+- New 5 (0.365): A system integrator is asked to justify why the project uses defense-in-depth for a chemical blending line. Which statements are correct? (Select All that Apply)
+  - Existing: Which of the following ISA-99 (IEC 62443) Reference Model levels is named correctly?
+- New 51 (0.357): Which is a reason for
+  - Existing: Which is a role of the application layer?

@@ -41,7 +41,10 @@
   ],
   "overlaps": [
     {
-      "roles": ["asset_owner", "service_provider"],
+      "roles": [
+        "asset_owner",
+        "service_provider"
+      ],
       "name": "Asset Owner & Service Provider Intersection",
       "description": "Standards applicable when asset owners collaborate with service providers for operational protection and system design.",
       "parts": [
@@ -50,7 +53,10 @@
       ]
     },
     {
-      "roles": ["asset_owner", "product_supplier"],
+      "roles": [
+        "asset_owner",
+        "product_supplier"
+      ],
       "name": "Asset Owner & Product Supplier Intersection",
       "description": "Shared metrics and foundational concepts applied during procurement and deployment.",
       "parts": [
@@ -58,7 +64,10 @@
       ]
     },
     {
-      "roles": ["product_supplier", "service_provider"],
+      "roles": [
+        "product_supplier",
+        "service_provider"
+      ],
       "name": "Product Supplier & Service Provider Intersection",
       "description": "Integration and component standards applied when suppliers and integrators work together.",
       "parts": [
@@ -66,7 +75,11 @@
       ]
     },
     {
-      "roles": ["asset_owner", "product_supplier", "service_provider"],
+      "roles": [
+        "asset_owner",
+        "product_supplier",
+        "service_provider"
+      ],
       "name": "All Roles Intersection (Universal Foundation)",
       "description": "The central core of the ISA/IEC 62443 series that applies universally to all stakeholders in the industrial ecosystem.",
       "parts": [

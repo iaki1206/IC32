@@ -1,0 +1,772 @@
+[
+  {
+    "source_number": 22,
+    "question": "Which statement is TRUE regarding Intrusion Detection Systems (IDS)?",
+    "best_score": 1.0,
+    "best_id": "excel-200",
+    "best_question": "Which statement is TRUE regarding Intrusion Detection Systems (IDS)?"
+  },
+  {
+    "source_number": 25,
+    "question": "In which layer is the physical address assigned?",
+    "best_score": 1.0,
+    "best_id": "excel-115",
+    "best_question": "In which layer is the physical address assigned?"
+  },
+  {
+    "source_number": 26,
+    "question": "Which protocol is commonly used for managing the security of message transmission on the Internet via web browsers?",
+    "best_score": 1.0,
+    "best_id": "excel-198",
+    "best_question": "Which protocol is commonly used for managing the security of message transmission on the Internet via web browsers?"
+  },
+  {
+    "source_number": 28,
+    "question": "What are the two elements of the risk analysis category of an IACS?",
+    "best_score": 1.0,
+    "best_id": "excel-152",
+    "best_question": "What are the two elements of the risk analysis category of an IACS?"
+  },
+  {
+    "source_number": 32,
+    "question": "What is the primary focus of Part 3-2 in the ISA/IEC 62443 series?",
+    "best_score": 1.0,
+    "best_id": "excel-144",
+    "best_question": "What is the primary focus of Part 3-2 in the ISA/IEC 62443 series?"
+  },
+  {
+    "source_number": 39,
+    "question": "Which is one of the PRIMARY goals of providing a framework addressing secure product development life-cycle requirements?",
+    "best_score": 1.0,
+    "best_id": "excel-162",
+    "best_question": "Which is one of the PRIMARY goals of providing a framework addressing secure product development life-cycle requirements?"
+  },
+  {
+    "source_number": 42,
+    "question": "Which is the PRIMARY reason why Modbus over Ethernet is easy to manaqe in a firewall?",
+    "best_score": 1.0,
+    "best_id": "excel-166",
+    "best_question": "Which is the PRIMARY reason why Modbus over Ethernet is easy to manaqe in a firewall?"
+  },
+  {
+    "source_number": 50,
+    "question": "If an industrial control system experiences frequent unexpected shutdowns causing downtime, which SP Element activities should be reviewed to improve system availability?",
+    "best_score": 1.0,
+    "best_id": "excel-111",
+    "best_question": "If an industrial control system experiences frequent unexpected shutdowns causing downtime, which SP Element activities should be reviewed to improve system availability?"
+  },
+  {
+    "source_number": 54,
+    "question": "Why is segmentation from non-IACS zones important in Network & Communication Security (SP Element 3)?",
+    "best_score": 1.0,
+    "best_id": "excel-209",
+    "best_question": "Why is segmentation from non-IACS zones important in Network & Communication Security (SP Element 3)?"
+  },
+  {
+    "source_number": 55,
+    "question": "What is TRUE regarding safety systems?",
+    "best_score": 1.0,
+    "best_id": "excel-146",
+    "best_question": "What is TRUE regarding safety systems?"
+  },
+  {
+    "source_number": 64,
+    "question": "In the context of global frameworks, what does the acronym SDO stand for?",
+    "best_score": 1.0,
+    "best_id": "excel-114",
+    "best_question": "In the context of global frameworks, what does the acronym SDO stand for?"
+  },
+  {
+    "source_number": 65,
+    "question": "What is a requirement for product security development lifecycles?",
+    "best_score": 1.0,
+    "best_id": "excel-135",
+    "best_question": "What is a requirement for product security development lifecycles?"
+  },
+  {
+    "source_number": 69,
+    "question": "What are the three main components of the ISASecure Integrated Threat Analysis (ITA) Program?",
+    "best_score": 1.0,
+    "best_id": "excel-124",
+    "best_question": "What are the three main components of the ISASecure Integrated Threat Analysis (ITA) Program?"
+  },
+  {
+    "source_number": 70,
+    "question": "Which steps are included in the ISA/IEC 62443 assess phase?",
+    "best_score": 1.0,
+    "best_id": "kc-merged-026",
+    "best_question": "Which steps are included in the ISA/IEC 62443 assess phase?"
+  },
+  {
+    "source_number": 77,
+    "question": "What is a commonly used protocol for managing secure data transmission over a Virtual Private Network (VPN)?",
+    "best_score": 1.0,
+    "best_id": "excel-130",
+    "best_question": "What is a commonly used protocol for managing secure data transmission over a Virtual Private Network (VPN)?"
+  },
+  {
+    "source_number": 82,
+    "question": "What is the FIRST step required in implementing ISO 27001?",
+    "best_score": 1.0,
+    "best_id": "excel-139",
+    "best_question": "What is the FIRST step required in implementing ISO 27001?"
+  },
+  {
+    "source_number": 84,
+    "question": "Which of the following attacks relies on a human weakness to succeed?",
+    "best_score": 1.0,
+    "best_id": "excel-175",
+    "best_question": "Which of the following attacks relies on a human weakness to succeed?"
+  },
+  {
+    "source_number": 85,
+    "question": "Which of the following is an activity that should trigger a review of the CSMS?",
+    "best_score": 1.0,
+    "best_id": "excel-180",
+    "best_question": "Which of the following is an activity that should trigger a review of the CSMS?"
+  },
+  {
+    "source_number": 86,
+    "question": "Which of the following is NOT a strategy for deploying a WAN?",
+    "best_score": 1.0,
+    "best_id": "excel-185",
+    "best_question": "Which of the following is NOT a strategy for deploying a WAN?"
+  },
+  {
+    "source_number": 87,
+    "question": "Which of the following is a cause for the increase in attacks on IACS?",
+    "best_score": 1.0,
+    "best_id": "excel-177",
+    "best_question": "Which of the following is a cause for the increase in attacks on IACS?"
+  },
+  {
+    "source_number": 90,
+    "question": "What is the name of the missing layer in the Open Systems Interconnection (OSI) model shown below?",
+    "best_score": 1.0,
+    "best_id": "excel-141",
+    "best_question": "What is the name of the missing layer in the Open Systems Interconnection (OSI) model shown below?"
+  },
+  {
+    "source_number": 91,
+    "question": "Which part of the ISA/IEC 62443 series describes a methodology to develop quantitative metrics?",
+    "best_score": 1.0,
+    "best_id": "excel-195",
+    "best_question": "Which part of the ISA/IEC 62443 series describes a methodology to develop quantitative metrics?"
+  },
+  {
+    "source_number": 92,
+    "question": "Which of the following activities is NOT listed under the “Patch Testing” phase in the asset owner requirements?",
+    "best_score": 1.0,
+    "best_id": "excel-173",
+    "best_question": "Which of the following activities is NOT listed under the “Patch Testing” phase in the asset owner requirements?"
+  },
+  {
+    "source_number": 93,
+    "question": "What is a key feature of the NIS2 Directive?",
+    "best_score": 1.0,
+    "best_id": "excel-133",
+    "best_question": "What is a key feature of the NIS2 Directive?"
+  },
+  {
+    "source_number": 94,
+    "question": "As related to technical security requirements for IACS components, what does CCSC stand for?",
+    "best_score": 1.0,
+    "best_id": "excel-107",
+    "best_question": "As related to technical security requirements for IACS components, what does CCSC stand for?"
+  },
+  {
+    "source_number": 96,
+    "question": "What does Foundational Requirement 6 (FR 6) - Timely Response to Events (TRE) require?",
+    "best_score": 1.0,
+    "best_id": "excel-128",
+    "best_question": "What does Foundational Requirement 6 (FR 6) - Timely Response to Events (TRE) require?"
+  },
+  {
+    "source_number": 97,
+    "question": "Which of the ISA 62443 standards focuses on the process of developing secure products?",
+    "best_score": 1.0,
+    "best_id": "excel-194",
+    "best_question": "Which of the ISA 62443 standards focuses on the process of developing secure products?"
+  },
+  {
+    "source_number": 99,
+    "question": "What is a key activity in the Maintain phase?",
+    "best_score": 1.0,
+    "best_id": "excel-132",
+    "best_question": "What is a key activity in the Maintain phase?"
+  },
+  {
+    "source_number": 100,
+    "question": "Which NIST Special Publication focuses specifically on securing Industrial Control Systems (ICS)?",
+    "best_score": 1.0,
+    "best_id": "excel-172",
+    "best_question": "Which NIST Special Publication focuses specifically on securing Industrial Control Systems (ICS)?"
+  },
+  {
+    "source_number": 101,
+    "question": "Which statement is TRUE reqardinq application of patches in an IACS environment?",
+    "best_score": 1.0,
+    "best_id": "excel-201",
+    "best_question": "Which statement is TRUE reqardinq application of patches in an IACS environment?"
+  },
+  {
+    "source_number": 102,
+    "question": "Which is the BEST deployment system for malicious code protection?",
+    "best_score": 1.0,
+    "best_id": "excel-163",
+    "best_question": "Which is the BEST deployment system for malicious code protection?"
+  },
+  {
+    "source_number": 103,
+    "question": "What impact do increasing cybercrime attacks have?",
+    "best_score": 1.0,
+    "best_id": "excel-129",
+    "best_question": "What impact do increasing cybercrime attacks have?"
+  },
+  {
+    "source_number": 104,
+    "question": "What change was introduced in the second edition (2024) of ISA-62443-2-1 compared to the first edition (2010)?",
+    "best_score": 1.0,
+    "best_id": "excel-127",
+    "best_question": "What change was introduced in the second edition (2024) of ISA-62443-2-1 compared to the first edition (2010)?"
+  },
+  {
+    "source_number": 105,
+    "question": "What are the four main categories for documents in the ISA-62443 (IEC 62443) series?",
+    "best_score": 1.0,
+    "best_id": "excel-123",
+    "best_question": "What are the four main categories for documents in the ISA-62443 (IEC 62443) series?"
+  },
+  {
+    "source_number": 106,
+    "question": "Which of the following is NOT a general class of firewalls?",
+    "best_score": 1.0,
+    "best_id": "excel-184",
+    "best_question": "Which of the following is NOT a general class of firewalls?"
+  },
+  {
+    "source_number": 107,
+    "question": "A company discovers malware on a portable USB device used within their IACS environment. According to the document, which SP Element and controls would be MOST relevant to address this issue?",
+    "best_score": 1.0,
+    "best_id": "excel-100",
+    "best_question": "A company discovers malware on a portable USB device used within their IACS environment. According to the document, which SP Element and controls would be MOST relevant to address this issue?"
+  },
+  {
+    "source_number": 108,
+    "question": "After receiving an approved patch from the IACS vendor, what is BEST practice for the asset owner to follow?",
+    "best_score": 1.0,
+    "best_id": "excel-105",
+    "best_question": "After receiving an approved patch from the IACS vendor, what is BEST practice for the asset owner to follow?"
+  },
+  {
+    "source_number": 109,
+    "question": "Security Levels (SLs) are broken down into which three types?",
+    "best_score": 1.0,
+    "best_id": "excel-119",
+    "best_question": "Security Levels (SLs) are broken down into which three types?"
+  },
+  {
+    "source_number": 110,
+    "question": "Which analysis method is MOST frequently used as an input to a security risk assessment?",
+    "best_score": 1.0,
+    "best_id": "excel-155",
+    "best_question": "Which analysis method is MOST frequently used as an input to a security risk assessment?"
+  },
+  {
+    "source_number": 74,
+    "question": "A national standards body wants to represent its country’s interests at an international level and adopt global standards locally. What role does this organization fulfill?",
+    "best_score": 0.993,
+    "best_id": "excel-103",
+    "best_question": "A national standards body wants to represent its country’s interests at an international level and adopt global standards locally. What role does this organisation fulfill?"
+  },
+  {
+    "source_number": 98,
+    "question": "A company needs to create a standardized interface for exchanging real-time plant data between heterogeneous control devices while maintaining a structured organization of data elements such as folders, classes, and methods. Which feature of OPC supports this requirement?",
+    "best_score": 0.992,
+    "best_id": "excel-101",
+    "best_question": "A company needs to create a standardised interface for exchanging real-time plant data between heterogeneous control devices while maintaining a structured organisation of data elements such as folders, classes, and methods. Which feature of OPC supports this requirement?"
+  },
+  {
+    "source_number": 41,
+    "question": "Which of the following provides the overall conceptual basis in the design of an appropriate security program?",
+    "best_score": 0.986,
+    "best_id": "excel-190",
+    "best_question": "Which of the following provides the overall conceptual basis in the design of an appropriate security programme?"
+  },
+  {
+    "source_number": 72,
+    "question": "Which characteristic is MOST closely associated with the deployment of a demilitarized zone (DMZ)?",
+    "best_score": 0.986,
+    "best_id": "excel-156",
+    "best_question": "Which characteristic is MOST closely associated with the deployment of a demilitarised zone (DMZ)?"
+  },
+  {
+    "source_number": 89,
+    "question": "Which activity is part of establishing policy, organization, and awareness?",
+    "best_score": 0.982,
+    "best_id": "excel-153",
+    "best_question": "Which activity is part of establishing policy, organisation, and awareness?"
+  },
+  {
+    "source_number": 95,
+    "question": "In a defense-in-depth strategy, what is the purpose of role-based access control?",
+    "best_score": 0.982,
+    "best_id": "excel-112",
+    "best_question": "In a defence-in-depth strategy, what is the purpose of role-based access control?"
+  },
+  {
+    "source_number": 61,
+    "question": "Which of the following is an element of security policy, organization, and awareness?",
+    "best_score": 0.978,
+    "best_id": "excel-181",
+    "best_question": "Which of the following is an element of security policy, organisation, and awareness?"
+  },
+  {
+    "source_number": 40,
+    "question": "How can defense in depth be achieved via security zones?",
+    "best_score": 0.977,
+    "best_id": "kc-merged-002",
+    "best_question": "How can defence in depth be achieved via security zones?"
+  },
+  {
+    "source_number": 88,
+    "question": "What type of attack is characterized by encrypting an organization’s data and demanding payment for restoration?",
+    "best_score": 0.977,
+    "best_id": "excel-149",
+    "best_question": "What type of attack is characterised by encrypting an organisation’s data and demanding payment for restoration?"
+  },
+  {
+    "source_number": 29,
+    "question": "Which model describes relationships between assets within an industrial automation and control system? Asset model",
+    "best_score": 0.936,
+    "best_id": "excel-171",
+    "best_question": "Which model describes relationships between assets within an industrial automation and control system?"
+  },
+  {
+    "source_number": 30,
+    "question": "Which of the following ISA-99 (IEC 62443) Reference Model levels is named correctly? Control Control",
+    "best_score": 0.873,
+    "best_id": "excel-188",
+    "best_question": "Which of the following ISA-99 (IEC 62443) Reference Model levels is named correctly?"
+  },
+  {
+    "source_number": 37,
+    "question": "Which is a commonly used protocol for managing secure data transmission on the Internet?",
+    "best_score": 0.818,
+    "best_id": "excel-130",
+    "best_question": "What is a commonly used protocol for managing secure data transmission over a Virtual Private Network (VPN)?"
+  },
+  {
+    "source_number": 62,
+    "question": "Which statement BEST describes the Target Security Protection Ratings?",
+    "best_score": 0.803,
+    "best_id": "kc-merged-062",
+    "best_question": "Which statement best describes the purpose of the Security Protection Scheme (SPS)?"
+  },
+  {
+    "source_number": 60,
+    "question": "How should outreach be handled with product suppliers and service providers?",
+    "best_score": 0.765,
+    "best_id": "kc-merged-036",
+    "best_question": "Which of the following is a reponsiblity of Product Suppiers and Service Providers?"
+  },
+  {
+    "source_number": 33,
+    "question": "What does the System under Consideration (SuC) include in the context of ISA/IEC 62443 risk assessment?",
+    "best_score": 0.702,
+    "best_id": "kc-merged-040",
+    "best_question": "What is the System Under Consideration (SuC) as defined in IEC 62443-3-2?"
+  },
+  {
+    "source_number": 68,
+    "question": "Which of the following BEST describes a control system?",
+    "best_score": 0.675,
+    "best_id": "kc-merged-091",
+    "best_question": "Which of the following best describes a Host Intrusion Detection System (HIDS) ?"
+  },
+  {
+    "source_number": 83,
+    "question": "What is the primary purpose of the NIST Cybersecurity Framework (CSF)?",
+    "best_score": 0.674,
+    "best_id": "kc-merged-039",
+    "best_question": "What is the primary purpose of defining Security Levels (SLs)?"
+  },
+  {
+    "source_number": 57,
+    "question": "Which is an important difference between IT systems and IACS?",
+    "best_score": 0.667,
+    "best_id": "kc-merged-021",
+    "best_question": "Which of the following is NOT a key difference between IT and IACS security?"
+  },
+  {
+    "source_number": 31,
+    "question": "In an IACS system, a typical security conduit consists of which of the following assets? Controllers, sensors, transmitters, and final control elements",
+    "best_score": 0.65,
+    "best_id": "excel-113",
+    "best_question": "In an IACS system, a typical security conduit consists of which of the following assets?"
+  },
+  {
+    "source_number": 44,
+    "question": "What is one challenge associated with firewalls?",
+    "best_score": 0.623,
+    "best_id": "excel-184",
+    "best_question": "Which of the following is NOT a general class of firewalls?"
+  },
+  {
+    "source_number": 76,
+    "question": "Which of the following is an example of a device used for intrusion detection?",
+    "best_score": 0.622,
+    "best_id": "kc-merged-091",
+    "best_question": "Which of the following best describes a Host Intrusion Detection System (HIDS) ?"
+  },
+  {
+    "source_number": 10,
+    "question": "Which of the following is a key goal of an IACS security policy?",
+    "best_score": 0.613,
+    "best_id": "kc-merged-074",
+    "best_question": "What is the goal of the Assess Phase in the IACS Cybersecurity Lifecycle?"
+  },
+  {
+    "source_number": 36,
+    "question": "To which category of the ISA-62443 (IEC 62443) series does the document titled “Patch management in the IACS environment” belong?",
+    "best_score": 0.61,
+    "best_id": "excel-197",
+    "best_question": "Which policies and procedures publication is titled Patch Manaqement in the IACS Environment?"
+  },
+  {
+    "source_number": 56,
+    "question": "At Layer 4 of the Open Systems Interconnection (OSI) model, what identifies the application that will handle a packet inside a host?",
+    "best_score": 0.609,
+    "best_id": "excel-170",
+    "best_question": "Which layer in the Open Systems Interconnection (OSI) model would include the use of the File Transfer Protocol (FTP)?"
+  },
+  {
+    "source_number": 45,
+    "question": "What is the primary audience for Part 2-5 of the ISA/IEC 62443 Series - Policies & Procedures group of standards?",
+    "best_score": 0.592,
+    "best_id": "excel-144",
+    "best_question": "What is the primary focus of Part 3-2 in the ISA/IEC 62443 series?"
+  },
+  {
+    "source_number": 81,
+    "question": "A manufacturing plant has inconsistent cybersecurity processes that vary widely between shifts and teams. According to the maturity levels described in ISA/IEC 62443-2-1, how would this situation be classified?",
+    "best_score": 0.534,
+    "best_id": "kc-merged-064",
+    "best_question": "A company wants to raise cybersecurity awareness at the executive level. According to best practices in ISA/IEC 62443, which solution best addresses this need?"
+  },
+  {
+    "source_number": 6,
+    "question": "A company is reviewing its cybersecurity policies to ensure compliance with ISA/IEC 62443. Which aspect should be prioritized in this review?",
+    "best_score": 0.52,
+    "best_id": "excel-104",
+    "best_question": "According to the scheme for cybersecurity profiles, which of the following is true about ISA/IEC 62443 security requirements when creating a security profile?"
+  },
+  {
+    "source_number": 46,
+    "question": "Which is NOT a potential consequence for organizations that fail to prioritize control system security?",
+    "best_score": 0.509,
+    "best_id": "excel-191",
+    "best_question": "Which of the following refers to internal rules that govern how an organisation protects critical system resources?"
+  },
+  {
+    "source_number": 75,
+    "question": "Which of the following BEST describes 'Vulnerability'?",
+    "best_score": 0.506,
+    "best_id": "kc-merged-091",
+    "best_question": "Which of the following best describes a Host Intrusion Detection System (HIDS) ?"
+  },
+  {
+    "source_number": 67,
+    "question": "What does the abbreviation CSMS round in ISA 62443-2-1 represent?",
+    "best_score": 0.5,
+    "best_id": "excel-123",
+    "best_question": "What are the four main categories for documents in the ISA-62443 (IEC 62443) series?"
+  },
+  {
+    "source_number": 53,
+    "question": "What is one reason why IACS systems are highly vulnerable to attack?",
+    "best_score": 0.494,
+    "best_id": "kc-merged-094",
+    "best_question": "Why is TCP/IP considered vulnerable in IACS?"
+  },
+  {
+    "source_number": 3,
+    "question": "What are the consequences of failing to adhere to ISA/IEC 62443-4-1 during the product development lifecycle? (Select All that Apply)",
+    "best_score": 0.493,
+    "best_id": "excel-162",
+    "best_question": "Which is one of the PRIMARY goals of providing a framework addressing secure product development life-cycle requirements?"
+  },
+  {
+    "source_number": 11,
+    "question": "Which of the following actions are essential during the design phase of a security policy? (Select All that Apply)",
+    "best_score": 0.493,
+    "best_id": "kc-merged-062",
+    "best_question": "Which statement best describes the purpose of the Security Protection Scheme (SPS)?"
+  },
+  {
+    "source_number": 73,
+    "question": "Why is patch management more difficult for IACS than for business systems?",
+    "best_score": 0.475,
+    "best_id": "excel-200",
+    "best_question": "Which statement is TRUE regarding Intrusion Detection Systems (IDS)?"
+  },
+  {
+    "source_number": 49,
+    "question": "Which of the following technologies is no longer considered secure?",
+    "best_score": 0.472,
+    "best_id": "pasted3-212",
+    "best_question": "Authorisation (user accounts) must be granted based on which of the following?"
+  },
+  {
+    "source_number": 63,
+    "question": "Which of the following is an element of monitoring and improving a CSMS?",
+    "best_score": 0.472,
+    "best_id": "excel-200",
+    "best_question": "Which statement is TRUE regarding Intrusion Detection Systems (IDS)?"
+  },
+  {
+    "source_number": 21,
+    "question": "A power distribution operator is asking whether SCADA is only a monitoring tool or can also support control. Which statements are correct? (Select All that Apply)",
+    "best_score": 0.466,
+    "best_id": "kc-merged-063",
+    "best_question": "62 A power grid operator wants to demonstrate the impact of cyber threats on industrial control systems to increase awareness. According to Section 2, which of the following best aligns with this goal?"
+  },
+  {
+    "source_number": 24,
+    "question": "What do the tiers in the NIST CSF represent?",
+    "best_score": 0.456,
+    "best_id": "kc-merged-038",
+    "best_question": "In a cybersecurity risk assessment, what does the term ‘Likelihood’ represent?"
+  },
+  {
+    "source_number": 43,
+    "question": "What do the tiers in the NIST CSF represent?",
+    "best_score": 0.456,
+    "best_id": "kc-merged-038",
+    "best_question": "In a cybersecurity risk assessment, what does the term ‘Likelihood’ represent?"
+  },
+  {
+    "source_number": 1,
+    "question": "A company is evaluating its supply chain security after experiencing a breach. What steps should it take to mitigate future risks? (Select All that Apply)",
+    "best_score": 0.449,
+    "best_id": "kc-merged-064",
+    "best_question": "A company wants to raise cybersecurity awareness at the executive level. According to best practices in ISA/IEC 62443, which solution best addresses this need?"
+  },
+  {
+    "source_number": 2,
+    "question": "A critical infrastructure facility is assessing its cybersecurity posture. Which standard should it reference for developing a comprehensive cybersecurity management system (CSMS)?",
+    "best_score": 0.446,
+    "best_id": "excel-162",
+    "best_question": "Which is one of the PRIMARY goals of providing a framework addressing secure product development life-cycle requirements?"
+  },
+  {
+    "source_number": 78,
+    "question": "Who is responsible for defining the tolerable residual cybersecurity risk as an input requirement for all activities?",
+    "best_score": 0.443,
+    "best_id": "excel-107",
+    "best_question": "As related to technical security requirements for IACS components, what does CCSC stand for?"
+  },
+  {
+    "source_number": 14,
+    "question": "A security analyst is reviewing an IACS for potential vulnerabilities related to the OSI model. Which layers should they focus on to address communication security? (Select All that Apply)",
+    "best_score": 0.441,
+    "best_id": "excel-209",
+    "best_question": "Why is segmentation from non-IACS zones important in Network & Communication Security (SP Element 3)?"
+  },
+  {
+    "source_number": 79,
+    "question": "Which of the following is NOT listed as a potential consequence of compromising IACS according to the ISA99 Committee scope?",
+    "best_score": 0.439,
+    "best_id": "kc-merged-077",
+    "best_question": "Which of the following explains the role of the integration service providers within the IACS Cybersecurity Lifecycle?"
+  },
+  {
+    "source_number": 35,
+    "question": "Why were PLCs originally designed?",
+    "best_score": 0.438,
+    "best_id": "excel-115",
+    "best_question": "In which layer is the physical address assigned?"
+  },
+  {
+    "source_number": 38,
+    "question": "What is recommended to use between the plant floor and the rest of the company networks?",
+    "best_score": 0.438,
+    "best_id": "excel-179",
+    "best_question": "Which of the following is a recommended default rule for IACS firewalls?"
+  },
+  {
+    "source_number": 71,
+    "question": "An industrial control system requires strong protection against intentional violations using sophisticated means and moderate skills. According to the Security Level (SL) definitions, which SL should be targeted?",
+    "best_score": 0.438,
+    "best_id": "excel-111",
+    "best_question": "If an industrial control system experiences frequent unexpected shutdowns causing downtime, which SP Element activities should be reviewed to improve system availability?"
+  },
+  {
+    "source_number": 34,
+    "question": "If a U.S. federal agency must comply with mandatory cybersecurity requirements under law, which document would they be required to follow?",
+    "best_score": 0.436,
+    "best_id": "kc-merged-060",
+    "best_question": "What is required for a system security requirement to be considered fulfilled?"
+  },
+  {
+    "source_number": 16,
+    "question": "In preparing for ISASecure certification, a company must demonstrate compliance with which of the following? (Select All that Apply)",
+    "best_score": 0.435,
+    "best_id": "pasted3-217",
+    "best_question": "Which of the following are considered administrative security controls? (Select THREE)."
+  },
+  {
+    "source_number": 18,
+    "question": "A plant is rolling out a firmware update to remote terminal units after a configuration change request. Which change management controls are most appropriate?",
+    "best_score": 0.427,
+    "best_id": "pasted3-211",
+    "best_question": "A company discovers malware on a portable USB device used within its IACS environment. According to the course material, which SP Element and controls would be most relevant to address this issue?"
+  },
+  {
+    "source_number": 17,
+    "question": "A company is using OPC UA and wants to protect the configuration settings. What does the \"Confidentiality\" aspect of OPC UA security involve?",
+    "best_score": 0.426,
+    "best_id": "kc-merged-077",
+    "best_question": "Which of the following explains the role of the integration service providers within the IACS Cybersecurity Lifecycle?"
+  },
+  {
+    "source_number": 48,
+    "question": "How should CSMS organizational responsibilities or training be handled over time?",
+    "best_score": 0.424,
+    "best_id": "kc-merged-042",
+    "best_question": "Which of the following is one of the core Foundation Requirements (FR) in securing industrial systems?"
+  },
+  {
+    "source_number": 52,
+    "question": "What programs are MOST effective if they are tailored to the audience, consistent with company policy, and communicated regularly?",
+    "best_score": 0.422,
+    "best_id": "kc-merged-032",
+    "best_question": "Which of the following best represents an effective implementation of a defence-in-depth strategy?"
+  },
+  {
+    "source_number": 58,
+    "question": "What does IACS stand for?",
+    "best_score": 0.419,
+    "best_id": "excel-183",
+    "best_question": "Which of the following is an industry sector-specific standard?"
+  },
+  {
+    "source_number": 19,
+    "question": "A company’s IACS has been designed to ensure data integrity and confidentiality. Which of the following measures would best support these goals? (Select All that Apply)",
+    "best_score": 0.417,
+    "best_id": "pasted3-217",
+    "best_question": "Which of the following are considered administrative security controls? (Select THREE)."
+  },
+  {
+    "source_number": 80,
+    "question": "Which of the following starts at a high level and includes all ANSI/ISA-95 Level 0,1,2,3,4 equipment and information systems?",
+    "best_score": 0.411,
+    "best_id": "kc-merged-025",
+    "best_question": "Which statement explains the purpose of the ISA/IEC 62443 series in securing Industrial Automation and Control Systems (IACS)?"
+  },
+  {
+    "source_number": 4,
+    "question": "In a cybersecurity incident involving a breach of sensitive data, what steps should the incident response team take immediately following the detection of the breach? (Select All that Apply)",
+    "best_score": 0.409,
+    "best_id": "kc-merged-064",
+    "best_question": "A company wants to raise cybersecurity awareness at the executive level. According to best practices in ISA/IEC 62443, which solution best addresses this need?"
+  },
+  {
+    "source_number": 9,
+    "question": "A chemical plant documents the security needs for a new historian-to-ERP interface after a formal assessment. The project manager asks which statements belong in the Cybersecurity Requirements Specification. (Select All that Apply)",
+    "best_score": 0.406,
+    "best_id": "excel-104",
+    "best_question": "According to the scheme for cybersecurity profiles, which of the following is true about ISA/IEC 62443 security requirements when creating a security profile?"
+  },
+  {
+    "source_number": 66,
+    "question": "What does the expression SL-T (BPCS Zone) vector {2 2 0 1 3 1 3} represent?",
+    "best_score": 0.4,
+    "best_id": "excel-116",
+    "best_question": "In which layer is the physical address assigned? A. Layer 1 B. Layer 2 C. Layer 3 D. Layer 7"
+  },
+  {
+    "source_number": 59,
+    "question": "Which Security Level (SL) would be MOST appropriate for a system that requires protection against attackers with high motivation and extended resources using sophisticated means?",
+    "best_score": 0.397,
+    "best_id": "kc-merged-041",
+    "best_question": "When constructing a vector of Security Levels (SL) per Foundational Requirement, what is the advantage over using a single SL?"
+  },
+  {
+    "source_number": 12,
+    "question": "A technician is debugging an issue on a Profibus network. They notice packet errors. Which OSI layer is primarily responsible for framing and error detection in this serial communication?",
+    "best_score": 0.396,
+    "best_id": "excel-164",
+    "best_question": "Which is the implementation of PROFIBUS over Ethernet for non-safety-related communications?"
+  },
+  {
+    "source_number": 15,
+    "question": "A cybersecurity specialist is evaluating the different types of ISASecure certifications available for IACS. Which of the following certifications focus specifically on personnel competency? (Select All that Apply)",
+    "best_score": 0.395,
+    "best_id": "excel-172",
+    "best_question": "Which NIST Special Publication focuses specifically on securing Industrial Control Systems (ICS)?"
+  },
+  {
+    "source_number": 27,
+    "question": "Under User Access Control (SP Element 6), which of the following is included in USER 1 — Identification and Authentication? Backup restoration",
+    "best_score": 0.393,
+    "best_id": "kc-merged-011",
+    "best_question": "What is the primary distinction between an Industrial Control System (ICS) and an Industrial Automation and Control System (IACS) as described in ISA/IEC 62443?"
+  },
+  {
+    "source_number": 7,
+    "question": "An organization is undergoing an audit against ISA/IEC 62443-4-1 for their secure product development lifecycle. The auditors find that the development team lacks a formal process for handling third-party software components. Which of the following actions should the organization take to align with the standard? (Select all that apply)",
+    "best_score": 0.39,
+    "best_id": "excel-182",
+    "best_question": "Which of the following is an element of security policy, organisation, and awareness? A. Product development requirements B. Staff training and security awareness C. Technical requirement assessment D. Penetration testing"
+  },
+  {
+    "source_number": 8,
+    "question": "A company mandates that all new PLC purchases must be from vendors who follow ISA/IEC 62443-4-1. Why is this mandate effective? (Select All that Apply)",
+    "best_score": 0.383,
+    "best_id": "kc-merged-064",
+    "best_question": "A company wants to raise cybersecurity awareness at the executive level. According to best practices in ISA/IEC 62443, which solution best addresses this need?"
+  },
+  {
+    "source_number": 23,
+    "question": "An industrial facility wants to ensure that only authorized communication reaches its PLCs while minimizing disruption to time-sensitive control processes. Which type of firewall would BEST suit this need?",
+    "best_score": 0.38,
+    "best_id": "excel-110",
+    "best_question": "If an asset owner wants to demonstrate compliance with ISA/IEC 62443-2-1 requirements during an external audit, which type of evidence would be MOST appropriate?"
+  },
+  {
+    "source_number": 47,
+    "question": "An industrial facility wants to ensure that only authorized systems reach its PLCs while minimizing disruption to time-sensitive control processes. Which type of firewall would BEST suit this need?",
+    "best_score": 0.377,
+    "best_id": "excel-110",
+    "best_question": "If an asset owner wants to demonstrate compliance with ISA/IEC 62443-2-1 requirements during an external audit, which type of evidence would be MOST appropriate?"
+  },
+  {
+    "source_number": 13,
+    "question": "A plant is defining a CRS for a new zone where a historian, PLCs, and engineering tools will coexist. Which statements are valid? (Select All that Apply)",
+    "best_score": 0.374,
+    "best_id": "kc-merged-037",
+    "best_question": "Why is patching in IACS environments especially challenging?"
+  },
+  {
+    "source_number": 20,
+    "question": "A power grid operator is deploying a new cloud-based control system. To secure the connection between the on-site controllers and the cloud provider, they choose to use an encrypted VPN tunnel. What is the main security objective of this mitigation?",
+    "best_score": 0.372,
+    "best_id": "kc-merged-063",
+    "best_question": "62 A power grid operator wants to demonstrate the impact of cyber threats on industrial control systems to increase awareness. According to Section 2, which of the following best aligns with this goal?"
+  },
+  {
+    "source_number": 5,
+    "question": "A system integrator is asked to justify why the project uses defense-in-depth for a chemical blending line. Which statements are correct? (Select All that Apply)",
+    "best_score": 0.365,
+    "best_id": "excel-188",
+    "best_question": "Which of the following ISA-99 (IEC 62443) Reference Model levels is named correctly?"
+  },
+  {
+    "source_number": 51,
+    "question": "Which is a reason for",
+    "best_score": 0.357,
+    "best_id": "excel-161",
+    "best_question": "Which is a role of the application layer?"
+  }
+]

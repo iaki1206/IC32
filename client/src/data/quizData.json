@@ -13,7 +13,7 @@
           "options": [
             {
               "id": "a",
-              "text": "To prevent unauthorized access and protect critical infrastructure from attacks"
+              "text": "To prevent unauthorised access and protect critical infrastructure from attacks"
             },
             {
               "id": "b",
@@ -29,7 +29,7 @@
             }
           ],
           "correctAnswer": "a",
-          "explanation": "Control system cybersecurity focuses on protecting critical infrastructure from unauthorized access, attacks, and damage. This ensures business continuity and public safety.",
+          "explanation": "Control system cybersecurity focuses on protecting critical infrastructure from unauthorised access, attacks, and damage. This ensures business continuity and public safety.",
           "difficulty": "easy"
         },
         {

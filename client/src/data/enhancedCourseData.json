@@ -24,7 +24,7 @@
       {
         "id": 3,
         "title": "Explain the importance of awareness as an effective countermeasure",
-        "description": "Recognize how human awareness and training prevent security breaches",
+        "description": "Recognise how human awareness and training prevent security breaches",
         "relatedSections": [
           2,
           6
@@ -89,7 +89,7 @@
       },
       {
         "id": 10,
-        "title": "Describe how security profiles for ISA/IEC 62443 can be utilized",
+        "title": "Describe how security profiles for ISA/IEC 62443 can be utilised",
         "description": "Apply standardised security profiles to your organisation",
         "relatedSections": [
           14,
@@ -108,11 +108,11 @@
         {
           "id": "1-1",
           "title": "Defining Control System Cybersecurity",
-          "definition": "Cybersecurity is the practice of protecting computer systems and networks from unauthorized access, attacks, and damage.",
+          "definition": "Cybersecurity is the practice of protecting computer systems and networks from unauthorised access, attacks, and damage.",
           "explanation": "In simple terms, cybersecurity for control systems means putting locks and guards around the computers that run factories, power plants, and other critical infrastructure. Just like you protect your home with locks and alarms, organisations protect their control systems with digital security measures.",
           "keyPoints": [
-            "Measures to protect against unauthorized access",
-            "Electronic Security: Actions to protect critical systems from unauthorized use, denial of service, modifications, disclosure, loss of revenue, destruction",
+            "Measures to protect against unauthorised access",
+            "Electronic Security: Actions to protect critical systems from unauthorised use, denial of service, modifications, disclosure, loss of revenue, destruction",
             "Control system: Hardware and software components of an Industrial Automation and Control System (IACS)"
           ],
           "examples": [
@@ -156,7 +156,7 @@
           "definition": "The negative outcomes that can result from a successful cyber attack on a control system.",
           "explanation": "When a control system is compromised, the consequences can be severe - affecting not just the organisation but potentially people's safety and society as a whole.",
           "keyPoints": [
-            "Unauthorized access, theft, or misuse of data",
+            "Unauthorised access, theft, or misuse of data",
             "Loss of integrity or reliability of the control system",
             "Loss of availability and operational disruption",
             "Equipment and reputational damage",
@@ -208,8 +208,8 @@
         {
           "id": "2-1",
           "title": "Security Awareness Fundamentals",
-          "definition": "Understanding and recognizing security threats and best practices in daily work.",
-          "explanation": "Most security breaches happen because people don't recognize threats or don't follow security procedures. Awareness training teaches employees to spot phishing emails, use strong passwords, and report suspicious activity.",
+          "definition": "Understanding and recognising security threats and best practices in daily work.",
+          "explanation": "Most security breaches happen because people don't recognise threats or don't follow security procedures. Awareness training teaches employees to spot phishing emails, use strong passwords, and report suspicious activity.",
           "keyPoints": [
             "Employees are often the weakest link in security",
             "Awareness training reduces human error",
@@ -231,16 +231,16 @@
   "models": {
     "referenceModel": {
       "title": "Purdue Reference Model for Control Hierarchies",
-      "description": "The Purdue Model organizes industrial control systems into five hierarchical levels, each with specific security requirements and functions.",
+      "description": "The Purdue Model organises industrial control systems into five hierarchical levels, each with specific security requirements and functions.",
       "levels": [
         {
           "id": 0,
           "name": "Process",
           "description": "Physical equipment and processes being controlled",
           "definition": "The actual machinery, sensors, and physical systems that perform the work (e.g., motors, pumps, valves, conveyor belts).",
-          "explanation": "This is the 'bottom' level where physical work happens. Think of it as the factory floor equipment. At this level, you have sensors measuring temperature, pressure, flow rates, and actuators controlling equipment. Security here means protecting these devices from tampering or unauthorized control.",
-          "systems": "Sensors, actuators, motors, pumps, valves, PLCs (Programmemable Logic Controllers)",
-          "securityFocus": "Physical security, device authentication, preventing unauthorized commands",
+          "explanation": "This is the 'bottom' level where physical work happens. Think of it as the factory floor equipment. At this level, you have sensors measuring temperature, pressure, flow rates, and actuators controlling equipment. Security here means protecting these devices from tampering or unauthorised control.",
+          "systems": "Sensors, actuators, motors, pumps, valves, PLCs (Programmable Logic Controllers)",
+          "securityFocus": "Physical security, device authentication, preventing unauthorised commands",
           "examples": [
             "Temperature sensors in a chemical reactor",
             "Electric motors driving a conveyor belt",
@@ -254,7 +254,7 @@
           "name": "Basic Control",
           "description": "Local controllers managing individual processes",
           "definition": "Controllers that directly manage equipment at the process level, making real-time decisions based on sensor inputs.",
-          "explanation": "These are the 'brains' of individual machines. They receive data from sensors, make decisions, and send commands to equipment. A PLC (Programmemable Logic Controller) is a common example. At this level, security means ensuring only authorized commands reach the equipment.",
+          "explanation": "These are the 'brains' of individual machines. They receive data from sensors, make decisions, and send commands to equipment. A PLC (Programmable Logic Controller) is a common example. At this level, security means ensuring only authorised commands reach the equipment.",
           "systems": "PLCs, Distributed Control Systems (DCS), Remote Terminal Units (RTUs)",
           "securityFocus": "Device authentication, secure communication with sensors/actuators, firmware integrity",
           "examples": [
@@ -267,7 +267,7 @@
         {
           "id": 2,
           "name": "Supervisory Control",
-          "description": "Systems monitoring and optimizing operations across multiple controllers",
+          "description": "Systems monitoring and optimising operations across multiple controllers",
           "definition": "Higher-level systems that collect data from multiple controllers, display it to operators, and allow supervisory control of processes.",
           "explanation": "SCADA (Supervisory Control and Data Acquisition) systems live here. They monitor what's happening across the entire facility, let operators see the big picture, and allow them to make adjustments. Security at this level is critical because compromising SCADA can affect many processes simultaneously.",
           "systems": "SCADA systems, HMI (Human-Machine Interfaces), data historians",
@@ -290,7 +290,7 @@
           "examples": [
             "System for managing security patches across all devices",
             "Asset inventory tracking all equipment",
-            "Centralized logging system recording all security events"
+            "Centralised logging system recording all security events"
           ],
           "color": "#1E3A5F"
         },
@@ -378,9 +378,9 @@
           "title": "Advanced Persistent Threat Protection",
           "description": "Protection against advanced attacks using sophisticated means",
           "threatProfile": "Medium to high resources, advanced skills, high motivation",
-          "explanation": "SL 3 is for critical systems that might be targeted by sophisticated attackers (like nation-states or organized crime). It requires advanced security measures and continuous monitoring.",
+          "explanation": "SL 3 is for critical systems that might be targeted by sophisticated attackers (like nation-states or organised crime). It requires advanced security measures and continuous monitoring.",
           "characteristics": [
-            "Advanced authentication and authorization",
+            "Advanced authentication and authorisation",
             "Comprehensive network segmentation",
             "Intrusion detection and prevention systems",
             "Security incident response procedures",
@@ -390,7 +390,7 @@
           "examples": [
             "Biometric authentication for critical access",
             "Intrusion detection systems monitoring all traffic",
-            "Security Operations Center (SOC) monitoring 24/7",
+            "Security Operations Centre (SOC) monitoring 24/7",
             "Regular penetration testing by security experts"
           ],
           "color": "#FFB84D"
@@ -441,7 +441,7 @@
           "id": "FR2",
           "acronym": "UC",
           "name": "Use Control",
-          "description": "Controlling what authorized users can do",
+          "description": "Controlling what authorised users can do",
           "explanation": "Once you know who someone is, you control what they're allowed to do. A maintenance technician shouldn't be able to change production schedules.",
           "examples": [
             "Role-based access control (different permissions for different jobs)",
@@ -459,7 +459,7 @@
           "examples": [
             "Digital signatures on software updates",
             "Checksums verifying file integrity",
-            "Monitoring for unauthorized changes to configuration",
+            "Monitoring for unauthorised changes to configuration",
             "Detecting malware that modifies system files"
           ]
         },
@@ -467,8 +467,8 @@
           "id": "FR4",
           "acronym": "DC",
           "name": "Data Confidentiality",
-          "description": "Protecting sensitive information from unauthorized disclosure",
-          "explanation": "Some information is sensitive - trade secrets, personal data, security configurations. Confidentiality means only authorized people can see it.",
+          "description": "Protecting sensitive information from unauthorised disclosure",
+          "explanation": "Some information is sensitive - trade secrets, personal data, security configurations. Confidentiality means only authorised people can see it.",
           "examples": [
             "Encrypting sensitive data in transit",
             "Encrypting data stored on disk",
@@ -483,7 +483,7 @@
           "description": "Controlling where data can go in the network",
           "explanation": "Not all parts of a network should be able to communicate with each other. Restricting data flow prevents attackers from moving laterally through the network.",
           "examples": [
-            "Firewalls blocking unauthorized connections",
+            "Firewalls blocking unauthorised connections",
             "Network segmentation keeping operations separate from business systems",
             "Zones and conduits controlling communication paths",
             "Preventing direct connection from internet to control systems"

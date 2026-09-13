@@ -140,7 +140,7 @@ export function useSpacedRepetition() {
 
         if (aDue !== bDue) return aDue - bDue;
 
-        // Among due cards, prioritize by box (lower box = more important)
+        // Among due cards, prioritise by box (lower box = more important)
         if (a.nextReviewAt <= now && b.nextReviewAt <= now) {
           return a.box - b.box;
         }

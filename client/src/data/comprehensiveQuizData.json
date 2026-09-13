@@ -13,7 +13,7 @@
           "options": [
             {
               "id": "a",
-              "text": "To prevent unauthorized access and protect critical infrastructure from attacks"
+              "text": "To prevent unauthorised access and protect critical infrastructure from attacks"
             },
             {
               "id": "b",
@@ -29,7 +29,7 @@
             }
           ],
           "correctAnswer": "a",
-          "explanation": "Control system cybersecurity focuses on protecting critical infrastructure from unauthorized access, attacks, and damage. This ensures business continuity and public safety.",
+          "explanation": "Control system cybersecurity focuses on protecting critical infrastructure from unauthorised access, attacks, and damage. This ensures business continuity and public safety.",
           "difficulty": "easy"
         },
         {
@@ -295,7 +295,7 @@
           "question": "True or False: ISA/IEC 62443 is mandatory for all industrial facilities worldwide.",
           "type": "true-false",
           "correctAnswer": "false",
-          "explanation": "While ISA/IEC 62443 is widely recognized and recommended, it is not universally mandatory. However, many regulatory bodies and critical infrastructure sectors require compliance.",
+          "explanation": "While ISA/IEC 62443 is widely recognised and recommended, it is not universally mandatory. However, many regulatory bodies and critical infrastructure sectors require compliance.",
           "difficulty": "easy"
         }
       ]
@@ -532,7 +532,7 @@
         },
         {
           "id": "q5-5",
-          "question": "Which FR is most important for protecting against unauthorized access?",
+          "question": "Which FR is most important for protecting against unauthorised access?",
           "type": "multiple-choice",
           "options": [
             {
@@ -553,7 +553,7 @@
             }
           ],
           "correctAnswer": "d",
-          "explanation": "Both FR1 (identifying who is accessing the system) and FR2 (controlling what they can do) are essential for preventing unauthorized access.",
+          "explanation": "Both FR1 (identifying who is accessing the system) and FR2 (controlling what they can do) are essential for preventing unauthorised access.",
           "difficulty": "medium"
         }
       ]
@@ -712,7 +712,7 @@
         },
         {
           "id": "q7-3",
-          "question": "What is a 'demilitarized zone' (DMZ)?",
+          "question": "What is a 'demilitarised zone' (DMZ)?",
           "type": "multiple-choice",
           "options": [
             {
@@ -772,7 +772,7 @@
       "questions": [
         {
           "id": "q8-1",
-          "question": "What is the difference between authentication and authorization?",
+          "question": "What is the difference between authentication and authorisation?",
           "type": "multiple-choice",
           "options": [
             {
@@ -781,11 +781,11 @@
             },
             {
               "id": "b",
-              "text": "Authentication verifies identity; authorization determines permissions"
+              "text": "Authentication verifies identity; authorisation determines permissions"
             },
             {
               "id": "c",
-              "text": "Authorization is more important"
+              "text": "Authorisation is more important"
             },
             {
               "id": "d",
@@ -793,7 +793,7 @@
             }
           ],
           "correctAnswer": "b",
-          "explanation": "Authentication verifies who you are (identity), while authorization determines what you are allowed to do (permissions).",
+          "explanation": "Authentication verifies who you are (identity), while authorisation determines what you are allowed to do (permissions).",
           "difficulty": "medium"
         },
         {
@@ -1301,7 +1301,7 @@
             }
           ],
           "correctAnswer": "a",
-          "explanation": "Encryption converts readable data into an unreadable format using a key, protecting it from unauthorized access.",
+          "explanation": "Encryption converts readable data into an unreadable format using a key, protecting it from unauthorised access.",
           "difficulty": "easy"
         },
         {
@@ -1363,11 +1363,11 @@
           "options": [
             {
               "id": "a",
-              "text": "Organizing data by size"
+              "text": "Organising data by size"
             },
             {
               "id": "b",
-              "text": "Categorizing data based on sensitivity and protection requirements"
+              "text": "Categorising data based on sensitivity and protection requirements"
             },
             {
               "id": "c",
@@ -1379,7 +1379,7 @@
             }
           ],
           "correctAnswer": "b",
-          "explanation": "Data classification involves categorizing data based on its sensitivity level to determine appropriate protection measures.",
+          "explanation": "Data classification involves categorising data based on its sensitivity level to determine appropriate protection measures.",
           "difficulty": "medium"
         }
       ]

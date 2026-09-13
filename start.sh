@@ -1,0 +1,137 @@
+#!/bin/bash
+set -e
+
+APP_DIR="/home/cris/IC32"
+APP_URL="http://localhost:3000/"
+ICON_PATH="$APP_DIR/icon.png"
+
+cd "$APP_DIR"
+
+open_browser() {
+    local url="$1"
+    if command -v xdg-open >/dev/null 2>&1; then
+        xdg-open "$url" >/dev/null 2>&1 &
+    elif command -v exo-open >/dev/null 2>&1; then
+        exo-open --launch WebBrowser "$url" >/dev/null 2>&1 &
+    elif command -v firefox >/dev/null 2>&1; then
+        firefox "$url" >/dev/null 2>&1 &
+    elif command -v chromium >/dev/null 2>&1; then
+        chromium "$url" >/dev/null 2>&1 &
+    fi
+}
+
+send_notify() {
+    local title="$1"
+    local message="$2"
+    if command -v notify-send >/dev/null 2>&1; then
+        if [ -f "$ICON_PATH" ]; then
+            notify-send "$title" "$message" --icon="$ICON_PATH" 2>/dev/null || true
+        else
+            notify-send "$title" "$message" 2>/dev/null || true
+        fi
+    fi
+}
+
+is_server_ready() {
+    local code
+    code=$(curl -s -o /dev/null -w "%{http_code}" "$APP_URL" 2>/dev/null || echo "000")
+    if [ "$code" = "200" ] || [ "$code" = "304" ] || [ "$code" = "307" ] || [ "$code" = "301" ] || [ "$code" = "302" ]; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+echo "============================================================"
+echo "         IC32 - ISA/IEC 62443 Learning Platform"
+echo "============================================================"
+
+# Check if application is already running
+if is_server_ready; then
+    echo "[i] The application is already running at:"
+    echo "    $APP_URL"
+    echo ""
+    echo "[>] Opening application in browser..."
+    open_browser "$APP_URL"
+    send_notify "IC32 Learning Platform" "Application is already running. Opened in browser!"
+    echo "[OK] Done! This window will close in 3 seconds."
+    sleep 3
+    exit 0
+fi
+
+echo "[*] Starting development server (npm run dev)..."
+echo ""
+
+# Ensure .env exists to prevent malformed URI errors
+if [ ! -f "$APP_DIR/.env" ]; then
+    cat << 'ENVEOF' > "$APP_DIR/.env"
+VITE_ANALYTICS_ENDPOINT=
+VITE_ANALYTICS_WEBSITE_ID=
+ENVEOF
+fi
+
+# Free any stray process on port 3000 before starting
+PORT_PID=$(lsof -ti :3000 2>/dev/null || true)
+if [ -n "$PORT_PID" ]; then
+    kill -9 "$PORT_PID" 2>/dev/null || true
+    sleep 0.5
+fi
+
+# Start Vite in background
+npm run dev &
+VITE_PID=$!
+
+cleanup() {
+    echo ""
+    echo "[*] Stopping IC32 server..."
+    if [ -n "$VITE_PID" ]; then
+        kill "$VITE_PID" 2>/dev/null || true
+        pkill -P "$VITE_PID" 2>/dev/null || true
+    fi
+    # Also free port 3000 if occupied by node
+    PORT_PID=$(lsof -ti :3000 2>/dev/null || true)
+    if [ -n "$PORT_PID" ]; then
+        kill -9 "$PORT_PID" 2>/dev/null || true
+    fi
+    echo "[OK] Server stopped."
+}
+
+trap cleanup INT TERM
+
+echo -n "[*] Initialising Vite server"
+READY=0
+for i in $(seq 1 40); do
+    if is_server_ready; then
+        READY=1
+        break
+    fi
+    echo -n "."
+    sleep 0.5
+done
+echo ""
+
+if [ $READY -eq 1 ]; then
+    echo ""
+    echo "============================================================"
+    echo " [OK] Server is ACTIVE!"
+    echo " [OK] Address: $APP_URL"
+    echo " [OK] Opening default web browser..."
+    echo "============================================================"
+    echo ""
+    echo " -> To STOP the application:"
+    echo "    Press [Ctrl + C] or double-click 'Stop IC32' on your Desktop."
+    echo "============================================================"
+    echo ""
+    
+    open_browser "$APP_URL"
+    send_notify "IC32 Learning Platform" "Application started! Opened in browser: $APP_URL"
+
+    # Wait for the background process
+    wait "$VITE_PID" 2>/dev/null || true
+else
+    echo ""
+    echo "[!] The server took too long to start or encountered an error."
+    echo "Check the console output above for details."
+    echo "Press Enter to exit."
+    read -r
+fi

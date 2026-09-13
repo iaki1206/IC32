@@ -1,0 +1,339 @@
+{
+  "existing_before": 224,
+  "new_source": 110,
+  "added": 55,
+  "excluded_as_redundant": 55,
+  "total_after": 279,
+  "excluded": [
+    {
+      "source_number": 22,
+      "score": 1.0,
+      "matched_id": "excel-200",
+      "question": "Which statement is TRUE regarding Intrusion Detection Systems (IDS)?"
+    },
+    {
+      "source_number": 25,
+      "score": 1.0,
+      "matched_id": "excel-115",
+      "question": "In which layer is the physical address assigned?"
+    },
+    {
+      "source_number": 26,
+      "score": 1.0,
+      "matched_id": "excel-198",
+      "question": "Which protocol is commonly used for managing the security of message transmission on the Internet via web browsers?"
+    },
+    {
+      "source_number": 28,
+      "score": 1.0,
+      "matched_id": "excel-152",
+      "question": "What are the two elements of the risk analysis category of an IACS?"
+    },
+    {
+      "source_number": 29,
+      "score": 0.936,
+      "matched_id": "excel-171",
+      "question": "Which model describes relationships between assets within an industrial automation and control system? Asset model"
+    },
+    {
+      "source_number": 30,
+      "score": 0.873,
+      "matched_id": "excel-188",
+      "question": "Which of the following ISA-99 (IEC 62443) Reference Model levels is named correctly? Control Control"
+    },
+    {
+      "source_number": 32,
+      "score": 1.0,
+      "matched_id": "excel-144",
+      "question": "What is the primary focus of Part 3-2 in the ISA/IEC 62443 series?"
+    },
+    {
+      "source_number": 37,
+      "score": 0.818,
+      "matched_id": "excel-130",
+      "question": "Which is a commonly used protocol for managing secure data transmission on the Internet?"
+    },
+    {
+      "source_number": 39,
+      "score": 1.0,
+      "matched_id": "excel-162",
+      "question": "Which is one of the PRIMARY goals of providing a framework addressing secure product development life-cycle requirements?"
+    },
+    {
+      "source_number": 40,
+      "score": 0.977,
+      "matched_id": "kc-merged-002",
+      "question": "How can defense in depth be achieved via security zones?"
+    },
+    {
+      "source_number": 41,
+      "score": 0.986,
+      "matched_id": "excel-190",
+      "question": "Which of the following provides the overall conceptual basis in the design of an appropriate security program?"
+    },
+    {
+      "source_number": 42,
+      "score": 1.0,
+      "matched_id": "excel-166",
+      "question": "Which is the PRIMARY reason why Modbus over Ethernet is easy to manaqe in a firewall?"
+    },
+    {
+      "source_number": 43,
+      "score": 1.0,
+      "matched_id": "kc-bank-024",
+      "question": "What do the tiers in the NIST CSF represent?"
+    },
+    {
+      "source_number": 47,
+      "score": 0.945,
+      "matched_id": "kc-bank-023",
+      "question": "An industrial facility wants to ensure that only authorized systems reach its PLCs while minimizing disruption to time-sensitive control processes. Which type of firewall would BEST suit this need?"
+    },
+    {
+      "source_number": 50,
+      "score": 1.0,
+      "matched_id": "excel-111",
+      "question": "If an industrial control system experiences frequent unexpected shutdowns causing downtime, which SP Element activities should be reviewed to improve system availability?"
+    },
+    {
+      "source_number": 54,
+      "score": 1.0,
+      "matched_id": "excel-209",
+      "question": "Why is segmentation from non-IACS zones important in Network & Communication Security (SP Element 3)?"
+    },
+    {
+      "source_number": 55,
+      "score": 1.0,
+      "matched_id": "excel-146",
+      "question": "What is TRUE regarding safety systems?"
+    },
+    {
+      "source_number": 60,
+      "score": 0.765,
+      "matched_id": "kc-merged-036",
+      "question": "How should outreach be handled with product suppliers and service providers?"
+    },
+    {
+      "source_number": 61,
+      "score": 0.978,
+      "matched_id": "excel-181",
+      "question": "Which of the following is an element of security policy, organization, and awareness?"
+    },
+    {
+      "source_number": 62,
+      "score": 0.803,
+      "matched_id": "kc-merged-062",
+      "question": "Which statement BEST describes the Target Security Protection Ratings?"
+    },
+    {
+      "source_number": 64,
+      "score": 1.0,
+      "matched_id": "excel-114",
+      "question": "In the context of global frameworks, what does the acronym SDO stand for?"
+    },
+    {
+      "source_number": 65,
+      "score": 1.0,
+      "matched_id": "excel-135",
+      "question": "What is a requirement for product security development lifecycles?"
+    },
+    {
+      "source_number": 69,
+      "score": 1.0,
+      "matched_id": "excel-124",
+      "question": "What are the three main components of the ISASecure Integrated Threat Analysis (ITA) Program?"
+    },
+    {
+      "source_number": 70,
+      "score": 1.0,
+      "matched_id": "kc-merged-026",
+      "question": "Which steps are included in the ISA/IEC 62443 assess phase?"
+    },
+    {
+      "source_number": 72,
+      "score": 0.986,
+      "matched_id": "excel-156",
+      "question": "Which characteristic is MOST closely associated with the deployment of a demilitarized zone (DMZ)?"
+    },
+    {
+      "source_number": 74,
+      "score": 0.993,
+      "matched_id": "excel-103",
+      "question": "A national standards body wants to represent its country’s interests at an international level and adopt global standards locally. What role does this organization fulfill?"
+    },
+    {
+      "source_number": 77,
+      "score": 1.0,
+      "matched_id": "excel-130",
+      "question": "What is a commonly used protocol for managing secure data transmission over a Virtual Private Network (VPN)?"
+    },
+    {
+      "source_number": 82,
+      "score": 1.0,
+      "matched_id": "excel-139",
+      "question": "What is the FIRST step required in implementing ISO 27001?"
+    },
+    {
+      "source_number": 84,
+      "score": 1.0,
+      "matched_id": "excel-175",
+      "question": "Which of the following attacks relies on a human weakness to succeed?"
+    },
+    {
+      "source_number": 85,
+      "score": 1.0,
+      "matched_id": "excel-180",
+      "question": "Which of the following is an activity that should trigger a review of the CSMS?"
+    },
+    {
+      "source_number": 86,
+      "score": 1.0,
+      "matched_id": "excel-185",
+      "question": "Which of the following is NOT a strategy for deploying a WAN?"
+    },
+    {
+      "source_number": 87,
+      "score": 1.0,
+      "matched_id": "excel-177",
+      "question": "Which of the following is a cause for the increase in attacks on IACS?"
+    },
+    {
+      "source_number": 88,
+      "score": 0.977,
+      "matched_id": "excel-149",
+      "question": "What type of attack is characterized by encrypting an organization’s data and demanding payment for restoration?"
+    },
+    {
+      "source_number": 89,
+      "score": 0.982,
+      "matched_id": "excel-153",
+      "question": "Which activity is part of establishing policy, organization, and awareness?"
+    },
+    {
+      "source_number": 90,
+      "score": 1.0,
+      "matched_id": "excel-141",
+      "question": "What is the name of the missing layer in the Open Systems Interconnection (OSI) model shown below?"
+    },
+    {
+      "source_number": 91,
+      "score": 1.0,
+      "matched_id": "excel-195",
+      "question": "Which part of the ISA/IEC 62443 series describes a methodology to develop quantitative metrics?"
+    },
+    {
+      "source_number": 92,
+      "score": 1.0,
+      "matched_id": "excel-173",
+      "question": "Which of the following activities is NOT listed under the “Patch Testing” phase in the asset owner requirements?"
+    },
+    {
+      "source_number": 93,
+      "score": 1.0,
+      "matched_id": "excel-133",
+      "question": "What is a key feature of the NIS2 Directive?"
+    },
+    {
+      "source_number": 94,
+      "score": 1.0,
+      "matched_id": "excel-107",
+      "question": "As related to technical security requirements for IACS components, what does CCSC stand for?"
+    },
+    {
+      "source_number": 95,
+      "score": 0.982,
+      "matched_id": "excel-112",
+      "question": "In a defense-in-depth strategy, what is the purpose of role-based access control?"
+    },
+    {
+      "source_number": 96,
+      "score": 1.0,
+      "matched_id": "excel-128",
+      "question": "What does Foundational Requirement 6 (FR 6) - Timely Response to Events (TRE) require?"
+    },
+    {
+      "source_number": 97,
+      "score": 1.0,
+      "matched_id": "excel-194",
+      "question": "Which of the ISA 62443 standards focuses on the process of developing secure products?"
+    },
+    {
+      "source_number": 98,
+      "score": 0.992,
+      "matched_id": "excel-101",
+      "question": "A company needs to create a standardized interface for exchanging real-time plant data between heterogeneous control devices while maintaining a structured organization of data elements such as folders, classes, and methods. Which feature of OPC supports this requirement?"
+    },
+    {
+      "source_number": 99,
+      "score": 1.0,
+      "matched_id": "excel-132",
+      "question": "What is a key activity in the Maintain phase?"
+    },
+    {
+      "source_number": 100,
+      "score": 1.0,
+      "matched_id": "excel-172",
+      "question": "Which NIST Special Publication focuses specifically on securing Industrial Control Systems (ICS)?"
+    },
+    {
+      "source_number": 101,
+      "score": 1.0,
+      "matched_id": "excel-201",
+      "question": "Which statement is TRUE reqardinq application of patches in an IACS environment?"
+    },
+    {
+      "source_number": 102,
+      "score": 1.0,
+      "matched_id": "excel-163",
+      "question": "Which is the BEST deployment system for malicious code protection?"
+    },
+    {
+      "source_number": 103,
+      "score": 1.0,
+      "matched_id": "excel-129",
+      "question": "What impact do increasing cybercrime attacks have?"
+    },
+    {
+      "source_number": 104,
+      "score": 1.0,
+      "matched_id": "excel-127",
+      "question": "What change was introduced in the second edition (2024) of ISA-62443-2-1 compared to the first edition (2010)?"
+    },
+    {
+      "source_number": 105,
+      "score": 1.0,
+      "matched_id": "excel-123",
+      "question": "What are the four main categories for documents in the ISA-62443 (IEC 62443) series?"
+    },
+    {
+      "source_number": 106,
+      "score": 1.0,
+      "matched_id": "excel-184",
+      "question": "Which of the following is NOT a general class of firewalls?"
+    },
+    {
+      "source_number": 107,
+      "score": 1.0,
+      "matched_id": "excel-100",
+      "question": "A company discovers malware on a portable USB device used within their IACS environment. According to the document, which SP Element and controls would be MOST relevant to address this issue?"
+    },
+    {
+      "source_number": 108,
+      "score": 1.0,
+      "matched_id": "excel-105",
+      "question": "After receiving an approved patch from the IACS vendor, what is BEST practice for the asset owner to follow?"
+    },
+    {
+      "source_number": 109,
+      "score": 1.0,
+      "matched_id": "excel-119",
+      "question": "Security Levels (SLs) are broken down into which three types?"
+    },
+    {
+      "source_number": 110,
+      "score": 1.0,
+      "matched_id": "excel-155",
+      "question": "Which analysis method is MOST frequently used as an input to a security risk assessment?"
+    }
+  ]
+}

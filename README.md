@@ -2,20 +2,57 @@
 
 A modern, intuitive web application for learning the IC32 course based on ISA/IEC 62443 standards for securing industrial control systems.
 
+## Private access through Tailscale
+
+The course is designed to run privately on the miniPC and to be reachable from the miniPC, laptop, and phone through the same Tailscale network. It is not published as a public GitHub Pages site. The miniPC must remain powered on and connected whenever the course is accessed from another device.
+
+After installing Tailscale and signing in with the same account on all three devices, build and start the course on the miniPC:
+
+```bash
+pnpm install --frozen-lockfile
+pnpm run build
+NODE_ENV=production pnpm start
+```
+
+The local service listens on port `3000`. For a private Tailscale-only address, install Tailscale on the miniPC and run:
+
+```bash
+tailscale serve --bg http://127.0.0.1:3000
+tailscale serve status
+```
+
+Open the private HTTPS address shown by `tailscale serve status` from the laptop or phone. Do not use `tailscale funnel`, because Funnel would publish the service to the public internet. To stop the private proxy, run `tailscale serve reset`.
+
 ## Overview
 
 This application transforms the comprehensive IC32 course material into an interactive learning experience with:
 
-- **Hierarchical Navigation**: 15 course sections organized by day with expandable topics
+- **Hierarchical Navigation**: 15 course sections organised by day with expandable topics
 - **Interactive Models**: Visual representations of the Purdue Reference Model, Security Levels, and IACS Lifecycle
 - **Learning Goals**: 10 core objectives with clear correlations to course sections
 - **Concept Mapping**: Shows relationships and dependencies between different security concepts
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
+- **OT/ICS Knowledge Hub**: A separate interactive tab built from visual reference material, organised around the mnemonic path `WHY → WHAT → WHERE → FLOW → SEE → TEST → IMPROVE`
+- **Complete Answer Feedback**: All 224 questions have answer keys, with correctness and explanations revealed only after the learner responds
+
+## OT/ICS Knowledge Hub
+
+Open the hub from the **OT/ICS Hub** top-level tab or directly at `/?tab=ot`. The hub contains seven connected modules: OT foundations, IEC 62443, zones and conduits with the Purdue architecture, networking and OT protocols, passive Wireshark monitoring, authorised Nmap laboratory practice, and a library of 20 reusable AI prompts.
+
+The interface includes full-text search, mnemonic anchors, cross-links between topics, copy controls for commands and prompts, source-image verification, a seven-question Recall Lab, and progress stored locally in the browser. Nmap examples are educational material for laboratories and explicitly authorised test environments; do not use active scanning or evasion options in production OT networks. The hub also includes interactive visual lessons based on the supplied ISA/IEC 62443, Security Levels, IACS lifecycle, patch-management, Modbus TCP and OSI reference material.
+
+New visual material can be added by placing its source image in `client/public/ot-assets/`, then extending `client/src/data/otCyberData.ts`. Each module uses a stable anchor and reusable content blocks for paragraphs, bullet groups, code libraries, tables, warnings, source images and interactive visualisers. The interactive presentation is implemented in `client/src/components/OTCyberHub.tsx`.
+
+### New visual learning anchors
+
+The **WHAT** module now provides a colour-coded ISA/IEC 62443 series map and an interactive SL 0–4 review. The **FLOW** module contains an original OSI encapsulation simulator: learners step through header addition, transmission and reverse-order decapsulation, then compare IT and OT protocols by layer. The **IMPROVE** module contains selectable IACS lifecycle phases and a controlled patch-management cycle covering information gathering, evaluation, testing, deployment and reporting.
+
+The visual memory route is **STANDARDS → LEVELS → LIFECYCLE → PATCH → PROTOCOLS → OSI FLOW**. The diagrams are recreated as responsive, accessible UI components rather than being used only as static screenshots, so they remain usable on the miniPC, laptop and phone.
 
 ## Features
 
 ### 1. Sections View
-- Browse all 15 course sections organized by Day 1 and Day 2
+- Browse all 15 course sections organised by Day 1 and Day 2
 - Expandable topics with key points for each section
 - Learning goals associated with each section
 - Related sections shown in context panel
@@ -44,7 +81,7 @@ Three interactive visualizations:
 ### 3. Goals View
 - All 10 learning objectives clearly displayed
 - Related sections for each goal
-- Goals organized by category:
+- Goals organised by category:
   - Fundamentals
   - Architecture & Design
   - Implementation & Verification
@@ -67,7 +104,7 @@ Three interactive visualizations:
 9. Industrial Protocols
 10. Introduction to Patch Management
 11. Introduction to Security Risk Assessment for System Design
-12. Security Program Requirements for IACS Service Providers
+12. Security Programme Requirements for IACS Service Providers
 13. Developing Secure Products & Services
 14. Security Profiles for ISA 62443
 15. IACS Security Protection Scheme
@@ -79,13 +116,13 @@ The course covers 10 core learning goals:
 1. Describe the importance of control system security
 2. Describe the structure and content of the ISA/IEC 62443 series
 3. Explain the importance of awareness as an effective countermeasure
-4. Define principles behind creating an effective security program
+4. Define principles behind creating an effective security programme
 5. Discuss basics of risk analysis, industrial networking, and network security
-6. Discuss concepts forming ISA/IEC 62443 basis (defense in depth, zones, conduits)
+6. Discuss concepts forming ISA/IEC 62443 basis (defence in depth, zones, conduits)
 7. Describe how to apply risk mitigation techniques
 8. Explain how secure software development strategies make systems secure
 9. Describe how to validate or verify security of systems
-10. Describe how security profiles for ISA/IEC 62443 can be utilized
+10. Describe how security profiles for ISA/IEC 62443 can be utilised
 
 ## Key Concepts
 
@@ -130,8 +167,9 @@ The course covers 10 core learning goals:
 ### Installation
 
 ```bash
-# Clone or navigate to the project directory
-cd ic32-learning-app
+# Clone the repository
+git clone https://github.com/iaki1206/IC32.git
+cd IC32
 
 # Install dependencies
 pnpm install
@@ -140,7 +178,20 @@ pnpm install
 pnpm dev
 ```
 
-The application will be available at `http://localhost:3000`
+The application will be available at `http://localhost:3000`. The production build can be tested locally with `pnpm build` followed by `pnpm preview`.
+
+### Updating the private course
+
+To update the course, pull the latest private repository contents on the miniPC, rebuild the application, and restart the local service:
+
+```bash
+git pull origin main
+pnpm install --frozen-lockfile
+pnpm run build
+NODE_ENV=production pnpm start
+```
+
+Keep the repository private and do not enable a public GitHub Pages deployment. Tailscale controls network reachability; the GitHub repository controls the source code.
 
 ## Development
 
@@ -150,16 +201,20 @@ The application will be available at `http://localhost:3000`
 client/
 ├── src/
 │   ├── pages/
-│   │   ├── LearningApp.tsx       # Main app with navigation
-│   │   ├── ModelsPage.tsx        # Models visualization
-│   │   └── GoalsPage.tsx         # Learning goals
+│   │   ├── EnhancedLearningAppV2.tsx # Main platform navigation
+│   │   ├── ModelsPage.tsx             # Models visualisation
+│   │   └── GoalsPage.tsx              # Learning goals
 │   ├── components/
+│   │   ├── OTCyberHub.tsx        # Interactive OT/ICS knowledge hub
+│   │   ├── KnowledgeCheckView.tsx # 224-question practice bank
 │   │   ├── Sidebar.tsx           # Navigation sidebar
 │   │   ├── ContentPanel.tsx      # Main content display
 │   │   ├── ContextPanel.tsx      # Related concepts
 │   │   ├── ReferenceModelViewer.tsx
 │   │   ├── SecurityLevelsViewer.tsx
 │   │   └── LifecycleViewer.tsx
+│   ├── data/
+│   │   └── otCyberData.ts        # OT/ICS modules, anchors, prompts, and recall checks
 │   ├── contexts/                 # React contexts
 │   ├── hooks/                    # Custom React hooks
 │   ├── lib/                      # Utilities
@@ -167,7 +222,8 @@ client/
 │   ├── main.tsx                  # Entry point
 │   └── index.css                 # Global styles
 ├── public/
-│   └── courseData.json           # Course content
+│   ├── courseData.json           # Course content
+│   └── ot-assets/                # Original OT/ICS visual sources
 └── index.html
 ```
 
@@ -198,12 +254,12 @@ The application follows a professional learning platform design with:
 
 - **Information Hierarchy**: Clear visual distinction between sections, topics, and concepts
 - **Progressive Disclosure**: Reveal complexity gradually
-- **Spatial Organization**: Use layout to show relationships
+- **Spatial Organisation**: Use layout to show relationships
 - **Accessibility First**: Readable, navigable, inclusive design
-- **Color Coding**: 
+- **Colour Coding**: 
   - Deep Blue (#1e40af) for primary elements
   - Orange (#ea580c) for important/security concepts
-  - Gray for neutral backgrounds
+  - Grey for neutral backgrounds
 
 ## Browser Support
 
@@ -223,7 +279,7 @@ The application follows a professional learning platform design with:
 
 - Keyboard navigation support
 - ARIA labels and semantic HTML
-- High contrast color scheme
+- High-contrast colour scheme
 - Readable font sizes and spacing
 - Mobile-friendly touch targets
 
@@ -253,10 +309,10 @@ For technical issues with the application, please check the browser console for 
 
 ## Version
 
-**Application Version**: 1.0.0  
+**Application Version**: 1.4.0 (British English edition)  
 **Course Version**: 6.0 (IC32)  
-**Last Updated**: 2025
+**Last Updated**: 2026
 
 ---
 
-**Built with ❤️ for cybersecurity professionals learning ISA/IEC 62443 standards**
+**Built for cybersecurity professionals learning ISA/IEC 62443 standards**

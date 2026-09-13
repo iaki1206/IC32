@@ -10,13 +10,13 @@
         "Discuss current trends in control system cybersecurity and how they could affect control systems",
         "Analyse the differences between IT and IACS cybersecurity",
         "Identify potential consequences of cybersecurity breaches in control systems",
-        "Recognize malware events and their impact on critical infrastructure"
+        "Recognise malware events and their impact on critical infrastructure"
       ],
       "topics": [
         {
           "id": "1.1",
           "title": "Defining Control System Cybersecurity",
-          "definition": "Control system cybersecurity is the practice of protecting computer systems and networks that control critical infrastructure from unauthorized access, attacks, and damage.",
+          "definition": "Control system cybersecurity is the practice of protecting computer systems and networks that control critical infrastructure from unauthorised access, attacks, and damage.",
           "explanation": "Control systems manage essential services like power plants, water treatment facilities, and manufacturing processes. Protecting these systems is critical because failures can have severe consequences for public safety, economic stability, and national security.",
           "keyPoints": [
             "Control systems are the backbone of critical infrastructure",
@@ -64,7 +64,7 @@
           ],
           "tierCorrelations": {
             "level0": "Understanding fundamental differences",
-            "level1": "Recognizing IACS-specific challenges",
+            "level1": "Recognising IACS-specific challenges",
             "level2": "Adapting IT security practices to IACS",
             "level3": "Implementing IACS-appropriate controls",
             "level4": "Comprehensive IACS security strategy"
@@ -80,7 +80,7 @@
       "learningObjectives": [
         "Understand the importance of security awareness in IACS environments",
         "Identify common security mistakes and how to prevent them",
-        "Recognize social engineering tactics",
+        "Recognise social engineering tactics",
         "Implement security awareness programmes"
       ],
       "topics": [
@@ -88,7 +88,7 @@
           "id": "2.1",
           "title": "Security Awareness Fundamentals",
           "definition": "Security awareness is the understanding and knowledge that employees and stakeholders have about cybersecurity risks and best practices.",
-          "explanation": "Most security breaches involve human error or social engineering. Creating a culture of security awareness means training people to recognize threats, follow security policies, and report suspicious activity. This is often more effective than technical controls alone.",
+          "explanation": "Most security breaches involve human error or social engineering. Creating a culture of security awareness means training people to recognise threats, follow security policies, and report suspicious activity. This is often more effective than technical controls alone.",
           "keyPoints": [
             "Humans are often the weakest link in security",
             "Regular training reduces security incidents",
@@ -112,8 +112,8 @@
       "description": "Overview of the ISA/IEC 62443 standards series, its structure, and how it applies to IACS",
       "learningObjectives": [
         "Define the purpose of each part of the ISA/IEC 62443 Series",
-        "Summarize the six main groups of standards",
-        "Understand how the standards are organized and applied",
+        "Summarise the six main groups of standards",
+        "Understand how the standards are organised and applied",
         "Identify which standards apply to different roles"
       ],
       "topics": [
@@ -121,11 +121,11 @@
           "id": "3.1",
           "title": "ISA/IEC 62443 Series Overview",
           "definition": "ISA/IEC 62443 is a comprehensive series of standards developed by the International Society of Automation (ISA) and the International Electrotechnical Commission (IEC) to address cybersecurity in industrial automation and control systems.",
-          "explanation": "The series consists of multiple parts organized into six groups: General (Part 1), Policies & Procedures (Part 2), System (Part 3), and Component (Part 4) groups. Each part addresses different aspects of IACS security, from terminology and concepts to specific technical requirements.",
+          "explanation": "The series consists of multiple parts organised into six groups: General (Part 1), Policies & Procedures (Part 2), System (Part 3), and Component (Part 4) groups. Each part addresses different aspects of IACS security, from terminology and concepts to specific technical requirements.",
           "keyPoints": [
             "62443 is the international standard for IACS cybersecurity",
             "It provides a comprehensive framework covering all aspects of IACS security",
-            "Standards are organized into logical groups",
+            "Standards are organised into logical groups",
             "Different standards apply to different stakeholders (asset owners, suppliers, integrators)"
           ],
           "tierCorrelations": {
@@ -139,7 +139,7 @@
         {
           "id": "3.2",
           "title": "The Six Groups of Standards",
-          "definition": "The ISA/IEC 62443 series is organized into six main groups that address different aspects of IACS security.",
+          "definition": "The ISA/IEC 62443 series is organised into six main groups that address different aspects of IACS security.",
           "explanation": "Group 1 (General) covers terminology and concepts. Group 2 (Policies & Procedures) addresses organisational security programmes. Group 3 (System) covers system-level security requirements. Group 4 (Component) addresses component-level security. Groups 5 and 6 cover conformance and lifecycle aspects.",
           "keyPoints": [
             "Part 1-1: Terminology, concepts and models",
@@ -199,7 +199,7 @@
           "id": "4.2",
           "title": "Zone & Conduit Model",
           "definition": "The Zone & Conduit Model is a security architecture approach that groups systems into security zones and controls communication between zones through conduits.",
-          "explanation": "Zones are logical groupings of systems that share similar security requirements and trust levels. Conduits are the connections between zones. By controlling what can pass through conduits, organisations can prevent unauthorized access and contain breaches. This is similar to network segmentation but applied more broadly.",
+          "explanation": "Zones are logical groupings of systems that share similar security requirements and trust levels. Conduits are the connections between zones. By controlling what can pass through conduits, organisations can prevent unauthorised access and contain breaches. This is similar to network segmentation but applied more broadly.",
           "keyPoints": [
             "Zones group systems with similar security needs",
             "Conduits are controlled connections between zones",
@@ -279,7 +279,7 @@
       "description": "Security programme requirements, maturity levels, and organisational responsibilities",
       "learningObjectives": [
         "Explain the relationship between ISA/IEC 62443-2-1 and ISO/IEC 27001",
-        "Summarize the four maturity levels",
+        "Summarise the four maturity levels",
         "Identify asset owner responsibilities",
         "Understand security programme requirements"
       ],
@@ -341,7 +341,7 @@
           "id": "7.2",
           "title": "NIST Cybersecurity Framework",
           "definition": "The NIST Cybersecurity Framework is a voluntary framework developed by the U.S. National Institute of Standards and Technology to help organisations manage cybersecurity risk.",
-          "explanation": "NIST CSF is organized around five functions: Identify, Protect, Detect, Respond, and Recover. It provides a common language for cybersecurity and helps organisations of all sizes understand and manage cybersecurity risk. While voluntary, it's widely adopted and often referenced in regulations.",
+          "explanation": "NIST CSF is organised around five functions: Identify, Protect, Detect, Respond, and Recover. It provides a common language for cybersecurity and helps organisations of all sizes understand and manage cybersecurity risk. While voluntary, it's widely adopted and often referenced in regulations.",
           "keyPoints": [
             "Five core functions: Identify, Protect, Detect, Respond, Recover",
             "Provides common language for cybersecurity",
@@ -488,7 +488,7 @@
             "Patches fix security vulnerabilities",
             "Critical patches should be applied quickly",
             "Testing is essential before applying patches",
-            "Downtime must be minimized in IACS",
+            "Downtime must be minimised in IACS",
             "Some legacy systems cannot be patched"
           ],
           "tierCorrelations": {

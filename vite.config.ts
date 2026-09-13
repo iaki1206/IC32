@@ -206,7 +206,8 @@ function vitePluginStorageProxy(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
 
 export default defineConfig({
-  base: '/IC32/',
+  // Use the root path for the private Tailscale deployment. Set VITE_BASE_PATH only if a sub-path deployment is needed.
+  base: process.env.VITE_BASE_PATH || '/',
   plugins,
   resolve: {
     alias: {
