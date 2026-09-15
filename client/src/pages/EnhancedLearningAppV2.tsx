@@ -3,7 +3,7 @@
  * Use British English, navy/blue accents, restrained borders, and clear hierarchy.
  * All existing IC32 study tools remain grouped under the IC32 top-level tab.
  */
-import { useState, useEffect, useMemo } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
@@ -33,7 +33,6 @@ import PartsPerRoleView from "@/components/PartsPerRoleView";
 import KnowledgeCheckView from "@/components/KnowledgeCheckView";
 import ChaptersView from "@/components/ChaptersView";
 import OTCyberHub from "@/components/OTCyberHub";
-import { ProgressDashboard } from "@/components/ProgressDashboard";
 import { useBookmarks } from "@/hooks/useBookmarks";
 import completeCourseData from "@/data/completeCourseData.json";
 
@@ -60,33 +59,33 @@ const platformTabs: Array<{
 }> = [
   {
     id: "ic32",
-    label: "IC32 Course",
-    eyebrow: "Syllabus Workspace",
-    description: "Cybersecurity Fundamentals study workspace with chapters, models, and goals",
+    label: "IC32",
+    eyebrow: "Active course",
+    description: "Cybersecurity Fundamentals study workspace",
   },
   {
     id: "ot",
     label: "OT/ICS Hub",
-    eyebrow: "Interactive modules",
-    description: "Hands-on OT/ICS cybersecurity tools, memory maps, and simulators",
-  },
-  {
-    id: "practice",
-    label: "Exam Practice",
-    eyebrow: "Self-assessment",
-    description: "Comprehensive question bank, verified keys, explanations, and course anchors",
+    eyebrow: "Interactive knowledge hub",
+    description: "Anchored learning path for industrial cybersecurity",
   },
   {
     id: "reference",
     label: "Reference Library",
-    eyebrow: "Standards & Roles",
-    description: "ISA/IEC 62443 standard family overview and parts per stakeholder role",
+    eyebrow: "Coming next",
+    description: "Standards, terminology, and quick-reference material",
+  },
+  {
+    id: "practice",
+    label: "Exam Practice",
+    eyebrow: "Coming next",
+    description: "Timed practice, exam simulations, and review sessions",
   },
   {
     id: "progress",
-    label: "Progress & Bookmarks",
-    eyebrow: "Metrics & Review",
-    description: "Learning progress metrics, completion tracker, and saved bookmarks",
+    label: "Progress & Notes",
+    eyebrow: "Coming next",
+    description: "Personal notes, revision plans, and learning history",
   },
 ];
 
@@ -107,7 +106,7 @@ const innerNavigation: Array<{
 
 function FutureTabPanel({ tab }: { tab: PlatformTab }) {
   const tabInfo = platformTabs.find((item) => item.id === tab);
-  if (!tabInfo || tab === "ic32") return null;
+  if (!tabInfo || tab === "ic32" || tab === "ot") return null;
 
   return (
     <div className="h-full overflow-y-auto p-4 sm:p-6">
@@ -156,99 +155,14 @@ function FutureTabPanel({ tab }: { tab: PlatformTab }) {
 }
 
 export default function EnhancedLearningAppV2() {
-  const [activePlatform, setActivePlatform] = useState<PlatformTab>(() => {
-    if (typeof window !== "undefined") {
-      const params = new URLSearchParams(window.location.search);
-      const platform = params.get("platform") as PlatformTab | null;
-      if (platform && platformTabs.some((p) => p.id === platform)) {
-        return platform;
-      }
-    }
-    return "ic32";
-  });
-
-  const [currentPage, setCurrentPage] = useState<InnerPage>(() => {
-    if (typeof window !== "undefined") {
-      const params = new URLSearchParams(window.location.search);
-      const page = params.get("page") as InnerPage | null;
-      if (page && innerNavigation.some((p) => p.id === page)) {
-        return page;
-      }
-    }
-    return "chapter";
-  });
-
+  const [activePlatform, setActivePlatform] = useState<PlatformTab>(() =>
+    new URLSearchParams(window.location.search).get("tab") === "ot" ? "ot" : "ic32",
+  );
+  const [currentPage, setCurrentPage] = useState<InnerPage>("chapter");
   const [selectedSection, setSelectedSection] = useState(enhancedCourseData.sections[0]);
   const [selectedTopic, setSelectedTopic] = useState<any>(enhancedCourseData.sections[0].topics[0]);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [completedSections, setCompletedSections] = useState<Set<number>>(new Set());
-
-  const [targetChapterId, setTargetChapterId] = useState<number>(() => {
-    if (typeof window !== "undefined") {
-      const params = new URLSearchParams(window.location.search);
-      const ch = params.get("chapterId");
-      if (ch) {
-        const parsed = parseInt(ch, 10);
-        if (!isNaN(parsed)) return parsed;
-      }
-    }
-    return 1;
-  });
-
-  const [targetTopicId, setTargetTopicId] = useState<string | undefined>(() => {
-    if (typeof window !== "undefined") {
-      const params = new URLSearchParams(window.location.search);
-      const t = params.get("topicId");
-      if (t) return t;
-    }
-    return undefined;
-  });
-
-  // Keep state in sync if URL query parameters change (e.g. browser navigation)
-  useEffect(() => {
-    const handleLocationChange = () => {
-      const params = new URLSearchParams(window.location.search);
-      const platform = params.get("platform") as PlatformTab | null;
-      const page = params.get("page") as InnerPage | null;
-      const ch = params.get("chapterId");
-      const t = params.get("topicId");
-
-      if (platform && platformTabs.some((p) => p.id === platform)) {
-        setActivePlatform(platform);
-      }
-      if (page && innerNavigation.some((p) => p.id === page)) {
-        setCurrentPage(page);
-      }
-      if (ch) {
-        const parsed = parseInt(ch, 10);
-        if (!isNaN(parsed)) setTargetChapterId(parsed);
-      }
-      if (t) {
-        setTargetTopicId(t);
-      }
-    };
-
-    window.addEventListener("popstate", handleLocationChange);
-    return () => window.removeEventListener("popstate", handleLocationChange);
-  }, []);
-
-  const handleNavigateToTopic = (chapterId: number, topicId?: string) => {
-    setTargetChapterId(chapterId);
-    setTargetTopicId(topicId);
-    setActivePlatform("ic32");
-    setCurrentPage("chapter");
-    if (typeof window !== "undefined") {
-      const url = new URL(window.location.href);
-      url.searchParams.set("page", "chapter");
-      url.searchParams.set("chapterId", String(chapterId));
-      if (topicId) {
-        url.searchParams.set("topicId", topicId);
-      } else {
-        url.searchParams.delete("topicId");
-      }
-      window.history.replaceState({}, "", url.toString());
-    }
-  };
 
   const { bookmarks, toggleBookmark, removeBookmark, bookmarkIds } = useBookmarks();
 
@@ -270,13 +184,6 @@ export default function EnhancedLearningAppV2() {
   const navigateToInnerPage = (page: InnerPage) => {
     setActivePlatform("ic32");
     setCurrentPage(page);
-    if (typeof window !== "undefined") {
-      const url = new URL(window.location.href);
-      url.searchParams.set("page", page);
-      url.searchParams.delete("chapterId");
-      url.searchParams.delete("topicId");
-      window.history.replaceState({}, "", url.toString());
-    }
   };
 
   const handleSearchResult = (result: any) => {
@@ -302,45 +209,6 @@ export default function EnhancedLearningAppV2() {
     };
     toggleBookmark(result);
   };
-
-  const stats = useMemo(() => {
-    const totalSections = enhancedCourseData.sections.length;
-    const completed = completedSections.size;
-    const inProgress = completed > 0 && completed < totalSections ? 1 : 0;
-    const notStarted = Math.max(0, totalSections - completed - inProgress);
-    return {
-      totalSections,
-      completedSections: completed,
-      inProgressSections: inProgress,
-      notStartedSections: notStarted,
-      quizzesTaken: 1,
-      averageQuizScore: 85,
-      bookmarkedItems: bookmarks.length,
-      studyStreak: 3,
-      totalStudyTime: 120,
-      lastStudyDate: new Date().toLocaleDateString("en-GB"),
-    };
-  }, [completedSections.size, bookmarks.length]);
-
-  const quizHistory = useMemo(
-    () => [
-      {
-        sectionName: "Section 1 - Control Systems",
-        score: 80,
-        questionsAnswered: 5,
-        correctAnswers: 4,
-        date: new Date().toLocaleDateString("en-GB"),
-      },
-      {
-        sectionName: "Section 4 - Security Levels",
-        score: 100,
-        questionsAnswered: 5,
-        correctAnswers: 5,
-        date: new Date().toLocaleDateString("en-GB"),
-      },
-    ],
-    []
-  );
 
   return (
     <div className="h-screen bg-gray-50 flex flex-col">
@@ -373,7 +241,7 @@ export default function EnhancedLearningAppV2() {
                   variant={activePlatform === tab.id ? "default" : "outline"}
                   onClick={() => setActivePlatform(tab.id)}
                   size="sm"
-                  className={`gap-2 ${activePlatform === tab.id ? "bg-blue-700 hover:bg-blue-800 text-white font-semibold" : "bg-white"}`}
+                  className={`gap-2 ${activePlatform === tab.id ? "bg-blue-700 hover:bg-blue-800" : "bg-white"}`}
                 >
                   {tab.id === "ic32" && <BookOpen className="h-4 w-4" />}
                   {tab.id === "ot" && <Radar className="h-4 w-4" />}
@@ -387,7 +255,7 @@ export default function EnhancedLearningAppV2() {
           </div>
 
           {activePlatform === "ic32" && (
-            <div className="mt-4 flex flex-wrap gap-2 border-t border-gray-100 pt-3" aria-label="IC32 course navigation">
+            <div className="mt-4 flex gap-2 overflow-x-auto border-t border-gray-100 pt-3" aria-label="IC32 course navigation">
               {innerNavigation.map((item) => {
                 const Icon = item.icon;
                 const label = item.id === "bookmarks" ? `${item.label} (${bookmarks.length})` : item.label;
@@ -397,7 +265,7 @@ export default function EnhancedLearningAppV2() {
                     variant={currentPage === item.id ? "secondary" : "ghost"}
                     onClick={() => navigateToInnerPage(item.id)}
                     size="sm"
-                    className={`gap-2 ${currentPage === item.id ? "bg-blue-50 text-blue-800 font-semibold" : "text-gray-600"}`}
+                    className={`flex-shrink-0 gap-2 ${currentPage === item.id ? "bg-blue-50 text-blue-800" : "text-gray-600"}`}
                   >
                     <Icon className="h-4 w-4" />
                     {label}
@@ -434,85 +302,13 @@ export default function EnhancedLearningAppV2() {
         )}
 
         <main className="flex-1 overflow-hidden">
-          {/* OT/ICS Hub Tab */}
-          {activePlatform === "ot" && (
-            <div className="h-full overflow-y-auto">
-              <OTCyberHub />
-            </div>
-          )}
+          {activePlatform !== "ic32" && activePlatform !== "ot" && <FutureTabPanel tab={activePlatform} />}
 
-          {/* Exam Practice Tab */}
-          {activePlatform === "practice" && (
-            <div className="h-full overflow-y-auto">
-              <KnowledgeCheckView onNavigateToTopic={handleNavigateToTopic} />
-            </div>
-          )}
+          {activePlatform === "ot" && <OTCyberHub />}
 
-          {/* Reference Library Tab */}
-          {activePlatform === "reference" && (
-            <div className="h-full overflow-y-auto p-4 sm:p-6 space-y-6">
-              <div className="flex flex-wrap gap-2 border-b border-gray-200 pb-3">
-                <Button
-                  variant={currentPage === "series" ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => setCurrentPage("series")}
-                  className="gap-2"
-                >
-                  <Layers className="w-4 h-4" />
-                  62443 Series Overview
-                </Button>
-                <Button
-                  variant={currentPage === "roles" ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => setCurrentPage("roles")}
-                  className="gap-2"
-                >
-                  <Users className="w-4 h-4" />
-                  Parts per Stakeholder Role
-                </Button>
-              </div>
-              {currentPage === "roles" ? (
-                <PartsPerRoleView
-                  onNavigateToSection={(sectionId) => {
-                    const section = enhancedCourseData.sections.find((s) => s.id === sectionId);
-                    if (section) {
-                      handleSelectSection(section);
-                      setActivePlatform("ic32");
-                      navigateToInnerPage("sections");
-                    }
-                  }}
-                  onNavigateToQuiz={() => {
-                    setActivePlatform("practice");
-                  }}
-                />
-              ) : (
-                <SeriesOverview />
-              )}
-            </div>
-          )}
-
-          {/* Progress & Bookmarks Tab */}
-          {activePlatform === "progress" && (
-            <div className="h-full overflow-y-auto p-4 sm:p-6 space-y-6">
-              <ProgressDashboard stats={stats} quizHistory={quizHistory} />
-              <Card className="p-4 bg-white border-gray-200">
-                <h3 className="font-bold text-gray-900 text-base mb-3 flex items-center gap-2">
-                  <Bookmark className="w-4 h-4 text-blue-600" />
-                  Saved Bookmarks ({bookmarks.length})
-                </h3>
-                <BookmarksPanel bookmarks={bookmarks} onRemoveBookmark={removeBookmark} onSelectBookmark={handleSearchResult} />
-              </Card>
-            </div>
-          )}
-
-          {/* IC32 Active Course Sub-Pages */}
           {activePlatform === "ic32" && currentPage === "chapter" && (
             <div className="h-full overflow-y-auto">
-              <ChaptersView
-                onNavigateToKnowledge={() => navigateToInnerPage("knowledge")}
-                initialChapterId={targetChapterId}
-                initialTopicId={targetTopicId}
-              />
+              <ChaptersView onNavigateToKnowledge={() => navigateToInnerPage("knowledge")} />
             </div>
           )}
 
@@ -594,7 +390,7 @@ export default function EnhancedLearningAppV2() {
 
           {activePlatform === "ic32" && (currentPage === "knowledge" || currentPage === "quiz") && (
             <div className="h-full overflow-y-auto">
-              <KnowledgeCheckView onNavigateToTopic={handleNavigateToTopic} />
+              <KnowledgeCheckView />
             </div>
           )}
 
@@ -609,24 +405,24 @@ export default function EnhancedLearningAppV2() {
       </div>
 
       {activePlatform === "ic32" && (
-        <nav className="flex flex-wrap gap-1.5 border-t border-gray-200 bg-white p-2 md:hidden" aria-label="Mobile IC32 navigation">
-          {innerNavigation.map((item) => (
+        <nav className="flex gap-1 overflow-x-auto border-t border-gray-200 bg-white p-2 md:hidden" aria-label="Mobile IC32 navigation">
+          {innerNavigation.slice(0, 5).map((item) => (
             <Button
               key={item.id}
               variant={currentPage === item.id ? "default" : "outline"}
               onClick={() => navigateToInnerPage(item.id)}
               size="sm"
-              className="text-xs py-1 px-2"
+              className="flex-shrink-0"
             >
-              {item.label === "Parts per Role & Alignment" ? "Roles" : item.label}
+              {item.label === "Parts per Role & Alignment" ? "Roles & Alignment" : item.label}
             </Button>
           ))}
         </nav>
       )}
 
-      {activePlatform !== "ic32" && (
+      {activePlatform !== "ic32" && activePlatform !== "ot" && (
         <div className="border-t border-gray-200 bg-white px-4 py-3 text-center text-xs text-gray-500">
-          Select <button type="button" className="font-semibold text-blue-700 hover:underline" onClick={() => setActivePlatform("ic32")}>IC32 Course</button> to return to the syllabus study workspace.
+          Select <button type="button" className="font-semibold text-blue-700 hover:underline" onClick={() => setActivePlatform("ic32")}>IC32</button> to return to the current course workspace.
         </div>
       )}
     </div>
