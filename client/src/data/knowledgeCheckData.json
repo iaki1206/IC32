@@ -2968,7 +2968,7 @@
       }
     },
     {
-      "question": "What is the primary purpose of the IACS Cybersecurity Lifecycle within the ISA/IEC 62443 Series? A. Establishes the technical requirements for securing industrial control systems at each stage of their lifecycle B. Provides a structured approach to identifying, mitigating and managing cybersecurity risks throughout an IACS’s operational lifespan C. Outlines the strategic approach for managing cybersecurity across the entire lifecycle of an IACS system D. Defines the cybersecurity technologies and tools required at each stage of the IACS lifecycle",
+      "question": "What is the primary purpose of the IACS Cybersecurity Lifecycle within the ISA/IEC 62443 Series?",
       "options": [
         {
           "letter": "A",
@@ -3013,7 +3013,7 @@
       }
     },
     {
-      "question": "Which of the following best describes how the Target Security Levels (SL-T) are used in the Security Level Lifecycle A. Used to address and identify potential vulnerabilities in the system B. Establishes a universal security standard with protocols that apply to all systems C. Provides specific technical specifications for securing every component within the IACS system D. Defines baseline security expectation that must be met or exceeded for each IACS zone",
+      "question": "Which of the following best describes how the Target Security Levels (SL-T) are used in the Security Level Lifecycle",
       "options": [
         {
           "letter": "A",
@@ -4061,7 +4061,7 @@
     },
     {
       "id": "excel-108",
-      "question": "Authorisation (user accounts) must be granted based on which of the following? A. Individual preferences B. Common needs for large groups C. Specific roles D. System complexity",
+      "question": "Authorisation (user accounts) must be granted based on which of the following?",
       "options": [
         "Individual preferences",
         "Common needs for large groups",
@@ -4082,7 +4082,7 @@
     },
     {
       "id": "excel-116",
-      "question": "In which layer is the physical address assigned? A. Layer 1 B. Layer 2 C. Layer 3 D. Layer 7",
+      "question": "In which layer is the physical address assigned?",
       "options": [
         "Layer 1",
         "Layer 2",
@@ -4103,7 +4103,7 @@
     },
     {
       "id": "excel-122",
-      "question": "What are the connections between security zones called? A. Firewalls B. Tunnels C. Pathways D. Conduits",
+      "question": "What are the connections between security zones called?",
       "options": [
         "Firewalls",
         "Tunnels",
@@ -4124,7 +4124,7 @@
     },
     {
       "id": "excel-142",
-      "question": "What is the name of the missing layer in the Open Systems Interconnection (OSI) model shown below? A. Control B. Protocol C. Transport D. User",
+      "question": "What is the name of the missing layer in the Open Systems Interconnection (OSI) model shown below?",
       "options": [
         "Control",
         "Protocol",
@@ -4145,7 +4145,7 @@
     },
     {
       "id": "excel-151",
-      "question": "What type of security level defines what a component or system is capable of meeting? A. Capability security level B. Achieved security level C. Design security level D. Target security level",
+      "question": "What type of security level defines what a component or system is capable of meeting?",
       "options": [
         "Capability security level",
         "Achieved security level",
@@ -4166,7 +4166,7 @@
     },
     {
       "id": "excel-154",
-      "question": "Which activity is part of establishing policy, organisation, and awareness? A. Communicate policies. B. Establish the risk tolerance. C. Identify detailed vulnerabilities. D. Implement countermeasures.",
+      "question": "Which activity is part of establishing policy, organisation, and awareness?",
       "options": [
         "Communicate policies.",
         "Establish the risk tolerance.",
@@ -4187,7 +4187,7 @@
     },
     {
       "id": "excel-157",
-      "question": "Which characteristic is MOST closely associated with the deployment of a demilitarised zone (DMZ)? A. Level 4 systems must use the DMZ to communicate with Level 3 and below. B. Level 0 can only interact with Level 1 through the firewall. C. Internet access through the firewall is allowed. D. Email is prevented, thereby mitigating the risk of phishing attempts.",
+      "question": "Which characteristic is MOST closely associated with the deployment of a demilitarised zone (DMZ)?",
       "options": [
         "Level 4 systems must use the DMZ to communicate with Level 3 and below.",
         "Level 0 can only interact with Level 1 through the firewall.",
@@ -4208,7 +4208,7 @@
     },
     {
       "id": "excel-168",
-      "question": "Which is the PRIMARY responsibility of the network layer of the Open Systems Interconnection (OSI) model? A. Forwards packets, including routing through intermediate routers B. Gives transparent transfer of data between end users C. Provides the rules for framing, converting electrical signals to data D. Handles the physics of getting a message from one device to another",
+      "question": "Which is the PRIMARY responsibility of the network layer of the Open Systems Interconnection (OSI) model?",
       "options": [
         "Forwards packets, including routing through intermediate routers",
         "Gives transparent transfer of data between end users",
@@ -4229,7 +4229,7 @@
     },
     {
       "id": "excel-178",
-      "question": "Which of the following is a cause for the increase in attacks on IACS? A. Use of proprietary communications protocols B. The move away from commercial off the shelf (COTS) systems, protocols, and networks C. Knowledge of exploits and tools readily available on the Internet D. Fewer personnel with system knowledge having access to IACS",
+      "question": "Which of the following is a cause for the increase in attacks on IACS?",
       "options": [
         "Use of proprietary communications protocols",
         "The move away from commercial off the shelf (COTS) systems, protocols, and networks",
@@ -4250,7 +4250,7 @@
     },
     {
       "id": "excel-182",
-      "question": "Which of the following is an element of security policy, organisation, and awareness? A. Product development requirements B. Staff training and security awareness C. Technical requirement assessment D. Penetration testing",
+      "question": "Which of the following is an element of security policy, organisation, and awareness?",
       "options": [
         "Product development requirements",
         "Staff training and security awareness",
@@ -4271,7 +4271,7 @@
     },
     {
       "id": "excel-199",
-      "question": "Which service does an Intrusion Detection System (IDS) provide? A. It is the lock on the door for networks and computer systems. B. It is effective against all vulnerabilities in networks and computer systems. C. It blocks malicious activity in networks and computer systems. D. It detects attempts to break into or misuse a computer system.",
+      "question": "Which service does an Intrusion Detection System (IDS) provide?",
       "options": [
         "It is the lock on the door for networks and computer systems.",
         "It is effective against all vulnerabilities in networks and computer systems.",
@@ -4292,7 +4292,7 @@
     },
     {
       "id": "excel-202",
-      "question": "Which steps are included in the ISA/IEC 62443 assess phase? A. Cybersecurity requirements specification and detailed cyber risk assessment B. Cybersecurity requirements specification and allocation of IACS assets to zones and conduits C. Detailed cyber risk assessment and cybersecurity maintenance, monitoring, and management of change D. Allocation of IACS assets to zones and conduits, and detailed cyber risk assessment",
+      "question": "Which steps are included in the ISA/IEC 62443 assess phase?",
       "options": [
         "Cybersecurity requirements specification and detailed cyber risk assessment",
         "Cybersecurity requirements specification and allocation of IACS assets to zones and conduits",
@@ -4313,7 +4313,7 @@
     },
     {
       "id": "excel-204",
-      "question": "Which steps are part of implementing countermeasures? A. Establish the risk tolerance and select common countermeasures. B. Establish the risk tolerance and update the business continuity plan. C. Select common countermeasures and update the business continuity plan. D. Select common countermeasures and collaborate with stakeholders.",
+      "question": "Which steps are part of implementing countermeasures?",
       "options": [
         "Establish the risk tolerance and select common countermeasures.",
         "Establish the risk tolerance and update the business continuity plan.",
@@ -4334,7 +4334,7 @@
     },
     {
       "id": "excel-207",
-      "question": "Whose responsibility is it to determine the level of risk an organisation is willing to tolerate? A. Management B. Legal Department C. Operations Department D. Safety Department",
+      "question": "Whose responsibility is it to determine the level of risk an organisation is willing to tolerate?",
       "options": [
         "Management",
         "Legal Department",
@@ -5598,7 +5598,7 @@
       "id": "kc-bank-031",
       "number": 139,
       "source": "External question bank — supplied list item 31",
-      "question": "In an IACS system, a typical security conduit consists of which of the following assets? Controllers, sensors, transmitters, and final control elements",
+      "question": "In an IACS system, a typical security conduit consists of which of the following assets?",
       "options": [
         {
           "letter": "C",

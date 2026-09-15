@@ -184,9 +184,9 @@ export default function KnowledgeCheckView() {
           <Badge className="bg-blue-500/20 text-blue-200 border-blue-400/30 mb-3 px-3 py-1 text-sm font-medium">
             Consolidated Question Bank ({questions.length} Unique Questions)
           </Badge>
-          <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl mb-2">Knowledge Checks & Exam Practice</h1>
+          <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl mb-2">Knowledge Checks</h1>
           <p className="text-blue-100 text-sm sm:text-base max-w-3xl leading-relaxed">
-            Unifying the IC32 PDF noteset, ITExam bank, real exam questions, and course quizzes. Use the source and chapter filters or review incorrect answers to target your exam revision precisely.
+            Unifying the IC32 question sources and course quizzes. Use the source and chapter filters or review incorrect answers to target your revision precisely.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-3 min-w-[260px]">

@@ -49,7 +49,7 @@ type InnerPage =
   | "knowledge"
   | "bookmarks";
 
-type PlatformTab = "ic32" | "ot" | "reference" | "practice" | "progress";
+type PlatformTab = "ic32" | "ot" | "reference" | "progress";
 
 const platformTabs: Array<{
   id: PlatformTab;
@@ -74,12 +74,6 @@ const platformTabs: Array<{
     label: "Reference Library",
     eyebrow: "Coming next",
     description: "Standards, terminology, and quick-reference material",
-  },
-  {
-    id: "practice",
-    label: "Exam Practice",
-    eyebrow: "Coming next",
-    description: "Timed practice, exam simulations, and review sessions",
   },
   {
     id: "progress",
@@ -246,7 +240,6 @@ export default function EnhancedLearningAppV2() {
                   {tab.id === "ic32" && <BookOpen className="h-4 w-4" />}
                   {tab.id === "ot" && <Radar className="h-4 w-4" />}
                   {tab.id === "reference" && <Layers className="h-4 w-4" />}
-                  {tab.id === "practice" && <CheckCircle2 className="h-4 w-4" />}
                   {tab.id === "progress" && <Target className="h-4 w-4" />}
                   {tab.label}
                 </Button>
