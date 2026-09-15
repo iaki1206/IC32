@@ -76,8 +76,14 @@ const availableChapters = Array.from(
   return numA - numB;
 });
 
+const initialCorrectSelections = Object.fromEntries(
+  questions
+    .map((question) => [question.id, correctLetters(question)])
+    .filter(([, letters]) => (letters as string[]).length > 0),
+) as Record<string, string[]>;
+
 export default function KnowledgeCheckView() {
-  const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string[]>>({});
+  const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string[]>>(initialCorrectSelections);
   const [showResults, setShowResults] = useState<Record<string, boolean>>({});
   const [quizSubmitted, setQuizSubmitted] = useState(false);
   const [sourceGroupFilter, setSourceGroupFilter] = useState("all");
