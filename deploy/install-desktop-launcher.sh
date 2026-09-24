@@ -2,29 +2,61 @@
 set -Eeuo pipefail
 
 APP_USER="${SUDO_USER:-${USER}}"
-DESKTOP_DIR="${HOME}/Desktop"
-if [[ "${APP_USER}" != "${USER}" ]]; then
-  DESKTOP_DIR="$(eval echo "~${APP_USER}")/Desktop"
+USER_HOME="$(getent passwd "${APP_USER}" | cut -d: -f6)"
+DESKTOP_DIR="${USER_HOME}/Desktop"
+BIN_DIR="${USER_HOME}/.local/bin"
+LAUNCHER="${BIN_DIR}/ic32-learning-platform-launcher"
+DESKTOP_FILE="${DESKTOP_DIR}/IC32-Learning-Platform.desktop"
+
+mkdir -p "${DESKTOP_DIR}" "${BIN_DIR}"
+
+cat > "${LAUNCHER}" <<'LAUNCHER_SCRIPT'
+#!/usr/bin/env bash
+set -u
+
+URL="https://gmtek.tail77a865.ts.net/IC33"
+SERVICE="ic32-learning-platform"
+
+if ! pkexec /bin/systemctl start "${SERVICE}"; then
+  printf 'Could not start %s.\n' "${SERVICE}"
+  printf 'Check: sudo systemctl status %s\n' "${SERVICE}"
+  read -r -p 'Press Enter to close...'
+  exit 1
 fi
 
-mkdir -p "${DESKTOP_DIR}"
+for attempt in $(seq 1 15); do
+  if curl -fsSI --max-time 2 http://127.0.0.1:3000/IC33 >/dev/null 2>&1; then
+    if command -v xdg-open >/dev/null 2>&1; then
+      xdg-open "${URL}" >/dev/null 2>&1 &
+    else
+      printf 'Application is running at: %s\n' "${URL}"
+    fi
+    exit 0
+  fi
+  sleep 1
+done
 
-LAUNCHER="${DESKTOP_DIR}/IC32-Learning-Platform.desktop"
-cat > "${LAUNCHER}" <<'DESKTOP'
+printf 'The service started but did not answer on port 3000.\n'
+printf 'Check: sudo journalctl -u %s -n 80 --no-pager\n' "${SERVICE}"
+read -r -p 'Press Enter to close...'
+exit 1
+LAUNCHER_SCRIPT
+
+cat > "${DESKTOP_FILE}" <<DESKTOP_ENTRY
 [Desktop Entry]
 Version=1.0
 Type=Application
 Name=IC32 / IC33 Learning Platform
 Comment=Start the private IC32 and IC33 learning platform
-Exec=sh -c 'pkexec systemctl start ic32-learning-platform && sleep 2 && xdg-open https://gmtek.tail77a865.ts.net/IC33'
+Exec=${LAUNCHER}
 Icon=web-browser
 Terminal=true
 Categories=Education;Network;
 StartupNotify=true
-DESKTOP
+DESKTOP_ENTRY
 
-chmod +x "${LAUNCHER}"
-chown "${APP_USER}:${APP_USER}" "${LAUNCHER}"
+chmod +x "${LAUNCHER}" "${DESKTOP_FILE}"
+chown "${APP_USER}:${APP_USER}" "${LAUNCHER}" "${DESKTOP_FILE}"
 
-printf 'Desktop launcher created at: %s\n' "${LAUNCHER}"
-printf 'Double-click it, approve the system password prompt, and IC33 will open.\n'
+printf 'Launcher installed:\n  %s\n  %s\n' "${DESKTOP_FILE}" "${LAUNCHER}"
+printf 'Double-click the desktop icon, approve the password prompt, and IC33 will open.\n'
