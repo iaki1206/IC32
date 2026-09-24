@@ -3,6 +3,7 @@ set -Eeuo pipefail
 
 APP_USER="${SUDO_USER:-${USER}}"
 USER_HOME="$(getent passwd "${APP_USER}" | cut -d: -f6)"
+DESKTOP_DIR=""
 if command -v xdg-user-dir >/dev/null 2>&1; then
   DESKTOP_DIR="$(sudo -u "${APP_USER}" xdg-user-dir DESKTOP 2>/dev/null || true)"
 fi
@@ -14,35 +15,8 @@ DESKTOP_FILE="${DESKTOP_DIR}/IC32-Learning-Platform.desktop"
 mkdir -p "${DESKTOP_DIR}" "${BIN_DIR}"
 
 cat > "${LAUNCHER}" <<'LAUNCHER_SCRIPT'
-#!/usr/bin/env bash
-set -u
-
-URL="https://gmtek.tail77a865.ts.net/IC33"
-SERVICE="ic32-learning-platform"
-
-if ! pkexec /bin/systemctl start "${SERVICE}"; then
-  printf 'Could not start %s.\n' "${SERVICE}"
-  printf 'Check: sudo systemctl status %s\n' "${SERVICE}"
-  read -r -p 'Press Enter to close...'
-  exit 1
-fi
-
-for attempt in $(seq 1 15); do
-  if curl -fsSI --max-time 2 http://127.0.0.1:3000/IC33 >/dev/null 2>&1; then
-    if command -v xdg-open >/dev/null 2>&1; then
-      xdg-open "${URL}" >/dev/null 2>&1 &
-    else
-      printf 'Application is running at: %s\n' "${URL}"
-    fi
-    exit 0
-  fi
-  sleep 1
-done
-
-printf 'The service started but did not answer on port 3000.\n'
-printf 'Check: sudo journalctl -u %s -n 80 --no-pager\n' "${SERVICE}"
-read -r -p 'Press Enter to close...'
-exit 1
+#!/bin/sh
+exec xdg-open "https://gmtek.tail77a865.ts.net/IC33"
 LAUNCHER_SCRIPT
 
 cat > "${DESKTOP_FILE}" <<DESKTOP_ENTRY
@@ -50,10 +24,10 @@ cat > "${DESKTOP_FILE}" <<DESKTOP_ENTRY
 Version=1.0
 Type=Application
 Name=IC32 / IC33 Learning Platform
-Comment=Start the private IC32 and IC33 learning platform
+Comment=Open the private IC32 and IC33 learning platform
 Exec=${LAUNCHER}
 Icon=web-browser
-Terminal=true
+Terminal=false
 Categories=Education;Network;
 StartupNotify=true
 DESKTOP_ENTRY
@@ -65,5 +39,6 @@ if command -v gio >/dev/null 2>&1; then
   sudo -u "${APP_USER}" gio set "${DESKTOP_FILE}" metadata::trusted true 2>/dev/null || true
 fi
 
-printf 'Launcher installed:\n  %s\n  %s\n' "${DESKTOP_FILE}" "${LAUNCHER}"
-printf 'Double-click the desktop icon, approve the password prompt, and IC33 will open.\n'
+printf 'Launcher installed at: %s\n' "${DESKTOP_FILE}"
+printf 'It opens: https://gmtek.tail77a865.ts.net/IC33\n'
+printf 'If the icon is not visible, open the Desktop folder and press F5.\n'
