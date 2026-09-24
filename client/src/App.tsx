@@ -12,6 +12,7 @@ function Router() {
     <Switch>
       <Route path={"/"} component={EnhancedLearningAppV2} />
       <Route path={"/IC32"} component={EnhancedLearningAppV2} />
+      <Route path={"/IC33"} component={EnhancedLearningAppV2} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

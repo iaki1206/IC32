@@ -33,6 +33,7 @@ import PartsPerRoleView from "@/components/PartsPerRoleView";
 import KnowledgeCheckView from "@/components/KnowledgeCheckView";
 import ChaptersView from "@/components/ChaptersView";
 import OTCyberHub from "@/components/OTCyberHub";
+import IC33Course from "@/components/IC33Course";
 import { useBookmarks } from "@/hooks/useBookmarks";
 import completeCourseData from "@/data/completeCourseData.json";
 
@@ -49,7 +50,7 @@ type InnerPage =
   | "knowledge"
   | "bookmarks";
 
-type PlatformTab = "ic32" | "ot" | "reference" | "progress";
+type PlatformTab = "ic32" | "ic33" | "ot" | "reference" | "progress";
 
 const platformTabs: Array<{
   id: PlatformTab;
@@ -62,6 +63,12 @@ const platformTabs: Array<{
     label: "IC32",
     eyebrow: "Active course",
     description: "Cybersecurity Fundamentals study workspace",
+  },
+  {
+    id: "ic33",
+    label: "IC33",
+    eyebrow: "Separate course",
+    description: "Industrial cybersecurity risk assessment and HSE evidence",
   },
   {
     id: "ot",
@@ -100,7 +107,7 @@ const innerNavigation: Array<{
 
 function FutureTabPanel({ tab }: { tab: PlatformTab }) {
   const tabInfo = platformTabs.find((item) => item.id === tab);
-  if (!tabInfo || tab === "ic32" || tab === "ot") return null;
+  if (!tabInfo || tab === "ic32" || tab === "ic33" || tab === "ot") return null;
 
   return (
     <div className="h-full overflow-y-auto p-4 sm:p-6">
@@ -150,7 +157,11 @@ function FutureTabPanel({ tab }: { tab: PlatformTab }) {
 
 export default function EnhancedLearningAppV2() {
   const [activePlatform, setActivePlatform] = useState<PlatformTab>(() =>
-    new URLSearchParams(window.location.search).get("tab") === "ot" ? "ot" : "ic32",
+    window.location.pathname.toLowerCase().includes("ic33") || new URLSearchParams(window.location.search).get("tab") === "ic33"
+      ? "ic33"
+      : new URLSearchParams(window.location.search).get("tab") === "ot"
+      ? "ot"
+      : "ic32",
   );
   const [currentPage, setCurrentPage] = useState<InnerPage>("chapter");
   const [selectedSection, setSelectedSection] = useState(enhancedCourseData.sections[0]);
@@ -238,6 +249,7 @@ export default function EnhancedLearningAppV2() {
                   className={`gap-2 ${activePlatform === tab.id ? "bg-blue-700 hover:bg-blue-800" : "bg-white"}`}
                 >
                   {tab.id === "ic32" && <BookOpen className="h-4 w-4" />}
+                  {tab.id === "ic33" && <Shield className="h-4 w-4" />}
                   {tab.id === "ot" && <Radar className="h-4 w-4" />}
                   {tab.id === "reference" && <Layers className="h-4 w-4" />}
                   {tab.id === "progress" && <Target className="h-4 w-4" />}
@@ -295,9 +307,11 @@ export default function EnhancedLearningAppV2() {
         )}
 
         <main className="flex-1 overflow-hidden">
-          {activePlatform !== "ic32" && activePlatform !== "ot" && <FutureTabPanel tab={activePlatform} />}
+          {activePlatform !== "ic32" && activePlatform !== "ic33" && activePlatform !== "ot" && <FutureTabPanel tab={activePlatform} />}
 
           {activePlatform === "ot" && <OTCyberHub />}
+
+          {activePlatform === "ic33" && <IC33Course />}
 
           {activePlatform === "ic32" && currentPage === "chapter" && (
             <div className="h-full overflow-y-auto">
@@ -413,7 +427,7 @@ export default function EnhancedLearningAppV2() {
         </nav>
       )}
 
-      {activePlatform !== "ic32" && activePlatform !== "ot" && (
+      {activePlatform !== "ic32" && activePlatform !== "ic33" && activePlatform !== "ot" && (
         <div className="border-t border-gray-200 bg-white px-4 py-3 text-center text-xs text-gray-500">
           Select <button type="button" className="font-semibold text-blue-700 hover:underline" onClick={() => setActivePlatform("ic32")}>IC32</button> to return to the current course workspace.
         </div>
