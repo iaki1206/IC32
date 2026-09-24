@@ -2,7 +2,7 @@
   "title": "Consolidated Knowledge Checks with Explanation Anchors — ISA/IEC 62443 PDF Priority",
   "description": "A deduplicated IC32 question bank. Where the supplied ISA/IEC 62443 PDF overlaps earlier questions, the PDF version is retained without wording distortion. After answering, each keyed response links to the relevant OT/ICS learning anchor.",
   "language": "British English",
-  "totalQuestions": 366,
+  "totalQuestions": 323,
   "answerableQuestions": 366,
   "questionsWithoutSuppliedAnswerKey": 0,
   "questions": [
@@ -4060,132 +4060,6 @@
       }
     },
     {
-      "id": "excel-108",
-      "question": "Authorisation (user accounts) must be granted based on which of the following?",
-      "options": [
-        "Individual preferences",
-        "Common needs for large groups",
-        "Specific roles",
-        "System complexity"
-      ],
-      "correctAnswer": "C",
-      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "WHY",
-        "label": "OT/ICS fundamentals, risk and people",
-        "reason": "Review the fundamentals and risk context before memorising the answer.",
-        "href": "/?tab=ot&anchor=why"
-      },
-      "number": 92
-    },
-    {
-      "id": "excel-116",
-      "question": "In which layer is the physical address assigned?",
-      "options": [
-        "Layer 1",
-        "Layer 2",
-        "Layer 3",
-        "Layer 7"
-      ],
-      "correctAnswer": "B",
-      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "FLOW",
-        "label": "OSI, networking and industrial protocols",
-        "reason": "Review the OSI, networking or industrial-protocol explanation that shows how this answer works.",
-        "href": "/?tab=ot&anchor=flow"
-      },
-      "number": 93
-    },
-    {
-      "id": "excel-122",
-      "question": "What are the connections between security zones called?",
-      "options": [
-        "Firewalls",
-        "Tunnels",
-        "Pathways",
-        "Conduits"
-      ],
-      "correctAnswer": "D",
-      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "WHERE",
-        "label": "Zones, conduits, Purdue architecture and boundary controls",
-        "reason": "Review the architecture, zones, conduits or boundary-control explanation that places this answer in context.",
-        "href": "/?tab=ot&anchor=where"
-      },
-      "number": 94
-    },
-    {
-      "id": "excel-142",
-      "question": "What is the name of the missing layer in the Open Systems Interconnection (OSI) model shown below?",
-      "options": [
-        "Control",
-        "Protocol",
-        "Transport",
-        "User"
-      ],
-      "correctAnswer": "C",
-      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "FLOW",
-        "label": "OSI, networking and industrial protocols",
-        "reason": "Review the OSI, networking or industrial-protocol explanation that shows how this answer works.",
-        "href": "/?tab=ot&anchor=flow"
-      },
-      "number": 95
-    },
-    {
-      "id": "excel-151",
-      "question": "What type of security level defines what a component or system is capable of meeting?",
-      "options": [
-        "Capability security level",
-        "Achieved security level",
-        "Design security level",
-        "Target security level"
-      ],
-      "correctAnswer": "A",
-      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "WHAT",
-        "label": "ISA/IEC 62443, CSMS, Foundational Requirements and Security Levels",
-        "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
-        "href": "/?tab=ot&anchor=what"
-      },
-      "number": 96
-    },
-    {
-      "id": "excel-154",
-      "question": "Which activity is part of establishing policy, organisation, and awareness?",
-      "options": [
-        "Communicate policies.",
-        "Establish the risk tolerance.",
-        "Identify detailed vulnerabilities.",
-        "Implement countermeasures."
-      ],
-      "correctAnswer": "A",
-      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "WHY",
-        "label": "OT/ICS fundamentals, risk and people",
-        "reason": "Review the fundamentals and risk context before memorising the answer.",
-        "href": "/?tab=ot&anchor=why"
-      },
-      "number": 97
-    },
-    {
       "id": "excel-157",
       "question": "Which characteristic is MOST closely associated with the deployment of a demilitarised zone (DMZ)?",
       "options": [
@@ -4204,91 +4078,7 @@
         "reason": "Review the architecture, zones, conduits or boundary-control explanation that places this answer in context.",
         "href": "/?tab=ot&anchor=where"
       },
-      "number": 98
-    },
-    {
-      "id": "excel-168",
-      "question": "Which is the PRIMARY responsibility of the network layer of the Open Systems Interconnection (OSI) model?",
-      "options": [
-        "Forwards packets, including routing through intermediate routers",
-        "Gives transparent transfer of data between end users",
-        "Provides the rules for framing, converting electrical signals to data",
-        "Handles the physics of getting a message from one device to another"
-      ],
-      "correctAnswer": "A",
-      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "FLOW",
-        "label": "OSI, networking and industrial protocols",
-        "reason": "Review the OSI, networking or industrial-protocol explanation that shows how this answer works.",
-        "href": "/?tab=ot&anchor=flow"
-      },
-      "number": 99
-    },
-    {
-      "id": "excel-178",
-      "question": "Which of the following is a cause for the increase in attacks on IACS?",
-      "options": [
-        "Use of proprietary communications protocols",
-        "The move away from commercial off the shelf (COTS) systems, protocols, and networks",
-        "Knowledge of exploits and tools readily available on the Internet",
-        "Fewer personnel with system knowledge having access to IACS"
-      ],
-      "correctAnswer": "C",
-      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "FLOW",
-        "label": "OSI, networking and industrial protocols",
-        "reason": "Review the OSI, networking or industrial-protocol explanation that shows how this answer works.",
-        "href": "/?tab=ot&anchor=flow"
-      },
-      "number": 100
-    },
-    {
-      "id": "excel-182",
-      "question": "Which of the following is an element of security policy, organisation, and awareness?",
-      "options": [
-        "Product development requirements",
-        "Staff training and security awareness",
-        "Technical requirement assessment",
-        "Penetration testing"
-      ],
-      "correctAnswer": "B",
-      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "IMPROVE",
-        "label": "Lifecycle, patch management and secure development",
-        "reason": "Review the lifecycle, patching or secure-development explanation that supports this answer.",
-        "href": "/?tab=ot&anchor=improve"
-      },
-      "number": 101
-    },
-    {
-      "id": "excel-199",
-      "question": "Which service does an Intrusion Detection System (IDS) provide?",
-      "options": [
-        "It is the lock on the door for networks and computer systems.",
-        "It is effective against all vulnerabilities in networks and computer systems.",
-        "It blocks malicious activity in networks and computer systems.",
-        "It detects attempts to break into or misuse a computer system."
-      ],
-      "correctAnswer": "D",
-      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "SEE",
-        "label": "Monitoring, detection and incident response",
-        "reason": "Review the monitoring, detection or response explanation that explains this answer.",
-        "href": "/?tab=ot&anchor=see"
-      },
-      "number": 102
+      "number": 92
     },
     {
       "id": "excel-202",
@@ -4309,91 +4099,7 @@
         "reason": "Review the lifecycle, patching or secure-development explanation that supports this answer.",
         "href": "/?tab=ot&anchor=improve"
       },
-      "number": 103
-    },
-    {
-      "id": "excel-204",
-      "question": "Which steps are part of implementing countermeasures?",
-      "options": [
-        "Establish the risk tolerance and select common countermeasures.",
-        "Establish the risk tolerance and update the business continuity plan.",
-        "Select common countermeasures and update the business continuity plan.",
-        "Select common countermeasures and collaborate with stakeholders."
-      ],
-      "correctAnswer": "A",
-      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "WHY",
-        "label": "OT/ICS fundamentals, risk and people",
-        "reason": "Review the fundamentals and risk context before memorising the answer.",
-        "href": "/?tab=ot&anchor=why"
-      },
-      "number": 104
-    },
-    {
-      "id": "excel-207",
-      "question": "Whose responsibility is it to determine the level of risk an organisation is willing to tolerate?",
-      "options": [
-        "Management",
-        "Legal Department",
-        "Operations Department",
-        "Safety Department"
-      ],
-      "correctAnswer": "A",
-      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "WHY",
-        "label": "OT/ICS fundamentals, risk and people",
-        "reason": "Review the fundamentals and risk context before memorising the answer.",
-        "href": "/?tab=ot&anchor=why"
-      },
-      "number": 105
-    },
-    {
-      "id": "pasted3-211",
-      "question": "A company discovers malware on a portable USB device used within its IACS environment. According to the course material, which SP Element and controls would be most relevant to address this issue?",
-      "options": [
-        "SP Element 1 — Processes for discovery of security anomalies",
-        "SP Element 2 — Asset inventory baseline",
-        "SP Element 4 — Component hardening and dedicated portable media",
-        "SP Element 7 — Incident handling and response"
-      ],
-      "correctAnswer": "C",
-      "explanation": "Correct answer is C. Extracted from verified IC32 test bank (pasted_content_3.txt).",
-      "chapter": 15,
-      "source": "IC32 Test Bank 127 (pasted_content_3.txt)",
-      "explanationAnchor": {
-        "anchor": "SEE",
-        "label": "Monitoring, detection and incident response",
-        "reason": "Review the monitoring, detection or response explanation that explains this answer.",
-        "href": "/?tab=ot&anchor=see"
-      },
-      "number": 106
-    },
-    {
-      "id": "pasted3-214",
-      "question": "Whose responsibility is it to determine the level of risk an organisation is willing to tolerate?",
-      "options": [
-        "Management",
-        "Legal Department",
-        "Operations Department",
-        "Safety Department"
-      ],
-      "correctAnswer": "A",
-      "explanation": "Correct answer is A. Extracted from verified IC32 test bank (pasted_content_3.txt).",
-      "chapter": 15,
-      "source": "IC32 Test Bank 127 (pasted_content_3.txt)",
-      "explanationAnchor": {
-        "anchor": "WHY",
-        "label": "OT/ICS fundamentals, risk and people",
-        "reason": "Review the fundamentals and risk context before memorising the answer.",
-        "href": "/?tab=ot&anchor=why"
-      },
-      "number": 107
+      "number": 93
     },
     {
       "id": "pasted3-215",
@@ -4414,7 +4120,7 @@
         "reason": "Review the OSI, networking or industrial-protocol explanation that shows how this answer works.",
         "href": "/?tab=ot&anchor=flow"
       },
-      "number": 108
+      "number": 94
     },
     {
       "id": "pasted3-216",
@@ -4435,7 +4141,7 @@
         "reason": "Review the OSI, networking or industrial-protocol explanation that shows how this answer works.",
         "href": "/?tab=ot&anchor=flow"
       },
-      "number": 109
+      "number": 95
     },
     {
       "id": "pasted3-217",
@@ -4456,7 +4162,7 @@
         "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
         "href": "/?tab=ot&anchor=what"
       },
-      "number": 110
+      "number": 96
     },
     {
       "id": "pasted3-218",
@@ -4477,7 +4183,7 @@
         "reason": "Review the lifecycle, patching or secure-development explanation that supports this answer.",
         "href": "/?tab=ot&anchor=improve"
       },
-      "number": 111
+      "number": 97
     },
     {
       "id": "pasted3-219",
@@ -4498,7 +4204,7 @@
         "reason": "Review the monitoring, detection or response explanation that explains this answer.",
         "href": "/?tab=ot&anchor=see"
       },
-      "number": 112
+      "number": 98
     },
     {
       "id": "pasted3-220",
@@ -4519,7 +4225,7 @@
         "reason": "Review the monitoring, detection or response explanation that explains this answer.",
         "href": "/?tab=ot&anchor=see"
       },
-      "number": 113
+      "number": 99
     },
     {
       "id": "pasted3-221",
@@ -4540,7 +4246,7 @@
         "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
         "href": "/?tab=ot&anchor=what"
       },
-      "number": 114
+      "number": 100
     },
     {
       "id": "pasted3-222",
@@ -4559,7 +4265,7 @@
         "reason": "Review the lifecycle, patching or secure-development explanation that supports this answer.",
         "href": "/?tab=ot&anchor=improve"
       },
-      "number": 115
+      "number": 101
     },
     {
       "id": "pasted3-223",
@@ -4580,7 +4286,7 @@
         "reason": "Review the OSI, networking or industrial-protocol explanation that shows how this answer works.",
         "href": "/?tab=ot&anchor=flow"
       },
-      "number": 116
+      "number": 102
     },
     {
       "id": "pasted3-224",
@@ -4601,11 +4307,11 @@
         "reason": "Review the fundamentals and risk context before memorising the answer.",
         "href": "/?tab=ot&anchor=why"
       },
-      "number": 117
+      "number": 103
     },
     {
       "id": "kc-bank-001",
-      "number": 118,
+      "number": 104,
       "source": "External question bank — supplied list item 1",
       "question": "A company is evaluating its supply chain security after experiencing a breach. What steps should it take to mitigate future risks? (Select All that Apply)",
       "options": [
@@ -4654,7 +4360,7 @@
     },
     {
       "id": "kc-bank-002",
-      "number": 119,
+      "number": 105,
       "source": "External question bank — supplied list item 2",
       "question": "A critical infrastructure facility is assessing its cybersecurity posture. Which standard should it reference for developing a comprehensive cybersecurity management system (CSMS)?",
       "options": [
@@ -4699,7 +4405,7 @@
     },
     {
       "id": "kc-bank-003",
-      "number": 120,
+      "number": 106,
       "source": "External question bank — supplied list item 3",
       "question": "What are the consequences of failing to adhere to ISA/IEC 62443-4-1 during the product development lifecycle? (Select All that Apply)",
       "options": [
@@ -4744,7 +4450,7 @@
     },
     {
       "id": "kc-bank-004",
-      "number": 121,
+      "number": 107,
       "source": "External question bank — supplied list item 4",
       "question": "In a cybersecurity incident involving a breach of sensitive data, what steps should the incident response team take immediately following the detection of the breach? (Select All that Apply)",
       "options": [
@@ -4789,7 +4495,7 @@
     },
     {
       "id": "kc-bank-005",
-      "number": 122,
+      "number": 108,
       "source": "External question bank — supplied list item 5",
       "question": "A system integrator is asked to justify why the project uses defence-in-depth for a chemical blending line. Which statements are correct? (Select All that Apply)",
       "options": [
@@ -4838,7 +4544,7 @@
     },
     {
       "id": "kc-bank-006",
-      "number": 123,
+      "number": 109,
       "source": "External question bank — supplied list item 6",
       "question": "A company is reviewing its cybersecurity policies to ensure compliance with ISA/IEC 62443. Which aspect should be prioritised in this review?",
       "options": [
@@ -4883,7 +4589,7 @@
     },
     {
       "id": "kc-bank-007",
-      "number": 124,
+      "number": 110,
       "source": "External question bank — supplied list item 7",
       "question": "An organisation is undergoing an audit against ISA/IEC 62443-4-1 for their secure product development lifecycle. The auditors find that the development team lacks a formal process for handling third-party software components. Which of the following actions should the organisation take to align with the standard? (Select all that apply)",
       "options": [
@@ -4930,7 +4636,7 @@
     },
     {
       "id": "kc-bank-008",
-      "number": 125,
+      "number": 111,
       "source": "External question bank — supplied list item 8",
       "question": "A company mandates that all new PLC purchases must be from vendors who follow ISA/IEC 62443-4-1. Why is this mandate effective? (Select All that Apply)",
       "options": [
@@ -4975,7 +4681,7 @@
     },
     {
       "id": "kc-bank-009",
-      "number": 126,
+      "number": 112,
       "source": "External question bank — supplied list item 9",
       "question": "A chemical plant documents the security needs for a new historian-to-ERP interface after a formal assessment. The project manager asks which statements belong in the Cybersecurity Requirements Specification. (Select All that Apply)",
       "options": [
@@ -5024,7 +4730,7 @@
     },
     {
       "id": "kc-bank-010",
-      "number": 127,
+      "number": 113,
       "source": "External question bank — supplied list item 10",
       "question": "Which of the following is a key goal of an IACS security policy?",
       "options": [
@@ -5069,7 +4775,7 @@
     },
     {
       "id": "kc-bank-011",
-      "number": 128,
+      "number": 114,
       "source": "External question bank — supplied list item 11",
       "question": "Which of the following actions are essential during the design phase of a security policy? (Select All that Apply)",
       "options": [
@@ -5118,7 +4824,7 @@
     },
     {
       "id": "kc-bank-012",
-      "number": 129,
+      "number": 115,
       "source": "External question bank — supplied list item 12",
       "question": "A technician is debugging an issue on a Profibus network. They notice packet errors. Which OSI layer is primarily responsible for framing and error detection in this serial communication?",
       "options": [
@@ -5167,7 +4873,7 @@
     },
     {
       "id": "kc-bank-013",
-      "number": 130,
+      "number": 116,
       "source": "External question bank — supplied list item 13",
       "question": "A plant is defining a CRS for a new zone where a historian, PLCs, and engineering tools will coexist. Which statements are valid? (Select All that Apply)",
       "options": [
@@ -5216,7 +4922,7 @@
     },
     {
       "id": "kc-bank-014",
-      "number": 131,
+      "number": 117,
       "source": "External question bank — supplied list item 14",
       "question": "A security analyst is reviewing an IACS for potential vulnerabilities related to the OSI model. Which layers should they focus on to address communication security? (Select All that Apply)",
       "options": [
@@ -5265,7 +4971,7 @@
     },
     {
       "id": "kc-bank-015",
-      "number": 132,
+      "number": 118,
       "source": "External question bank — supplied list item 15",
       "question": "A cybersecurity specialist is evaluating the different types of ISASecure certifications available for IACS. Which of the following certifications focus specifically on personnel competency? (Select All that Apply)",
       "options": [
@@ -5314,7 +5020,7 @@
     },
     {
       "id": "kc-bank-016",
-      "number": 133,
+      "number": 119,
       "source": "External question bank — supplied list item 16",
       "question": "In preparing for ISASecure certification, a company must demonstrate compliance with which of the following? (Select All that Apply)",
       "options": [
@@ -5363,7 +5069,7 @@
     },
     {
       "id": "kc-bank-017",
-      "number": 134,
+      "number": 120,
       "source": "External question bank — supplied list item 17",
       "question": "A company is using OPC UA and wants to protect the configuration settings. What does the \"Confidentiality\" aspect of OPC UA security involve?",
       "options": [
@@ -5412,7 +5118,7 @@
     },
     {
       "id": "kc-bank-018",
-      "number": 135,
+      "number": 121,
       "source": "External question bank — supplied list item 18",
       "question": "A plant is rolling out a firmware update to remote terminal units after a configuration change request. Which change management controls are most appropriate?",
       "options": [
@@ -5457,7 +5163,7 @@
     },
     {
       "id": "kc-bank-019",
-      "number": 136,
+      "number": 122,
       "source": "External question bank — supplied list item 19",
       "question": "A company’s IACS has been designed to ensure data integrity and confidentiality. Which of the following measures would best support these goals? (Select All that Apply)",
       "options": [
@@ -5502,7 +5208,7 @@
     },
     {
       "id": "kc-bank-020",
-      "number": 137,
+      "number": 123,
       "source": "External question bank — supplied list item 20",
       "question": "A power grid operator is deploying a new cloud-based control system. To secure the connection between the on-site controllers and the cloud provider, they choose to use an encrypted VPN tunnel. What is the main security objective of this mitigation?",
       "options": [
@@ -5547,7 +5253,7 @@
     },
     {
       "id": "kc-bank-021",
-      "number": 138,
+      "number": 124,
       "source": "External question bank — supplied list item 21",
       "question": "A power distribution operator is asking whether SCADA is only a monitoring tool or can also support control. Which statements are correct? (Select All that Apply)",
       "options": [
@@ -5595,53 +5301,8 @@
       }
     },
     {
-      "id": "kc-bank-031",
-      "number": 139,
-      "source": "External question bank — supplied list item 31",
-      "question": "In an IACS system, a typical security conduit consists of which of the following assets?",
-      "options": [
-        {
-          "letter": "C",
-          "text": "Ferrous, thickwall, and threaded conduit including raceways"
-        },
-        {
-          "letter": "A",
-          "text": "Controllers, sensors, transmitters, and final control elements"
-        },
-        {
-          "letter": "B",
-          "text": "Wiring, routers, switches, and network management devices"
-        },
-        {
-          "letter": "D",
-          "text": "Power lines, cabinet enclosures, and protective grounds Exam"
-        }
-      ],
-      "correctAnswer": "B",
-      "correctAnswers": [
-        "B"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "The supplied key identifies B: Wiring, routers, switches, and network management devices. Use the linked course anchor to review the concept before relying on this answer.",
-      "difficulty": "mixed",
-      "sourceType": "external_question_bank",
-      "sourceReferences": [
-        "pasted_content.txt",
-        "Master list item 31"
-      ],
-      "answerStatus": "supplied_unvalidated",
-      "validationNote": "Third-party supplied key; verify against the official course material before an examination.",
-      "topic": "IC32 / ISA/IEC 62443",
-      "explanationAnchor": {
-        "anchor": "WHERE",
-        "label": "Zones, conduits, Purdue architecture and boundary controls",
-        "reason": "Review the architecture, zones, conduits or boundary-control explanation that places this answer in context.",
-        "href": "/?tab=ot&anchor=where"
-      }
-    },
-    {
       "id": "pdf-isa-62443-109",
-      "number": 140,
+      "number": 125,
       "source": "ISA/IEC 62443 PDF — Question 109",
       "question": "Which of the following are the critical variables related to access control?",
       "options": [
@@ -5687,7 +5348,7 @@
     },
     {
       "id": "pdf-isa-62443-058",
-      "number": 141,
+      "number": 126,
       "source": "ISA/IEC 62443 PDF — Question 58",
       "question": "Which is an important difference between IT systems and IACS?",
       "options": [
@@ -5733,7 +5394,7 @@
     },
     {
       "id": "pdf-isa-62443-150",
-      "number": 142,
+      "number": 127,
       "source": "ISA/IEC 62443 PDF — Question 150",
       "question": "Who is responsible for defining the tolerable residual cybersecurity risk as an input requirement for all activities?",
       "options": [
@@ -5779,7 +5440,7 @@
     },
     {
       "id": "pdf-isa-62443-224",
-      "number": 143,
+      "number": 128,
       "source": "ISA/IEC 62443 PDF — Question 224",
       "question": "Which of the following is NOT a general class of firewalls?",
       "options": [
@@ -5825,7 +5486,7 @@
     },
     {
       "id": "pdf-isa-62443-176",
-      "number": 144,
+      "number": 129,
       "source": "ISA/IEC 62443 PDF — Question 176",
       "question": "What is the primary audience for Part 2-5 of the ISA/IEC 62443 Series - Policies & Procedures group of standards?",
       "options": [
@@ -5846,12 +5507,12 @@
           "text": "System integrators"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "correctAnswers": [
-        "B"
+        "A"
       ],
       "questionType": "multiple-choice",
-      "explanation": "ISA/IEC 62443-2-5 provides requirements and guidance specifically for service providers (such as those delivering IACS-related managed services, maintenance, or cybersecurity services). While system integrators and asset owners use this guidance, its main audience is service providers, ensuring that their procedures align with cybersecurity best practices for IACS.",
+      "explanation": "The primary audience for ISA/IEC TR 62443-2-5 (titled 'Implementation guidance for IACS asset owners') is Asset Owners. It provides practical guidance for asset owners on establishing and executing an effective IACS security program. By contrast, Part 2-4 specifies requirements for IACS Service Providers.",
       "difficulty": "mixed",
       "sourceType": "isa_iec_62443_pdf",
       "sourceReferences": [
@@ -5860,53 +5521,7 @@
         "IEC 62443 Overview and Terminology"
       ],
       "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "WHAT",
-        "label": "ISA/IEC 62443, CSMS, Foundational Requirements and Security Levels",
-        "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
-        "href": "/?tab=ot&anchor=what"
-      }
-    },
-    {
-      "id": "pdf-isa-62443-115",
-      "number": 145,
-      "source": "ISA/IEC 62443 PDF — Question 115",
-      "question": "Which of the following ISA-99 (IEC 62443) Reference Model levels is named correctly?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Level 1: Supervisory Control"
-        },
-        {
-          "letter": "B",
-          "text": "Level 2: Quality Control"
-        },
-        {
-          "letter": "C",
-          "text": "Level 3: Operations Management"
-        },
-        {
-          "letter": "D",
-          "text": "Level 4: Process"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctAnswers": [
-        "C"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "The ISA-99/IEC 62443 standards for industrial automation and control systems security categorize network and system components into different levels based on their operational context. The correct name from the provided options for one of these levels is Level 3: Operations Management. This level typically encompasses systems that manage production control systems, including batch management, production scheduling, and overall factory operations. The other levels listed, such as Supervisory Control and Process, refer to different aspects of the system but are not named correctly in the options provided. Level 1 is correctly referred to as \"Basic Control,\" and Level 4 should be \"Business Logistics\" instead of \"Process.\"",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 115",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
+      "validationNote": "Corrected: ISA/IEC TR 62443-2-5 specifically targets IACS Asset Owners, not Service Providers.",
       "topic": "IEC 62443 Overview and Terminology",
       "explanationAnchor": {
         "anchor": "WHAT",
@@ -5917,9 +5532,9 @@
     },
     {
       "id": "pdf-isa-62443-026",
-      "number": 146,
+      "number": 130,
       "source": "ISA/IEC 62443 PDF — Question 26",
-      "question": "Multiuser accounts and shared passwords inherently carry which of the followinq risks?",
+      "question": "Multiuser accounts and shared passwords inherently carry which of the following risks?",
       "options": [
         {
           "letter": "A",
@@ -5964,7 +5579,7 @@
     },
     {
       "id": "pdf-isa-62443-146",
-      "number": 147,
+      "number": 131,
       "source": "ISA/IEC 62443 PDF — Question 146",
       "question": "To which category of the ISA-62443 (IEC 62443) series does the document titled “Patch management in the IACS environment” belong?",
       "options": [
@@ -6010,7 +5625,7 @@
     },
     {
       "id": "pdf-isa-62443-067",
-      "number": 148,
+      "number": 132,
       "source": "ISA/IEC 62443 PDF — Question 67",
       "question": "Which is the BEST deployment system for malicious code protection?",
       "options": [
@@ -6024,7 +5639,7 @@
         },
         {
           "letter": "C",
-          "text": "Application whitelistinq (AWL) OD."
+          "text": "Application whitelisting (AWL)"
         },
         {
           "letter": "D",
@@ -6056,7 +5671,7 @@
     },
     {
       "id": "pdf-isa-62443-185",
-      "number": 149,
+      "number": 133,
       "source": "ISA/IEC 62443 PDF — Question 185",
       "question": "Which of the following can be employed as a barrier device in a segmented network?",
       "options": [
@@ -6102,7 +5717,7 @@
     },
     {
       "id": "pdf-isa-62443-041",
-      "number": 150,
+      "number": 134,
       "source": "ISA/IEC 62443 PDF — Question 41",
       "question": "Which part of the standard provides a list of possible Foundational Requirements to address assessed risks?",
       "options": [
@@ -6148,7 +5763,7 @@
     },
     {
       "id": "pdf-isa-62443-159",
-      "number": 151,
+      "number": 135,
       "source": "ISA/IEC 62443 PDF — Question 159",
       "question": "How can defense in depth be achieved via security zones?",
       "options": [
@@ -6194,7 +5809,7 @@
     },
     {
       "id": "pdf-isa-62443-047",
-      "number": 152,
+      "number": 136,
       "source": "ISA/IEC 62443 PDF — Question 47",
       "question": "What is a feature of an asymmetric key?",
       "options": [
@@ -6208,7 +5823,7 @@
         },
         {
           "letter": "C",
-          "text": "Shares the same key OD."
+          "text": "Shares the same key"
         },
         {
           "letter": "D",
@@ -6240,7 +5855,7 @@
     },
     {
       "id": "pdf-isa-62443-178",
-      "number": 153,
+      "number": 137,
       "source": "ISA/IEC 62443 PDF — Question 178",
       "question": "What are the four documents that belong to the General category of the ISA-62443 (IEC 62443) series?",
       "options": [
@@ -6286,7 +5901,7 @@
     },
     {
       "id": "pdf-isa-62443-170",
-      "number": 154,
+      "number": 138,
       "source": "ISA/IEC 62443 PDF — Question 170",
       "question": "Which is the PRIMARY objective when defining a security zone?",
       "options": [
@@ -6331,55 +5946,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-036",
-      "number": 155,
-      "source": "ISA/IEC 62443 PDF — Question 36",
-      "question": "Which is an important difference between IT systems and IACS?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "The IACS security priority is integrity."
-        },
-        {
-          "letter": "B",
-          "text": "The IT security priority is availability."
-        },
-        {
-          "letter": "C",
-          "text": "IACS cybersecurity must address safety issues."
-        },
-        {
-          "letter": "D",
-          "text": "Routers are not used in IACS networks."
-        }
-      ],
-      "correctAnswer": null,
-      "correctAnswers": [
-        "A",
-        "C"
-      ],
-      "questionType": "multiple-answer",
-      "explanation": "IT systems and IACS have different security priorities, requirements, and challenges. According to the ISA /IEC 62443 standards, the security priority for IT systems is confidentiality, which means protecting the data from unauthorized access or disclosure. The security priority for IACS is integrity, which means ensuring the accuracy and consistency of the data and the functionality of the system. A loss of integrity in an IACS can have severe consequences, such as physical damage, environmental harm, or human injury. Therefore, IACS cybersecurity must address safety issues, which are not typically considered in IT security. Safety is the ability of the system to prevent or mitigate hazardous events that can cause harm to people, property, or the environment. The ISA/IEC 62443 standards provide guidance and best practices for ensuring the safety and security of IACS, as well as the availability and reliability of the system. Availability is the ability of the system to perform its intended function when required, and reliability is the ability of the system to perform its intended function without failure. These properties are also important for IT systems, but they may have different trade-offs and implications for IACS. For example, an IACS may have stricter performance and availability requirements than an IT system, as a delay or disruption in the IACS operation can affect the industrial process and its outcomes. Additionally, an IACS may have longer equipment lifetimes and less frequent maintenance windows than an IT system, which can make patching and updating more difficult and risky. Furthermore, an IACS may use different technologies and architectures than an IT system, such as legacy devices, proprietary protocols, or specialized hardware. These factors can create compatibility and interoperability issues, as well as increase the attack surface and complexity of the IACS. Therefore, IT security solutions and practices may not be sufficient or suitable for IACS, and they may need to be adapted or supplemented by IACS-specific security measures. The ISA/IEC 62443 standards address these differences and provide a comprehensive framework for securing IACS throughout their lifecycle.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 36",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "WHY",
-        "label": "OT/ICS fundamentals, risk and people",
-        "reason": "Review the fundamentals and risk context before memorising the answer.",
-        "href": "/?tab=ot&anchor=why"
-      }
-    },
-    {
       "id": "pdf-isa-62443-213",
-      "number": 156,
+      "number": 139,
       "source": "ISA/IEC 62443 PDF — Question 213",
       "question": "Which of the following is an element of monitoring and improving a CSMS?",
       "options": [
@@ -6426,7 +5994,7 @@
     },
     {
       "id": "pdf-isa-62443-040",
-      "number": 157,
+      "number": 140,
       "source": "ISA/IEC 62443 PDF — Question 40",
       "question": "Which of the following is the BEST example of detection-in-depth best practices?",
       "options": [
@@ -6472,7 +6040,7 @@
     },
     {
       "id": "pdf-isa-62443-167",
-      "number": 158,
+      "number": 141,
       "source": "ISA/IEC 62443 PDF — Question 167",
       "question": "What is a requirement for product security development lifecycles?",
       "options": [
@@ -6518,7 +6086,7 @@
     },
     {
       "id": "pdf-isa-62443-085",
-      "number": 159,
+      "number": 142,
       "source": "ISA/IEC 62443 PDF — Question 85",
       "question": "If a U.S. federal agency must comply with mandatory cybersecurity requirements under law, which document would they be required to follow?",
       "options": [
@@ -6564,7 +6132,7 @@
     },
     {
       "id": "pdf-isa-62443-197",
-      "number": 160,
+      "number": 143,
       "source": "ISA/IEC 62443 PDF — Question 197",
       "question": "What is defined as the hardware and software components of an IACS?",
       "options": [
@@ -6582,7 +6150,7 @@
         },
         {
           "letter": "D",
-          "text": "Cybersecuritv"
+          "text": "Cybersecurity"
         }
       ],
       "correctAnswer": "C",
@@ -6610,7 +6178,7 @@
     },
     {
       "id": "pdf-isa-62443-093",
-      "number": 161,
+      "number": 144,
       "source": "ISA/IEC 62443 PDF — Question 93",
       "question": "Using the risk matrix below, what is the risk of a medium likelihood event with high consequence?",
       "options": [
@@ -6655,54 +6223,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-056",
-      "number": 162,
-      "source": "ISA/IEC 62443 PDF — Question 56",
-      "question": "A national standards body wants to represent its country’s interests at an international level and adopt global standards locally. What role does this organization fulfill?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Global SDO"
-        },
-        {
-          "letter": "B",
-          "text": "Regulatory Agency"
-        },
-        {
-          "letter": "C",
-          "text": "C. Industry Consortium"
-        },
-        {
-          "letter": "D",
-          "text": "National Standardization Body"
-        }
-      ],
-      "correctAnswer": "D",
-      "correctAnswers": [
-        "D"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "A National Standardization Body (NSB) represents a country's interests in international standards organizations like ISO or IEC, and is responsible for adopting and promoting these standards at the national level. “A National Standardization Body (NSB) participates in the development of international standards, represents national interests, and facilitates the adoption of international standards as national standards.” — ISA/IEC 62443-1-1:2007 – Definitions and Governance Roles In contrast: A Global SDO (Standards Development Organization) works at the international level A Regulatory Agency enforces rules An Industry Consortium is a private collaboration, not a national entity",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 56",
-        "Security Policies, Procedures, and Governance"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "Security Policies, Procedures, and Governance",
-      "explanationAnchor": {
-        "anchor": "WHAT",
-        "label": "ISA/IEC 62443, CSMS, Foundational Requirements and Security Levels",
-        "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
-        "href": "/?tab=ot&anchor=what"
-      }
-    },
-    {
       "id": "pdf-isa-62443-082",
-      "number": 163,
+      "number": 145,
       "source": "ISA/IEC 62443 PDF — Question 82",
       "question": "What does ISASecure primarily focus on?",
       "options": [
@@ -6748,7 +6270,7 @@
     },
     {
       "id": "pdf-isa-62443-227",
-      "number": 164,
+      "number": 146,
       "source": "ISA/IEC 62443 PDF — Question 227",
       "question": "An industrial facility wants to ensure that only authorized communication reaches its PLCs while minimizing disruption to time-sensitive control processes. Which type of firewall would BEST suit this need?",
       "options": [
@@ -6794,7 +6316,7 @@
     },
     {
       "id": "pdf-isa-62443-101",
-      "number": 165,
+      "number": 147,
       "source": "ISA/IEC 62443 PDF — Question 101",
       "question": "What type of security level defines what a component or system is capable of meeting?",
       "options": [
@@ -6840,7 +6362,7 @@
     },
     {
       "id": "pdf-isa-62443-059",
-      "number": 166,
+      "number": 148,
       "source": "ISA/IEC 62443 PDF — Question 59",
       "question": "Under User Access Control (SP Element 6), which of the following is included in USER 1 — Identification and Authentication?",
       "options": [
@@ -6886,7 +6408,7 @@
     },
     {
       "id": "pdf-isa-62443-105",
-      "number": 167,
+      "number": 149,
       "source": "ISA/IEC 62443 PDF — Question 105",
       "question": "What caution is advised when using the vector approach to security levels?",
       "options": [
@@ -6932,7 +6454,7 @@
     },
     {
       "id": "pdf-isa-62443-042",
-      "number": 168,
+      "number": 150,
       "source": "ISA/IEC 62443 PDF — Question 42",
       "question": "Which of the following refers to internal rules that govern how an organization protects critical system resources?",
       "options": [
@@ -6974,7 +6496,7 @@
     },
     {
       "id": "pdf-isa-62443-152",
-      "number": 169,
+      "number": 151,
       "source": "ISA/IEC 62443 PDF — Question 152",
       "question": "Which is a common pitfall when initiating a CSMS program?",
       "options": [
@@ -7020,7 +6542,7 @@
     },
     {
       "id": "pdf-isa-62443-108",
-      "number": 170,
+      "number": 152,
       "source": "ISA/IEC 62443 PDF — Question 108",
       "question": "A plant has several zones including business, safety-critical, and wireless zones. According to ISA/IEC 62443, how should these zones be managed during risk assessment?",
       "options": [
@@ -7066,7 +6588,7 @@
     },
     {
       "id": "pdf-isa-62443-023",
-      "number": 171,
+      "number": 153,
       "source": "ISA/IEC 62443 PDF — Question 23",
       "question": "In an IACS system, a typical security conduit consists of which of the following assets?",
       "options": [
@@ -7112,7 +6634,7 @@
     },
     {
       "id": "pdf-isa-62443-183",
-      "number": 172,
+      "number": 154,
       "source": "ISA/IEC 62443 PDF — Question 183",
       "question": "Which of the following is a recommended default rule for IACS firewalls?",
       "options": [
@@ -7157,54 +6679,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-060",
-      "number": 173,
-      "source": "ISA/IEC 62443 PDF — Question 60",
-      "question": "Which characteristic is MOST closely associated with the deployment of a demilitarized zone (DMZ)?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Level 4 systems must use the DMZ to communicate with Level 3 and below."
-        },
-        {
-          "letter": "B",
-          "text": "Level 0 can only interact with Level 1 through the firewall."
-        },
-        {
-          "letter": "C",
-          "text": "Internet access through the firewall is allowed."
-        },
-        {
-          "letter": "D",
-          "text": "Email is prevented, thereby mitigating the risk of phishing attempts."
-        }
-      ],
-      "correctAnswer": "C",
-      "correctAnswers": [
-        "C"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "In cybersecurity, a demilitarized zone (DMZ) refers to a physical or logical subnetwork that contains and exposes an organization's external-facing services to an untrusted network, typically the internet. The main characteristic of a DMZ is that it acts as a buffer zone between the public internet and the private network. This allows for internet access through the firewall while keeping the internal network secure. Internet-facing servers are placed in the DMZ so that they are separated from the rest of the internal network. By doing so, if a server in the DMZ is compromised, the attacker would not have direct access to the internal network. This architecture is commonly used to host services such as web servers, mail servers, and FTP servers. Choice C is the most closely associated with the deployment of a DMZ as it allows for regulated and monitored internet access through a firewall.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 60",
-        "Zones, Conduits, and Network Segmentation"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "Zones, Conduits, and Network Segmentation",
-      "explanationAnchor": {
-        "anchor": "WHERE",
-        "label": "Zones, conduits, Purdue architecture and boundary controls",
-        "reason": "Review the architecture, zones, conduits or boundary-control explanation that places this answer in context.",
-        "href": "/?tab=ot&anchor=where"
-      }
-    },
-    {
       "id": "pdf-isa-62443-061",
-      "number": 174,
+      "number": 155,
       "source": "ISA/IEC 62443 PDF — Question 61",
       "question": "Which standard focuses on protecting sensitive information across all organizational systems through a broad Information Security Management System (ISMS)?",
       "options": [
@@ -7249,100 +6725,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-221",
-      "number": 175,
-      "source": "ISA/IEC 62443 PDF — Question 221",
-      "question": "How many element groups are in the \"Addressing Risk\" CSMS category?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "A. 2"
-        },
-        {
-          "letter": "B",
-          "text": "3"
-        },
-        {
-          "letter": "C",
-          "text": "4"
-        },
-        {
-          "letter": "D",
-          "text": "5"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctAnswers": [
-        "C"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "In ISA/IEC 62443-2-1, the Cyber Security Management System (CSMS) includes multiple categories. One of these is “Addressing Risk”, which is composed of 4 element groups, as outlined in Figure 3 – CSMS Elements of the standard. The 4 element groups under \"Addressing Risk\" are: Risk analysis and management Security policy, organization, and awareness Selected security countermeasures Personnel security “The Addressing Risk category of the CSMS consists of four element groups: risk analysis and management, security policy and awareness, selected countermeasures, and personnel security.” — ISA/IEC 62443-2-1:2010, Figure 3 and Clause 4.2.2",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 221",
-        "Risk Management and Security Lifecycle"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "Risk Management and Security Lifecycle",
-      "explanationAnchor": {
-        "anchor": "WHAT",
-        "label": "ISA/IEC 62443, CSMS, Foundational Requirements and Security Levels",
-        "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
-        "href": "/?tab=ot&anchor=what"
-      }
-    },
-    {
-      "id": "pdf-isa-62443-160",
-      "number": 176,
-      "source": "ISA/IEC 62443 PDF — Question 160",
-      "question": "ISA/IEC 62443 – Part 4-2 covers technical security requirements for which types of IACS components?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Only network devices"
-        },
-        {
-          "letter": "B",
-          "text": "Only devices"
-        },
-        {
-          "letter": "C",
-          "text": "Only software applications"
-        },
-        {
-          "letter": "D",
-          "text": "Embedded devices and software applications"
-        }
-      ],
-      "correctAnswer": "D",
-      "correctAnswers": [
-        "D"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "ISA/IEC 62443-4-2 defines technical security requirements for IACS components, focusing on how products must be designed to resist cyber threats. Step 1: Definition of components The standard explicitly includes embedded devices (such as PLCs, RTUs, sensors, and controllers) and software applications (such as HMIs, control software, and engineering tools). Step 2: Component-level scope 4-2 applies foundational requirements such as identification and authentication, integrity, confidentiality, and availability directly to components, regardless of whether they are hardware or software. Step 3: Why other options are incomplete Limiting the scope to only network devices, only devices, or only software ignores the integrated nature of IACS components. Step 4: Supplier responsibility These requirements support secure-by-design principles for product suppliers. Therefore, the correct answer is Embedded devices and software applications.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 160",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "WHAT",
-        "label": "ISA/IEC 62443, CSMS, Foundational Requirements and Security Levels",
-        "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
-        "href": "/?tab=ot&anchor=what"
-      }
-    },
-    {
       "id": "pdf-isa-62443-139",
-      "number": 177,
+      "number": 156,
       "source": "ISA/IEC 62443 PDF — Question 139",
       "question": "Electronic security, as defined in ANSI/ISA-99.00.01:2007. includes which of the following?",
       "options": [
@@ -7389,7 +6773,7 @@
     },
     {
       "id": "pdf-isa-62443-088",
-      "number": 178,
+      "number": 157,
       "source": "ISA/IEC 62443 PDF — Question 88",
       "question": "What are the connections between security zones called?",
       "options": [
@@ -7435,7 +6819,7 @@
     },
     {
       "id": "pdf-isa-62443-025",
-      "number": 179,
+      "number": 158,
       "source": "ISA/IEC 62443 PDF — Question 25",
       "question": "Which part of the ISA/IEC 62443 series describes a methodology to develop quantitative metrics?",
       "options": [
@@ -7481,7 +6865,7 @@
     },
     {
       "id": "pdf-isa-62443-078",
-      "number": 180,
+      "number": 159,
       "source": "ISA/IEC 62443 PDF — Question 78",
       "question": "What should the identification analysis of discovered vulnerabilities determine?",
       "options": [
@@ -7527,7 +6911,7 @@
     },
     {
       "id": "pdf-isa-62443-073",
-      "number": 181,
+      "number": 160,
       "source": "ISA/IEC 62443 PDF — Question 73",
       "question": "Which of the following staff is NOT mentioned as a stakeholder in the CSMS Program?",
       "options": [
@@ -7573,13 +6957,13 @@
     },
     {
       "id": "pdf-isa-62443-155",
-      "number": 182,
+      "number": 161,
       "source": "ISA/IEC 62443 PDF — Question 155",
-      "question": "Which is the PRIMARY reason why Modbus over Ethernet is easy to manaqe in a firewall?",
+      "question": "Which is the PRIMARY reason why Modbus over Ethernet is easy to manage in a firewall?",
       "options": [
         {
           "letter": "A",
-          "text": "Modbus uses a single master to communicate with multiple slaves usinq simple commands."
+          "text": "Modbus uses a single master to communicate with multiple slaves using simple commands."
         },
         {
           "letter": "B",
@@ -7587,7 +6971,7 @@
         },
         {
           "letter": "C",
-          "text": "Modbus uses explicit source and destination IP addresses and a sinqle known TCP port."
+          "text": "Modbus uses explicit source and destination IP addresses and a single known TCP port."
         },
         {
           "letter": "D",
@@ -7599,7 +6983,7 @@
         "C"
       ],
       "questionType": "multiple-choice",
-      "explanation": "According to the ISA/IEC 62443-2-4 standard, a training and security awareness program should include all personnel who have access to the industrial automation and control system (IACS) or who are involved in its operation, maintenance, or management. This includes vendors and suppliers, employees, temporary staff, contractors, and visitors. The purpose of the program is to ensure that all personnel are aware of the security risks and policies related to the IACS, and that they have the necessary skills and knowledge to perform their roles in a secure manner. The program should also cover the roles and responsibilities of different personnel, the reporting procedures for security incidents, and the best practices for security hygiene. References: ISA/IEC 62443-2-4:2015 - Security for industrial automation and control systems - Part 2-4: Security program requirements for IACS service providers1 ISA/IEC 62443 Cybersecurity Fundamentals Specialist Training Course2",
+      "explanation": "Modbus over Ethernet (Modbus/TCP) is relatively easy to manage in a firewall because it uses explicit source and destination IP addresses and communicates over a single well-known TCP port (port 502), allowing straightforward and restrictive rule definitions.",
       "difficulty": "mixed",
       "sourceType": "isa_iec_62443_pdf",
       "sourceReferences": [
@@ -7608,7 +6992,7 @@
         "Industrial Automation and Control System Fundamentals"
       ],
       "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
+      "validationNote": "Corrected: Restored proper Modbus/TCP firewall explanation (swapped with training explanation in original dump).",
       "topic": "Industrial Automation and Control System Fundamentals",
       "explanationAnchor": {
         "anchor": "FLOW",
@@ -7619,7 +7003,7 @@
     },
     {
       "id": "pdf-isa-62443-118",
-      "number": 183,
+      "number": 162,
       "source": "ISA/IEC 62443 PDF — Question 118",
       "question": "What does the System under Consideration (SuC) include in the context of ISA/IEC 62443 risk assessment?",
       "options": [
@@ -7665,7 +7049,7 @@
     },
     {
       "id": "pdf-isa-62443-162",
-      "number": 184,
+      "number": 163,
       "source": "ISA/IEC 62443 PDF — Question 162",
       "question": "What is the name of the protocol that implements serial Modbus over Ethernet?",
       "options": [
@@ -7711,7 +7095,7 @@
     },
     {
       "id": "pdf-isa-62443-136",
-      "number": 185,
+      "number": 164,
       "source": "ISA/IEC 62443 PDF — Question 136",
       "question": "How does ISA/IEC 62443-2-1 suggest integrating the IACS Security Program (SP) within an organization?",
       "options": [
@@ -7757,7 +7141,7 @@
     },
     {
       "id": "pdf-isa-62443-137",
-      "number": 186,
+      "number": 165,
       "source": "ISA/IEC 62443 PDF — Question 137",
       "question": "Which is a PRIMARY reason why network security is important in IACS environments?",
       "options": [
@@ -7803,7 +7187,7 @@
     },
     {
       "id": "pdf-isa-62443-202",
-      "number": 187,
+      "number": 166,
       "source": "ISA/IEC 62443 PDF — Question 202",
       "question": "Which of the following is an element of security policy, organization, and awareness?",
       "options": [
@@ -7849,7 +7233,7 @@
     },
     {
       "id": "pdf-isa-62443-163",
-      "number": 188,
+      "number": 167,
       "source": "ISA/IEC 62443 PDF — Question 163",
       "question": "What are three possible entry points (pathways) that could be used for launching a cyber attack?",
       "options": [
@@ -7863,7 +7247,7 @@
         },
         {
           "letter": "C",
-          "text": "LAN, power source, and wireless OD."
+          "text": "LAN, power source, and wireless"
         },
         {
           "letter": "D",
@@ -7895,7 +7279,7 @@
     },
     {
       "id": "pdf-isa-62443-011",
-      "number": 189,
+      "number": 168,
       "source": "ISA/IEC 62443 PDF — Question 11",
       "question": "Which service does an Intrusion Detection System (IDS) provide?",
       "options": [
@@ -7941,7 +7325,7 @@
     },
     {
       "id": "pdf-isa-62443-199",
-      "number": 190,
+      "number": 169,
       "source": "ISA/IEC 62443 PDF — Question 199",
       "question": "After receiving an approved patch from the IACS vendor, what is BEST practice for the asset owner to follow?",
       "options": [
@@ -7987,7 +7371,7 @@
     },
     {
       "id": "pdf-isa-62443-195",
-      "number": 191,
+      "number": 170,
       "source": "ISA/IEC 62443 PDF — Question 195",
       "question": "Which layer is responsible for error checking and MAC addressing?",
       "options": [
@@ -8033,7 +7417,7 @@
     },
     {
       "id": "pdf-isa-62443-212",
-      "number": 192,
+      "number": 171,
       "source": "ISA/IEC 62443 PDF — Question 212",
       "question": "What does Part 6-1 of the ISA/IEC 62443 series specify?",
       "options": [
@@ -8079,7 +7463,7 @@
     },
     {
       "id": "pdf-isa-62443-132",
-      "number": 193,
+      "number": 172,
       "source": "ISA/IEC 62443 PDF — Question 132",
       "question": "During the operation of an IACS, who is responsible for executing the Security Protection Scheme (SPS) process measures and responding to emerging risks?",
       "options": [
@@ -8125,7 +7509,7 @@
     },
     {
       "id": "pdf-isa-62443-003",
-      "number": 194,
+      "number": 173,
       "source": "ISA/IEC 62443 PDF — Question 3",
       "question": "Why were PLCs originally designed?",
       "options": [
@@ -8171,7 +7555,7 @@
     },
     {
       "id": "pdf-isa-62443-171",
-      "number": 195,
+      "number": 174,
       "source": "ISA/IEC 62443 PDF — Question 171",
       "question": "How should CSMS organizational responsibilities or training be handled over time?",
       "options": [
@@ -8217,7 +7601,7 @@
     },
     {
       "id": "pdf-isa-62443-071",
-      "number": 196,
+      "number": 175,
       "source": "ISA/IEC 62443 PDF — Question 71",
       "question": "What is the purpose of ICS-CERT Alerts?",
       "options": [
@@ -8263,7 +7647,7 @@
     },
     {
       "id": "pdf-isa-62443-184",
-      "number": 197,
+      "number": 176,
       "source": "ISA/IEC 62443 PDF — Question 184",
       "question": "A manufacturing plant has inconsistent cybersecurity processes that vary widely between shifts and teams. According to the maturity levels described in ISA/IEC 62443-2-1, how would this situation be classified?",
       "options": [
@@ -8309,7 +7693,7 @@
     },
     {
       "id": "pdf-isa-62443-198",
-      "number": 198,
+      "number": 177,
       "source": "ISA/IEC 62443 PDF — Question 198",
       "question": "Which of the following is an industry sector-specific standard?",
       "options": [
@@ -8355,7 +7739,7 @@
     },
     {
       "id": "pdf-isa-62443-119",
-      "number": 199,
+      "number": 178,
       "source": "ISA/IEC 62443 PDF — Question 119",
       "question": "Which activity is part of establishing policy, organization, and awareness?",
       "options": [
@@ -8401,7 +7785,7 @@
     },
     {
       "id": "pdf-isa-62443-009",
-      "number": 200,
+      "number": 179,
       "source": "ISA/IEC 62443 PDF — Question 9",
       "question": "ISA/IEC 62443 - Part 4-2 covers technical security requirements for which types of IACS components?",
       "options": [
@@ -8447,7 +7831,7 @@
     },
     {
       "id": "pdf-isa-62443-209",
-      "number": 201,
+      "number": 180,
       "source": "ISA/IEC 62443 PDF — Question 209",
       "question": "What do the tiers in the NIST CSF represent?",
       "options": [
@@ -8493,7 +7877,7 @@
     },
     {
       "id": "pdf-isa-62443-035",
-      "number": 202,
+      "number": 181,
       "source": "ISA/IEC 62443 PDF — Question 35",
       "question": "Why is it important for the asset owner to incorporate the IACS into its organization and security program during the Operation and Maintenance phase?",
       "options": [
@@ -8539,7 +7923,7 @@
     },
     {
       "id": "pdf-isa-62443-038",
-      "number": 203,
+      "number": 182,
       "source": "ISA/IEC 62443 PDF — Question 38",
       "question": "Why is segmentation from non-IACS zones important in Network & Communication Security (SP Element 3)?",
       "options": [
@@ -8585,7 +7969,7 @@
     },
     {
       "id": "pdf-isa-62443-068",
-      "number": 204,
+      "number": 183,
       "source": "ISA/IEC 62443 PDF — Question 68",
       "question": "Why is OPC Classic considered firewall unfriendly?",
       "options": [
@@ -8631,7 +8015,7 @@
     },
     {
       "id": "pdf-isa-62443-125",
-      "number": 205,
+      "number": 184,
       "source": "ISA/IEC 62443 PDF — Question 125",
       "question": "If a system integrator is designing zones and conduits for an IACS network based on risk assessments, which part of the ISA/IEC 62443 standard guides this process?",
       "options": [
@@ -8677,7 +8061,7 @@
     },
     {
       "id": "pdf-isa-62443-158",
-      "number": 206,
+      "number": 185,
       "source": "ISA/IEC 62443 PDF — Question 158",
       "question": "A company discovers malware on a portable USB device used within their IACS environment. According to the document, which SP Element and controls would be MOST relevant to address this issue?",
       "options": [
@@ -8723,9 +8107,9 @@
     },
     {
       "id": "pdf-isa-62443-086",
-      "number": 207,
+      "number": 186,
       "source": "ISA/IEC 62443 PDF — Question 86",
-      "question": "Within the National Institute of Standards and Technoloqv Cybersecuritv Framework v1.0 (NIST CSF), what is the status of the ISA 62443 standards?",
+      "question": "Within the National Institute of Standards and Technoloqv Cybersecurity Framework v1.0 (NIST CSF), what is the status of the ISA 62443 standards?",
       "options": [
         {
           "letter": "A",
@@ -8769,7 +8153,7 @@
     },
     {
       "id": "pdf-isa-62443-149",
-      "number": 208,
+      "number": 187,
       "source": "ISA/IEC 62443 PDF — Question 149",
       "question": "What change was introduced in the second edition (2024) of ISA-62443-2-1 compared to the first edition (2010)?",
       "options": [
@@ -8814,54 +8198,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-157",
-      "number": 209,
-      "source": "ISA/IEC 62443 PDF — Question 157",
-      "question": "What caution is advised when using the vector approach to security levels?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Vector approaches eliminate the need for risk models."
-        },
-        {
-          "letter": "B",
-          "text": "Vector approaches are always more accurate than qualitative methods."
-        },
-        {
-          "letter": "C",
-          "text": "Vector values should be ignored if they do not match industry standards."
-        },
-        {
-          "letter": "D",
-          "text": "Vector values must align with the asset owner's risk matrix and risk appetite."
-        }
-      ],
-      "correctAnswer": "D",
-      "correctAnswers": [
-        "D"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "When using the security level (SL) vector approach in ISA/IEC 62443, each Foundational Requirement (FR) can have its own SL-T value. However, these values must reflect the organization’s specific risk assessment outcomes, not generic or industry default values. “SL vectors should be derived based on the asset owner’s own risk matrix and risk tolerance, ensuring that the security levels support operational needs and business requirements.” — ISA/IEC 62443-3-2:2020, Clause 6.5.2 – SL-T Vector Selection Misalignment could lead to over- or under-protection of critical zones or conduits.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 157",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "WHAT",
-        "label": "ISA/IEC 62443, CSMS, Foundational Requirements and Security Levels",
-        "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
-        "href": "/?tab=ot&anchor=what"
-      }
-    },
-    {
       "id": "pdf-isa-62443-174",
-      "number": 210,
+      "number": 188,
       "source": "ISA/IEC 62443 PDF — Question 174",
       "question": "Which of the following activities is NOT listed under the \"Patch Testing\" phase in the asset owner requirements?",
       "options": [
@@ -8907,7 +8245,7 @@
     },
     {
       "id": "pdf-isa-62443-164",
-      "number": 211,
+      "number": 189,
       "source": "ISA/IEC 62443 PDF — Question 164",
       "question": "How can Modbus be secured?",
       "options": [
@@ -8953,7 +8291,7 @@
     },
     {
       "id": "pdf-isa-62443-226",
-      "number": 212,
+      "number": 190,
       "source": "ISA/IEC 62443 PDF — Question 226",
       "question": "How many maturity levels (ML) are established for evaluation criteria according to ISA/IEC 62443-2-4?",
       "options": [
@@ -8999,7 +8337,7 @@
     },
     {
       "id": "pdf-isa-62443-201",
-      "number": 213,
+      "number": 191,
       "source": "ISA/IEC 62443 PDF — Question 201",
       "question": "What is the primary goal of the Assess phase in the IACS Cybersecurity Lifecycle?",
       "options": [
@@ -9045,7 +8383,7 @@
     },
     {
       "id": "pdf-isa-62443-055",
-      "number": 214,
+      "number": 192,
       "source": "ISA/IEC 62443 PDF — Question 55",
       "question": "What makes patching in IACS environments particularly complex?",
       "options": [
@@ -9091,7 +8429,7 @@
     },
     {
       "id": "pdf-isa-62443-196",
-      "number": 215,
+      "number": 193,
       "source": "ISA/IEC 62443 PDF — Question 196",
       "question": "Which ISA/IEC 62443 part covers technical security requirements used by product suppliers, integration service providers, and asset owners?",
       "options": [
@@ -9137,7 +8475,7 @@
     },
     {
       "id": "pdf-isa-62443-179",
-      "number": 216,
+      "number": 194,
       "source": "ISA/IEC 62443 PDF — Question 179",
       "question": "Which of the following attacks relies on a human weakness to succeed?",
       "options": [
@@ -9183,7 +8521,7 @@
     },
     {
       "id": "pdf-isa-62443-022",
-      "number": 217,
+      "number": 195,
       "source": "ISA/IEC 62443 PDF — Question 22",
       "question": "Which term refers to legally enforceable rules created by government bodies or authorized organizations?",
       "options": [
@@ -9229,7 +8567,7 @@
     },
     {
       "id": "pdf-isa-62443-102",
-      "number": 218,
+      "number": 196,
       "source": "ISA/IEC 62443 PDF — Question 102",
       "question": "What does Layer 1 of the ISO/OSI protocol stack provide?",
       "options": [
@@ -9274,54 +8612,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-008",
-      "number": 219,
-      "source": "ISA/IEC 62443 PDF — Question 8",
-      "question": "How does ISA-62443-2-1 suggest integrating the IACS Security Program (SP) within an organization?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "As a standalone system unrelated to other processes"
-        },
-        {
-          "letter": "B",
-          "text": "Outsourcing all security responsibilities to third parties"
-        },
-        {
-          "letter": "C",
-          "text": "By embedding it into organizational processes and the ISMS"
-        },
-        {
-          "letter": "D",
-          "text": "Only focusing on technical controls without process integration"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctAnswers": [
-        "C"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "ISA/IEC 62443-2-1 explicitly requires that the IACS Security Program be integrated into the organization’s overall management structure. Step 1: Integration principle The standard states that IACS security must align with business processes, governance, and enterprise security management rather than operate in isolation. Step 2: Alignment with ISMS Where an Information Security Management System (ISMS) exists, the IACS SP should be embedded within it to ensure consistent risk management, policy enforcement, and continuous improvement. Step 3: Why other options are incorrect Standalone security programs create silos. Full outsourcing violates asset owner accountability. Purely technical approaches ignore human and process factors. Step 4: Operational outcome Embedding the SP ensures sustainability, consistency, and executive oversight. Therefore, the correct answer is by embedding it into organizational processes and the ISMS.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 8",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "WHAT",
-        "label": "ISA/IEC 62443, CSMS, Foundational Requirements and Security Levels",
-        "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
-        "href": "/?tab=ot&anchor=what"
-      }
-    },
-    {
       "id": "pdf-isa-62443-007",
-      "number": 220,
+      "number": 197,
       "source": "ISA/IEC 62443 PDF — Question 7",
       "question": "Which factor drives the selection of countermeasures?",
       "options": [
@@ -9366,54 +8658,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-111",
-      "number": 221,
-      "source": "ISA/IEC 62443 PDF — Question 111",
-      "question": "What does the expression SL-T (BPCS Zone) vector {2 2 0 1 3 1 3} represent?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "A qualitative risk assessment method"
-        },
-        {
-          "letter": "B",
-          "text": "A single protection factor for all FRs"
-        },
-        {
-          "letter": "C",
-          "text": "The FR values for a specific zone's security level"
-        },
-        {
-          "letter": "D",
-          "text": "The SL values for a specific zone's foundational requirements"
-        }
-      ],
-      "correctAnswer": "D",
-      "correctAnswers": [
-        "D"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "ISA/IEC 62443 defines Security Level vectors to express Target Security Levels across the seven Foundational Requirements (FRs). Step 1: SL-T definition SL-T represents the Target Security Level determined from risk assessment. Step 2: Vector meaning Each number in the vector corresponds to the required SL for a specific FR (IAC, UC, SI, DC, RDF, TRE, RA). Step 3: Zone-specific application The vector is applied to a defined zone (e.g., BPCS), allowing granular security specification. Thus, the vector represents SL values for a specific zone’s foundational requirements.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 111",
-        "Zones, Conduits, and Network Segmentation"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "Zones, Conduits, and Network Segmentation",
-      "explanationAnchor": {
-        "anchor": "WHAT",
-        "label": "ISA/IEC 62443, CSMS, Foundational Requirements and Security Levels",
-        "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
-        "href": "/?tab=ot&anchor=what"
-      }
-    },
-    {
       "id": "pdf-isa-62443-161",
-      "number": 222,
+      "number": 198,
       "source": "ISA/IEC 62443 PDF — Question 161",
       "question": "What does IACS stand for?",
       "options": [
@@ -9459,7 +8705,7 @@
     },
     {
       "id": "pdf-isa-62443-017",
-      "number": 223,
+      "number": 199,
       "source": "ISA/IEC 62443 PDF — Question 17",
       "question": "What is the FIRST step required in implementing ISO 27001?",
       "options": [
@@ -9505,7 +8751,7 @@
     },
     {
       "id": "pdf-isa-62443-037",
-      "number": 224,
+      "number": 200,
       "source": "ISA/IEC 62443 PDF — Question 37",
       "question": "Safety management staff are stakeholders of what security program development?",
       "options": [
@@ -9551,7 +8797,7 @@
     },
     {
       "id": "pdf-isa-62443-142",
-      "number": 225,
+      "number": 201,
       "source": "ISA/IEC 62443 PDF — Question 142",
       "question": "What is recommended to use between the plant floor and the rest of the company networks?",
       "options": [
@@ -9597,7 +8843,7 @@
     },
     {
       "id": "pdf-isa-62443-216",
-      "number": 226,
+      "number": 202,
       "source": "ISA/IEC 62443 PDF — Question 216",
       "question": "What impact do increasing cybercrime attacks have?",
       "options": [
@@ -9643,7 +8889,7 @@
     },
     {
       "id": "pdf-isa-62443-106",
-      "number": 227,
+      "number": 203,
       "source": "ISA/IEC 62443 PDF — Question 106",
       "question": "What is a major reason for maintaining an asset inventory baseline in Configuration Management (SP Element 2)?",
       "options": [
@@ -9689,9 +8935,9 @@
     },
     {
       "id": "pdf-isa-62443-018",
-      "number": 228,
+      "number": 204,
       "source": "ISA/IEC 62443 PDF — Question 18",
-      "question": "Which statement is TRUE reqardinq application of patches in an IACS environment?",
+      "question": "Which statement is TRUE regarding application of patches in an IACS environment?",
       "options": [
         {
           "letter": "A",
@@ -9735,7 +8981,7 @@
     },
     {
       "id": "pdf-isa-62443-207",
-      "number": 229,
+      "number": 205,
       "source": "ISA/IEC 62443 PDF — Question 207",
       "question": "The Risk Analysis category contains background information that is used where?",
       "options": [
@@ -9781,7 +9027,7 @@
     },
     {
       "id": "pdf-isa-62443-062",
-      "number": 230,
+      "number": 206,
       "source": "ISA/IEC 62443 PDF — Question 62",
       "question": "Authorization (user accounts) must be granted based on which of the following?",
       "options": [
@@ -9827,7 +9073,7 @@
     },
     {
       "id": "pdf-isa-62443-049",
-      "number": 231,
+      "number": 207,
       "source": "ISA/IEC 62443 PDF — Question 49",
       "question": "According to ISA/IEC TR 62443-1-5, which documents can be referenced when creating a security profile?",
       "options": [
@@ -9873,7 +9119,7 @@
     },
     {
       "id": "pdf-isa-62443-200",
-      "number": 232,
+      "number": 208,
       "source": "ISA/IEC 62443 PDF — Question 200",
       "question": "A manufacturing plant is developing a cybersecurity plan for its IACS that must evolve as new threats emerge and system changes occur. Which document should serve as the foundation for this evolving security approach?",
       "options": [
@@ -9919,7 +9165,7 @@
     },
     {
       "id": "pdf-isa-62443-092",
-      "number": 233,
+      "number": 209,
       "source": "ISA/IEC 62443 PDF — Question 92",
       "question": "How should patching be approached within an organization?",
       "options": [
@@ -9965,7 +9211,7 @@
     },
     {
       "id": "pdf-isa-62443-140",
-      "number": 234,
+      "number": 210,
       "source": "ISA/IEC 62443 PDF — Question 140",
       "question": "How many security levels are in the ISASecure certification program?",
       "options": [
@@ -10011,7 +9257,7 @@
     },
     {
       "id": "pdf-isa-62443-113",
-      "number": 235,
+      "number": 211,
       "source": "ISA/IEC 62443 PDF — Question 113",
       "question": "Which of the following is the BEST reason for periodic audits?",
       "options": [
@@ -10057,7 +9303,7 @@
     },
     {
       "id": "pdf-isa-62443-124",
-      "number": 236,
+      "number": 212,
       "source": "ISA/IEC 62443 PDF — Question 124",
       "question": "As related to IACS Maintenance Service Providers, when do maintenance activities generally start?",
       "options": [
@@ -10103,7 +9349,7 @@
     },
     {
       "id": "pdf-isa-62443-181",
-      "number": 237,
+      "number": 213,
       "source": "ISA/IEC 62443 PDF — Question 181",
       "question": "What are the three main components of the ISASecure Integrated Threat Analysis (ITA) Program?",
       "options": [
@@ -10149,7 +9395,7 @@
     },
     {
       "id": "pdf-isa-62443-019",
-      "number": 238,
+      "number": 214,
       "source": "ISA/IEC 62443 PDF — Question 19",
       "question": "A company manufactures embedded devices and network components used in control systems but does not participate in on-site installation or maintenance. What role do they fulfill?",
       "options": [
@@ -10195,7 +9441,7 @@
     },
     {
       "id": "pdf-isa-62443-057",
-      "number": 239,
+      "number": 215,
       "source": "ISA/IEC 62443 PDF — Question 57",
       "question": "Which of the following technologies is no longer considered secure?",
       "options": [
@@ -10241,7 +9487,7 @@
     },
     {
       "id": "pdf-isa-62443-001",
-      "number": 240,
+      "number": 216,
       "source": "ISA/IEC 62443 PDF — Question 1",
       "question": "An energy utility company needs to implement cybersecurity controls specifically tailored for industrial control systems. Which standard from the list would be MOST appropriate for their use?",
       "options": [
@@ -10286,54 +9532,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-135",
-      "number": 241,
-      "source": "ISA/IEC 62443 PDF — Question 135",
-      "question": "A company needs to create a standardized interface for exchanging real-time plant data between heterogeneous control devices while maintaining a structured organization of data elements such as folders, classes, and methods. Which feature of OPC supports this requirement?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "OPC Tunnel Applications for firewalls"
-        },
-        {
-          "letter": "B",
-          "text": "OPC Classic aware firewalls analyzing DCOM"
-        },
-        {
-          "letter": "C",
-          "text": "OPC Unified Architecture's browsable namespace"
-        },
-        {
-          "letter": "D",
-          "text": "OPC Classic's use of Microsoft OLE and COM technologies"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctAnswers": [
-        "C"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "OPC Unified Architecture (OPC UA) introduces a browsable namespace that supports hierarchical organization of data including folders, classes, methods, and object types. This is critical for structured access to real-time and historical data across heterogeneous control systems. “OPC UA provides a flexible, secure, and platform-independent mechanism for exchanging information. Its browsable namespace allows structured navigation of nodes, types, and attributes in a hierarchical format.” — OPC UA Specification, Part 3 – Address Space Model This is a key improvement over OPC Classic, which was tightly coupled to DCOM and lacked standardized structures across systems.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 135",
-        "Industrial Automation and Control System Fundamentals"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "Industrial Automation and Control System Fundamentals",
-      "explanationAnchor": {
-        "anchor": "IMPROVE",
-        "label": "Lifecycle, patch management and secure development",
-        "reason": "Review the lifecycle, patching or secure-development explanation that supports this answer.",
-        "href": "/?tab=ot&anchor=improve"
-      }
-    },
-    {
       "id": "pdf-isa-62443-204",
-      "number": 242,
+      "number": 217,
       "source": "ISA/IEC 62443 PDF — Question 204",
       "question": "According to the scheme for cybersecurity profiles, which of the following is true about ISA/IEC 62443 security requirements when creating a security profile?",
       "options": [
@@ -10379,7 +9579,7 @@
     },
     {
       "id": "pdf-isa-62443-117",
-      "number": 243,
+      "number": 218,
       "source": "ISA/IEC 62443 PDF — Question 117",
       "question": "Which is a role of the application layer?",
       "options": [
@@ -10426,7 +9626,7 @@
     },
     {
       "id": "pdf-isa-62443-141",
-      "number": 244,
+      "number": 219,
       "source": "ISA/IEC 62443 PDF — Question 141",
       "question": "What is the formula for calculating risk?",
       "options": [
@@ -10472,7 +9672,7 @@
     },
     {
       "id": "pdf-isa-62443-050",
-      "number": 245,
+      "number": 220,
       "source": "ISA/IEC 62443 PDF — Question 50",
       "question": "What is a key aspect of the relationship between physical security measures and cybersecurity?",
       "options": [
@@ -10517,54 +9717,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-138",
-      "number": 246,
-      "source": "ISA/IEC 62443 PDF — Question 138",
-      "question": "A manufacturing plant has inconsistent cybersecurity processes that vary widely across shifts and teams. According to the maturity levels described in ISA/IEC 62443-2-1, how would this situation be classified?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Level 1 – Initial (ad-hoc and undocumented processes)"
-        },
-        {
-          "letter": "B",
-          "text": "Level 2 – Managed (documented procedures and training programs)"
-        },
-        {
-          "letter": "C",
-          "text": "Level 3 – Defined / Practiced (repeatable and documented processes)"
-        },
-        {
-          "letter": "D",
-          "text": "Level 4 – Improving (quantitatively managed)"
-        }
-      ],
-      "correctAnswer": "A",
-      "correctAnswers": [
-        "A"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "ISA/IEC 62443-2-1 introduces a cybersecurity maturity model to help asset owners understand how consistently and effectively their cybersecurity processes are implemented. The maturity concept focuses on process consistency, documentation, and repeatability, rather than technical sophistication. Step 1: Understand Level 1 – Initial Level 1 is defined as an ad-hoc and reactive state. Processes are informal, inconsistently applied, and often dependent on individual knowledge or shift-specific practices. Documentation is minimal or nonexistent, and outcomes vary widely. Step 2: Match the scenario to the definition The question explicitly states that cybersecurity processes “vary widely across shifts and teams.” This lack of consistency and standardization is the defining characteristic of Level 1 maturity. There is no evidence of enforced procedures, standardized training, or governance. Step 3: Why higher levels do not apply Level 2 requires documented procedures and basic training. Level 3 requires repeatable, practiced, and consistently applied processes. Level 4 requires measurement and continuous improvement. Step 4: ISA/IEC 62443 intent The standard emphasizes that many organizations begin at Level 1 and progressively mature. Identifying this baseline is critical before attempting to implement advanced controls. Therefore, the correct classification is Level 1 – Initial.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 138",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "WHAT",
-        "label": "ISA/IEC 62443, CSMS, Foundational Requirements and Security Levels",
-        "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
-        "href": "/?tab=ot&anchor=what"
-      }
-    },
-    {
       "id": "pdf-isa-62443-048",
-      "number": 247,
+      "number": 221,
       "source": "ISA/IEC 62443 PDF — Question 48",
       "question": "A manufacturing plant wants to improve its risk management by categorizing all equipment and tracking their status and relationships. Which framework should it implement?",
       "options": [
@@ -10610,7 +9764,7 @@
     },
     {
       "id": "pdf-isa-62443-053",
-      "number": 248,
+      "number": 222,
       "source": "ISA/IEC 62443 PDF — Question 53",
       "question": "Security Levels (SLs) are broken down into which three types?",
       "options": [
@@ -10656,7 +9810,7 @@
     },
     {
       "id": "pdf-isa-62443-080",
-      "number": 249,
+      "number": 223,
       "source": "ISA/IEC 62443 PDF — Question 80",
       "question": "A company needs to create a standardized interface for exchanging real-time plant data between heterogeneous control devices while maintaining a structured organization of data elements such as folders, classes, and methods. Which feature of OPC supports this requirement?",
       "options": [
@@ -10702,7 +9856,7 @@
     },
     {
       "id": "pdf-isa-62443-191",
-      "number": 250,
+      "number": 224,
       "source": "ISA/IEC 62443 PDF — Question 191",
       "question": "Which policies and procedures publication is titled Patch Manaqement in the IACS Environment?",
       "options": [
@@ -10748,7 +9902,7 @@
     },
     {
       "id": "pdf-isa-62443-156",
-      "number": 251,
+      "number": 225,
       "source": "ISA/IEC 62443 PDF — Question 156",
       "question": "Which standard is applied during the Assess phase for risk assessment?",
       "options": [
@@ -10794,7 +9948,7 @@
     },
     {
       "id": "pdf-isa-62443-217",
-      "number": 252,
+      "number": 226,
       "source": "ISA/IEC 62443 PDF — Question 217",
       "question": "Which of the following is a trend that has caused a significant percentage of security vulnerabilities?",
       "options": [
@@ -10840,7 +9994,7 @@
     },
     {
       "id": "pdf-isa-62443-190",
-      "number": 253,
+      "number": 227,
       "source": "ISA/IEC 62443 PDF — Question 190",
       "question": "Which is a commonly used protocol for managing secure data transmission on the Internet?",
       "options": [
@@ -10887,7 +10041,7 @@
     },
     {
       "id": "pdf-isa-62443-034",
-      "number": 254,
+      "number": 228,
       "source": "ISA/IEC 62443 PDF — Question 34",
       "question": "Which of the following is an example of separation of duties as a part of system development and maintenance?",
       "options": [
@@ -10933,7 +10087,7 @@
     },
     {
       "id": "pdf-isa-62443-222",
-      "number": 255,
+      "number": 229,
       "source": "ISA/IEC 62443 PDF — Question 222",
       "question": "Which of the following is a cause for the increase in attacks on IACS?",
       "options": [
@@ -10980,7 +10134,7 @@
     },
     {
       "id": "pdf-isa-62443-087",
-      "number": 256,
+      "number": 230,
       "source": "ISA/IEC 62443 PDF — Question 87",
       "question": "How many element groups are in the \"Addressing Risk\" CSMS category?",
       "options": [
@@ -11026,7 +10180,7 @@
     },
     {
       "id": "pdf-isa-62443-004",
-      "number": 257,
+      "number": 231,
       "source": "ISA/IEC 62443 PDF — Question 4",
       "question": "Which organization is responsible for the ISA 62443 series of standards?",
       "options": [
@@ -11072,7 +10226,7 @@
     },
     {
       "id": "pdf-isa-62443-187",
-      "number": 258,
+      "number": 232,
       "source": "ISA/IEC 62443 PDF — Question 187",
       "question": "Which of the following is an activity that should trigger a review of the CSMS?",
       "options": [
@@ -11120,7 +10274,7 @@
     },
     {
       "id": "pdf-isa-62443-091",
-      "number": 259,
+      "number": 233,
       "source": "ISA/IEC 62443 PDF — Question 91",
       "question": "Which analysis method is MOST frequently used as an input to a security risk assessment?",
       "options": [
@@ -11166,7 +10320,7 @@
     },
     {
       "id": "pdf-isa-62443-063",
-      "number": 260,
+      "number": 234,
       "source": "ISA/IEC 62443 PDF — Question 63",
       "question": "Which layer in the Open Systems Interconnection (OSI) model would include the use of the File Transfer Protocol (FTP)?",
       "options": [
@@ -11212,7 +10366,7 @@
     },
     {
       "id": "pdf-isa-62443-094",
-      "number": 261,
+      "number": 235,
       "source": "ISA/IEC 62443 PDF — Question 94",
       "question": "What do packet filter firewalls examine?",
       "options": [
@@ -11258,7 +10412,7 @@
     },
     {
       "id": "pdf-isa-62443-027",
-      "number": 262,
+      "number": 236,
       "source": "ISA/IEC 62443 PDF — Question 27",
       "question": "Which of the following is the underlying protocol for Ethernet/IP?",
       "options": [
@@ -11304,7 +10458,7 @@
     },
     {
       "id": "pdf-isa-62443-110",
-      "number": 263,
+      "number": 237,
       "source": "ISA/IEC 62443 PDF — Question 110",
       "question": "What is the PRIMARY goal of the IACS Security Program (SP) requirements according to ISA/IEC 62443-2- 1?",
       "options": [
@@ -11350,7 +10504,7 @@
     },
     {
       "id": "pdf-isa-62443-220",
-      "number": 264,
+      "number": 238,
       "source": "ISA/IEC 62443 PDF — Question 220",
       "question": "What does a demilitarized zone (DMZ) provide in network security?",
       "options": [
@@ -11396,7 +10550,7 @@
     },
     {
       "id": "pdf-isa-62443-175",
-      "number": 265,
+      "number": 239,
       "source": "ISA/IEC 62443 PDF — Question 175",
       "question": "What port number is used by MODBUS TCP/IP for communication?",
       "options": [
@@ -11442,7 +10596,7 @@
     },
     {
       "id": "pdf-isa-62443-143",
-      "number": 266,
+      "number": 240,
       "source": "ISA/IEC 62443 PDF — Question 143",
       "question": "What is the primary purpose of Foundational Requirement 1 (FR 1)?",
       "options": [
@@ -11488,7 +10642,7 @@
     },
     {
       "id": "pdf-isa-62443-112",
-      "number": 267,
+      "number": 241,
       "source": "ISA/IEC 62443 PDF — Question 112",
       "question": "Which is NOT a potential consequence for organizations that fail to prioritize control system security?",
       "options": [
@@ -11533,54 +10687,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-218",
-      "number": 268,
-      "source": "ISA/IEC 62443 PDF — Question 218",
-      "question": "What is the primary purpose of the NIST Cybersecurity Framework (CSF)?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "To create new cybersecurity technologies"
-        },
-        {
-          "letter": "B",
-          "text": "To replace existing cybersecurity standards"
-        },
-        {
-          "letter": "C",
-          "text": "To enhance the resilience of critical infrastructure"
-        },
-        {
-          "letter": "D",
-          "text": "To provide a certification for organizations"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctAnswers": [
-        "C"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "The primary goal of the NIST Cybersecurity Framework (CSF) is to help organizations enhance the security and resilience of critical infrastructure and reduce cybersecurity risks through a structured, risk-based approach. “The Framework provides a policy framework of computer security guidance for how private sector organizations in the United States can assess and improve their ability to prevent, detect, and respond to cyber attacks. It is intended to enhance the resilience of critical infrastructure.” — NIST CSF v1.1, Section 1.0 – Overview The NIST CSF does not create new standards or certify organizations — it references existing standards and guides implementation in a flexible and sector-neutral way.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 218",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "WHAT",
-        "label": "ISA/IEC 62443, CSMS, Foundational Requirements and Security Levels",
-        "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
-        "href": "/?tab=ot&anchor=what"
-      }
-    },
-    {
       "id": "pdf-isa-62443-107",
-      "number": 269,
+      "number": 242,
       "source": "ISA/IEC 62443 PDF — Question 107",
       "question": "Which of the ISA 62443 standards focuses on the process of developing secure products?",
       "options": [
@@ -11626,7 +10734,7 @@
     },
     {
       "id": "pdf-isa-62443-121",
-      "number": 270,
+      "number": 243,
       "source": "ISA/IEC 62443 PDF — Question 121",
       "question": "Which of the following is NOT listed as a potential consequence of compromising IACS according to the ISA99 Committee scope?",
       "options": [
@@ -11672,7 +10780,7 @@
     },
     {
       "id": "pdf-isa-62443-186",
-      "number": 271,
+      "number": 244,
       "source": "ISA/IEC 62443 PDF — Question 186",
       "question": "Which protocol is commonly used for managing the security of message transmission on the Internet via web browsers?",
       "options": [
@@ -11717,54 +10825,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-225",
-      "number": 272,
-      "source": "ISA/IEC 62443 PDF — Question 225",
-      "question": "What.are the two elements of the risk analysis category of an IACS?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Risk evaluation and risk identification"
-        },
-        {
-          "letter": "B",
-          "text": "Business rationale and risk reduction and avoidance"
-        },
-        {
-          "letter": "C",
-          "text": "Business rationale and risk identification and classification"
-        },
-        {
-          "letter": "D",
-          "text": "Business recovery and risk elimination or mitigation"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctAnswers": [
-        "C"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "The risk analysis category of an IACS consists of two elements: business rationale and risk identification and classification1. Business rationale is the process of defining the scope, objectives, and criteria for the risk analysis, as well as the roles and responsibilities of the stakeholders involved. Risk identification and classification is the process of identifying the assets, threats, vulnerabilities, and consequences of a cyberattack on the IACS, and assigning a risk level to each scenario based on the likelihood and impact of the attack1. These elements are essential for establishing a baseline of the current risk posture of the IACS and determining the appropriate risk treatment measures to reduce the risk to an acceptable level. References: 1: ISA/IEC 62443-3-2:2020, Security for industrial automation and control systems - Part 3-2: Security risk assessment for system design, International Society of Automation, Research Triangle Park, NC, USA, 2020.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 225",
-        "Risk Management and Security Lifecycle"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "Risk Management and Security Lifecycle",
-      "explanationAnchor": {
-        "anchor": "WHY",
-        "label": "OT/ICS fundamentals, risk and people",
-        "reason": "Review the fundamentals and risk context before memorising the answer.",
-        "href": "/?tab=ot&anchor=why"
-      }
-    },
-    {
       "id": "pdf-isa-62443-168",
-      "number": 273,
+      "number": 245,
       "source": "ISA/IEC 62443 PDF — Question 168",
       "question": "What does Foundational Requirement 6 (FR 6) - Timely Response to Events (TRE) require?",
       "options": [
@@ -11810,7 +10872,7 @@
     },
     {
       "id": "pdf-isa-62443-005",
-      "number": 274,
+      "number": 246,
       "source": "ISA/IEC 62443 PDF — Question 5",
       "question": "Which layer specifies the rules for Modbus Application Protocol",
       "options": [
@@ -11856,7 +10918,7 @@
     },
     {
       "id": "pdf-isa-62443-077",
-      "number": 275,
+      "number": 247,
       "source": "ISA/IEC 62443 PDF — Question 77",
       "question": "What is Modbus?",
       "options": [
@@ -11902,7 +10964,7 @@
     },
     {
       "id": "pdf-isa-62443-173",
-      "number": 276,
+      "number": 248,
       "source": "ISA/IEC 62443 PDF — Question 173",
       "question": "Which steps are part of implementing countermeasures?",
       "options": [
@@ -11948,7 +11010,7 @@
     },
     {
       "id": "pdf-isa-62443-098",
-      "number": 277,
+      "number": 249,
       "source": "ISA/IEC 62443 PDF — Question 98",
       "question": "What are the two elements of the risk analysis category of an IACS?",
       "options": [
@@ -11993,54 +11055,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-194",
-      "number": 278,
-      "source": "ISA/IEC 62443 PDF — Question 194",
-      "question": "Why is OPC Classic considered firewall unfriendly?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It allows use of only port 80."
-        },
-        {
-          "letter": "B",
-          "text": "It dynamically assigns several ports."
-        },
-        {
-          "letter": "C",
-          "text": "It is an obsolete communication standard."
-        },
-        {
-          "letter": "D",
-          "text": "It works with control devices from different manufacturers."
-        }
-      ],
-      "correctAnswer": "B",
-      "correctAnswers": [
-        "B"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "OPC Classic uses Microsoft's DCOM (Distributed Component Object Model) for communication, which dynamically opens multiple ports, making it extremely difficult to manage with firewalls. “OPC Classic is firewall-unfriendly because DCOM requires dynamic port negotiation, making it difficult to define consistent firewall rules.” — ISA/IEC 62443-3-3:2013, Annex A – Communication Protocols and Security Concerns This lack of port predictability presents a significant security and operational risk, which led to the development of OPC UA, which uses fixed ports and supports encryption.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 194",
-        "Industrial Automation and Control System Fundamentals"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "Industrial Automation and Control System Fundamentals",
-      "explanationAnchor": {
-        "anchor": "WHAT",
-        "label": "ISA/IEC 62443, CSMS, Foundational Requirements and Security Levels",
-        "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
-        "href": "/?tab=ot&anchor=what"
-      }
-    },
-    {
       "id": "pdf-isa-62443-169",
-      "number": 279,
+      "number": 250,
       "source": "ISA/IEC 62443 PDF — Question 169",
       "question": "Which communications system covers a large geographic area?",
       "options": [
@@ -12086,7 +11102,7 @@
     },
     {
       "id": "pdf-isa-62443-214",
-      "number": 280,
+      "number": 251,
       "source": "ISA/IEC 62443 PDF — Question 214",
       "question": "Which of the following is NOT a strategy for deploying a WAN?",
       "options": [
@@ -12132,7 +11148,7 @@
     },
     {
       "id": "pdf-isa-62443-128",
-      "number": 281,
+      "number": 252,
       "source": "ISA/IEC 62443 PDF — Question 128",
       "question": "Which of the following protocols is mentioned as being commonly used in control systems?",
       "options": [
@@ -12178,7 +11194,7 @@
     },
     {
       "id": "pdf-isa-62443-172",
-      "number": 282,
+      "number": 253,
       "source": "ISA/IEC 62443 PDF — Question 172",
       "question": "Who must be included in a training and security awareness program?",
       "options": [
@@ -12204,7 +11220,7 @@
         "C"
       ],
       "questionType": "multiple-choice",
-      "explanation": "Modbus over Ethernet, also known as Modbus/TCP, is a protocol that encapsulates the Modbus/RTU data string inside the data section of the TCP frame. It then sets up a client/server exchange between nodes, using TCP/IP addressing to establish connections1. This makes it easy to manage in a firewall, because the firewall can filter the traffic based on the source and destination IP addresses and the TCP port number. The default TCP port for Modbus/TCP is 502, but it can be changed if needed. Modbus/TCP does not use any other ports or protocols, so the firewall rules can be simple and specific. References: 8: Open Modbus/TCP Specification, RTA Automation, 2010. [9]: Modbus Application Protocol Specification V1.1b3, Modbus Organization, 2012.",
+      "explanation": "According to ISA/IEC 62443 (such as 62443-2-1 and 62443-2-4), a cybersecurity training and awareness program must encompass all personnel who have access to or interact with the IACS environment. This includes regular employees, contractors, temporary staff, and vendors/suppliers.",
       "difficulty": "mixed",
       "sourceType": "isa_iec_62443_pdf",
       "sourceReferences": [
@@ -12213,7 +11229,7 @@
         "Security Policies, Procedures, and Governance"
       ],
       "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
+      "validationNote": "Corrected: Restored proper training and awareness explanation (swapped with Modbus explanation in original dump).",
       "topic": "Security Policies, Procedures, and Governance",
       "explanationAnchor": {
         "anchor": "WHY",
@@ -12223,54 +11239,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-099",
-      "number": 283,
-      "source": "ISA/IEC 62443 PDF — Question 99",
-      "question": "Which steps are included in the ISA/IEC 62443 assess phase?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Cybersecurity requirements specification and detailed cyber risk assessment"
-        },
-        {
-          "letter": "B",
-          "text": "Cybersecurity requirements specification and allocation of IACS assets to zones and conduits"
-        },
-        {
-          "letter": "C",
-          "text": "Detailed cyber risk assessment and cybersecurity maintenance, monitoring, and management of change"
-        },
-        {
-          "letter": "D",
-          "text": "Allocation of IACS assets to zones and conduits, and detailed cyber risk assessment"
-        }
-      ],
-      "correctAnswer": "B",
-      "correctAnswers": [
-        "B"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "The ISA/IEC 62443 standards are focused on industrial automation and control systems security. The assess phase within the ISA/IEC 62443 framework is designed to identify and analyze potential vulnerabilities in the industrial control system (ICS) environment. One of the key steps in this phase is the specification of cybersecurity requirements. Additionally, it involves the allocation of industrial automation and control system (IACS) assets to defined zones and conduits to manage and segregate the network and improve security. These measures help to ensure that security requirements are met and that the assets are protected according to their security needs. Therefore, the correct answer is B, which mentions both the cybersecurity requirements specification and the allocation of IACS assets to zones and conduits as part of the assess phase.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 99",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "WHAT",
-        "label": "ISA/IEC 62443, CSMS, Foundational Requirements and Security Levels",
-        "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
-        "href": "/?tab=ot&anchor=what"
-      }
-    },
-    {
       "id": "pdf-isa-62443-076",
-      "number": 284,
+      "number": 254,
       "source": "ISA/IEC 62443 PDF — Question 76",
       "question": "Which is the implementation of PROFIBUS over Ethernet for non-safety-related communications?",
       "options": [
@@ -12316,7 +11286,7 @@
     },
     {
       "id": "pdf-isa-62443-188",
-      "number": 285,
+      "number": 255,
       "source": "ISA/IEC 62443 PDF — Question 188",
       "question": "At Layer 4 of the Open Systems Interconnection (OSI) model, what identifies the application that will handle a packet inside a host?",
       "options": [
@@ -12362,7 +11332,7 @@
     },
     {
       "id": "pdf-isa-62443-028",
-      "number": 286,
+      "number": 256,
       "source": "ISA/IEC 62443 PDF — Question 28",
       "question": "What is a key feature of the NIS2 Directive?",
       "options": [
@@ -12408,7 +11378,7 @@
     },
     {
       "id": "pdf-isa-62443-148",
-      "number": 287,
+      "number": 257,
       "source": "ISA/IEC 62443 PDF — Question 148",
       "question": "What is the name of the missing layer in the Open Systems Interconnection (OSI) model shown below?",
       "options": [
@@ -12454,7 +11424,7 @@
     },
     {
       "id": "pdf-isa-62443-016",
-      "number": 288,
+      "number": 258,
       "source": "ISA/IEC 62443 PDF — Question 16",
       "question": "A national standards body wants to represent its country’s interests at an international level and adopt global standards locally. What role does this organization fulfill?",
       "options": [
@@ -12500,7 +11470,7 @@
     },
     {
       "id": "pdf-isa-62443-180",
-      "number": 289,
+      "number": 259,
       "source": "ISA/IEC 62443 PDF — Question 180",
       "question": "As related to technical security requirements for IACS components, what does CCSC stand for?",
       "options": [
@@ -12546,7 +11516,7 @@
     },
     {
       "id": "pdf-isa-62443-219",
-      "number": 290,
+      "number": 260,
       "source": "ISA/IEC 62443 PDF — Question 219",
       "question": "If an asset owner wants to demonstrate compliance with ISA/IEC 62443-2-1 requirements during an external audit, which type of evidence would be MOST appropriate?",
       "options": [
@@ -12592,7 +11562,7 @@
     },
     {
       "id": "pdf-isa-62443-031",
-      "number": 291,
+      "number": 261,
       "source": "ISA/IEC 62443 PDF — Question 31",
       "question": "What is TRUE regarding safety systems?",
       "options": [
@@ -12638,7 +11608,7 @@
     },
     {
       "id": "pdf-isa-62443-029",
-      "number": 292,
+      "number": 262,
       "source": "ISA/IEC 62443 PDF — Question 29",
       "question": "What is a commonly used protocol for managing secure data transmission over a Virtual Private Network (VPN)?",
       "options": [
@@ -12684,7 +11654,7 @@
     },
     {
       "id": "pdf-isa-62443-122",
-      "number": 293,
+      "number": 263,
       "source": "ISA/IEC 62443 PDF — Question 122",
       "question": "What is one challenge associated with firewalls?",
       "options": [
@@ -12729,54 +11699,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-103",
-      "number": 294,
-      "source": "ISA/IEC 62443 PDF — Question 103",
-      "question": "Which of the following is NOT listed as a potential consequence of compromising IACS according to the ISA99 Committee scope?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Losses"
-        },
-        {
-          "letter": "B",
-          "text": "Increased product sales"
-        },
-        {
-          "letter": "C",
-          "text": "Endangerment of public safety"
-        },
-        {
-          "letter": "D",
-          "text": "D. Loss of proprietary information"
-        }
-      ],
-      "correctAnswer": "B",
-      "correctAnswers": [
-        "B"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "The ISA99 Committee (which developed ISA/IEC 62443) defines the scope and impact of IACS cybersecurity incidents in terms of negative consequences. Step 1: Recognized consequences The standard identifies consequences such as: Financial losses Environmental damage Endangerment of public or worker safety Loss of proprietary or sensitive information Step 2: Purpose of defining consequences These consequences justify why IACS cybersecurity must prioritize availability, integrity, and safety in addition to confidentiality. Step 3: Why increased product sales is excluded “Increased product sales” is not a negative consequence and is not mentioned anywhere in the ISA99 scope as a result of a cybersecurity compromise. Therefore, the correct answer is Increased product sales.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 103",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "WHY",
-        "label": "OT/ICS fundamentals, risk and people",
-        "reason": "Review the fundamentals and risk context before memorising the answer.",
-        "href": "/?tab=ot&anchor=why"
-      }
-    },
-    {
       "id": "pdf-isa-62443-114",
-      "number": 295,
+      "number": 264,
       "source": "ISA/IEC 62443 PDF — Question 114",
       "question": "What is OPC?",
       "options": [
@@ -12822,7 +11746,7 @@
     },
     {
       "id": "pdf-isa-62443-043",
-      "number": 296,
+      "number": 265,
       "source": "ISA/IEC 62443 PDF — Question 43",
       "question": "Which layer deals with data format conversion and encryption?",
       "options": [
@@ -12868,7 +11792,7 @@
     },
     {
       "id": "pdf-isa-62443-054",
-      "number": 297,
+      "number": 266,
       "source": "ISA/IEC 62443 PDF — Question 54",
       "question": "Which statement is TRUE regarding Intrusion Detection Systems (IDS)?",
       "options": [
@@ -12914,7 +11838,7 @@
     },
     {
       "id": "pdf-isa-62443-020",
-      "number": 298,
+      "number": 267,
       "source": "ISA/IEC 62443 PDF — Question 20",
       "question": "What is a key activity in the Maintain phase?",
       "options": [
@@ -12959,54 +11883,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-044",
-      "number": 299,
-      "source": "ISA/IEC 62443 PDF — Question 44",
-      "question": "Which of the following activities is NOT listed under the “Patch Testing” phase in the asset owner requirements?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Notification"
-        },
-        {
-          "letter": "B",
-          "text": "File authenticity"
-        },
-        {
-          "letter": "C",
-          "text": "Removal procedure"
-        },
-        {
-          "letter": "D",
-          "text": "Qualification and verification"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctAnswers": [
-        "C"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "ISA/IEC 62443-2-1 defines structured patch management phases, including evaluation, testing, deployment, and rollback considerations. Step 1: Patch testing objectives The patch testing phase focuses on ensuring that patches are authentic, safe, and compatible with the operational environment. Step 2: Included activities File authenticity verifies that patches are genuine and unaltered Qualification and verification ensure patches do not disrupt operations Notification ensures relevant stakeholders are informed of test results Step 3: Why removal procedure is excluded Removal or rollback procedures are part of deployment and recovery planning, not patch testing itself. Thus, the correct answer is Removal procedure.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 44",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "IMPROVE",
-        "label": "Lifecycle, patch management and secure development",
-        "reason": "Review the lifecycle, patching or secure-development explanation that supports this answer.",
-        "href": "/?tab=ot&anchor=improve"
-      }
-    },
-    {
       "id": "pdf-isa-62443-144",
-      "number": 300,
+      "number": 268,
       "source": "ISA/IEC 62443 PDF — Question 144",
       "question": "Why is it important to document the results of the initial/high-level risk assessment?",
       "options": [
@@ -13052,7 +11930,7 @@
     },
     {
       "id": "pdf-isa-62443-046",
-      "number": 301,
+      "number": 269,
       "source": "ISA/IEC 62443 PDF — Question 46",
       "question": "How should outreach be handled with product suppliers and service providers?",
       "options": [
@@ -13098,7 +11976,7 @@
     },
     {
       "id": "pdf-isa-62443-030",
-      "number": 302,
+      "number": 270,
       "source": "ISA/IEC 62443 PDF — Question 30",
       "question": "Which of the following is an example of a device used for intrusion detection?",
       "options": [
@@ -13144,7 +12022,7 @@
     },
     {
       "id": "pdf-isa-62443-097",
-      "number": 303,
+      "number": 271,
       "source": "ISA/IEC 62443 PDF — Question 97",
       "question": "What is the definition of \"defense in depth\" when referring to cybersecurity?",
       "options": [
@@ -13189,54 +12067,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-133",
-      "number": 304,
-      "source": "ISA/IEC 62443 PDF — Question 133",
-      "question": "Which of the following BEST describes 'Vulnerability'?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "An exploitable flaw in management"
-        },
-        {
-          "letter": "B",
-          "text": "An event that could breach security"
-        },
-        {
-          "letter": "C",
-          "text": "The potential for violation of security"
-        },
-        {
-          "letter": "D",
-          "text": "The result that occurs from a particular incident"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctAnswers": [
-        "C"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "According to IEC 62443-1-1, a vulnerability is defined as: “A weakness in an asset or in the protective measures associated with that asset that can be exploited by a threat source.” More broadly, it represents the potential for a violation of security, rather than a guaranteed breach or specific event. This aligns with the understanding in cybersecurity risk management — a vulnerability does not equate to an incident or result, but rather a potential that could be exploited. Incorrect Options: A. An exploitable flaw in management – Too narrow; vulnerabilities exist in systems, software, devices, not just management. B. An event that could breach security – That’s a threat, not a vulnerability. D. The result that occurs from a particular incident – That would be considered a consequence or impact, not the vulnerability itself.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 133",
-        "Risk Management and Security Lifecycle"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "Risk Management and Security Lifecycle",
-      "explanationAnchor": {
-        "anchor": "SEE",
-        "label": "Monitoring, detection and incident response",
-        "reason": "Review the monitoring, detection or response explanation that explains this answer.",
-        "href": "/?tab=ot&anchor=see"
-      }
-    },
-    {
       "id": "pdf-isa-62443-012",
-      "number": 305,
+      "number": 272,
       "source": "ISA/IEC 62443 PDF — Question 12",
       "question": "What type of attack is characterized by encrypting an organization’s data and demanding payment for restoration?",
       "options": [
@@ -13282,7 +12114,7 @@
     },
     {
       "id": "pdf-isa-62443-064",
-      "number": 306,
+      "number": 273,
       "source": "ISA/IEC 62443 PDF — Question 64",
       "question": "A multinational corporation needs to implement a cybersecurity framework that can be adapted across different countries and industries while allowing continuous improvement. Which feature of the NIST CSF makes it suitable for this purpose?",
       "options": [
@@ -13328,7 +12160,7 @@
     },
     {
       "id": "pdf-isa-62443-205",
-      "number": 307,
+      "number": 274,
       "source": "ISA/IEC 62443 PDF — Question 205",
       "question": "Which of the following BEST describes a control system?",
       "options": [
@@ -13374,7 +12206,7 @@
     },
     {
       "id": "pdf-isa-62443-079",
-      "number": 308,
+      "number": 275,
       "source": "ISA/IEC 62443 PDF — Question 79",
       "question": "An industrial control system requires strong protection against intentional violations using sophisticated means and moderate skills. According to the Security Level (SL) definitions, which SL should be targeted?",
       "options": [
@@ -13420,7 +12252,7 @@
     },
     {
       "id": "pdf-isa-62443-145",
-      "number": 309,
+      "number": 276,
       "source": "ISA/IEC 62443 PDF — Question 145",
       "question": "If an asset owner wants to improve their organization’s ability to respond during a cyberattack, which of the following activities would be MOST appropriate to implement?",
       "options": [
@@ -13465,54 +12297,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-069",
-      "number": 310,
-      "source": "ISA/IEC 62443 PDF — Question 69",
-      "question": "What is the name of the missing layer in the Open Systems Interconnection (OSI) model shown below?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Control"
-        },
-        {
-          "letter": "B",
-          "text": "Protocol"
-        },
-        {
-          "letter": "C",
-          "text": "Transport"
-        },
-        {
-          "letter": "D",
-          "text": "User"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctAnswers": [
-        "C"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "The OSI model defines 7 layers for standardizing communications in network systems. The Transport Layer is responsible for reliable data transfer between end systems, including flow control, error correction, and segmentation. It sits between the Network Layer and the Session Layer. The correct OSI model from top to bottom is: Application Presentation Session Transport # Missing layer Network Data Link Physical “The transport layer provides transparent transfer of data between end users, ensuring complete data transfer.” — ISA/IEC 62443-3-3:2013, Annex A – Communications Stack and Layered Security Concepts Understanding the OSI model is crucial when designing secure industrial networks, as ISA/IEC 62443 advocates for layered defense (\"defense in depth\") at all levels.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 69",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "FLOW",
-        "label": "OSI, networking and industrial protocols",
-        "reason": "Review the OSI, networking or industrial-protocol explanation that shows how this answer works.",
-        "href": "/?tab=ot&anchor=flow"
-      }
-    },
-    {
       "id": "pdf-isa-62443-203",
-      "number": 311,
+      "number": 277,
       "source": "ISA/IEC 62443 PDF — Question 203",
       "question": "Which model describes relationships between assets within an industrial automation and control system?",
       "options": [
@@ -13558,7 +12344,7 @@
     },
     {
       "id": "pdf-isa-62443-070",
-      "number": 312,
+      "number": 278,
       "source": "ISA/IEC 62443 PDF — Question 70",
       "question": "Which is the BEST practice when establishing security zones?",
       "options": [
@@ -13604,7 +12390,7 @@
     },
     {
       "id": "pdf-isa-62443-083",
-      "number": 313,
+      "number": 279,
       "source": "ISA/IEC 62443 PDF — Question 83",
       "question": "The ISA/IEC 62443 Profiles Group will include parts starting with which number?",
       "options": [
@@ -13650,7 +12436,7 @@
     },
     {
       "id": "pdf-isa-62443-006",
-      "number": 314,
+      "number": 280,
       "source": "ISA/IEC 62443 PDF — Question 6",
       "question": "What is the primary purpose of the NIST Cybersecurity Framework (CSF)?",
       "options": [
@@ -13696,7 +12482,7 @@
     },
     {
       "id": "pdf-isa-62443-189",
-      "number": 315,
+      "number": 281,
       "source": "ISA/IEC 62443 PDF — Question 189",
       "question": "Which of the following starts at a high level and includes all ANSI/ISA-95 Level 0,1,2,3,4 equipment and information systems?",
       "options": [
@@ -13742,7 +12528,7 @@
     },
     {
       "id": "pdf-isa-62443-045",
-      "number": 316,
+      "number": 282,
       "source": "ISA/IEC 62443 PDF — Question 45",
       "question": "What type of malware disrupted an emergency shutdown capability in safety systems?",
       "options": [
@@ -13788,7 +12574,7 @@
     },
     {
       "id": "pdf-isa-62443-066",
-      "number": 317,
+      "number": 283,
       "source": "ISA/IEC 62443 PDF — Question 66",
       "question": "When selecting a risk assessment methodology for a complex industrial automation system, which approach aligns BEST with ISA/IEC 62443 guidance?",
       "options": [
@@ -13834,7 +12620,7 @@
     },
     {
       "id": "pdf-isa-62443-182",
-      "number": 318,
+      "number": 284,
       "source": "ISA/IEC 62443 PDF — Question 182",
       "question": "What programs are MOST effective if they are tailored to the audience, consistent with company policy, and communicated regularly?",
       "options": [
@@ -13880,7 +12666,7 @@
     },
     {
       "id": "pdf-isa-62443-090",
-      "number": 319,
+      "number": 285,
       "source": "ISA/IEC 62443 PDF — Question 90",
       "question": "What are the two sublayers of Layer 2?",
       "options": [
@@ -13926,7 +12712,7 @@
     },
     {
       "id": "pdf-isa-62443-072",
-      "number": 320,
+      "number": 286,
       "source": "ISA/IEC 62443 PDF — Question 72",
       "question": "Which is the PRIMARY responsibility of the network layer of the Open Systems Interconnection (OSI) model?",
       "options": [
@@ -13972,7 +12758,7 @@
     },
     {
       "id": "pdf-isa-62443-127",
-      "number": 321,
+      "number": 287,
       "source": "ISA/IEC 62443 PDF — Question 127",
       "question": "Which statement BEST describes the enforceability of standards?",
       "options": [
@@ -14018,7 +12804,7 @@
     },
     {
       "id": "pdf-isa-62443-116",
-      "number": 322,
+      "number": 288,
       "source": "ISA/IEC 62443 PDF — Question 116",
       "question": "Which of the following is NOT listed under Organizational Security Measures (SP Element 1)?",
       "options": [
@@ -14064,7 +12850,7 @@
     },
     {
       "id": "pdf-isa-62443-165",
-      "number": 323,
+      "number": 289,
       "source": "ISA/IEC 62443 PDF — Question 165",
       "question": "Which NIST Special Publication focuses specifically on securing Industrial Control Systems (ICS)?",
       "options": [
@@ -14109,54 +12895,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-120",
-      "number": 324,
-      "source": "ISA/IEC 62443 PDF — Question 120",
-      "question": "An industrial facility wants to ensure that only authorized systems reach its PLCs while minimizing disruption to time-sensitive control processes. Which type of firewall would BEST suit this need?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "General-purpose software firewall"
-        },
-        {
-          "letter": "B",
-          "text": "Unidirectional gateway (data diode)"
-        },
-        {
-          "letter": "C",
-          "text": "IACS-specific firewall with deep packet inspection"
-        },
-        {
-          "letter": "D",
-          "text": "Basic packet filter firewall without protocol awareness"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctAnswers": [
-        "C"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "For industrial networks, the most effective approach is to use IACS-specific firewalls that perform deep packet inspection (DPI) of industrial protocols (e.g., Modbus, DNP3, OPC UA). “Industrial-specific firewalls with DPI capabilities can inspect control system protocols and enforce granular access control without disrupting time-sensitive operations.” — ISA/IEC 62443-3-3:2013, SR 5.1 – Zone Boundary Protection Unlike generic IT firewalls, IACS-specific firewalls: Understand OT protocols Enforce real-time constraints Support deterministic traffic flows",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 120",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "WHAT",
-        "label": "ISA/IEC 62443, CSMS, Foundational Requirements and Security Levels",
-        "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
-        "href": "/?tab=ot&anchor=what"
-      }
-    },
-    {
       "id": "pdf-isa-62443-021",
-      "number": 325,
+      "number": 290,
       "source": "ISA/IEC 62443 PDF — Question 21",
       "question": "Which of the following provides the overall conceptual basis in the design of an appropriate security program?",
       "options": [
@@ -14202,7 +12942,7 @@
     },
     {
       "id": "pdf-isa-62443-015",
-      "number": 326,
+      "number": 291,
       "source": "ISA/IEC 62443 PDF — Question 15",
       "question": "In which layer is the physical address assigned?",
       "options": [
@@ -14248,7 +12988,7 @@
     },
     {
       "id": "pdf-isa-62443-177",
-      "number": 327,
+      "number": 292,
       "source": "ISA/IEC 62443 PDF — Question 177",
       "question": "In the context of global frameworks, what does the acronym SDO stand for?",
       "options": [
@@ -14294,7 +13034,7 @@
     },
     {
       "id": "pdf-isa-62443-215",
-      "number": 328,
+      "number": 293,
       "source": "ISA/IEC 62443 PDF — Question 215",
       "question": "What type of cyberattack was discussed in the Ukrainian power grid case study?",
       "options": [
@@ -14340,7 +13080,7 @@
     },
     {
       "id": "pdf-isa-62443-129",
-      "number": 329,
+      "number": 294,
       "source": "ISA/IEC 62443 PDF — Question 129",
       "question": "What is one reason why IACS systems are highly vulnerable to attack?",
       "options": [
@@ -14386,7 +13126,7 @@
     },
     {
       "id": "pdf-isa-62443-151",
-      "number": 330,
+      "number": 295,
       "source": "ISA/IEC 62443 PDF — Question 151",
       "question": "Which is a physical layer standard for serial communications between two or more devices?",
       "options": [
@@ -14432,7 +13172,7 @@
     },
     {
       "id": "pdf-isa-62443-084",
-      "number": 331,
+      "number": 296,
       "source": "ISA/IEC 62443 PDF — Question 84",
       "question": "Which of the following tools has the potential for serious disruption of a control network and should not be used on a live system?",
       "options": [
@@ -14478,7 +13218,7 @@
     },
     {
       "id": "pdf-isa-62443-223",
-      "number": 332,
+      "number": 297,
       "source": "ISA/IEC 62443 PDF — Question 223",
       "question": "Whose responsibility is it to determine the level of risk an organization is willing to tolerate?",
       "options": [
@@ -14523,54 +13263,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-033",
-      "number": 333,
-      "source": "ISA/IEC 62443 PDF — Question 33",
-      "question": "After receiving an approved patch from the JACS vendor, what is BEST practice for the asset owner to follow?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "If a low priority, there is no need to apply the patch."
-        },
-        {
-          "letter": "B",
-          "text": "If a medium priority, schedule the installation within three months after receipt."
-        },
-        {
-          "letter": "C",
-          "text": "If a high priority, apply the patch at the first unscheduled outage."
-        },
-        {
-          "letter": "D",
-          "text": "If no problems are experienced with the current IACS, it is not necessary to apply the patch."
-        }
-      ],
-      "correctAnswer": "C",
-      "correctAnswers": [
-        "C"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "According to the ISA/IEC 62443 Cybersecurity Fundamentals Specialist resources, patches are software updates that fix bugs, vulnerabilities, or improve performance of a system. Patches are classified into three categories based on their urgency and impact: low, medium, and high. Low priority patches are those that have minimal or no impact on the system functionality or security, and can be applied at the next scheduled maintenance. Medium priority patches are those that have moderate impact on the system functionality or security, and should be applied within a reasonable time frame, such as three months. High priority patches are those that have significant or critical impact on the system functionality or security, and should be applied as soon as possible, preferably at the first unscheduled outage. Applying patches in a timely manner is a best practice for maintaining the security and reliability of an industrial automation and control system (IACS). References: ISA/IEC 62443 Cybersecurity Fundamentals Specialist Study Guide, Section 4.3.2, Patch Management ISA/IEC 62443-2-1:2009, Security for industrial automation and control systems - Part 2-1: Establishing an industrial automation and control systems security program, Clause 5.3.2.2, Patch management ISA/IEC 62443-3-3:2013, Security for industrial automation and control systems - Part 3-3: System security requirements and security levels, Clause 4.3.3.6.2, Patch management",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 33",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "IMPROVE",
-        "label": "Lifecycle, patch management and secure development",
-        "reason": "Review the lifecycle, patching or secure-development explanation that supports this answer.",
-        "href": "/?tab=ot&anchor=improve"
-      }
-    },
-    {
       "id": "pdf-isa-62443-032",
-      "number": 334,
+      "number": 298,
       "source": "ISA/IEC 62443 PDF — Question 32",
       "question": "Which standard is recognized as part of the NIST CSF Informative References?",
       "options": [
@@ -14616,7 +13310,7 @@
     },
     {
       "id": "pdf-isa-62443-039",
-      "number": 335,
+      "number": 299,
       "source": "ISA/IEC 62443 PDF — Question 39",
       "question": "Why is patch management more difficult for IACS than for business systems?",
       "options": [
@@ -14662,7 +13356,7 @@
     },
     {
       "id": "pdf-isa-62443-131",
-      "number": 336,
+      "number": 300,
       "source": "ISA/IEC 62443 PDF — Question 131",
       "question": "In what step of the development process of the CSMS is “Establish purpose, organizational support, resources, and scope” taken care of?",
       "options": [
@@ -14707,100 +13401,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-206",
-      "number": 337,
-      "source": "ISA/IEC 62443 PDF — Question 206",
-      "question": "To which category of the ISA-62443 (IEC 62443) series does the document titled \"Patch management in the IACS environment\" belong?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "System"
-        },
-        {
-          "letter": "B",
-          "text": "General"
-        },
-        {
-          "letter": "C",
-          "text": "Component"
-        },
-        {
-          "letter": "D",
-          "text": "Policies and Procedures"
-        }
-      ],
-      "correctAnswer": "D",
-      "correctAnswers": [
-        "D"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "The document titled “Patch Management in the IACS Environment” corresponds to IEC TR 62443-2-3, which belongs to the Policies and Procedures category of the ISA/IEC 62443 series. IEC TR 62443-2-3 is a technical report providing guidance for managing software updates and patches in IACS environments without disrupting critical operations. From the IEC 62443 document structure: “The -2-x family of documents focuses on policies and procedures, especially in relation to the asset owner responsibilities within a CSMS (Cyber Security Management System).” IEC TR 62443-2-3 specifically describes: “Recommended practices for planning and executing the patch management process for industrial control systems in a structured and secure manner.” Incorrect Options: A. System – System-level requirements are found in 62443-3-x. B. General – General documents include 62443-1-x, focused on terminology and concepts. C. Component – Component requirements are covered in 62443-4-x documents.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 206",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "IMPROVE",
-        "label": "Lifecycle, patch management and secure development",
-        "reason": "Review the lifecycle, patching or secure-development explanation that supports this answer.",
-        "href": "/?tab=ot&anchor=improve"
-      }
-    },
-    {
-      "id": "pdf-isa-62443-010",
-      "number": 338,
-      "source": "ISA/IEC 62443 PDF — Question 10",
-      "question": "What programs are MOST effective if they are tailored to the audience, consistent with company policy, and communicated regularly?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "CSMS development programs"
-        },
-        {
-          "letter": "B",
-          "text": "Cybersecurity awareness programs"
-        },
-        {
-          "letter": "C",
-          "text": "Control systems adjustment programs"
-        },
-        {
-          "letter": "D",
-          "text": "ISCS cybersecurity certification programs"
-        }
-      ],
-      "correctAnswer": "B",
-      "correctAnswers": [
-        "B"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "Cybersecurity awareness programs are most effective when tailored to the organization’s audience, are aligned with corporate policies, and are communicated regularly. ISA/IEC 62443-2-1 emphasizes the importance of ongoing cybersecurity training and awareness, customized to different user roles, as a critical factor in reducing human-related security risks.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 10",
-        "Security Policies, Procedures, and Governance"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "Security Policies, Procedures, and Governance",
-      "explanationAnchor": {
-        "anchor": "WHY",
-        "label": "OT/ICS fundamentals, risk and people",
-        "reason": "Review the fundamentals and risk context before memorising the answer.",
-        "href": "/?tab=ot&anchor=why"
-      }
-    },
-    {
       "id": "pdf-isa-62443-208",
-      "number": 339,
+      "number": 301,
       "source": "ISA/IEC 62443 PDF — Question 208",
       "question": "In terms of availability requirements, how do IACS and IT differ?",
       "options": [
@@ -14846,7 +13448,7 @@
     },
     {
       "id": "pdf-isa-62443-126",
-      "number": 340,
+      "number": 302,
       "source": "ISA/IEC 62443 PDF — Question 126",
       "question": "What is one of the primary causes of cyber-related production losses in process control systems?",
       "options": [
@@ -14891,54 +13493,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-154",
-      "number": 341,
-      "source": "ISA/IEC 62443 PDF — Question 154",
-      "question": "If an asset owner wants to improve their organization's ability to respond during a cyberattack, which of the following activities would be MOST appropriate to implement?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Tabletop exercises"
-        },
-        {
-          "letter": "B",
-          "text": "Password hygiene campaign"
-        },
-        {
-          "letter": "C",
-          "text": "C. Architecture awareness workshops"
-        },
-        {
-          "letter": "D",
-          "text": "Anomaly detection drills for operators"
-        }
-      ],
-      "correctAnswer": "A",
-      "correctAnswers": [
-        "A"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "Tabletop exercises simulate cybersecurity incidents in a non-disruptive setting, helping teams test and improve their incident response plans and communication protocols. “Tabletop exercises allow personnel to rehearse roles, responsibilities, and actions in a simulated event scenario. This enhances coordination, preparedness, and decision-making during actual incidents.” — ISA/IEC 62443-2-1:2010, Clause 4.3.3.3 – Incident Response Preparedness They are essential for verifying that the incident handling process (SP Element 7) is both understood and effective.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 154",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "SEE",
-        "label": "Monitoring, detection and incident response",
-        "reason": "Review the monitoring, detection or response explanation that explains this answer.",
-        "href": "/?tab=ot&anchor=see"
-      }
-    },
-    {
       "id": "pdf-isa-62443-166",
-      "number": 342,
+      "number": 303,
       "source": "ISA/IEC 62443 PDF — Question 166",
       "question": "What is the purpose of ISO/IEC 15408 (Common Criteria)?",
       "options": [
@@ -14984,7 +13540,7 @@
     },
     {
       "id": "pdf-isa-62443-147",
-      "number": 343,
+      "number": 304,
       "source": "ISA/IEC 62443 PDF — Question 147",
       "question": "A company is developing an automation solution and wants to align its cybersecurity efforts with ISA/IEC 62443 standards. Which lifecycle phases should be integrated into their project plan to cover both security and automation solution security comprehensively?",
       "options": [
@@ -15030,7 +13586,7 @@
     },
     {
       "id": "pdf-isa-62443-134",
-      "number": 344,
+      "number": 305,
       "source": "ISA/IEC 62443 PDF — Question 134",
       "question": "What does the abbreviation CSMS round in ISA 62443-2-1 represent?",
       "options": [
@@ -15075,54 +13631,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-074",
-      "number": 345,
-      "source": "ISA/IEC 62443 PDF — Question 74",
-      "question": "Which service does an Intrusion Detection System (IDS) provide?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "It is the lock on the door for networks and computer systems."
-        },
-        {
-          "letter": "B",
-          "text": "It is effective against all vulnerabilities in networks and computer systems."
-        },
-        {
-          "letter": "C",
-          "text": "It blocks malicious activity in networks and computer systems."
-        },
-        {
-          "letter": "D",
-          "text": "It detects attempts to break into or misuse a computer system."
-        }
-      ],
-      "correctAnswer": "D",
-      "correctAnswers": [
-        "D"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "An intrusion detection system (IDS) is a network security tool that monitors network traffic and devices for known malicious activity, suspicious activity or security policy violations. The IDS sends alerts to IT and security teams when it detects any security risks and threats. However, an IDS does not block or prevent the malicious activity, it only detects and reports it. Therefore, an IDS is not the lock on the door for networks and computer systems, nor is it effective against all vulnerabilities in networks and computer systems. An IDS can be combined with an intrusion prevention system (IPS) to block the malicious activity in real time. References: What is Intrusion Detection Systems (IDS)? How does it Work? | Fortinet1 Intrusion Detection System (IDS) - GeeksforGeeks2 What is an intrusion detection system (IDS)? - IBM3",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 74",
-        "System Security and Monitoring Operations"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "System Security and Monitoring Operations",
-      "explanationAnchor": {
-        "anchor": "SEE",
-        "label": "Monitoring, detection and incident response",
-        "reason": "Review the monitoring, detection or response explanation that explains this answer.",
-        "href": "/?tab=ot&anchor=see"
-      }
-    },
-    {
       "id": "pdf-isa-62443-153",
-      "number": 346,
+      "number": 306,
       "source": "ISA/IEC 62443 PDF — Question 153",
       "question": "Which type of cryptographic algorithms requires more than one key?",
       "options": [
@@ -15168,7 +13678,7 @@
     },
     {
       "id": "pdf-isa-62443-014",
-      "number": 347,
+      "number": 307,
       "source": "ISA/IEC 62443 PDF — Question 14",
       "question": "Which is one of the PRIMARY goals of providing a framework addressing secure product development life- cycle requirements?",
       "options": [
@@ -15214,7 +13724,7 @@
     },
     {
       "id": "pdf-isa-62443-052",
-      "number": 348,
+      "number": 308,
       "source": "ISA/IEC 62443 PDF — Question 52",
       "question": "What does the expression SL-T (BPCS Zone) vector {2 2 0 1 3 1 3} represent?",
       "options": [
@@ -15260,7 +13770,7 @@
     },
     {
       "id": "pdf-isa-62443-130",
-      "number": 349,
+      "number": 309,
       "source": "ISA/IEC 62443 PDF — Question 130",
       "question": "Which is a reason for and physical security regulations meeting a mixed resistance?",
       "options": [
@@ -15306,7 +13816,7 @@
     },
     {
       "id": "pdf-isa-62443-100",
-      "number": 350,
+      "number": 310,
       "source": "ISA/IEC 62443 PDF — Question 100",
       "question": "Which Security Level (SL) would be MOST appropriate for a system that requires protection against attackers with high motivation and extended resources using sophisticated means?",
       "options": [
@@ -15352,7 +13862,7 @@
     },
     {
       "id": "pdf-isa-62443-192",
-      "number": 351,
+      "number": 311,
       "source": "ISA/IEC 62443 PDF — Question 192",
       "question": "Which U.S. Department is responsible for the Chemical Facility Anti-Terrorism Standards (CFATS)?",
       "options": [
@@ -15398,7 +13908,7 @@
     },
     {
       "id": "pdf-isa-62443-002",
-      "number": 352,
+      "number": 312,
       "source": "ISA/IEC 62443 PDF — Question 2",
       "question": "If an industrial control system experiences frequent unexpected shutdowns causing downtime, which SP Element activities should be reviewed to improve system availability?",
       "options": [
@@ -15444,7 +13954,7 @@
     },
     {
       "id": "pdf-isa-62443-075",
-      "number": 353,
+      "number": 313,
       "source": "ISA/IEC 62443 PDF — Question 75",
       "question": "Which statement BEST describes the Target Security Protection Ratings?",
       "options": [
@@ -15490,7 +14000,7 @@
     },
     {
       "id": "pdf-isa-62443-104",
-      "number": 354,
+      "number": 314,
       "source": "ISA/IEC 62443 PDF — Question 104",
       "question": "What are the four main categories for documents in the ISA-62443 (IEC 62443) series?",
       "options": [
@@ -15536,7 +14046,7 @@
     },
     {
       "id": "pdf-isa-62443-013",
-      "number": 355,
+      "number": 315,
       "source": "ISA/IEC 62443 PDF — Question 13",
       "question": "What does the first group of the ISA/IEC 62443 series focus on?",
       "options": [
@@ -15582,7 +14092,7 @@
     },
     {
       "id": "pdf-isa-62443-193",
-      "number": 356,
+      "number": 316,
       "source": "ISA/IEC 62443 PDF — Question 193",
       "question": "What must be established as part of the risk assessment process?",
       "options": [
@@ -15628,7 +14138,7 @@
     },
     {
       "id": "pdf-isa-62443-024",
-      "number": 357,
+      "number": 317,
       "source": "ISA/IEC 62443 PDF — Question 24",
       "question": "What is the primary focus of Part 3-2 in the ISA/IEC 62443 series?",
       "options": [
@@ -15673,54 +14183,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-081",
-      "number": 358,
-      "source": "ISA/IEC 62443 PDF — Question 81",
-      "question": "According to the scheme for cybersecurity profiles, which of the following is true about ISA/IEC 62443 security requirements when creating a security profile?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "New security requirements can be added freely."
-        },
-        {
-          "letter": "B",
-          "text": "Only foundational requirements can be changed."
-        },
-        {
-          "letter": "C",
-          "text": "No new requirements are allowed, and existing ones are not modified."
-        },
-        {
-          "letter": "D",
-          "text": "Existing security requirements can be modified to fit the sector needs."
-        }
-      ],
-      "correctAnswer": "D",
-      "correctAnswers": [
-        "D"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "ISA/IEC TR 62443-1-5 describes how to create cybersecurity profiles tailored to specific sectors or applications. While the core structure of security requirements remains, modifications are allowed to align with sector-specific needs or regulatory requirements. “Profiles can tailor existing security requirements to better fit sector-specific needs. Modification of requirement wording, priority, or applicability may be made in line with risk tolerance and context.” — ISA/IEC TR 62443-1-5:2018, Clause 5.3 – Profile Customization This enables flexibility while retaining consistency across profiles.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 81",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "WHAT",
-        "label": "ISA/IEC 62443, CSMS, Foundational Requirements and Security Levels",
-        "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
-        "href": "/?tab=ot&anchor=what"
-      }
-    },
-    {
       "id": "pdf-isa-62443-211",
-      "number": 359,
+      "number": 318,
       "source": "ISA/IEC 62443 PDF — Question 211",
       "question": "Which of the following PRIMARILY determines access privileges for user accounts?",
       "options": [
@@ -15765,54 +14229,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-210",
-      "number": 360,
-      "source": "ISA/IEC 62443 PDF — Question 210",
-      "question": "Which is one of the PRIMARY goals of providing a framework addressing secure product development life- cycle requirements?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Aligned development process"
-        },
-        {
-          "letter": "B",
-          "text": "Aligned needs of industrial users"
-        },
-        {
-          "letter": "C",
-          "text": "Well-documented security policies and procedures"
-        },
-        {
-          "letter": "D",
-          "text": "Defense-in-depth approach to designing"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctAnswers": [
-        "C"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "One of the primary goals of providing a framework that addresses secure product development lifecycle requirements is to ensure that security policies and procedures are well-documented. This objective is crucial because it establishes a structured and standardized approach to security that is integrated throughout the development process of software or systems. This framework helps in aligning the development process with security best practices, thereby mitigating risks associated with security vulnerabilities. Documentation of security policies and procedures ensures that security considerations are consistently applied and that compliance with relevant standards, such as ISA/IEC 62443, is maintained. This foundational approach supports the overall security posture by embedding security considerations directly into the lifecycle of product development, rather than addressing security as an afterthought.",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 210",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "IMPROVE",
-        "label": "Lifecycle, patch management and secure development",
-        "reason": "Review the lifecycle, patching or secure-development explanation that supports this answer.",
-        "href": "/?tab=ot&anchor=improve"
-      }
-    },
-    {
       "id": "pdf-isa-62443-051",
-      "number": 361,
+      "number": 319,
       "source": "ISA/IEC 62443 PDF — Question 51",
       "question": "Which of the following BEST describes ‘Vulnerability’?",
       "options": [
@@ -15858,7 +14276,7 @@
     },
     {
       "id": "pdf-isa-62443-123",
-      "number": 362,
+      "number": 320,
       "source": "ISA/IEC 62443 PDF — Question 123",
       "question": "Which of the following ISA-99 (IEC 62443) Reference Model levels is named correctly?",
       "options": [
@@ -15904,7 +14322,7 @@
     },
     {
       "id": "pdf-isa-62443-096",
-      "number": 363,
+      "number": 321,
       "source": "ISA/IEC 62443 PDF — Question 96",
       "question": "What is a frequent mistake made with cybersecurity management?",
       "options": [
@@ -15949,54 +14367,8 @@
       }
     },
     {
-      "id": "pdf-isa-62443-089",
-      "number": 364,
-      "source": "ISA/IEC 62443 PDF — Question 89",
-      "question": "Which of the following is NOT a general class of firewalls?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Packet filter"
-        },
-        {
-          "letter": "B",
-          "text": "Network inspection"
-        },
-        {
-          "letter": "C",
-          "text": "Application proxy"
-        },
-        {
-          "letter": "D",
-          "text": "Stateful inspection"
-        }
-      ],
-      "correctAnswer": "B",
-      "correctAnswers": [
-        "B"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "The three general classes of firewalls are: Packet Filtering Firewalls – Basic filters based on IPs, ports, protocols Stateful Inspection Firewalls – Track active connections and session state Application Proxy Firewalls – Act as intermediaries at the application layer “Network inspection” is not a standard firewall classification, but rather a general term that may refer to DPI (Deep Packet Inspection) or NIDS (Network Intrusion Detection Systems). “Firewall technologies are typically classified into packet filtering, stateful inspection, and application proxy types.” — ISA/IEC 62443-3-3:2013, SR 5.1 – Zone Boundary Protection",
-      "difficulty": "mixed",
-      "sourceType": "isa_iec_62443_pdf",
-      "sourceReferences": [
-        "ISA-ISA-IEC-62443.pdf",
-        "PDF Question 89",
-        "IEC 62443 Overview and Terminology"
-      ],
-      "answerStatus": "pdf_supplied",
-      "validationNote": "Text, options, key and explanation preserved from the supplied PDF; no wording normalisation applied.",
-      "topic": "IEC 62443 Overview and Terminology",
-      "explanationAnchor": {
-        "anchor": "WHAT",
-        "label": "ISA/IEC 62443, CSMS, Foundational Requirements and Security Levels",
-        "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
-        "href": "/?tab=ot&anchor=what"
-      }
-    },
-    {
       "id": "pdf-isa-62443-065",
-      "number": 365,
+      "number": 322,
       "source": "ISA/IEC 62443 PDF — Question 65",
       "question": "Which organization manages the ISASecure conformance certification program?",
       "options": [
@@ -16042,7 +14414,7 @@
     },
     {
       "id": "pdf-isa-62443-095",
-      "number": 366,
+      "number": 323,
       "source": "ISA/IEC 62443 PDF — Question 95",
       "question": "In a defense-in-depth strategy, what is the purpose of role-based access control?",
       "options": [

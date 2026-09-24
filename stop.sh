@@ -32,7 +32,17 @@ if [ -n "$PIDS_VITE" ]; then
     KILLED=1
 fi
 
-# 3. Also stop any active start.sh processes
+# 3. Kill any Node production server instances
+PIDS_NODE=$(pgrep -f "node.*dist/index\.js" 2>/dev/null || true)
+if [ -n "$PIDS_NODE" ]; then
+    echo "[*] Stopping Node server instances: $PIDS_NODE"
+    for p in $PIDS_NODE; do
+        kill -9 "$p" 2>/dev/null || true
+    done
+    KILLED=1
+fi
+
+# 4. Also stop any active start.sh processes
 PIDS_START=$(pgrep -f "start\.sh" 2>/dev/null || true)
 if [ -n "$PIDS_START" ]; then
     for p in $PIDS_START; do

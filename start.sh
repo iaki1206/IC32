@@ -59,46 +59,22 @@ if is_server_ready; then
     exit 0
 fi
 
-echo "[*] Starting development server (npm run dev)..."
-echo ""
-
-# Ensure .env exists to prevent malformed URI errors
-if [ ! -f "$APP_DIR/.env" ]; then
-    cat << 'ENVEOF' > "$APP_DIR/.env"
-VITE_ANALYTICS_ENDPOINT=
-VITE_ANALYTICS_WEBSITE_ID=
-ENVEOF
-fi
-
-# Free any stray process on port 3000 before starting
+# Free port 3000 if occupied by dead or stuck process
 PORT_PID=$(lsof -ti :3000 2>/dev/null || true)
 if [ -n "$PORT_PID" ]; then
     kill -9 "$PORT_PID" 2>/dev/null || true
     sleep 0.5
 fi
 
-# Start Vite in background
-npm run dev &
-VITE_PID=$!
+if [ -f "$APP_DIR/dist/index.js" ]; then
+    echo "[*] Starting IC32 production server in background..."
+    setsid -f env NODE_ENV=production node "$APP_DIR/dist/index.js" > "$APP_DIR/server.log" 2>&1
+else
+    echo "[*] Starting development server in background..."
+    setsid -f npm run dev > "$APP_DIR/server.log" 2>&1
+fi
 
-cleanup() {
-    echo ""
-    echo "[*] Stopping IC32 server..."
-    if [ -n "$VITE_PID" ]; then
-        kill "$VITE_PID" 2>/dev/null || true
-        pkill -P "$VITE_PID" 2>/dev/null || true
-    fi
-    # Also free port 3000 if occupied by node
-    PORT_PID=$(lsof -ti :3000 2>/dev/null || true)
-    if [ -n "$PORT_PID" ]; then
-        kill -9 "$PORT_PID" 2>/dev/null || true
-    fi
-    echo "[OK] Server stopped."
-}
-
-trap cleanup INT TERM
-
-echo -n "[*] Initialising Vite server"
+echo -n "[*] Initialising server"
 READY=0
 for i in $(seq 1 40); do
     if is_server_ready; then
@@ -119,19 +95,17 @@ if [ $READY -eq 1 ]; then
     echo "============================================================"
     echo ""
     echo " -> To STOP the application:"
-    echo "    Press [Ctrl + C] or double-click 'Stop IC32' on your Desktop."
+    echo "    Double-click 'Stop IC32' on your Desktop."
     echo "============================================================"
     echo ""
     
     open_browser "$APP_URL"
     send_notify "IC32 Learning Platform" "Application started! Opened in browser: $APP_URL"
-
-    # Wait for the background process
-    wait "$VITE_PID" 2>/dev/null || true
+    exit 0
 else
     echo ""
     echo "[!] The server took too long to start or encountered an error."
-    echo "Check the console output above for details."
-    echo "Press Enter to exit."
-    read -r
+    echo "Check the log file: $APP_DIR/server.log"
+    send_notify "IC32 Learning Platform" "Eroare la pornirea serverului. Verifică logurile!"
+    exit 1
 fi

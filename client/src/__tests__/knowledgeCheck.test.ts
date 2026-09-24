@@ -3,12 +3,12 @@ import data from "../data/knowledgeCheckData.json";
 
 describe("Knowledge Check Data & Logic", () => {
   it("has questions loaded properly", () => {
-    expect(data.questions.length).toBe(366);
+    expect(data.questions.length).toBe(323);
   });
 
   it("contains explanation anchors with href for questions to open in a new tab", () => {
     const questionsWithAnchor = data.questions.filter((q: any) => q.explanationAnchor && q.explanationAnchor.href);
-    expect(questionsWithAnchor.length).toBe(366);
+    expect(questionsWithAnchor.length).toBe(323);
     const sample = questionsWithAnchor[0];
     expect(sample.explanationAnchor.anchor).toBeDefined();
     expect(sample.explanationAnchor.href).toContain("/?tab=ot");
