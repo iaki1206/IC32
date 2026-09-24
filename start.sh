@@ -2,7 +2,8 @@
 set -e
 
 APP_DIR="/home/cris/IC32"
-APP_URL="http://localhost:3000/"
+TARGET_ROUTE="${1:-/}"
+APP_URL="http://localhost:3000${TARGET_ROUTE}"
 ICON_PATH="$APP_DIR/icon.png"
 
 cd "$APP_DIR"
