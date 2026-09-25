@@ -13,6 +13,7 @@ LAUNCHER="${BIN_DIR}/ic32-learning-platform-launcher"
 DESKTOP_FILE="${DESKTOP_DIR}/IC32-Learning-Platform.desktop"
 
 mkdir -p "${DESKTOP_DIR}" "${BIN_DIR}"
+rm -f "${DESKTOP_FILE}" "${LAUNCHER}"
 
 cat > "${LAUNCHER}" <<'LAUNCHER_SCRIPT'
 #!/bin/sh
@@ -52,6 +53,7 @@ Type=Application
 Name=IC32 Learning Platform
 Comment=Start the private IC32 service and open it in the browser
 Exec=${LAUNCHER}
+TryExec=xdg-open
 Icon=web-browser
 Terminal=false
 Categories=Education;Network;
