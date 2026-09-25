@@ -37,6 +37,7 @@ type KnowledgeQuestion = {
   correctAnswers?: string[];
   explanation?: string;
   answerStatus?: string;
+  questionSet?: 1 | 2;
   explanationAnchor?: { anchor: string; label: string; reason: string; href: string };
 };
 
@@ -54,6 +55,10 @@ const sourceCounts = {
   realExam: sourceCount((source) => source.startsWith("Real Exam Bank")),
   quiz: sourceCount((source) => source.startsWith("Existing Quiz")),
   kc: sourceCount((source) => source.startsWith("Knowledge Check |")),
+};
+const questionSetCounts = {
+  one: questions.filter((question) => question.questionSet === 1).length,
+  two: questions.filter((question) => question.questionSet === 2).length,
 };
 
 const normaliseOptions = (options: RawOption[] | undefined, questionId: string): Option[] =>
@@ -96,6 +101,7 @@ export default function KnowledgeCheckView() {
   const [showResults, setShowResults] = useState<Record<string, boolean>>({});
   const [quizSubmitted, setQuizSubmitted] = useState(false);
   const [sourceGroupFilter, setSourceGroupFilter] = useState("all");
+  const [questionSetFilter, setQuestionSetFilter] = useState("all");
   const [chapterFilter, setChapterFilter] = useState("all");
   const [answerFilter, setAnswerFilter] = useState("all");
   const [incorrectOnly, setIncorrectOnly] = useState(false);
@@ -120,6 +126,9 @@ export default function KnowledgeCheckView() {
       }
 
       const src = question.source || "";
+      if (questionSetFilter !== "all" && String(question.questionSet ?? "") !== questionSetFilter) {
+        return false;
+      }
       let sourceMatches = true;
       if (sourceGroupFilter === "pdf") {
         sourceMatches = src.startsWith("IC32 PDF noteset");
@@ -157,7 +166,7 @@ export default function KnowledgeCheckView() {
 
       return sourceMatches && chapterMatches && answerMatches && searchMatches;
     });
-  }, [answerFilter, chapterFilter, incorrectOnly, incorrectQuestionIds, searchTerm, sourceGroupFilter]);
+  }, [answerFilter, chapterFilter, incorrectOnly, incorrectQuestionIds, questionSetFilter, searchTerm, sourceGroupFilter]);
 
   const answerableQuestions = questions.filter((question) => correctLetters(question).length > 0);
   const answeredAnswerableCount = answerableQuestions.filter((question) => Boolean(selectedAnswers[question.id]?.length)).length;
@@ -231,6 +240,18 @@ export default function KnowledgeCheckView() {
 
           <div className="flex flex-wrap items-center gap-2">
             <div className="flex items-center gap-1.5 text-xs font-semibold text-gray-600">
+              <span>Set:</span>
+            </div>
+            <select
+              value={questionSetFilter}
+              onChange={(event) => setQuestionSetFilter(event.target.value)}
+              className="h-10 rounded-lg border border-indigo-200 bg-indigo-50 px-3 text-sm text-indigo-900 outline-none focus:ring-2 focus:ring-indigo-500/30"
+            >
+              <option value="all">All sets ({questions.length})</option>
+              <option value="1">Set 1 ({questionSetCounts.one})</option>
+              <option value="2">Set 2 ({questionSetCounts.two})</option>
+            </select>
+            <div className="flex items-center gap-1.5 text-xs font-semibold text-gray-600">
               <Filter className="w-4 h-4 text-blue-600" />
               <span>Source:</span>
             </div>
@@ -284,12 +305,13 @@ export default function KnowledgeCheckView() {
             <span className="text-xs text-gray-500 font-medium">
               Showing <strong className="text-gray-900">{filteredQuestions.length}</strong> of {questions.length} questions
             </span>
-            {(sourceGroupFilter !== "all" || chapterFilter !== "all" || answerFilter !== "all" || searchTerm !== "" || incorrectOnly) && (
+            {(questionSetFilter !== "all" || sourceGroupFilter !== "all" || chapterFilter !== "all" || answerFilter !== "all" || searchTerm !== "" || incorrectOnly) && (
               <Button
                 variant="outline"
                 size="sm"
                 onClick={() => {
                   setSearchTerm("");
+                  setQuestionSetFilter("all");
                   setSourceGroupFilter("all");
                   setChapterFilter("all");
                   setAnswerFilter("all");
