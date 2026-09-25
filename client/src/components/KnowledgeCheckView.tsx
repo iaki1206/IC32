@@ -255,6 +255,27 @@ export default function KnowledgeCheckView() {
           <p className="text-blue-100 text-sm sm:text-base max-w-3xl leading-relaxed">
             Unifying the IC32 question sources and course quizzes. Use the source and chapter filters or review incorrect answers to target your revision precisely.
           </p>
+          <div className="mt-5 flex flex-wrap items-center gap-2" aria-label="Question set selection">
+            <span className="text-xs font-bold uppercase tracking-wider text-blue-200 mr-1">Question set:</span>
+            {[
+              ["all", `All sets (${questions.length})`],
+              ["1", `Set 1 (${questionSetCounts.one})`],
+              ["2", `Set 2 (${questionSetCounts.two})`],
+            ].map(([value, label]) => (
+              <button
+                type="button"
+                key={value}
+                onClick={() => setQuestionSetFilter(value)}
+                className={`rounded-lg border px-3 py-2 text-xs font-bold transition ${
+                  questionSetFilter === value
+                    ? "border-white bg-white text-indigo-950 shadow"
+                    : "border-blue-300/40 bg-white/10 text-blue-100 hover:bg-white/20"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
         </div>
         <div className="grid grid-cols-2 gap-3 min-w-[260px]">
           <div className="bg-white/10 border border-white/15 backdrop-blur-md rounded-xl p-3 text-center">
