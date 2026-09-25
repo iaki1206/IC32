@@ -3887,7 +3887,7 @@
         },
         {
           "letter": "C",
-          "text": "Their detection relies solely on user authentification logs"
+          "text": "Their detection relies solely on user authentication logs"
         },
         {
           "letter": "D",
@@ -4025,7 +4025,7 @@
         },
         {
           "letter": "C",
-          "text": "Uses a single port with encryption and certificate-based authentification"
+          "text": "Uses a single port with encryption and certificate-based authentication"
         },
         {
           "letter": "D",
@@ -15306,7 +15306,7 @@
         }
       ],
       "correctAnswer": "B",
-      "explanation": "The Purdue model suggests dividing your systems into five different levels, numbered zero through four. Level 0 is the lowest level, representing the physical process and containing the immediate sensors and actuators that make up that grouping’s process.  Level 1 contains the controllers for that grouping’s process.  Level 2 contains the local supervisory systems specific to each groupings process. Above the process groupings will be a plant-wide or region-wide Level 3, which contains supervisory systems that direct all process groupings for that site or that region.  Level 3 also contains the operations support, containing systems that support operations but that are not directly involved with the real-time execution of the process.  And finally, Level 4 represents the business side of the organization related to ICS.",
+      "explanation": "The Purdue model suggests dividing your systems into five different levels, numbered zero through four. Level 0 is the lowest level, representing the physical process and containing the immediate sensors and actuators that make up that grouping’s process.  Level 1 contains the controllers for that grouping’s process.  Level 2 contains the local supervisory systems specific to each groupings process. Above the process groupings will be a plant-wide or region-wide Level 3, which contains supervisory systems that direct all process groupings for that site or that region.  Level 3 also contains the operations support, containing systems that support operations but that are not directly involved with the real-time execution of the process.  And finally, Level 4 represents the business side of the organization related to ICS.",
       "sourceType": "udemy_review",
       "sourceReferences": [
         "Udemy Practice Test 2: Bravo"
@@ -15466,7 +15466,7 @@
         },
         {
           "letter": "C",
-          "text": "a standard that defines policies and procedures for Patch Manaqement in the  Industrial Automation and Control Systems (IACS) Environment."
+          "text": "a standard that defines policies and procedures for Patch Management in the  Industrial Automation and Control Systems (IACS) Environment."
         },
         {
           "letter": "D",
@@ -16482,7 +16482,7 @@
         }
       ],
       "correctAnswer": "D",
-      "explanation": "The IEC 62443 Reference Model level named correctly is Level 4 - Enterprise Management.  The ISA-95 (IEC 62443) Reference Model consists of five levels, each representing a different aspect of industrial automation and control system (IACS) security:  Level 0 - Physical Process: This level represents the physical processes and devices in an industrial environment, such as sensors, actuators, and controllers. It includes physical elements like pumps, valves, motors, and other machinery that directly interact with the physical world.  Level 1 - Basic Process Control:  At this level, basic control functions are performed. It includes devices such as Programmable Logic Controllers (PLCs) or Remote Terminal Units (RTUs) that monitor and control the physical processes.   Level 2 - Supervisory Control: This level represents supervisory control functions, where higher-level control and coordination occur. It includes systems such as Supervisory Control and Data Acquisition (SCADA) systems, Human Machine Interfaces (HMIs), and Distributed Control Systems (DCS).   Level 3 - Operations Management: This level focuses on manufacturing operations and business systems integration. It includes Manufacturing Execution Systems (MES), Enterprise Resource Planning (ERP) systems, and other business applications.   Level 4 - Enterprise Management: This level focuses on functions that are related and the activities needed to manage the organization: financial systems, production scheduling, operational management, maintenance management.",
+      "explanation": "The IEC 62443 Reference Model level named correctly is Level 4 - Enterprise Management.  The ISA-95 (IEC 62443) Reference Model consists of five levels, each representing a different aspect of industrial automation and control system (IACS) security:  Level 0 - Physical Process: This level represents the physical processes and devices in an industrial environment, such as sensors, actuators, and controllers. It includes physical elements like pumps, valves, motors, and other machinery that directly interact with the physical world.  Level 1 - Basic Process Control:  At this level, basic control functions are performed. It includes devices such as Programmable Logic Controllers (PLCs) or Remote Terminal Units (RTUs) that monitor and control the physical processes.   Level 2 - Supervisory Control: This level represents supervisory control functions, where higher-level control and coordination occur. It includes systems such as Supervisory Control and Data Acquisition (SCADA) systems, Human Machine Interfaces (HMIs), and Distributed Control Systems (DCS).   Level 3 - Operations Management: This level focuses on manufacturing operations and business systems integration. It includes Manufacturing Execution Systems (MES), Enterprise Resource Planning (ERP) systems, and other business applications.   Level 4 - Enterprise Management: This level focuses on functions that are related and the activities needed to manage the organization: financial systems, production scheduling, operational management, maintenance management.",
       "sourceType": "udemy_review",
       "sourceReferences": [
         "Udemy Practice Test 2: Bravo"
@@ -16768,7 +16768,7 @@
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The IEC 62443 Reference Model level named incorrectly is Level 2: Physical Process. Physical Process equipment are at Level 0 of the Reference model.   The ISA-95 (IEC 62443) Reference Model consists of five levels, each representing a different aspect of industrial automation and control system (IACS) security:  Level 0 - Physical Process: This level represents the physical processes and devices in an industrial environment, such as sensors, actuators, and controllers. It includes physical elements like pumps, valves, motors, and other machinery that directly interact with the physical world.  Level 1 - Basic Process Control:  At this level, basic control functions are performed. It includes devices such as Programmable Logic Controllers (PLCs) or Remote Terminal Units (RTUs) that monitor and control the physical processes.   Level 2 - Supervisory Control: This level represents supervisory control functions, where higher-level control and coordination occur. It includes systems such as Supervisory Control and Data Acquisition (SCADA) systems, Human Machine Interfaces (HMIs), and Distributed Control Systems (DCS).   Level 3 - Operations Management: This level focuses on manufacturing operations and business systems integration. It includes Manufacturing Execution Systems (MES), Enterprise Resource Planning (ERP) systems, and other business applications.   Level 4 - Enterprise Management: This level focuses on functions that are related and the activities needed to manage the organization: financial systems, production scheduling, operational management, maintenance management.",
+      "explanation": "The IEC 62443 Reference Model level named incorrectly is Level 2: Physical Process. Physical Process equipment are at Level 0 of the Reference model.   The ISA-95 (IEC 62443) Reference Model consists of five levels, each representing a different aspect of industrial automation and control system (IACS) security:  Level 0 - Physical Process: This level represents the physical processes and devices in an industrial environment, such as sensors, actuators, and controllers. It includes physical elements like pumps, valves, motors, and other machinery that directly interact with the physical world.  Level 1 - Basic Process Control:  At this level, basic control functions are performed. It includes devices such as Programmable Logic Controllers (PLCs) or Remote Terminal Units (RTUs) that monitor and control the physical processes.   Level 2 - Supervisory Control: This level represents supervisory control functions, where higher-level control and coordination occur. It includes systems such as Supervisory Control and Data Acquisition (SCADA) systems, Human Machine Interfaces (HMIs), and Distributed Control Systems (DCS).   Level 3 - Operations Management: This level focuses on manufacturing operations and business systems integration. It includes Manufacturing Execution Systems (MES), Enterprise Resource Planning (ERP) systems, and other business applications.   Level 4 - Enterprise Management: This level focuses on functions that are related and the activities needed to manage the organization: financial systems, production scheduling, operational management, maintenance management.",
       "sourceType": "udemy_review",
       "sourceReferences": [
         "Udemy Practice Test 2: Bravo"
@@ -17386,7 +17386,7 @@
         },
         {
           "letter": "B",
-          "text": "a standard that defines policies and procedures for Patch Manaqement in the  Industrial Automation and Control Systems (IACS) Environment."
+          "text": "a standard that defines policies and procedures for Patch Management in the  Industrial Automation and Control Systems (IACS) Environment."
         },
         {
           "letter": "C",
@@ -17756,7 +17756,7 @@
       "id": "kc-udemy-bravo-075",
       "number": 396,
       "source": "Udemy Practice Test 2: Bravo",
-      "question": "Which is one of the MAIN goal of providing a framework addressing secure product development life-cycle requirements?",
+      "question": "Which is one of the main goal of providing a framework addressing secure product development life-cycle requirements?",
       "options": [
         {
           "letter": "A",
@@ -18092,7 +18092,7 @@
       "id": "kc-udemy-alpha-005",
       "number": 404,
       "source": "Udemy Practice Test 1: Alpha",
-      "question": "Which publication defines policies and procedures for Patch Manaqement in the  Industrial Automation and Control Systems (IACS) Environment?",
+      "question": "Which publication defines policies and procedures for Patch Management in the  Industrial Automation and Control Systems (IACS) Environment?",
       "options": [
         {
           "letter": "A",
@@ -18260,7 +18260,7 @@
       "id": "kc-udemy-alpha-010",
       "number": 408,
       "source": "Udemy Practice Test 1: Alpha",
-      "question": "Shot form of Risk Equation",
+      "question": "Short form of Risk Equation",
       "options": [
         {
           "letter": "A",
@@ -18436,7 +18436,7 @@
         },
         {
           "letter": "B",
-          "text": "a standard that defines policies and procedures for Patch Manaqement in the  Industrial Automation and Control Systems (IACS) Environment."
+          "text": "a standard that defines policies and procedures for Patch Management in the  Industrial Automation and Control Systems (IACS) Environment."
         },
         {
           "letter": "C",
@@ -18978,7 +18978,7 @@
       "options": [
         {
           "letter": "A",
-          "text": "a standard that defines policies and procedures for Patch Manaqement in the  Industrial Automation and Control Systems (IACS) Environment."
+          "text": "a standard that defines policies and procedures for Patch Management in the  Industrial Automation and Control Systems (IACS) Environment."
         },
         {
           "letter": "B",
@@ -19898,7 +19898,7 @@
       "id": "kc-udemy-alpha-060",
       "number": 447,
       "source": "Udemy Practice Test 1: Alpha",
-      "question": "Which feature is MOST closely related with the deployment of a demilitarized zone (DMZ) in IACS network ?",
+      "question": "Which feature is MOST closely related with the deployment of a demilitarized zone (DMZ) in IACS network ?",
       "options": [
         {
           "letter": "A",
@@ -20738,7 +20738,7 @@
       "id": "kc-udemy-charlie-001",
       "number": 467,
       "source": "Udemy Practice Test 3: Charlie",
-      "question": "Which one  is named correctly as per ISA-95 (IEC 62443) Reference Model level?",
+      "question": "Which one  is named correctly as per ISA-95 (IEC 62443) Reference Model level?",
       "options": [
         {
           "letter": "A",
@@ -20757,7 +20757,7 @@
           "text": "Level 4: Process"
         }
       ],
-      "explanation": "The IEC 62443 Reference Model level named correctly is Level 3: Operations Management.  The ISA-95 (IEC 62443) Reference Model consists of four levels, each representing a different aspect of industrial automation and control system (IACS) security:  Level 0 - Physical Process: This level represents the physical processes and devices in an industrial environment, such as sensors, actuators, and controllers. It includes physical elements like pumps, valves, motors, and other machinery that directly interact with the physical world.  Level 1 - Basic Process Control:  At this level, basic control functions are performed. It includes devices such as Programmable Logic Controllers (PLCs) or Remote Terminal Units (RTUs) that monitor and control the physical processes.   Level 2 - Supervisory Control: This level represents supervisory control functions, where higher-level control and coordination occur. It includes systems such as Supervisory Control and Data Acquisition (SCADA) systems, Human Machine Interfaces (HMIs), and Distributed Control Systems (DCS).   Level 3 - Operations Management: This level focuses on manufacturing operations and business systems integration. It includes Manufacturing Execution Systems (MES), Enterprise Resource Planning (ERP) systems, and other business applications.   Level 4 - Enterprise Management: This level focuses on functions that are related and the activities needed to manage the organization: financial systems, production scheduling, operational management, maintenance management.",
+      "explanation": "The IEC 62443 Reference Model level named correctly is Level 3: Operations Management.  The ISA-95 (IEC 62443) Reference Model consists of four levels, each representing a different aspect of industrial automation and control system (IACS) security:  Level 0 - Physical Process: This level represents the physical processes and devices in an industrial environment, such as sensors, actuators, and controllers. It includes physical elements like pumps, valves, motors, and other machinery that directly interact with the physical world.  Level 1 - Basic Process Control:  At this level, basic control functions are performed. It includes devices such as Programmable Logic Controllers (PLCs) or Remote Terminal Units (RTUs) that monitor and control the physical processes.   Level 2 - Supervisory Control: This level represents supervisory control functions, where higher-level control and coordination occur. It includes systems such as Supervisory Control and Data Acquisition (SCADA) systems, Human Machine Interfaces (HMIs), and Distributed Control Systems (DCS).   Level 3 - Operations Management: This level focuses on manufacturing operations and business systems integration. It includes Manufacturing Execution Systems (MES), Enterprise Resource Planning (ERP) systems, and other business applications.   Level 4 - Enterprise Management: This level focuses on functions that are related and the activities needed to manage the organization: financial systems, production scheduling, operational management, maintenance management.",
       "sourceType": "udemy_review",
       "sourceReferences": [
         "Udemy Practice Test 3: Charlie"
@@ -20883,7 +20883,7 @@
           "text": "Level 4: Physical Process"
         }
       ],
-      "explanation": "The IEC 62443 Reference Model level named correctly is Level 1 - Basic Process Control.  The ISA-95 (IEC 62443) Reference Model consists of five levels, each representing a different aspect of industrial automation and control system (IACS) security:  Level 0 - Physical Process: This level represents the physical processes and devices in an industrial environment, such as sensors, actuators, and controllers. It includes physical elements like pumps, valves, motors, and other machinery that directly interact with the physical world.  Level 1 - Basic Process Control:  At this level, basic control functions are performed. It includes devices such as Programmable Logic Controllers (PLCs) or Remote Terminal Units (RTUs) that monitor and control the physical processes.   Level 2 - Supervisory Control: This level represents supervisory control functions, where higher-level control and coordination occur. It includes systems such as Supervisory Control and Data Acquisition (SCADA) systems, Human Machine Interfaces (HMIs), and Distributed Control Systems (DCS).   Level 3 - Operations Management: This level focuses on manufacturing operations and business systems integration. It includes Manufacturing Execution Systems (MES), Enterprise Resource Planning (ERP) systems, and other business applications.   Level 4 - Enterprise Management: This level focuses on functions that are related and the activities needed to manage the organization: financial systems, production scheduling, operational management, maintenance management.",
+      "explanation": "The IEC 62443 Reference Model level named correctly is Level 1 - Basic Process Control.  The ISA-95 (IEC 62443) Reference Model consists of five levels, each representing a different aspect of industrial automation and control system (IACS) security:  Level 0 - Physical Process: This level represents the physical processes and devices in an industrial environment, such as sensors, actuators, and controllers. It includes physical elements like pumps, valves, motors, and other machinery that directly interact with the physical world.  Level 1 - Basic Process Control:  At this level, basic control functions are performed. It includes devices such as Programmable Logic Controllers (PLCs) or Remote Terminal Units (RTUs) that monitor and control the physical processes.   Level 2 - Supervisory Control: This level represents supervisory control functions, where higher-level control and coordination occur. It includes systems such as Supervisory Control and Data Acquisition (SCADA) systems, Human Machine Interfaces (HMIs), and Distributed Control Systems (DCS).   Level 3 - Operations Management: This level focuses on manufacturing operations and business systems integration. It includes Manufacturing Execution Systems (MES), Enterprise Resource Planning (ERP) systems, and other business applications.   Level 4 - Enterprise Management: This level focuses on functions that are related and the activities needed to manage the organization: financial systems, production scheduling, operational management, maintenance management.",
       "sourceType": "udemy_review",
       "sourceReferences": [
         "Udemy Practice Test 3: Charlie"
@@ -22098,7 +22098,7 @@
         },
         {
           "letter": "D",
-          "text": "a standard that defines policies and procedures for Patch Manaqement in the  Industrial Automation and Control Systems (IACS) Environment."
+          "text": "a standard that defines policies and procedures for Patch Management in the  Industrial Automation and Control Systems (IACS) Environment."
         }
       ],
       "explanation": "ISA/IEC 62443-3-3 is a specific standard within the ISA/IEC 62443 series, which focuses on cybersecurity for industrial automation and control systems (IACS). Titled \"Security for Industrial Automation and Control Systems Part 3-3: System Security Requirements and Security Levels,\" this standard provides detailed guidance on defining system security requirements and establishing security levels for IACS environments. It outlines the process for identifying security objectives, assessing risks, and determining appropriate security measures based on the specific characteristics and requirements of the IACS. Additionally, ISA/IEC 62443-3-3 defines different security levels (SLs) and provides criteria for categorizing systems and networks according to their security needs, helping organizations effectively mitigate cybersecurity risks and protect critical infrastructure.",
@@ -24072,7 +24072,7 @@
         },
         {
           "letter": "D",
-          "text": "To ensure that the Achieved Security Level (SL-A) is equal to or better than the Target Security Leve (SL-T)"
+          "text": "To ensure that the Achieved Security Level (SL-A) is equal to or better than the Target Security Level (SL-T)"
         }
       ],
       "explanation": "The primary objective of the Assess phase is to evaluate the current security posture, identify threats and vulnerabilities, and based on risk assessment, assign a Target Security Level (SL-T) for each zone and conduit within the ICS. This SL-T represents the required level of security needed to adequately protect the system.",
@@ -28000,7 +28000,7 @@
       "options": [
         {
           "letter": "A",
-          "text": "To ensure that the Achieved Security Level (SL-A) is equal to or better than the Target Security Leve (SL-T)."
+          "text": "To ensure that the Achieved Security Level (SL-A) is equal to or better than the Target Security Level (SL-T)."
         },
         {
           "letter": "B",
@@ -31872,7 +31872,7 @@
         },
         {
           "letter": "C",
-          "text": "To ensure the Achieved Security Level (SL-A) is equal to or better than the Target Security Leve l (SL-T)."
+          "text": "To ensure the Achieved Security Level (SL-A) is equal to or better than the Target Security Level (SL-T)."
         },
         {
           "letter": "D",
@@ -31963,7 +31963,7 @@
           "text": "Layers 7 and 8"
         }
       ],
-      "explanation": "In industrial control systems, the OSI model's session (Layer 5) and presentation (Layer 6) layers are typically unused because these systems prioritize simple, reliable communication over complex session management or data formatting. Control systems often rely on lower layers (Physical, Data Link, Network, Transport) and the application layer for direct data exchange, bypassing session establishment or data transformation functions. Layers 7 and 8 (noting there is no Layer 8) and Layers 1â€“4 are commonly used in control systems.",
+      "explanation": "In industrial control systems, the OSI model's session (Layer 5) and presentation (Layer 6) layers are typically unused because these systems prioritize simple, reliable communication over complex session management or data formatting. Control systems often rely on lower layers (Physical, Data Link, Network, Transport) and the application layer for direct data exchange, bypassing session establishment or data transformation functions. Layers 7 and 8 (noting there is no Layer 8) and Layers 1–4 are commonly used in control systems.",
       "sourceType": "udemy_review",
       "sourceReferences": [
         "Udemy Practice Test 5: Enigma"
