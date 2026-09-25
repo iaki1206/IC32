@@ -52,8 +52,10 @@ describe("Knowledge Check Data & Logic", () => {
     const STORAGE_KEY_ANSWERS = "ic32_knowledge_check_selected_answers";
     const STORAGE_KEY_RESULTS = "ic32_knowledge_check_show_results";
     const STORAGE_KEY_MARKED = "ic32_knowledge_check_marked_questions";
+    const STORAGE_KEY_MISTAKES = "ic32_knowledge_check_mistake_practice";
     expect(STORAGE_KEY_ANSWERS).toBe("ic32_knowledge_check_selected_answers");
     expect(STORAGE_KEY_RESULTS).toBe("ic32_knowledge_check_show_results");
     expect(STORAGE_KEY_MARKED).toBe("ic32_knowledge_check_marked_questions");
+    expect(STORAGE_KEY_MISTAKES).toBe("ic32_knowledge_check_mistake_practice");
   });
 });

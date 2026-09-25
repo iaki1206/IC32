@@ -109,6 +109,14 @@ export default function KnowledgeCheckView() {
       return new Set<string>();
     }
   });
+  const [mistakeQuestionIds, setMistakeQuestionIds] = useState<Set<string>>(() => {
+    if (typeof window === "undefined") return new Set<string>();
+    try {
+      return new Set<string>(JSON.parse(window.localStorage.getItem("ic32_knowledge_check_mistake_practice") || "[]"));
+    } catch {
+      return new Set<string>();
+    }
+  });
   const [quizSubmitted, setQuizSubmitted] = useState(false);
   const [sourceGroupFilter, setSourceGroupFilter] = useState("all");
   const [questionSetFilter, setQuestionSetFilter] = useState("all");
@@ -160,7 +168,8 @@ export default function KnowledgeCheckView() {
         answerFilter === "all" ||
         (answerFilter === "answerable" && correctLetters(question).length > 0) ||
         (answerFilter === "self-check" && correctLetters(question).length === 0) ||
-        (answerFilter === "marked" && markedQuestionIds.has(question.id));
+        (answerFilter === "marked" && markedQuestionIds.has(question.id)) ||
+        (answerFilter === "mistakes" && mistakeQuestionIds.has(question.id));
 
       const searchMatches =
         !query ||
@@ -177,7 +186,7 @@ export default function KnowledgeCheckView() {
 
       return sourceMatches && chapterMatches && answerMatches && searchMatches;
     });
-  }, [answerFilter, chapterFilter, incorrectOnly, incorrectQuestionIds, markedQuestionIds, questionSetFilter, searchTerm, sourceGroupFilter]);
+  }, [answerFilter, chapterFilter, incorrectOnly, incorrectQuestionIds, markedQuestionIds, mistakeQuestionIds, questionSetFilter, searchTerm, sourceGroupFilter]);
 
   const answerableQuestions = questions.filter((question) => correctLetters(question).length > 0);
   const answeredAnswerableCount = answerableQuestions.filter((question) => Boolean(selectedAnswers[question.id]?.length)).length;
@@ -196,6 +205,15 @@ export default function KnowledgeCheckView() {
       const next = isMultiple
         ? current.includes(letter) ? current.filter((item) => item !== letter) : [...current, letter]
         : [letter];
+      if (question && correctLetters(question).length > 0) {
+        setMistakeQuestionIds((mistakes) => {
+          const updated = new Set(mistakes);
+          if (selectionsMatch(question, next)) updated.delete(questionId);
+          else updated.add(questionId);
+          window.localStorage.setItem("ic32_knowledge_check_mistake_practice", JSON.stringify(Array.from(updated)));
+          return updated;
+        });
+      }
       return { ...previous, [questionId]: next };
     });
   };
@@ -218,7 +236,9 @@ export default function KnowledgeCheckView() {
     setSelectedAnswers({});
     setShowResults({});
     setMarkedQuestionIds(new Set());
+    setMistakeQuestionIds(new Set());
     window.localStorage.removeItem("ic32_knowledge_check_marked_questions");
+    window.localStorage.removeItem("ic32_knowledge_check_mistake_practice");
     setIncorrectOnly(false);
     setQuizSubmitted(false);
   };
@@ -322,6 +342,7 @@ export default function KnowledgeCheckView() {
               <option value="answerable">Answer key available</option>
               <option value="self-check">PDF self-check (no key)</option>
               <option value="marked">Marked for later ({markedQuestionIds.size})</option>
+              <option value="mistakes">Mistake Practice ({mistakeQuestionIds.size})</option>
             </select>
           </div>
 
@@ -367,6 +388,15 @@ export default function KnowledgeCheckView() {
         </div>
 
         <div className="flex items-center gap-2 flex-wrap">
+          <Button
+            variant={answerFilter === "mistakes" ? "default" : "outline"}
+            size="sm"
+            onClick={() => setAnswerFilter(answerFilter === "mistakes" ? "all" : "mistakes")}
+            className={answerFilter === "mistakes" ? "bg-amber-600 hover:bg-amber-700 text-white" : "border-amber-200 text-amber-800 bg-amber-50/50 hover:bg-amber-100"}
+          >
+            <RotateCcw className="w-4 h-4 mr-1.5" />
+            Mistake Practice ({mistakeQuestionIds.size})
+          </Button>
           <Button
             variant={incorrectOnly ? "default" : "outline"}
             size="sm"
