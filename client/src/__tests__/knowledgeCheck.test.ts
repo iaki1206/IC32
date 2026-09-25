@@ -40,10 +40,20 @@ describe("Knowledge Check Data & Logic", () => {
     expect(checkAnswer("A, C", "A, B, C")).toBe(false);
   });
 
+  it("contains valid multiple-answer questions", () => {
+    const multipleAnswerQuestions = data.questions.filter((q: any) => q.correctAnswers?.length > 1);
+    expect(multipleAnswerQuestions.length).toBe(8);
+    for (const question of multipleAnswerQuestions) {
+      expect(question.correctAnswers.every((letter: string) => question.options.some((option: any) => option.letter === letter))).toBe(true);
+    }
+  });
+
   it("validates localStorage persistence keys format", () => {
     const STORAGE_KEY_ANSWERS = "ic32_knowledge_check_selected_answers";
     const STORAGE_KEY_RESULTS = "ic32_knowledge_check_show_results";
+    const STORAGE_KEY_MARKED = "ic32_knowledge_check_marked_questions";
     expect(STORAGE_KEY_ANSWERS).toBe("ic32_knowledge_check_selected_answers");
     expect(STORAGE_KEY_RESULTS).toBe("ic32_knowledge_check_show_results");
+    expect(STORAGE_KEY_MARKED).toBe("ic32_knowledge_check_marked_questions");
   });
 });

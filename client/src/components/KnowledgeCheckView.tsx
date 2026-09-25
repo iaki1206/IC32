@@ -15,6 +15,8 @@ import {
   BookOpen,
   AlertTriangle,
   Link2,
+  Bookmark,
+  BookmarkCheck,
 } from "lucide-react";
 import data from "@/data/knowledgeCheckData.json";
 
@@ -99,6 +101,14 @@ const initialCorrectSelections = Object.fromEntries(
 export default function KnowledgeCheckView() {
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string[]>>(initialCorrectSelections);
   const [showResults, setShowResults] = useState<Record<string, boolean>>({});
+  const [markedQuestionIds, setMarkedQuestionIds] = useState<Set<string>>(() => {
+    if (typeof window === "undefined") return new Set<string>();
+    try {
+      return new Set<string>(JSON.parse(window.localStorage.getItem("ic32_knowledge_check_marked_questions") || "[]"));
+    } catch {
+      return new Set<string>();
+    }
+  });
   const [quizSubmitted, setQuizSubmitted] = useState(false);
   const [sourceGroupFilter, setSourceGroupFilter] = useState("all");
   const [questionSetFilter, setQuestionSetFilter] = useState("all");
@@ -149,7 +159,8 @@ export default function KnowledgeCheckView() {
       const answerMatches =
         answerFilter === "all" ||
         (answerFilter === "answerable" && correctLetters(question).length > 0) ||
-        (answerFilter === "self-check" && correctLetters(question).length === 0);
+        (answerFilter === "self-check" && correctLetters(question).length === 0) ||
+        (answerFilter === "marked" && markedQuestionIds.has(question.id));
 
       const searchMatches =
         !query ||
@@ -166,7 +177,7 @@ export default function KnowledgeCheckView() {
 
       return sourceMatches && chapterMatches && answerMatches && searchMatches;
     });
-  }, [answerFilter, chapterFilter, incorrectOnly, incorrectQuestionIds, questionSetFilter, searchTerm, sourceGroupFilter]);
+  }, [answerFilter, chapterFilter, incorrectOnly, incorrectQuestionIds, markedQuestionIds, questionSetFilter, searchTerm, sourceGroupFilter]);
 
   const answerableQuestions = questions.filter((question) => correctLetters(question).length > 0);
   const answeredAnswerableCount = answerableQuestions.filter((question) => Boolean(selectedAnswers[question.id]?.length)).length;
@@ -193,9 +204,21 @@ export default function KnowledgeCheckView() {
     setShowResults((previous) => ({ ...previous, [questionId]: !previous[questionId] }));
   };
 
+  const handleToggleMarked = (questionId: string) => {
+    setMarkedQuestionIds((previous) => {
+      const next = new Set(previous);
+      if (next.has(questionId)) next.delete(questionId);
+      else next.add(questionId);
+      window.localStorage.setItem("ic32_knowledge_check_marked_questions", JSON.stringify(Array.from(next)));
+      return next;
+    });
+  };
+
   const resetQuiz = () => {
     setSelectedAnswers({});
     setShowResults({});
+    setMarkedQuestionIds(new Set());
+    window.localStorage.removeItem("ic32_knowledge_check_marked_questions");
     setIncorrectOnly(false);
     setQuizSubmitted(false);
   };
@@ -298,6 +321,7 @@ export default function KnowledgeCheckView() {
               <option value="all">All answer status</option>
               <option value="answerable">Answer key available</option>
               <option value="self-check">PDF self-check (no key)</option>
+              <option value="marked">Marked for later ({markedQuestionIds.size})</option>
             </select>
           </div>
 
@@ -418,11 +442,26 @@ export default function KnowledgeCheckView() {
                     </Badge>
                   </div>
 
-                  {!hasAnswerKey && (
-                    <Badge className="bg-amber-100 text-amber-800 border-amber-300 text-[11px] self-start sm:self-auto">
-                      Self-check item (no official key supplied)
-                    </Badge>
-                  )}
+                  <div className="flex items-center gap-2 self-start sm:self-auto">
+                    {!hasAnswerKey && (
+                      <Badge className="bg-amber-100 text-amber-800 border-amber-300 text-[11px]">
+                        Self-check item (no official key supplied)
+                      </Badge>
+                    )}
+                    <Button
+                      type="button"
+                      variant="outline"
+                      size="sm"
+                      onClick={() => handleToggleMarked(q.id)}
+                      className={markedQuestionIds.has(q.id)
+                        ? "h-8 border-amber-300 bg-amber-50 text-amber-800 hover:bg-amber-100"
+                        : "h-8 border-gray-200 text-gray-600 hover:bg-gray-50"}
+                      aria-label={markedQuestionIds.has(q.id) ? "Remove from later review" : "Mark for later review"}
+                    >
+                      {markedQuestionIds.has(q.id) ? <BookmarkCheck className="w-3.5 h-3.5 mr-1.5" /> : <Bookmark className="w-3.5 h-3.5 mr-1.5" />}
+                      {markedQuestionIds.has(q.id) ? "Marked for later" : "Mark for later"}
+                    </Button>
+                  </div>
                 </div>
 
                 <div className="text-base font-bold text-gray-900 leading-snug">
