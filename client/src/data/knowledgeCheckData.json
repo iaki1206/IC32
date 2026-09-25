@@ -2,8 +2,8 @@
   "title": "Consolidated Knowledge Checks with Explanation Anchors — ISA/IEC 62443 PDF Priority",
   "description": "A deduplicated IC32 question bank. Where the supplied ISA/IEC 62443 PDF overlaps earlier questions, the PDF version is retained without wording distortion. After answering, each keyed response links to the relevant OT/ICS learning anchor.",
   "language": "British English",
-  "totalQuestions": 366,
-  "answerableQuestions": 366,
+  "totalQuestions": 355,
+  "answerableQuestions": 355,
   "questionsWithoutSuppliedAnswerKey": 0,
   "questions": [
     {
@@ -4081,90 +4081,6 @@
       "number": 92
     },
     {
-      "id": "excel-116",
-      "question": "In which layer is the physical address assigned?",
-      "options": [
-        "Layer 1",
-        "Layer 2",
-        "Layer 3",
-        "Layer 7"
-      ],
-      "correctAnswer": "B",
-      "explanation": "Correct answer is B. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "FLOW",
-        "label": "OSI, networking and industrial protocols",
-        "reason": "Review the OSI, networking or industrial-protocol explanation that shows how this answer works.",
-        "href": "/?tab=ot&anchor=flow"
-      },
-      "number": 93
-    },
-    {
-      "id": "excel-122",
-      "question": "What are the connections between security zones called?",
-      "options": [
-        "Firewalls",
-        "Tunnels",
-        "Pathways",
-        "Conduits"
-      ],
-      "correctAnswer": "D",
-      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "WHERE",
-        "label": "Zones, conduits, Purdue architecture and boundary controls",
-        "reason": "Review the architecture, zones, conduits or boundary-control explanation that places this answer in context.",
-        "href": "/?tab=ot&anchor=where"
-      },
-      "number": 94
-    },
-    {
-      "id": "excel-142",
-      "question": "What is the name of the missing layer in the Open Systems Interconnection (OSI) model shown below?",
-      "options": [
-        "Control",
-        "Protocol",
-        "Transport",
-        "User"
-      ],
-      "correctAnswer": "C",
-      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "FLOW",
-        "label": "OSI, networking and industrial protocols",
-        "reason": "Review the OSI, networking or industrial-protocol explanation that shows how this answer works.",
-        "href": "/?tab=ot&anchor=flow"
-      },
-      "number": 95
-    },
-    {
-      "id": "excel-151",
-      "question": "What type of security level defines what a component or system is capable of meeting?",
-      "options": [
-        "Capability security level",
-        "Achieved security level",
-        "Design security level",
-        "Target security level"
-      ],
-      "correctAnswer": "A",
-      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "WHAT",
-        "label": "ISA/IEC 62443, CSMS, Foundational Requirements and Security Levels",
-        "reason": "Review the standard, requirement, security-level or governance explanation that defines this answer.",
-        "href": "/?tab=ot&anchor=what"
-      },
-      "number": 96
-    },
-    {
       "id": "excel-154",
       "question": "Which activity is part of establishing policy, organisation, and awareness?",
       "options": [
@@ -4207,48 +4123,6 @@
       "number": 98
     },
     {
-      "id": "excel-168",
-      "question": "Which is the PRIMARY responsibility of the network layer of the Open Systems Interconnection (OSI) model?",
-      "options": [
-        "Forwards packets, including routing through intermediate routers",
-        "Gives transparent transfer of data between end users",
-        "Provides the rules for framing, converting electrical signals to data",
-        "Handles the physics of getting a message from one device to another"
-      ],
-      "correctAnswer": "A",
-      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "FLOW",
-        "label": "OSI, networking and industrial protocols",
-        "reason": "Review the OSI, networking or industrial-protocol explanation that shows how this answer works.",
-        "href": "/?tab=ot&anchor=flow"
-      },
-      "number": 99
-    },
-    {
-      "id": "excel-178",
-      "question": "Which of the following is a cause for the increase in attacks on IACS?",
-      "options": [
-        "Use of proprietary communications protocols",
-        "The move away from commercial off the shelf (COTS) systems, protocols, and networks",
-        "Knowledge of exploits and tools readily available on the Internet",
-        "Fewer personnel with system knowledge having access to IACS"
-      ],
-      "correctAnswer": "C",
-      "explanation": "Correct answer is C. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "FLOW",
-        "label": "OSI, networking and industrial protocols",
-        "reason": "Review the OSI, networking or industrial-protocol explanation that shows how this answer works.",
-        "href": "/?tab=ot&anchor=flow"
-      },
-      "number": 100
-    },
-    {
       "id": "excel-182",
       "question": "Which of the following is an element of security policy, organisation, and awareness?",
       "options": [
@@ -4268,69 +4142,6 @@
         "href": "/?tab=ot&anchor=improve"
       },
       "number": 101
-    },
-    {
-      "id": "excel-199",
-      "question": "Which service does an Intrusion Detection System (IDS) provide?",
-      "options": [
-        "It is the lock on the door for networks and computer systems.",
-        "It is effective against all vulnerabilities in networks and computer systems.",
-        "It blocks malicious activity in networks and computer systems.",
-        "It detects attempts to break into or misuse a computer system."
-      ],
-      "correctAnswer": "D",
-      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "SEE",
-        "label": "Monitoring, detection and incident response",
-        "reason": "Review the monitoring, detection or response explanation that explains this answer.",
-        "href": "/?tab=ot&anchor=see"
-      },
-      "number": 102
-    },
-    {
-      "id": "excel-202",
-      "question": "Which steps are included in the ISA/IEC 62443 assess phase?",
-      "options": [
-        "Cybersecurity requirements specification and detailed cyber risk assessment",
-        "Cybersecurity requirements specification and allocation of IACS assets to zones and conduits",
-        "Detailed cyber risk assessment and cybersecurity maintenance, monitoring, and management of change",
-        "Allocation of IACS assets to zones and conduits, and detailed cyber risk assessment"
-      ],
-      "correctAnswer": "D",
-      "explanation": "Correct answer is D. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "IMPROVE",
-        "label": "Lifecycle, patch management and secure development",
-        "reason": "Review the lifecycle, patching or secure-development explanation that supports this answer.",
-        "href": "/?tab=ot&anchor=improve"
-      },
-      "number": 103
-    },
-    {
-      "id": "excel-204",
-      "question": "Which steps are part of implementing countermeasures?",
-      "options": [
-        "Establish the risk tolerance and select common countermeasures.",
-        "Establish the risk tolerance and update the business continuity plan.",
-        "Select common countermeasures and update the business continuity plan.",
-        "Select common countermeasures and collaborate with stakeholders."
-      ],
-      "correctAnswer": "A",
-      "explanation": "Correct answer is A. Verified from ITExam CyberSec Fundamentals question bank (ISA/IEC 62443 standards alignment).",
-      "chapter": 15,
-      "source": "ITExam Excel Bank",
-      "explanationAnchor": {
-        "anchor": "WHY",
-        "label": "OT/ICS fundamentals, risk and people",
-        "reason": "Review the fundamentals and risk context before memorising the answer.",
-        "href": "/?tab=ot&anchor=why"
-      },
-      "number": 104
     },
     {
       "id": "excel-207",
@@ -4373,27 +4184,6 @@
         "href": "/?tab=ot&anchor=see"
       },
       "number": 106
-    },
-    {
-      "id": "pasted3-214",
-      "question": "Whose responsibility is it to determine the level of risk an organisation is willing to tolerate?",
-      "options": [
-        "Management",
-        "Legal Department",
-        "Operations Department",
-        "Safety Department"
-      ],
-      "correctAnswer": "A",
-      "explanation": "Correct answer is A. Extracted from verified IC32 test bank (pasted_content_3.txt).",
-      "chapter": 15,
-      "source": "IC32 Test Bank 127 (pasted_content_3.txt)",
-      "explanationAnchor": {
-        "anchor": "WHY",
-        "label": "OT/ICS fundamentals, risk and people",
-        "reason": "Review the fundamentals and risk context before memorising the answer.",
-        "href": "/?tab=ot&anchor=why"
-      },
-      "number": 107
     },
     {
       "id": "pasted3-215",
@@ -5595,51 +5385,6 @@
       }
     },
     {
-      "id": "kc-bank-031",
-      "number": 139,
-      "source": "External question bank — supplied list item 31",
-      "question": "In an IACS system, a typical security conduit consists of which of the following assets?",
-      "options": [
-        {
-          "letter": "C",
-          "text": "Ferrous, thickwall, and threaded conduit including raceways"
-        },
-        {
-          "letter": "A",
-          "text": "Controllers, sensors, transmitters, and final control elements"
-        },
-        {
-          "letter": "B",
-          "text": "Wiring, routers, switches, and network management devices"
-        },
-        {
-          "letter": "D",
-          "text": "Power lines, cabinet enclosures, and protective grounds Exam"
-        }
-      ],
-      "correctAnswer": "B",
-      "correctAnswers": [
-        "B"
-      ],
-      "questionType": "multiple-choice",
-      "explanation": "The supplied key identifies B: Wiring, routers, switches, and network management devices. Use the linked course anchor to review the concept before relying on this answer.",
-      "difficulty": "mixed",
-      "sourceType": "external_question_bank",
-      "sourceReferences": [
-        "pasted_content.txt",
-        "Master list item 31"
-      ],
-      "answerStatus": "supplied_unvalidated",
-      "validationNote": "Third-party supplied key; verify against the official course material before an examination.",
-      "topic": "IC32 / ISA/IEC 62443",
-      "explanationAnchor": {
-        "anchor": "WHERE",
-        "label": "Zones, conduits, Purdue architecture and boundary controls",
-        "reason": "Review the architecture, zones, conduits or boundary-control explanation that places this answer in context.",
-        "href": "/?tab=ot&anchor=where"
-      }
-    },
-    {
       "id": "pdf-isa-62443-109",
       "number": 140,
       "source": "ISA/IEC 62443 PDF — Question 109",
@@ -6353,13 +6098,12 @@
           "text": "Routers are not used in IACS networks."
         }
       ],
-      "correctAnswer": null,
+      "correctAnswer": "C",
       "correctAnswers": [
-        "A",
         "C"
       ],
       "questionType": "multiple-answer",
-      "explanation": "IT systems and IACS have different security priorities, requirements, and challenges. According to the ISA /IEC 62443 standards, the security priority for IT systems is confidentiality, which means protecting the data from unauthorized access or disclosure. The security priority for IACS is integrity, which means ensuring the accuracy and consistency of the data and the functionality of the system. A loss of integrity in an IACS can have severe consequences, such as physical damage, environmental harm, or human injury. Therefore, IACS cybersecurity must address safety issues, which are not typically considered in IT security. Safety is the ability of the system to prevent or mitigate hazardous events that can cause harm to people, property, or the environment. The ISA/IEC 62443 standards provide guidance and best practices for ensuring the safety and security of IACS, as well as the availability and reliability of the system. Availability is the ability of the system to perform its intended function when required, and reliability is the ability of the system to perform its intended function without failure. These properties are also important for IT systems, but they may have different trade-offs and implications for IACS. For example, an IACS may have stricter performance and availability requirements than an IT system, as a delay or disruption in the IACS operation can affect the industrial process and its outcomes. Additionally, an IACS may have longer equipment lifetimes and less frequent maintenance windows than an IT system, which can make patching and updating more difficult and risky. Furthermore, an IACS may use different technologies and architectures than an IT system, such as legacy devices, proprietary protocols, or specialized hardware. These factors can create compatibility and interoperability issues, as well as increase the attack surface and complexity of the IACS. Therefore, IT security solutions and practices may not be sufficient or suitable for IACS, and they may need to be adapted or supplemented by IACS-specific security measures. The ISA/IEC 62443 standards address these differences and provide a comprehensive framework for securing IACS throughout their lifecycle.",
+      "explanation": "The important difference tested here is that IACS cybersecurity must address safety issues. IACS security also considers availability and integrity, but safety is a defining operational concern that must be included alongside cybersecurity requirements.",
       "difficulty": "mixed",
       "sourceType": "isa_iec_62443_pdf",
       "sourceReferences": [
@@ -11001,12 +10745,12 @@
           "text": "5"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "correctAnswers": [
-        "B"
+        "C"
       ],
       "questionType": "multiple-choice",
-      "explanation": "The “Addressing Risk” CSMS category consists of three element groups: Security Policy, Organization and Awareness; Selected Security Countermeasures; and Implementation of Security Program1. These element groups cover the aspects of defining the security objectives, roles and responsibilities, policies and procedures, awareness and training, security countermeasures selection and implementation, and security program execution and maintenance1. The “Addressing Risk” CSMS category aims to reduce the security risk to an acceptable level by applying appropriate security measures to the system under consideration (SuC) 1. References: 1: ISA/IEC 62443-2-1: Security for industrial automation and control systems: Establishing an industrial automation and control systems security program",
+      "explanation": "The “Addressing Risk” CSMS category consists of four element groups: risk analysis and management; security policy, organisation and awareness; selected security countermeasures; and personnel security. Therefore the correct answer is 4.",
       "difficulty": "mixed",
       "sourceType": "isa_iec_62443_pdf",
       "sourceReferences": [
@@ -15787,12 +15531,12 @@
           "text": "Defense-in-depth approach to designing"
         }
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "correctAnswers": [
-        "C"
+        "A"
       ],
       "questionType": "multiple-choice",
-      "explanation": "One of the primary goals of providing a framework that addresses secure product development lifecycle requirements is to ensure that security policies and procedures are well-documented. This objective is crucial because it establishes a structured and standardized approach to security that is integrated throughout the development process of software or systems. This framework helps in aligning the development process with security best practices, thereby mitigating risks associated with security vulnerabilities. Documentation of security policies and procedures ensures that security considerations are consistently applied and that compliance with relevant standards, such as ISA/IEC 62443, is maintained. This foundational approach supports the overall security posture by embedding security considerations directly into the lifecycle of product development, rather than addressing security as an afterthought.",
+      "explanation": "ISA/IEC 62443-4-1 provides a framework for a consistent and repeatable secure product development lifecycle. One primary goal is therefore an aligned development process; documentation supports that process but is not the best answer to this question.",
       "difficulty": "mixed",
       "sourceType": "isa_iec_62443_pdf",
       "sourceReferences": [

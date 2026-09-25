@@ -46,6 +46,15 @@ const selectionsMatch = (question: KnowledgeQuestion, selection: string[]) => {
   const expected = correctLetters(question).slice().sort().join(",");
   return expected.length > 0 && expected === selection.slice().sort().join(",");
 };
+const sourceCount = (predicate: (source: string) => boolean) => questions.filter((question) => predicate(question.source || "")).length;
+const sourceCounts = {
+  excel: sourceCount((source) => source === "ITExam Excel Bank"),
+  pdf: sourceCount((source) => source.startsWith("IC32 PDF noteset")),
+  testBank: sourceCount((source) => source.startsWith("IC32 Test Bank 127")),
+  realExam: sourceCount((source) => source.startsWith("Real Exam Bank")),
+  quiz: sourceCount((source) => source.startsWith("Existing Quiz")),
+  kc: sourceCount((source) => source.startsWith("Knowledge Check |")),
+};
 
 const normaliseOptions = (options: RawOption[] | undefined, questionId: string): Option[] =>
   (options ?? []).map((option, index) => {
@@ -231,12 +240,12 @@ export default function KnowledgeCheckView() {
               className="h-10 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-800 outline-none focus:ring-2 focus:ring-blue-500/30"
             >
               <option value="all">All sources ({questions.length})</option>
-              <option value="excel">ITExam Excel Bank (111)</option>
-              <option value="pdf">IC32 PDF noteset (71)</option>
-              <option value="test_bank_127">Test Bank 127 (14)</option>
-              <option value="real_exam">Real Exam Bank (12)</option>
-              <option value="quiz">Existing Quiz (11)</option>
-              <option value="kc">Course KC (5)</option>
+              <option value="excel">ITExam Excel Bank ({sourceCounts.excel})</option>
+              <option value="pdf">IC32 PDF noteset ({sourceCounts.pdf})</option>
+              <option value="test_bank_127">Test Bank 127 ({sourceCounts.testBank})</option>
+              <option value="real_exam">Real Exam Bank ({sourceCounts.realExam})</option>
+              <option value="quiz">Existing Quiz ({sourceCounts.quiz})</option>
+              <option value="kc">Course KC ({sourceCounts.kc})</option>
             </select>
           </div>
         </div>
