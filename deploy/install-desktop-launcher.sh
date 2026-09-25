@@ -49,7 +49,7 @@ cat > "${DESKTOP_FILE}" <<DESKTOP_ENTRY
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Open IC32 Learning Platform
+Name=IC32 Learning Platform
 Comment=Start the private IC32 service and open it in the browser
 Exec=${LAUNCHER}
 Icon=web-browser
@@ -65,6 +65,6 @@ if command -v gio >/dev/null 2>&1; then
   sudo -u "${APP_USER}" gio set "${DESKTOP_FILE}" metadata::trusted true 2>/dev/null || true
 fi
 
-printf 'Launcher installed at: %s\n' "${DESKTOP_FILE}"
-printf 'It starts %s and opens https://gmtek.tail77a865.ts.net/\n' "${SERVICE_NAME:-ic32-learning-platform.service}"
-printf 'If the icon is not visible, open the Desktop folder and press F5.\n'
+printf 'New desktop button generated: %s\n' "${DESKTOP_FILE}"
+printf 'Click it to start the private service and open https://gmtek.tail77a865.ts.net/\n'
+printf 'If it is not visible, open the Desktop folder and press F5.\n'
