@@ -53,11 +53,12 @@ const selectionsMatch = (question: KnowledgeQuestion, selection: string[]) => {
 const sourceCount = (predicate: (source: string) => boolean) => questions.filter((question) => predicate(question.source || "")).length;
 const sourceCounts = {
   excel: sourceCount((source) => source === "ITExam Excel Bank"),
-  pdf: sourceCount((source) => source.startsWith("IC32 PDF noteset")),
+  pdf: sourceCount((source) => source.startsWith("IC32 PDF noteset") || source.startsWith("ISA/IEC 62443 PDF")),
+  udemy: sourceCount((source) => source.startsWith("Udemy Practice Test")),
   testBank: sourceCount((source) => source.startsWith("IC32 Test Bank 127")),
   realExam: sourceCount((source) => source.startsWith("Real Exam Bank")),
   quiz: sourceCount((source) => source.startsWith("Existing Quiz")),
-  kc: sourceCount((source) => source.startsWith("Knowledge Check |")),
+  kc: sourceCount((source) => source.startsWith("Knowledge Check |") || source.startsWith("External question bank")),
 };
 const questionSetCounts = {
   one: questions.filter((question) => question.questionSet === 1).length,
@@ -150,9 +151,11 @@ export default function KnowledgeCheckView() {
       }
       let sourceMatches = true;
       if (sourceGroupFilter === "pdf") {
-        sourceMatches = src.startsWith("IC32 PDF noteset");
+        sourceMatches = src.startsWith("IC32 PDF noteset") || src.startsWith("ISA/IEC 62443 PDF");
       } else if (sourceGroupFilter === "excel") {
         sourceMatches = src === "ITExam Excel Bank";
+      } else if (sourceGroupFilter === "udemy") {
+        sourceMatches = src.startsWith("Udemy Practice Test");
       } else if (sourceGroupFilter === "real_exam") {
         sourceMatches = src.startsWith("Real Exam Bank");
       } else if (sourceGroupFilter === "test_bank_127") {
@@ -160,7 +163,7 @@ export default function KnowledgeCheckView() {
       } else if (sourceGroupFilter === "quiz") {
         sourceMatches = src.startsWith("Existing Quiz");
       } else if (sourceGroupFilter === "kc") {
-        sourceMatches = src.startsWith("Knowledge Check |");
+        sourceMatches = src.startsWith("Knowledge Check |") || src.startsWith("External question bank");
       }
 
       const chapterMatches = chapterFilter === "all" || normaliseChapter(question.chapter) === chapterFilter;
@@ -351,8 +354,9 @@ export default function KnowledgeCheckView() {
               className="h-10 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-800 outline-none focus:ring-2 focus:ring-blue-500/30"
             >
               <option value="all">All sources ({questions.length})</option>
+              <option value="pdf">ISA/IEC 62443 PDF Noteset ({sourceCounts.pdf})</option>
+              <option value="udemy">Udemy Practice Tests ({sourceCounts.udemy})</option>
               <option value="excel">ITExam Excel Bank ({sourceCounts.excel})</option>
-              <option value="pdf">IC32 PDF noteset ({sourceCounts.pdf})</option>
               <option value="test_bank_127">Test Bank 127 ({sourceCounts.testBank})</option>
               <option value="real_exam">Real Exam Bank ({sourceCounts.realExam})</option>
               <option value="quiz">Existing Quiz ({sourceCounts.quiz})</option>

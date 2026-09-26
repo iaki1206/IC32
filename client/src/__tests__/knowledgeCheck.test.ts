@@ -3,8 +3,8 @@ import data from "../data/knowledgeCheckData.json";
 
 describe("Knowledge Check Data & Logic", () => {
   it("has questions loaded properly", () => {
-    expect(data.questions.length).toBe(765);
-    expect(data.questions.filter((q: any) => q.id.startsWith("pdf-")).length).toBe(206);
+    expect(data.questions.length).toBe(675);
+    expect(data.questions.filter((q: any) => q.id.startsWith("pdf-")).length).toBe(201);
     expect(new Set(data.questions.map((q: any) => q.question.trim().toLowerCase().replace(/\s+/g, " "))).size).toBe(data.questions.length);
   });
 
