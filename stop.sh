@@ -9,9 +9,9 @@ echo "============================================================"
 KILLED=0
 
 # 1. Kill any process listening on port 3000
-PIDS=$(lsof -ti :3000 2>/dev/null || true)
+PIDS=$(lsof -ti tcp:3000 -sTCP:LISTEN 2>/dev/null || true)
 if [ -n "$PIDS" ]; then
-    echo "[*] Stopping processes on port 3000: $PIDS"
+    echo "[*] Stopping processes listening on port 3000: $PIDS"
     for p in $PIDS; do
         kill -15 "$p" 2>/dev/null || true
     done
@@ -32,7 +32,17 @@ if [ -n "$PIDS_VITE" ]; then
     KILLED=1
 fi
 
-# 3. Also stop any active start.sh processes
+# 3. Kill any node production server in IC32
+PIDS_NODE=$(pgrep -f "node.*dist/index\.js" 2>/dev/null || true)
+if [ -n "$PIDS_NODE" ]; then
+    echo "[*] Stopping Node server instances: $PIDS_NODE"
+    for p in $PIDS_NODE; do
+        kill -9 "$p" 2>/dev/null || true
+    done
+    KILLED=1
+fi
+
+# 4. Also stop any active start.sh processes
 PIDS_START=$(pgrep -f "start\.sh" 2>/dev/null || true)
 if [ -n "$PIDS_START" ]; then
     for p in $PIDS_START; do
