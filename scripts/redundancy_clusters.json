@@ -1,0 +1,1508 @@
+[
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "kc-merged-007",
+        "source": "Real Exam Bank | ITExams Q#15",
+        "set": 1,
+        "text": "What are the connections between security zones called in the ISA/IEC 62443 framework?",
+        "answer": "D"
+      },
+      {
+        "id": "pdf-isa-62443-088",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 88",
+        "set": 1,
+        "text": "What are the connections between security zones called?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 4,
+    "questions": [
+      {
+        "id": "kc-merged-017",
+        "source": "Real Exam Bank | ITExams / SecExams Q#1",
+        "set": 2,
+        "text": "Which characteristic is MOST closely associated with the deployment of a demilitarised zone (DMZ) in industrial control networks?",
+        "answer": "A"
+      },
+      {
+        "id": "excel-157",
+        "source": "ITExam Excel Bank",
+        "set": 1,
+        "text": "Which characteristic is MOST closely associated with the deployment of a demilitarised zone (DMZ)?",
+        "answer": "A"
+      },
+      {
+        "id": "pdf-isa-62443-060",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 60",
+        "set": 1,
+        "text": "Which characteristic is MOST closely associated with the deployment of a demilitarized zone (DMZ)?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-alpha-060",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 2,
+        "text": "Which feature is MOST closely related with the deployment of a demilitarized zone (DMZ) in IACS network ?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 3,
+    "questions": [
+      {
+        "id": "excel-108",
+        "source": "ITExam Excel Bank",
+        "set": 1,
+        "text": "Authorisation (user accounts) must be granted based on which of the following?",
+        "answer": "C"
+      },
+      {
+        "id": "pdf-isa-62443-062",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 62",
+        "set": 1,
+        "text": "Authorization (user accounts) must be granted based on which of the following?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-alpha-059",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 2,
+        "text": "Authorization (user accounts access) must be granted based on which factors ?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "excel-154",
+        "source": "ITExam Excel Bank",
+        "set": 2,
+        "text": "Which activity is part of establishing policy, organisation, and awareness?",
+        "answer": "A"
+      },
+      {
+        "id": "pdf-isa-62443-119",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 119",
+        "set": 1,
+        "text": "Which activity is part of establishing policy, organization, and awareness?",
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "excel-182",
+        "source": "ITExam Excel Bank",
+        "set": 2,
+        "text": "Which of the following is an element of security policy, organisation, and awareness?",
+        "answer": "B"
+      },
+      {
+        "id": "pdf-isa-62443-202",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 202",
+        "set": 1,
+        "text": "Which of the following is an element of security policy, organization, and awareness?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "excel-207",
+        "source": "ITExam Excel Bank",
+        "set": 1,
+        "text": "Whose responsibility is it to determine the level of risk an organisation is willing to tolerate?",
+        "answer": "A"
+      },
+      {
+        "id": "pdf-isa-62443-223",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 223",
+        "set": 1,
+        "text": "Whose responsibility is it to determine the level of risk an organization is willing to tolerate?",
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pasted3-211",
+        "source": "IC32 Test Bank 127 (pasted_content_3.txt)",
+        "set": 2,
+        "text": "A company discovers malware on a portable USB device used within its IACS environment. According to the course material, which SP Element and controls would be most relevant to address this issue?",
+        "answer": "C"
+      },
+      {
+        "id": "pdf-isa-62443-158",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 158",
+        "set": 1,
+        "text": "A company discovers malware on a portable USB device used within their IACS environment. According to the document, which SP Element and controls would be MOST relevant to address this issue?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-109",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 109",
+        "set": 1,
+        "text": "Which of the following are the critical variables related to access control?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-bravo-036",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 2,
+        "text": "Choose the critical variables related to access control?",
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "count": 4,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-115",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 115",
+        "set": 1,
+        "text": "Which of the following ISA-99 (IEC 62443) Reference Model levels is named correctly?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-bravo-037",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 1,
+        "text": "As per ISA-95 (IEC 62443) Reference Model which level is named correctly?",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-charlie-001",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 2,
+        "text": "Which one  is named correctly as per ISA-95 (IEC 62443) Reference Model level?",
+        "answer": "A"
+      },
+      {
+        "id": "kc-udemy-charlie-004",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 2,
+        "text": "Which of the following ISA-95 (IEC 62443) Reference Model levels is named correctly?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-185",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 185",
+        "set": 1,
+        "text": "Which of the following can be employed as a barrier device in a segmented network?",
+        "answer": "A"
+      },
+      {
+        "id": "kc-udemy-alpha-027",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 1,
+        "text": "Which device act as a barrier device in a segmented network?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-047",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 47",
+        "set": 1,
+        "text": "What is a feature of an asymmetric key?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-charlie-027",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 2,
+        "text": "Which of these is a main feature of an asymmetric key?",
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-040",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 40",
+        "set": 1,
+        "text": "Which of the following is the BEST example of detection-in-depth best practices?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-bravo-078",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 1,
+        "text": "Which of the following BEST exemplify detection-in-depth best practices?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-197",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 197",
+        "set": 1,
+        "text": "What is defined as the hardware and software components of an IACS?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-charlie-028",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 1,
+        "text": "The hardware and software components of an IACS are defined as ?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 4,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-093",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 93",
+        "set": 1,
+        "text": "Using the risk matrix below, what is the risk of a medium likelihood event with high consequence?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-alpha-026",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 1,
+        "text": "Using the risk matrix shown below, which option corresponds to the RISK of a Medium likelihood event with Low consequence?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-charlie-011",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 2,
+        "text": "Based on the risk matrix shown below, which option corresponds to the RISK of a medium likelihood event with high consequence?",
+        "answer": "A"
+      },
+      {
+        "id": "kc-udemy-charlie-078",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 2,
+        "text": "Using the risk matrix shown, which option corresponds to the RISK of a high likelihood event with medium consequence?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-227",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 227",
+        "set": 1,
+        "text": "An industrial facility wants to ensure that only authorized communication reaches its PLCs while minimizing disruption to time-sensitive control processes. Which type of firewall would BEST suit this need?",
+        "answer": "C"
+      },
+      {
+        "id": "pdf-isa-62443-120",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 120",
+        "set": 1,
+        "text": "An industrial facility wants to ensure that only authorized systems reach its PLCs while minimizing disruption to time-sensitive control processes. Which type of firewall would BEST suit this need?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-042",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 42",
+        "set": 1,
+        "text": "Which of the following refers to internal rules that govern how an organization protects critical system resources?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-alpha-024",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 1,
+        "text": "A document which refers to internal rules that govern how an organization protects critical system resources?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-183",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 183",
+        "set": 1,
+        "text": "Which of the following is a recommended default rule for IACS firewalls?",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-bravo-029",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 1,
+        "text": "The recommended default rule for IACS firewalls is :",
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-221",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 221",
+        "set": 1,
+        "text": "How many element groups are in the \"Addressing Risk\" CSMS category?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-charlie-017",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 1,
+        "text": "How many element groups are in the \"Addressing Risk\" Cybersecurity Management System CSMS category as per ISA/IEC 62443?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-155",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 155",
+        "set": 1,
+        "text": "Which is the PRIMARY reason why Modbus over Ethernet is easy to manaqe in a firewall?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-charlie-040",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 2,
+        "text": "Which is the MAIN  reason why Modbus over Ethernet is easy to manage in a firewall?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-162",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 162",
+        "set": 1,
+        "text": "What is the name of the protocol that implements serial Modbus over Ethernet?",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-charlie-065",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 2,
+        "text": "The protocol that implements serial Modbus over Ethernet is called?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-136",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 136",
+        "set": 1,
+        "text": "How does ISA/IEC 62443-2-1 suggest integrating the IACS Security Program (SP) within an organization?",
+        "answer": "C"
+      },
+      {
+        "id": "pdf-isa-62443-008",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 8",
+        "set": 1,
+        "text": "How does ISA-62443-2-1 suggest integrating the IACS Security Program (SP) within an organization?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-137",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 137",
+        "set": 1,
+        "text": "Which is a PRIMARY reason why network security is important in IACS environments?",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-alpha-077",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 1,
+        "text": "Which is a MAIN reason why network security is important in IACS environments?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-163",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 163",
+        "set": 1,
+        "text": "What are three possible entry points (pathways) that could be used for launching a cyber attack?",
+        "answer": "A"
+      },
+      {
+        "id": "kc-udemy-alpha-042",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 2,
+        "text": "Name the three possible entry points (pathways) that could be used for launching cyber attack?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-011",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 11",
+        "set": 1,
+        "text": "Which service does an Intrusion Detection System (IDS) provide?",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-charlie-049",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 1,
+        "text": "Which service does an Intrusion Detection System (IDS) perform?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-199",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 199",
+        "set": 1,
+        "text": "After receiving an approved patch from the IACS vendor, what is BEST practice for the asset owner to follow?",
+        "answer": "C"
+      },
+      {
+        "id": "pdf-isa-62443-033",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 33",
+        "set": 1,
+        "text": "After receiving an approved patch from the JACS vendor, what is BEST practice for the asset owner to follow?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-184",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 184",
+        "set": 1,
+        "text": "A manufacturing plant has inconsistent cybersecurity processes that vary widely between shifts and teams. According to the maturity levels described in ISA/IEC 62443-2-1, how would this situation be classified?",
+        "answer": "A"
+      },
+      {
+        "id": "pdf-isa-62443-138",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 138",
+        "set": 1,
+        "text": "A manufacturing plant has inconsistent cybersecurity processes that vary widely across shifts and teams. According to the maturity levels described in ISA/IEC 62443-2-1, how would this situation be classified?",
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-198",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 198",
+        "set": 1,
+        "text": "Which of the following is an industry sector-specific standard?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-bravo-054",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 2,
+        "text": "Which one is an industry sector-specific standard?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-068",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 68",
+        "set": 1,
+        "text": "Why is OPC Classic considered firewall unfriendly?",
+        "answer": "A"
+      },
+      {
+        "id": "kc-udemy-alpha-052",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 2,
+        "text": "Why OPC Classic is considered firewall unfriendly?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-086",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 86",
+        "set": 1,
+        "text": "Within the National Institute of Standards and Technoloqv Cybersecuritv Framework v1.0 (NIST CSF), what is the status of the ISA 62443 standards?",
+        "answer": "A"
+      },
+      {
+        "id": "kc-udemy-charlie-042",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 2,
+        "text": "Within the National Institute of Standards and Technology Cybersecurity Framework v1.0 (NIST CSF), what is the status of the ISA 62443 standards?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-102",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 102",
+        "set": 1,
+        "text": "What does Layer 1 of the ISO/OSI protocol stack provide?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-bravo-057",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 2,
+        "text": "What action does Layer 1 of the ISO/OSI protocol stack perform?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-018",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 18",
+        "set": 1,
+        "text": "Which statement is TRUE reqardinq application of patches in an IACS environment?",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-charlie-043",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 2,
+        "text": "Which statement is TRUE regarding application of patches in an IACS environment?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-140",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 140",
+        "set": 1,
+        "text": "How many security levels are in the ISASecure certification program?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-bravo-079",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 2,
+        "text": "What are the number of security levels in the ISASecure Conformance certification program?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-113",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 113",
+        "set": 1,
+        "text": "Which of the following is the BEST reason for periodic audits?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-charlie-055",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 2,
+        "text": "What is the MAIN rationale for periodic audits?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-181",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 181",
+        "set": 1,
+        "text": "What are the three main components of the ISASecure Integrated Threat Analysis (ITA) Program?",
+        "answer": "A"
+      },
+      {
+        "id": "kc-udemy-alpha-025",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 2,
+        "text": "The three main components of the ISA Secure Integrated Threat Analysis (ITA) Program are:",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-117",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 117",
+        "set": 1,
+        "text": "Which is a role of the application layer?",
+        "answer": null
+      },
+      {
+        "id": "kc-udemy-bravo-012",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 2,
+        "text": "Which is a role of the application layer in IACS?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-191",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 191",
+        "set": 1,
+        "text": "Which policies and procedures publication is titled Patch Manaqement in the IACS Environment?",
+        "answer": "A"
+      },
+      {
+        "id": "kc-udemy-alpha-005",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 1,
+        "text": "Which publication defines policies and procedures for Patch Management in the  Industrial Automation and Control Systems (IACS) Environment?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-222",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 222",
+        "set": 1,
+        "text": "Which of the following is a cause for the increase in attacks on IACS?",
+        "answer": null
+      },
+      {
+        "id": "kc-udemy-bravo-013",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 2,
+        "text": "Which of the following is a reason for the increase in attacks on IACS?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-187",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 187",
+        "set": 1,
+        "text": "Which of the following is an activity that should trigger a review of the CSMS?",
+        "answer": null
+      },
+      {
+        "id": "kc-udemy-charlie-006",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 2,
+        "text": "Which activity should trigger a review of the CSMS?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-091",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 91",
+        "set": 1,
+        "text": "Which analysis method is MOST frequently used as an input to a security risk assessment?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-alpha-057",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 2,
+        "text": "Which analysis method is MOST frequently utilized as an input to a security risk assessment?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-063",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 63",
+        "set": 1,
+        "text": "Which layer in the Open Systems Interconnection (OSI) model would include the use of the File Transfer Protocol (FTP)?",
+        "answer": "A"
+      },
+      {
+        "id": "kc-udemy-charlie-064",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 1,
+        "text": "In the Open Systems Interconnection (OSI) model which layer would use the File Transfer Protocol (FTP)?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-094",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 94",
+        "set": 1,
+        "text": "What do packet filter firewalls examine?",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-alpha-066",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 1,
+        "text": "What do packet filter firewalls check/inspect?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-027",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 27",
+        "set": 1,
+        "text": "Which of the following is the underlying protocol for Ethernet/IP?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-bravo-034",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 2,
+        "text": "Which one is the underlying protocol for Ethernet/IP?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-107",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 107",
+        "set": 1,
+        "text": "Which of the ISA 62443 standards focuses on the process of developing secure products?",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-bravo-020",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 1,
+        "text": "Which of the ISA-62443 standards specifically addresses the procedure for creating secure products?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-225",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 225",
+        "set": 1,
+        "text": "What.are the two elements of the risk analysis category of an IACS?",
+        "answer": "C"
+      },
+      {
+        "id": "pdf-isa-62443-098",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 98",
+        "set": 1,
+        "text": "What are the two elements of the risk analysis category of an IACS?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-005",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 5",
+        "set": 1,
+        "text": "Which layer specifies the rules for Modbus Application Protocol",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-alpha-074",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 2,
+        "text": "Which layer of OSI MODEL specifies the rules for Modbus Application Protocol ?",
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-173",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 173",
+        "set": 1,
+        "text": "Which steps are part of implementing countermeasures?",
+        "answer": "A"
+      },
+      {
+        "id": "kc-udemy-bravo-015",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 2,
+        "text": "What are the steps of  implementing countermeasures?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-169",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 169",
+        "set": 1,
+        "text": "Which communications system covers a large geographic area?",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-charlie-018",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 1,
+        "text": "Communications system that covers a large geographic area?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 4,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-099",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 99",
+        "set": 1,
+        "text": "Which steps are included in the ISA/IEC 62443 assess phase?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-bravo-076",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 1,
+        "text": "Which steps are part of the ISA/IEC 62443 assess phase?",
+        "answer": "A"
+      },
+      {
+        "id": "kc-udemy-alpha-078",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 1,
+        "text": "Which steps are included in the ISA/IEC 62443 develop and implement phase?",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-charlie-029",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 2,
+        "text": "Which steps are included in the ISA/IEC 62443 maintain phase?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-076",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 76",
+        "set": 1,
+        "text": "Which is the implementation of PROFIBUS over Ethernet for non-safety-related communications?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-bravo-060",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 2,
+        "text": "Which one of the following is the implementation of PROFIBUS over Ethernet for non-safety-related communications?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-188",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 188",
+        "set": 1,
+        "text": "At Layer 4 of the Open Systems Interconnection (OSI) model, what identifies the application that will handle a packet inside a host?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-alpha-031",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 1,
+        "text": "At Layer 4 of the Open Systems Interconnection (OSI) model, which component identifies the application that will handle a packet inside a host?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 3,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-148",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 148",
+        "set": 1,
+        "text": "What is the name of the missing layer in the Open Systems Interconnection (OSI) model shown below?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-bravo-023",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 2,
+        "text": "Which one is the missing layer in the Open Systems Interconnection (OSI) model shown below?",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-charlie-081",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 1,
+        "text": "In the figure, which one is the missing layer in the Open Systems Interconnection (OSI) model shown below?",
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-029",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 29",
+        "set": 1,
+        "text": "What is a commonly used protocol for managing secure data transmission over a Virtual Private Network (VPN)?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-bravo-059",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 1,
+        "text": "What is a commonly used protocol for managing secure data transfer over a Virtual Private Network (VPN)?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-072",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 72",
+        "set": 1,
+        "text": "Which is the PRIMARY responsibility of the network layer of the Open Systems Interconnection (OSI) model?",
+        "answer": "A"
+      },
+      {
+        "id": "kc-udemy-charlie-080",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 2,
+        "text": "Which is the MAIN responsibility of the network layer of the Open Systems Interconnection (OSI) model?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-021",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 21",
+        "set": 1,
+        "text": "Which of the following provides the overall conceptual basis in the design of an appropriate security program?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-charlie-079",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 2,
+        "text": "Which of the following provides the overall conceptual basis in designing a security program?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-084",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 84",
+        "set": 1,
+        "text": "Which of the following tools has the potential for serious disruption of a control network and should not be used on a live system?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-alpha-038",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 1,
+        "text": "Which of the following tools has the potential for significant disruption of a control network and should not be used on a live system?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-039",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 39",
+        "set": 1,
+        "text": "Why is patch management more difficult for IACS than for business systems?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-alpha-004",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 2,
+        "text": "Why is patch management considered more challenging for IACS than for business systems?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-153",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 153",
+        "set": 1,
+        "text": "Which type of cryptographic algorithms requires more than one key?",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-charlie-015",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 1,
+        "text": "What type of cryptographic algorithm requires more than one key to encrypt and decrypt the plaintext?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-014",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 14",
+        "set": 1,
+        "text": "Which is one of the PRIMARY goals of providing a framework addressing secure product development life- cycle requirements?",
+        "answer": "A"
+      },
+      {
+        "id": "kc-udemy-bravo-075",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 1,
+        "text": "Which is one of the main goal of providing a framework addressing secure product development life-cycle requirements?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-104",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 104",
+        "set": 1,
+        "text": "What are the four main categories for documents in the ISA-62443 (IEC 62443) series?",
+        "answer": "A"
+      },
+      {
+        "id": "kc-udemy-alpha-081",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 1,
+        "text": "What are the four primary categories for documents in the ISA-62443 (IEC 62443) series?",
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-211",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 211",
+        "set": 1,
+        "text": "Which of the following PRIMARILY determines access privileges for user accounts?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-bravo-062",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 2,
+        "text": "What should MAINLY determines access privileges for user accounts?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-065",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 65",
+        "set": 1,
+        "text": "Which organization manages the ISASecure conformance certification program?",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-alpha-023",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 1,
+        "text": "Which body manages the ISA Secure conformance certification program?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "pdf-isa-62443-095",
+        "source": "ISA/IEC 62443 PDF \u2014 Question 95",
+        "set": 1,
+        "text": "In a defense-in-depth strategy, what is the purpose of role-based access control?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-charlie-066",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 1,
+        "text": "In a defense-in-depth strategy, what is the main goal of role-based access control?",
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "count": 6,
+    "questions": [
+      {
+        "id": "kc-udemy-bravo-017",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 1,
+        "text": "What is one of the functions performed by the Physical layer?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-bravo-069",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 1,
+        "text": "What is one of the functions performed by the Transport layer?",
+        "answer": "A"
+      },
+      {
+        "id": "kc-udemy-alpha-006",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 2,
+        "text": "What is one of the functions performed by the Presentation layer?",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-alpha-008",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 1,
+        "text": "What is one of the functions performed by the Network layer?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-charlie-047",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 1,
+        "text": "What is one of the functions performed by the Data link layer?",
+        "answer": "A"
+      },
+      {
+        "id": "kc-udemy-charlie-069",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 1,
+        "text": "What is one of the functions performed by the Session layer?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 3,
+    "questions": [
+      {
+        "id": "kc-udemy-bravo-073",
+        "source": "Udemy Practice Test 2: Bravo",
+        "set": 1,
+        "text": "Which is the Security Level of protecting against intentional violation using simple means with low  resources, generic skills and low  motivation?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-charlie-005",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 1,
+        "text": "Which is the Security Level of protecting against intentional violation using sophisticated means with extended resources, IACS specific skills and high motivation?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-charlie-060",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 2,
+        "text": "Which is the Security Level of protecting against intentional violation using sophisticated means with moderate resources, IACS specific skills and moderate motivation?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "kc-udemy-alpha-046",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 1,
+        "text": "As per the NIST Cybersecurity Framework, current profile of the company refers to:",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-charlie-024",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 2,
+        "text": "As per the NIST Cybersecurity Framework, target profile of the company refers to:",
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "kc-udemy-alpha-079",
+        "source": "Udemy Practice Test 1: Alpha",
+        "set": 1,
+        "text": "Control System, as defined in ANSI/ISA-99.00.01:2007. ?",
+        "answer": "C"
+      },
+      {
+        "id": "kc-udemy-charlie-073",
+        "source": "Udemy Practice Test 3: Charlie",
+        "set": 1,
+        "text": "Cybersecurity, as defined in ANSI/ISA-99.00.01:2007. ?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "kc-udemy-delta-010",
+        "source": "Udemy Practice Test 4: Delta",
+        "set": 2,
+        "text": "What is the primary goal of the Assess phase of ICS security implementation ?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-enigma-083",
+        "source": "Udemy Practice Test 5: Enigma",
+        "set": 2,
+        "text": "What is the primary goal of  Develop & Implement phase of ICS security implementation?",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "kc-udemy-delta-039",
+        "source": "Udemy Practice Test 4: Delta",
+        "set": 2,
+        "text": "The IACS Integration Service Provider is:",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-delta-078",
+        "source": "Udemy Practice Test 4: Delta",
+        "set": 2,
+        "text": "The maintenance service provider is:",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "kc-udemy-delta-072",
+        "source": "Udemy Practice Test 4: Delta",
+        "set": 2,
+        "text": "Which standard addresses cybersecurity Maintain Phase of the IACS Cybersecurity Life Cycle?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-enigma-003",
+        "source": "Udemy Practice Test 5: Enigma",
+        "set": 2,
+        "text": "Which standard provides guidelines for the Assess phase of the IACS Cybersecurity Life Cycle?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 3,
+    "questions": [
+      {
+        "id": "kc-udemy-delta-077",
+        "source": "Udemy Practice Test 4: Delta",
+        "set": 2,
+        "text": "Notification is made across the organisation during which stage of the IACS patch management lifecycle ?",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-enigma-034",
+        "source": "Udemy Practice Test 5: Enigma",
+        "set": 2,
+        "text": "Risk Assessment is conducted during which stage of the IACS patch management lifecycle ?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-enigma-078",
+        "source": "Udemy Practice Test 5: Enigma",
+        "set": 2,
+        "text": "Risk Mitigation is conducted during which stage of the IACS patch management lifecycle ?",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "count": 3,
+    "questions": [
+      {
+        "id": "kc-udemy-delta-086",
+        "source": "Udemy Practice Test 4: Delta",
+        "set": 2,
+        "text": "What is the primary focus of the \"Policies & Procedures\" group in the ISA/IEC 62443 series?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-enigma-106",
+        "source": "Udemy Practice Test 5: Enigma",
+        "set": 2,
+        "text": "What is the primary focus of the Component group in the ISA/IEC 62443 standards?",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-enigma-111",
+        "source": "Udemy Practice Test 5: Enigma",
+        "set": 2,
+        "text": "What is the primary focus of the \"General\" group in the ISA/IEC 62443 series?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "kc-udemy-delta-088",
+        "source": "Udemy Practice Test 4: Delta",
+        "set": 2,
+        "text": "Which group of documents in ISA/IEC-62443 provides guidance primarily for product suppliers?",
+        "answer": "B"
+      },
+      {
+        "id": "kc-udemy-enigma-043",
+        "source": "Udemy Practice Test 5: Enigma",
+        "set": 2,
+        "text": "Which group of documents in ISA/IEC-62443 provides guidance primarily for asset owners?",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "count": 2,
+    "questions": [
+      {
+        "id": "kc-udemy-delta-100",
+        "source": "Udemy Practice Test 4: Delta",
+        "set": 2,
+        "text": "Which tier in the ISA/IEC-62443 series contains part 4-2 (Security Requirements for Components)",
+        "answer": "D"
+      },
+      {
+        "id": "kc-udemy-delta-105",
+        "source": "Udemy Practice Test 4: Delta",
+        "set": 2,
+        "text": "Which tier in the ISA/IEC-62443 series contains part 4-1 (Secure Product Lifecycle)",
+        "answer": "D"
+      }
+    ]
+  }
+]
