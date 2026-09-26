@@ -17,6 +17,7 @@ import {
   Link2,
   Bookmark,
   BookmarkCheck,
+  SquareCheckBig,
 } from "lucide-react";
 import data from "@/data/knowledgeCheckData.json";
 
@@ -219,7 +220,32 @@ export default function KnowledgeCheckView() {
   };
 
   const handleToggleShowResult = (questionId: string) => {
-    setShowResults((previous) => ({ ...previous, [questionId]: !previous[questionId] }));
+    const question = questions.find((item) => item.id === questionId);
+    const shouldShow = !(showResults[questionId] ?? false);
+    setShowResults((previous) => ({ ...previous, [questionId]: shouldShow }));
+    if (shouldShow && answerFilter === "mistakes" && question && selectionsMatch(question, selectedAnswers[questionId] || [])) {
+      setMistakeQuestionIds((mistakes) => {
+        const updated = new Set(mistakes);
+        updated.delete(questionId);
+        window.localStorage.setItem("ic32_knowledge_check_mistake_practice", JSON.stringify(Array.from(updated)));
+        return updated;
+      });
+    }
+  };
+
+  const startMistakePractice = () => {
+    setSelectedAnswers((previous) => {
+      const next = { ...previous };
+      mistakeQuestionIds.forEach((questionId) => delete next[questionId]);
+      return next;
+    });
+    setShowResults((previous) => {
+      const next = { ...previous };
+      mistakeQuestionIds.forEach((questionId) => delete next[questionId]);
+      return next;
+    });
+    setIncorrectOnly(false);
+    setAnswerFilter("mistakes");
   };
 
   const handleToggleMarked = (questionId: string) => {
@@ -356,7 +382,7 @@ export default function KnowledgeCheckView() {
 
             <select
               value={answerFilter}
-              onChange={(event) => setAnswerFilter(event.target.value)}
+              onChange={(event) => event.target.value === "mistakes" ? startMistakePractice() : setAnswerFilter(event.target.value)}
               className="h-10 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-800 outline-none focus:ring-2 focus:ring-blue-500/30"
             >
               <option value="all">All answer status</option>
@@ -412,7 +438,7 @@ export default function KnowledgeCheckView() {
           <Button
             variant={answerFilter === "mistakes" ? "default" : "outline"}
             size="sm"
-            onClick={() => setAnswerFilter(answerFilter === "mistakes" ? "all" : "mistakes")}
+            onClick={() => answerFilter === "mistakes" ? setAnswerFilter("all") : startMistakePractice()}
             className={answerFilter === "mistakes" ? "bg-amber-600 hover:bg-amber-700 text-white" : "border-amber-200 text-amber-800 bg-amber-50/50 hover:bg-amber-100"}
           >
             <RotateCcw className="w-4 h-4 mr-1.5" />
@@ -471,10 +497,11 @@ export default function KnowledgeCheckView() {
             const userSelection = selectedAnswers[q.id] || [];
             const options = normaliseOptions(q.options, q.id);
             const hasAnswerKey = correctLetters(q).length > 0;
+            const isMultiple = Boolean(q.correctAnswers && q.correctAnswers.length > 1);
             const hasResponded = userSelection.length > 0;
             const isCorrect = hasAnswerKey && selectionsMatch(q, userSelection);
             // Reveal correctness only after the learner has submitted an option.
-            const showResult = hasResponded && (showResults[q.id] ?? true);
+            const showResult = hasResponded && (showResults[q.id] ?? (answerFilter !== "mistakes"));
 
             return (
               <Card key={q.id} className="p-6 bg-white border-gray-200 shadow-sm space-y-4">
@@ -517,6 +544,11 @@ export default function KnowledgeCheckView() {
 
                 <div className="text-base font-bold text-gray-900 leading-snug">
                   {q.question}
+                  {isMultiple && (
+                    <span className="mt-2 inline-flex items-center gap-1.5 rounded-md border border-indigo-200 bg-indigo-50 px-2 py-1 text-xs font-bold text-indigo-800">
+                      <SquareCheckBig className="h-3.5 w-3.5" /> Select multiple answers
+                    </span>
+                  )}
                 </div>
 
                 <div className="space-y-2 pt-1">
@@ -544,10 +576,13 @@ export default function KnowledgeCheckView() {
                         disabled={quizSubmitted}
                         className={`w-full text-left p-3.5 rounded-xl border transition-all flex items-start gap-3 cursor-pointer ${optionStyle}`}
                       >
-                        <span className={`w-6 h-6 rounded-lg flex items-center justify-center text-xs font-mono font-bold flex-shrink-0 ${
-                          isSelected ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-700"
-                        }`}>
-                          {opt.letter}
+                        <span className="flex items-center gap-2 flex-shrink-0">
+                          <span className={`w-6 h-6 flex items-center justify-center text-xs font-mono font-bold border-2 ${isMultiple ? "rounded-md" : "rounded-full"} ${
+                            isSelected ? "border-blue-600 bg-blue-600 text-white" : "border-gray-300 bg-white text-gray-700"
+                          }`}>
+                            {isSelected ? <CheckCircle2 className="w-4 h-4" /> : isMultiple ? null : opt.letter}
+                          </span>
+                          {isMultiple && <span className="text-xs font-mono font-bold text-gray-600">{opt.letter}</span>}
                         </span>
                         <span className="text-sm leading-relaxed flex-1">{opt.text}</span>
                         {showResult && hasAnswerKey && isTheCorrectAnswer && (

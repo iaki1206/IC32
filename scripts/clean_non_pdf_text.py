@@ -1,4 +1,5 @@
 import json
+import re
 from pathlib import Path
 
 BANK = Path(__file__).resolve().parents[1] / "client/src/data/knowledgeCheckData.json"
@@ -21,6 +22,7 @@ REPLACEMENTS = {
 def clean(value: str) -> str:
     for old, new in REPLACEMENTS.items():
         value = value.replace(old, new)
+    value = re.sub(r"\s*\(select all that apply\)\s*$", "", value, flags=re.IGNORECASE)
     return value
 
 

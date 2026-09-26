@@ -4504,7 +4504,7 @@
       "id": "kc-bank-001",
       "number": 118,
       "source": "External question bank — supplied list item 1",
-      "question": "A company is evaluating its supply chain security after experiencing a breach. What steps should it take to mitigate future risks? (Select All that Apply)",
+      "question": "A company is evaluating its supply chain security after experiencing a breach. What steps should it take to mitigate future risks?",
       "options": [
         {
           "letter": "A",
@@ -4600,7 +4600,7 @@
       "id": "kc-bank-003",
       "number": 120,
       "source": "External question bank — supplied list item 3",
-      "question": "What are the consequences of failing to adhere to ISA/IEC 62443-4-1 during the product development lifecycle? (Select All that Apply)",
+      "question": "What are the consequences of failing to adhere to ISA/IEC 62443-4-1 during the product development lifecycle?",
       "options": [
         {
           "letter": "A",
@@ -4646,7 +4646,7 @@
       "id": "kc-bank-004",
       "number": 121,
       "source": "External question bank — supplied list item 4",
-      "question": "In a cybersecurity incident involving a breach of sensitive data, what steps should the incident response team take immediately following the detection of the breach? (Select All that Apply)",
+      "question": "In a cybersecurity incident involving a breach of sensitive data, what steps should the incident response team take immediately following the detection of the breach?",
       "options": [
         {
           "letter": "A",
@@ -4692,7 +4692,7 @@
       "id": "kc-bank-005",
       "number": 122,
       "source": "External question bank — supplied list item 5",
-      "question": "A system integrator is asked to justify why the project uses defence-in-depth for a chemical blending line. Which statements are correct? (Select All that Apply)",
+      "question": "A system integrator is asked to justify why the project uses defence-in-depth for a chemical blending line. Which statements are correct?",
       "options": [
         {
           "letter": "A",
@@ -4788,7 +4788,7 @@
       "id": "kc-bank-007",
       "number": 124,
       "source": "External question bank — supplied list item 7",
-      "question": "An organisation is undergoing an audit against ISA/IEC 62443-4-1 for their secure product development lifecycle. The auditors find that the development team lacks a formal process for handling third-party software components. Which of the following actions should the organisation take to align with the standard? (Select all that apply)",
+      "question": "An organisation is undergoing an audit against ISA/IEC 62443-4-1 for their secure product development lifecycle. The auditors find that the development team lacks a formal process for handling third-party software components. Which of the following actions should the organisation take to align with the standard?",
       "options": [
         {
           "letter": "A",
@@ -4836,7 +4836,7 @@
       "id": "kc-bank-008",
       "number": 125,
       "source": "External question bank — supplied list item 8",
-      "question": "A company mandates that all new PLC purchases must be from vendors who follow ISA/IEC 62443-4-1. Why is this mandate effective? (Select All that Apply)",
+      "question": "A company mandates that all new PLC purchases must be from vendors who follow ISA/IEC 62443-4-1. Why is this mandate effective?",
       "options": [
         {
           "letter": "A",
@@ -4882,7 +4882,7 @@
       "id": "kc-bank-009",
       "number": 126,
       "source": "External question bank — supplied list item 9",
-      "question": "A chemical plant documents the security needs for a new historian-to-ERP interface after a formal assessment. The project manager asks which statements belong in the Cybersecurity Requirements Specification. (Select All that Apply)",
+      "question": "A chemical plant documents the security needs for a new historian-to-ERP interface after a formal assessment. The project manager asks which statements belong in the Cybersecurity Requirements Specification.",
       "options": [
         {
           "letter": "A",
@@ -4978,7 +4978,7 @@
       "id": "kc-bank-011",
       "number": 128,
       "source": "External question bank — supplied list item 11",
-      "question": "Which of the following actions are essential during the design phase of a security policy? (Select All that Apply)",
+      "question": "Which of the following actions are essential during the design phase of a security policy?",
       "options": [
         {
           "letter": "A",
@@ -5078,7 +5078,7 @@
       "id": "kc-bank-013",
       "number": 130,
       "source": "External question bank — supplied list item 13",
-      "question": "A plant is defining a CRS for a new zone where a historian, PLCs, and engineering tools will coexist. Which statements are valid? (Select All that Apply)",
+      "question": "A plant is defining a CRS for a new zone where a historian, PLCs, and engineering tools will coexist. Which statements are valid?",
       "options": [
         {
           "letter": "A",
@@ -5128,7 +5128,7 @@
       "id": "kc-bank-014",
       "number": 131,
       "source": "External question bank — supplied list item 14",
-      "question": "A security analyst is reviewing an IACS for potential vulnerabilities related to the OSI model. Which layers should they focus on to address communication security? (Select All that Apply)",
+      "question": "A security analyst is reviewing an IACS for potential vulnerabilities related to the OSI model. Which layers should they focus on to address communication security?",
       "options": [
         {
           "letter": "A",
@@ -5178,7 +5178,7 @@
       "id": "kc-bank-015",
       "number": 132,
       "source": "External question bank — supplied list item 15",
-      "question": "A cybersecurity specialist is evaluating the different types of ISASecure certifications available for IACS. Which of the following certifications focus specifically on personnel competency? (Select All that Apply)",
+      "question": "A cybersecurity specialist is evaluating the different types of ISASecure certifications available for IACS. Which of the following certifications focus specifically on personnel competency?",
       "options": [
         {
           "letter": "A",
@@ -5228,7 +5228,7 @@
       "id": "kc-bank-016",
       "number": 133,
       "source": "External question bank — supplied list item 16",
-      "question": "In preparing for ISASecure certification, a company must demonstrate compliance with which of the following? (Select All that Apply)",
+      "question": "In preparing for ISASecure certification, a company must demonstrate compliance with which of the following?",
       "options": [
         {
           "letter": "A",
@@ -5374,7 +5374,7 @@
       "id": "kc-bank-019",
       "number": 136,
       "source": "External question bank — supplied list item 19",
-      "question": "A company’s IACS has been designed to ensure data integrity and confidentiality. Which of the following measures would best support these goals? (Select All that Apply)",
+      "question": "A company’s IACS has been designed to ensure data integrity and confidentiality. Which of the following measures would best support these goals?",
       "options": [
         {
           "letter": "A",
@@ -5466,7 +5466,7 @@
       "id": "kc-bank-021",
       "number": 138,
       "source": "External question bank — supplied list item 21",
-      "question": "A power distribution operator is asking whether SCADA is only a monitoring tool or can also support control. Which statements are correct? (Select All that Apply)",
+      "question": "A power distribution operator is asking whether SCADA is only a monitoring tool or can also support control. Which statements are correct?",
       "options": [
         {
           "letter": "A",
