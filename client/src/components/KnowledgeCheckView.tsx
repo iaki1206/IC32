@@ -603,14 +603,16 @@ export default function KnowledgeCheckView() {
                     </div>
                     <p className="leading-relaxed">{q.explanation}</p>
                     {q.explanationAnchor && (
-                      <button
-                        type="button"
-                        onClick={() => { window.location.href = q.explanationAnchor!.href; }}
+                      <a
+                        href={q.explanationAnchor.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Open ${q.explanationAnchor.anchor} explanation in a new tab`}
                         className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-bold text-blue-800 transition hover:border-blue-400 hover:bg-blue-100"
                       >
                         <Link2 className="h-3.5 w-3.5" />
                         Review anchor: {q.explanationAnchor.anchor} · {q.explanationAnchor.label}
-                      </button>
+                      </a>
                     )}
                   </div>
                 )}
