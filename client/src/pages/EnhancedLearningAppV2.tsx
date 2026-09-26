@@ -163,7 +163,13 @@ export default function EnhancedLearningAppV2() {
       ? "ot"
       : "ic32",
   );
-  const [currentPage, setCurrentPage] = useState<InnerPage>("chapter");
+  const [currentPage, setCurrentPage] = useState<InnerPage>(() => {
+    const pageParam = new URLSearchParams(window.location.search).get("page");
+    if (pageParam === "knowledge" || pageParam === "quiz" || pageParam === "sections" || pageParam === "bookmarks") {
+      return pageParam as InnerPage;
+    }
+    return "chapter";
+  });
   const [selectedSection, setSelectedSection] = useState(enhancedCourseData.sections[0]);
   const [selectedTopic, setSelectedTopic] = useState<any>(enhancedCourseData.sections[0].topics[0]);
   const [sidebarOpen, setSidebarOpen] = useState(true);
