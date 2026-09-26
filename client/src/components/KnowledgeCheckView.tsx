@@ -15,6 +15,9 @@ import {
   BookOpen,
   AlertTriangle,
   Link2,
+  Bookmark,
+  BookmarkCheck,
+  SquareCheckBig,
 } from "lucide-react";
 import data from "@/data/knowledgeCheckData.json";
 
@@ -37,6 +40,7 @@ type KnowledgeQuestion = {
   correctAnswers?: string[];
   explanation?: string;
   answerStatus?: string;
+  questionSet?: 1 | 2;
   explanationAnchor?: { anchor: string; label: string; reason: string; href: string };
 };
 
@@ -45,6 +49,19 @@ const correctLetters = (question: KnowledgeQuestion) => question.correctAnswers?
 const selectionsMatch = (question: KnowledgeQuestion, selection: string[]) => {
   const expected = correctLetters(question).slice().sort().join(",");
   return expected.length > 0 && expected === selection.slice().sort().join(",");
+};
+const sourceCount = (predicate: (source: string) => boolean) => questions.filter((question) => predicate(question.source || "")).length;
+const sourceCounts = {
+  excel: sourceCount((source) => source === "ITExam Excel Bank"),
+  pdf: sourceCount((source) => source.startsWith("IC32 PDF noteset")),
+  testBank: sourceCount((source) => source.startsWith("IC32 Test Bank 127")),
+  realExam: sourceCount((source) => source.startsWith("Real Exam Bank")),
+  quiz: sourceCount((source) => source.startsWith("Existing Quiz")),
+  kc: sourceCount((source) => source.startsWith("Knowledge Check |")),
+};
+const questionSetCounts = {
+  one: questions.filter((question) => question.questionSet === 1).length,
+  two: questions.filter((question) => question.questionSet === 2).length,
 };
 
 const normaliseOptions = (options: RawOption[] | undefined, questionId: string): Option[] =>
@@ -85,8 +102,25 @@ const initialCorrectSelections = Object.fromEntries(
 export default function KnowledgeCheckView() {
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string[]>>(initialCorrectSelections);
   const [showResults, setShowResults] = useState<Record<string, boolean>>({});
+  const [markedQuestionIds, setMarkedQuestionIds] = useState<Set<string>>(() => {
+    if (typeof window === "undefined") return new Set<string>();
+    try {
+      return new Set<string>(JSON.parse(window.localStorage.getItem("ic32_knowledge_check_marked_questions") || "[]"));
+    } catch {
+      return new Set<string>();
+    }
+  });
+  const [mistakeQuestionIds, setMistakeQuestionIds] = useState<Set<string>>(() => {
+    if (typeof window === "undefined") return new Set<string>();
+    try {
+      return new Set<string>(JSON.parse(window.localStorage.getItem("ic32_knowledge_check_mistake_practice") || "[]"));
+    } catch {
+      return new Set<string>();
+    }
+  });
   const [quizSubmitted, setQuizSubmitted] = useState(false);
   const [sourceGroupFilter, setSourceGroupFilter] = useState("all");
+  const [questionSetFilter, setQuestionSetFilter] = useState("all");
   const [chapterFilter, setChapterFilter] = useState("all");
   const [answerFilter, setAnswerFilter] = useState("all");
   const [incorrectOnly, setIncorrectOnly] = useState(false);
@@ -111,6 +145,9 @@ export default function KnowledgeCheckView() {
       }
 
       const src = question.source || "";
+      if (questionSetFilter !== "all" && String(question.questionSet ?? "") !== questionSetFilter) {
+        return false;
+      }
       let sourceMatches = true;
       if (sourceGroupFilter === "pdf") {
         sourceMatches = src.startsWith("IC32 PDF noteset");
@@ -131,7 +168,9 @@ export default function KnowledgeCheckView() {
       const answerMatches =
         answerFilter === "all" ||
         (answerFilter === "answerable" && correctLetters(question).length > 0) ||
-        (answerFilter === "self-check" && correctLetters(question).length === 0);
+        (answerFilter === "self-check" && correctLetters(question).length === 0) ||
+        (answerFilter === "marked" && markedQuestionIds.has(question.id)) ||
+        (answerFilter === "mistakes" && mistakeQuestionIds.has(question.id));
 
       const searchMatches =
         !query ||
@@ -148,7 +187,7 @@ export default function KnowledgeCheckView() {
 
       return sourceMatches && chapterMatches && answerMatches && searchMatches;
     });
-  }, [answerFilter, chapterFilter, incorrectOnly, incorrectQuestionIds, searchTerm, sourceGroupFilter]);
+  }, [answerFilter, chapterFilter, incorrectOnly, incorrectQuestionIds, markedQuestionIds, mistakeQuestionIds, questionSetFilter, searchTerm, sourceGroupFilter]);
 
   const answerableQuestions = questions.filter((question) => correctLetters(question).length > 0);
   const answeredAnswerableCount = answerableQuestions.filter((question) => Boolean(selectedAnswers[question.id]?.length)).length;
@@ -167,17 +206,65 @@ export default function KnowledgeCheckView() {
       const next = isMultiple
         ? current.includes(letter) ? current.filter((item) => item !== letter) : [...current, letter]
         : [letter];
+      if (question && correctLetters(question).length > 0) {
+        setMistakeQuestionIds((mistakes) => {
+          const updated = new Set(mistakes);
+          if (selectionsMatch(question, next)) updated.delete(questionId);
+          else updated.add(questionId);
+          window.localStorage.setItem("ic32_knowledge_check_mistake_practice", JSON.stringify(Array.from(updated)));
+          return updated;
+        });
+      }
       return { ...previous, [questionId]: next };
     });
   };
 
   const handleToggleShowResult = (questionId: string) => {
-    setShowResults((previous) => ({ ...previous, [questionId]: !previous[questionId] }));
+    const question = questions.find((item) => item.id === questionId);
+    const shouldShow = !(showResults[questionId] ?? false);
+    setShowResults((previous) => ({ ...previous, [questionId]: shouldShow }));
+    if (shouldShow && answerFilter === "mistakes" && question && selectionsMatch(question, selectedAnswers[questionId] || [])) {
+      setMistakeQuestionIds((mistakes) => {
+        const updated = new Set(mistakes);
+        updated.delete(questionId);
+        window.localStorage.setItem("ic32_knowledge_check_mistake_practice", JSON.stringify(Array.from(updated)));
+        return updated;
+      });
+    }
+  };
+
+  const startMistakePractice = () => {
+    setSelectedAnswers((previous) => {
+      const next = { ...previous };
+      mistakeQuestionIds.forEach((questionId) => delete next[questionId]);
+      return next;
+    });
+    setShowResults((previous) => {
+      const next = { ...previous };
+      mistakeQuestionIds.forEach((questionId) => delete next[questionId]);
+      return next;
+    });
+    setIncorrectOnly(false);
+    setAnswerFilter("mistakes");
+  };
+
+  const handleToggleMarked = (questionId: string) => {
+    setMarkedQuestionIds((previous) => {
+      const next = new Set(previous);
+      if (next.has(questionId)) next.delete(questionId);
+      else next.add(questionId);
+      window.localStorage.setItem("ic32_knowledge_check_marked_questions", JSON.stringify(Array.from(next)));
+      return next;
+    });
   };
 
   const resetQuiz = () => {
     setSelectedAnswers({});
     setShowResults({});
+    setMarkedQuestionIds(new Set());
+    setMistakeQuestionIds(new Set());
+    window.localStorage.removeItem("ic32_knowledge_check_marked_questions");
+    window.localStorage.removeItem("ic32_knowledge_check_mistake_practice");
     setIncorrectOnly(false);
     setQuizSubmitted(false);
   };
@@ -194,6 +281,27 @@ export default function KnowledgeCheckView() {
           <p className="text-blue-100 text-sm sm:text-base max-w-3xl leading-relaxed">
             Unifying the IC32 question sources and course quizzes. Use the source and chapter filters or review incorrect answers to target your revision precisely.
           </p>
+          <div className="mt-5 flex flex-wrap items-center gap-2" aria-label="Question set selection">
+            <span className="text-xs font-bold uppercase tracking-wider text-blue-200 mr-1">Question set:</span>
+            {[
+              ["all", `All sets (${questions.length})`],
+              ["1", `Set 1 (${questionSetCounts.one})`],
+              ["2", `Set 2 (${questionSetCounts.two})`],
+            ].map(([value, label]) => (
+              <button
+                type="button"
+                key={value}
+                onClick={() => setQuestionSetFilter(value)}
+                className={`rounded-lg border px-3 py-2 text-xs font-bold transition ${
+                  questionSetFilter === value
+                    ? "border-white bg-white text-indigo-950 shadow"
+                    : "border-blue-300/40 bg-white/10 text-blue-100 hover:bg-white/20"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
         </div>
         <div className="grid grid-cols-2 gap-3 min-w-[260px]">
           <div className="bg-white/10 border border-white/15 backdrop-blur-md rounded-xl p-3 text-center">
@@ -222,6 +330,18 @@ export default function KnowledgeCheckView() {
 
           <div className="flex flex-wrap items-center gap-2">
             <div className="flex items-center gap-1.5 text-xs font-semibold text-gray-600">
+              <span>Set:</span>
+            </div>
+            <select
+              value={questionSetFilter}
+              onChange={(event) => setQuestionSetFilter(event.target.value)}
+              className="h-10 rounded-lg border border-indigo-200 bg-indigo-50 px-3 text-sm text-indigo-900 outline-none focus:ring-2 focus:ring-indigo-500/30"
+            >
+              <option value="all">All sets ({questions.length})</option>
+              <option value="1">Set 1 ({questionSetCounts.one})</option>
+              <option value="2">Set 2 ({questionSetCounts.two})</option>
+            </select>
+            <div className="flex items-center gap-1.5 text-xs font-semibold text-gray-600">
               <Filter className="w-4 h-4 text-blue-600" />
               <span>Source:</span>
             </div>
@@ -231,12 +351,12 @@ export default function KnowledgeCheckView() {
               className="h-10 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-800 outline-none focus:ring-2 focus:ring-blue-500/30"
             >
               <option value="all">All sources ({questions.length})</option>
-              <option value="excel">ITExam Excel Bank (111)</option>
-              <option value="pdf">IC32 PDF noteset (71)</option>
-              <option value="test_bank_127">Test Bank 127 (14)</option>
-              <option value="real_exam">Real Exam Bank (12)</option>
-              <option value="quiz">Existing Quiz (11)</option>
-              <option value="kc">Course KC (5)</option>
+              <option value="excel">ITExam Excel Bank ({sourceCounts.excel})</option>
+              <option value="pdf">IC32 PDF noteset ({sourceCounts.pdf})</option>
+              <option value="test_bank_127">Test Bank 127 ({sourceCounts.testBank})</option>
+              <option value="real_exam">Real Exam Bank ({sourceCounts.realExam})</option>
+              <option value="quiz">Existing Quiz ({sourceCounts.quiz})</option>
+              <option value="kc">Course KC ({sourceCounts.kc})</option>
             </select>
           </div>
         </div>
@@ -262,12 +382,14 @@ export default function KnowledgeCheckView() {
 
             <select
               value={answerFilter}
-              onChange={(event) => setAnswerFilter(event.target.value)}
+              onChange={(event) => event.target.value === "mistakes" ? startMistakePractice() : setAnswerFilter(event.target.value)}
               className="h-10 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-800 outline-none focus:ring-2 focus:ring-blue-500/30"
             >
               <option value="all">All answer status</option>
               <option value="answerable">Answer key available</option>
               <option value="self-check">PDF self-check (no key)</option>
+              <option value="marked">Marked for later ({markedQuestionIds.size})</option>
+              <option value="mistakes">Mistake Practice ({mistakeQuestionIds.size})</option>
             </select>
           </div>
 
@@ -275,12 +397,13 @@ export default function KnowledgeCheckView() {
             <span className="text-xs text-gray-500 font-medium">
               Showing <strong className="text-gray-900">{filteredQuestions.length}</strong> of {questions.length} questions
             </span>
-            {(sourceGroupFilter !== "all" || chapterFilter !== "all" || answerFilter !== "all" || searchTerm !== "" || incorrectOnly) && (
+            {(questionSetFilter !== "all" || sourceGroupFilter !== "all" || chapterFilter !== "all" || answerFilter !== "all" || searchTerm !== "" || incorrectOnly) && (
               <Button
                 variant="outline"
                 size="sm"
                 onClick={() => {
                   setSearchTerm("");
+                  setQuestionSetFilter("all");
                   setSourceGroupFilter("all");
                   setChapterFilter("all");
                   setAnswerFilter("all");
@@ -312,6 +435,15 @@ export default function KnowledgeCheckView() {
         </div>
 
         <div className="flex items-center gap-2 flex-wrap">
+          <Button
+            variant={answerFilter === "mistakes" ? "default" : "outline"}
+            size="sm"
+            onClick={() => answerFilter === "mistakes" ? setAnswerFilter("all") : startMistakePractice()}
+            className={answerFilter === "mistakes" ? "bg-amber-600 hover:bg-amber-700 text-white" : "border-amber-200 text-amber-800 bg-amber-50/50 hover:bg-amber-100"}
+          >
+            <RotateCcw className="w-4 h-4 mr-1.5" />
+            Mistake Practice ({mistakeQuestionIds.size})
+          </Button>
           <Button
             variant={incorrectOnly ? "default" : "outline"}
             size="sm"
@@ -365,10 +497,11 @@ export default function KnowledgeCheckView() {
             const userSelection = selectedAnswers[q.id] || [];
             const options = normaliseOptions(q.options, q.id);
             const hasAnswerKey = correctLetters(q).length > 0;
+            const isMultiple = Boolean(q.correctAnswers && q.correctAnswers.length > 1);
             const hasResponded = userSelection.length > 0;
             const isCorrect = hasAnswerKey && selectionsMatch(q, userSelection);
             // Reveal correctness only after the learner has submitted an option.
-            const showResult = hasResponded && (showResults[q.id] ?? true);
+            const showResult = hasResponded && (showResults[q.id] ?? (answerFilter !== "mistakes"));
 
             return (
               <Card key={q.id} className="p-6 bg-white border-gray-200 shadow-sm space-y-4">
@@ -387,15 +520,35 @@ export default function KnowledgeCheckView() {
                     </Badge>
                   </div>
 
-                  {!hasAnswerKey && (
-                    <Badge className="bg-amber-100 text-amber-800 border-amber-300 text-[11px] self-start sm:self-auto">
-                      Self-check item (no official key supplied)
-                    </Badge>
-                  )}
+                  <div className="flex items-center gap-2 self-start sm:self-auto">
+                    {!hasAnswerKey && (
+                      <Badge className="bg-amber-100 text-amber-800 border-amber-300 text-[11px]">
+                        Self-check item (no official key supplied)
+                      </Badge>
+                    )}
+                    <Button
+                      type="button"
+                      variant="outline"
+                      size="sm"
+                      onClick={() => handleToggleMarked(q.id)}
+                      className={markedQuestionIds.has(q.id)
+                        ? "h-8 border-amber-300 bg-amber-50 text-amber-800 hover:bg-amber-100"
+                        : "h-8 border-gray-200 text-gray-600 hover:bg-gray-50"}
+                      aria-label={markedQuestionIds.has(q.id) ? "Remove from later review" : "Mark for later review"}
+                    >
+                      {markedQuestionIds.has(q.id) ? <BookmarkCheck className="w-3.5 h-3.5 mr-1.5" /> : <Bookmark className="w-3.5 h-3.5 mr-1.5" />}
+                      {markedQuestionIds.has(q.id) ? "Marked for later" : "Mark for later"}
+                    </Button>
+                  </div>
                 </div>
 
                 <div className="text-base font-bold text-gray-900 leading-snug">
                   {q.question}
+                  {isMultiple && (
+                    <span className="mt-2 inline-flex items-center gap-1.5 rounded-md border border-indigo-200 bg-indigo-50 px-2 py-1 text-xs font-bold text-indigo-800">
+                      <SquareCheckBig className="h-3.5 w-3.5" /> Select multiple answers
+                    </span>
+                  )}
                 </div>
 
                 <div className="space-y-2 pt-1">
@@ -423,10 +576,13 @@ export default function KnowledgeCheckView() {
                         disabled={quizSubmitted}
                         className={`w-full text-left p-3.5 rounded-xl border transition-all flex items-start gap-3 cursor-pointer ${optionStyle}`}
                       >
-                        <span className={`w-6 h-6 rounded-lg flex items-center justify-center text-xs font-mono font-bold flex-shrink-0 ${
-                          isSelected ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-700"
-                        }`}>
-                          {opt.letter}
+                        <span className="flex items-center gap-2 flex-shrink-0">
+                          <span className={`w-6 h-6 flex items-center justify-center text-xs font-mono font-bold border-2 ${isMultiple ? "rounded-md" : "rounded-full"} ${
+                            isSelected ? "border-blue-600 bg-blue-600 text-white" : "border-gray-300 bg-white text-gray-700"
+                          }`}>
+                            {isSelected ? <CheckCircle2 className="w-4 h-4" /> : isMultiple ? null : opt.letter}
+                          </span>
+                          {isMultiple && <span className="text-xs font-mono font-bold text-gray-600">{opt.letter}</span>}
                         </span>
                         <span className="text-sm leading-relaxed flex-1">{opt.text}</span>
                         {showResult && hasAnswerKey && isTheCorrectAnswer && (
@@ -482,14 +638,16 @@ export default function KnowledgeCheckView() {
                     </div>
                     <p className="leading-relaxed">{q.explanation}</p>
                     {q.explanationAnchor && (
-                      <button
-                        type="button"
-                        onClick={() => { window.location.href = q.explanationAnchor!.href; }}
+                      <a
+                        href={q.explanationAnchor.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Open ${q.explanationAnchor.anchor} explanation in a new tab`}
                         className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-bold text-blue-800 transition hover:border-blue-400 hover:bg-blue-100"
                       >
                         <Link2 className="h-3.5 w-3.5" />
                         Review anchor: {q.explanationAnchor.anchor} · {q.explanationAnchor.label}
-                      </button>
+                      </a>
                     )}
                   </div>
                 )}

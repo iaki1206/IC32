@@ -3,12 +3,14 @@ import data from "../data/knowledgeCheckData.json";
 
 describe("Knowledge Check Data & Logic", () => {
   it("has questions loaded properly", () => {
-    expect(data.questions.length).toBe(323);
+    expect(data.questions.length).toBe(765);
+    expect(data.questions.filter((q: any) => q.id.startsWith("pdf-")).length).toBe(206);
+    expect(new Set(data.questions.map((q: any) => q.question.trim().toLowerCase().replace(/\s+/g, " "))).size).toBe(data.questions.length);
   });
 
   it("contains explanation anchors with href for questions to open in a new tab", () => {
     const questionsWithAnchor = data.questions.filter((q: any) => q.explanationAnchor && q.explanationAnchor.href);
-    expect(questionsWithAnchor.length).toBe(323);
+    expect(questionsWithAnchor.length).toBe(data.questions.length);
     const sample = questionsWithAnchor[0];
     expect(sample.explanationAnchor.anchor).toBeDefined();
     expect(sample.explanationAnchor.href).toContain("/?tab=ot");
@@ -38,10 +40,22 @@ describe("Knowledge Check Data & Logic", () => {
     expect(checkAnswer("A, C", "A, B, C")).toBe(false);
   });
 
+  it("contains valid multiple-answer questions", () => {
+    const multipleAnswerQuestions = data.questions.filter((q: any) => q.correctAnswers?.length > 1);
+    expect(multipleAnswerQuestions.length).toBe(8);
+    for (const question of multipleAnswerQuestions) {
+      expect(question.correctAnswers.every((letter: string) => question.options.some((option: any) => option.letter === letter))).toBe(true);
+    }
+  });
+
   it("validates localStorage persistence keys format", () => {
     const STORAGE_KEY_ANSWERS = "ic32_knowledge_check_selected_answers";
     const STORAGE_KEY_RESULTS = "ic32_knowledge_check_show_results";
+    const STORAGE_KEY_MARKED = "ic32_knowledge_check_marked_questions";
+    const STORAGE_KEY_MISTAKES = "ic32_knowledge_check_mistake_practice";
     expect(STORAGE_KEY_ANSWERS).toBe("ic32_knowledge_check_selected_answers");
     expect(STORAGE_KEY_RESULTS).toBe("ic32_knowledge_check_show_results");
+    expect(STORAGE_KEY_MARKED).toBe("ic32_knowledge_check_marked_questions");
+    expect(STORAGE_KEY_MISTAKES).toBe("ic32_knowledge_check_mistake_practice");
   });
 });
