@@ -6799,7 +6799,11 @@
         },
         {
           "letter": "C",
-          "text": "Security policyD- Code of conduct"
+          "text": "Security policy"
+        },
+        {
+          "letter": "D",
+          "text": "Code of conduct"
         }
       ],
       "correctAnswer": "C",
@@ -18734,7 +18738,7 @@
         },
         {
           "letter": "C",
-          "text": "D- Code of conduct"
+          "text": "Code of conduct"
         },
         {
           "letter": "D",
