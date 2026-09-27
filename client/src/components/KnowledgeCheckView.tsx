@@ -81,18 +81,23 @@ const normaliseOptions = (options: RawOption[] | undefined, questionId: string):
 const normaliseChapter = (chapter: string | number | null | undefined): string =>
   chapter === null || chapter === undefined ? "" : String(chapter).trim();
 
-// Extract unique chapters safely from all imported question banks.
+// Extract unique chapters safely from all questions in curriculum order (Section 1 to 15).
 const availableChapters = Array.from(
   new Set(
     questions
       .map((q) => normaliseChapter(q.chapter))
-      .filter((chapter) => chapter !== "" && chapter !== "15")
+      .filter((chapter) => chapter !== "")
   )
 ).sort((a, b) => {
   const numA = parseInt(a.match(/Section\s+(\d+)/)?.[1] || "99", 10);
   const numB = parseInt(b.match(/Section\s+(\d+)/)?.[1] || "99", 10);
   return numA - numB;
 });
+
+const chapterQuestionCounts = availableChapters.reduce<Record<string, number>>((acc, ch) => {
+  acc[ch] = questions.filter((q) => normaliseChapter(q.chapter) === ch).length;
+  return acc;
+}, {});
 
 const initialCorrectSelections = Object.fromEntries(
   questions
@@ -379,7 +384,7 @@ export default function KnowledgeCheckView() {
               <option value="all">All chapters ({availableChapters.length} sections)</option>
               {availableChapters.map((ch) => (
                 <option key={ch} value={ch}>
-                  {ch}
+                  {ch} ({chapterQuestionCounts[ch] || 0})
                 </option>
               ))}
             </select>
