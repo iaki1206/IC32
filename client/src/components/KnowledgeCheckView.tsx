@@ -18,6 +18,8 @@ import {
   Bookmark,
   BookmarkCheck,
   SquareCheckBig,
+  GraduationCap,
+  Lightbulb,
 } from "lucide-react";
 import data from "@/data/knowledgeCheckData.json";
 
@@ -142,6 +144,20 @@ export default function KnowledgeCheckView() {
     }
     return ids;
   }, [selectedAnswers]);
+
+  // Breakdown of chapters that need revisiting based on incorrect answers
+  const weakChapters = useMemo(() => {
+    const map = new Map<string, { chapter: string; incorrectCount: number; totalInChapter: number }>();
+    for (const q of questions) {
+      if (incorrectQuestionIds.has(q.id)) {
+        const ch = normaliseChapter(q.chapter) || "Other";
+        const cur = map.get(ch) || { chapter: ch, incorrectCount: 0, totalInChapter: chapterQuestionCounts[ch] || 0 };
+        cur.incorrectCount += 1;
+        map.set(ch, cur);
+      }
+    }
+    return Array.from(map.values()).sort((a, b) => b.incorrectCount - a.incorrectCount);
+  }, [incorrectQuestionIds]);
 
   const filteredQuestions = useMemo(() => {
     const query = searchTerm.trim().toLowerCase();
@@ -474,6 +490,76 @@ export default function KnowledgeCheckView() {
           </Button>
         </div>
       </Card>
+
+      {/* Chapters to Revisit / Study Recommendations based on incorrect answers */}
+      {weakChapters.length > 0 && (
+        <Card className="p-4 sm:p-5 bg-gradient-to-r from-amber-50/90 to-orange-50/90 border border-amber-200 shadow-sm space-y-3">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-amber-200/60 pb-3">
+            <div className="flex items-center gap-2.5">
+              <div className="w-8 h-8 rounded-lg bg-amber-500 text-white flex items-center justify-center shadow-sm">
+                <GraduationCap className="w-4 h-4" />
+              </div>
+              <div>
+                <h4 className="text-sm font-bold text-amber-950 flex items-center gap-2">
+                  Capitole Recomandate pentru Revizuire
+                  <Badge className="bg-amber-600 text-white text-[10px] px-1.5 py-0.5">
+                    {weakChapters.length} {weakChapters.length === 1 ? "capitol" : "capitole"} cu răspunsuri greșite
+                  </Badge>
+                </h4>
+                <p className="text-xs text-amber-800">
+                  Pe baza întrebărilor pe care le-ai greșit ({incorrectQuestionIds.size} în total), iată capitolele din care provin acestea. Apasă pe un capitol pentru a filtra direct întrebările sale.
+                </p>
+              </div>
+            </div>
+            {chapterFilter !== "all" && (
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setChapterFilter("all")}
+                className="h-8 text-xs bg-white/80 hover:bg-white text-amber-900 border-amber-300"
+              >
+                Resetează filtrul de capitol
+              </Button>
+            )}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5 pt-1">
+            {weakChapters.map(({ chapter, incorrectCount, totalInChapter }) => {
+              const isSelected = chapterFilter === chapter;
+              return (
+                <button
+                  key={chapter}
+                  type="button"
+                  onClick={() => setChapterFilter(isSelected ? "all" : chapter)}
+                  className={`text-left p-3 rounded-lg border transition-all flex items-start justify-between gap-3 ${
+                    isSelected
+                      ? "bg-amber-100 border-amber-400 shadow-sm ring-2 ring-amber-400/40"
+                      : "bg-white/90 border-amber-200 hover:bg-white hover:border-amber-300 shadow-sm"
+                  }`}
+                >
+                  <div className="space-y-1 min-w-0 flex-1">
+                    <div className="text-xs font-bold text-gray-900 line-clamp-2">
+                      {chapter}
+                    </div>
+                    <div className="flex items-center gap-1.5 text-[11px] text-gray-500">
+                      <Lightbulb className="w-3 h-3 text-amber-600 shrink-0" />
+                      <span>{incorrectCount} {incorrectCount === 1 ? "greșeală" : "greșeli"} din {totalInChapter} întrebări</span>
+                    </div>
+                  </div>
+                  <Badge
+                    variant={isSelected ? "default" : "secondary"}
+                    className={`shrink-0 text-[10px] font-mono ${
+                      isSelected ? "bg-amber-600 text-white" : "bg-rose-100 text-rose-800 border-rose-200"
+                    }`}
+                  >
+                    {Math.round((incorrectCount / (totalInChapter || 1)) * 100)}% greșite
+                  </Badge>
+                </button>
+              );
+            })}
+          </div>
+        </Card>
+      )}
 
       {/* Questions List */}
       <div className="space-y-6">
