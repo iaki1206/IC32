@@ -1,0 +1,3389 @@
+{
+  "title": "IC33 \u2014 Cybersecurity Risk Assessment Specialist Question Bank",
+  "description": "Practice exams and knowledge checks covering ISA/IEC 62443-3-2 and the IC33 curriculum, partitioned into balanced study sets.",
+  "totalQuestions": 180,
+  "sets": [
+    {
+      "id": 1,
+      "name": "Set 1 (Practice Test: Alpha - 90 Questions)",
+      "count": 90
+    },
+    {
+      "id": 2,
+      "name": "Set 2 (Practice Test: Beta - 90 Questions)",
+      "count": 90
+    }
+  ],
+  "questions": [
+    {
+      "id": "ic33-udemy-001",
+      "number": 1,
+      "module": "chemical-safety",
+      "domain": "Cybersecurity Documentation",
+      "prompt": "Cybersecurity risk assessment report should include:",
+      "options": [
+        "All of the Options",
+        "Scope of the assessment",
+        "Assessment details",
+        "Prioritized recommendations",
+        "Risk profile"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "An effective cybersecurity risk assessment report should be comprehensive and include: Scope of the assessment; Risk profile; Assessment details; Detailed findings; Prioritized recommendations. This helps stakeholders understand risks, take corrective actions, and plan improvements.",
+      "anchor": "ic33-sds",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-002",
+      "number": 2,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "What is the output of a Risk Assessment called?",
+      "options": [
+        "Engineering Design Specifications (EDS)",
+        "Safety Requirement Specifications (SRS)",
+        "Cybersecurity Requirement Specification (CRS)",
+        "None of the Options"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "The output of a Risk Assessment in the context of the ISA/IEC 62443 standards is referred to as the Cybersecurity Requirements Specification (CRS). The CRS is a detailed document that specifies the cybersecurity requirements for an Industrial Automation and Control System (IACS). It is developed based on the findings of a risk assessment and serves as a foundational reference for implementing, designing, and maintaining cybersecurity measures.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-003",
+      "number": 3,
+      "module": "discovery",
+      "domain": "Vulnerability Assessment",
+      "prompt": "What type of vulnerability assessment technique involves attempting to exploit a vulnerability?",
+      "options": [
+        "Passive vulnerability assessment",
+        "Penetration test",
+        "Active vulnerability assessment",
+        "Gap assessment"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Penetration testing simulates attacks to identify vulnerabilities that could be exploited. System hardening and patch management are security practices, not assessment types, while threat modelling focuses on potential attack vectors rather than existing vulnerabilities.",
+      "anchor": "ic33-discovery",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-004",
+      "number": 4,
+      "module": "discovery",
+      "domain": "Vulnerability Assessment",
+      "prompt": "Insecure architecture, no defined security perimeter, and inadequate collection of event data history fall under what type of vulnerabilities?",
+      "options": [
+        "Software Development",
+        "Architecture and Design",
+        "Configuration and  Maintenance",
+        "Communication & Network"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "These vulnerabilities are directly related to the design and architecture of a system. Insecure architecture and a lack of a defined security perimeter create openings for attackers, as they can more easily bypass weak points. Furthermore, inadequate event data collection hampers the ability to detect and respond to attacks, leaving the system more vulnerable to both internal and external threats. Properly designed systems with strong perimeter defenses and data collection mechanisms are vital for ensuring security.",
+      "anchor": "ic33-discovery",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-005",
+      "number": 5,
+      "module": "zones",
+      "domain": "Secure Architecture",
+      "prompt": "Which ISA-95 levels are critical to safety, reliability, efficiency, and quality of plant and its operations ?",
+      "options": [
+        "Levels 2, 1, 0",
+        "Level 0 only",
+        "Levels 3, 2, 1, 0",
+        "Level 4"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "Level 3 and below make up the Control Domain which falls under OT or Operational technology. The Control Domain is where the IACS or Industrial Automation Control Systems are located. The equipment at these levels are critical to safety, reliability, efficiency, and quality of the plant and its operations.",
+      "anchor": "ic33-zones",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-006",
+      "number": 6,
+      "module": "lifecycle",
+      "domain": "Regulations and standards (ISA/IEC 62443 Framework)",
+      "prompt": "The standard ISA 62443-2-1 belongs in which tier/group of ISA-62443 Standards Suite?",
+      "options": [
+        "Policies & Procedures",
+        "System",
+        "Component",
+        "General"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The standard ISA 62443-2-1 belongs to the Policies and Procedures tier/group of the ISA 99 committee work product.\n\nISA 62443 (formerly known as ISA 99) is a series of standards, technical reports, and related information that define procedures for implementing electronically secure Industrial Automation and Control Systems (IACS). The standards are grouped into four general categories:\n\n1) General (Concepts & Models): Provides an overview and foundational concepts.\n2) Policies and Procedures: Focuses on security policies, procedures, and practices for IACS.\n3) System: Addresses requirements at the system level.\n4) Component: Focuses on requirements for individual system components.\n\nISA 62443-2-1, titled \"Security for Industrial Automation and Control Systems: Establishing an Industrial Automation and Control Systems Security Program,\" specifically falls under the Policies and Procedures category. This standard provides guidance on establishing and managing a cybersecurity management system (CSMS) for IACS, ensuring that policies, procedures, and practices are in place to manage security risks effectively.",
+      "anchor": "ic33-lifecycle",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-007",
+      "number": 7,
+      "module": "discovery",
+      "domain": "Vulnerability Assessment",
+      "prompt": "What is the outcome of the Gap Assessment or Maturity Assessment?",
+      "options": [
+        "Comprehensive list of countermeasures that need to be implemented",
+        "Risk Assessment Worksheets",
+        "Active Scanning Tools",
+        "Comparison of existing countermeasures (administrative and technical)\u00a0in place against industry standards and best practices"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "The core outcome of aGap AssessmentorMaturity Assessmentis thecomparison of existing countermeasures (administrative and technical) against industry standards (such as NIST CSF, ISO 27001, or IEC 62443) and best practices.This structured comparison helps organizations understand where their current controls and measures align with expectations and where gaps exist. It provides a foundation for determining the maturity level of the cybersecurity program and identifying areas that require improvement. Unlike a vulnerability assessment, it does not involve technical scanning or active testing, and while it may support the development of risk profiles or action plans, the key deliverable is this strategic comparison against a defined benchmark.",
+      "anchor": "ic33-discovery",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-008",
+      "number": 8,
+      "module": "zones",
+      "domain": "Secure Architecture",
+      "prompt": "What is the main objective of the network drawings ?",
+      "options": [
+        "To detail how the network is physically and logically constructed.",
+        "ALL OF THE OPTIONS",
+        "To document individual routers, switches, ports, firewalls and V-LANS/virtual LANS",
+        "To provide an access control list"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "The main objective of network drawings is to provide a comprehensive view of how the network is physically and logically constructed, document individual routers, switches, ports, firewalls, and V-LANS/virtual LANs, and to provide an access control list. These components are crucial for understanding the network's structure and securing it from potential vulnerabilities.",
+      "anchor": "ic33-zones",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-009",
+      "number": 9,
+      "module": "zones",
+      "domain": "Zone and Conduit Requirements",
+      "prompt": "What should be included during documenting zone and conduit characteristics ?",
+      "options": [
+        "Assumptions and external dependencies",
+        "Applicable security policies",
+        "Applicable security requirements",
+        "All of the Options"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "The correct answer is All of the Options. During zone and conduit documentation, it's also critical to record applicable security requirements (specific controls that need to be implemented), any relevant security policies that govern behavior or technical measures, and assumptions and external dependencies\u2014such as reliance on third-party systems or external controls. Capturing this information supports comprehensive security planning and helps identify gaps.",
+      "anchor": "ic33-zones",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-010",
+      "number": 10,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "How do you start with defining the scope?",
+      "options": [
+        "Specify Devices",
+        "Document",
+        "Select Collection Method",
+        "Identify requirements"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "Scope determines the parameters of what is included in the assessment and how it is performed. When defining scope, start with identifying requirements. Specify which devices will be involved in the assessment. Identify the SuC and select a method for collecting data and information. Include documents to identify constraints, assumptions, boundaries and deliverables.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-011",
+      "number": 11,
+      "module": "lifecycle",
+      "domain": "IACS Cybersecurity Lifecycle",
+      "prompt": "What we get out of Develop and Implement Phase ?",
+      "options": [
+        "Incident Response Documentation",
+        "Engineering of Countermeasures",
+        "Cybersecurity Risk Assessment Report",
+        "Highest Risk Consequences"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "The Develop and Implement Phase of the IACS Cybersecurity Lifecycle involves designing, implementing, and configuring the necessary countermeasures to mitigate the identified risks. This includes deploying security technologies, modifying processes, and integrating solutions to address vulnerabilities documented in the Cybersecurity Risk Assessment Report from the Assess Phase. The result is the practical application of strategies that enhance the system's overall security posture. The other options, such as Incident Response Documentation and Highest Risk Consequences, are outputs of other phases in the lifecycle.",
+      "anchor": "ic33-lifecycle",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-012",
+      "number": 12,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "The consequence of the incident results in a spill. Organization paid $100, 000 as fine and $25,000 in clean-up expenses. What was the total of $ 125,000 due to the incident?",
+      "options": [
+        "likelihood",
+        "compromise",
+        "impact",
+        "threat vector"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "The total cost of $125,000 (from fines and clean-up expenses) represents the impact of the incident. In cybersecurity terms, impact refers to the consequences or damage caused when a risk materializes.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-013",
+      "number": 13,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "Which of the following is a benefit of performing an IACS cyber risk assessment?",
+      "options": [
+        "Being better prepared to respond to a cybersecurity incident",
+        "Being better prepared to apply patches",
+        "Assist with understanding the threats and vulnerabilities",
+        "Being able to identify the root cause of an incident"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "A key benefit of performing an IACS cyber risk assessment is that it helps understand the threats and vulnerabilities that could impact the system. By identifying potential risks, weak points, and attack vectors, organizations can proactively plan and implement security measures to mitigate those risks before they are exploited. While being better prepared for incident response, patching, or identifying root causes is valuable, the primary advantage of conducting a cyber risk assessment is gaining a comprehensive understanding of the cybersecurity landscape in the context of industrial systems. This understanding informs decision-making and helps organizations implement more targeted and effective security strategies.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-014",
+      "number": 14,
+      "module": "risk",
+      "domain": "Threat Management",
+      "prompt": "Which of the following is considered a common threat source?",
+      "options": [
+        "All of Options",
+        "Unauthorized external person",
+        "Authorized internal personnel",
+        "An authorized third party"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "All listed options can be valid threat sources. Authorized internal personnel may unintentionally or maliciously cause security incidents. An authorized third party (such as vendors or contractors) can pose risks if their access is compromised or misused. Unauthorized external persons are classic threat actors attempting to breach systems from the outside. Therefore, all of these are considered potential and common sources of threats in cybersecurity.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-015",
+      "number": 15,
+      "module": "discovery",
+      "domain": "Vulnerability Assessment",
+      "prompt": "What is another outcome of the penetration testing ?",
+      "options": [
+        "Highlight procedural and administrative weaknesses",
+        "Validate the effectiveness of security countermeasures",
+        "List the cybersecurity risks associated with vulnerabilities",
+        "Identify Vulnerabilities in an organization"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Penetration Testing is the most invasive cybersecurity vulnerability assessment. It begins with an active cybersecurity vulnerability assessment, and it is conducted using the perspective of a potential attacker.  A Pen Test attempts to exploit known and unknown security vulnerabilities using exploit tools and techniques.  Penetration testing also validates the effectiveness of security countermeasures.",
+      "anchor": "ic33-discovery",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-016",
+      "number": 16,
+      "module": "security-levels",
+      "domain": "General Concepts and Definitions",
+      "prompt": "Which activities are included in the ISA/IEC 62443 implement phase?",
+      "options": [
+        "Implementation of cybersecurity countermeasures and system acceptance testing",
+        "Implementation of cybersecurity policies and ongoing monitoring of cybersecurity performance",
+        "Development of zones and conduits and detailed cyber risk assessment",
+        "Development of the Cybersecurity Management System (CSMS) and risk assessment"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "During the implementation phase of ISA/IEC 62443, organizations deploy security controls, validate effectiveness through testing, and ensure compliance with security requirements before full system operation.",
+      "anchor": "ic33-security-levels",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-017",
+      "number": 17,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "The first step in preparing for an assessment is to:",
+      "options": [
+        "Identify dependencies",
+        "Define roles and responsibilities",
+        "Define scope",
+        "Set schedule"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "The first step in preparing for a cybersecurity assessment is to define the scope. This includes outlining the boundaries of the assessment, which systems will be reviewed, and what objectives will be pursued. A clearly defined scope ensures that all stakeholders are aligned.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-018",
+      "number": 18,
+      "module": "discovery",
+      "domain": "Vulnerability Assessment",
+      "prompt": "What type of vulnerability assessment identifies the worst-case unmitigated risk that the SuC presents to the organization?",
+      "options": [
+        "Penetration test",
+        "Initial risk assessment",
+        "Detailed risk assessment",
+        "Passive vulnerability assessment"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "The purpose of the initial cybersecurity risk assessment(ZCR-2) is to gain an initial understanding of the worst-case risk the SuC presents to the organization should it be compromised. This is typically evaluated in terms of impacts to health, safety, environmental, business interruption loss, product quality, financial, legal, regulatory, reputation, etc. This assessment assists with the prioritization of detailed risk assessment and facilitates the grouping assets into zones and conduit within the SuC.",
+      "anchor": "ic33-discovery",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-019",
+      "number": 19,
+      "module": "security-levels",
+      "domain": "General Concepts and Definitions",
+      "prompt": "What is the accurate order of the IACS Cybersecurity Lifecycle?",
+      "options": [
+        "Assess, Develop & Mitigate, Maintain",
+        "Assess, Maintain, Develop & Implement",
+        "Maintain, Assess, Develop & Implement",
+        "Assess, Develop & Implement, Maintain"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "The security lifecycle in the ISA 62443 standard includes three phases: Assess, Develop and Implement, and Maintain. The security life cycle is a continuous process for minimizing risks to the IACS environment. \n\nAssess phase include high-level cyber risk assessment, allocation of IACS assets to security zones or conduits, and detailed cyber risk assessment. ISA standard 62443-3-2 provides guidelines for the assess phase. \n\nDevelop and Implementation  include cybersecurity requirements specification, the design and engineering of security countermeasures, and the installation, commissioning, and validation of cyber security countermeasures. ISA standard 62443-3-2 and 62443-3-3 provides guidelines for this phase. The design and development of other means of risk reduction may also be included. \n\nMaintain phase topics includes cyber security countermeasures maintenance, monitoring, and change management, as well as incident response and recovery. ISA standard 62443-2-1 addresses cybersecurity maintenance and provides guidelines for processes which should be continuously monitored. Also includes a cybersecurity management system for policies, procedures, training and awareness. Periodic cybersecurity audits should also be conducted as a continuous process.",
+      "anchor": "ic33-security-levels",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-020",
+      "number": 20,
+      "module": "zones",
+      "domain": "Network Security",
+      "prompt": "Which of the following tools has the potential for significant disruption of a control network and should not be used on a live system?",
+      "options": [
+        "Remote desktop",
+        "Vulnerability Scanning Tools",
+        "Web browser",
+        "Workstation"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Vulnerability scanners, if used improperly or without adequate precautions, have the potential to disrupt or cause unintended consequences on a live control network. Vulnerability scanners actively probe and send traffic to detect vulnerabilities. This scanning activity can potentially overload network devices, leading to network slowdowns or outages.",
+      "anchor": "ic33-zones",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-021",
+      "number": 21,
+      "module": "risk",
+      "domain": "Threat Management",
+      "prompt": "Which of the following security countermeasures is responsible preventing corruption or unauthorized disclosure of data through encryption, VPN, CRC, white listing ?",
+      "options": [
+        "Logical Access Controls",
+        "Hardening",
+        "Data Integrity Controls",
+        "Physical Access Controls"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "Data Integrity Controls are responsible for ensuring that data remains accurate, complete, and trustworthy. This is achieved through measures like encryption, VPNs, cyclic redundancy checks (CRC), and whitelisting. These controls protect data from corruption and unauthorized disclosure during storage or transmission.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-022",
+      "number": 22,
+      "module": "security-levels",
+      "domain": "General Concepts and Definitions",
+      "prompt": "How would you describe Zone ?",
+      "options": [
+        "A logical grouping of physical, informational, and application assets sharing common security requirements.",
+        "A segregated and separate area surrounded by fence.",
+        "A conduit is a logical or physical grouping of communication channels connecting two or more zones that share common security requirements.",
+        "A measure of confidence that the system, zone, or conduit is free from vulnerabilities and functions in the intended manner."
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "A zone is best described as a logical grouping of physical, informational, and application assets that share common security requirements. Zoning helps in managing security by segmenting the system into areas with similar security needs, making it easier to apply and enforce security measures.",
+      "anchor": "ic33-security-levels",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-023",
+      "number": 23,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "CSET is component focused rather than system focused.",
+      "options": [
+        "TRUE",
+        "FALSE"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The correct option is TRUE. CSET is component focused rather than system focused.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-024",
+      "number": 24,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "What is the term for a risk with identified impact, but no action taken afterwards:",
+      "options": [
+        "Zero Risk",
+        "Accepted Risk",
+        "Mitigated Risk",
+        "Unmitigated Risk"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "An Accepted Risk is a risk that has been evaluated and acknowledged but is not mitigated because the organization has determined that the risk is within its acceptable tolerance level. This often happens when the cost or impact of mitigating the risk outweighs the potential consequences.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-025",
+      "number": 25,
+      "module": "discovery",
+      "domain": "Vulnerability Assessment",
+      "prompt": "What is the main aim of Penetration Testing ?",
+      "options": [
+        "To conduct interviews only",
+        "To define, identify, classify the security vulnerabilities",
+        "To identify risks to an organization",
+        "To exploits vulnerabilities."
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "The main aim of Penetration Testing is to actively exploit vulnerabilities to assess the actual impact of potential cyberattacks. It simulates real-world attacks in a controlled environment to determine how deep an attacker could get, what data could be accessed, and how systems respond under such conditions. Penetration testing helps organizations understand what could happen if vulnerabilities were exploited, going beyond simple identification.",
+      "anchor": "ic33-discovery",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-026",
+      "number": 26,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "Which statement best describe the risk ?",
+      "options": [
+        "Relation between the Threat and Likelihood",
+        "Chance of vulnerability being exploited and causing significant health and safety risk",
+        "Relation between the Consequence and Likelihood",
+        "Manifestation of threat to cause damage"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "Risk is fundamentally defined as the relationship between the consequence (impact) and the likelihood (probability) of a cybersecurity event happening. Both factors are necessary to properly assess how serious a given risk is and how it should be managed.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-027",
+      "number": 27,
+      "module": "zones",
+      "domain": "Secure Architecture",
+      "prompt": "ISA-95 functional layers are the same thing as the Purdue Enterprise Reference Architecture (PERA).",
+      "options": [
+        "FALSE",
+        "TRUE"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "While both ISA-95 and PERA are related to enterprise system architectures, they are not the same. ISA-95 focuses on the functional layers, while PERA is a broader reference model for industrial automation systems.",
+      "anchor": "ic33-zones",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-028",
+      "number": 28,
+      "module": "security-levels",
+      "domain": "General Concepts and Definitions",
+      "prompt": "PLCs, RTUs, or IEDs are part of which of the following categories defined in the IEC-62443 ?",
+      "options": [
+        "Software Applications",
+        "Network Device",
+        "Embedded Device",
+        "Host Device"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "Embedded Devices are purpose-built hardware devices with dedicated functions. PLCs (Programmable Logic Controllers), RTUs (Remote Terminal Units), and IEDs (Intelligent Electronic Devices) are classic examples. These are often constrained in resources and perform specific control or monitoring roles in industrial systems.",
+      "anchor": "ic33-security-levels",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-029",
+      "number": 29,
+      "module": "lifecycle",
+      "domain": "IACS Cybersecurity Lifecycle",
+      "prompt": "Which standard addresses cybersecurity Maintain Phase ?",
+      "options": [
+        "ISA Standard 62443-3-3",
+        "ISA Standard 62443-3-2 and 3-3",
+        "ISA Standard 62443-3-2",
+        "ISA standard 62443-2-1"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "The security lifecycle in the ISA 62443 standard includes three phases: Assess, Develop and Implement, and Maintain.\n\nMaintain phase topics includes cyber security countermeasures maintenance, monitoring, and change management, as well as incident response and recovery. ISA standard 62443-2-1 addresses cybersecurity maintenance and provides guidelines for processes which should be continuously monitored. Also includes a cybersecurity management system for policies, procedures, training and awareness. Periodic cybersecurity audits should also be conducted as a continuous process.",
+      "anchor": "ic33-lifecycle",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-030",
+      "number": 30,
+      "module": "lifecycle",
+      "domain": "IACS Cybersecurity Lifecycle",
+      "prompt": "Which of the following is part of the Assess Phase ?",
+      "options": [
+        "Cybersecurity countermeasures Maintenance",
+        "Cybersecurity Incident Response and Recovery",
+        "Allocation of IACS Assets to security zones or conduits.",
+        "Cybersecurity Change Management"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "The security lifecycle in the ISA 62443 standard includes three phases: Assess, Develop and Implement, and Maintain. The security life cycle is a continuous process for minimizing risks to the IACS environment. \n\nAssess phase include high-level cyber risk assessment, allocation of IACS assets to security zones or conduits, and detailed cyber risk assessment. ISA standard 62443-3-2 provides guidelines for the assess phase. \n\nThe other options are INCORRECT as they either include unrelated activities or misrepresent the sequence of steps in the assess phase.",
+      "anchor": "ic33-lifecycle",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-031",
+      "number": 31,
+      "module": "zones",
+      "domain": "Zone and Conduit Requirements",
+      "prompt": "Wireless communications should be in one or more zones that are separated from wired communications.",
+      "options": [
+        "FALSE",
+        "TRUE"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Wireless communications should be in one or more zones that are separated from wired communications. Wireless communications are more accessible are exposed to a wider variety of threats.",
+      "anchor": "ic33-zones",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-032",
+      "number": 32,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "What are SolarWinds, Spiceworks, Microsoft Assessment and Planning Toolkit (MAP) and Auvesy-MDT ?",
+      "options": [
+        "None of the Options",
+        "Examples of Asset Inventory Tools",
+        "Examples of Risk Assessment Tools",
+        "Examples of Vulnerability Scanners"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "SolarWinds, Spiceworks, Microsoft Assessment and Planning Toolkit (MAP), and Auvesy-MDT are examples of Asset Inventory Tools. These tools are used to manage and inventory assets in an organization, helping to track the components of an IT infrastructure.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-033",
+      "number": 33,
+      "module": "lifecycle",
+      "domain": "Regulations and standards (ISA/IEC 62443 Framework)",
+      "prompt": "The standard ISA 62443-3-2 belongs in which tier/group of the ISA 99 committee work products?",
+      "options": [
+        "Component",
+        "General",
+        "System",
+        "Policies & Procedures"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "ISA 62443-3-2 is part of the \"System\" tier. It deals with risk assessment and system-level security processes as defined by the ISA/IEC 62443 standard series for industrial automation and control systems.",
+      "anchor": "ic33-lifecycle",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-034",
+      "number": 34,
+      "module": "security-levels",
+      "domain": "General Concepts and Definitions",
+      "prompt": "What are the three main categories of CSMS?",
+      "options": [
+        "Business Rationale, classification and assessment",
+        "Implementation, review and assess",
+        "Security Policy, organization and awareness",
+        "Risk Analysis, Addressing the risk, Monitoring"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "The three main categories of a Cybersecurity Management System (CSMS) involve Risk Analysis, Addressing the risk, Monitoring.",
+      "anchor": "ic33-security-levels",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-035",
+      "number": 35,
+      "module": "chemical-safety",
+      "domain": "Cybersecurity Documentation",
+      "prompt": "A Cybersecurity Requirements Specifications (CRS) is a living document which may change over time.",
+      "options": [
+        "TRUE",
+        "FALSE"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "A CRS is not static. The CRS is a living document that should be revised as new threats, vulnerabilities, technologies, or changes in the system arise. Keeping it current ensures that security controls remain effective and aligned with operational needs.",
+      "anchor": "ic33-sds",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-036",
+      "number": 36,
+      "module": "zones",
+      "domain": "Secure Architecture",
+      "prompt": "Which level in the ISA 62443 Reference Model defines the actual physical processes?",
+      "options": [
+        "Level 0",
+        "Level 4",
+        "Level 1",
+        "Level 2"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "In the ISA 62443 Reference Model, Level 0 refers to the actual physical processes, such as sensors, actuators, and other field devices that directly interact with the physical environment (e.g., temperature sensors or valves).",
+      "anchor": "ic33-zones",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-037",
+      "number": 37,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "Which assessment measures the negative impact on an IACS asset should information be unavailable, unreliable or compromised?",
+      "options": [
+        "Asset Inventory Assessment",
+        "Network Management Assessment",
+        "Scope Assessment",
+        "Cybersecurity Criticality Assessment"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "A Cyber Criticality Assessment evaluates how critical an asset is to the operation of the IACS, particularly if it were to become unavailable, unreliable, or compromised. It helps prioritize security measures based on potential operational impact.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-038",
+      "number": 38,
+      "module": "discovery",
+      "domain": "Vulnerability Assessment",
+      "prompt": "Which assessment provides comparison of the system to industry regulations, standards and best practices ?",
+      "options": [
+        "Penetration Testing",
+        "Benchmarking",
+        "Gap Assessment",
+        "Active Assessment"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "A Gap Assessment compares the current state of the system with industry regulations, standards and best practices. It identifies any vulnerabilities, weaknesses, or compliance gaps without going into detailed technical risk assessments.",
+      "anchor": "ic33-discovery",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-039",
+      "number": 39,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "What is the standard that addresses Risk Assessment Requirements?",
+      "options": [
+        "NIST 800-50",
+        "ISA 62443-2-1",
+        "ISA TR84.00.09",
+        "ISO-27035"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "ISA 62443-2-1 standard addresses Risk Assessment requirements. ISA/IEC 62443-2-1 focuses on developing and maintaining a cybersecurity management system (CSMS) for IACS. It includes general requirements for risk assessment, mainly as part of broader security program planning, governance, and continuous improvement.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-040",
+      "number": 40,
+      "module": "chemical-safety",
+      "domain": "Cybersecurity Documentation",
+      "prompt": "Identify the TRUE statement.",
+      "options": [
+        "A CRS should document mandatory security countermeasures of the SUC",
+        "Geo-political climate is not part of a facility\u2019s threat environment.",
+        "A CRS should be compiled as single document.",
+        "A CRS document will never change."
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The CRS is intended to capture mandatory security measures tailored to the specific risks and architecture of the SUC. It\u2019s a dynamic, detailed document that helps guide system design and compliance.",
+      "anchor": "ic33-sds",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-041",
+      "number": 41,
+      "module": "risk",
+      "domain": "Threat Management",
+      "prompt": "Which threat vector involves assuming the identity of another user or device ?",
+      "options": [
+        "Denial of Service",
+        "Spoofing",
+        "Information Disclosure",
+        "Tampering"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Spoofing is the correct answer here, as it refers to assuming the identity of another user or device to gain unauthorized access to systems, intercept data, or manipulate communication.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-042",
+      "number": 42,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "What is the first step in the High-Level Risk Assessment?",
+      "options": [
+        "Identify Threats",
+        "Identify Critical Assets and Consequences",
+        "Analyze Threats",
+        "Define Methodology for Identifying Risks"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "The first step in a high-level risk assessment to define the methodology for identifying risks involves establishing a structured approach to systematically identify potential risks that could affect an organization, project, or system.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-043",
+      "number": 43,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "In the context of IEC 62443-2-1 CSMS, what is the purpose of conducting a risk assessment?",
+      "options": [
+        "To define specific security awareness training programs for personnel",
+        "To determine the potential impact of security threats on the IACS",
+        "To establish the technical skills required for security incident response",
+        "To identify vulnerabilities in deployed IACS components"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "In the context of IEC 62443-2-1 for Cybersecurity Management Systems (CSMS), determining the potential impact of addressed vulnerabilities on Industrial Automation and Control Systems (IACS) is indeed a core purpose of conducting a risk assessment.  This process aims to understand potential threats, vulnerabilities, and the potential impact of security incidents on the organization\u2019s operations and assets.  Other options are incorrect.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-044",
+      "number": 44,
+      "module": "zones",
+      "domain": "Secure Architecture",
+      "prompt": "Switch port assignments and VLANs are shown in which type of document?",
+      "options": [
+        "Network Diagram",
+        "Zones and Conduits",
+        "System Architecture",
+        "Connectivity"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "Network Diagrams show switch port assignments and VLANs. These diagrams provide a detailed view of the physical and logical layout of a network, including how devices are interconnected, their port configurations, IP addressing schemes, and VLAN segmentation. They are essential for managing, troubleshooting, and securing a network infrastructure.",
+      "anchor": "ic33-zones",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-045",
+      "number": 45,
+      "module": "security-levels",
+      "domain": "General Concepts and Definitions",
+      "prompt": "Which of the following inputs are required for determining Security Level Target (SL-T) ?",
+      "options": [
+        "Likelihood and Impact",
+        "Threat List",
+        "Corporate Risk Matrix",
+        "Existing PHAs (Process Hazard Analysis)"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "The Corporate Risk Matrix is an essential input when determining the Security Level Target (SL-T) because it helps to assess the organization's overall risk tolerance and how to prioritize security measures. It takes into account the company's internal risk assessment and aligns security targets with the organization's ability to manage risks. This input, along with the threat list, PHA data, and the likelihood and impact analysis, forms the basis for establishing the SL-T.",
+      "anchor": "ic33-security-levels",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-046",
+      "number": 46,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "When performing a cost-benefit analysis of security controls, which factor is crucial in determining the potential financial and operational impact of a cyber threat?",
+      "options": [
+        "Finding unmitigated likelihood",
+        "Environmental effects",
+        "Estimating the worst-case impact of a cyber threat",
+        "Desired target level"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "When performing a cost-benefit analysis, estimating the worst-case impact of a cyber threat is essential. This involves considering the maximum potential damage a threat could cause, both financially and operationally, to the organization. It helps in determining whether the cost of implementing a security measure is justified by the potential losses that could occur from the threat. This factor provides a comprehensive view of the financial implications and supports better decision-making in risk management.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-047",
+      "number": 47,
+      "module": "discovery",
+      "domain": "Asset Management",
+      "prompt": "What should be included in the hardware asset inventory ?",
+      "options": [
+        "All connected and non-connected devices",
+        "PLC Devices",
+        "Engineering Stations",
+        "Instrumentation"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "A complete hardware asset inventory must include all devices, whether they are currently connected to the network or not. This ensures full visibility into potential attack surfaces and helps in maintaining a secure and accurate system architecture.",
+      "anchor": "ic33-discovery",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-048",
+      "number": 48,
+      "module": "zones",
+      "domain": "Zone and Conduit Requirements",
+      "prompt": "Which standard contains the zone and conduit requirement ZCR-3: Separate Safety Related Assets ?",
+      "options": [
+        "ISA-62443-3-3",
+        "ISA-62443-2-1",
+        "ISA-62443-3-2",
+        "ISA-62443-1-1"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "The ISA-62443-3-2 standard contains the zone and conduit requirement ZCR-3, which specifically deals with the separation of Safety-Related Assets. This requirement focuses on segmenting critical safety components into different security zones to ensure that they are protected from threats affecting other, less critical parts of the system. This standard helps structure cybersecurity protections logically and effectively across an industrial control system.",
+      "anchor": "ic33-zones",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-049",
+      "number": 49,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "System Under Consideration (SuC) is defined for the assessment process using:",
+      "options": [
+        "Network Diagram",
+        "Detailed Asset Inventory",
+        "A combination of illustrations",
+        "Architecture Drawing"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "The System Under Consideration (SuC) is defined by using a combination of illustrations such as system architecture drawings, network diagrams, and data flow diagrams. These visuals provide a comprehensive view of the systems, allowing for a thorough understanding of how they interact, and the potential risks associated with them.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-050",
+      "number": 50,
+      "module": "zones",
+      "domain": "Zone and Conduit Requirements",
+      "prompt": "When documenting zone and conduit characteristics, there is no need to include list of assets.",
+      "options": [
+        "TRUE",
+        "FALSE"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "IACS assets contained within each zone or conduit need to be identified and documented to identify their criticality and  business value to the organization",
+      "anchor": "ic33-zones",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-051",
+      "number": 51,
+      "module": "risk",
+      "domain": "Threat Management",
+      "prompt": "Which is the Security Level of protecting against casual  or coincidental violation?",
+      "options": [
+        "SL3",
+        "SL4",
+        "SL2",
+        "SL1"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "The security level that addresses protection against casual or coincidental violation in the context of industrial control systems (ICS) cybersecurity is Security Level 1 (SL-1).",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-052",
+      "number": 52,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "Which essential documents must be maintained and formally approved as part of an IACS cybersecurity risk assessment?",
+      "options": [
+        "Incident response plan, network traffic logs, and firewall rules",
+        "Risk mitigation strategy, system maintenance logs, and security awareness training records",
+        "Employee access logs, system backup schedules, and software patch records",
+        "Cybersecurity Requirement Specifications, Vulnerability Report, and Zoned and Conduit Diagram"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "The correct option is Cybersecurity Requirement Specifications, Vulnerability Report, and Zoned and Conduit Diagram because these documents are critical to an IACS cybersecurity risk assessment. The Cybersecurity Requirement Specifications (CRS) define the security requirements needed to mitigate identified risks and achieve the target security levels. The Vulnerability Report highlights existing weaknesses within the system, providing essential insights for assessing risks and planning appropriate mitigation strategies. The Zoned and Conduit Diagram visually represents the segmentation of the system into zones and conduits, ensuring proper isolation and secure communication paths to limit the spread of threats. Together, these documents form the foundation of a well-structured risk assessment process, ensuring that risks are identified, analyzed, and addressed systematically.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-053",
+      "number": 53,
+      "module": "security-levels",
+      "domain": "General Concepts and Definitions",
+      "prompt": "What is the purpose of establishing a Target Security Level (SL-T)?",
+      "options": [
+        "Communicate the desired level of security for a specific zone or conduit.",
+        "Requirement of the ISA Committee.",
+        "No Specific Purpose",
+        "None of the options"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The purpose of establishing a Target Security Level (SL-T) is to communicate the desired level of security for a specific zone or conduit. Target SLs (SL-T) are the desired level of security for a particular system. This is usually determined by performing a risk assessment on a system and determining that it needs a particular level of security to ensure correct operation.",
+      "anchor": "ic33-security-levels",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-054",
+      "number": 54,
+      "module": "discovery",
+      "domain": "Vulnerability Assessment",
+      "prompt": "A feature that sends a copy of network from one or more switch ports to a special monitoring port is called?",
+      "options": [
+        "GMP Snooping",
+        "Port mirroring",
+        "Packet capturing",
+        "VLAN Hopping"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "The feature that sends a copy of network traffic from one or more switch ports to a special monitoring port is called Port Mirroring. This is a common capability found in managed switches that allows network administrators to monitor and analyze traffic without interrupting the normal flow of data. Port mirroring is often used in combination with packet capture tools (like Wireshark) for troubleshooting, performance monitoring, and intrusion detection. It enables passive observation of traffic, which is crucial for identifying issues or suspicious behavior in real time without impacting the live network.",
+      "anchor": "ic33-discovery",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-055",
+      "number": 55,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "What type of assessment may include reviewing documents, system walk-thru, traffic analysis, or ARP tables?",
+      "options": [
+        "Passive assessment",
+        "GAP assessment",
+        "Vulnerability assessment",
+        "Active assessment"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "A passive assessment involves gathering information about a system or network without actively engaging with or altering its operation. This includes methods like document review, system walk-throughs, traffic analysis, and examining ARP tables. The goal is to observe and analyze without introducing any additional traffic or risk to the system",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-056",
+      "number": 56,
+      "module": "discovery",
+      "domain": "Asset Management",
+      "prompt": "At the start of the assessment a Ping Sweep is done because:",
+      "options": [
+        "Validate firewall configuration settings",
+        "To ensure Swept devices are secure",
+        "Check the WAN Connectivity",
+        "Identify the assets"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "A ping sweep is typically done at the start of a network assessment to identify the active devices (assets) on the network. By sending pings to a range of IP addresses, the tool can determine which devices are currently responsive and active. This helps in mapping out the network and understanding which systems need further assessment. While connectivity and firewall settings are important, the primary purpose of a ping sweep is asset identification.",
+      "anchor": "ic33-discovery",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-057",
+      "number": 57,
+      "module": "zones",
+      "domain": "Secure Architecture",
+      "prompt": "Which is the PRIMARY objective when defining a security zone?",
+      "options": [
+        "All assets in the zone must share the same security requirements.",
+        "All assets in the zone must be at the same level in the Purdue model.",
+        "All assets in the zone must be physically located in the same are",
+        "All assets in the zone must be from the same vendor."
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The primary objective when defining a security zone is to ensure that all assets within the zone share the same security requirements. This approach allows for the implementation of consistent and targeted security controls tailored to the  specific needs of the assets in that zone.  By grouping assets with similar security requirements together, organizations can efficiently manage and enforce security policies, monitor and detect threats more effectively, and streamline compliance efforts. Additionally, containing assets with common security requirements within the same security zone simplifies network segmentation and reduces the complexity of security management, making it easier to maintain a secure and resilient infrastructure.",
+      "anchor": "ic33-zones",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-058",
+      "number": 58,
+      "module": "lifecycle",
+      "domain": "IACS Cybersecurity Lifecycle",
+      "prompt": "What is the primary goal of the Assess phase of ICS security implementation ?",
+      "options": [
+        "To ensure that the Achieved Security Level (SL-A) is equal to or better than the Target Security Leve (SL-T)",
+        "To implement countermeasures to meet the Target Security Level (SL-T)",
+        "None of the Options",
+        "To assign a Target Security Level (SL-T)"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "The primary objective of the Assess phase is to evaluate the current security posture, identify threats and vulnerabilities, and based on risk assessment, assign a Target Security Level (SL-T) for each zone and conduit within the ICS. This SL-T represents the required level of security needed to adequately protect the system.",
+      "anchor": "ic33-lifecycle",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-059",
+      "number": 59,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "What are the inputs of ZCR 2 - Initial Risk Assessment ?",
+      "options": [
+        "All of the Options",
+        "Corporate Risk Matrix",
+        "Process Hazard Analysis (PHA)",
+        "Relevant Risk Assessment"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "ZCR 2 - Initial Risk Assessment inputs include: Process Hazard Analysis (PHA), Corporate Risk Matrix and  Relevant Risk Assessments from the past. All of these help evaluate the initial risk before applying further security measures.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-060",
+      "number": 60,
+      "module": "lifecycle",
+      "domain": "Regulations and standards (ISA/IEC 62443 Framework)",
+      "prompt": "Which option are correct Foundational Requirements (FR) of the ISA/IEC-62443-3-3?",
+      "options": [
+        "System Robustness (SR), Data Confidentiality (DC), Identification and Authentication Control (IAC)",
+        "Authentication and Authorization (AA), Use Control (UC), System Integrity (SI)",
+        "System Integrity (SI), Data Confidentiality (DC), Security Level (SL)",
+        "Timely Response to Events (TRE), Restrict Data Flow (RDF), Use Control (UC)"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "ISA/IEC-62443-3-3 defines several Foundational Requirements (FRs). The correct option is Timely Response to Events (TRE), Restrict Data Flow (RDF), Use Control (UC).",
+      "anchor": "ic33-lifecycle",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-061",
+      "number": 61,
+      "module": "chemical-safety",
+      "domain": "Cybersecurity Documentation",
+      "prompt": "A high-level description and depiction of the System Under Consideration (SUC) is required as part of the Cybersecurity Requirements Specifications (CRS).",
+      "options": [
+        "TRUE",
+        "FALSE"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The answer is TRUE. A high-level description and depiction of the System Under Consideration (SUC) is a fundamental part of the Cybersecurity Requirements Specifications (CRS). This provides context for all the requirements and helps stakeholders understand what is being protected, how it operates, and where risks may lie.",
+      "anchor": "ic33-sds",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-062",
+      "number": 62,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "What is the first step in Conducting High Level Assessment or Gap Assessment ?",
+      "options": [
+        "Document and report results",
+        "Compare performance with benchmark standards",
+        "Identify benchmark standards",
+        "Gather information"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "First step in conducting High Level Assessment, is to identify benchmark standards. Next step is to gather information about the system through interviews, questionnaires, drawings, and site visits. Then, compare performance with the benchmarked standards. Finally, document and report results.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-063",
+      "number": 63,
+      "module": "risk",
+      "domain": "Threat Management",
+      "prompt": "What is a threat source?",
+      "options": [
+        "The undesirable result of an incident",
+        "A weakness that can be exploited to compromise a system",
+        "A person or object that can manifest a threat",
+        "A measure of the likelihood that an attack will be successful"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "A threat source is an individual or entity (e.g., a hacker, insider, or natural disaster) that has the capability and intent to cause harm by exploiting vulnerabilities in a system.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-064",
+      "number": 64,
+      "module": "discovery",
+      "domain": "Vulnerability Assessment",
+      "prompt": "Within OT systems, all weaknesses must be fixed, and all vulnerabilities need to be patched.",
+      "options": [
+        "FALSE",
+        "TRUE"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "Many people are tempted to believe that all weaknesses must be fixed and all vulnerabilities need to be patched. But this is not correct since exploiting vulnerabilities does not necessarily lead to a potential consequence. A deep understanding of the SUC components and their essential functions over the industrial processes being operated and controlled is necessary. Vulnerabilities alone without visualizing the consequences does not represent a risk to operational environments.",
+      "anchor": "ic33-discovery",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-065",
+      "number": 65,
+      "module": "zones",
+      "domain": "Secure Architecture",
+      "prompt": "Assets in the Enterprise or Business network can be segregated using:",
+      "options": [
+        "Wireless",
+        "Walls",
+        "Doors",
+        "Zones"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "Assets in the Enterprise or Business network can be segregated using zones. In cybersecurity, zones refer to logical groupings of systems, assets, or devices within a network that share common security requirements. Segregating assets into different zones helps control access, limit exposure to threats, and isolate critical systems from less sensitive ones, thereby enhancing overall security. Zones can be implemented using network segmentation, firewalls, or other security mechanisms, which is an effective way to manage and protect different types of assets.",
+      "anchor": "ic33-zones",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-066",
+      "number": 66,
+      "module": "zones",
+      "domain": "Secure Architecture",
+      "prompt": "Network diagrams always show host.",
+      "options": [
+        "TRUE",
+        "FALSE"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Not all network diagrams show hosts. High-level diagrams might only depict networks, zones, and communication paths, while more detailed diagrams include specific hosts or endpoints. The level of detail depends on the purpose of the diagram.",
+      "anchor": "ic33-zones",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-067",
+      "number": 67,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "What are the typical variables in a risk matrix?",
+      "options": [
+        "Likelihood and Threat",
+        "Threat and Consequence",
+        "Likelihood and Consequence",
+        "Threat and Likelihood"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "A risk matrix is a common tool used in risk assessments, where Likelihood (how probable an event is) and Consequence (the impact or severity if the event occurs) are the two key variables used to evaluate and prioritize risks.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-068",
+      "number": 68,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "What is hazard in a Bow-Tie Diagram ?",
+      "options": [
+        "Negative Effects of an event",
+        "An activity that an organization executes but it could cause damage if control is lost.",
+        "None of the Options",
+        "An event during which control is lost: loss of confidentiality, integrity, or availability"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "In a Bow-Tie Diagram, a hazard is a potential source of harm or risk. It represents an activity or situation that could lead to damage or adverse effects if it is not controlled. For example, a hazard could be a chemical process that, if mishandled, could result in an accident or disaster.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-069",
+      "number": 69,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "Which \"T\" of Managing Risk is defined as stopping the process, activity, or stopping the use of a premises, IT system at risk and hence the risk is no longer relevant.",
+      "options": [
+        "Transfer",
+        "Treat",
+        "Tolerate",
+        "Terminate"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "There are 4 Ts of managing Risks, which are: Tolerate, Transfer, Terminate, and Treat. \n\nTerminating Risk means stopping the process, activity, or stopping the use of a premises, IT system at risk and hence the risk is no longer relevant.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-070",
+      "number": 70,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "CSET provides an evaluation and comparison to existing industry standards and regulations.",
+      "options": [
+        "FALSE",
+        "TRUE"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Correct option is True. CSET provides evaluation and comparison to existing industry standards and regulations. It supports frameworks such as NIST, ISO, ISA/IEC 62443, and others, helping organizations identify gaps and improve compliance with relevant cybersecurity requirements.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-071",
+      "number": 71,
+      "module": "security-levels",
+      "domain": "General Concepts and Definitions",
+      "prompt": "What type of security level defines what a component or system is capable of meeting?",
+      "options": [
+        "Target security level",
+        "Design security level",
+        "Achieved security level",
+        "Capability security level"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "SLs have been categorized into three distinct types, each corresponding to different facets of the security lifecycle, though they are closely related:\n\nTarget Security Levels (SL-T) represent the desired security level for a specific system. This is typically established by conducting a risk assessment on the system to determine the necessary level of security required for its proper functioning.\n\nCapability Security Levels (SL-C) denote the security levels that components or systems can achieve when they are correctly configured. This indicates that a specific component or system can naturally meet the target SLs without the need for extra compensating countermeasures, assuming it is properly configured and integrated.\n\nAchieved Security Levels (SL-A) are the actual security levels a system reaches after its design is finalized or implemented, ensuring it meets the initial objectives set by the Target SLs (SL-T).",
+      "anchor": "ic33-security-levels",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-072",
+      "number": 72,
+      "module": "zones",
+      "domain": "Secure Architecture",
+      "prompt": "Zone and Conduit drawings can be used to provide following information",
+      "options": [
+        "Location of Logical Boundaries",
+        "Conduit Wires",
+        "Zone Perimeter Entries",
+        "Zones Access Control List"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "Zone and conduit drawings illustrate the logical boundaries between different zones within an industrial control network. These drawings help visualize how assets are grouped and how communication flows between zones, which is critical for implementing proper segmentation and cybersecurity controls.",
+      "anchor": "ic33-zones",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-073",
+      "number": 73,
+      "module": "lifecycle",
+      "domain": "IACS Cybersecurity Lifecycle",
+      "prompt": "Which of the following is part of the Maintain Phase ?",
+      "options": [
+        "High-Level Cyber Risk Assessment",
+        "Installation, commissioning and validation of cybersecurity countermeasures",
+        "Allocation of IACS Assets to security zones or conduits.",
+        "Cybersecurity Countermeasures Monitoring"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "The security lifecycle in the ISA 62443 standard includes three phases: Assess, Develop and Implement, and Maintain.\n\nMaintain phase topics includes cyber security countermeasures maintenance, monitoring, and change management, as well as incident response and recovery. ISA standard 62443-2-1 addresses cybersecurity maintenance and provides guidelines for processes which should be continuously monitored. Also includes a cybersecurity management system for policies, procedures, training and awareness. Periodic cybersecurity audits should also be conducted as a continuous process. \n\nThe other options are INCORRECT as they either include unrelated activities or misrepresent the sequence of steps in the maintain phase.",
+      "anchor": "ic33-lifecycle",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-074",
+      "number": 74,
+      "module": "zones",
+      "domain": "Secure Architecture",
+      "prompt": "As per ISA-95 (IEC 62443) Reference Model which level is named correctly ?",
+      "options": [
+        "Level 2 - Supervisory Control",
+        "Level 2: Quality Control",
+        "Level 4: Physical Process",
+        "Level 1: Supervisory Control"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The IEC 62443 Reference Model level named correctly is Level 2 - Supervisory Control.\n\nThe ISA-95 (IEC 62443) Reference Model consists of five levels, each representing a different aspect of industrial automation and control system (IACS) security:\n\nLevel 0 - Physical Process: This level represents the physical processes and devices in an industrial environment, such as sensors, actuators, and controllers. It includes physical elements like pumps, valves, motors, and other machinery that directly interact with the physical world.\n\nLevel 1 - Basic Process Control:  At this level, basic control functions are performed. It includes devices such as Programmable Logic Controllers (PLCs) or Remote Terminal Units (RTUs) that monitor and control the physical processes. \n\nLevel 2 - Supervisory Control: This level represents supervisory control functions, where higher-level control and coordination occur. It includes systems such as Supervisory Control and Data Acquisition (SCADA) systems, Human Machine Interfaces (HMIs), and Distributed Control Systems (DCS). \n\nLevel 3 - Operations Management: This level focuses on manufacturing operations and business systems integration. It includes Manufacturing Execution Systems (MES), Enterprise Resource Planning (ERP) systems, and other business applications. \n\nLevel 4 - Enterprise Management: This level focuses on functions that are related and the activities needed to manage the organization: financial systems, production scheduling, operational management, maintenance management.",
+      "anchor": "ic33-zones",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-075",
+      "number": 75,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "Shot form of Risk Equation is ?",
+      "options": [
+        "Likelihood x Consequence",
+        "Likelihood x Vulnerability",
+        "Likelihood x Threat source",
+        "Vulnerability x Consequence"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "As the equation for Risk  =  Threat x Vulnerability x Consequence.\n\nTo simplify this equation, we convert the threat and vulnerability to express likelihood.\nLikelihood = Threat x Vulnerability. \n\nFinally we have: Risk = Likelihood x Consequence\n\nRest of the options are incorrect",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-076",
+      "number": 76,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "Transferring risk to a third party eliminates the risk.",
+      "options": [
+        "TRUE",
+        "FALSE"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Transferring risk to a third party does not eliminates the risk. The risk is passed to a third patty. For example an Insurer or an outsource to manage the risk. This does not eliminate the risk.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-077",
+      "number": 77,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "Risk tolerance for an organization is determined by",
+      "options": [
+        "Auditors",
+        "External governing organizations.",
+        "Third Party  or Vendors",
+        "Management"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "Risk tolerance is The level of risk an organization is willing to tolerate. It is management's responsibility to determine the level of risk the organization is willing to tolerate.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-078",
+      "number": 78,
+      "module": "discovery",
+      "domain": "Vulnerability Assessment",
+      "prompt": "Passive vulnerability assessments discover network devices using which means ?",
+      "options": [
+        "Traffic analysis",
+        "All of the Options",
+        "Reviewing drawings, studying ARP tables",
+        "Capture and study actual network traffic"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Passive vulnerability assessments discover network devices using passive means. This includes Reviewing drawings,  System Walk throughs, Traffic analysis and ARP or Address Resolution Protocol tables review. Passive means can also be used to discover vulnerabilities such as Capture and study actual network traffic, collect data from devices, review configurations and research using vulnerability databases",
+      "anchor": "ic33-discovery",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-079",
+      "number": 79,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "Risk is retained or accepted by an organization, after approval of senior management, for the following reasons :",
+      "options": [
+        "All of the above",
+        "The cost to treat the risk is more than the cost of potential harm due to risk",
+        "Evaluated Risk is within the organisation's predefined acceptable criteria",
+        "It is not feasible to avoid the risk as the process or activity is essential to organization\u2019s strategic and business goals"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "Risk Retention is only a good choice for very specific risks. There are typically four reasons to tolerate a risk:\n1.\tThe risk falls within the organizations risk appetite or a  pre-defined acceptable range.\n2.\tMitigating the residual risk would cost too much considering its potential consequences \u2013 in other words, implementing measures would be inappropriate for the level of risk.\n3.\tIt is not feasible to avoid the risk \u2013 the activity subject to the risk is essential to the organization or irreplaceable.\n4.\tTo pursue an opportunity, as some risks can have positive outcomes in some situations like venturing into a new risk prone market",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-080",
+      "number": 80,
+      "module": "chemical-safety",
+      "domain": "Cybersecurity Documentation",
+      "prompt": "It is important to document your steps when conducting assessments in order to validate your findings.",
+      "options": [
+        "TRUE",
+        "FALSE"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "Documenting your steps during cybersecurity assessments is crucial to ensure transparency, repeatability, and validation of findings. It allows others to review the process, verify results, and build on your work in future assessments. It also supports auditing and compliance activities.",
+      "anchor": "ic33-sds",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-081",
+      "number": 81,
+      "module": "risk",
+      "domain": "Threat Management",
+      "prompt": "Which of the following security countermeasures is responsible for managing user authentication, enforcing access privileges, and ensuring that only authorized users can perform specific actions within a system?",
+      "options": [
+        "Logical Access Controls",
+        "Hardening",
+        "Data Integrity Controls",
+        "Physical Access Controls"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "Logical Access Controls are security mechanisms responsible for managing user authentication and enforcing access privileges. They ensure that only authorized individuals can access specific system resources or perform certain actions based on their roles. Logical access controls play a crucial role in securing sensitive data and preventing unauthorized access, helping to maintain the confidentiality and integrity of the system.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-082",
+      "number": 82,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "There is no prescribed method for establishing Security Level Target (SL-T).",
+      "options": [
+        "FALSE",
+        "TRUE"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "There is no one-size-fits-all method for establishing a Security Level Target (SL-T). The process for determining SL-T can vary depending on the organization, the type of assets being protected, regulatory requirements, and risk tolerance. It is typically based on a risk assessment and organizational needs, which allows for flexibility in how it is set.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-083",
+      "number": 83,
+      "module": "security-levels",
+      "domain": "General Concepts and Definitions",
+      "prompt": "In CIA triad, I stand for",
+      "options": [
+        "Integrity",
+        "In-Operation",
+        "Inquisition",
+        "Interrogation"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "In the CIA triad, the \"I\" stands for Integrity. Integrity means ensuring that information remains accurate, trustworthy, and unaltered by unauthorized individuals. Maintaining integrity is essential because corrupted or manipulated data can cause incorrect decisions or unsafe conditions, especially in critical systems.",
+      "anchor": "ic33-security-levels",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-084",
+      "number": 84,
+      "module": "zones",
+      "domain": "Secure Architecture",
+      "prompt": "A demilitarized zone is created between the enterprise zone and process control network. It is an example of:",
+      "options": [
+        "Backup and disaster recovery planning",
+        "Full network redundancy implementation",
+        "Segregation of network into zones and conduits",
+        "Encryption of all network communications"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "Creating a demilitarized zone (DMZ) between the enterprise network and the process control network is a classic example of segregating the network into zones and conduits. This separation helps control and monitor data traffic between networks of different trust levels, reducing cybersecurity risks. While redundancy, encryption, and backup planning are critical aspects of cybersecurity, they are not the primary purpose of a DMZ.",
+      "anchor": "ic33-zones",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-085",
+      "number": 85,
+      "module": "discovery",
+      "domain": "Asset Management",
+      "prompt": "Which term refers to an organized list of potential threats to a system that includes information about the nature of each threat, related vulnerabilities, affected assets, potential impacts, and possible mitigation strategies ?",
+      "options": [
+        "Threat Vector",
+        "Impact",
+        "Threat Catalog",
+        "Threat Source"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "Threat Catalog refers an organized list of potential threats to a system that includes information about the nature of each threat, related vulnerabilities, affected assets, potential impacts, and possible mitigation strategies. It is a crucial tool for risk management in IACS cybersecurity.",
+      "anchor": "ic33-discovery",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-086",
+      "number": 86,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "A security program based on a CSET assessment alone is considered incomplete or inadequate.",
+      "options": [
+        "FALSE",
+        "TRUE"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "CSET is only one component of a comprehensive control system security program. CSET will not provide a detailed architectural analysis of the network or a detailed network hardware/software configuration review. CSET is not a risk analysis tool, it will not create a detailed risk assessment. CSET is not intended as a substitute for in-depth analysis of control system vulnerabilities as performed by trained professionals.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-087",
+      "number": 87,
+      "module": "risk",
+      "domain": "Threat Management",
+      "prompt": "Which description is necessary for identifying the threat ?",
+      "options": [
+        "Description of vulnerability",
+        "Description of risk",
+        "Description of asset",
+        "Description of threat vector"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "To identify a threat accurately, it is essential to understand the threat vector, which describes how an attacker could exploit vulnerabilities to affect a system. Knowing the pathway or method helps to anticipate and mitigate specific threats.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-088",
+      "number": 88,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "Likelihood is influenced by several factors which are:",
+      "options": [
+        "Ease of Use",
+        "Frequency and Probability",
+        "Probability only",
+        "Frequency only"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Likelihood is influenced by both the frequency (how often a threat occurs) and probability (how likely it is that the threat will be successful).",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-089",
+      "number": 89,
+      "module": "chemical-safety",
+      "domain": "Cybersecurity Documentation",
+      "prompt": "Why should cybersecurity documentation be kept under a control scheme ?",
+      "options": [
+        "It contains non- sensitive information",
+        "It contains sensitive information",
+        "It helps in the risk assessment process",
+        "It contains public information"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Cybersecurity documentation often includes critical system details, vulnerabilities, and controls, making it sensitive in nature. Keeping it under a control scheme helps protect this data from unauthorized access or alteration.",
+      "anchor": "ic33-sds",
+      "questionSet": 1
+    },
+    {
+      "id": "ic33-udemy-090",
+      "number": 90,
+      "module": "risk",
+      "domain": "Risk Assessment",
+      "prompt": "Likelihood is often evaluated twice during a detailed risk assessment.",
+      "options": [
+        "TRUE",
+        "FALSE"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "Likelihood is often evaluated twice during a detailed risk assessment. It is initially determined without consideration of any existing countermeasures. This establishes the unmitigated risk. Later in the process, it will be re-evaluated taking into account existing counter measures and their effectiveness in order to determine residual risk.",
+      "anchor": "ic33-risk",
+      "questionSet": 1
+    },
+    {
+      "prompt": "As per 62443, DETAILED CYBERSECURITY RISK ASSESSMENT should be conducted:",
+      "options": [
+        "Twice a year",
+        "If there are significant Change to the IACS",
+        "Annually",
+        "3 times in a year"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "A Detailed Cybersecurity Risk Assessment should be performed whenever there are significant changes to the Industrial Automation and Control Systems (IACS). Changes could introduce new vulnerabilities or alter existing risk profiles, necessitating a fresh assessment to maintain security.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-001",
+      "number": 91,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Cybersecurity risk assessments are living documents that may be used for multiple purposes including testing, auditing and future risk assessments.",
+      "options": [
+        "FALSE",
+        "TRUE"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Cybersecurity risk assessments are indeed living documents. They serve not only as a snapshot of current risks but also as a reference for testing, compliance audits, future updates, and continuous improvement efforts in cybersecurity posture.",
+      "domain": "Cybersecurity Documentation",
+      "id": "ic33-udemy-beta-002",
+      "number": 92,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Vulnerability assessment report should include:",
+      "options": [
+        "All of the options",
+        "Assessment details",
+        "As found System Architecture",
+        "Scope of the assessment"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "A complete vulnerability assessment report should include: Scope of the assessment; As-found system architecture; Assessment details (tools used, methods, findings).",
+      "domain": "Vulnerability Assessment",
+      "id": "ic33-udemy-beta-003",
+      "number": 93,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which documents illustrate components of a system, connectivity and physical location?",
+      "options": [
+        "VLANS",
+        "System Architecture Diagrams",
+        "Scope of Work",
+        "Network Diagrams"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "A System Architecture diagram best illustrates the components, connectivity, and physical locations of an IACS. It provides a comprehensive view of how systems interact, which is vital for cybersecurity planning and risk assessment.",
+      "domain": "Secure Architecture",
+      "id": "ic33-udemy-beta-004",
+      "number": 94,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which of the following are types of vulnerability assessments?",
+      "options": [
+        "Passive vulnerability assessment, penetration testing, threat modelling",
+        "Gap assessment, passive vulnerability assessment, penetration testing",
+        "Gap assessment, system hardening, penetration testing",
+        "Active vulnerability assessment, patch management, penetration testing"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "The types of vulnerability assessment are Gap assessment, passive vulnerability assessment, penetration testing. Gap assessment identifies the difference between current security posture and desired standards or regulations. Passive vulnerability assessment gathers information without affecting system performance, often through traffic analysis. Penetration testing simulates attacks to identify vulnerabilities that could be exploited. System hardening and patch management are security practices, not assessment types, while threat modelling focuses on potential attack vectors rather than existing vulnerabilities.",
+      "domain": "Vulnerability Assessment",
+      "id": "ic33-udemy-beta-005",
+      "number": 95,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Within the ISA/IEC-62443 series of standards Assets are classified as:",
+      "options": [
+        "Host Device, Embedded Device, Network Device, and PLC Firmware",
+        "Host Device, Control System, Network Device, and Software Applications",
+        "Server, Embedded Device, Network Device, and Software Applications",
+        "Host Device, Embedded Device, Network Device, and Software Applications"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "According to ISA-62443, assets are divided into four major categories: host devices (like servers and workstations), embedded devices (like PLCs), network devices (like switches and routers), and software applications. This classification helps standardize the cybersecurity risk assessment and protection strategies.",
+      "domain": "Asset Management",
+      "id": "ic33-udemy-beta-006",
+      "number": 96,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Initial Risk assessment identifies the worst-case risk in terms of:",
+      "options": [
+        "Financial, Health and Safety and Environment consequences",
+        "People Process Technology",
+        "Operational efficiency and resource allocation",
+        "Customer satisfaction and public relations"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The purpose of the initial cybersecurity risk assessment is to gain an initial understanding of the worst-case risk the SUC presents to the organization should it be compromised. It is an exercise to understand the worst case financial and HS and E consequences if the IACS has been compromised.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-007",
+      "number": 97,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which of the following BEST describes the concept of \"consequence\" in  relation to cybersecurity?",
+      "options": [
+        "A threat actor's intent to exploit a vulnerability",
+        "A safeguard applied to mitigate system weaknesses",
+        "The result or condition that follows from a particular incident",
+        "A process for identifying vulnerabilities in a system"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "In cybersecurity, consequence refers to the impact or outcome of a security incident, such as data breaches, system downtime, financial losses, or reputational damage. It is a critical component in risk assessment, helping organizations understand the potential effects of cyber threats.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-008",
+      "number": 98,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which steps are included in the ISA/IEC 62443 develop and implement phase?",
+      "options": [
+        "Cyber security countermeasures maintenance, monitoring, and change management and detailed cyber risk assessment",
+        "Detailed cyber risk assessment and cybersecurity maintenance, monitoring, and management of change",
+        "Cybersecurity requirements specification and the designing of security countermeasures, and the installation, commissioning, and validation of cyber security countermeasures.",
+        "Cybersecurity requirements specification and allocation of IACS assets to zones and conduits"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "The security lifecycle in the ISA 62443 standard includes three phases: Assess, Develop and Implement, and Maintain. The security life cycle is a continuous process for minimizing risks to the IACS environment. \n\nDevelop and Implementation  include cybersecurity requirements specification, the design and engineering of security countermeasures, and the installation, commissioning, and validation of cyber security countermeasures. ISA standard 62443-3-2 and 62443-3-3 provides guidelines for this phase. The design and development of other means of risk reduction may also be included.",
+      "domain": "Regulations and standards (ISA/IEC 62443 Framework)",
+      "id": "ic33-udemy-beta-009",
+      "number": 99,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "The CSET tool does not meet ISA/IEC-62443-3-2 requirements in determining how to mitigate risk.",
+      "options": [
+        "TRUE",
+        "FALSE"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The CSET tool is not an Industrial Cybersecurity Assessment tool, and it does not meet ISA/IEC-62443-3-2 requirements in determining how to mitigate risk. It does not replace the need for a High-Level Risk Analysis and Detailed Cybersecurity Risk Analysis.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-010",
+      "number": 100,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which of the following is a MUST requirement when using an automated tool for collecting data?",
+      "options": [
+        "Do not impact system availability or integrity",
+        "Include all devices with an Ethernet connection",
+        "None of the Options",
+        "Gather data properly"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "When using an automated tool for collecting data in an industrial control system (ICS) environment, the most critical requirement is to not impact system availability or integrity. ICS environments often support critical operations, and even minor disruptions can lead to significant safety or operational issues. Therefore, any scanning or monitoring tools must be carefully configured to operate passively or non-intrusively to prevent unintended consequences.",
+      "domain": "Vulnerability Assessment",
+      "id": "ic33-udemy-beta-011",
+      "number": 101,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What is top event in a Bow-Tie Diagram ?",
+      "options": [
+        "None of the Options",
+        "An event during which control is lost: loss of confidentiality, integrity, or availability",
+        "Negative Effects of an event",
+        "An activity that an organization executes but that could cause damage if control is lost."
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "The top event in a Bow-Tie Diagram is the critical event that occurs when control is lost over a particular risk, leading to potential negative consequences like a loss of confidentiality, integrity, or availability. It is the central event in the diagram that represents the failure point, from which various risks or threats branch out.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-012",
+      "number": 102,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "How would you describe Conduit ?",
+      "options": [
+        "A conduit is a logical or physical grouping of communication channels connecting two or more zones that share common security requirements.",
+        "Electrical Wires in the walls of facilities",
+        "Physical Pipelines in the infrastructure",
+        "A logical grouping of physical, informational, and application assets sharing common security requirements."
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "A conduit is described as a logical or physical grouping of communication channels that connect two or more zones. These conduits share common security requirements, enabling controlled data flow between zones and providing a means to secure the communication channels that exist between them.",
+      "domain": "General Concepts and Definitions",
+      "id": "ic33-udemy-beta-013",
+      "number": 103,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which of the following is part of the Develop and Implement Phase ?",
+      "options": [
+        "Cybersecurity Requirement Specification",
+        "Allocation of IACS Assets to security zones or conduits.",
+        "High-Level Cyber Risk Assessment",
+        "Cybersecurity Incident Response and Recovery"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The security lifecycle in the ISA 62443 standard includes three phases: Assess, Develop and Implement, and Maintain.\n\nDevelop and Implementation Phase  include cybersecurity requirements specification, the design and engineering of security countermeasures, and the installation, commissioning, and validation of cyber security countermeasures. ISA standard 62443-3-2 and 62443-3-3 provides guidelines for this phase. The design and development of other means of risk reduction may also be included. \n\nThe other options are INCORRECT as they either include unrelated activities or misrepresent the sequence of steps in the develop and implement phase.",
+      "domain": "IACS Cybersecurity Lifecycle",
+      "id": "ic33-udemy-beta-014",
+      "number": 104,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "In CIA triad, A stands for",
+      "options": [
+        "Availability",
+        "Automation",
+        "atmosphere",
+        "Artificial Intelligence"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "In the CIA triad, the \"A\" stands for Availability. Availability ensures that information and resources are accessible to authorized users whenever they are needed. A system is considered highly available if it can continue operating despite failures, attacks, or disasters.",
+      "domain": "General Concepts and Definitions",
+      "id": "ic33-udemy-beta-015",
+      "number": 105,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What is the main type of intrusion detection systems?",
+      "options": [
+        "Perimeter Intrusion Detection & Network Intrusion Detection",
+        "Host Intrusion Detection & Intrusion Prevention Systems",
+        "Host Intrusion Detection & Network Intrusion Detection",
+        "Intrusion Prevention / Network Intrusion Detection"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "The two types of IDS are: Host Intrusion Detection & Network Intrusion Detection. HIDS runs on individual devices (hosts) and monitors the internal operating system activities, such as system calls, file access, and process behavior. It's particularly useful for detecting threats that might bypass network-level defenses, such as malware or unauthorized access to sensitive files on that host. NIDS monitors network traffic for suspicious activity or policy violations. It is typically placed at strategic points within the network (like near the perimeter) to analyze incoming and outgoing packets in real time. It\u2019s effective at detecting network-level attacks such as denial of service (DoS), port scans, or malicious payloads.",
+      "domain": "Network Security",
+      "id": "ic33-udemy-beta-016",
+      "number": 106,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which threat vector involves unauthorized changes to program, configuration or data ?",
+      "options": [
+        "Spoofing",
+        "Tampering",
+        "Denial of Service",
+        "Information Disclosure"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Tampering is the threat vector that involves unauthorized changes to programs, configurations, or data. It compromises the integrity of systems by altering information, which can lead to faulty operation, data corruption, or system failure.",
+      "domain": "Threat Management",
+      "id": "ic33-udemy-beta-017",
+      "number": 107,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which of the following is NOT considered a threat scenario?",
+      "options": [
+        "A non-malicious employee physically accesses the process control zone and plugs a USB memory stick into one of the computers.",
+        "An employee uses their employee ID to access the lab.",
+        "An authorized support person logically accesses the process control zone using an infected laptop.",
+        "A non-malicious employee opens a phishing email compromising their access credentials."
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "This action represents normal, authorized behavior, as the employee is simply accessing a designated area of the workplace using their employee ID. In contrast, the other options describe unauthorized access or actions that could compromise security, such as using infected devices or falling victim to phishing attacks. Threat scenarios typically involve situations where security protocols are bypassed or compromised.",
+      "domain": "Threat Management",
+      "id": "ic33-udemy-beta-018",
+      "number": 108,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which security level refers to the security that components or systems can provide when properly configured?",
+      "options": [
+        "Achieved Security Level",
+        "Capability Security Level",
+        "Target Security Level",
+        "SL-4"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "The Capability Security Level refers to the level of security that a system or component can achieve when it is properly configured and maintained. It represents the maximum potential security achievable given the system's current design, configuration, and operational state. This level is often used to assess whether the system's security posture meets the required standards for its intended use.",
+      "domain": "General Concepts and Definitions",
+      "id": "ic33-udemy-beta-019",
+      "number": 109,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "After allocation of the IACS to zones and conduits, what is the next step in the IACS cybersecurity lifecycle ?",
+      "options": [
+        "Initial Risk Assessment",
+        "Cybersecurity Requirements Specification",
+        "Design and Engineering of cybersecurity countermeasures",
+        "Detailed cyber risk assessment"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "After the allocation of IACS (Industrial Automation and Control Systems) to zones and conduits, the next step in the cybersecurity lifecycle is to conduct an Detailed Risk Assessment. This assessment helps identify potential risks, vulnerabilities, and areas where mitigation measures need to be implemented.",
+      "domain": "IACS Cybersecurity Lifecycle",
+      "id": "ic33-udemy-beta-020",
+      "number": 110,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What can be can be used to determine and illustrate the IACS assets that are included in the System Under Consideration (SUC) ?",
+      "options": [
+        "Detailed Asset Inventory",
+        "Operator HMI Screen Drawings",
+        "Vulnerability Assessment Report",
+        "System inventory, Architecture drawings, Network Drawings and Dataflows"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "To determine and illustrate the IACS assets included in the System Under Consideration (SUC), a combination of system inventory, architecture drawings, network drawings, and data flows are used. These elements help to map out the assets and their interactions, enabling a clear understanding of the system's boundaries and its potential vulnerabilities.",
+      "domain": "Asset Management",
+      "id": "ic33-udemy-beta-021",
+      "number": 111,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What type of vulnerability assessment technique involves using automated network scanning tools but not using exploit tools?",
+      "options": [
+        "Active vulnerability assessment",
+        "Gap assessment",
+        "Passive vulnerability assessment",
+        "Penetration test"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "An active assessment involves using tools to interact with systems directly in order to discover devices, map networks, and identify vulnerabilities. This method often sends traffic to the target systems\u2014such as through scanning or probing\u2014which can reveal important details about the Industrial Automation and Control Systems (IACS), but it may also introduce some risk to operational environments if not carefully managed.",
+      "domain": "Vulnerability Assessment",
+      "id": "ic33-udemy-beta-022",
+      "number": 112,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "When performing a security risk assessment as per ISA/IEC 62443, which of the following factors is least relevant in determining the security requirements for a system?",
+      "options": [
+        "The likelihood of an attack exploiting a vulnerability.",
+        "The safety impact of a cyber incident on personnel and equipment.",
+        "The operational criticality of the system being assessed.",
+        "The cost of cybersecurity technologies being implemented."
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "While cost is a factor in implementation, security requirements are primarily driven by risk assessment, safety impact, and system criticality, not financial constraints.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-023",
+      "number": 113,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which of the following is an active vulnerability scanning tool that can detect CVEs defined in the National Vulnerability Database (NVD)?",
+      "options": [
+        "Wireshark",
+        "Nessus",
+        "Shodan",
+        "Nmap"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Nessus is an active vulnerability scanning tool that is widely used to detect known vulnerabilities, including those listed in the National Vulnerability Database (NVD) under Common Vulnerabilities and Exposures (CVEs). It performs detailed scans of systems to identify misconfigurations, missing patches, and other security flaws. Unlike tools like Nmap (a network mapper), Wireshark (a packet sniffer), or Shodan (a search engine for internet-connected devices), Nessus is specifically built for comprehensive vulnerability scanning.",
+      "domain": "Vulnerability Assessment",
+      "id": "ic33-udemy-beta-024",
+      "number": 114,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "How can the Target Security Level (SL-T) be expressed?",
+      "options": [
+        "As a Single Only.",
+        "As a Vector Only.",
+        "As a single value or a vector.",
+        "None of the options"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "The target security level of a zone or conduit can be defined as a single number, which means all foundational requirements have the same level or can it be defined as a vector with a number for each and every individual foundational requirements. In this case, the asset owner can choose to have more protection, which is a higher SL for particular FR or lower protection which is a lower security level number. Annex A of the ISA-62443-3-3 standard contain more information on the SL vector approach.",
+      "domain": "General Concepts and Definitions",
+      "id": "ic33-udemy-beta-025",
+      "number": 115,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "When documenting zone and conduit characteristics, there is need to include list of data flows.",
+      "options": [
+        "TRUE",
+        "FALSE"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "In order to detect anomalies, it is important to identify and document the expected flow of data throughout the system and the flow of data in and out of a zone or conduit. These can include following information for the data flows: Source, Destination, Protocol, Business reason behind it.",
+      "domain": "Zone and Conduit Requirements",
+      "id": "ic33-udemy-beta-026",
+      "number": 116,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Unauthorized personnel physical access,  radio frequency and electro-magnetic pulse (EMP),  lack of backup power and environmental control and unsecured physical ports fall under what type of vulnerabilities?",
+      "options": [
+        "Policy & Procedural",
+        "Configuration and  Maintenance",
+        "Architecture and Design",
+        "Physical"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "These vulnerabilities are related to physical security measures. Unauthorized physical access to sensitive areas, environmental threats like EMP, lack of backup power, and unsecured physical ports all point to weaknesses in the organization's physical infrastructure. These physical vulnerabilities can result in the compromise of sensitive data or disruption of operations, and addressing them requires strong physical security controls and environmental safeguards.",
+      "domain": "Vulnerability Assessment",
+      "id": "ic33-udemy-beta-027",
+      "number": 117,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Access Control requirements may be grouped in CRS.",
+      "options": [
+        "FALSE",
+        "TRUE"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "The answer is TRUE. Access Control requirements\u2014which govern who can access what, when, and how\u2014can and should be logically grouped within the Cybersecurity Requirements Specifications (CRS). This grouping allows for consistent enforcement of identity and access policies and helps streamline the design and review of cybersecurity controls.",
+      "domain": "Cybersecurity Documentation",
+      "id": "ic33-udemy-beta-028",
+      "number": 118,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "CRS is developed in which phase of the IACS Cybersecurity Lifecycle ?",
+      "options": [
+        "Early in the Maintain Phase",
+        "Late in the Assess Phase",
+        "Early in Develop and Implement Phase",
+        "Prior to the Assess Phase"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "The Cybersecurity Requirements Specification (CRS) is developed late in the Assess Phase after the system has been fully analysed for risks. It outlines the cybersecurity needs and countermeasures required for the next stages of system design and implementation.",
+      "domain": "IACS Cybersecurity Lifecycle",
+      "id": "ic33-udemy-beta-029",
+      "number": 119,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Using the Gap Assessment or Maturity Assessment Report in the Detailed Cybersecurity Risk Assessment Process results in:",
+      "options": [
+        "Risk Assessment Worksheets",
+        "Creation of another document for compliance",
+        "Identification of weak administrative and procedural countermeasures needed for risk mitigation",
+        "Comprehensive list of countermeasures that need to be implemented"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "By integrating the results from a Gap Assessment or Maturity Assessment into the Detailed Cybersecurity Risk Assessment process, organizations can identify weak administrative and procedural countermeasures. This information helps to focus risk mitigation efforts on areas where existing measures are insufficient or need improvement.",
+      "domain": "Vulnerability Assessment",
+      "id": "ic33-udemy-beta-030",
+      "number": 120,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Some organizations may choose to establish Security Level Target (SL-T) based upon the difference between the unmitigated cybersecurity risk and tolerable risk.",
+      "options": [
+        "FALSE",
+        "TRUE"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Some organizations indeed establish their Security Level Target (SL-T) based on the difference between unmitigated cybersecurity risk and tolerable risk. This approach helps in determining the level of security required to mitigate risks to an acceptable level, essentially bridging the gap between what is currently at risk and what the organization is willing to tolerate.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-031",
+      "number": 121,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which term is used to describe the passive collection of data in packet capture programs?",
+      "options": [
+        "Sniffing the Ethernet",
+        "Superscan",
+        "Port Mirroring",
+        "Zenmap"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The term \"Sniffing the Ethernet\" is used to describe the passive collection of data in packet capture programs. This process involves observing and recording network traffic without modifying or interacting with it, allowing for unobtrusive monitoring. Tools that perform this function are commonly referred to as packet sniffers, with Wireshark being one of the most widely used examples. Ethernet sniffing is especially useful for diagnosing network issues, monitoring bandwidth usage, and detecting suspicious or unauthorized activity\u2014all while maintaining the integrity of the network traffic being analyzed.",
+      "domain": "Vulnerability Assessment",
+      "id": "ic33-udemy-beta-032",
+      "number": 122,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What are the four T's of managing risk?",
+      "options": [
+        "Tolerate, Transfer, Terminate, and Treat",
+        "Target, Treat, Track, and Total",
+        "Take Action, Test, Tolerate, and Treat",
+        "Total, Transfer, Treat, and Terminate"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "There are 4 Ts of managing Risks, which are: Tolerate, Transfer, Terminate, and Treat. \n\nTolerating the risk means that the risk is known and accepted by the organization. The organization is willing to bear or tolerate this risk.\n\nTerminating Risk means stopping the process, activity, or stopping the use of a premises, IT system at risk and hence the risk is no longer relevant.\n\nTransferring the risk means that the risk is passed to a third patty. For example an Insurer or an outsource to manage the risk. This does not eliminate the risk.\n\nTreating the risk means to reduce the likelihood of the threat materializing or the resultant impact by introducing relevant controls and continuity strategies. Risk is treated through mitigating controls.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-033",
+      "number": 123,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What is the output of the Assess Phase which act as input to the Development and Implementation Phase ?",
+      "options": [
+        "Engineering Design Specifications (EDS)",
+        "Cybersecurity Requirement Specification (CRS) Document",
+        "Safety Requirement Specifications (SRS)",
+        "None of the options"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "The output of a Risk Assessment in the context of the ISA/IEC 62443 standards is referred to as the Cybersecurity Requirements Specification (CRS). The CRS is a detailed document that specifies the cybersecurity requirements for an Industrial Automation and Control System (IACS). It is developed based on the findings of a risk assessment and serves as a foundational reference for implementing, designing, and maintaining cybersecurity measures. It serves as an input to the Development and Implementation Phase of the IACS Cybersecurity Lifecycle.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-034",
+      "number": 124,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "How many levels are there in the ISA-95 Functional Hierarchy Model?",
+      "options": [
+        "6",
+        "2",
+        "4",
+        "5"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "The ISA-95 Functional Hierarchy Model, which is a standard for developing an automated interface between enterprise and control systems, defines five levels in its hierarchy. \n\nLevel 0 - Physical Process: This level represents the physical processes and devices in an industrial environment, such as sensors, actuators, and controllers. It includes physical elements like pumps, valves, motors, and other machinery that directly interact with the physical world.\n\nLevel 1 - Basic Process Control:  At this level, basic control functions are performed. It includes devices such as Programmable Logic Controllers (PLCs) or Remote Terminal Units (RTUs) that monitor and control the physical processes. \n\nLevel 2 - Supervisory Control: This level represents supervisory control functions, where higher-level control and coordination occur. It includes systems such as Supervisory Control and Data Acquisition (SCADA) systems, Human Machine Interfaces (HMIs), and Distributed Control Systems (DCS). \n\nLevel 3 - Operations Management: This level focuses on manufacturing operations and business systems integration. It includes Manufacturing Execution Systems (MES), Enterprise Resource Planning (ERP) systems, and other business applications. \n\nLevel 4 - Enterprise Management: This level focuses on functions that are related and the activities needed to manage the organization: financial systems, production scheduling, operational management, maintenance management.",
+      "domain": "General Concepts and Definitions",
+      "id": "ic33-udemy-beta-035",
+      "number": 125,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Identify the TRUE statement.",
+      "options": [
+        "A CRS document is a living document and will continue to change.",
+        "A CRS should be compiled as single document.",
+        "Physical Environment is not part of a facility\u2019s threat environment.",
+        "Cybersecurity & Infrastructure Security Agency (CISA) is not a source of threat intelligence"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The CRS is not static; it evolves as systems, requirements, and risks change. Regular updates ensure that it stays aligned with the current cybersecurity landscape and operational reality.",
+      "domain": "Cybersecurity Documentation",
+      "id": "ic33-udemy-beta-036",
+      "number": 126,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "ISA-95 levels define.",
+      "options": [
+        "Functionality",
+        "Departments inside an organization",
+        "Control systems",
+        "Network segments"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The ISA-95 levels define functionality within manufacturing and enterprise systems. These levels describe the roles and responsibilities of different systems, ranging from the physical process on the factory floor to business planning and logistics. Each level specifies the functions required to manage and control manufacturing processes, such as process control (Levels 0\u20132), manufacturing operations management (Level 3), and enterprise planning (Level 4). This functional hierarchy is essential for integrating systems, ensuring efficient communication, and aligning operational processes with business objectives.",
+      "domain": "General Concepts and Definitions",
+      "id": "ic33-udemy-beta-037",
+      "number": 127,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Likelihood is influenced by frequency which means how often does the threat arise. It depends on:",
+      "options": [
+        "capability of the threat actor only",
+        "target\u2019s attractiveness and the attack surface.",
+        "known vulnerabilities only",
+        "target\u2019s attractiveness only"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "The frequency of a threat depends on how attractive the target is and the size of the attack surface, which determines how often a threat may be encountered.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-038",
+      "number": 128,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Alan lives in hut in jungle all alone by himself. There are no humans that live nearby. He goes every morning for a hunt in the jungle and returns late in the night. Whenever he leaves his hut, its door remains unlocked due to a broken door handle. Door handles are expensive and require Alan to bear travel cost to city for buying them. What course of action, Alan should take to ensure that the risk of his hut being robbed is treated?",
+      "options": [
+        "Alan should take no action",
+        "Alan should fix his door with a new door handle",
+        "Alan should install CCTV cameras and biometric authentication lock for his door",
+        "Alan should put a board saying, \u201cno trespassing\u201d"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "Risk = Threat x Vulnerability x Consequence\n\nFrom this equation, there are three components of risk which are Threat, Vulnerability and Consequences of threat exploiting vulnerability. A vulnerability without a threat cannot be exploited and, therefore, it is not a risk with consequence. Equally, a threat with no vulnerability to exploit is not a risk.\n\nTherefore, Alan should do nothing as there are no humans (threat sources) that live nearby. Hence, there are no threats that can exploit the vulnerability of  broken door handle. In the absence of threats, there are no risk of Alan\u2019s hut being robbed. Therefore, he should not implement an expensive countermeasure of buying a new door handle.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-039",
+      "number": 129,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "CSET is intended as a substitute for in-depth analysis of control system vulnerabilities as performed by trained professionals.",
+      "options": [
+        "TRUE",
+        "FALSE"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "CSET is only one component of a comprehensive control system security program. CSET will not provide a detailed architectural analysis of the network or a detailed network hardware/software configuration review. CSET is not a risk analysis tool, it will not create a detailed risk assessment. CSET is not intended as a substitute for in-depth analysis of control system vulnerabilities as performed by trained professionals.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-040",
+      "number": 130,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which steps are included in the ISA/IEC 62443 maintain phase?",
+      "options": [
+        "Cyber security countermeasures maintenance, monitoring, and change management, as well as incident response and recovery",
+        "Cybersecurity requirements specification and the designing of security countermeasures, and the installation, commissioning, and validation of cyber security countermeasures.",
+        "Cybersecurity requirements specification and detailed cyber risk assessment",
+        "Cybersecurity requirements specification and allocation of IACS assets to zones and conduits"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The security lifecycle in the ISA 62443 standard includes three phases: Assess, Develop and Implement, and Maintain. The security life cycle is a continuous process for minimizing risks to the IACS environment. \n\nMaintain phase topics includes cyber security countermeasures maintenance, monitoring, and change management, as well as incident response and recovery. ISA standard 62443-2-1 addresses cybersecurity maintenance and provides guidelines for processes which should be continuously monitored. Also includes a cybersecurity management system for policies, procedures, training and awareness. Periodic cybersecurity audits should also be conducted as a continuous process.",
+      "domain": "General Concepts and Definitions",
+      "id": "ic33-udemy-beta-041",
+      "number": 131,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What is the first step of detailed risk assessment as per Section 5 of the IEC-62443-3-2 ?",
+      "options": [
+        "Determine Consequence & Impact",
+        "Identify Vulnerabilities",
+        "Identify Threats",
+        "Initial Risk Assessment"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "As per ZCR 5.1 the first step is Identify Threats. A list of the threat that could affect the assets contained within the zone or conduit shall be developed.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-042",
+      "number": 132,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "When conducting a high-level vulnerability assessment (gap assessment), which of the following provides the most valuable insight into existing security gaps?",
+      "options": [
+        "Discussions or Interviews with key personnel",
+        "Performing automated network scans",
+        "Analysing technical drawings",
+        "Calculating precise risk scores"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "High-Level or Gap Assessment is the least invasive on the system. This assessment evaluates an organization\u2019s existing operational and technical cybersecurity practices. It should provide a comparison of the system to industry regulations, standards and best practices, as well as feedback on performance relative to industry peers. This assessment typically involves interviews with key personnel, site walk-throughs,  examination of drawings and sample configurations, review of existing policies and procedures and completing a questionnaire.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-043",
+      "number": 133,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What are the two elements of the risk analysis category of an IACS in IEC-62443-2-1?",
+      "options": [
+        "Risk evaluation and risk identification",
+        "Business rationale and risk reduction and avoidance",
+        "Business rationale and risk identification and classification",
+        "Business recovery and risk elimination or mitigation"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "The two elements of the risk analysis category of an IACS are business rationale and risk identification and classification.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-044",
+      "number": 134,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What term describes the likelihood of a threat scenario occurring and leading to the final consequence, considering all protection measures and cybersecurity countermeasures in ?",
+      "options": [
+        "Unaffected Likelihood",
+        "Mitigated Unmitigated Threat Likelihood (MUTL)",
+        "Mitigated Likelihood (MTL)",
+        "Unmitigated Threat Likelihood (UTL)"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "Mitigated Likelihood (MTL) refers to the probability that a threat scenario will lead to a consequence after taking into account all protection measures and cybersecurity countermeasures in place. This term focuses on the likelihood after security controls have been implemented, which reduces the original risk. MTL is an essential consideration in risk management as it reflects the effectiveness of existing security measures in lowering the chances of a successful attack.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-045",
+      "number": 135,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "The amount of risk an organization is willing to accept depends on which trait ?",
+      "options": [
+        "Finances",
+        "Tolerance",
+        "Business Policy",
+        "Bandwidth"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Risk tolerance is the organization's ability and willingness to accept a certain level of cybersecurity risk without additional countermeasures. It reflects the organization\u2019s strategic decisions based on its business priorities, regulatory obligations, and risk appetite.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-046",
+      "number": 136,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which level in the ISA 62443 Reference Model includes Business Planning and Logistics?",
+      "options": [
+        "Level 0",
+        "Level 2",
+        "Level 4",
+        "Level 1"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "Level 4 in the ISA 62443 model represents the Business Planning and Logistics level. This includes enterprise-level systems such as ERP (Enterprise Resource Planning), which manage supply chain, finance, and business operations.",
+      "domain": "Secure Architecture",
+      "id": "ic33-udemy-beta-047",
+      "number": 137,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What should the hardware asset inventory in an IACS include?",
+      "options": [
+        "Automation devices",
+        "Computers, servers, and workstations",
+        "All of the Options",
+        "Network equipment"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "The hardware asset inventory in an Industrial Automation and Control System (IACS) should include computers, servers, workstations, network equipment (like switches and firewalls), and automation devices (like PLCs, RTUs, and HMIs). A complete inventory is essential for risk management and vulnerability tracking.",
+      "domain": "Asset Management",
+      "id": "ic33-udemy-beta-048",
+      "number": 138,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which analysis method is MOST frequently utilized as an input to a security risk assessment?",
+      "options": [
+        "System Safety Analysis(SSA)",
+        "Process Hazard Analysis (PHA)",
+        "Job Safety Analysis",
+        "Failure Mode and Effects Analysis"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Process Hazard Analysis (PHA) is  a crucial input to security risk assessments due to its systematic identification of potential hazards and vulnerabilities within processes. This alignment with security risk assessment objectives is essential because PHA provides a comprehensive view of risks, covering both safety and security considerations. Other options are not correct, as Safety Analysis (JSA) and System Safety Analysis (SSA) focuses on workplace safety and system design safety respectively.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-049",
+      "number": 139,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which tools can be used for Cybersecurity assessment ?",
+      "options": [
+        "All of the Options",
+        "Custom spreadsheets",
+        "DHS CSET",
+        "Custom databases"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "DHS CSET, custom spreadsheets, and custom databases can all be used for cybersecurity assessments. The tools selected depend on the specific needs and resources of the organization.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-050",
+      "number": 140,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What is the assessment of the criticality of an IACS asset called?",
+      "options": [
+        "Cybersecurity Criticality Assessment",
+        "Scope",
+        "Critical Asset Inventory",
+        "Asset Inventory Assessment"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "This assessment is used to determine the importance of each asset within the IACS environment. It helps organizations focus security resources where they matter most by identifying assets essential to safety, reliability, or business continuity.",
+      "domain": "Asset Management",
+      "id": "ic33-udemy-beta-051",
+      "number": 141,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "An organization defining its tolerable risk level should consider which of the following as a key factor ?",
+      "options": [
+        "Determining likelihood",
+        "Risk matrix",
+        "Risk assessment",
+        "Legal requirements"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "When defining its tolerable risk level, an organization must take legal requirements into account as a key factor. These requirements often dictate the minimum security standards that must be met to remain compliant with industry regulations, avoid legal penalties, and ensure safe operation. While tools like risk matrices and assessments help evaluate and quantify risk, legal obligations form the baseline that organizations must not fall below.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-052",
+      "number": 142,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Switches, routers, and firewalls are part of which of the following categories defined in the IEC-62443 ?",
+      "options": [
+        "Embedded Device",
+        "Host Device",
+        "Network Device",
+        "Software Applications"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "Devices like switches, routers, and firewalls fall under the Network Device category. These devices are essential for communication and security across industrial networks, handling tasks such as traffic routing, segmentation, and perimeter defense.",
+      "domain": "General Concepts and Definitions",
+      "id": "ic33-udemy-beta-053",
+      "number": 143,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "How regularly should risk assessments be reviewed?",
+      "options": [
+        "At least once a month",
+        "At least once a week",
+        "At least once a year",
+        "At least twice a year"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "While some high-risk environments may require more frequent reviews, risk assessments should be reviewed at least annually to account for evolving threats, changes in the SuC, and lessons learned from incidents or audits.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-054",
+      "number": 144,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What should be considered when identifying vulnerabilities of an IACS?",
+      "options": [
+        "Access Points",
+        "End Devices",
+        "All  of the Options",
+        "Internal Networks"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "When identifying vulnerabilities, it is important to consider Access Points (e.g., remote access, USB ports), Internal Networks (communications within the system) and End Devices (PLCs, HMIs, sensors).",
+      "domain": "Vulnerability Assessment",
+      "id": "ic33-udemy-beta-055",
+      "number": 145,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which \"T\" of Managing Risk is defined as the endeavor to decrease the probability of the threat occurring or mitigate its impact through the implementation of appropriate controls and continuity strategies?",
+      "options": [
+        "Transfer",
+        "Treat",
+        "Terminate",
+        "Tolerate"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "There are 4 Ts of managing Risks, which are: Tolerate, Transfer, Terminate, and Treat. \n\nTreating the risk means to reduce the likelihood of the threat materializing or the resultant impact by introducing relevant controls and continuity strategies. Risk is treated through mitigating controls.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-056",
+      "number": 146,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Not all vulnerabilities represent risk to an IACS network.",
+      "options": [
+        "FALSE",
+        "TRUE"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Many people are tempted to believe that all weaknesses must be fixed and all vulnerabilities need to be patched. But this is not correct since exploiting vulnerabilities does not necessarily lead to a potential consequence. A deep understanding of the SUC components and their essential functions over the industrial processes being operated and controlled is necessary. Vulnerabilities alone without visualizing the consequences does not represent a risk to operational environments.",
+      "domain": "Vulnerability Assessment",
+      "id": "ic33-udemy-beta-057",
+      "number": 147,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which is the Security Level of protecting against intentional violation using simple means with low  resources, generic skills and low  motivation?",
+      "options": [
+        "SL1",
+        "SL2",
+        "SL3",
+        "SL4"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "The Security Level of protecting against intentional violation using simple means with low  resources, generic skills and low  motivation  in the context of industrial control systems (ICS) cybersecurity is Security Level 2 (SL-2).",
+      "domain": "Threat Management",
+      "id": "ic33-udemy-beta-058",
+      "number": 148,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which of the following is the TRUE Statement ?",
+      "options": [
+        "Threats exploits consequences to result in vulnerabilities for an organisation",
+        "Threats exploits consequences to result in vulnerabilities for an organisation",
+        "Vulnerabilities exploit threats to result in consequences for an organisation",
+        "Threats exploits vulnerabilities to result in consequences for an organisation"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "This statement correctly captures the risk model: threats (like a hacker) exploit vulnerabilities (such as unpatched software), which leads to consequences (like data loss or downtime). Understanding this chain is essential for effective risk mitigation.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-059",
+      "number": 149,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Devices that are permitted to make connections to the SUC via networks external to the SUC should be grouped into a separate zone or zones.",
+      "options": [
+        "TRUE",
+        "FALSE"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "Devices that are permitted to make connections to the SUC via networks external to the SUC should be grouped into a separate zone or zones. This mostly applies to remote access, it should be in a separate zone.",
+      "domain": "Zone and Conduit Requirements",
+      "id": "ic33-udemy-beta-060",
+      "number": 150,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which term is BEST to describe the Gap Assessment ?",
+      "options": [
+        "INITIAL RISK ASSESSMENT",
+        "HIGH LEVEL RISK ASSESSMENT",
+        "HIGH LEVEL VULNERABILITY ASSESSMENT",
+        "DETAILED CYBERSECURITY RISK ASSESSMENT"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "A Gap Assessment is best described as a High-Level Vulnerability Assessment because it compares the current state of the system with industry standards and identifies any vulnerabilities, weaknesses, or compliance gaps without going into detailed technical risk assessments. Many people confuse it with High Level Risk Assessment.",
+      "domain": "Vulnerability Assessment",
+      "id": "ic33-udemy-beta-061",
+      "number": 151,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What should the Cybersecurity Requirements Specifications (CRS) include ?",
+      "options": [
+        "All of the Options",
+        "Zone and Conduit specific requirements",
+        "General cybersecurity requirements",
+        "Scope and purpose of the system"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The correct answer is All of the Options. The CRS should include the scope and purpose of the system, which sets boundaries and objectives for the cybersecurity strategy. It must also define both general cybersecurity requirements applicable to the whole system and zone and conduit-specific requirements tailored to different segments of the architecture. This ensures both holistic and granular control coverage.",
+      "domain": "Cybersecurity Documentation",
+      "id": "ic33-udemy-beta-062",
+      "number": 152,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "A Cybersecurity Requirements Specifications (CRS) does not need to be a single document. It may include multiple documents such as Excel spreadsheet, drawings and even databases.",
+      "options": [
+        "FALSE",
+        "TRUE"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "The Cybersecurity Requirements Specifications (CRS) does not have to be a single document. It can be a collection of documents such as spreadsheets, diagrams, and databases. This flexible format helps organizations capture all relevant security details in the tools and formats most suitable for their workflows.",
+      "domain": "Cybersecurity Documentation",
+      "id": "ic33-udemy-beta-063",
+      "number": 153,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What activities are conducted during gap assessment?",
+      "options": [
+        "Use aggressive tools to exploit vulnerabilities",
+        "Attempting unauthorized access to evaluate system resilience.",
+        "Performing network scans to identify potential risks",
+        "Interviews with key personnel, site walk-throughs and examination of drawings and sample configurations"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "High-Level or Gap Assessment is the least invasive on the system. This assessment evaluates an organization\u2019s existing operational and technical cybersecurity practices. It should provide a comparison of the system to industry regulations, standards and best practices, as well as feedback on performance relative to industry peers. This assessment typically involves interviews with key personnel, site walk-throughs,  examination of drawings and sample configurations, review of existing policies and procedures and completing a questionnaire.",
+      "domain": "Vulnerability Assessment",
+      "id": "ic33-udemy-beta-064",
+      "number": 154,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which standard provides guidelines for the Development and Implementation phase ?",
+      "options": [
+        "ISA Standard 62443-3-3",
+        "ISA standard 62443-2-1",
+        "ISA Standard 62443-3-2 and 3-3",
+        "ISA Standard 62443-3-2"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "The security lifecycle in the ISA 62443 standard includes three phases: Assess, Develop and Implement, and Maintain.\n\nDevelop and Implementation  include cybersecurity requirements specification, the design and engineering of security countermeasures, and the installation, commissioning, and validation of cyber security countermeasures. ISA standard 62443-3-2 and 62443-3-3 provides guidelines for this phase. The design and development of other means of risk reduction may also be included.",
+      "domain": "IACS Cybersecurity Lifecycle",
+      "id": "ic33-udemy-beta-065",
+      "number": 155,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What is the measure of the ultimate loss or harm associated with a consequence?",
+      "options": [
+        "Impact",
+        "Threat",
+        "Likelihood",
+        "Vulnerability"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "Impact is the measure of the ultimate loss or harm associated with a consequence. It reflects the severity of an incident if a threat is realized, such as financial loss, operational downtime, or safety hazards.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-066",
+      "number": 156,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What is the purpose of reviewing documentation of SuC for risk assessment?",
+      "options": [
+        "To develop understanding of essential functions within the multiple zones and conduits of a SUC",
+        "To find vulnerabilities in the systems of the SuC",
+        "To understand existing countermeasures",
+        "To implement security countermeasures"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "When reviewing documentation during a cybersecurity risk assessment, the main purpose is to understand the essential functions that exist within the various zones and conduits of the System under Consideration (SuC). This helps assessors get a clear picture of how the system operates, what critical assets exist, and how data and control signals move between different parts of the system. Without this understanding, it would be impossible to properly assess risks or design effective cybersecurity measures. Implementing countermeasures or identifying vulnerabilities comes later, after a solid understanding is built.",
+      "domain": "Cybersecurity Documentation",
+      "id": "ic33-udemy-beta-067",
+      "number": 157,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What is risk tolerance ?",
+      "options": [
+        "Result that occurs from a particular incident",
+        "The level of risk an organization is willing to\ntolerate",
+        "Flaw or weakness that could be exploited to violate the system's integrity or security policy",
+        "Quantitative chance that an action, event or incident may occur"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Risk tolerance is The level of risk an organization is willing to tolerate. It is management's responsibility to determine the level of risk the organization is willing to tolerate.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-068",
+      "number": 158,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Likelihood is often evaluated how many times during a detailed risk assessment.",
+      "options": [
+        "Three times",
+        "Four Times",
+        "Once",
+        "Twice"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "Likelihood is often evaluated twice during a detailed risk assessment. It is initially determined without consideration of any existing countermeasures. This establishes the unmitigated risk. Later in the process, it will be re-evaluated taking into account existing counter measures and their effectiveness in order to determine residual risk.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-069",
+      "number": 159,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which of the following ISA-95 (IEC 62443) Reference Model levels is named incorrectly ?",
+      "options": [
+        "Level 3: Operations Management",
+        "Level 4: Physical Process",
+        "Level 1 - Basic Process Control",
+        "Level 2 - Supervisory Control"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "The IEC 62443 Reference Model level named incorrectly is Level 4: Physical Process. Physical Process equipment are at Level 0 of the Reference model. \n\nThe ISA-99 (IEC 62443) Reference Model consists of five levels, each representing a different aspect of industrial automation and control system (IACS) security:\n\nLevel 0 - Physical Process: This level represents the physical processes and devices in an industrial environment, such as sensors, actuators, and controllers. It includes physical elements like pumps, valves, motors, and other machinery that directly interact with the physical world.\n\nLevel 1 - Basic Process Control:  At this level, basic control functions are performed. It includes devices such as Programmable Logic Controllers (PLCs) or Remote Terminal Units (RTUs) that monitor and control the physical processes. \n\nLevel 2 - Supervisory Control: This level represents supervisory control functions, where higher-level control and coordination occur. It includes systems such as Supervisory Control and Data Acquisition (SCADA) systems, Human Machine Interfaces (HMIs), and Distributed Control Systems (DCS). \n\nLevel 3 - Operations Management: This level focuses on manufacturing operations and business systems integration. It includes Manufacturing Execution Systems (MES), Enterprise Resource Planning (ERP) systems, and other business applications. \n\nLevel 4 - Enterprise Management: This level focuses on functions that are related and the activities needed to manage the organization: financial systems, production scheduling, operational management, maintenance management.",
+      "domain": "Secure Architecture",
+      "id": "ic33-udemy-beta-070",
+      "number": 160,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which of the following security countermeasures is responsible  detecting  and alert anomalous or malicious through events Intrusion detection, SIEM, anti-virus?",
+      "options": [
+        "Detection",
+        "Data Integrity Controls",
+        "Physical Access Controls",
+        "Hardening"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "Detection controls are designed to identify and alert on unusual or malicious activities within a system. Intrusion Detection Systems (IDS), Security Information and Event Management (SIEM) tools, and antivirus software are examples of technologies that monitor for potential threats and notify administrators of suspicious behavior.",
+      "domain": "Threat Management",
+      "id": "ic33-udemy-beta-071",
+      "number": 161,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which of the following is part of the Assess Phase ?",
+      "options": [
+        "Detailed Cyber Risk Assessment",
+        "Cybersecurity Incident Response and Recovery",
+        "Cybersecurity Change Management",
+        "Cybersecurity Requirement Specification"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The security lifecycle in the ISA 62443 standard includes three phases: Assess, Develop and Implement, and Maintain. The security life cycle is a continuous process for minimizing risks to the IACS environment. \n\nAssess phase include high-level cyber risk assessment, allocation of IACS assets to security zones or conduits, and detailed cyber risk assessment. ISA standard 62443-3-2 provides guidelines for the assess phase. \n\nThe other options are INCORRECT as they either include unrelated activities or misrepresent the sequence of steps in the assess phase.",
+      "domain": "IACS Cybersecurity Lifecycle",
+      "id": "ic33-udemy-beta-072",
+      "number": 162,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which Risk formula is correct?",
+      "options": [
+        "Risk = Threat x Asset x Consequence",
+        "Risk = Threat x Vulnerability x Cost",
+        "Risk = Threat x Likelihood x Vulnerability",
+        "Risk = Threat x Vulnerability x Consequence"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "Risk = Threat x Vulnerability x Consequence\n\nFrom this equation, there are three components of risk which are Threat, Vulnerability and Consequences of threat exploiting vulnerability. A vulnerability without a threat cannot be exploited and, therefore, is not a risk. Equally, a threat with no vulnerability to exploit is not a risk.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-073",
+      "number": 163,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which agency regulates the interstate transmission of electricity, natural gas, and oil ?",
+      "options": [
+        "FERC",
+        "NIST",
+        "ISA",
+        "NSA"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "FERC stands for the Federal Energy Regulatory Commission. It's an independent agency of the U.S. government that regulates the interstate transmission of electricity, natural gas, and oil. FERC's job is to make sure that these energy markets operate fairly, efficiently, and reliably. It oversees things like approving and monitoring large energy projects (like pipelines and transmission lines), setting rates for electricity transmission and wholesale power sales, and making sure companies follow the rules to protect consumers and maintain system reliability.",
+      "domain": "Regulations and standards (ISA/IEC 62443 Framework)",
+      "id": "ic33-udemy-beta-074",
+      "number": 164,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which vulnerability assessment technique is the most invasive on the system ?",
+      "options": [
+        "Penetration test",
+        "Passive vulnerability assessment",
+        "Gap assessment",
+        "Active vulnerability assessment"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "Penetration testing simulates attacks to identify vulnerabilities that could be exploited. System hardening and patch management are security practices, not assessment types, while threat modelling focuses on potential attack vectors rather than existing vulnerabilities.",
+      "domain": "Vulnerability Assessment",
+      "id": "ic33-udemy-beta-075",
+      "number": 165,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What is the primary goal of  Develop & Implement phase of ICS security implementation?",
+      "options": [
+        "To assign a Target Security Level (SL-T)",
+        "To ensure the Achieved Security Level (SL-A) is equal to or better than the Target Security Leve l (SL-T).",
+        "To implement countermeasures to meet the Target Security Level (SL-T).",
+        "None of the Options"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "During the Develop & Implement phase, the focus shifts to putting into place the technical and procedural controls (i.e., countermeasures) that will allow the system to achieve the previously defined Target Security Level. This includes hardware, software, and process improvements to bolster security.",
+      "domain": "IACS Cybersecurity Lifecycle",
+      "id": "ic33-udemy-beta-076",
+      "number": 166,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What are the steps of  implementing countermeasures?",
+      "options": [
+        "Establish the risk tolerance and update the business continuity plan.",
+        "Select common countermeasures and update the business continuity plan.",
+        "Select common countermeasures and collaborate with stakeholders.",
+        "Establish the risk tolerance and select common countermeasures."
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "Implementing countermeasures involves establishing the organisation's risk tolerance and selecting appropriate countermeasures to mitigate identified risks effectively.  This process is integral to a comprehensive risk management strategy.",
+      "domain": "General Concepts and Definitions",
+      "id": "ic33-udemy-beta-077",
+      "number": 167,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "IACS assets shall be grouped into zones that are separate from business or enterprise system assets.",
+      "options": [
+        "FALSE",
+        "TRUE"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "As per ZCR 3.2 in IEC-62443-3-2, IACS assets shall be grouped into zones that are separate from business or enterprise system assets.",
+      "domain": "Zone and Conduit Requirements",
+      "id": "ic33-udemy-beta-078",
+      "number": 168,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What type of Security Levels (SL\u2019s) are part of the ISA/IEC-62443?",
+      "options": [
+        "Target Security Level (SL-T), Achieved Security Level (SL-A), Security Level Determination (SL-D)",
+        "Target Security Level (SL-T), Achieved Security Level (SL-A), Capability Security Level (SL-C)",
+        "Target Security Level (SL-T), Security Level Determination (SL-D), Equipment Security Level (SL-E)",
+        "Equipment Security Level (SL-E), Security Level Determination (SL-D), Achieved Security Level (SL-A)"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "The ISA/IEC-62443 standard defines Target Security Level (SL-T), Achieved Security Level (SL-A), Capability Security Level (SL-C).  SL-T (Target) is the desired security level for a system or component. SL-A (Achieved) is the actual security level attained. SL-C (Capability) is the maximum level that a component or system is capable of achieving.",
+      "domain": "Regulations and standards (ISA/IEC 62443 Framework)",
+      "id": "ic33-udemy-beta-079",
+      "number": 169,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "As per ISA-95 (IEC 62443) Reference Model which level is named correctly?",
+      "options": [
+        "Level 4 - Enterprise Management",
+        "Level 1: Supervisory Control",
+        "Level 4: Physical Process",
+        "Level 2: Quality Control"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "The IEC 62443 Reference Model level named correctly is Level 4 - Enterprise Management.\n\nThe ISA-95 (IEC 62443) Reference Model consists of five levels, each representing a different aspect of industrial automation and control system (IACS) security:\n\nLevel 0 - Physical Process: This level represents the physical processes and devices in an industrial environment, such as sensors, actuators, and controllers. It includes physical elements like pumps, valves, motors, and other machinery that directly interact with the physical world.\n\nLevel 1 - Basic Process Control:  At this level, basic control functions are performed. It includes devices such as Programmable Logic Controllers (PLCs) or Remote Terminal Units (RTUs) that monitor and control the physical processes. \n\nLevel 2 - Supervisory Control: This level represents supervisory control functions, where higher-level control and coordination occur. It includes systems such as Supervisory Control and Data Acquisition (SCADA) systems, Human Machine Interfaces (HMIs), and Distributed Control Systems (DCS). \n\nLevel 3 - Operations Management: This level focuses on manufacturing operations and business systems integration. It includes Manufacturing Execution Systems (MES), Enterprise Resource Planning (ERP) systems, and other business applications. \n\nLevel 4 - Enterprise Management: This level focuses on functions that are related and the activities needed to manage the organization: financial systems, production scheduling, operational management, maintenance management.",
+      "domain": "Secure Architecture",
+      "id": "ic33-udemy-beta-080",
+      "number": 170,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which of the following is a benefit of performing an IACS cyber risk assessment?",
+      "options": [
+        "Being able to identify the root cause of an incident",
+        "Being better prepared to respond to a cybersecurity incident",
+        "Being better prepared to apply patches",
+        "Helps to intelligently design and apply countermeasures  to reduce risk"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "By analysing risks, organizations can make informed decisions about which security controls or countermeasures are necessary and most effective for reducing risk in their IACS environments.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-081",
+      "number": 171,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "CSET is not a risk analysis tool and will not create detailed risk assessment reports.",
+      "options": [
+        "TRUE",
+        "FALSE"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "CSET is only one component of a comprehensive control system security program. CSET will not provide a detailed architectural analysis of the network or a detailed network hardware/software configuration review. CSET is not a risk analysis tool, it will not create a detailed risk assessment. CSET is not intended as a substitute for in-depth analysis of control system vulnerabilities as performed by trained professionals.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-082",
+      "number": 172,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "The desired level of security for a system is known as?",
+      "options": [
+        "Capability Security Level",
+        "Protection Level",
+        "Achieved Security Level",
+        "Target Security Level"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "SLs have been categorized into three distinct types, each corresponding to different facets of the security lifecycle, though they are closely related:\n\nTarget Security Levels (SL-T) represent the desired security level for a specific system. This is typically established by conducting a risk assessment on the system to determine the necessary level of security required for its proper functioning.\n\nCapability Security Levels (SL-C) denote the security levels that components or systems can achieve when they are correctly configured. This indicates that a specific component or system can naturally meet the target SLs without the need for extra compensating countermeasures, assuming it is properly configured and integrated.\n\nAchieved Security Levels (SL-A) are the actual security levels a system reaches after its design is finalized or implemented, ensuring it meets the initial objectives set by the Target SLs (SL-T).",
+      "domain": "General Concepts and Definitions",
+      "id": "ic33-udemy-beta-083",
+      "number": 173,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What is the likelihood of the threat occurring and leading to the final consequence without considering any cybersecurity countermeasure in place?",
+      "options": [
+        "Mitigated Unmitigated Threat Likelihood (MUTL)",
+        "Unaffected Likelihood (UAL)",
+        "Unmitigated Threat Likelihood (UTL)",
+        "Mitigated Likelihood (MTL)"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "Unmitigated Threat Likelihood (UTL) represents the probability that a threat will lead to a harmful consequence when no cybersecurity controls or countermeasures are applied. It's used during risk assessments to understand the raw level of risk before any mitigation.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-084",
+      "number": 174,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Passive vulnerability assessments discover network devices using which means ?",
+      "options": [
+        "Research using vulnerability databases",
+        "Collect data from devices",
+        "All of the Options",
+        "Review configurations"
+      ],
+      "answers": [
+        2
+      ],
+      "explanation": "Passive vulnerability assessments discover network devices using passive means. This includes Reviewing drawings,  System Walk throughs, Traffic analysis and ARP or Address Resolution Protocol tables review. Passive means can also be used to discover vulnerabilities such as Capture and study actual network traffic, collect data from devices, review configurations and research using vulnerability databases",
+      "domain": "Vulnerability Assessment",
+      "id": "ic33-udemy-beta-085",
+      "number": 175,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Which of the following can be chosen as consequence categories ?",
+      "options": [
+        "Intellectual Property leakage",
+        "Health and Safety",
+        "Environment",
+        "Financial Loss",
+        "All of the Options"
+      ],
+      "answers": [
+        4
+      ],
+      "explanation": "Consequence categories that can be chosen include health and safety, environment, intellectual property leakage, and financial loss. These categories help assess the potential impact of a risk.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-086",
+      "number": 176,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "A good risk assessment should provide the following information for the entire system as well as for each zone and conduit:",
+      "options": [
+        "Gap Assessment Report",
+        "Highest risk consequences",
+        "Site Plan",
+        "Budget Plan"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "A risk assessment should identify the highest risk consequences for the entire system and specific zones or conduits. This helps in understanding the potential impact of security threats and allows organizations to prioritize mitigations based on the severity of risks. The other options like Gap Assessment Report and Site Plan may be part of a broader security strategy, but they do not specifically highlight the consequences of risks.",
+      "domain": "Risk Assessment",
+      "id": "ic33-udemy-beta-087",
+      "number": 177,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "Why should Asset Inventory Tool be tested before deploying in the IACS ?",
+      "options": [
+        "To ensure that they have the right graphical view",
+        "To follow an SOP",
+        "To ensure that they are working correctly",
+        "To ensure that it does not introduce security vulnerabilities into the system and impact system availability or integrity"
+      ],
+      "answers": [
+        3
+      ],
+      "explanation": "Before deploying an Asset Inventory Tool, it must be tested to ensure that it doesn't introduce any security vulnerabilities or impact system availability. Tools that are not properly tested could inadvertently weaken the system's defenses or disrupt operations.",
+      "domain": "Asset Management",
+      "id": "ic33-udemy-beta-088",
+      "number": 178,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "ISA-95 functional layers speak to functionality \u2013 NOT systems or network layers.",
+      "options": [
+        "TRUE",
+        "FALSE"
+      ],
+      "answers": [
+        0
+      ],
+      "explanation": "ISA-95 functional layers define the business and manufacturing functions within an organization and are not concerned with the systems or network layers. It focuses on what needs to be done at each functional level.",
+      "domain": "Secure Architecture",
+      "id": "ic33-udemy-beta-089",
+      "number": 179,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    },
+    {
+      "prompt": "What is the difference between Threat Source and Threat Vector Difference",
+      "options": [
+        "There is no difference between the two",
+        "Threat Source refers to an entity that can manifest a threat and Threat Vector refers to means through which the threat may be utilized to compromise a system.",
+        "They are unrelated to each other",
+        "Threat Vector refers to an entity that can manifest a threat and Threat Source refers to means through which the threat may be utilized to compromise a system."
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "A Threat Source is the origin or actor (like a hacker, insider, or malware) that causes a cybersecurity event, while a Threat Vector is the method or pathway (like phishing emails, USB drives, or open ports) used to exploit vulnerabilities. Understanding both is crucial for effective threat modelling.",
+      "domain": "Threat Management",
+      "id": "ic33-udemy-beta-090",
+      "number": 180,
+      "module": "ic33-beta",
+      "course": "IC33",
+      "anchor": "ic33-beta"
+    }
+  ]
+}
