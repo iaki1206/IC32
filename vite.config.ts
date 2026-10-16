@@ -203,12 +203,16 @@ function vitePluginStorageProxy(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
+// `vite build --mode desktop` is used by the Electron packaging scripts: the
+// Manus-specific plugins (hosted runtime, debug collector, storage proxy) are
+// not needed in the offline desktop app.
+const webPlugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
+const desktopPlugins = [react(), tailwindcss()];
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   // Use the root path for the private Tailscale deployment. Set VITE_BASE_PATH only if a sub-path deployment is needed.
   base: process.env.VITE_BASE_PATH || '/',
-  plugins,
+  plugins: mode === "desktop" ? desktopPlugins : webPlugins,
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
@@ -240,4 +244,4 @@ export default defineConfig({
       deny: ["**/.*"],
     },
   },
-});
+}));

@@ -1,6 +1,22 @@
 # IC32 Learning App - ISA/IEC 62443 Standards Interactive Learning Platform
 
-A modern, intuitive web application for learning the IC32 course based on ISA/IEC 62443 standards for securing industrial control systems.
+A modern, intuitive application for learning the IC32 course based on ISA/IEC 62443 standards for securing industrial control systems.
+
+## 🚀 Desktop Application (Windows & Linux)
+
+The application is available as a standalone desktop app that works completely offline. Progress (quizzes, bookmarks, study notes) is stored locally.
+
+### Download & Install
+
+Download the latest release for your platform from **[GitHub Releases](https://github.com/iaki1206/IC32/releases)**:
+
+| Operating System | Package / Installer | Installation Instructions |
+|---|---|---|
+| **Windows 10 / 11** | `IC32-Setup-<version>.exe` | Run the installer (`.exe`). It creates Start Menu & Desktop shortcuts. *(If Windows SmartScreen appears, click "More info" → "Run anyway")*. |
+| **Linux (Any Distro)** | `IC32-<version>-linux-x86_64.AppImage` | Make executable and run: `chmod +x IC32-*.AppImage && ./IC32-*.AppImage` |
+| **Ubuntu / Debian** | `IC32-<version>-linux-amd64.deb` | Install via apt: `sudo apt install ./IC32-*.deb` |
+
+For development and local build instructions, see [DESKTOP.md](DESKTOP.md).
 
 ## Private access through Tailscale
 
