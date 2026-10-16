@@ -3,7 +3,18 @@
   "version": "1.5.0",
   "type": "module",
   "license": "MIT",
+  "description": "ISA/IEC 62443 IC32 Learning Platform",
+  "author": {
+    "name": "iaki1206",
+    "email": "iaki1206@users.noreply.github.com"
+  },
+  "homepage": "https://github.com/iaki1206/IC32",
+  "main": "electron/main.cjs",
   "scripts": {
+    "build:web": "vite build",
+    "desktop:dev": "vite build --mode desktop && electron .",
+    "desktop:build:linux": "vite build --mode desktop && electron-builder --linux AppImage deb",
+    "desktop:build:win": "vite build --mode desktop && electron-builder --win nsis",
     "dev": "vite --host",
     "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "start": "NODE_ENV=production node dist/index.js",
@@ -77,6 +88,8 @@
     "@vitejs/plugin-react": "^5.0.4",
     "add": "^2.0.6",
     "autoprefixer": "^10.4.20",
+    "electron": "^33",
+    "electron-builder": "^25",
     "esbuild": "^0.25.0",
     "pnpm": "^10.15.1",
     "postcss": "^8.4.47",
@@ -90,7 +103,51 @@
     "vitest": "^2.1.4"
   },
   "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af",
+  "build": {
+    "appId": "ro.ic32.learning",
+    "productName": "IC32 Learning Platform",
+    "artifactName": "IC32-${version}-${os}-${arch}.${ext}",
+    "directories": {
+      "output": "release",
+      "buildResources": "electron/icons"
+    },
+    "files": [
+      "package.json",
+      "electron/**/*",
+      "dist/public/**/*",
+      "!node_modules/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "electron/icons/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "IC32 Learning Platform",
+      "artifactName": "IC32-Setup-${version}.${ext}"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "electron/icons/icon.png",
+      "executableName": "ic32",
+      "category": "Education",
+      "maintainer": "iaki1206 <iaki1206@users.noreply.github.com>",
+      "synopsis": "ISA/IEC 62443 learning platform"
+    }
+  },
   "pnpm": {
+    "onlyBuiltDependencies": [
+      "electron",
+      "esbuild",
+      "@tailwindcss/oxide"
+    ],
     "patchedDependencies": {
       "wouter@3.7.1": "patches/wouter@3.7.1.patch"
     },
